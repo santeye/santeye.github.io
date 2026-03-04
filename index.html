@@ -286,7 +286,7 @@
   // ── GDELT fetch ────────────────────────────────────────────────────────────
   async function fetchGDELT() {
     const GDELT_URL = 'https://api.gdeltproject.org/api/v2/doc/doc' +
-      '?query=war%20OR%20conflict%20OR%20military%20OR%20crisis' +
+      '?query=%28war%20OR%20conflict%20OR%20military%20OR%20crisis%29' +
       '&mode=artlist&maxrecords=250&timespan=24h&format=json';
 
     console.log('[GDELT] requesting:', GDELT_URL);
