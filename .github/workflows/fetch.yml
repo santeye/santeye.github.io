@@ -29,13 +29,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull origin main --rebase
           git add data/signals.json
-          if git diff --cached --quiet; then
-            echo "No changes to signals.json, skipping commit."
-          else
-            git commit -m "update signals [skip ci]"
-            git pull --rebase origin main
-            git push origin main
-          fi
+          git commit -m "update signals [skip ci]" || echo "nothing to commit"
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
