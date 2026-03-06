@@ -184,7 +184,7 @@
     #legend-label { font-size: 10px; color: #999; }
     #legend-bar {
       width: 160px; height: 4px; border-radius: 2px;
-      background: linear-gradient(to right, #e8edf2, #a8b8cc, #5878a0, #2a4a7a, #0a1628);
+      background: linear-gradient(to right, #d0d0d0, #e8a090, #d45040, #aa2020, #6b0000);
     }
     #legend-ticks {
       display: flex; justify-content: space-between;
@@ -255,7 +255,7 @@
   // ── Color scale ───────────────────────────────────────────────────────────
   const colorScale = d3.scaleLinear()
     .domain([0, 25, 50, 75, 100])
-    .range(['#e8edf2', '#a8b8cc', '#5878a0', '#2a4a7a', '#0a1628']);
+    .range(['#d0d0d0', '#e8a090', '#d45040', '#aa2020', '#6b0000']);
 
   function scoreToColor(score) { return colorScale(score); }
 
@@ -328,7 +328,10 @@
   // ── Load topojson lib, then geo data, then signals ────────────────────────
   const script = document.createElement('script');
   script.src = 'https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js';
-  script.onload = () => fetchGeoData().then(fetchSignals);
+  script.onload = () => fetchGeoData().then(() => {
+    fetchSignals();
+    setInterval(fetchSignals, 5 * 60 * 1000);
+  });
   document.head.appendChild(script);
 
   async function fetchGeoData() {
@@ -362,7 +365,7 @@
     const iso = getCountryISO(feature);
     const score = iso != null ? countryScores[iso] : undefined;
     return {
-      fillColor: score != null ? scoreToColor(score) : '#f0f0f0',
+      fillColor: score != null ? scoreToColor(score) : '#efefef',
       fillOpacity: 1,
       color: '#ccc',
       weight: 0.5,
