@@ -1,30 +1,24 @@
 {
-  "updated": "2026-03-06T21:31:42.630954+00:00",
+  "updated": "2026-03-06T22:31:14.393636+00:00",
   "layers": {
     "wire": {
-      "CN": 38,
-      "AZ": 0,
+      "CN": 30,
       "IR": 100,
-      "IL": 62,
-      "HU": 7,
-      "LB": 22,
-      "LK": 0,
-      "RU": 32,
-      "UA": 35,
-      "PK": 7,
-      "FR": 13,
-      "GB": 0,
-      "IN": 13,
-      "VE": 13,
-      "SY": 0,
+      "IL": 63,
+      "LB": 26,
+      "RU": 15,
+      "UA": 26,
+      "PK": 8,
+      "FR": 0,
+      "VE": 0,
       "PS": 0,
       "NG": 0
     },
     "think_tank": {
-      "CN": 15,
       "IR": 100,
-      "UA": 73,
-      "RU": 52,
+      "CN": 15,
+      "UA": 71,
+      "RU": 50,
       "IL": 0,
       "MX": 0
     },
@@ -32,16 +26,16 @@
       "US": 100,
       "KP": 0,
       "RU": 9,
-      "CN": 27,
-      "IR": 37,
+      "CN": 25,
+      "IR": 34,
       "IQ": 0,
       "AE": 9,
       "SA": 0,
-      "KW": 29,
+      "KW": 27,
       "QA": 5,
       "OM": 0,
       "RW": 0,
-      "CD": 27,
+      "CD": 25,
       "AR": 5,
       "FR": 0,
       "CA": 0,
@@ -51,12 +45,12 @@
       "JP": 5,
       "YE": 0,
       "SY": 5,
-      "GN": 27,
+      "GN": 25,
       "ML": 0,
       "NE": 5,
-      "CO": 0,
-      "SD": 9,
-      "LY": 0,
+      "CO": 5,
+      "SD": 13,
+      "LY": 5,
       "MM": 0
     }
   },
@@ -66,55 +60,34 @@
         "AFP",
         "AP",
         "Al Jazeera",
-        "BBC",
-        "Reuters"
-      ],
-      "AZ": [
-        "AP",
-        "BBC",
-        "Reuters"
+        "BBC"
       ],
       "IR": [
         "AFP",
         "AP",
         "Al Jazeera",
-        "BBC",
-        "Reuters"
+        "BBC"
       ],
       "IL": [
         "AFP",
         "AP",
         "Al Jazeera",
-        "BBC",
-        "Reuters"
-      ],
-      "HU": [
-        "AP",
-        "BBC",
-        "Reuters"
+        "BBC"
       ],
       "LB": [
         "AFP",
         "AP",
-        "Al Jazeera",
-        "Reuters"
-      ],
-      "LK": [
-        "AFP",
-        "AP",
-        "Reuters"
+        "Al Jazeera"
       ],
       "RU": [
         "AP",
-        "Al Jazeera",
-        "Reuters"
+        "Al Jazeera"
       ],
       "UA": [
         "AFP",
         "AP",
         "Al Jazeera",
-        "BBC",
-        "Reuters"
+        "BBC"
       ],
       "PK": [
         "AFP",
@@ -124,23 +97,9 @@
         "AFP",
         "AP"
       ],
-      "GB": [
-        "AP",
-        "Reuters"
-      ],
-      "IN": [
-        "AP",
-        "Al Jazeera",
-        "Reuters"
-      ],
       "VE": [
         "AP",
-        "BBC",
-        "Reuters"
-      ],
-      "SY": [
-        "AFP",
-        "Reuters"
+        "BBC"
       ],
       "PS": [
         "AFP",
@@ -152,10 +111,10 @@
       ]
     },
     "think_tank": {
-      "CN": [
+      "IR": [
         "Atlantic Council"
       ],
-      "IR": [
+      "CN": [
         "Atlantic Council"
       ],
       "UA": [
@@ -295,51 +254,49 @@
     }
   },
   "composite": {
-    "LB": 27,
-    "SY": 18,
-    "CD": 59,
-    "UA": 79,
-    "RU": 77,
-    "AR": 18,
-    "KW": 61,
-    "CN": 74,
+    "GN": 56,
+    "CO": 15,
+    "KW": 58,
+    "AE": 30,
+    "CN": 71,
+    "QA": 15,
+    "NE": 15,
     "IR": 100,
-    "VE": 33,
+    "LB": 29,
+    "AR": 15,
+    "RU": 73,
     "IL": 52,
-    "GN": 59,
-    "AE": 32,
+    "SD": 39,
+    "UA": 77,
     "PK": 0,
-    "HU": 0,
-    "QA": 18,
-    "NE": 18,
-    "JP": 18,
-    "FR": 14,
+    "LY": 15,
+    "VE": 15,
+    "SY": 15,
+    "CD": 56,
     "US": 92,
-    "SD": 32,
-    "IN": 14
+    "JP": 15
   },
   "scores": {
-    "LB": 27,
-    "SY": 18,
-    "CD": 59,
-    "UA": 79,
-    "RU": 77,
-    "AR": 18,
-    "KW": 61,
-    "CN": 74,
+    "GN": 56,
+    "CO": 15,
+    "KW": 58,
+    "AE": 30,
+    "CN": 71,
+    "QA": 15,
+    "NE": 15,
     "IR": 100,
-    "VE": 33,
+    "LB": 29,
+    "AR": 15,
+    "RU": 73,
     "IL": 52,
-    "GN": 59,
-    "AE": 32,
+    "SD": 39,
+    "UA": 77,
     "PK": 0,
-    "HU": 0,
-    "QA": 18,
-    "NE": 18,
-    "JP": 18,
-    "FR": 14,
+    "LY": 15,
+    "VE": 15,
+    "SY": 15,
+    "CD": 56,
     "US": 92,
-    "SD": 32,
-    "IN": 14
+    "JP": 15
   }
 }
