@@ -205,6 +205,32 @@
       box-shadow: 0 1px 6px rgba(0,0,0,0.06);
       white-space: nowrap;
     }
+
+    /* ── Hover tooltip ── */
+    #tooltip {
+      position: fixed;
+      pointer-events: none;
+      background: rgba(15, 15, 25, 0.82);
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      white-space: nowrap;
+      display: none;
+      z-index: 2000;
+    }
+
+    /* ── Panel sources ── */
+    #panel-sources {
+      font-size: 11px;
+      color: #aaa;
+      line-height: 1.6;
+      border-top: 1px solid #eee;
+      padding-top: 8px;
+    }
+
+    /* ── Smooth fill transitions ── */
+    .leaflet-interactive { transition: fill 0.3s ease; }
   </style>
 </head>
 <body>
@@ -228,6 +254,7 @@
     </div>
     <div id="panel-score-bar"><div id="panel-score-fill"></div></div>
     <div id="panel-desc">Select a country to view signal data.</div>
+    <div id="panel-sources"></div>
   </div>
 
   <div id="rankings">
@@ -236,6 +263,7 @@
   </div>
 
   <button id="rankings-toggle">Rankings</button>
+  <div id="tooltip"></div>
 
   <div id="legend">
     <div id="legend-label">Signal Level</div>
@@ -251,6 +279,8 @@
 <script>
   // ── Active scores: ISO alpha-2 → 0–100, populated from signals.json ────────
   let countryScores = {};
+  let signalData    = {};
+  let lastUpdated   = null;
 
   // ── Color scale ───────────────────────────────────────────────────────────
   const colorScale = d3.scaleLinear()
@@ -258,6 +288,15 @@
     .range(['#d0d0d0', '#e8a090', '#d45040', '#aa2020', '#6b0000']);
 
   function scoreToColor(score) { return colorScale(score); }
+
+  function relativeTime(isoStr) {
+    const diff = Math.floor((Date.now() - new Date(isoStr)) / 60000);
+    if (diff < 1)  return 'just now';
+    if (diff === 1) return '1 minute ago';
+    if (diff < 60) return diff + ' minutes ago';
+    const h = Math.floor(diff / 60);
+    return h === 1 ? '1 hour ago' : h + ' hours ago';
+  }
 
   // ── ISO alpha-2 → display name ─────────────────────────────────────────────
   const ISO_A2_TO_NAME = {
@@ -379,16 +418,23 @@
       onEachFeature(feature, layer) {
         layer.on({
           mouseover(e) {
-            const iso = getCountryISO(feature);
+            const iso   = getCountryISO(feature);
             const score = iso != null ? countryScores[iso] : undefined;
+            const name  = ISO_A2_TO_NAME[iso] || iso || '';
             e.target.setStyle({
               fillColor: score != null ? scoreToColor(score) : '#e0e0e0',
               weight: 1.5,
               color: '#888',
             });
+            const tip = document.getElementById('tooltip');
+            tip.textContent = score != null ? name + ' · ' + score : name;
+            tip.style.display = 'block';
           },
-          mouseout(e)  { geoLayer.resetStyle(e.target); },
-          click()      { openPanel(feature); },
+          mouseout(e) {
+            geoLayer.resetStyle(e.target);
+            document.getElementById('tooltip').style.display = 'none';
+          },
+          click(e) { openPanel(feature, e.target); },
         });
       },
     }).addTo(map);
@@ -401,12 +447,13 @@
       const scores = data.composite || data.scores;
       if (!scores || Object.keys(scores).length === 0) throw new Error('empty');
       countryScores = scores;
+      signalData    = data;
       console.log('countryScores', countryScores);
       if (geoLayer) geoLayer.setStyle(styleFeature);
       renderRankings();
       if (data.updated) {
-        document.getElementById('updated').textContent =
-          'Updated ' + new Date(data.updated).toLocaleString();
+        lastUpdated = data.updated;
+        document.getElementById('updated').textContent = 'Updated ' + relativeTime(data.updated);
       }
     } catch (err) {
       document.getElementById('error-banner').style.display = 'block';
@@ -416,7 +463,7 @@
   // ── Rankings list ──────────────────────────────────────────────────────────
   function renderRankings() {
     const list = document.getElementById('rankings-list');
-    const sorted = Object.entries(countryScores).sort((a, b) => b[1] - a[1]);
+    const sorted = Object.entries(countryScores).filter(([, s]) => s > 0).sort((a, b) => b[1] - a[1]);
     list.innerHTML = '';
     sorted.forEach(([iso, score], i) => {
       const name = ISO_A2_TO_NAME[iso] || iso;
@@ -438,6 +485,7 @@
   const panelScore   = document.getElementById('panel-score');
   const panelFill    = document.getElementById('panel-score-fill');
   const panelDesc    = document.getElementById('panel-desc');
+  const panelSources = document.getElementById('panel-sources');
 
   function openPanelForCountry(iso, name, score) {
     panelCountry.textContent = name;
@@ -453,14 +501,27 @@
       panelFill.style.width      = '0%';
       panelDesc.textContent      = 'No signal data for this country in the current 24h window.';
     }
+    // Sources from signals.json
+    const allSources = new Set();
+    if (signalData.sources && iso) {
+      for (const layer of Object.values(signalData.sources)) {
+        (layer[iso] || []).forEach(f => allSources.add(f));
+      }
+    }
+    panelSources.textContent = allSources.size > 0
+      ? 'Sources: ' + [...allSources].join(', ')
+      : '';
     panel.classList.add('open');
   }
 
-  function openPanel(feature) {
+  function openPanel(feature, layer) {
     const iso   = getCountryISO(feature);
     const name  = ISO_A2_TO_NAME[iso] || iso || 'Unknown';
     const score = iso != null ? countryScores[iso] : undefined;
     openPanelForCountry(iso, name, score);
+    if (layer) {
+      try { map.fitBounds(layer.getBounds(), { padding: [40, 40] }); } catch (_) {}
+    }
   }
 
   document.getElementById('panel-close').addEventListener('click', () => {
@@ -471,6 +532,20 @@
   document.getElementById('rankings-toggle').addEventListener('click', () => {
     document.getElementById('rankings').classList.toggle('visible');
   });
+
+  // ── Tooltip follows cursor ─────────────────────────────────────────────────
+  document.getElementById('map-container').addEventListener('mousemove', e => {
+    const tip = document.getElementById('tooltip');
+    tip.style.left = (e.clientX + 14) + 'px';
+    tip.style.top  = (e.clientY - 32) + 'px';
+  });
+
+  // ── Relative timestamp refresh ─────────────────────────────────────────────
+  setInterval(() => {
+    if (lastUpdated) {
+      document.getElementById('updated').textContent = 'Updated ' + relativeTime(lastUpdated);
+    }
+  }, 60000);
 </script>
 </body>
 </html>
