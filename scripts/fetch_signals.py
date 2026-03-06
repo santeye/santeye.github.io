@@ -33,10 +33,10 @@ THINK_TANK_FEEDS = [
 ]
 
 GOVERNMENT_FEEDS = [
-    ("Congressional Record",       "https://www.congress.gov/rss/congressional-record.xml"),
-    ("GAO Reports",                "https://www.gao.gov/rss/reports.xml"),
-    ("State Dept Press Releases",  "https://www.state.gov/rss-feed/press-releases/feed/"),
-    ("State Dept Sec Remarks",     "https://www.state.gov/rss-feed/secretarys-remarks/feed/"),
+    ("Congressional Record",        "https://www.congress.gov/rss/congressional-record.xml"),
+    ("GAO Reports",                 "https://www.gao.gov/rss/reports.xml"),
+    ("State Dept Press Releases",   "https://www.state.gov/rss-feed/press-releases/feed/"),
+    ("State Dept Sec Remarks",      "https://www.state.gov/rss-feed/secretarys-remarks/feed/"),
     ("State Dept Travel Advisories","https://travel.state.gov/_res/rss/TAsTWs.xml"),
 ]
 
@@ -211,68 +211,113 @@ _PATTERNS = [
 ]
 
 
-def score_article(entry, feed_name, desc_weight=0):
+def load_feeds():
     """
-    Return list of (iso, weight, feed_name) for a single article.
-    title mentions always count at 1x.
-    desc_weight: multiplier for description mentions (0 = skip, 0.5 = half, 1 = full).
+    Returns all feed configs as a list of dicts:
+    [{ 'url', 'name', 'source_type', 'weight' }]
+    weight = desc_weight for description mentions (0.0 for wire/think_tank, 0.5 for government).
     """
-    title = entry.get("title", "")
-    hits = []
-    for pattern, iso in _PATTERNS:
-        if pattern.search(title):
-            hits.append((iso, 1, feed_name))
-    if desc_weight > 0:
-        desc = entry.get("summary", "") or entry.get("description", "")
-        for pattern, iso in _PATTERNS:
-            if pattern.search(desc):
-                hits.append((iso, desc_weight, feed_name))
-    return hits
+    feeds = []
+    for name, url in WIRE_FEEDS:
+        feeds.append({'name': name, 'url': url, 'source_type': 'wire', 'weight': 0.0})
+    for name, url in THINK_TANK_FEEDS:
+        feeds.append({'name': name, 'url': url, 'source_type': 'think_tank', 'weight': 0.0})
+    for name, url in GOVERNMENT_FEEDS:
+        feeds.append({'name': name, 'url': url, 'source_type': 'government', 'weight': 0.5})
+    return feeds
 
 
-def fetch_feed(name, url, desc_weight=0):
-    """Fetch one RSS feed, return list of (iso, weight, feed_name) tuples."""
-    hits = []
+def fetch_feed(feed):
+    """
+    Fetches one RSS feed. feed = { url, name, source_type, weight }.
+    Returns: [{ 'title', 'description', 'published', 'feed_name', 'source_type', 'weight' }]
+    Prints per-feed article count. On failure, prints to stderr and returns [].
+    """
+    articles = []
     try:
-        feed = feedparser.parse(url, request_headers=REQUEST_HEADERS)
-        for entry in feed.entries:
-            hits.extend(score_article(entry, name, desc_weight=desc_weight))
-        total_weight = sum(w for _, w, _ in hits)
-        print("  {}: {} articles, {:.0f} weighted score units".format(
-            name, len(feed.entries), total_weight))
+        parsed = feedparser.parse(feed['url'], request_headers=REQUEST_HEADERS)
+        for entry in parsed.entries:
+            articles.append({
+                'title':       entry.get('title', ''),
+                'description': entry.get('summary', '') or entry.get('description', ''),
+                'published':   entry.get('published', ''),
+                'feed_name':   feed['name'],
+                'source_type': feed['source_type'],
+                'weight':      feed['weight'],
+            })
+        print("  {}: {} articles".format(feed['name'], len(parsed.entries)))
     except Exception as exc:
-        print("  {}: FAILED — {}".format(name, exc), file=sys.stderr)
-    return hits
+        print("  {}: FAILED — {}".format(feed['name'], exc), file=sys.stderr)
+    return articles
 
 
-def hits_to_scores(hits, label=""):
-    """Convert (iso, weight, feed_name) hits to normalized 0-100 scores and sources dict."""
-    weighted_counts = {}
-    sources = {}
-    for iso, weight, feed_name in hits:
-        weighted_counts[iso] = weighted_counts.get(iso, 0) + weight
-        sources.setdefault(iso, set()).add(feed_name)
-    if weighted_counts:
-        top = sorted(weighted_counts.items(), key=lambda x: -x[1])[:10]
-        print("  raw counts ({}): {}".format(
-            label, ", ".join("{}={:.1f}".format(iso, v) for iso, v in top)))
-    threshold = LAYER_THRESHOLDS.get(label, 0)
-    filtered = {iso: v for iso, v in weighted_counts.items() if v >= threshold}
-    print("  {} countries above threshold ({})".format(len(filtered), threshold))
-    min_mentions = 2 if label == "think_tank" else 3
-    scores = normalize(filtered, min_mentions=min_mentions)
-    sources_sorted = {iso: sorted(feeds) for iso, feeds in sources.items() if iso in filtered}
-    return scores, sources_sorted
+def extract_mentions(article, country_lookup):
+    """
+    Takes one article dict, returns { iso: weighted_score }.
+    Title mentions: weight 1.0.
+    Description mentions: weight = article['weight'] (skipped when 0.0).
+    country_lookup = _PATTERNS (pre-compiled regex list).
+    """
+    scores = {}
+    title = article['title']
+    for pattern, iso in country_lookup:
+        if pattern.search(title):
+            scores[iso] = scores.get(iso, 0) + 1.0
+    if article['weight'] > 0:
+        desc = article['description']
+        for pattern, iso in country_lookup:
+            if pattern.search(desc):
+                scores[iso] = scores.get(iso, 0) + article['weight']
+    return scores
+
+
+def aggregate_mentions(articles, country_lookup):
+    """
+    Runs extract_mentions on all articles, sums scores by ISO per source_type.
+    Applies LAYER_THRESHOLDS filter and prints top-10 raw counts per layer.
+    Returns:
+        layer_counts  — { 'wire': {iso: count}, 'think_tank': {iso: count}, 'government': {iso: count} }
+        layer_sources — { 'wire': {iso: [feed_names]}, ... } (filtered to above-threshold isos)
+    """
+    layer_counts = {'wire': {}, 'think_tank': {}, 'government': {}}
+    layer_sources_sets = {'wire': {}, 'think_tank': {}, 'government': {}}
+
+    for article in articles:
+        st = article['source_type']
+        for iso, score in extract_mentions(article, country_lookup).items():
+            layer_counts[st][iso] = layer_counts[st].get(iso, 0) + score
+            layer_sources_sets[st].setdefault(iso, set()).add(article['feed_name'])
+
+    layer_sources = {}
+    for label in ('wire', 'think_tank', 'government'):
+        counts = layer_counts[label]
+        if counts:
+            top = sorted(counts.items(), key=lambda x: -x[1])[:10]
+            print("  raw counts ({}): {}".format(
+                label, ", ".join("{}={:.1f}".format(iso, v) for iso, v in top)))
+        threshold = LAYER_THRESHOLDS[label]
+        filtered = {iso: v for iso, v in counts.items() if v >= threshold}
+        print("  {} countries above threshold ({})".format(len(filtered), threshold))
+        layer_counts[label] = filtered
+        layer_sources[label] = {
+            iso: sorted(feeds)
+            for iso, feeds in layer_sources_sets[label].items()
+            if iso in filtered
+        }
+
+    return layer_counts, layer_sources
 
 
 def normalize(counts, min_mentions=3):
+    """
+    Log normalization with minimum threshold.
+    Returns { iso: 0-100 score }.
+    """
     if not counts:
         return {}
-    # Apply minimum threshold
     filtered = {iso: v for iso, v in counts.items() if v >= min_mentions}
     if not filtered:
         return {}
-    # Log normalization
     log_counts = {iso: math.log(v + 1) for iso, v in filtered.items()}
     lo = min(log_counts.values())
     hi = max(log_counts.values())
@@ -282,68 +327,66 @@ def normalize(counts, min_mentions=3):
             for iso, lv in log_counts.items()}
 
 
-def fetch_layer(feeds, label, desc_weight=0):
-    print("{}:".format(label))
-    all_hits = []
-    for name, url in feeds:
-        all_hits.extend(fetch_feed(name, url, desc_weight=desc_weight))
-    return all_hits
-
-
-def build_composite(layer_scores):
+def build_composite(layers):
     """
-    Weighted blend of layer scores: wire×1 + think_tank×2 + government×3.
-    Missing layers contribute 0. Renormalize to 0-100 with log scale.
+    Blends wire×1 + think_tank×2 + government×3.
+    Missing layers contribute 0. Renormalizes to 0-100 with log scale.
+    layers = { 'wire': {iso: score}, 'think_tank': {iso: score}, 'government': {iso: score} }
+    Returns { iso: score }.
     """
     all_isos = set()
-    for scores in layer_scores.values():
+    for scores in layers.values():
         all_isos.update(scores.keys())
 
     raw = {}
     for iso in all_isos:
         total = 0
         for layer, weight in LAYER_WEIGHTS.items():
-            total += layer_scores.get(layer, {}).get(iso, 0) * weight
+            total += layers.get(layer, {}).get(iso, 0) * weight
         raw[iso] = total
 
     return normalize(raw)
 
 
-def main():
-    layer_hits = {}
-    layer_scores = {}
-    layer_sources = {}
-
-    print("Fetching wire feeds...")
-    layer_hits["wire"] = fetch_layer(WIRE_FEEDS, "wire", desc_weight=0)
-
-    print("Fetching think_tank feeds...")
-    layer_hits["think_tank"] = fetch_layer(THINK_TANK_FEEDS, "think_tank", desc_weight=0)
-
-    print("Fetching government feeds...")
-    layer_hits["government"] = fetch_layer(GOVERNMENT_FEEDS, "government", desc_weight=0.5)
-
-    for layer, hits in layer_hits.items():
-        scores, sources = hits_to_scores(hits, label=layer)
-        layer_scores[layer] = scores
-        layer_sources[layer] = sources
-
-    composite = build_composite(layer_scores)
-
-    # Write output
+def write_output(composite, layers, layer_sources):
+    """
+    Writes data/signals.json in current format.
+    Returns the output path.
+    """
     out_path = Path(__file__).parent.parent / "data" / "signals.json"
     out_path.parent.mkdir(exist_ok=True)
     payload = {
-        "updated": datetime.now(timezone.utc).isoformat(),
-        "layers":  layer_scores,
-        "sources": layer_sources,
+        "updated":   datetime.now(timezone.utc).isoformat(),
+        "layers":    layers,
+        "sources":   layer_sources,
         "composite": composite,
+        "scores":    composite,  # backwards compat: index.html reads data.scores
     }
-    # index.html reads data.scores — keep composite as scores for backwards compat
-    payload["scores"] = composite
     out_path.write_text(json.dumps(payload, indent=2))
+    return out_path
 
-    # Summary
+
+def main():
+    feeds = load_feeds()
+
+    articles = []
+    current_type = None
+    for feed in feeds:
+        if feed['source_type'] != current_type:
+            current_type = feed['source_type']
+            print("Fetching {} feeds...".format(current_type))
+        articles.extend(fetch_feed(feed))
+
+    layer_counts, layer_sources = aggregate_mentions(articles, _PATTERNS)
+
+    layer_scores = {}
+    for layer, counts in layer_counts.items():
+        min_mentions = 2 if layer == 'think_tank' else 3
+        layer_scores[layer] = normalize(counts, min_mentions=min_mentions)
+
+    composite = build_composite(layer_scores)
+    out_path = write_output(composite, layer_scores, layer_sources)
+
     print("\nDone. Composite: {} countries scored.".format(len(composite)))
     top = sorted(composite.items(), key=lambda x: -x[1])[:10]
     print("Top 10 composite:")
