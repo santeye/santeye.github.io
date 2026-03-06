@@ -204,32 +204,32 @@ _PATTERNS = [
 ]
 
 
-def score_article(entry, feed_name):
+def score_article(entry, feed_name, desc_weight=0):
     """
     Return list of (iso, weight, feed_name) for a single article.
-    Weights: title=3, first quarter of description=2, rest of description=1.
+    title mentions always count at 1x.
+    desc_weight: multiplier for description mentions (0 = skip, 0.5 = half, 1 = full).
     """
-    title  = entry.get("title", "")
-    desc   = entry.get("summary", "") or entry.get("description", "")
-    cutoff = max(1, len(desc) // 4)
-    early  = desc[:cutoff]
-    late   = desc[cutoff:]
-
+    title = entry.get("title", "")
     hits = []
     for pattern, iso in _PATTERNS:
-        if pattern.search(title):  hits.append((iso, 3, feed_name))
-        if pattern.search(early):  hits.append((iso, 2, feed_name))
-        if pattern.search(late):   hits.append((iso, 1, feed_name))
+        if pattern.search(title):
+            hits.append((iso, 1, feed_name))
+    if desc_weight > 0:
+        desc = entry.get("summary", "") or entry.get("description", "")
+        for pattern, iso in _PATTERNS:
+            if pattern.search(desc):
+                hits.append((iso, desc_weight, feed_name))
     return hits
 
 
-def fetch_feed(name, url):
+def fetch_feed(name, url, desc_weight=0):
     """Fetch one RSS feed, return list of (iso, weight, feed_name) tuples."""
     hits = []
     try:
         feed = feedparser.parse(url, request_headers=REQUEST_HEADERS)
         for entry in feed.entries:
-            hits.extend(score_article(entry, name))
+            hits.extend(score_article(entry, name, desc_weight=desc_weight))
         total_weight = sum(w for _, w, _ in hits)
         print("  {}: {} articles, {:.0f} weighted score units".format(
             name, len(feed.entries), total_weight))
@@ -238,13 +238,17 @@ def fetch_feed(name, url):
     return hits
 
 
-def hits_to_scores(hits):
+def hits_to_scores(hits, label=""):
     """Convert (iso, weight, feed_name) hits to normalized 0-100 scores and sources dict."""
     weighted_counts = {}
     sources = {}
     for iso, weight, feed_name in hits:
         weighted_counts[iso] = weighted_counts.get(iso, 0) + weight
         sources.setdefault(iso, set()).add(feed_name)
+    if weighted_counts:
+        top = sorted(weighted_counts.items(), key=lambda x: -x[1])[:10]
+        print("  raw counts ({}): {}".format(
+            label, ", ".join("{}={:.1f}".format(iso, v) for iso, v in top)))
     scores = normalize(weighted_counts)
     sources_sorted = {iso: sorted(feeds) for iso, feeds in sources.items()}
     return scores, sources_sorted
@@ -259,11 +263,11 @@ def normalize(counts):
             for i, (iso, _) in enumerate(ranked)}
 
 
-def fetch_layer(feeds, label):
+def fetch_layer(feeds, label, desc_weight=0):
     print("{}:".format(label))
     all_hits = []
     for name, url in feeds:
-        all_hits.extend(fetch_feed(name, url))
+        all_hits.extend(fetch_feed(name, url, desc_weight=desc_weight))
     return all_hits
 
 
@@ -292,16 +296,16 @@ def main():
     layer_sources = {}
 
     print("Fetching wire feeds...")
-    layer_hits["wire"] = fetch_layer(WIRE_FEEDS, "wire")
+    layer_hits["wire"] = fetch_layer(WIRE_FEEDS, "wire", desc_weight=0)
 
     print("Fetching think_tank feeds...")
-    layer_hits["think_tank"] = fetch_layer(THINK_TANK_FEEDS, "think_tank")
+    layer_hits["think_tank"] = fetch_layer(THINK_TANK_FEEDS, "think_tank", desc_weight=0)
 
     print("Fetching government feeds...")
-    layer_hits["government"] = fetch_layer(GOVERNMENT_FEEDS, "government")
+    layer_hits["government"] = fetch_layer(GOVERNMENT_FEEDS, "government", desc_weight=0.5)
 
     for layer, hits in layer_hits.items():
-        scores, sources = hits_to_scores(hits)
+        scores, sources = hits_to_scores(hits, label=layer)
         layer_scores[layer] = scores
         layer_sources[layer] = sources
 
