@@ -5,6 +5,7 @@ Fetch RSS feeds, count country mentions, write data/signals.json.
 """
 
 import json
+import math
 import re
 import sys
 from datetime import datetime, timezone
@@ -217,9 +218,11 @@ def fetch_feed(name, url):
 def normalize(counts):
     if not counts:
         return {}
-    lo, hi = min(counts.values()), max(counts.values())
+    log_counts = {iso: math.log(v + 1) for iso, v in counts.items()}
+    lo = min(log_counts.values())
+    hi = max(log_counts.values())
     span = hi - lo or 1
-    return {iso: round((v - lo) / span * 100) for iso, v in counts.items()}
+    return {iso: round((v - lo) / span * 100) for iso, v in log_counts.items()}
 
 
 def main():
