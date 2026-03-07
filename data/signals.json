@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-07T22:49:45.571086+00:00",
+  "updated": "2026-03-07T23:25:12.277663+00:00",
   "layers": {
     "wire": {
       "HU": 0,
@@ -10,16 +10,15 @@
       "IL": 66,
       "LK": 14,
       "LB": 31,
-      "IN": 23,
+      "IN": 28,
       "PK": 14,
-      "CU": 27,
+      "CU": 28,
       "AF": 0,
-      "KW": 0,
       "VE": 8,
-      "FR": 0,
-      "PS": 23,
+      "FR": 8,
+      "PS": 24,
       "TR": 0,
-      "US": 0
+      "US": 8
     },
     "think_tank": {
       "IR": 100,
@@ -30,35 +29,35 @@
       "MX": 0
     },
     "government": {
-      "AR": 12,
+      "SV": 0,
+      "CL": 5,
+      "AR": 14,
       "US": 100,
-      "CL": 0,
       "AZ": 5,
-      "IR": 36,
+      "IR": 39,
       "AE": 9,
       "SA": 0,
-      "KW": 16,
-      "QA": 5,
+      "KW": 17,
+      "QA": 0,
       "OM": 5,
       "KP": 0,
-      "RU": 12,
-      "CN": 24,
+      "RU": 9,
+      "CN": 27,
       "IQ": 0,
       "RW": 0,
-      "CD": 24,
-      "FR": 0,
+      "CD": 17,
       "BG": 0,
       "VE": 5,
-      "UA": 5,
+      "UA": 0,
       "JP": 5,
       "YE": 0,
       "SY": 5,
-      "GN": 24,
+      "GN": 27,
       "ML": 0,
       "NE": 5,
-      "CO": 5,
-      "SD": 12,
-      "LY": 5,
+      "CO": 0,
+      "SD": 9,
+      "LY": 0,
       "MM": 0
     }
   },
@@ -130,10 +129,6 @@
         "AFP",
         "AP"
       ],
-      "KW": [
-        "AP",
-        "Reuters"
-      ],
       "VE": [
         "AP",
         "BBC",
@@ -153,6 +148,7 @@
         "Reuters"
       ],
       "US": [
+        "AFP",
         "Al Jazeera",
         "BBC",
         "Reuters"
@@ -179,17 +175,22 @@
       ]
     },
     "government": {
+      "SV": [
+        "State Dept Press Releases",
+        "State Dept Sec Remarks",
+        "State Dept Travel Advisories"
+      ],
+      "CL": [
+        "State Dept Press Releases",
+        "State Dept Sec Remarks",
+        "State Dept Travel Advisories"
+      ],
       "AR": [
         "State Dept Press Releases",
         "State Dept Sec Remarks",
         "State Dept Travel Advisories"
       ],
       "US": [
-        "State Dept Press Releases",
-        "State Dept Sec Remarks",
-        "State Dept Travel Advisories"
-      ],
-      "CL": [
         "State Dept Press Releases",
         "State Dept Sec Remarks",
         "State Dept Travel Advisories"
@@ -256,11 +257,6 @@
         "State Dept Sec Remarks",
         "State Dept Travel Advisories"
       ],
-      "FR": [
-        "State Dept Press Releases",
-        "State Dept Sec Remarks",
-        "State Dept Travel Advisories"
-      ],
       "BG": [
         "State Dept Sec Remarks",
         "State Dept Travel Advisories"
@@ -307,61 +303,59 @@
     }
   },
   "composite": {
-    "US": 91,
-    "IL": 45,
-    "PK": 0,
-    "LY": 2,
-    "AE": 19,
-    "LK": 0,
-    "UA": 77,
-    "QA": 2,
-    "KW": 36,
-    "CN": 66,
-    "RU": 69,
-    "PS": 14,
-    "GN": 48,
+    "CU": 30,
     "IR": 100,
-    "IN": 14,
-    "VE": 14,
-    "OM": 2,
-    "CO": 2,
-    "AR": 27,
-    "CD": 48,
-    "NE": 2,
-    "CU": 19,
-    "SY": 2,
-    "AZ": 2,
-    "JP": 2,
-    "SD": 27,
-    "LB": 23
+    "OM": 15,
+    "IN": 30,
+    "LB": 33,
+    "RU": 72,
+    "KW": 46,
+    "CN": 72,
+    "LK": 13,
+    "AZ": 15,
+    "SD": 30,
+    "JP": 15,
+    "AR": 41,
+    "NE": 15,
+    "VE": 26,
+    "AE": 30,
+    "SY": 15,
+    "CL": 15,
+    "FR": 0,
+    "US": 92,
+    "IL": 52,
+    "UA": 77,
+    "PS": 27,
+    "CD": 46,
+    "GN": 58,
+    "PK": 13
   },
   "scores": {
-    "US": 91,
-    "IL": 45,
-    "PK": 0,
-    "LY": 2,
-    "AE": 19,
-    "LK": 0,
-    "UA": 77,
-    "QA": 2,
-    "KW": 36,
-    "CN": 66,
-    "RU": 69,
-    "PS": 14,
-    "GN": 48,
+    "CU": 30,
     "IR": 100,
-    "IN": 14,
-    "VE": 14,
-    "OM": 2,
-    "CO": 2,
-    "AR": 27,
-    "CD": 48,
-    "NE": 2,
-    "CU": 19,
-    "SY": 2,
-    "AZ": 2,
-    "JP": 2,
-    "SD": 27,
-    "LB": 23
+    "OM": 15,
+    "IN": 30,
+    "LB": 33,
+    "RU": 72,
+    "KW": 46,
+    "CN": 72,
+    "LK": 13,
+    "AZ": 15,
+    "SD": 30,
+    "JP": 15,
+    "AR": 41,
+    "NE": 15,
+    "VE": 26,
+    "AE": 30,
+    "SY": 15,
+    "CL": 15,
+    "FR": 0,
+    "US": 92,
+    "IL": 52,
+    "UA": 77,
+    "PS": 27,
+    "CD": 46,
+    "GN": 58,
+    "PK": 13
   }
 }
