@@ -1,22 +1,21 @@
 {
-  "updated": "2026-03-09T22:31:44.118127+00:00",
+  "updated": "2026-03-09T23:30:14.524383+00:00",
   "layers": {
     "wire": {
       "IR": 100,
-      "AU": 13,
-      "LB": 27,
-      "IL": 56,
-      "RU": 27,
-      "CN": 30,
+      "LB": 23,
+      "IL": 52,
+      "AU": 23,
+      "RU": 26,
+      "CN": 26,
       "LK": 0,
       "PK": 13,
-      "UA": 23,
-      "US": 0,
+      "UA": 26,
       "SA": 0,
-      "IN": 23,
       "PS": 13,
-      "FR": 0,
+      "FR": 7,
       "TR": 7,
+      "IN": 13,
       "CA": 7
     },
     "think_tank": {
@@ -29,46 +28,38 @@
     },
     "government": {
       "US": 100,
-      "SV": 5,
-      "TN": 0,
-      "IR": 50,
-      "IQ": 0,
+      "SV": 0,
+      "LK": 0,
+      "IR": 59,
       "CL": 18,
-      "AE": 10,
+      "AE": 0,
       "SA": 0,
-      "IL": 10,
-      "KW": 5,
+      "IL": 12,
+      "KW": 0,
       "QA": 0,
-      "OM": 5,
-      "AF": 0,
-      "RU": 14,
-      "SD": 21,
+      "AF": 18,
+      "RU": 18,
+      "SD": 31,
       "AR": 0,
-      "CD": 14,
-      "BG": 0,
-      "VE": 5,
-      "UA": 0,
-      "CN": 25,
-      "YE": 0,
-      "SY": 0,
-      "GN": 28,
-      "ML": 0,
-      "NE": 5,
-      "CO": 0,
-      "LY": 0,
-      "MM": 0
+      "EC": 7,
+      "CD": 0,
+      "BG": 12,
+      "CA": 7,
+      "FR": 7,
+      "CN": 12,
+      "JP": 0,
+      "CF": 0,
+      "ES": 0,
+      "GN": 31,
+      "YE": 7,
+      "NE": 7,
+      "ZA": 0,
+      "CZ": 7
     }
   },
   "sources": {
     "wire": {
       "IR": [
-        "AFP",
-        "AP",
-        "Al Jazeera",
-        "BBC",
-        "Reuters"
-      ],
-      "AU": [
         "AFP",
         "AP",
         "Al Jazeera",
@@ -85,6 +76,13 @@
         "AFP",
         "AP",
         "Al Jazeera",
+        "Reuters"
+      ],
+      "AU": [
+        "AFP",
+        "AP",
+        "Al Jazeera",
+        "BBC",
         "Reuters"
       ],
       "RU": [
@@ -112,19 +110,9 @@
         "Al Jazeera",
         "Reuters"
       ],
-      "US": [
-        "AFP",
-        "AP",
-        "Al Jazeera"
-      ],
       "SA": [
         "AFP",
         "AP",
-        "Reuters"
-      ],
-      "IN": [
-        "AP",
-        "BBC",
         "Reuters"
       ],
       "PS": [
@@ -134,12 +122,17 @@
         "Reuters"
       ],
       "FR": [
+        "AFP",
         "AP",
         "Al Jazeera",
         "Reuters"
       ],
       "TR": [
         "AFP",
+        "Reuters"
+      ],
+      "IN": [
+        "BBC",
         "Reuters"
       ],
       "CA": [
@@ -181,17 +174,13 @@
         "State Dept Sec Remarks",
         "State Dept Travel Advisories"
       ],
-      "TN": [
+      "LK": [
         "GAO Reports",
         "State Dept Travel Advisories"
       ],
       "IR": [
         "State Dept Press Releases",
         "State Dept Sec Remarks",
-        "State Dept Travel Advisories"
-      ],
-      "IQ": [
-        "State Dept Press Releases",
         "State Dept Travel Advisories"
       ],
       "CL": [
@@ -224,10 +213,6 @@
         "State Dept Sec Remarks",
         "State Dept Travel Advisories"
       ],
-      "OM": [
-        "State Dept Press Releases",
-        "State Dept Travel Advisories"
-      ],
       "AF": [
         "State Dept Press Releases",
         "State Dept Sec Remarks",
@@ -248,6 +233,11 @@
         "State Dept Sec Remarks",
         "State Dept Travel Advisories"
       ],
+      "EC": [
+        "State Dept Press Releases",
+        "State Dept Sec Remarks",
+        "State Dept Travel Advisories"
+      ],
       "CD": [
         "State Dept Sec Remarks",
         "State Dept Travel Advisories"
@@ -256,11 +246,11 @@
         "State Dept Sec Remarks",
         "State Dept Travel Advisories"
       ],
-      "VE": [
+      "CA": [
         "State Dept Sec Remarks",
         "State Dept Travel Advisories"
       ],
-      "UA": [
+      "FR": [
         "State Dept Sec Remarks",
         "State Dept Travel Advisories"
       ],
@@ -268,80 +258,81 @@
         "State Dept Sec Remarks",
         "State Dept Travel Advisories"
       ],
-      "YE": [
+      "JP": [
+        "State Dept Sec Remarks",
         "State Dept Travel Advisories"
       ],
-      "SY": [
+      "CF": [
+        "State Dept Travel Advisories"
+      ],
+      "ES": [
         "State Dept Travel Advisories"
       ],
       "GN": [
         "State Dept Travel Advisories"
       ],
-      "ML": [
+      "YE": [
         "State Dept Travel Advisories"
       ],
       "NE": [
         "State Dept Travel Advisories"
       ],
-      "CO": [
+      "ZA": [
         "State Dept Travel Advisories"
       ],
-      "LY": [
-        "State Dept Travel Advisories"
-      ],
-      "MM": [
+      "CZ": [
         "State Dept Travel Advisories"
       ]
     }
   },
   "composite": {
-    "SD": 52,
-    "LB": 31,
-    "KW": 17,
-    "PK": 14,
-    "CA": 0,
-    "AE": 34,
-    "CD": 42,
-    "UA": 71,
-    "IR": 100,
-    "OM": 17,
-    "AU": 14,
-    "PS": 14,
-    "CL": 48,
-    "VE": 17,
-    "IL": 59,
+    "GN": 60,
+    "CA": 31,
+    "CZ": 25,
+    "AU": 27,
+    "EC": 25,
+    "US": 89,
     "TR": 0,
-    "CN": 70,
-    "US": 90,
-    "NE": 17,
-    "SV": 17,
-    "RU": 73,
-    "GN": 59,
-    "IN": 27
+    "YE": 25,
+    "IL": 59,
+    "FR": 31,
+    "IN": 14,
+    "PK": 14,
+    "AF": 47,
+    "CN": 59,
+    "CL": 47,
+    "PS": 14,
+    "NE": 25,
+    "BG": 37,
+    "SD": 60,
+    "RU": 74,
+    "UA": 70,
+    "LB": 27,
+    "IR": 100
   },
   "scores": {
-    "SD": 52,
-    "LB": 31,
-    "KW": 17,
-    "PK": 14,
-    "CA": 0,
-    "AE": 34,
-    "CD": 42,
-    "UA": 71,
-    "IR": 100,
-    "OM": 17,
-    "AU": 14,
-    "PS": 14,
-    "CL": 48,
-    "VE": 17,
-    "IL": 59,
+    "GN": 60,
+    "CA": 31,
+    "CZ": 25,
+    "AU": 27,
+    "EC": 25,
+    "US": 89,
     "TR": 0,
-    "CN": 70,
-    "US": 90,
-    "NE": 17,
-    "SV": 17,
-    "RU": 73,
-    "GN": 59,
-    "IN": 27
+    "YE": 25,
+    "IL": 59,
+    "FR": 31,
+    "IN": 14,
+    "PK": 14,
+    "AF": 47,
+    "CN": 59,
+    "CL": 47,
+    "PS": 14,
+    "NE": 25,
+    "BG": 37,
+    "SD": 60,
+    "RU": 74,
+    "UA": 70,
+    "LB": 27,
+    "IR": 100
   }
 }
