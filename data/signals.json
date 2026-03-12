@@ -1,17 +1,18 @@
 {
-  "updated": "2026-03-12T22:55:43.959127+00:00",
+  "updated": "2026-03-12T23:31:33.110715+00:00",
   "layers": {
     "wire": {
       "IR": 100,
       "GE": 0,
-      "RU": 7,
       "AU": 0,
-      "IL": 52,
+      "RU": 7,
+      "IL": 51,
       "UA": 23,
-      "CN": 33,
-      "NP": 0,
-      "IN": 23,
+      "CN": 30,
       "IQ": 7,
+      "NP": 0,
+      "QA": 0,
+      "IN": 7,
       "AE": 0,
       "FR": 7,
       "LB": 0
@@ -32,22 +33,23 @@
       "AE": 0,
       "FR": 5,
       "GB": 0,
-      "IR": 48,
-      "AF": 21,
+      "IR": 44,
+      "AF": 20,
       "IQ": 0,
-      "RU": 5,
-      "SD": 14,
-      "CD": 14,
+      "RU": 9,
+      "SD": 16,
+      "CD": 13,
       "BG": 0,
       "YE": 0,
       "SY": 0,
-      "GN": 28,
+      "GN": 25,
       "ML": 0,
       "NE": 5,
-      "CO": 0,
-      "LY": 0,
+      "UA": 0,
+      "CO": 5,
+      "LY": 5,
       "MM": 0,
-      "CN": 21
+      "CN": 20
     }
   },
   "sources": {
@@ -62,13 +64,13 @@
       "GE": [
         "AP"
       ],
-      "RU": [
-        "AP",
-        "Reuters"
-      ],
       "AU": [
         "AFP",
         "AP"
+      ],
+      "RU": [
+        "AP",
+        "Reuters"
       ],
       "IL": [
         "AFP",
@@ -89,17 +91,21 @@
         "BBC",
         "Reuters"
       ],
+      "IQ": [
+        "Al Jazeera",
+        "Reuters"
+      ],
       "NP": [
         "Al Jazeera",
         "BBC",
         "Reuters"
       ],
-      "IN": [
+      "QA": [
+        "AFP",
         "Al Jazeera",
         "Reuters"
       ],
-      "IQ": [
-        "Al Jazeera",
+      "IN": [
         "Reuters"
       ],
       "AE": [
@@ -209,6 +215,9 @@
       "NE": [
         "State Dept Travel Advisories"
       ],
+      "UA": [
+        "State Dept Travel Advisories"
+      ],
       "CO": [
         "State Dept Travel Advisories"
       ],
@@ -224,37 +233,41 @@
     }
   },
   "composite": {
-    "CN": 62,
-    "SD": 42,
-    "CD": 42,
-    "IR": 100,
-    "GN": 59,
-    "TR": 43,
-    "IL": 56,
-    "IN": 27,
-    "NE": 17,
-    "RU": 62,
-    "AF": 52,
     "UA": 71,
+    "AF": 51,
+    "SD": 45,
+    "CO": 17,
+    "IQ": 0,
+    "IL": 56,
+    "IN": 0,
+    "IR": 100,
+    "GN": 56,
+    "CN": 61,
+    "CD": 40,
+    "LY": 17,
+    "TR": 43,
+    "RU": 65,
+    "US": 91,
     "FR": 26,
-    "US": 90,
-    "IQ": 0
+    "NE": 17
   },
   "scores": {
-    "CN": 62,
-    "SD": 42,
-    "CD": 42,
-    "IR": 100,
-    "GN": 59,
-    "TR": 43,
-    "IL": 56,
-    "IN": 27,
-    "NE": 17,
-    "RU": 62,
-    "AF": 52,
     "UA": 71,
+    "AF": 51,
+    "SD": 45,
+    "CO": 17,
+    "IQ": 0,
+    "IL": 56,
+    "IN": 0,
+    "IR": 100,
+    "GN": 56,
+    "CN": 61,
+    "CD": 40,
+    "LY": 17,
+    "TR": 43,
+    "RU": 65,
+    "US": 91,
     "FR": 26,
-    "US": 90,
-    "IQ": 0
+    "NE": 17
   }
 }
