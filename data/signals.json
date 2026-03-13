@@ -1,31 +1,31 @@
 {
-  "updated": "2026-03-13T14:11:10.477725+00:00",
+  "updated": "2026-03-13T15:09:30.549146+00:00",
   "layers": {
     "wire": {
       "IR": 100,
-      "LB": 25,
+      "LB": 20,
       "NP": 0,
-      "AU": 0,
-      "IQ": 33,
+      "AU": 8,
+      "IQ": 29,
       "LK": 0,
       "RU": 14,
-      "IL": 44,
-      "FR": 14,
-      "CN": 44,
+      "IL": 42,
+      "CU": 0,
+      "FR": 20,
+      "CN": 47,
+      "IN": 0,
       "JP": 0,
-      "TW": 0,
+      "TW": 8,
       "PS": 14,
       "UA": 8
     },
     "think_tank": {
-      "UA": 56,
       "IR": 100,
-      "TR": 22,
-      "US": 0,
-      "IL": 12,
-      "RU": 36,
-      "CN": 0,
-      "MX": 0
+      "UA": 46,
+      "TR": 10,
+      "IL": 0,
+      "RU": 25,
+      "CN": 0
     },
     "government": {
       "US": 100,
@@ -33,7 +33,7 @@
       "AE": 0,
       "FR": 5,
       "GB": 0,
-      "IR": 48,
+      "IR": 47,
       "AF": 21,
       "IQ": 0,
       "RU": 5,
@@ -42,10 +42,10 @@
       "BG": 0,
       "YE": 0,
       "SY": 0,
-      "GN": 28,
+      "GN": 27,
       "ML": 0,
       "NE": 5,
-      "CO": 0,
+      "CO": 5,
       "LY": 0,
       "MM": 0,
       "CN": 21
@@ -73,7 +73,8 @@
       ],
       "AU": [
         "AFP",
-        "AP"
+        "AP",
+        "Al Jazeera"
       ],
       "IQ": [
         "AP",
@@ -96,6 +97,11 @@
         "Al Jazeera",
         "Reuters"
       ],
+      "CU": [
+        "AP",
+        "BBC",
+        "Reuters"
+      ],
       "FR": [
         "AFP",
         "AP",
@@ -104,7 +110,12 @@
       ],
       "CN": [
         "AFP",
+        "AP",
         "Al Jazeera",
+        "BBC",
+        "Reuters"
+      ],
+      "IN": [
         "BBC",
         "Reuters"
       ],
@@ -125,16 +136,13 @@
       ]
     },
     "think_tank": {
-      "UA": [
-        "Atlantic Council"
-      ],
       "IR": [
         "Atlantic Council"
       ],
-      "TR": [
+      "UA": [
         "Atlantic Council"
       ],
-      "US": [
+      "TR": [
         "Atlantic Council"
       ],
       "IL": [
@@ -144,9 +152,6 @@
         "Atlantic Council"
       ],
       "CN": [
-        "Atlantic Council"
-      ],
-      "MX": [
         "Atlantic Council"
       ]
     },
@@ -233,39 +238,45 @@
     }
   },
   "composite": {
-    "US": 88,
-    "RU": 57,
-    "CN": 58,
-    "TR": 32,
-    "GN": 51,
-    "AF": 43,
-    "IQ": 24,
-    "SD": 31,
+    "TW": 0,
+    "CD": 40,
+    "FR": 36,
+    "SD": 40,
+    "LB": 22,
+    "IQ": 31,
+    "CO": 15,
+    "CN": 65,
+    "NE": 15,
+    "AU": 0,
+    "PS": 13,
     "IR": 100,
-    "IL": 45,
-    "PS": 0,
+    "TR": 22,
     "UA": 62,
-    "LB": 16,
-    "FR": 20,
-    "NE": 2,
-    "CD": 31
+    "US": 90,
+    "AF": 50,
+    "IL": 40,
+    "GN": 57,
+    "RU": 56
   },
   "scores": {
-    "US": 88,
-    "RU": 57,
-    "CN": 58,
-    "TR": 32,
-    "GN": 51,
-    "AF": 43,
-    "IQ": 24,
-    "SD": 31,
+    "TW": 0,
+    "CD": 40,
+    "FR": 36,
+    "SD": 40,
+    "LB": 22,
+    "IQ": 31,
+    "CO": 15,
+    "CN": 65,
+    "NE": 15,
+    "AU": 0,
+    "PS": 13,
     "IR": 100,
-    "IL": 45,
-    "PS": 0,
+    "TR": 22,
     "UA": 62,
-    "LB": 16,
-    "FR": 20,
-    "NE": 2,
-    "CD": 31
+    "US": 90,
+    "AF": 50,
+    "IL": 40,
+    "GN": 57,
+    "RU": 56
   }
 }
