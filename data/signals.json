@@ -1,22 +1,19 @@
 {
-  "updated": "2026-03-14T04:21:44.162096+00:00",
+  "updated": "2026-03-14T05:31:41.398094+00:00",
   "layers": {
     "wire": {
       "IR": 100,
-      "LB": 35,
-      "NP": 0,
+      "LB": 34,
       "UA": 24,
       "RU": 19,
-      "IQ": 31,
-      "IL": 43,
+      "IQ": 28,
+      "IL": 45,
       "CU": 0,
       "CN": 31,
-      "FR": 8,
+      "FR": 14,
       "SA": 8,
-      "IN": 8,
-      "BR": 8,
-      "CA": 0,
-      "PS": 0
+      "IN": 14,
+      "BR": 8
     },
     "think_tank": {
       "UA": 46,
@@ -31,6 +28,7 @@
       "SV": 0,
       "TN": 0,
       "HN": 0,
+      "SN": 9,
       "CM": 0,
       "NG": 0,
       "GN": 27,
@@ -68,11 +66,6 @@
         "AFP",
         "AP",
         "Al Jazeera",
-        "BBC",
-        "Reuters"
-      ],
-      "NP": [
-        "AP",
         "BBC",
         "Reuters"
       ],
@@ -127,14 +120,6 @@
       "BR": [
         "Al Jazeera",
         "Reuters"
-      ],
-      "CA": [
-        "AFP",
-        "Reuters"
-      ],
-      "PS": [
-        "Al Jazeera",
-        "Reuters"
       ]
     },
     "think_tank": {
@@ -175,6 +160,10 @@
         "State Dept Travel Advisories"
       ],
       "HN": [
+        "State Dept Press Releases",
+        "State Dept Travel Advisories"
+      ],
+      "SN": [
         "State Dept Press Releases",
         "State Dept Travel Advisories"
       ],
@@ -264,47 +253,49 @@
     }
   },
   "composite": {
-    "RU": 62,
-    "CN": 59,
-    "SA": 0,
-    "CO": 15,
-    "US": 91,
-    "UA": 66,
-    "FR": 25,
-    "GN": 57,
-    "IN": 0,
-    "IR": 100,
-    "LB": 36,
-    "TR": 22,
     "CD": 44,
+    "LY": 15,
+    "GN": 57,
     "SD": 44,
+    "IR": 100,
+    "SN": 29,
+    "US": 91,
+    "SA": 0,
+    "IQ": 30,
+    "IL": 42,
+    "FR": 31,
+    "LB": 35,
     "BR": 0,
     "AF": 29,
-    "IQ": 33,
-    "IL": 41,
+    "IN": 13,
+    "RU": 62,
+    "TR": 22,
     "NE": 29,
-    "LY": 15
+    "CO": 15,
+    "UA": 66,
+    "CN": 59
   },
   "scores": {
-    "RU": 62,
-    "CN": 59,
-    "SA": 0,
-    "CO": 15,
-    "US": 91,
-    "UA": 66,
-    "FR": 25,
-    "GN": 57,
-    "IN": 0,
-    "IR": 100,
-    "LB": 36,
-    "TR": 22,
     "CD": 44,
+    "LY": 15,
+    "GN": 57,
     "SD": 44,
+    "IR": 100,
+    "SN": 29,
+    "US": 91,
+    "SA": 0,
+    "IQ": 30,
+    "IL": 42,
+    "FR": 31,
+    "LB": 35,
     "BR": 0,
     "AF": 29,
-    "IQ": 33,
-    "IL": 41,
+    "IN": 13,
+    "RU": 62,
+    "TR": 22,
     "NE": 29,
-    "LY": 15
+    "CO": 15,
+    "UA": 66,
+    "CN": 59
   }
 }
