@@ -1,26 +1,27 @@
 {
-  "updated": "2026-03-15T02:36:37.071596+00:00",
+  "updated": "2026-03-15T05:07:05.535925+00:00",
   "layers": {
     "wire": {
       "IR": 100,
-      "IQ": 29,
-      "LB": 39,
-      "IL": 36,
-      "UA": 25,
+      "IQ": 32,
       "AE": 8,
+      "IL": 36,
+      "LB": 36,
       "AU": 0,
-      "RU": 14,
+      "UA": 32,
+      "RU": 20,
       "PK": 0,
-      "BR": 8,
-      "CU": 8,
-      "CN": 20,
-      "FR": 14,
+      "BR": 0,
+      "CN": 24,
+      "TW": 0,
+      "FR": 8,
+      "TR": 0,
+      "SA": 14,
       "VE": 8,
       "IN": 14,
       "KR": 0,
-      "JP": 8,
-      "SA": 8,
-      "PS": 14
+      "JP": 14,
+      "PS": 0
     },
     "think_tank": {
       "UA": 46,
@@ -35,27 +36,28 @@
       "SV": 0,
       "TN": 0,
       "HN": 0,
+      "SN": 10,
       "CM": 0,
       "NG": 0,
-      "GN": 29,
+      "GN": 30,
       "RW": 0,
       "CD": 17,
-      "NE": 9,
+      "NE": 10,
       "AE": 0,
       "FR": 5,
       "GB": 0,
-      "IR": 44,
-      "AF": 9,
+      "IR": 45,
+      "AF": 10,
       "RU": 5,
-      "SD": 13,
+      "SD": 14,
       "BG": 0,
       "YE": 0,
       "SY": 0,
       "ML": 0,
-      "CO": 5,
+      "CO": 0,
       "LY": 0,
       "MM": 0,
-      "CN": 20
+      "CN": 21
     }
   },
   "sources": {
@@ -72,11 +74,10 @@
         "BBC",
         "Reuters"
       ],
-      "LB": [
+      "AE": [
         "AFP",
         "AP",
         "Al Jazeera",
-        "BBC",
         "Reuters"
       ],
       "IL": [
@@ -84,23 +85,23 @@
         "AP",
         "Reuters"
       ],
-      "UA": [
+      "LB": [
         "AFP",
         "AP",
-        "Al Jazeera",
         "BBC",
-        "Reuters"
-      ],
-      "AE": [
-        "AFP",
-        "AP",
-        "Al Jazeera",
         "Reuters"
       ],
       "AU": [
         "AFP",
         "AP",
         "Al Jazeera"
+      ],
+      "UA": [
+        "AFP",
+        "AP",
+        "Al Jazeera",
+        "BBC",
+        "Reuters"
       ],
       "RU": [
         "AP",
@@ -117,19 +118,28 @@
         "Al Jazeera",
         "Reuters"
       ],
-      "CU": [
-        "AP",
-        "Al Jazeera",
-        "Reuters"
-      ],
       "CN": [
         "AFP",
+        "AP",
+        "Reuters"
+      ],
+      "TW": [
         "AP",
         "Reuters"
       ],
       "FR": [
         "AFP",
         "AP",
+        "Reuters"
+      ],
+      "TR": [
+        "AP",
+        "Al Jazeera",
+        "Reuters"
+      ],
+      "SA": [
+        "AFP",
+        "Al Jazeera",
         "Reuters"
       ],
       "VE": [
@@ -144,15 +154,10 @@
         "Reuters"
       ],
       "JP": [
-        "Reuters"
-      ],
-      "SA": [
         "AFP",
-        "Al Jazeera",
         "Reuters"
       ],
       "PS": [
-        "AFP",
         "Al Jazeera",
         "Reuters"
       ]
@@ -195,6 +200,10 @@
         "State Dept Travel Advisories"
       ],
       "HN": [
+        "State Dept Press Releases",
+        "State Dept Travel Advisories"
+      ],
+      "SN": [
         "State Dept Press Releases",
         "State Dept Travel Advisories"
       ],
@@ -281,55 +290,49 @@
     }
   },
   "composite": {
-    "LB": 39,
-    "IQ": 31,
-    "GN": 59,
-    "CO": 15,
-    "FR": 31,
-    "IL": 36,
-    "BR": 0,
-    "IN": 13,
     "IR": 100,
-    "NE": 29,
-    "SD": 39,
-    "CU": 0,
-    "PS": 13,
-    "UA": 66,
-    "AE": 0,
-    "RU": 56,
-    "US": 91,
+    "IN": 13,
+    "JP": 13,
+    "US": 90,
     "TR": 22,
-    "AF": 29,
     "CD": 45,
+    "AF": 32,
+    "SN": 32,
+    "GN": 60,
+    "FR": 25,
+    "IL": 36,
+    "SD": 40,
+    "RU": 58,
+    "UA": 68,
     "VE": 0,
-    "JP": 0,
-    "SA": 0,
-    "CN": 57
+    "LB": 36,
+    "AE": 0,
+    "CN": 59,
+    "NE": 32,
+    "IQ": 33,
+    "SA": 13
   },
   "scores": {
-    "LB": 39,
-    "IQ": 31,
-    "GN": 59,
-    "CO": 15,
-    "FR": 31,
-    "IL": 36,
-    "BR": 0,
-    "IN": 13,
     "IR": 100,
-    "NE": 29,
-    "SD": 39,
-    "CU": 0,
-    "PS": 13,
-    "UA": 66,
-    "AE": 0,
-    "RU": 56,
-    "US": 91,
+    "IN": 13,
+    "JP": 13,
+    "US": 90,
     "TR": 22,
-    "AF": 29,
     "CD": 45,
+    "AF": 32,
+    "SN": 32,
+    "GN": 60,
+    "FR": 25,
+    "IL": 36,
+    "SD": 40,
+    "RU": 58,
+    "UA": 68,
     "VE": 0,
-    "JP": 0,
-    "SA": 0,
-    "CN": 57
+    "LB": 36,
+    "AE": 0,
+    "CN": 59,
+    "NE": 32,
+    "IQ": 33,
+    "SA": 13
   }
 }
