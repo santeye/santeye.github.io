@@ -8,14 +8,13 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:       #1a1c20;
-      --card:     #1f2227;
-      --border:   #2e3138;
-      --text:     #e2e4e8;
-      --muted:    #6b7280;
-      --accent:   #4ade80;
-      --sans:     system-ui, -apple-system, sans-serif;
-      --mono:     ui-monospace, "SFMono-Regular", Menlo, monospace;
+      --bg:      #2c2c2e;
+      --hdr:     #232324;
+      --sep:     #3a3a3c;
+      --text:    #f5f5f7;
+      --muted:   #98989f;
+      --accent:  #4ade80;
+      --sans:    system-ui, -apple-system, sans-serif;
     }
 
     html, body {
@@ -23,40 +22,33 @@
       color: var(--text);
       font-family: var(--sans);
       font-size: 13px;
-      line-height: 1.65;
+      line-height: 1.6;
       min-height: 100vh;
     }
 
     a { color: inherit; text-decoration: none; }
-
-    /* ── Layout ── */
-    .outer {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 40px 28px 80px;
-    }
+    a:hover { text-decoration: underline; }
 
     /* ── Header ── */
     header {
+      background: var(--hdr);
+      border-bottom: 1px solid var(--sep);
       display: flex;
       align-items: baseline;
+      gap: 10px 14px;
       flex-wrap: wrap;
-      gap: 10px 16px;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 18px;
-      margin-bottom: 28px;
+      padding: 14px 28px;
     }
 
     header h1 {
       font-size: 18px;
       font-weight: normal;
       color: var(--accent);
-      font-family: var(--sans);
-      letter-spacing: 0.04em;
+      letter-spacing: 0.02em;
       flex-shrink: 0;
     }
 
-    header .fullname {
+    header > span:first-of-type {
       font-size: 13px;
       color: var(--muted);
       flex: 1;
@@ -69,173 +61,165 @@
       white-space: nowrap;
     }
 
-    /* ── Feed ── */
-    #feed {
-      display: flex;
-      flex-direction: column;
+    /* ── Outer ── */
+    .outer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 28px 80px;
+    }
+
+    /* ── Status ── */
+    #status {
+      color: var(--muted);
+      font-size: 13px;
+      padding: 24px 0;
+    }
+    #status.error { color: #f87171; }
+
+    /* ── Month header ── */
+    .month-header {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 24px 16px 8px;
+      border-bottom: 1px solid var(--sep);
     }
 
     /* ── Feed item ── */
     .item {
-      padding: 18px 0;
-      border-bottom: 1px solid var(--border);
-      display: grid;
-      grid-template-columns: 1fr auto;
-      column-gap: 24px;
-      row-gap: 0;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--sep);
+      cursor: default;
+      transition: background 0.1s;
     }
 
-    .item:first-child {
-      border-top: 1px solid var(--border);
+    .item.has-profile { cursor: pointer; }
+
+    .item:hover                 { background: rgba(255,255,255,0.035); }
+    .item.tint-amber            { background: rgba(245,158,11,0.06); }
+    .item.tint-red              { background: rgba(239,68,68,0.08); }
+    .item.tint-amber:hover      { background: rgba(245,158,11,0.10); }
+    .item.tint-red:hover        { background: rgba(239,68,68,0.13); }
+
+    /* Line 1: description + value */
+    .row1 {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 20px;
     }
 
-    /* Row 1: description + value */
-    .item-description {
-      grid-column: 1;
-      grid-row: 1;
+    .item-desc {
       font-size: 15px;
       font-weight: 500;
       color: var(--text);
-      line-height: 1.45;
-      align-self: start;
+      line-height: 1.4;
+      flex: 1;
     }
 
-    .item-value {
-      grid-column: 2;
-      grid-row: 1;
+    .item-val {
       font-size: 15px;
       font-weight: 600;
       color: var(--text);
       white-space: nowrap;
-      text-align: right;
-      align-self: start;
+      flex-shrink: 0;
     }
 
-    /* Row 2: meta — country · date · score */
-    .item-meta {
-      grid-column: 1 / -1;
-      grid-row: 2;
+    /* Line 2: country · source */
+    .row2 {
       display: flex;
       align-items: center;
-      gap: 6px;
-      margin-top: 5px;
+      gap: 5px;
+      margin-top: 3px;
+      font-size: 13px;
       color: var(--muted);
-      font-size: 12px;
-      flex-wrap: wrap;
     }
 
-    .item-iso {
-      font-family: var(--mono);
-      font-size: 11px;
-    }
-
-    .meta-sep {
-      color: var(--border);
-      user-select: none;
-    }
-
-    /* Row 3: why-toggle */
-    .item-why {
-      grid-column: 1 / -1;
-      grid-row: 3;
-      margin-top: 8px;
-    }
-
-    .why-toggle {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 12px;
+    .item-country {
       color: var(--muted);
-      cursor: pointer;
-      background: none;
-      border: none;
-      padding: 0;
-      font-family: var(--sans);
-      line-height: 1;
+      position: relative;
     }
 
-    .why-toggle:hover { color: var(--text); }
+    .sep { color: var(--muted); user-select: none; }
 
-    .why-chevron {
-      display: inline-block;
-      font-size: 10px;
-      transition: transform 0.18s ease;
-      line-height: 1;
+    .source-link {
+      color: var(--muted);
+      font-size: 13px;
     }
+    .source-link:hover { text-decoration: underline; }
 
-    .why-toggle[aria-expanded="true"] .why-chevron {
-      transform: rotate(90deg);
-    }
-
+    /* ── Expandable why-section ── */
     .why-body {
       overflow: hidden;
       max-height: 0;
-      transition: max-height 0.22s ease, opacity 0.18s ease;
       opacity: 0;
+      transition: max-height 0.24s ease, opacity 0.2s ease;
     }
 
-    .why-body.open {
-      max-height: 200px;
+    .item.expanded .why-body {
+      max-height: 240px;
       opacity: 1;
     }
 
     .why-inner {
+      margin-top: 10px;
       padding-top: 10px;
+      border-top: 1px solid var(--sep);
       font-size: 12px;
       color: var(--muted);
-      line-height: 1.6;
+      line-height: 1.65;
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 5px;
     }
 
-    .why-rationale { color: var(--muted); }
-
-    .why-interests { color: var(--muted); }
-
-    .why-score {
-      color: var(--muted);
-      font-size: 11px;
-    }
-
-    /* Row 4: source link */
-    .item-source {
-      grid-column: 1 / -1;
-      grid-row: 4;
-      margin-top: 8px;
-      text-align: right;
-    }
-
-    .item-source a {
+    .why-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
       font-size: 12px;
       color: var(--muted);
     }
 
-    .item-source a:hover {
-      text-decoration: underline;
+    /* ── Tooltip ── */
+    #tooltip {
+      position: fixed;
+      display: none;
+      background: #1c1c1e;
+      border: 1px solid var(--sep);
+      color: var(--text);
+      font-size: 12px;
+      line-height: 1.55;
+      padding: 8px 12px;
+      max-width: 300px;
+      pointer-events: none;
+      z-index: 100;
     }
 
-    /* ── States ── */
-    #status {
+    .tt-score {
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+
+    .tt-rationale {
       color: var(--muted);
-      font-size: 13px;
-      padding: 20px 0;
     }
-
-    #status.error { color: #f87171; }
   </style>
 </head>
 <body>
+  <header>
+    <h1>HARPY</h1>
+    <span>Hidden Action Reconnaissance Pre-narrative Yield</span>
+    <span id="updated"></span>
+  </header>
   <div class="outer">
-    <header>
-      <h1>HARPY</h1>
-      <span class="fullname">Hidden Action Reconnaissance Pre-narrative Yield</span>
-      <span id="updated"></span>
-    </header>
     <div id="status">fetching signals…</div>
     <div id="feed"></div>
   </div>
+  <div id="tooltip"></div>
 
   <script>
     const PROFILES_BASE = 'data/profiles/';
@@ -302,6 +286,31 @@
       return profileCache[iso];
     }
 
+    // ── Tooltip ──────────────────────────────────────────────────────────────
+
+    const tooltipEl = document.getElementById('tooltip');
+
+    document.addEventListener('mouseover', e => {
+      const target = e.target.closest('[data-tooltip]');
+      if (!target) { tooltipEl.style.display = 'none'; return; }
+      const [line1, ...rest] = target.dataset.tooltip.split('\n');
+      tooltipEl.innerHTML =
+        `<div class="tt-score">${esc(line1)}</div>` +
+        rest.map(l => `<div class="tt-rationale">${esc(l)}</div>`).join('');
+      tooltipEl.style.display = 'block';
+    });
+
+    document.addEventListener('mouseout', e => {
+      if (e.target.closest('[data-tooltip]')) tooltipEl.style.display = 'none';
+    });
+
+    document.addEventListener('mousemove', e => {
+      if (tooltipEl.style.display !== 'block') return;
+      const x = e.clientX + 14, y = e.clientY + 14;
+      tooltipEl.style.left = Math.min(x, window.innerWidth  - tooltipEl.offsetWidth  - 8) + 'px';
+      tooltipEl.style.top  = Math.min(y, window.innerHeight - tooltipEl.offsetHeight - 8) + 'px';
+    });
+
     // ── Render one item ──────────────────────────────────────────────────────
 
     function renderItem(sig, profile) {
@@ -311,55 +320,64 @@
       const el = document.createElement('div');
       el.className = 'item';
 
-      // "Why this matters" section — only if profile exists
+      // Heatmap tint
+      if (score != null) {
+        if      (score >= 7) el.classList.add('tint-red');
+        else if (score >= 4) el.classList.add('tint-amber');
+      }
+
+      // Tooltip on country name
+      let countryHtml;
+      if (profile) {
+        el.classList.add('has-profile');
+        const ttParts = [];
+        if (score != null) ttParts.push(`Structural interest: ${score}/10`);
+        if (profile.score_rationale) ttParts.push(profile.score_rationale);
+        const tt = ttParts.join('\n');
+        countryHtml = `<span class="item-country" data-tooltip="${esc(tt)}">${esc(country)}</span>`;
+      } else {
+        countryHtml = `<span class="item-country">${esc(country)}</span>`;
+      }
+
+      // Source link (inline on row 2)
+      const sourceInline = sig.page_url
+        ? `<span class="sep">·</span>${fmtDate(sig.signal_date)}<span class="sep">·</span><a class="source-link" href="${esc(sig.page_url)}" target="_blank" rel="noopener">source →</a>`
+        : `<span class="sep">·</span>${fmtDate(sig.signal_date)}`;
+
+      // Expandable why section
       let whyHtml = '';
       if (profile) {
-        const rationale  = profile.score_rationale || '';
-        const interests  = Array.isArray(profile.key_structural_interests) && profile.key_structural_interests.length
-                         ? profile.key_structural_interests.join(', ')
-                         : '';
-        const scoreLabel = score != null ? `Structural interest: ${score}/10` : '';
-
+        const rationale = profile.score_rationale || '';
+        const interests = Array.isArray(profile.key_structural_interests) && profile.key_structural_interests.length
+                        ? profile.key_structural_interests.join(', ')
+                        : '';
+        const srcLink = sig.page_url
+          ? `<span class="sep">·</span><a class="source-link" href="${esc(sig.page_url)}" target="_blank" rel="noopener">source →</a>`
+          : '';
         whyHtml = `
-          <div class="item-why">
-            <button class="why-toggle" aria-expanded="false">
-              <span class="why-chevron">›</span>Why this matters
-            </button>
-            <div class="why-body">
-              <div class="why-inner">
-                ${rationale  ? `<div class="why-rationale">${esc(rationale)}</div>` : ''}
-                ${interests  ? `<div class="why-interests">${esc(interests)}</div>` : ''}
-                ${scoreLabel ? `<div class="why-score">${esc(scoreLabel)}</div>` : ''}
-              </div>
+          <div class="why-body">
+            <div class="why-inner">
+              ${rationale ? `<div>${esc(rationale)}</div>` : ''}
+              ${interests ? `<div>${esc(interests)}</div>` : ''}
+              <div class="why-meta">Structural interest: ${score != null ? score + '/10' : '—'}${srcLink}</div>
             </div>
           </div>`;
       }
 
-      const sourceHtml = sig.page_url
-        ? `<div class="item-source"><a href="${esc(sig.page_url)}" target="_blank" rel="noopener">source →</a></div>`
-        : '';
-
       el.innerHTML = `
-        <div class="item-description">${esc(sig.description || '—')}</div>
-        <div class="item-value">${fmtValue(sig.value_usd)}</div>
-        <div class="item-meta">
-          <span>${esc(country)}</span>
-          <span class="item-iso">${esc(sig.iso)}</span>
-          <span class="meta-sep">·</span>
-          <span>${fmtDate(sig.signal_date)}</span>
-          ${score != null ? `<span class="meta-sep">·</span><span>${score}/10</span>` : ''}
+        <div class="row1">
+          <span class="item-desc">${esc(sig.description || '—')}</span>
+          <span class="item-val">${fmtValue(sig.value_usd)}</span>
         </div>
+        <div class="row2">${countryHtml}${sourceInline}</div>
         ${whyHtml}
-        ${sourceHtml}
       `.trim();
 
-      // Toggle handler
-      const btn = el.querySelector('.why-toggle');
-      if (btn) {
-        btn.addEventListener('click', () => {
-          const expanded = btn.getAttribute('aria-expanded') === 'true';
-          btn.setAttribute('aria-expanded', String(!expanded));
-          el.querySelector('.why-body').classList.toggle('open', !expanded);
+      // Click to expand/collapse (skip if click target is a link)
+      if (profile) {
+        el.addEventListener('click', e => {
+          if (e.target.closest('a')) return;
+          el.classList.toggle('expanded');
         });
       }
 
@@ -405,11 +423,30 @@
         return;
       }
 
-      // Fetch all profiles in parallel, then render in order
+      // Fetch all profiles in parallel
       await Promise.all([...new Set(signals.map(s => s.iso))].map(loadProfile));
 
+      // Group by month (insertion order preserves newest-first sort)
+      const byMonth = new Map();
       for (const sig of signals) {
-        feedEl.appendChild(renderItem(sig, profileCache[sig.iso] || null));
+        const key = sig.signal_date ? sig.signal_date.slice(0, 7) : '';
+        if (!byMonth.has(key)) byMonth.set(key, []);
+        byMonth.get(key).push(sig);
+      }
+
+      for (const [monthKey, monthSigs] of byMonth) {
+        const hdr = document.createElement('div');
+        hdr.className = 'month-header';
+        if (monthKey) {
+          const [y, m] = monthKey.split('-').map(Number);
+          hdr.textContent = new Date(y, m - 1, 1)
+            .toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
+            .toUpperCase();
+        }
+        feedEl.appendChild(hdr);
+        for (const sig of monthSigs) {
+          feedEl.appendChild(renderItem(sig, profileCache[sig.iso] || null));
+        }
       }
     }
 
