@@ -32,6 +32,7 @@ jobs:
 
       - name: Run fetch_dsca.py
         run: python scripts/fetch_dsca.py
+        continue-on-error: true
 
       - name: Run fetch_sam.py
         run: python scripts/fetch_sam.py
@@ -43,7 +44,7 @@ jobs:
 
       - name: Commit updated data
         run: |
-          git add data/signals.json data/dsca_signals.json data/sam_signals.json
+          git add data/signals.json data/dsca_signals.json data/dsca_nato.json data/sam_signals.json
           git commit -m "update signals [skip ci]" || echo "nothing to commit"
           git push origin main --force-with-lease
         env:

@@ -84,10 +84,28 @@ DSCA_COUNTRY_MAP = {
 _DSCA_NAMES_SORTED = sorted(DSCA_COUNTRY_MAP.keys(), key=len, reverse=True)
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.5",
+    "User-Agent": (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/122.0.0.0 Safari/537.36"
+    ),
+    "Accept": (
+        "text/html,application/xhtml+xml,application/xml;"
+        "q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8"
+    ),
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Cache-Control": "max-age=0",
+    "Referer": "https://www.dsca.mil/Press-Media/Major-Arms-Sales",
 }
+
+DAILY_LOOKBACK_DAYS = 45  # fetch articles published in last N days
 
 BACKTEST_START = "2021-02-24"
 BACKTEST_END   = "2022-02-24"
@@ -493,6 +511,120 @@ def enrich_signals(signals_path, session, test_n=None):
 
 
 # ---------------------------------------------------------------------------
+# Daily scrape — listing page only, append new records, dedupe by cn_number
+# ---------------------------------------------------------------------------
+
+def scrape_daily(signals_path, session):
+    """
+    Daily update mode. Scrapes the main DSCA listing page (not the library
+    pagination) for articles published in the last DAILY_LOOKBACK_DAYS days.
+    Fetches each article page, dedupes by cn_number against existing
+    dsca_signals.json, and appends any new records.
+
+    This is the default mode run by GitHub Actions.
+    """
+    from datetime import date, timedelta
+    cutoff = (date.today() - timedelta(days=DAILY_LOOKBACK_DAYS)).isoformat()
+
+    # Load existing signals; build cn_number index for deduplication
+    if signals_path.exists():
+        data = json.loads(signals_path.read_text())
+        signals = data.get("signals", [])
+    else:
+        data = {"generated_at": None, "sources": ["dsca"], "signals": []}
+        signals = []
+
+    known_cns = {s["cn_number"] for s in signals if s.get("cn_number")}
+
+    # Collect listing items within lookback window
+    recent_items = []
+    page = 1
+    while True:
+        url = DSCA_MAIN_URL if page == 1 else f"{DSCA_MAIN_URL}?Page={page}"
+        print(f"[daily] Listing page {page}: {url}")
+        if page > 1:
+            time.sleep(ENRICH_DELAY)
+
+        try:
+            resp = session.get(url, timeout=30)
+        except requests.exceptions.RequestException as e:
+            print(f"[ERROR] Listing page {page} request error: {e}", file=sys.stderr)
+            sys.exit(1)
+
+        if resp.status_code != 200:
+            print(f"[ERROR] Listing page {page} HTTP {resp.status_code}", file=sys.stderr)
+            sys.exit(1)
+
+        items, last_page = scrape_listing_page(resp.text)
+        if not items:
+            print("[daily] No items found on listing page — stopping")
+            break
+
+        in_window = [i for i in items if i.get("date_str") and i["date_str"] >= cutoff]
+        recent_items.extend(in_window)
+
+        oldest = min((i["date_str"] for i in items if i.get("date_str")), default="9999")
+        if oldest < cutoff or (last_page and page >= last_page):
+            break
+        page += 1
+
+    print(f"[daily] {len(recent_items)} articles in last {DAILY_LOOKBACK_DAYS} days")
+
+    # Fetch each article page; skip records we already have
+    added = 0
+    for item in recent_items:
+        iso2 = country_iso_from_title(item["title"])
+        if not iso2:
+            print(f"[daily] No ISO match: {item['title']!r} — skipping")
+            continue
+
+        time.sleep(ENRICH_DELAY)
+        print(f"[daily] GET {item['article_url']}")
+        try:
+            resp = session.get(item["article_url"], timeout=30)
+        except requests.exceptions.RequestException as e:
+            print(f"[daily] Request error: {e} — skipping")
+            continue
+        if resp.status_code != 200:
+            print(f"[daily] HTTP {resp.status_code} — skipping")
+            continue
+
+        parsed = parse_article_page(resp.text)
+        cn = parsed.get("cn_number")
+
+        if cn and cn in known_cns:
+            print(f"[daily] CN {cn} already present — skip")
+            continue
+
+        entry = {
+            "iso":         iso2,
+            "source":      "dsca",
+            "signal_date": item["date_str"],
+            "title":       item["title"],
+            "value_usd":   parsed.get("value_usd"),
+            "description": parsed.get("description"),
+            "raw_score":   None,
+            "cn_number":   cn,
+            "pdf_url":     None,
+            "page_url":    item["article_url"],
+        }
+        if parsed.get("quantity") is not None:
+            entry["quantity"] = parsed["quantity"]
+
+        signals.append(entry)
+        if cn:
+            known_cns.add(cn)
+        added += 1
+        desc = parsed.get("description") or "—"
+        print(f"[daily] + {iso2}  CN {cn}  {item['date_str']}  {desc}")
+
+    data["generated_at"] = datetime.now(timezone.utc).isoformat()
+    data["signals"] = sorted(signals, key=lambda s: s.get("signal_date") or "")
+    signals_path.write_text(json.dumps(data, indent=2))
+    print(f"[daily] {added} new record(s) added → {signals_path}")
+
+
+# ---------------------------------------------------------------------------
 # Probe mode
 # ---------------------------------------------------------------------------
 
@@ -672,8 +804,10 @@ def main():
     parser = argparse.ArgumentParser(description="DSCA Major Arms Sales scraper")
     parser.add_argument("--probe", action="store_true",
                         help="Dump page 1 records and pagination info, exit")
+    parser.add_argument("--full-scrape", action="store_true",
+                        help="Bulk-load all pages of the library (historical import only)")
     parser.add_argument("--backtest", action="store_true",
-                        help=f"Print {BACKTEST_START}→{BACKTEST_END} records from saved data")
+                        help=f"Print {BACKTEST_START}→{BACKTEST_END} records from saved notifications")
     parser.add_argument("--enrich", action="store_true",
                         help="Fetch article pages to populate description, value_usd, quantity, page_url")
     parser.add_argument("--test-enrich", action="store_true",
@@ -681,7 +815,6 @@ def main():
     args = parser.parse_args()
 
     repo_root    = Path(__file__).parent.parent
-    output_path  = repo_root / "data" / "dsca_notifications.json"
     signals_path = repo_root / "data" / "dsca_signals.json"
 
     if args.probe:
@@ -689,7 +822,8 @@ def main():
         sys.exit(0)
 
     if args.backtest:
-        backtest(output_path)
+        notifications_path = repo_root / "data" / "dsca_notifications.json"
+        backtest(notifications_path)
         sys.exit(0)
 
     if args.test_enrich:
@@ -700,11 +834,17 @@ def main():
         enrich_signals(signals_path, get_session())
         sys.exit(0)
 
-    scrape(output_path)
-    # write_signals is called inside scrape, but also handle the case
-    # where notifications already exist and signals need to be regenerated
-    if not signals_path.exists():
-        write_signals(output_path, signals_path)
+    if args.full_scrape:
+        # Historical bulk load via library pagination — writes dsca_notifications.json
+        # then converts to dsca_signals.json. Run manually, not in CI.
+        notifications_path = repo_root / "data" / "dsca_notifications.json"
+        scrape(notifications_path)
+        if not signals_path.exists():
+            write_signals(notifications_path, signals_path)
+        sys.exit(0)
+
+    # Default: daily incremental update from listing page
+    scrape_daily(signals_path, get_session())
 
 
 if __name__ == "__main__":
