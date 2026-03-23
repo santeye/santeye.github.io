@@ -145,9 +145,21 @@ def load_api_key():
     return key
 
 
+MAINTENANCE_PATTERNS = re.compile(
+    r"\b(corrugated|roofing|flooring|painting|janitorial|landscaping|"
+    r"elevator|hvac|plumbing|electrical repair|window|carpet|custodial)\b",
+    re.IGNORECASE,
+)
+
+
 def is_agency_match(record):
     path = (record.get("fullParentPathName") or "").upper()
     return any(kw in path for kw in AGENCY_KEYWORDS)
+
+
+def is_maintenance(record):
+    title = record.get("title") or ""
+    return bool(MAINTENANCE_PATTERNS.search(title))
 
 
 def extract_country(record):
@@ -238,7 +250,7 @@ def main():
         sys.exit(0)
 
     batch = data.get("opportunitiesData") or []
-    signals = [to_signal(r) for r in batch if is_agency_match(r)]
+    signals = [to_signal(r) for r in batch if is_agency_match(r) and not is_maintenance(r)]
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
