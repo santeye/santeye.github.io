@@ -210,9 +210,12 @@ def main():
             fp_name      = ""
             country_name = ""
 
-        iso   = country_to_iso2(country_name)
-        title = f"{registrant} — {fp_name}" if fp_name else registrant
-        desc  = ", ".join(filter(None, [registrant, fp_name, country_name]))
+        iso         = country_to_iso2(country_name)
+        fp_short    = fp_name.split(",")[0].strip() if fp_name else ""
+        title       = f"{registrant} — {fp_short}" if fp_short else registrant
+        desc        = ", ".join(filter(None, [registrant, fp_name, country_name]))
+        page_url    = (f"https://efile.fara.gov/ords/fara/f"
+                       f"?p=181:200:0::NO:RP,200:P200_REG_NUMBER:{reg_number}")
 
         sig = {
             "registration_number": reg_number,
@@ -224,6 +227,7 @@ def main():
             "description": desc,
             "raw_score":   raw_score_for(iso),
             "weight":      1.0,
+            "page_url":    page_url,
         }
         new_signals.append(sig)
         known_reg_numbers.add(reg_number)
