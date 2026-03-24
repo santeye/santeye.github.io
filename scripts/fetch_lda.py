@@ -126,9 +126,9 @@ def build_description(filing: dict) -> str:
 
 
 def to_signal(filing: dict) -> dict:
-    registrant_name = ((filing.get("registrant") or {}).get("name") or "").strip()
-    client_name     = ((filing.get("client") or {}).get("name") or "").strip()
-    title           = f"{registrant_name} — {client_name}" if client_name else registrant_name
+    registrant_name = ((filing.get("registrant") or {}).get("name") or "").strip().title()
+    client_name     = ((filing.get("client") or {}).get("name") or "").strip().title()
+    title           = f"{client_name} — via {registrant_name}" if client_name else registrant_name
 
     dt_posted   = filing.get("dt_posted") or ""
     signal_date = dt_posted[:10] if dt_posted else ""
@@ -209,6 +209,8 @@ def main():
         if not is_high_signal(filing):
             continue
         sig = to_signal(filing)
+        if sig["iso"] == "XX":
+            continue
         new_signals.append(sig)
         known_uuids.add(uuid)
         print(f"[lda] + {sig['iso']}  {sig['title'][:60]}")
