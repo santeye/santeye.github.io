@@ -1,1 +1,56 @@
-{"generated_at":null,"sources":["lda"],"signals":[]}
+{
+  "generated_at": "2026-03-24T22:15:57.036529+00:00",
+  "sources": [
+    "lda"
+  ],
+  "signals": [
+    {
+      "filing_uuid": "0bdb1928-e35e-487e-9aeb-1c5f59121872",
+      "iso": "JP",
+      "source": "lda",
+      "signal_date": "2026-03-23",
+      "title": "Sumitomo Pharma America, Inc. \u2014 via Arnold & Porter Kaye Scholer Llp",
+      "value_usd": null,
+      "description": "HCR, MMM; Issues related to prescription drug pricing, and issues related to small to mid-size pharmaceutical \u2026",
+      "url": "https://lda.gov/filings/public/filing/0bdb1928-e35e-487e-9aeb-1c5f59121872/print/",
+      "raw_score": 6.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "f644d85c-f8c0-4f13-878c-2fbf756e33db",
+      "iso": "ES",
+      "source": "lda",
+      "signal_date": "2026-03-23",
+      "title": "Esteve Pharmaceuticals, S.A. \u2014 via Arnold & Porter Kaye Scholer Llp",
+      "value_usd": null,
+      "description": "HCR, MMM; Spain; Issues related to reimbursement and coverage for certain drugs.",
+      "url": "https://lda.gov/filings/public/filing/f644d85c-f8c0-4f13-878c-2fbf756e33db/print/",
+      "raw_score": 2.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "0db502bb-1eee-4046-b8fe-f93bfc93cfc6",
+      "iso": "AU",
+      "source": "lda",
+      "signal_date": "2026-03-23",
+      "title": "Helfie Management Pty Ltd \u2014 via Ballard Partners",
+      "value_usd": null,
+      "description": "HCR, VET; Australia; Rural healthcare access and technology and the VA.",
+      "url": "https://lda.gov/filings/public/filing/0db502bb-1eee-4046-b8fe-f93bfc93cfc6/print/",
+      "raw_score": 5.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "22ea354d-6fed-4032-88ef-2d8378529bc6",
+      "iso": "CH",
+      "source": "lda",
+      "signal_date": "2026-03-23",
+      "title": "Federation Internationale De Football Association \u2014 via K&L Gates, Llp",
+      "value_usd": null,
+      "description": "SPO, TAX; Switzerland; Issues related to the preparation to host the FIFA World Cup 2026 - no specific legislation.",
+      "url": "https://lda.gov/filings/public/filing/22ea354d-6fed-4032-88ef-2d8378529bc6/print/",
+      "raw_score": 0.0,
+      "weight": 1.0
+    }
+  ]
+}
