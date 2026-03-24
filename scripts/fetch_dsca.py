@@ -130,8 +130,7 @@ def _country_name(iso2: str) -> str:
 
 
 def _build_dsca_title(iso2: str, description: str) -> str:
-    """'Saudi Arabia — PATRIOT Missile System'"""
-    return f"{_country_name(iso2)} — {description}"
+    return description
 
 
 def parse_date_from_url(url):
