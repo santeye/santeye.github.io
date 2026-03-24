@@ -322,16 +322,15 @@ def parse_article_page(html):
     """
     soup = BeautifulSoup(html, "html.parser")
 
-    description = None
-    h1 = soup.find("h1")
-    if h1:
-        h1_text = h1.get_text(strip=True)
-        m = re.match(r"^.+?\s*[–—\-]\s*(.+)$", h1_text)
-        if m:
-            description = m.group(1).strip()
-
     body = soup.select_one(".article-body")
     body_text = body.get_text(" ", strip=True) if body else ""
+
+    # First 1-2 sentences from body as description
+    if body_text:
+        sentences = re.split(r"(?<=\.)\s+(?=[A-Z])", body_text.strip())
+        description = " ".join(sentences[:2]).strip() or None
+    else:
+        description = None
 
     cn_number = None
     m = re.search(r"Transmittal No\.?\s+(\d{2,4}-\d{1,3})", body_text)

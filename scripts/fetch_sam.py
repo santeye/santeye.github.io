@@ -184,6 +184,21 @@ def extract_country(record):
     return None
 
 
+def build_description(record):
+    award = record.get("award") or {}
+    parts = []
+    notice_type = (record.get("type") or record.get("baseType") or "").strip()
+    psc = (record.get("classificationCode") or "").strip()
+    awardee = ((award.get("awardee") or {}).get("name") or "").strip()
+    if notice_type:
+        parts.append(notice_type)
+    if psc:
+        parts.append(psc)
+    if awardee:
+        parts.append(awardee)
+    return " · ".join(parts) if parts else None
+
+
 def to_signal(record):
     award = record.get("award") or {}
     value = award.get("amount")
@@ -198,7 +213,7 @@ def to_signal(record):
         "signal_date": record.get("postedDate"),
         "title": record.get("title"),
         "value_usd": value,
-        "description": None,
+        "description": build_description(record),
         "raw_score": 1.0,
         "page_url": record.get("uiLink"),
     }
