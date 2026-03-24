@@ -27,20 +27,20 @@ jobs:
           git pull origin main --rebase
 
       - name: Run fetch_dsca.py
-        run: python scripts/fetch_dsca.py
+        run: python3 scripts/fetch_dsca.py
         continue-on-error: true
 
       - name: Run fetch_sam.py
-        run: python scripts/fetch_sam.py
+        run: python3 scripts/fetch_sam.py
         env:
           SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
 
       - name: Run fetch_ofac.py
-        run: python scripts/fetch_ofac.py
+        run: python3 scripts/fetch_ofac.py
         continue-on-error: true
 
       - name: Run build_signals.py
-        run: python scripts/build_signals.py
+        run: python3 scripts/build_signals.py
 
       - name: Commit updated data
         run: |
