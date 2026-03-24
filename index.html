@@ -307,7 +307,7 @@
 
       el.innerHTML = `
         <div class="row1">
-          <span class="item-desc">${esc(sig.description || sig.title || '—')}</span>
+          <span class="item-desc">${esc(sig.title || sig.description || '—')}</span>
           <span class="item-val">${fmtValue(sig.value_usd)}</span>
         </div>
         <div class="row2"><span class="item-country">${esc(country)}</span>${sourceInline}</div>
