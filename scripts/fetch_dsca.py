@@ -129,8 +129,8 @@ def _country_name(iso2: str) -> str:
         return iso2
 
 
-def _build_dsca_title(iso2: str, description: str) -> str:
-    return description
+def _build_dsca_title(iso2: str, weapon_system: str) -> str:
+    return weapon_system
 
 
 def parse_date_from_url(url):
@@ -312,15 +312,28 @@ def scrape_listing_page(html):
 
 def parse_article_page(html):
     """
-    Extract description, value_usd, quantity, and cn_number from a DSCA article page.
+    Extract weapon_system, description, value_usd, quantity, and cn_number from a DSCA article page.
     Returns a dict; any field is None if not found.
 
-    - description: weapon system name from <h1> '{Country} – {Weapon System}'
-    - value_usd:   float in USD from 'estimated cost of $X million/billion'
-    - quantity:    int from 'requested to buy ... (N)'; None if not applicable
-    - cn_number:   from 'Transmittal No. YY-NNN' in body text (used for disambiguation)
+    - weapon_system: name extracted from <h1> '{Country} – {Weapon System}' (after the dash)
+    - description:   first 1-2 sentences from .article-body
+    - value_usd:     float in USD from 'estimated cost of $X million/billion'
+    - quantity:      int from 'requested to buy ... (N)'; None if not applicable
+    - cn_number:     from 'Transmittal No. YY-NNN' in body text (used for disambiguation)
     """
     soup = BeautifulSoup(html, "html.parser")
+
+    # Weapon system name from <h1> '{Country} – {Weapon System}'
+    h1 = soup.find("h1")
+    h1_text = h1.get_text(" ", strip=True) if h1 else ""
+    weapon_system = None
+    if h1_text:
+        for sep in (" \u2013 ", " \u2014 ", " - "):
+            if sep in h1_text:
+                weapon_system = h1_text.split(sep, 1)[1].strip() or None
+                break
+        if not weapon_system:
+            weapon_system = h1_text.strip() or None
 
     body = soup.select_one(".article-body")
     body_text = body.get_text(" ", strip=True) if body else ""
@@ -353,10 +366,11 @@ def parse_article_page(html):
         quantity = int(m.group(1))
 
     return {
-        "description": description,
-        "value_usd":   value_usd,
-        "quantity":    quantity,
-        "cn_number":   cn_number,
+        "weapon_system": weapon_system,
+        "description":   description,
+        "value_usd":     value_usd,
+        "quantity":      quantity,
+        "cn_number":     cn_number,
     }
 
 
@@ -515,8 +529,8 @@ def enrich_signals(signals_path, test_n=None):
             signal["value_usd"]   = parsed["value_usd"]
             if parsed.get("quantity") is not None:
                 signal["quantity"] = parsed["quantity"]
-            if parsed.get("description"):
-                signal["title"] = _build_dsca_title(signal.get("iso"), parsed["description"])
+            if parsed.get("weapon_system"):
+                signal["title"] = parsed["weapon_system"]
             enriched += 1
 
     if test_n is None:
@@ -615,7 +629,7 @@ def scrape_daily(signals_path):
             "iso":         iso2,
             "source":      "dsca",
             "signal_date": item["date_str"],
-            "title":       _build_dsca_title(iso2, desc) if desc else item["title"],
+            "title":       parsed.get("weapon_system") or item["title"],
             "value_usd":   parsed.get("value_usd"),
             "description": desc,
             "raw_score":   None,
