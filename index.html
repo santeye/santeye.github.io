@@ -358,8 +358,8 @@
           <span class="item-desc">${esc(sig.title || sig.description || '—')}</span>
           <span class="item-val">${fmtValue(sig.value_usd)}</span>
         </div>
-        <div class="row2"><span class="source-tag">${esc(sourceLabel(sig.source))}</span><span class="sep">·</span><span class="item-country">${esc(country)}</span>${sourceInline}</div>
         ${descRow}
+        <div class="row2"><span class="source-tag">${esc(sourceLabel(sig.source))}</span><span class="sep">·</span><span class="item-country">${esc(country)}</span>${sourceInline}</div>
       `.trim();
 
       if (descRaw) {
