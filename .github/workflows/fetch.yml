@@ -10,6 +10,9 @@ jobs:
     runs-on: self-hosted
     permissions:
       contents: write
+    env:
+      PYTHON: arch -arm64 python3
+      PIP: arch -arm64 pip3
 
     steps:
       - uses: actions/checkout@v4
@@ -17,11 +20,8 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Use Homebrew arm64 Python
-        run: echo "/opt/homebrew/bin" >> $GITHUB_PATH
-
       - name: Install dependencies
-        run: pip3 install --upgrade --no-cache-dir curl_cffi requests beautifulsoup4
+        run: $PIP install --upgrade --no-cache-dir curl_cffi requests beautifulsoup4
 
       - name: Configure git and pull latest
         run: |
@@ -30,28 +30,28 @@ jobs:
           git pull origin main --rebase
 
       - name: Run fetch_dsca.py
-        run: python3 scripts/fetch_dsca.py
+        run: $PYTHON scripts/fetch_dsca.py
         continue-on-error: true
 
       - name: Run fetch_sam.py
-        run: python3 scripts/fetch_sam.py
+        run: $PYTHON scripts/fetch_sam.py
         env:
           SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
 
       - name: Run fetch_ofac.py
-        run: python3 scripts/fetch_ofac.py
+        run: $PYTHON scripts/fetch_ofac.py
         continue-on-error: true
 
       - name: Run fetch_fara.py
-        run: python3 scripts/fetch_fara.py
+        run: $PYTHON scripts/fetch_fara.py
         continue-on-error: true
 
       - name: Run fetch_lda.py
-        run: python3 scripts/fetch_lda.py
+        run: $PYTHON scripts/fetch_lda.py
         continue-on-error: true
 
       - name: Run build_signals.py
-        run: python3 scripts/build_signals.py
+        run: $PYTHON scripts/build_signals.py
 
       - name: Commit updated data
         run: |
