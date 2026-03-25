@@ -139,7 +139,13 @@
     .item-country {
       color: var(--muted);
       position: relative;
+      cursor: default;
+      font-weight: 600;
     }
+    .item-country[data-tooltip] {
+      cursor: help;
+    }
+    .item-country[data-tooltip]:hover { color: var(--text); }
 
     .sep { color: var(--muted); user-select: none; }
 
@@ -338,12 +344,13 @@
         else if (score >= 4) el.classList.add('tint-amber');
       }
 
-      // Whole-row tooltip
+      // Country tooltip
+      let countryTooltip = '';
       if (profile) {
         const ttParts = [];
         if (score != null) ttParts.push(`Structural interest: ${score}/10`);
         if (profile.score_rationale) ttParts.push(profile.score_rationale);
-        if (ttParts.length) el.dataset.tooltip = ttParts.join('\n');
+        if (ttParts.length) countryTooltip = ` data-tooltip="${esc(ttParts.join('\n'))}"`;
       }
 
       const sourceUrl = sig.page_url || sig.url || null;
@@ -367,7 +374,7 @@
           <span class="item-desc">${esc(sig.title || sig.description || '—')}</span>
           <span class="item-val">${fmtValue(sig.value_usd)}</span>
         </div>
-        <div class="row2"><span class="source-tag">${esc(sourceLabel(sig.source))}</span><span class="sep">·</span><span class="item-country">${esc(country)}</span><span class="sep">·</span>${fmtDate(sig.signal_date)}</div>
+        <div class="row2"><span class="source-tag">${esc(sourceLabel(sig.source))}</span><span class="sep">·</span><span class="item-country"${countryTooltip}>${esc(country)}</span><span class="sep">·</span>${fmtDate(sig.signal_date)}</div>
         ${detailsHtml}
       `.trim();
 
@@ -375,7 +382,9 @@
       if (expand) {
         expand.addEventListener('click', e => {
           e.stopPropagation();
-          el.classList.toggle('expanded');
+          const wasExpanded = el.classList.contains('expanded');
+          document.querySelectorAll('.item.expanded').forEach(i => i.classList.remove('expanded'));
+          if (!wasExpanded) el.classList.add('expanded');
         });
       }
 
