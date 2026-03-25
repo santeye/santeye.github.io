@@ -76,113 +76,180 @@
     }
     #status.error { color: #f87171; }
 
-    /* ── Month header ── */
-    .month-header {
-      font-size: 11px;
+    /* ── Section header (shared by clusters + month) ── */
+    .section-hdr {
+      font-size: 10px;
       font-weight: 600;
       color: var(--muted);
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      padding: 24px 16px 8px;
+      padding: 20px 0 7px;
       border-bottom: 1px solid var(--sep);
     }
 
-    /* ── Feed item ── */
+    /* ── Clusters ── */
+    #clusters-wrap {
+      margin-bottom: 4px;
+    }
+
+    .cluster-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(58,58,60,0.5);
+      cursor: pointer;
+      transition: background 0.08s;
+      font-size: 12px;
+      color: var(--muted);
+      user-select: none;
+    }
+    .cluster-row:hover { color: var(--text); }
+    .cluster-row.active {
+      color: var(--text);
+      background: rgba(255,255,255,0.04);
+    }
+
+    .cl-name {
+      font-weight: 600;
+      color: var(--text);
+      min-width: 130px;
+      flex-shrink: 0;
+    }
+    .cluster-row:not(.active) .cl-name { color: var(--muted); }
+    .cluster-row:hover .cl-name,
+    .cluster-row.active .cl-name { color: var(--text); }
+
+    .cl-sep { color: var(--sep); margin: 0 6px; user-select: none; }
+
+    .cl-sources {
+      display: flex;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+    .cl-src {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      border: 1px solid var(--sep);
+      padding: 0px 4px;
+      line-height: 1.7;
+    }
+    .cluster-row.active .cl-src,
+    .cluster-row:hover .cl-src {
+      color: var(--text);
+      border-color: var(--muted);
+    }
+
+    .cl-count {
+      flex-shrink: 0;
+    }
+
+    .cl-date {
+      flex-shrink: 0;
+    }
+
+    /* ── Feed section ── */
+    #feed-section { margin-top: 0; }
+
+    /* ── Month header ── */
+    .month-header {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 16px 0 5px;
+      border-bottom: 1px solid var(--sep);
+    }
+
+    /* ── Feed item — compact log line ── */
     .item {
-      padding: 12px 16px;
-      border-bottom: 1px solid var(--sep);
+      padding: 6px 0 6px 0;
+      border-bottom: 1px solid rgba(58,58,60,0.6);
       cursor: default;
-      transition: background 0.1s;
+      transition: background 0.08s;
     }
 
+    .item:hover                 { background: rgba(255,255,255,0.025); }
+    .item.tint-amber            { background: rgba(245,158,11,0.10); }
+    .item.tint-red              { background: rgba(239,68,68,0.13); }
+    .item.tint-amber:hover      { background: rgba(245,158,11,0.15); }
+    .item.tint-red:hover        { background: rgba(239,68,68,0.18); }
 
-    .item:hover                 { background: rgba(255,255,255,0.035); }
-    .item.tint-amber            { background: rgba(245,158,11,0.12); }
-    .item.tint-red              { background: rgba(239,68,68,0.15); }
-    .item.tint-amber:hover      { background: rgba(245,158,11,0.17); }
-    .item.tint-red:hover        { background: rgba(239,68,68,0.21); }
-
-    /* Line 1: description + value */
+    /* Line 1: title + value */
     .row1 {
       display: flex;
       align-items: baseline;
       justify-content: space-between;
-      gap: 20px;
+      gap: 16px;
     }
 
     .item-desc {
-      font-size: 15px;
+      font-size: 13px;
       font-weight: 500;
       color: var(--text);
-      line-height: 1.4;
+      line-height: 1.35;
       flex: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .item-val {
-      font-size: 15px;
+      font-size: 12px;
       font-weight: 600;
-      color: var(--text);
+      color: var(--muted);
       white-space: nowrap;
       flex-shrink: 0;
     }
 
-    /* Line 2: country · source */
+    /* Line 2: country · source · date */
     .row2 {
       display: flex;
       align-items: center;
-      gap: 5px;
-      margin-top: 3px;
-      font-size: 13px;
+      gap: 4px;
+      margin-top: 1px;
+      font-size: 11px;
       color: var(--muted);
     }
 
     .item-country {
       color: var(--muted);
-      position: relative;
       cursor: default;
-      font-weight: 600;
     }
-    .item-country[data-tooltip] {
-      cursor: help;
-    }
+    .item-country[data-tooltip] { cursor: help; }
     .item-country[data-tooltip]:hover { color: var(--text); }
 
-    .sep { color: var(--muted); user-select: none; }
+    .sep { color: var(--sep); user-select: none; }
 
-    /* ── Details row ── */
+    /* ── Details (subtle) ── */
     .details-row {
       display: flex;
       align-items: center;
-      gap: 5px;
-      margin-top: 3px;
-      font-size: 13px;
+      gap: 4px;
+      margin-top: 2px;
+      font-size: 11px;
       color: var(--muted);
+      opacity: 0.6;
       user-select: none;
     }
+    .details-row:hover { opacity: 1; }
 
-    .details-btn {
-      cursor: pointer;
-    }
+    .details-btn { cursor: pointer; }
     .details-btn:hover { text-decoration: underline; }
-
 
     .details-body {
       display: none;
-      margin-top: 6px;
-      font-size: 12px;
+      margin-top: 4px;
+      font-size: 11px;
       color: var(--muted);
-      opacity: 0.75;
-      line-height: 1.55;
+      opacity: 0.7;
+      line-height: 1.5;
     }
     .item.expanded .details-body { display: block; }
-
-    .source-tag {
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
+    .item.expanded .details-row  { opacity: 1; }
 
     /* ── Tooltip ── */
     #tooltip {
@@ -199,15 +266,8 @@
       z-index: 100;
     }
 
-    .tt-score {
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 3px;
-    }
-
-    .tt-rationale {
-      color: var(--muted);
-    }
+    .tt-score    { font-weight: 600; color: var(--text); margin-bottom: 3px; }
+    .tt-rationale { color: var(--muted); }
   </style>
 </head>
 <body>
@@ -218,7 +278,13 @@
   </header>
   <div class="outer">
     <div id="status">fetching signals…</div>
-    <div id="feed"></div>
+    <div id="clusters-wrap" style="display:none">
+      <div class="section-hdr">clusters · 2+ sources · 30d</div>
+      <div id="clusters"></div>
+    </div>
+    <div id="feed-section">
+      <div id="feed"></div>
+    </div>
   </div>
   <div id="tooltip"></div>
 
@@ -226,7 +292,7 @@
     const PROFILES_BASE = 'data/profiles/';
     const SIGNALS_URL   = 'data/signals.json';
 
-    // ── Source labels ────────────────────────────────────────────────────────
+    // ── Source labels / short names ──────────────────────────────────────────
 
     const SOURCE_LABELS = {
       dsca: 'Defense Security Cooperation Agency',
@@ -237,35 +303,43 @@
       federalregister: 'Federal Register',
     };
 
+    const SOURCE_SHORT = {
+      dsca: 'DSCA',
+      sam:  'SAM',
+      fara: 'FARA',
+      ofac: 'OFAC',
+      lda:  'LDA',
+      federalregister: 'FR',
+    };
+
     function sourceLabel(s) {
       return SOURCE_LABELS[s && s.toLowerCase()] || (s || '').toUpperCase();
+    }
+
+    function sourceShort(s) {
+      return SOURCE_SHORT[s && s.toLowerCase()] || (s || '').toUpperCase().slice(0, 5);
     }
 
     // ── Formatters ──────────────────────────────────────────────────────────
 
     function fmtValue(v) {
       if (v == null) return '';
-      if (v >= 1e9) {
-        const n = v / 1e9;
-        return '$' + (Number.isInteger(n) ? n : n.toFixed(1)) + 'B';
-      }
-      if (v >= 1e6) {
-        const n = v / 1e6;
-        return '$' + (Number.isInteger(n) ? n : n.toFixed(1)) + 'M';
-      }
-      if (v >= 1e3) {
-        const n = v / 1e3;
-        return '$' + (Number.isInteger(n) ? n : n.toFixed(1)) + 'K';
-      }
+      if (v >= 1e9) { const n = v / 1e9; return '$' + (Number.isInteger(n) ? n : n.toFixed(1)) + 'B'; }
+      if (v >= 1e6) { const n = v / 1e6; return '$' + (Number.isInteger(n) ? n : n.toFixed(1)) + 'M'; }
+      if (v >= 1e3) { const n = v / 1e3; return '$' + (Number.isInteger(n) ? n : n.toFixed(1)) + 'K'; }
       return '$' + v.toFixed(0);
     }
 
     function fmtDate(iso) {
       if (!iso) return '';
       const [y, m, d] = iso.split('-').map(Number);
-      return new Date(y, m - 1, d).toLocaleDateString('en-US', {
-        month: 'short', day: 'numeric', year: 'numeric'
-      });
+      return new Date(y, m - 1, d).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    }
+
+    function fmtDateShort(iso) {
+      if (!iso) return '';
+      const [y, m, d] = iso.split('-').map(Number);
+      return new Date(y, m - 1, d).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
     }
 
     function fmtUpdated(isoStr) {
@@ -327,116 +401,123 @@
       tooltipEl.style.top  = Math.min(y, window.innerHeight - tooltipEl.offsetHeight - 8) + 'px';
     });
 
-    // ── Render one item ──────────────────────────────────────────────────────
+    // ── Cluster computation ──────────────────────────────────────────────────
 
-    function renderItem(sig, profile) {
-      const country = profile ? profile.name : sig.iso;
-      const score   = profile ? profile.structural_interest_score : null;
+    function computeClusters(signals) {
+      const now     = new Date();
+      const cutoff  = new Date(now - 30 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
 
-      const el = document.createElement('div');
-      el.className = 'item';
-
-      // Heatmap tint
-      if (score != null) {
-        if      (score >= 7) el.classList.add('tint-red');
-        else if (score >= 4) el.classList.add('tint-amber');
+      const byIso = new Map();
+      for (const sig of signals) {
+        if (!sig.iso) continue;
+        if (!byIso.has(sig.iso)) byIso.set(sig.iso, { sigs: [], sources: new Set() });
+        const e = byIso.get(sig.iso);
+        e.sigs.push(sig);
+        if (sig.source) e.sources.add(sig.source.toLowerCase());
       }
 
-      // Country tooltip
-      let countryTooltip = '';
-      if (profile) {
-        const ttParts = [];
-        if (score != null) ttParts.push(`Structural interest: ${score}/10`);
-        if (profile.score_rationale) ttParts.push(profile.score_rationale);
-        if (ttParts.length) countryTooltip = ` data-tooltip="${esc(ttParts.join('\n'))}"`;
-      }
+      const clusters = [];
+      for (const [iso, { sigs, sources }] of byIso) {
+        if (sources.size < 2) continue;
 
-      const sourceUrl = sig.page_url || sig.url || null;
-      const descRaw   = sig.description || '';
-      const descTrunc = descRaw.length > 800 ? descRaw.slice(0, 800) + '\u2026' : descRaw;
+        const recent = sigs.filter(s => (s.signal_date || '') >= cutoff);
+        if (!recent.length) continue;
 
-      const sourceBtn = sourceUrl
-        ? `<a class="details-btn" href="${esc(sourceUrl)}" target="_blank" rel="noopener">${esc(sourceLabel(sig.source))}</a>`
-        : '';
-      const detailsBtn = descTrunc
-        ? `<span class="details-btn details-expand">details</span>`
-        : '';
-      const detailsPipe = (sourceBtn && detailsBtn)
-        ? `<span class="sep">·</span>`
-        : '';
+        const allDates   = sigs.map(s => s.signal_date).filter(Boolean).sort();
+        const mostRecent = allDates[allDates.length - 1] || null;
 
-      const detailsHtml = (sourceBtn || detailsBtn)
-        ? `<div class="details-row">${sourceBtn}${detailsPipe}${detailsBtn}</div>
-           <div class="details-body">${descTrunc ? esc(descTrunc) : ''}</div>`
-        : '';
+        const recentDates    = recent.map(s => s.signal_date).filter(Boolean).sort();
+        const firstRecentDate = recentDates[0];
+        const daysSinceFirst  = firstRecentDate
+          ? Math.floor((now - new Date(firstRecentDate)) / (24 * 60 * 60 * 1000))
+          : null;
 
-      el.innerHTML = `
-        <div class="row1">
-          <span class="item-desc">${esc(sig.title || sig.description || '—')}</span>
-          <span class="item-val">${fmtValue(sig.value_usd)}</span>
-        </div>
-        <div class="row2"><span class="item-country"${countryTooltip}>${esc(country)}</span><span class="sep">·</span>${fmtDate(sig.signal_date)}</div>
-        ${detailsHtml}
-      `.trim();
-
-      const expand = el.querySelector('.details-expand');
-      if (expand) {
-        expand.addEventListener('click', e => {
-          e.stopPropagation();
-          const wasExpanded = el.classList.contains('expanded');
-          document.querySelectorAll('.item.expanded').forEach(i => i.classList.remove('expanded'));
-          if (!wasExpanded) el.classList.add('expanded');
+        clusters.push({
+          iso,
+          sourceDiversity: sources.size,
+          sources: [...sources].sort(),
+          totalSignals: sigs.length,
+          recentSignals: recent.length,
+          mostRecent,
+          daysSinceFirst,
         });
       }
 
-      return el;
+      clusters.sort((a, b) => {
+        if (b.sourceDiversity !== a.sourceDiversity) return b.sourceDiversity - a.sourceDiversity;
+        return (b.mostRecent || '').localeCompare(a.mostRecent || '');
+      });
+
+      return clusters;
     }
 
-    // ── Main ─────────────────────────────────────────────────────────────────
+    // ── Render clusters ──────────────────────────────────────────────────────
 
-    async function main() {
-      const statusEl  = document.getElementById('status');
-      const feedEl    = document.getElementById('feed');
-      const updatedEl = document.getElementById('updated');
+    let activeFilter = null;
 
-      let data;
-      try {
-        const r = await fetch(SIGNALS_URL);
-        if (!r.ok) throw new Error('HTTP ' + r.status);
-        data = await r.json();
-      } catch (e) {
-        statusEl.textContent = 'error loading signals.json — ' + e.message;
-        statusEl.className = 'error';
+    function renderClusters(clusters, signals) {
+      const wrap      = document.getElementById('clusters-wrap');
+      const container = document.getElementById('clusters');
+      if (!clusters.length) return;
+
+      wrap.style.display = '';
+      container.innerHTML = '';
+
+      for (const cl of clusters) {
+        const profile = profileCache[cl.iso] || null;
+        const name    = profile ? profile.name : cl.iso;
+
+        const row = document.createElement('div');
+        row.className = 'cluster-row';
+        row.dataset.iso = cl.iso;
+
+        const sourceTags = cl.sources
+          .map(s => `<span class="cl-src">${esc(sourceShort(s))}</span>`)
+          .join('');
+
+        row.innerHTML =
+          `<span class="cl-name">${esc(name)}</span>` +
+          `<span class="cl-sep">·</span>` +
+          `<span class="cl-sources">${sourceTags}</span>` +
+          `<span class="cl-sep">·</span>` +
+          `<span class="cl-count">${cl.totalSignals}</span>` +
+          `<span class="cl-sep">·</span>` +
+          `<span class="cl-date">${esc(fmtDateShort(cl.mostRecent))}</span>`;
+
+        row.addEventListener('click', () => {
+          if (activeFilter === cl.iso) {
+            activeFilter = null;
+            row.classList.remove('active');
+          } else {
+            container.querySelectorAll('.cluster-row.active')
+              .forEach(r => r.classList.remove('active'));
+            activeFilter = cl.iso;
+            row.classList.add('active');
+          }
+          renderFeed(signals);
+        });
+
+        container.appendChild(row);
+      }
+    }
+
+    // ── Render feed ──────────────────────────────────────────────────────────
+
+    function renderFeed(signals) {
+      const feedEl = document.getElementById('feed');
+      feedEl.innerHTML = '';
+
+      const visible = activeFilter
+        ? signals.filter(s => s.iso === activeFilter)
+        : signals;
+
+      if (!visible.length) {
+        feedEl.innerHTML = '<div style="color:var(--muted);font-size:12px;padding:16px 0">no signals</div>';
         return;
       }
 
-      updatedEl.textContent = fmtUpdated(data.generated_at);
-
-      // Dedupe on cn_number, skip US/null iso, sort newest first
-      const seen = new Set();
-      const signals = (data.signals || [])
-        .filter(s => s.iso && s.iso !== 'US')
-        .filter(s => {
-          const key = s.cn_number || `${s.iso}|${s.signal_date}|${s.description}`;
-          if (seen.has(key)) return false;
-          seen.add(key);
-          return true;
-        })
-        .sort((a, b) => (b.signal_date || '').localeCompare(a.signal_date || ''));
-
-      statusEl.remove();
-
-      if (!signals.length) {
-        feedEl.innerHTML = '<div id="status">no signals</div>';
-        return;
-      }
-
-      // Fetch all profiles in parallel
-      await Promise.all([...new Set(signals.map(s => s.iso))].map(loadProfile));
-
-      // Group by month (insertion order preserves newest-first sort)
       const byMonth = new Map();
-      for (const sig of signals) {
+      for (const sig of visible) {
         const key = sig.signal_date ? sig.signal_date.slice(0, 7) : '';
         if (!byMonth.has(key)) byMonth.set(key, []);
         byMonth.get(key).push(sig);
@@ -456,6 +537,123 @@
           feedEl.appendChild(renderItem(sig, profileCache[sig.iso] || null));
         }
       }
+    }
+
+    // ── Render one item ──────────────────────────────────────────────────────
+
+    function renderItem(sig, profile) {
+      const country = profile ? profile.name : sig.iso;
+      const score   = profile ? profile.structural_interest_score : null;
+
+      const el = document.createElement('div');
+      el.className = 'item';
+
+      if (score != null) {
+        if      (score >= 7) el.classList.add('tint-red');
+        else if (score >= 4) el.classList.add('tint-amber');
+      }
+
+      let countryTooltip = '';
+      if (profile) {
+        const ttParts = [];
+        if (score != null) ttParts.push(`Structural interest: ${score}/10`);
+        if (profile.score_rationale) ttParts.push(profile.score_rationale);
+        if (ttParts.length) countryTooltip = ` data-tooltip="${esc(ttParts.join('\n'))}"`;
+      }
+
+      const sourceUrl  = sig.page_url || sig.url || null;
+      const descRaw    = sig.description || '';
+      const descTrunc  = descRaw.length > 800 ? descRaw.slice(0, 800) + '\u2026' : descRaw;
+      const srcShort   = sourceShort(sig.source);
+
+      const sourceBtn  = sourceUrl
+        ? `<a class="details-btn" href="${esc(sourceUrl)}" target="_blank" rel="noopener">${esc(srcShort)}</a>`
+        : `<span>${esc(srcShort)}</span>`;
+      const detailsBtn = descTrunc
+        ? `<span class="details-btn details-expand">details</span>`
+        : '';
+      const detailsPipe = detailsBtn ? `<span class="sep">·</span>` : '';
+
+      const detailsHtml = (descTrunc || sourceUrl)
+        ? `<div class="details-row">${sourceBtn}${detailsPipe}${detailsBtn}</div>` +
+          (descTrunc ? `<div class="details-body">${esc(descTrunc)}</div>` : '')
+        : '';
+
+      const valHtml = sig.value_usd != null
+        ? `<span class="item-val">${esc(fmtValue(sig.value_usd))}</span>`
+        : '';
+
+      el.innerHTML = (
+        `<div class="row1">` +
+          `<span class="item-desc">${esc(sig.title || sig.description || '—')}</span>` +
+          valHtml +
+        `</div>` +
+        `<div class="row2">` +
+          `<span class="item-country"${countryTooltip}>${esc(country)}</span>` +
+          `<span class="sep">·</span>` +
+          `<span>${esc(fmtDate(sig.signal_date))}</span>` +
+        `</div>` +
+        detailsHtml
+      );
+
+      const expand = el.querySelector('.details-expand');
+      if (expand) {
+        expand.addEventListener('click', e => {
+          e.stopPropagation();
+          const wasExpanded = el.classList.contains('expanded');
+          document.querySelectorAll('.item.expanded').forEach(i => i.classList.remove('expanded'));
+          if (!wasExpanded) el.classList.add('expanded');
+        });
+      }
+
+      return el;
+    }
+
+    // ── Main ─────────────────────────────────────────────────────────────────
+
+    async function main() {
+      const statusEl  = document.getElementById('status');
+      const updatedEl = document.getElementById('updated');
+
+      let data;
+      try {
+        const r = await fetch(SIGNALS_URL);
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        data = await r.json();
+      } catch (e) {
+        statusEl.textContent = 'error loading signals.json — ' + e.message;
+        statusEl.className = 'error';
+        return;
+      }
+
+      updatedEl.textContent = fmtUpdated(data.generated_at);
+
+      // Dedupe, skip US/null iso, sort newest first
+      const seen = new Set();
+      const signals = (data.signals || [])
+        .filter(s => s.iso && s.iso !== 'US')
+        .filter(s => {
+          const key = s.cn_number || `${s.iso}|${s.signal_date}|${s.description}`;
+          if (seen.has(key)) return false;
+          seen.add(key);
+          return true;
+        })
+        .sort((a, b) => (b.signal_date || '').localeCompare(a.signal_date || ''));
+
+      statusEl.remove();
+
+      if (!signals.length) {
+        document.getElementById('feed').innerHTML =
+          '<div style="color:var(--muted);font-size:12px;padding:16px 0">no signals</div>';
+        return;
+      }
+
+      // Load all profiles in parallel
+      await Promise.all([...new Set(signals.map(s => s.iso))].map(loadProfile));
+
+      const clusters = computeClusters(signals);
+      renderClusters(clusters, signals);
+      renderFeed(signals);
     }
 
     main();
