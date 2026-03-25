@@ -358,7 +358,7 @@
       const descTrunc = descRaw.length > 800 ? descRaw.slice(0, 800) + '\u2026' : descRaw;
 
       const sourceBtn = sourceUrl
-        ? `<span class="details-pipe">|</span><a class="details-btn" href="${esc(sourceUrl)}" target="_blank" rel="noopener">source</a>`
+        ? `<span class="details-pipe">|</span><a class="details-btn" href="${esc(sourceUrl)}" target="_blank" rel="noopener">${esc(sourceLabel(sig.source))}</a>`
         : '';
       const detailsBtn = descTrunc
         ? `<span class="details-btn details-expand">details</span>`
