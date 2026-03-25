@@ -151,23 +151,20 @@
 
     /* ── Details row ── */
     .details-row {
-      margin-top: 4px;
-      font-size: 11px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 3px;
+      font-size: 13px;
       color: var(--muted);
-      opacity: 0.45;
       user-select: none;
     }
-    .details-row:hover { opacity: 0.65; }
-    .item.expanded .details-row { opacity: 0.65; }
 
     .details-btn {
       cursor: pointer;
     }
     .details-btn:hover { text-decoration: underline; }
 
-    .details-pipe {
-      margin: 0 4px;
-    }
 
     .details-body {
       display: none;
@@ -358,14 +355,17 @@
       const descTrunc = descRaw.length > 800 ? descRaw.slice(0, 800) + '\u2026' : descRaw;
 
       const sourceBtn = sourceUrl
-        ? `<span class="details-pipe">|</span><a class="details-btn" href="${esc(sourceUrl)}" target="_blank" rel="noopener">${esc(sourceLabel(sig.source))}</a>`
+        ? `<a class="details-btn" href="${esc(sourceUrl)}" target="_blank" rel="noopener">${esc(sourceLabel(sig.source))}</a>`
         : '';
       const detailsBtn = descTrunc
         ? `<span class="details-btn details-expand">details</span>`
         : '';
+      const detailsPipe = (sourceBtn && detailsBtn)
+        ? `<span class="sep">·</span>`
+        : '';
 
-      const detailsHtml = (detailsBtn || sourceBtn)
-        ? `<div class="details-row">${detailsBtn}${sourceBtn}</div>
+      const detailsHtml = (sourceBtn || detailsBtn)
+        ? `<div class="details-row">${sourceBtn}${detailsPipe}${detailsBtn}</div>
            <div class="details-body">${descTrunc ? esc(descTrunc) : ''}</div>`
         : '';
 
@@ -374,7 +374,7 @@
           <span class="item-desc">${esc(sig.title || sig.description || '—')}</span>
           <span class="item-val">${fmtValue(sig.value_usd)}</span>
         </div>
-        <div class="row2"><span class="source-tag">${esc(sourceLabel(sig.source))}</span><span class="sep">·</span><span class="item-country"${countryTooltip}>${esc(country)}</span><span class="sep">·</span>${fmtDate(sig.signal_date)}</div>
+        <div class="row2"><span class="item-country"${countryTooltip}>${esc(country)}</span><span class="sep">·</span>${fmtDate(sig.signal_date)}</div>
         ${detailsHtml}
       `.trim();
 
