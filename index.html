@@ -219,6 +219,8 @@
 
     .tt-score     { font-weight: 600; color: var(--text); margin-bottom: 3px; }
     .tt-rationale { color: var(--muted); }
+
+    #feed-toggle-btn:hover { opacity: 1 !important; }
   </style>
 </head>
 <body>
@@ -233,6 +235,10 @@
       <div id="clusters"></div>
     </div>
     <div id="feed-section">
+      <div id="feed-hdr" class="section-hdr" style="display:none">
+        <span id="feed-label"></span>
+        <span id="feed-toggle-btn" style="cursor:pointer;margin-left:8px;text-transform:none;font-size:10px;opacity:0.6"></span>
+      </div>
       <div id="feed"></div>
     </div>
   </div>
@@ -241,6 +247,7 @@
   <script>
     const PROFILES_BASE = 'data/profiles/';
     const SIGNALS_URL   = 'data/signals.json';
+    let feedFilter = 'high';  // 'high' = structural score ≥ 4 only, 'all' = everything
 
     // ── Source labels / short names ──────────────────────────────────────────
 
@@ -640,12 +647,32 @@
     // ── Render feed ──────────────────────────────────────────────────────────
 
     function renderFeed(signals) {
-      const feedEl = document.getElementById('feed');
+      const feedEl    = document.getElementById('feed');
+      const feedHdr   = document.getElementById('feed-hdr');
+      const feedLabel = document.getElementById('feed-label');
+      const toggleBtn = document.getElementById('feed-toggle-btn');
       feedEl.innerHTML = '';
 
-      const visible = activeFilter
-        ? signals.filter(s => s.iso === activeFilter)
-        : signals;
+      let visible;
+      if (activeFilter) {
+        visible = signals.filter(s => s.iso === activeFilter);
+        feedHdr.style.display = 'none';
+      } else if (feedFilter === 'high') {
+        visible = signals.filter(s => {
+          const p = profileCache[s.iso];
+          return p && p.structural_interest_score >= 4;
+        });
+        feedHdr.style.display = '';
+        feedLabel.textContent = 'high-interest countries only';
+        toggleBtn.textContent = '[show all]';
+        toggleBtn.onclick = () => { feedFilter = 'all'; renderFeed(signals); };
+      } else {
+        visible = signals;
+        feedHdr.style.display = '';
+        feedLabel.textContent = 'all countries';
+        toggleBtn.textContent = '[high-interest only]';
+        toggleBtn.onclick = () => { feedFilter = 'high'; renderFeed(signals); };
+      }
 
       if (!visible.length) {
         feedEl.innerHTML = '<div style="color:var(--muted);font-size:12px;padding:16px 0">no signals</div>';
