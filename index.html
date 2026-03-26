@@ -68,7 +68,7 @@
       font-size: 13px;
       padding: 24px 0;
     }
-    #status.error { color: #f87171; }
+    #status.error { color: var(--muted); }
 
     /* ── Section header ── */
     .section-hdr {
@@ -94,12 +94,7 @@
     .cluster-entry:hover  { background: rgba(255,255,255,0.025); }
     .cluster-entry.active { background: rgba(255,255,255,0.04); }
 
-    .cl-header {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 8px;
-    }
+    .cl-header { display: flex; align-items: baseline; gap: 8px; }
     .cl-name {
       font-size: 12px;
       font-weight: 600;
@@ -107,12 +102,6 @@
     }
     .cluster-entry:hover .cl-name,
     .cluster-entry.active .cl-name { color: var(--text); }
-
-    .cl-score {
-      font-size: 11px;
-      color: var(--muted);
-      flex-shrink: 0;
-    }
     .cl-layers { margin-top: 3px; }
     .cl-layer {
       font-size: 11px;
@@ -153,10 +142,6 @@
     }
 
     .item:hover             { background: rgba(255,255,255,0.025); }
-    .item.tint-amber        { background: rgba(245,158,11,0.10); }
-    .item.tint-red          { background: rgba(239,68,68,0.13); }
-    .item.tint-amber:hover  { background: rgba(245,158,11,0.15); }
-    .item.tint-red:hover    { background: rgba(239,68,68,0.18); }
 
     .row1 {
       display: flex;
@@ -183,7 +168,6 @@
       white-space: nowrap;
       flex-shrink: 0;
     }
-    .item-val.val-billion { color: #4ade80; }
 
     .row2 {
       display: flex;
@@ -252,7 +236,7 @@
   <div class="outer">
     <div id="status">fetching signals…</div>
     <div id="clusters-wrap" style="display:none">
-      <div class="section-hdr">clusters · top 5 · structural × lift × convergence</div>
+      <div class="section-hdr">clusters</div>
       <div id="clusters"></div>
     </div>
     <div id="feed-section">
@@ -542,39 +526,39 @@
       const extra  = sigs.length > 1 ? ' +' + (sigs.length - 1) : '';
 
       if (layer === 'military') {
-        const val       = top.value_usd ? fmtValue(top.value_usd) + ' ' : '';
-        const titleRaw  = top.title || '';
-        // DSCA titles are often "Country \u2014 Weapon System" — strip the country prefix
+        const val        = top.value_usd ? fmtValue(top.value_usd) + ' ' : '';
+        const titleRaw   = top.title || '';
         const titleClean = titleRaw.includes(' \u2014 ')
           ? titleRaw.split(' \u2014 ').slice(1).join(' \u2014 ')
           : titleRaw;
         const title = titleClean.length > 45 ? titleClean.slice(0, 42) + '\u2026' : titleClean;
-        return `Military: ${val}${title} ${date}${extra}`;
+        return `${sourceShort(top.source)}: ${val}${title} ${date}${extra}`;
       }
 
       if (layer === 'influence') {
-        const faraCount = sigs.filter(s => (s.source || '').toLowerCase() === 'fara').length;
-        const ldaCount  = sigs.filter(s => (s.source || '').toLowerCase() === 'lda').length;
-        const parts = [];
-        if (faraCount) parts.push(faraCount + ' FARA');
-        if (ldaCount)  parts.push(ldaCount + ' LDA');
-        return 'Influence: ' + parts.join(', ') + ' \u2014 last ' + date;
+        const counts = {};
+        for (const s of sigs) {
+          const k = sourceShort(s.source);
+          counts[k] = (counts[k] || 0) + 1;
+        }
+        const parts = Object.entries(counts).map(([k, n]) => `${k} ${n}`);
+        return parts.join('  ') + ' \u2014 ' + date;
       }
 
       if (layer === 'regulatory') {
         const titleRaw = top.title || '';
         const title    = titleRaw.length > 50 ? titleRaw.slice(0, 47) + '\u2026' : titleRaw;
-        return `Regulatory: ${title} ${date}${extra}`;
+        return `${sourceShort(top.source)}: ${title} ${date}${extra}`;
       }
 
       if (layer === 'procurement') {
         const val      = top.value_usd ? fmtValue(top.value_usd) + ' ' : '';
         const titleRaw = top.title || '';
         const title    = titleRaw.length > 45 ? titleRaw.slice(0, 42) + '\u2026' : titleRaw;
-        return `Procurement: ${val}${title} ${date}${extra}`;
+        return `${sourceShort(top.source)}: ${val}${title} ${date}${extra}`;
       }
 
-      return layer + ': ' + sigs.length + ' signal' + (sigs.length !== 1 ? 's' : '') + ' \u2014 last ' + date;
+      return sourceShort(top.source) + ': ' + sigs.length + ' \u2014 ' + date;
     }
 
     // ── Render clusters ──────────────────────────────────────────────────────
@@ -598,12 +582,7 @@
         entry.className = 'cluster-entry';
         entry.dataset.iso = cl.iso;
 
-        // Header: country name + score
-        const scoreFmt = cl.score >= 10 ? cl.score.toFixed(0) : cl.score.toFixed(1);
-        let html = `<div class="cl-header">` +
-          `<span class="cl-name">${esc(name)}</span>` +
-          `<span class="cl-score">${esc(scoreFmt)}</span>` +
-          `</div>`;
+        let html = `<div class="cl-header"><span class="cl-name">${esc(name)}</span></div>`;
 
         // One line per firing layer, in fixed order
         const layerOrder = ['military', 'influence', 'regulatory', 'procurement'];
@@ -688,11 +667,6 @@
       const el = document.createElement('div');
       el.className = 'item';
 
-      if (score != null) {
-        if      (score >= 7) el.classList.add('tint-red');
-        else if (score >= 4) el.classList.add('tint-amber');
-      }
-
       let countryTooltip = '';
       if (profile) {
         const ttParts = [];
@@ -718,7 +692,7 @@
         : '';
 
       const valHtml = sig.value_usd != null
-        ? `<span class="item-val${sig.value_usd >= 1e9 ? ' val-billion' : ''}">${esc(fmtValue(sig.value_usd))}</span>`
+        ? `<span class="item-val">${esc(fmtValue(sig.value_usd))}</span>`
         : '';
 
       const isFiltered = activeFilter === sig.iso;
