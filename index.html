@@ -144,6 +144,7 @@
       gap: 0;
       min-width: 0;
       white-space: nowrap;
+      cursor: pointer;
     }
 
     .item-country {
@@ -168,16 +169,6 @@
       padding-right: 16px;
     }
 
-    .item-source {
-      flex-shrink: 0;
-      color: var(--muted);
-      font-size: 11px;
-      padding-right: 14px;
-      max-width: 260px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
     .item-date {
       flex-shrink: 0;
       color: var(--muted);
@@ -186,19 +177,6 @@
       min-width: 80px;
       text-align: right;
     }
-
-    .item-toggle {
-      flex-shrink: 0;
-      width: 18px;
-      text-align: center;
-      cursor: pointer;
-      color: var(--muted);
-      font-size: 10px;
-      user-select: none;
-      transition: color 0.08s;
-    }
-    .item-toggle:hover { color: var(--text); }
-    .item.expanded .item-toggle { color: var(--text); }
 
     .item-detail {
       display: none;
@@ -241,7 +219,6 @@
   <div class="outer">
     <div id="status">fetching signals…</div>
     <div id="clusters-wrap" style="display:none">
-      <div class="section-hdr">clusters</div>
       <div id="clusters"></div>
     </div>
     <div id="feed-section">
@@ -711,15 +688,13 @@
           `<span class="${countryClass}"${countryTooltip}>${esc(country)}</span>` +
           `<span class="item-sep">\xb7</span>` +
           `<span class="item-title">${esc(titleStr)}</span>` +
-          `<span class="item-source">${esc(srcFull)}</span>` +
           `<span class="item-date">${esc(fmtDate(sig.signal_date))}</span>` +
-          (hasDetail ? `<span class="item-toggle">\u25be</span>` : `<span class="item-toggle"></span>`) +
         `</div>` +
         (hasDetail ? `<div class="item-detail">${detailInner}</div>` : '');
 
       if (hasDetail) {
-        el.querySelector('.item-toggle').addEventListener('click', e => {
-          e.stopPropagation();
+        el.querySelector('.item-row').addEventListener('click', e => {
+          if (e.target.classList.contains('item-country')) return;
           const wasExpanded = el.classList.contains('expanded');
           document.querySelectorAll('.item.expanded').forEach(i => i.classList.remove('expanded'));
           if (!wasExpanded) el.classList.add('expanded');
