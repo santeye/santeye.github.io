@@ -144,6 +144,32 @@
     .cluster-entry:hover .cl-factors,
     .cluster-entry.active .cl-factors { opacity: 0.8; }
 
+    /* ── Zone labels ── */
+    .zone-label {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0 0 5px;
+      border-bottom: 1px solid var(--sep);
+    }
+    .zone-label.zone-sep { padding-top: 20px; }
+    .zone-empty {
+      font-size: 11px;
+      color: var(--muted);
+      opacity: 0.4;
+      padding: 8px 0 10px;
+      border-bottom: 1px solid rgba(58,58,60,0.5);
+    }
+
+    /* ── Notable signal entries ── */
+    .nt-badge { font-size: 10px; font-weight: 700; letter-spacing: 0.04em; }
+    .nt-value { margin-left: auto; font-size: 11px; color: var(--text); white-space: nowrap; }
+    .nt-title { font-size: 11px; color: var(--muted); line-height: 1.5; margin-top: 2px; }
+    .cluster-entry:hover .nt-title,
+    .cluster-entry.active .nt-title { color: var(--text); }
+
     /* ── Month header ── */
     .month-header {
       font-size: 10px;
@@ -411,22 +437,41 @@
       tooltipEl.style.top  = Math.min(y, window.innerHeight - tooltipEl.offsetHeight - 8) + 'px';
     });
 
-    // ── Layer definitions ────────────────────────────────────────────────────
-
-    // Maps signal source → semantic layer name.
-    // FARA and LDA both count as one "influence" layer — 40 LDA filings = 1 layer,
-    // same as 1 FARA filing. Convergence counts channels, not volume.
-    const LAYER_MAP = {
+    // ── Layer taxonomy ───────────────────────────────────────────────────────
+    // Add new sources here only — no other formula changes required.
+    // Reserved entries are commented out until the source is implemented.
+    const SOURCE_LAYER_MAP = {
+      // military
       dsca:            'military',
+      // anchor:       'military',    // RESERVED: reclassify anchor_budget when full MoD data lands
+
+      // influence
       fara:            'influence',
       lda:             'influence',
+      anchor_budget:   'influence',   // budget press releases = influence until reclassified
+
+      // regulatory
       federalregister: 'regulatory',
+      // ofac:         'regulatory',  // RESERVED: OFAC SDN designations
+
+      // procurement
       sam:             'procurement',
-      anchor_budget:   'influence',
+      // usaspending:  'procurement', // RESERVED: USASpending modifications/drawdowns
+
+      // legislative (no active sources yet)
+      // congress:     'legislative', // RESERVED: Congress.gov hearing schedules
+
+      // adversarial (no active sources yet)
+      // sipri:        'adversarial', // RESERVED: SIPRI arms transfers
+      // acled:        'adversarial', // RESERVED: ACLED conflict events
+      // zakupki:      'adversarial', // RESERVED: zakupki.gov.ru procurement
     };
 
+    // All layers in taxonomy order — update when adding a new layer.
+    const ALL_LAYERS = ['military', 'influence', 'regulatory', 'procurement', 'legislative', 'adversarial'];
+
     function sigLayer(sig) {
-      return LAYER_MAP[(sig.source || '').toLowerCase()] || null;
+      return SOURCE_LAYER_MAP[(sig.source || '').toLowerCase()] || null;
     }
 
     // Source quality weights — applied per-signal before layer contribution is summed.
@@ -444,20 +489,58 @@
       return 0.5;
     }
 
-    // Quality-weighted contribution of a layer: max quality among its signals.
-    // A layer with only FR cultural notices contributes 0.2, not 1.0.
-    function layerWeight(sigs) {
+    // Layer bonus — indexed by active layer count (0-based: index 0 = 1 layer, index 4 = 5+ layers).
+    // Extensible: append entries to reward additional layers.
+    const LAYER_BONUS = [1.0, 1.3, 1.8, 2.5, 3.5];
+
+    // Dollar modifier — DSCA and SAM only, where value_usd is present.
+    // $1M → 1.0, $100M → 1.15, $1B → 1.225, $10B → 1.3
+    function dollarModifier(sig) {
+      const src = (sig.source || '').toLowerCase();
+      if ((src !== 'dsca' && src !== 'sam') || !sig.value_usd) return 1.0;
+      const t = Math.log10(sig.value_usd / 1e6) / 4;
+      return 1.0 + 0.3 * Math.max(0, Math.min(1, t));
+    }
+
+    // Recency decay within the 30-day convergence window.
+    // 0–7 days → 1.0, 8–14 days → 0.8, 15–30 days → 0.5, beyond → 0 (excluded upstream).
+    function recencyDecay(signalDate) {
+      if (!signalDate) return 0;
+      const ageDays = Math.round((Date.now() - new Date(signalDate).getTime()) / 86400000);
+      if (ageDays <=  7) return 1.0;
+      if (ageDays <= 14) return 0.8;
+      if (ageDays <= 30) return 0.5;
+      return 0;
+    }
+
+    // Per-layer contribution: max(quality × decay × dollarModifier) across all signals in the layer.
+    function layerContribution(sigs) {
       if (!sigs.length) return 0;
-      return Math.max(...sigs.map(sigQuality));
+      return Math.max(...sigs.map(s => sigQuality(s) * recencyDecay(s.signal_date) * dollarModifier(s)));
+    }
+
+    // ── Percentile lift (inactive) ───────────────────────────────────────────
+    // ACTIVATE: replace ratio lift with percentile lift once 90-day history exists.
+    // Switching is a one-line change in computeClusters: replace `ratioLift` with
+    // `computePercentileLift(iso, recentWeighted, periodCounts)`.
+    function computePercentileLift(iso, recentValue, historicalValues) { // eslint-disable-line no-unused-vars
+      const sorted     = [...historicalValues].sort((a, b) => a - b);
+      const below      = sorted.filter(v => v < recentValue).length;
+      const percentile = sorted.length ? below / sorted.length : 0.5;
+      // 50th percentile → 1.0, 90th → ~1.85, below median → 0.5
+      return 0.5 + 1.5 * percentile;
     }
 
     // ── Cluster computation ──────────────────────────────────────────────────
-
+    //
+    // Formula:
+    //   score = structuralScore × lift × convergence × recencyWeight × temporalBonus
+    //   convergence = Σ(layerContribution) × LAYER_BONUS[layerCount - 1]
+    //   layerContribution = max(sigQuality × recencyDecay × dollarModifier) per layer
+    //
     function computeClusters(signals) {
-      // Eight cutoffs: today, -14, -28, -42, -56, -70, -84, -98 days
-      // cutoffs[i] = isoOffset(i * 14)
-      // Recent window:     signal_date >= cutoffs[1]
-      // Baseline period p: cutoffs[p+2] <= signal_date < cutoffs[p+1]  (p = 0..5)
+      // Convergence window: 30 days. Baseline: six 14-day periods covering days 14–98.
+      const w30     = isoOffset(30);
       const cutoffs = [0, 14, 28, 42, 56, 70, 84, 98].map(d => isoOffset(d));
 
       // Group all signals by ISO
@@ -468,34 +551,65 @@
         byIso.get(sig.iso).push(sig);
       }
 
-      const clusters = [];
+      const allScored = [];  // every ISO with meaningful activity — for full diagnostic
+      const clusters  = [];  // ISOs that pass eligibility gates
 
       for (const [iso, sigs] of byIso) {
         const profile         = profileCache[iso] || null;
         const structuralScore = profile ? (profile.structural_interest_score || 1) : 1;
 
-        // ── Recent window (14d): collect signals per layer ──────────────────
-        const layerSigs = { military: [], influence: [], regulatory: [], procurement: [] };
+        // ── 30-day convergence window: collect signals per layer ─────────────
+        const layerSigs = {};
+        for (const l of ALL_LAYERS) layerSigs[l] = [];
         for (const sig of sigs) {
-          if ((sig.signal_date || '') < cutoffs[1]) continue;
+          if ((sig.signal_date || '') < w30) continue;
           const layer = sigLayer(sig);
           if (layer) layerSigs[layer].push(sig);
         }
 
-        // Quality-weighted convergence: sum of max-quality signal per active layer.
-        // A layer with only FR cultural notices contributes 0.2 instead of 1.0.
-        const recentWeighted = Object.values(layerSigs).reduce((s, a) => s + layerWeight(a), 0);
-        const recentLayers   = Object.values(layerSigs).filter(a => a.length > 0).length; // raw, for display
+        const activeLayers = ALL_LAYERS.filter(l => layerSigs[l].length > 0);
+        const layerCount   = activeLayers.length;
+
+        // Per-layer contributions (quality × decay × dollarMod)
+        const contributions = {};
+        for (const l of activeLayers) contributions[l] = layerContribution(layerSigs[l]);
+        const recentWeighted = Object.values(contributions).reduce((s, v) => s + v, 0);
         if (recentWeighted < 0.1) continue;  // nothing meaningful firing
 
-        // ── Baseline: six 14d periods — quality-weighted layer sum per period ──
-        // Using the same quality weighting as recent so lift is a comparable ratio.
-        // Stored for Z-score upgrade path.
+        // Layer bonus — capped at the last defined index
+        const layerBonus = LAYER_BONUS[Math.min(layerCount - 1, LAYER_BONUS.length - 1)];
+
+        // Convergence
+        const convergence = recentWeighted * layerBonus;
+
+        // ── Temporal coherence bonus ─────────────────────────────────────────
+        // Uses the most-recent signal date per layer to compute pairwise inter-layer gaps.
+        let temporalBonus   = 1.0;
+        let temporalMaxGap  = null;
+        if (layerCount >= 2) {
+          const latestPerLayer = activeLayers.map(l =>
+            Math.max(...layerSigs[l].map(s => new Date(s.signal_date || '1970-01-01').getTime()))
+          );
+          let maxGapDays = 0;
+          for (let i = 0; i < latestPerLayer.length; i++) {
+            for (let j = i + 1; j < latestPerLayer.length; j++) {
+              const gap = Math.abs(latestPerLayer[i] - latestPerLayer[j]) / 86400000;
+              if (gap > maxGapDays) maxGapDays = gap;
+            }
+          }
+          temporalMaxGap = Math.round(maxGapDays * 10) / 10;
+          temporalBonus  = maxGapDays <= 3 ? 1.8 : maxGapDays <= 7 ? 1.4 : 1.0;
+        }
+
+        // ── Baseline: six 14d periods — plain quality max per layer (no decay) ─
+        // No decay applied here: each historical period is uniformly "old."
+        // Baseline uses same layer taxonomy so lift is a stable relative metric.
         const periodCounts = [];
         for (let p = 0; p < 6; p++) {
-          const pEnd   = cutoffs[p + 1];
-          const pStart = cutoffs[p + 2];
-          const pLayerSigs = { military: [], influence: [], regulatory: [], procurement: [] };
+          const pEnd        = cutoffs[p + 1];
+          const pStart      = cutoffs[p + 2];
+          const pLayerSigs  = {};
+          for (const l of ALL_LAYERS) pLayerSigs[l] = [];
           for (const sig of sigs) {
             const d = sig.signal_date || '';
             if (d >= pStart && d < pEnd) {
@@ -503,37 +617,41 @@
               if (layer) pLayerSigs[layer].push(sig);
             }
           }
-          const pWeighted = Object.values(pLayerSigs).reduce((s, a) => s + layerWeight(a), 0);
+          const pWeighted = ALL_LAYERS.reduce((s, l) => {
+            const ls = pLayerSigs[l];
+            return s + (ls.length ? Math.max(...ls.map(sigQuality)) : 0);
+          }, 0);
           periodCounts.push(pWeighted);
         }
 
         const hasBaseline  = periodCounts.some(c => c > 0);
         const baselineMean = periodCounts.reduce((a, b) => a + b, 0) / 6;
         const baselineVar  = periodCounts.reduce((a, b) => a + (b - baselineMean) ** 2, 0) / 6;
-        const baselineStd  = Math.sqrt(baselineVar);  // stored for Z-score upgrade path
+        const baselineStd  = Math.sqrt(baselineVar);  // stored for Z-score / percentile upgrade
 
-        // Lift: quality-weighted recent activity vs quality-weighted baseline.
-        const lift = hasBaseline ? recentWeighted / Math.max(baselineMean, 0.5) : 1.0;
+        // Ratio lift — primary formula
+        const ratioLift = hasBaseline ? recentWeighted / Math.max(baselineMean, 0.5) : 1.0;
+        const lift      = ratioLift;
+        // ACTIVATE: replace ratio lift with percentile lift once 90-day history exists.
+        // const lift = computePercentileLift(iso, recentWeighted, periodCounts);
 
-        // ── Recency weight: median signal date within the convergence window ──
-        const windowDates = Object.values(layerSigs).flat()
+        // ── Recency weight: median signal date within the 30-day window ───────
+        const windowDates   = activeLayers.flatMap(l => layerSigs[l])
           .map(s => s.signal_date).filter(Boolean).sort();
         const medianDate    = windowDates[Math.floor(windowDates.length / 2)] || null;
-        const recencyWeight = !medianDate              ? 0.7
+        const recencyWeight = !medianDate                 ? 0.7
           : medianDate >= isoOffset(7)  ? 1.0
           : medianDate >= isoOffset(14) ? 0.7
           :                               0.5;
 
-        const convergence = recentWeighted;  // quality-weighted
-        const score = Math.round(structuralScore * lift * convergence * recencyWeight * 100) / 100;
+        const score = Math.round(Math.log2(structuralScore + 1) * lift * convergence * recencyWeight * temporalBonus * 100) / 100;
 
         // ── Weekly layer counts (6 weeks) — stored for future CUSUM upgrade ──
-        // weeks[0] = 0-7d, weeks[1] = 7-14d, ..., weeks[5] = 35-42d
         // CUSUM would track consecutive weeks above baselineMean to boost persistent spikes.
         const weeklyLayerCounts = [];
         for (let w = 0; w < 6; w++) {
-          const wStart = isoOffset((w + 1) * 7);
-          const wEnd   = isoOffset(w * 7);
+          const wStart  = isoOffset((w + 1) * 7);
+          const wEnd    = isoOffset(w * 7);
           const wLayers = new Set();
           for (const sig of sigs) {
             const d = sig.signal_date || '';
@@ -545,34 +663,129 @@
           weeklyLayerCounts.push(wLayers.size);
         }
 
-        clusters.push({
+        const entry = {
           iso,
           structuralScore,
-          lift:            Math.round(lift * 100) / 100,
-          convergence,
+          lift:             Math.round(lift * 100) / 100,
+          convergence:      Math.round(convergence * 100) / 100,
+          recentWeighted:   Math.round(recentWeighted * 100) / 100,
+          layerBonus,
+          temporalBonus,
+          temporalMaxGap,
           recencyWeight,
           score,
           layerSigs,
+          activeLayers,
+          layerCount,
+          contributions,
           medianDate,
-          baselineStats:   { mean: Math.round(baselineMean * 100) / 100, std: Math.round(baselineStd * 100) / 100, periods: periodCounts },
+          baselineStats:    { mean: Math.round(baselineMean * 100) / 100, std: Math.round(baselineStd * 100) / 100, periods: periodCounts },
           weeklyLayerCounts,
-        });
+        };
+
+        allScored.push(entry);
+
+        // ── Eligibility gates ─────────────────────────────────────────────────
+        // Gate 1: at least 2 distinct layers must have fired in the 30-day window.
+        // Gate 2: structural score ≥ 4, or ≥ 2 with 3+ distinct layers (deep convergence exception).
+        // If fewer than 5 countries qualify, show however many do — never pad with single-layer entries.
+        const meetsLayers     = layerCount >= 2;
+        const meetsStructural = structuralScore >= 4 || (structuralScore >= 2 && layerCount >= 3);
+        if (meetsLayers && meetsStructural) clusters.push(entry);
       }
 
       clusters.sort((a, b) => b.score - a.score);
-      const top5 = clusters.slice(0, 5);
+      allScored.sort((a, b) => b.score - a.score);
 
-      // ── Console diagnostic — sanity-check component values ──────────────
-      console.table(top5.map(cl => ({
+      // ── Full diagnostic — all countries with meaningful activity ─────────
+      console.log('=== HARPY CLUSTER DIAGNOSTIC — ALL SCORED COUNTRIES ===');
+      console.table(allScored.map(cl => ({
         iso:          cl.iso,
         structural:   cl.structuralScore,
+        log2_struct:  Math.round(Math.log2(cl.structuralScore + 1) * 100) / 100,
         lift:         cl.lift,
+        r_weighted:   cl.recentWeighted,
+        lyr_bonus:    cl.layerBonus,
+        temporal:     cl.temporalBonus,
+        t_gap_d:      cl.temporalMaxGap,
         convergence:  cl.convergence,
         recency:      cl.recencyWeight,
         score:        cl.score,
+        layers:       cl.activeLayers.join('+'),
+        n_layers:     cl.layerCount,
         b_mean:       cl.baselineStats.mean,
         median_date:  cl.medianDate,
-        weeks:        cl.weeklyLayerCounts.join(','),
+        eligible:     clusters.includes(cl),
+      })));
+
+      console.log('=== ZONE 1 — CONVERGENCE (eligible clusters) ===');
+      console.table(clusters.map((cl, rank) => ({
+        rank:         rank + 1,
+        iso:          cl.iso,
+        score:        cl.score,
+        log2_struct:  Math.round(Math.log2(cl.structuralScore + 1) * 100) / 100,
+        lift:         cl.lift,
+        r_weighted:   cl.recentWeighted,
+        lyr_bonus:    cl.layerBonus,
+        temporal:     cl.temporalBonus,
+        t_gap_d:      cl.temporalMaxGap,
+        convergence:  cl.convergence,
+        recency:      cl.recencyWeight,
+        layers:       cl.activeLayers.join('+'),
+      })));
+
+      return clusters;  // variable length — no hard cap, never padded with single-layer entries
+    }
+
+    // ── Zone 2: Notable signal computation ───────────────────────────────────
+    // Scores each individual signal in the last 30 days:
+    //   score = sigQuality × dollarModifier × log2(structuralScore + 1) × recencyDecay
+    // One entry per country (best signal per ISO). Top 5 returned.
+
+    function computeNotableSignals(signals) {
+      const w30 = isoOffset(30);
+
+      // Score every signal in the 30-day window
+      const scored = [];
+      for (const sig of signals) {
+        if ((sig.signal_date || '') < w30) continue;
+        const decay = recencyDecay(sig.signal_date);
+        if (!decay) continue;
+        const quality = sigQuality(sig);
+        if (quality < 0.7) continue;  // Zone 2 minimum: DSCA(1.0), FARA(0.9), FR-policy(0.8), SAM(0.7)
+        // LDA(0.5) excluded — standalone lobbying disclosure is not a standalone signal.
+        // Exception path (FARA-equivalent foreign govt LDA) not yet detectable from data.
+        const profile       = profileCache[sig.iso] || null;
+        const structScore   = profile ? (profile.structural_interest_score || 1) : 1;
+        const score = quality * dollarModifier(sig) * Math.log2(structScore + 1) * decay;
+        scored.push({ sig, score: Math.round(score * 10000) / 10000, structScore });
+      }
+
+      // Best signal per ISO
+      const bestByIso = new Map();
+      for (const entry of scored) {
+        const iso = entry.sig.iso;
+        if (!bestByIso.has(iso) || entry.score > bestByIso.get(iso).score) {
+          bestByIso.set(iso, entry);
+        }
+      }
+
+      const top5 = [...bestByIso.values()]
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 5);
+
+      console.log('=== ZONE 2 — NOTABLE SIGNALS ===');
+      console.table(top5.map((e, i) => ({
+        rank:        i + 1,
+        iso:         e.sig.iso,
+        score:       e.score,
+        source:      e.sig.source,
+        quality:     sigQuality(e.sig),
+        dollar_mod:  Math.round(dollarModifier(e.sig) * 1000) / 1000,
+        log2_struct: Math.round(Math.log2(e.structScore + 1) * 1000) / 1000,
+        decay:       recencyDecay(e.sig.signal_date),
+        date:        e.sig.signal_date,
+        title:       (e.sig.title || '').slice(0, 55),
       })));
 
       return top5;
@@ -629,47 +842,102 @@
 
     let activeFilter = null;
 
-    function renderClusters(clusters, signals) {
+    function renderClusters(clusters, notable, signals) {
       const wrap      = document.getElementById('clusters-wrap');
       const container = document.getElementById('clusters');
-      if (!clusters.length) return;
 
+      // Show the panel whenever there is something to display in either zone
+      if (!clusters.length && !notable.length) return;
       wrap.style.display = '';
       container.innerHTML = '';
 
-      // clusters is already sliced to top 5 in computeClusters
-      for (const cl of clusters) {
-        const profile = profileCache[cl.iso] || null;
-        const name    = (profile ? profile.name : cl.iso).toUpperCase();
-
-        const entry = document.createElement('div');
-        entry.className = 'cluster-entry';
-        entry.dataset.iso = cl.iso;
-
-        let html = `<div class="cl-header"><span class="cl-name">${esc(name)}</span></div>`;
-
-        // Structural interest factors only — no source labels
-        const factors = profile && profile.key_structural_interests;
-        if (factors && factors.length) {
-          html += `<div class="cl-factors" style="opacity:0.8">${esc(factors.slice(0, 3).join(' \xb7 '))}</div>`;
-        }
-
-        entry.innerHTML = html;
-
+      // Helper: make an entry clickable for feed filtering
+      function bindFilter(entry, iso) {
         entry.addEventListener('click', () => {
-          if (activeFilter === cl.iso) {
+          if (activeFilter === iso) {
             activeFilter = null;
             entry.classList.remove('active');
           } else {
             container.querySelectorAll('.cluster-entry.active')
               .forEach(r => r.classList.remove('active'));
-            activeFilter = cl.iso;
+            activeFilter = iso;
             entry.classList.add('active');
           }
           syncMapFilter(activeFilter);
           renderFeed(signals);
         });
+      }
 
+      // ── Zone 1: CONVERGENCE ───────────────────────────────────────────────
+      const z1Label = document.createElement('div');
+      z1Label.className = 'zone-label';
+      z1Label.textContent = 'CONVERGENCE';
+      container.appendChild(z1Label);
+
+      if (!clusters.length) {
+        const empty = document.createElement('div');
+        empty.className = 'zone-empty';
+        empty.textContent = 'no cross-layer signals in current window';
+        container.appendChild(empty);
+      } else {
+        // clusters contains all eligibility-gated countries, sorted by score — no hard cap
+        for (const cl of clusters) {
+          const profile = profileCache[cl.iso] || null;
+          const name    = (profile ? profile.name : cl.iso).toUpperCase();
+
+          const entry = document.createElement('div');
+          entry.className = 'cluster-entry';
+          entry.dataset.iso = cl.iso;
+
+          let html = `<div class="cl-header"><span class="cl-name">${esc(name)}</span></div>`;
+
+          // Structural interest factors only — no source labels
+          const factors = profile && profile.key_structural_interests;
+          if (factors && factors.length) {
+            html += `<div class="cl-factors" style="opacity:0.8">${esc(factors.slice(0, 3).join(' \xb7 '))}</div>`;
+          }
+
+          entry.innerHTML = html;
+          bindFilter(entry, cl.iso);
+          container.appendChild(entry);
+        }
+      }
+
+      // ── Zone 2: NOTABLE SIGNALS ───────────────────────────────────────────
+      const z2Label = document.createElement('div');
+      z2Label.className = 'zone-label zone-sep';
+      z2Label.textContent = 'NOTABLE SIGNALS';
+      container.appendChild(z2Label);
+
+      for (const { sig, structScore } of notable) {
+        const profile = profileCache[sig.iso] || null;
+        const name    = (profile ? profile.name : sig.iso).toUpperCase();
+
+        // Clean title: strip leading "Country — " from DSCA records
+        const raw = sig.title || '';
+        const src = (sig.source || '').toLowerCase();
+        let title = (src === 'dsca' && raw.includes('\u2014'))
+          ? raw.split('\u2014').slice(1).join('\u2014').trim()
+          : raw;
+        if (title.length > 55) title = title.slice(0, 52) + '\u2026';
+
+        const color  = sourceColor(sig.source);
+        const badge  = sourceShort(sig.source);
+        const valStr = sig.value_usd ? fmtValue(sig.value_usd) : '';
+
+        const entry = document.createElement('div');
+        entry.className = 'cluster-entry';
+        entry.dataset.iso = sig.iso;
+
+        let html = `<div class="cl-header">`;
+        html += `<span class="cl-name">${esc(name)}</span>`;
+        html += `<span class="nt-badge" style="color:${color}">${esc(badge)}</span>`;
+        if (valStr) html += `<span class="nt-value">${esc(valStr)}</span>`;
+        html += `</div>`;
+        html += `<div class="nt-title">${esc(title)}</div>`;
+
+        entry.innerHTML = html;
+        bindFilter(entry, sig.iso);
         container.appendChild(entry);
       }
     }
@@ -860,7 +1128,8 @@
       await Promise.all([...new Set(signals.map(s => s.iso))].map(loadProfile));
 
       const clusters = computeClusters(signals);
-      renderClusters(clusters, signals);
+      const notable  = computeNotableSignals(signals);
+      renderClusters(clusters, notable, signals);
       renderFeed(signals);
       initMap(clusters, signals);
     }
