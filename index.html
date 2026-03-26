@@ -903,12 +903,13 @@
       const countries = topojson.feature(world, world.objects.countries);
 
       L.geoJSON(countries, {
+        renderer: L.svg({ padding: 0.5 }),
         style: f => {
           const iso = ISO_NUM_TO_A2[+f.id];
           return {
             fillColor:   iso && clusterIsos.has(iso) ? '#6b7280' : '#3a3a3e',
             fillOpacity: 1,
-            color:       iso && clusterIsos.has(iso) ? '#6b7280' : '#3a3a3e',
+            color:       '#232324',
             weight:      0.5,
           };
         },
