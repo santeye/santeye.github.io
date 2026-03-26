@@ -382,6 +382,28 @@
       return LAYER_MAP[(sig.source || '').toLowerCase()] || null;
     }
 
+    // Source quality weights — applied per-signal before layer contribution is summed.
+    // FR is split: high-signal policy terms = 0.8, all other FR = 0.2 (cultural notices,
+    // routine determinations should not constitute meaningful layer activity).
+    const FR_POLICY_RE = /sanction|licen[sc]e|designation|emergency|\brule\b|regulation|export.control|\barms\b|defense|security/i;
+
+    function sigQuality(sig) {
+      const src = (sig.source || '').toLowerCase();
+      if (src === 'dsca')            return 1.0;
+      if (src === 'fara')            return 0.9;
+      if (src === 'sam')             return 0.7;
+      if (src === 'lda')             return 0.5;
+      if (src === 'federalregister') return FR_POLICY_RE.test(sig.title || '') ? 0.8 : 0.2;
+      return 0.5;
+    }
+
+    // Quality-weighted contribution of a layer: max quality among its signals.
+    // A layer with only FR cultural notices contributes 0.2, not 1.0.
+    function layerWeight(sigs) {
+      if (!sigs.length) return 0;
+      return Math.max(...sigs.map(sigQuality));
+    }
+
     // ── Cluster computation ──────────────────────────────────────────────────
 
     function computeClusters(signals) {
@@ -413,38 +435,40 @@
           if (layer) layerSigs[layer].push(sig);
         }
 
-        const recentLayers = Object.values(layerSigs).filter(a => a.length > 0).length;
-        if (recentLayers === 0) continue;
+        // Quality-weighted convergence: sum of max-quality signal per active layer.
+        // A layer with only FR cultural notices contributes 0.2 instead of 1.0.
+        const recentWeighted = Object.values(layerSigs).reduce((s, a) => s + layerWeight(a), 0);
+        const recentLayers   = Object.values(layerSigs).filter(a => a.length > 0).length; // raw, for display
+        if (recentWeighted < 0.1) continue;  // nothing meaningful firing
 
-        // ── Baseline: six 14d periods (days 15-98) — distinct layers per period ──
-        // Stored as array for Z-score upgrade: when data matures, swap lift formula to
-        //   lift = (recentLayers - baselineMean) / Math.max(baselineStd, 0.5)
+        // ── Baseline: six 14d periods — quality-weighted layer sum per period ──
+        // Using the same quality weighting as recent so lift is a comparable ratio.
+        // Stored for Z-score upgrade path.
         const periodCounts = [];
         for (let p = 0; p < 6; p++) {
-          const pEnd   = cutoffs[p + 1];  // exclusive upper bound
-          const pStart = cutoffs[p + 2];  // inclusive lower bound
-          const layers = new Set();
+          const pEnd   = cutoffs[p + 1];
+          const pStart = cutoffs[p + 2];
+          const pLayerSigs = { military: [], influence: [], regulatory: [], procurement: [] };
           for (const sig of sigs) {
             const d = sig.signal_date || '';
             if (d >= pStart && d < pEnd) {
               const layer = sigLayer(sig);
-              if (layer) layers.add(layer);
+              if (layer) pLayerSigs[layer].push(sig);
             }
           }
-          periodCounts.push(layers.size);
+          const pWeighted = Object.values(pLayerSigs).reduce((s, a) => s + layerWeight(a), 0);
+          periodCounts.push(pWeighted);
         }
 
-        const hasBaseline   = periodCounts.some(c => c > 0);
-        const baselineMean  = periodCounts.reduce((a, b) => a + b, 0) / 6;
-        const baselineVar   = periodCounts.reduce((a, b) => a + (b - baselineMean) ** 2, 0) / 6;
-        const baselineStd   = Math.sqrt(baselineVar);  // stored for Z-score upgrade path
+        const hasBaseline  = periodCounts.some(c => c > 0);
+        const baselineMean = periodCounts.reduce((a, b) => a + b, 0) / 6;
+        const baselineVar  = periodCounts.reduce((a, b) => a + (b - baselineMean) ** 2, 0) / 6;
+        const baselineStd  = Math.sqrt(baselineVar);  // stored for Z-score upgrade path
 
-        // Current lift: ratio. Default 1.0 if no 90d history exists yet.
-        const lift = hasBaseline ? recentLayers / Math.max(baselineMean, 0.5) : 1.0;
+        // Lift: quality-weighted recent activity vs quality-weighted baseline.
+        const lift = hasBaseline ? recentWeighted / Math.max(baselineMean, 0.5) : 1.0;
 
         // ── Recency weight: median signal date within the convergence window ──
-        // Split 0-14d into 0-7d (1.0) and 7-14d (0.7) — flat 1.0 would have no
-        // discriminating power since all convergence-window signals are ≤14d old.
         const windowDates = Object.values(layerSigs).flat()
           .map(s => s.signal_date).filter(Boolean).sort();
         const medianDate    = windowDates[Math.floor(windowDates.length / 2)] || null;
@@ -453,7 +477,7 @@
           : medianDate >= isoOffset(14) ? 0.7
           :                               0.5;
 
-        const convergence = recentLayers;
+        const convergence = recentWeighted;  // quality-weighted
         const score = Math.round(structuralScore * lift * convergence * recencyWeight * 100) / 100;
 
         // ── Weekly layer counts (6 weeks) — stored for future CUSUM upgrade ──
