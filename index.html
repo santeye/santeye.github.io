@@ -896,9 +896,7 @@
       leafletMap = L.map('map', {
         center: [20, 10], zoom: 1.5,
         zoomControl: false, attributionControl: false,
-        dragging: false, scrollWheelZoom: false,
-        doubleClickZoom: false, boxZoom: false, keyboard: false,
-        touchZoom: false,
+        scrollWheelZoom: true,
       });
 
       const countries = topojson.feature(world, world.objects.countries);
