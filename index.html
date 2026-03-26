@@ -9,7 +9,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:      #2c2c2e;
+      --bg:      #363639;
       --hdr:     #232324;
       --sep:     #3a3a3c;
       --text:    #f5f5f7;
@@ -82,18 +82,30 @@
       border-bottom: 1px solid var(--sep);
     }
 
+    /* ── Top row: map + clusters side by side ── */
+    .top-row {
+      display: flex;
+      gap: 16px;
+      margin-top: 16px;
+      align-items: flex-start;
+    }
+
     /* ── Map ── */
     #map {
-      height: 520px;
-      margin: 16px -28px 0;
-      background: var(--hdr);
+      flex: 0 0 55%;
+      height: 380px;
+      background: var(--bg);
     }
-    .leaflet-container { background: var(--hdr) !important; }
+    .leaflet-container { background: var(--bg) !important; }
     .leaflet-attribution-flag { display: none !important; }
     .leaflet-overlay-pane svg { shape-rendering: crispEdges; }
 
     /* ── Clusters ── */
-    #clusters-wrap { margin-bottom: 12px; }
+    #clusters-wrap {
+      flex: 1;
+      min-width: 0;
+      margin-bottom: 0;
+    }
 
     .cluster-entry {
       padding: 10px 0;
@@ -231,9 +243,11 @@
   </header>
   <div class="outer">
     <div id="status">fetching signals…</div>
-    <div id="map" style="display:none"></div>
-    <div id="clusters-wrap" style="display:none">
-      <div id="clusters"></div>
+    <div class="top-row">
+      <div id="map" style="display:none"></div>
+      <div id="clusters-wrap" style="display:none">
+        <div id="clusters"></div>
+      </div>
     </div>
     <div id="feed-section">
       <div id="feed-hdr" class="section-hdr" style="display:none">
@@ -902,15 +916,40 @@
 
       const countries = topojson.feature(world, world.objects.countries);
 
-      L.geoJSON(countries, {
+      // ── Antimeridian fix ─────────────────────────────────────────────────
+      // Russia's polygon crosses ±180° longitude, causing Leaflet to draw a
+      // straight horizontal line across the map. Clamp all coords to [-180,180].
+      function wrapRing(ring) {
+        return ring.map(([lng, lat]) => {
+          while (lng >  180) lng -= 360;
+          while (lng < -180) lng += 360;
+          return [lng, lat];
+        });
+      }
+      function wrapGeometry(geom) {
+        if (!geom) return geom;
+        if (geom.type === 'Polygon') {
+          return { ...geom, coordinates: geom.coordinates.map(wrapRing) };
+        }
+        if (geom.type === 'MultiPolygon') {
+          return { ...geom, coordinates: geom.coordinates.map(poly => poly.map(wrapRing)) };
+        }
+        return geom;
+      }
+      const wrappedCountries = {
+        ...countries,
+        features: countries.features.map(f => ({ ...f, geometry: wrapGeometry(f.geometry) })),
+      };
+
+      L.geoJSON(wrappedCountries, {
         renderer: L.svg({ padding: 0.5 }),
         style: f => {
           const iso = ISO_NUM_TO_A2[+f.id];
           return {
-            fillColor:   iso && clusterIsos.has(iso) ? '#6b7280' : '#3a3a3e',
+            fillColor:   iso && clusterIsos.has(iso) ? '#232330' : '#2c2c33',
             fillOpacity: 1,
-            color:       '#232324',
-            weight:      0.5,
+            color:       '#1a1a20',
+            weight:      1.5,
           };
         },
         onEachFeature: (f, layer) => {
