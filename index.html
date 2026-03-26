@@ -90,6 +90,7 @@
     }
     .leaflet-container { background: var(--hdr) !important; }
     .leaflet-attribution-flag { display: none !important; }
+    .leaflet-overlay-pane svg { shape-rendering: crispEdges; }
 
     /* ── Clusters ── */
     #clusters-wrap { margin-bottom: 12px; }
@@ -907,7 +908,7 @@
           return {
             fillColor:   iso && clusterIsos.has(iso) ? '#6b7280' : '#3a3a3e',
             fillOpacity: 1,
-            color:       '#232324',
+            color:       iso && clusterIsos.has(iso) ? '#6b7280' : '#3a3a3e',
             weight:      0.5,
           };
         },
