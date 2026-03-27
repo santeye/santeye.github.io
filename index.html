@@ -1258,6 +1258,8 @@
         return BASE_COLOR;
       }
 
+      let hoveredIso = null;
+
       L.geoJSON(fixedCountries, {
         renderer: L.svg({ padding: 0.5 }),
         style: f => ({
@@ -1267,12 +1269,14 @@
           weight:      1.5,
         }),
         onEachFeature: (f, layer) => {
-          const iso     = ISO_NUM_TO_A2[+f.id];
-          const profile = iso ? profileCache[iso] : null;
+          const iso = ISO_NUM_TO_A2[+f.id];
           if (iso) isoToLayer.set(iso, layer);
 
-          layer.on('mouseover', e => {
+          layer.on('mouseover', async e => {
+            hoveredIso = iso;
             layer.setStyle({ fillColor: HOVER_COLOR });
+            const profile = iso ? await loadProfile(iso) : null;
+            if (hoveredIso !== iso) return; // user moved away while loading
             const name = profile ? (profile.name || iso) : iso;
             let ttHtml = `<div class="tt-score">${esc(name)}</div>`;
             if (profile) {
@@ -1296,6 +1300,7 @@
           });
 
           layer.on('mouseout', () => {
+            hoveredIso = null;
             layer.setStyle({ fillColor: baseColorFor(iso) });
             tooltipEl.style.display = 'none';
           });
