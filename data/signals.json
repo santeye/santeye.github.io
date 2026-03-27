@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-27T16:29:33.743130+00:00",
+  "generated_at": "2026-03-27T23:09:52.875435+00:00",
   "sources": [
     "anchor",
     "dsca",
@@ -22360,6 +22360,30 @@
       "description": "30-Day information collection notice. \u00b7 The DoD has submitted to the Office of Management and Budget (OMB) for clearance the following proposal for collection of information under the provisions of the Paperwork Reduction Act.",
       "raw_score": 1.0,
       "page_url": "https://www.federalregister.gov/documents/2026/03/26/2026-05839/submission-for-omb-review-comment-request",
+      "weight": 1.0
+    },
+    {
+      "document_number": "2026-05960",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-03-27",
+      "title": "Regulatory Capital Rules: Regulatory Capital and Standardized Approach for Risk-Weighted Assets",
+      "value_usd": null,
+      "description": "Notice of proposed rulemaking. \u00b7 The Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, and the Federal Deposit Insurance Corporation are proposing to modify certain aspects of the regulatory capital rule (the proposal). The proposal would revise the risk-based capital treatment of certain exposure categories under the standardized approach, focusing on improving the calibration and risk sensitivity of risk weights that are particularly material to covered banking organizations' lending activities. The proposal would also modify the definition of regulatory capital by removing the threshold- based deduction for mortgage servicing assets for all banking organizations subject to the regulatory capital rule, including banking organizations subject to the community bank leverage ratio framework. In addition, the proposal would require Category III and IV banking organizations to recognize most elements of accumulated other comprehensive income in their regulatory capital. The agencies are concurrently publishing a separate proposal, which would require Category I and II banking organizations to use a new framework to calculate risk-weighted assets, called the expanded risk-based approach and would allow other banking organizations to elect to use the expanded risk-based approach.",
+      "raw_score": 1.0,
+      "page_url": "https://www.federalregister.gov/documents/2026/03/27/2026-05960/regulatory-capital-rules-regulatory-capital-and-standardized-approach-for-risk-weighted-assets",
+      "weight": 1.0
+    },
+    {
+      "document_number": "2026-05959",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-03-27",
+      "title": "Regulatory Capital Rule: Category I and II Banking Organizations, Banking Organizations With Significant Trading Activity, and Optional Adoption for Other Banking Organizations",
+      "value_usd": null,
+      "description": "Notice of proposed rulemaking. \u00b7 The Office of the Comptroller of the Currency, the Board of Governors of the Federal Reserve System, and the Federal Deposit Insurance Corporation are proposing to modernize the capital requirements applicable to Category I and II depository institution holding companies and depository institutions, as well as revise the market risk capital framework for banking organizations with significant trading activity (the proposal). The proposal would improve the regulatory capital framework for covered banking organizations by enhancing its risk sensitivity and consistency and by simplifying core components of its design. The agencies expect the proposal would support the safety and soundness of covered banking organizations and U.S. financial stability while promoting lending and other financial intermediation activities in the banking system over a range of economic conditions.",
+      "raw_score": 1.0,
+      "page_url": "https://www.federalregister.gov/documents/2026/03/27/2026-05959/regulatory-capital-rule-category-i-and-ii-banking-organizations-banking-organizations-with",
       "weight": 1.0
     },
     {
