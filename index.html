@@ -321,7 +321,7 @@
       ofac:           'Office of Foreign Assets Control',
       lda:            'Lobbying Disclosure Act',
       federalregister:'Federal Register',
-      anchor_budget:  'Israeli Defense Budget (Knesset Finance Committee)',
+      anchor_budget:  'Elbit Systems — SEC EDGAR 6-K',
     };
 
     const SOURCE_SHORT = {
@@ -331,7 +331,7 @@
       ofac:           'OFAC',
       lda:            'LDA',
       federalregister:'FR',
-      anchor_budget:  'IL-MoD',
+      anchor_budget:  'Elbit/EDGAR',
     };
 
     function sourceLabel(s) {
@@ -442,12 +442,11 @@
     const SOURCE_LAYER_MAP = {
       // military
       dsca:            'military',
-      // anchor:       'military',    // RESERVED: reclassify anchor_budget when full MoD data lands
+      anchor_budget:   'military',
 
       // influence
       fara:            'influence',
       lda:             'influence',
-      anchor_budget:   'influence',   // budget press releases = influence until reclassified
 
       // regulatory
       federalregister: 'regulatory',
@@ -1315,12 +1314,14 @@
         },
       }).addTo(leafletMap);
 
-      // Default bounds: full populated world, Antarctica clipped at -60.
-      // invalidateSize() forces Leaflet to re-measure the container before fitting,
-      // preventing the sizing race condition where fitBounds runs before CSS layout.
-      const DEFAULT_BOUNDS = [[-60, -180], [75, 180]];
+      // zoom 1: world tile = 512px wide. Map column ≈ 530px, so the full 360°
+      // of longitude fits with a small overhang — both eastern Russia (~170°E)
+      // and western Alaska (~170°W) are within frame. fitBounds on a lat range
+      // fights Mercator projection and always picks a zoom that shows Antarctica;
+      // setView with an explicit zoom avoids that entirely.
+      // Center [25, 10]: northern bias keeps Antarctica below the fold.
       leafletMap.invalidateSize();
-      leafletMap.fitBounds(DEFAULT_BOUNDS, { padding: [4, 4] });
+      leafletMap.setView([25, 10], 1);
 
       // Expose map highlight + zoom so cluster/feed clicks can sync the map
       syncMapFilter = function(activeIso) {
@@ -1337,7 +1338,7 @@
           if (lyr) leafletMap.fitBounds(lyr.getBounds(), { padding: [30, 30] });
         } else {
           leafletMap.invalidateSize();
-          leafletMap.fitBounds(DEFAULT_BOUNDS, { padding: [4, 4] });
+          leafletMap.setView([25, 10], 1);
         }
       };
     }
