@@ -65,6 +65,6 @@ jobs:
         run: |
           git add data/signals.json data/dsca_signals.json data/dsca_nato.json data/sam_signals.json data/ofac_signals.json data/ofac_known_uids.json data/fara_signals.json data/lda_signals.json data/federalregister_signals.json data/anchor_signals.json
           git commit -m "update signals [skip ci]" || echo "nothing to commit"
-          git push origin main --force-with-lease
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
