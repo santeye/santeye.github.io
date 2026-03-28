@@ -18,7 +18,13 @@ One thing at a time. Update this file when a task completes, a new idea gets app
 
 ## Next (approved, in order)
 
-1. **SAM monitoring** — watch whether adjective-matching fix actually surfaces signals after a few CI runs. Reassess extraction approach if still empty after 2 weeks.
+1. **FARA/LDA structured fields + signal quality** — prior audit found both sources are opaque to scoring/rendering because structured data is flattened into strings. Specific issues:
+   - `fetch_lda.py`: `is_high_signal` OR gate too broad — "non-US client" accepts all Canadian tariff/pharma noise. HCR in HIGH_SIGNAL_CODES is wrong. Issue codes captured but not stored as a field. Lobbying firm not a separate field. XX records dropped entirely.
+   - `fetch_fara.py`: Sub-state entities (Republika Srpska, DRC, Bermuda) resolve to XX and vanish from map/convergence — 30 of 114 records. `target_groups`, `registrant`, `principal` buried in title/description strings instead of separate fields.
+   - Fix: store `issue_codes`, `registrant`, `principal`, `lobbying_firm`, `target_groups` as separate signal fields. Fix XX resolution for known sub-state entities. Narrow LDA filter to DEF/FOR/TRD/ENE/SCI/HOM only (drop HCR, tighten the non-US client branch).
+   - Context: Republika Srpska hired 6 DC firms in ~12 months — most anomalous influence pattern in the dataset. Currently invisible.
+
+2. **SAM monitoring** — watch whether adjective-matching fix actually surfaces signals after a few CI runs. Reassess extraction approach if still empty after 2 weeks.
 
 ---
 
