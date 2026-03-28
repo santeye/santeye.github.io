@@ -1252,9 +1252,9 @@
       const isoToLayer = new Map();
 
       function baseColorFor(iso) {
-        if (activeFilter && iso === activeFilter) return ACTIVE_COLOR;
         if (iso && clusterIsos.has(iso)) return ZONE1_COLOR;   // convergence wins
         if (iso && notableIsos.has(iso)) return NOTABLE_COLOR;
+        if (activeFilter && iso === activeFilter) return ACTIVE_COLOR;
         return BASE_COLOR;
       }
 
