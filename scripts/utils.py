@@ -179,11 +179,13 @@ ALL_LAYERS = [
 # federalregister is handled separately in source_quality() via FR_POLICY_RE.
 SOURCE_QUALITY = {
     "dsca":            1.0,
-    "anchor_budget":   1.0,
-    "fara":            0.9,
     "ofac":            0.9,
-    "cftc":            0.8,
+    "fara":            0.9,
+    "bis":             0.85,
+    "anchor_budget":   0.75,
     "sam":             0.7,
+    "cftc":            0.55,
+    "imf":             0.5,
     "lda":             0.5,
 }
 
