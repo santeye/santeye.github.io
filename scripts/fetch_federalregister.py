@@ -18,6 +18,9 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+from utils import COUNTRY_NAME_TO_ISO2, profile_score, append_and_write, write_error
+
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
@@ -63,58 +66,6 @@ NOISE_PATTERNS = re.compile(
     r"environmental impact|environmental assessment)\b",
     re.IGNORECASE,
 )
-
-# ---------------------------------------------------------------------------
-# Country name → ISO alpha-2
-# ---------------------------------------------------------------------------
-
-COUNTRY_NAME_TO_ISO2 = {
-    "afghanistan": "AF", "albania": "AL", "algeria": "DZ", "angola": "AO",
-    "armenia": "AM", "australia": "AU", "austria": "AT", "azerbaijan": "AZ",
-    "bahrain": "BH", "bangladesh": "BD", "belarus": "BY", "belgium": "BE",
-    "belize": "BZ", "benin": "BJ", "bosnia": "BA",
-    "bosnia and herzegovina": "BA", "botswana": "BW", "brazil": "BR",
-    "bulgaria": "BG", "burkina faso": "BF", "burma": "MM", "myanmar": "MM",
-    "burundi": "BI", "cambodia": "KH", "cameroon": "CM",
-    "central african republic": "CF", "chad": "TD", "colombia": "CO",
-    "comoros": "KM", "congo": "CG", "democratic republic of congo": "CD",
-    "democratic republic of the congo": "CD", "drc": "CD",
-    "costa rica": "CR", "croatia": "HR", "cuba": "CU", "cyprus": "CY",
-    "czech republic": "CZ", "denmark": "DK", "djibouti": "DJ",
-    "dominican republic": "DO", "ecuador": "EC", "egypt": "EG",
-    "el salvador": "SV", "eritrea": "ER", "estonia": "EE", "ethiopia": "ET",
-    "finland": "FI", "france": "FR", "gabon": "GA", "gambia": "GM",
-    "georgia": "GE", "germany": "DE", "ghana": "GH", "greece": "GR",
-    "guatemala": "GT", "guinea": "GN", "guinea-bissau": "GW", "haiti": "HT",
-    "honduras": "HN", "hungary": "HU", "india": "IN", "indonesia": "ID",
-    "iran": "IR", "iraq": "IQ", "ireland": "IE", "israel": "IL",
-    "italy": "IT", "ivory coast": "CI", "cote d'ivoire": "CI",
-    "jamaica": "JM", "japan": "JP", "jordan": "JO", "kazakhstan": "KZ",
-    "kenya": "KE", "kosovo": "XK", "kuwait": "KW", "kyrgyzstan": "KG",
-    "laos": "LA", "latvia": "LV", "lebanon": "LB", "liberia": "LR",
-    "libya": "LY", "lithuania": "LT", "madagascar": "MG", "malawi": "MW",
-    "malaysia": "MY", "mali": "ML", "mauritania": "MR", "mexico": "MX",
-    "moldova": "MD", "mongolia": "MN", "montenegro": "ME", "morocco": "MA",
-    "mozambique": "MZ", "namibia": "NA", "nepal": "NP",
-    "netherlands": "NL", "nicaragua": "NI", "niger": "NE", "nigeria": "NG",
-    "north korea": "KP", "north macedonia": "MK", "norway": "NO",
-    "oman": "OM", "pakistan": "PK", "panama": "PA",
-    "papua new guinea": "PG", "paraguay": "PY", "peru": "PE",
-    "philippines": "PH", "poland": "PL", "portugal": "PT", "qatar": "QA",
-    "romania": "RO", "russia": "RU", "russian federation": "RU",
-    "rwanda": "RW", "saudi arabia": "SA", "senegal": "SN", "serbia": "RS",
-    "sierra leone": "SL", "slovakia": "SK", "slovenia": "SI",
-    "somalia": "SO", "south africa": "ZA", "south korea": "KR",
-    "south sudan": "SS", "spain": "ES", "sri lanka": "LK", "sudan": "SD",
-    "sweden": "SE", "switzerland": "CH", "syria": "SY", "taiwan": "TW",
-    "tajikistan": "TJ", "tanzania": "TZ", "thailand": "TH",
-    "timor-leste": "TL", "east timor": "TL", "togo": "TG", "tunisia": "TN",
-    "turkey": "TR", "turkmenistan": "TM", "uganda": "UG", "ukraine": "UA",
-    "united arab emirates": "AE", "uae": "AE", "united kingdom": "GB",
-    "uruguay": "UY", "uzbekistan": "UZ", "venezuela": "VE", "vietnam": "VN",
-    "viet nam": "VN", "west bank": "PS", "gaza": "PS", "palestine": "PS",
-    "yemen": "YE", "zambia": "ZM", "zimbabwe": "ZW",
-}
 
 _COUNTRY_NAMES_SORTED = sorted(COUNTRY_NAME_TO_ISO2.keys(), key=len, reverse=True)
 _COUNTRY_PATTERN = re.compile(
@@ -199,15 +150,16 @@ def to_signal(doc):
         desc_parts.append(abstract)
     description = " · ".join(desc_parts) if desc_parts else None
 
+    iso = extract_country(title, abstract)
     return {
         "document_number": doc_number or None,
-        "iso": extract_country(title, abstract),
+        "iso": iso,
         "source": "federalregister",
         "signal_date": doc.get("publication_date"),
         "title": title,
         "value_usd": None,
         "description": description,
-        "raw_score": 1.0,
+        "raw_score": profile_score(iso),
         "page_url": doc.get("html_url"),
     }
 
@@ -233,12 +185,7 @@ def main():
         docs = fetch_all(from_date)
     except Exception as e:
         print(f"ERROR: fetch failed: {e}", file=sys.stderr)
-        out_path.write_text(json.dumps({
-            "generated_at": today.isoformat(),
-            "sources": ["federalregister"],
-            "error": str(e),
-            "signals": [],
-        }, indent=2))
+        write_error(out_path, "federalregister", str(e))
         sys.exit(0)
 
     print(f"  Retrieved {len(docs)} raw documents")
@@ -251,38 +198,8 @@ def main():
             continue
         new_signals.append(to_signal(doc))
 
-    # Merge with existing, dedup by document_number
-    existing_signals = []
-    if out_path.exists():
-        try:
-            existing_signals = json.loads(out_path.read_text()).get("signals", [])
-        except Exception:
-            pass
-
-    known_doc_numbers = {
-        s.get("document_number")
-        for s in existing_signals
-        if s.get("document_number")
-    }
-    merged = list(existing_signals)
-    added = 0
-    for sig in new_signals:
-        dn = sig.get("document_number")
-        if dn and dn in known_doc_numbers:
-            continue
-        merged.append(sig)
-        if dn:
-            known_doc_numbers.add(dn)
-        added += 1
-
-    merged.sort(key=lambda s: s.get("signal_date") or "")
-
-    out_path.write_text(json.dumps({
-        "generated_at": today.isoformat(),
-        "sources": ["federalregister"],
-        "signals": merged,
-    }, indent=2))
-    print(f"Wrote {len(merged)} total signals ({added} new) to {out_path}")
+    added = append_and_write(out_path, "federalregister", new_signals, lambda s: s.get("document_number"))
+    print(f"[federalregister] {added} new signal(s) written → {out_path}")
 
 
 if __name__ == "__main__":

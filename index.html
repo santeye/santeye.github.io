@@ -313,8 +313,7 @@
   <div id="tooltip"></div>
 
   <script>
-    const PROFILES_BASE = 'data/profiles/';
-    const SIGNALS_URL   = 'data/signals.json';
+    const SIGNALS_URL = 'data/signals.json';
 
     // ── Source labels / short names ──────────────────────────────────────────
 
@@ -410,22 +409,9 @@
         .replace(/"/g, '&quot;');
     }
 
-    // ── Profile cache ────────────────────────────────────────────────────────
-
-    const profileCache = {};
-
-    async function loadProfile(iso) {
-      if (iso in profileCache) return profileCache[iso];
-      try {
-        const r = await fetch(PROFILES_BASE + iso + '.json');
-        if (!r.ok) throw new Error('HTTP ' + r.status);
-        profileCache[iso] = await r.json();
-      } catch (e) {
-        console.warn(`[HARPY] no profile for ${iso}:`, e.message);
-        profileCache[iso] = null;
-      }
-      return profileCache[iso];
-    }
+    // ── ISO → profile map (built from embedded signal profiles at load time) ──
+    // Keyed by ISO alpha-2. Populated in main() from sig.profile on each signal.
+    let isoProfile = {};
 
     // ── Tooltip ──────────────────────────────────────────────────────────────
 
@@ -455,68 +441,13 @@
     });
 
     // ── Layer taxonomy ───────────────────────────────────────────────────────
-    // Add new sources here only — no other formula changes required.
-    // Reserved entries are commented out until the source is implemented.
-    const SOURCE_LAYER_MAP = {
-      // military
-      dsca:            'military',
-      anchor_budget:   'military',
-
-      // influence
-      fara:            'influence',
-      lda:             'influence',
-
-      // regulatory
-      federalregister: 'regulatory',
-      // ofac:         'regulatory',  // RESERVED: OFAC SDN designations
-
-      // procurement
-      sam:             'procurement',
-      // usaspending:  'procurement', // RESERVED: USASpending modifications/drawdowns
-
-      // legislative (no active sources yet)
-      // congress:     'legislative', // RESERVED: Congress.gov hearing schedules
-
-      // adversarial (no active sources yet)
-      // sipri:        'adversarial', // RESERVED: SIPRI arms transfers
-      // acled:        'adversarial', // RESERVED: ACLED conflict events
-      // zakupki:      'adversarial', // RESERVED: zakupki.gov.ru procurement
-    };
-
-    // All layers in taxonomy order — update when adding a new layer.
-    const ALL_LAYERS = ['military', 'influence', 'regulatory', 'procurement', 'legislative', 'adversarial'];
-
-    function sigLayer(sig) {
-      return SOURCE_LAYER_MAP[(sig.source || '').toLowerCase()] || null;
-    }
-
-    // Source quality weights — applied per-signal before layer contribution is summed.
-    // FR is split: high-signal policy terms = 0.8, all other FR = 0.2 (cultural notices,
-    // routine determinations should not constitute meaningful layer activity).
-    const FR_POLICY_RE = /sanction|licen[sc]e|designation|emergency|\brule\b|regulation|export.control|\barms\b|defense|security/i;
-
-    function sigQuality(sig) {
-      const src = (sig.source || '').toLowerCase();
-      if (src === 'dsca')            return 1.0;
-      if (src === 'fara')            return 0.9;
-      if (src === 'sam')             return 0.7;
-      if (src === 'lda')             return 0.5;
-      if (src === 'federalregister') return FR_POLICY_RE.test(sig.title || '') ? 0.8 : 0.2;
-      return 0.5;
-    }
+    // sig.layer is precomputed by build_signals.py — no runtime lookup needed.
+    // ALL_LAYERS defines taxonomy order for convergence scoring.
+    const ALL_LAYERS = ['military', 'influence', 'regulatory', 'procurement', 'financial', 'legislative', 'adversarial'];
 
     // Layer bonus — indexed by active layer count (0-based: index 0 = 1 layer, index 4 = 5+ layers).
     // Extensible: append entries to reward additional layers.
     const LAYER_BONUS = [1.0, 1.3, 1.8, 2.5, 3.5];
-
-    // Dollar modifier — DSCA and SAM only, where value_usd is present.
-    // $1M → 1.0, $100M → 1.15, $1B → 1.225, $10B → 1.3
-    function dollarModifier(sig) {
-      const src = (sig.source || '').toLowerCase();
-      if ((src !== 'dsca' && src !== 'sam') || !sig.value_usd) return 1.0;
-      const t = Math.log10(sig.value_usd / 1e6) / 4;
-      return 1.0 + 0.3 * Math.max(0, Math.min(1, t));
-    }
 
     // Recency decay within the 30-day convergence window.
     // 0–7 days → 1.0, 8–14 days → 0.8, 15–30 days → 0.5, beyond → 0 (excluded upstream).
@@ -529,22 +460,11 @@
       return 0;
     }
 
-    // Per-layer contribution: max(quality × decay × dollarModifier) across all signals in the layer.
+    // Per-layer contribution: max(quality × decay × dollar_mod) across all signals in the layer.
+    // quality and dollar_mod are precomputed by build_signals.py.
     function layerContribution(sigs) {
       if (!sigs.length) return 0;
-      return Math.max(...sigs.map(s => sigQuality(s) * recencyDecay(s.signal_date) * dollarModifier(s)));
-    }
-
-    // ── Percentile lift (inactive) ───────────────────────────────────────────
-    // ACTIVATE: replace ratio lift with percentile lift once 90-day history exists.
-    // Switching is a one-line change in computeClusters: replace `ratioLift` with
-    // `computePercentileLift(iso, recentWeighted, periodCounts)`.
-    function computePercentileLift(iso, recentValue, historicalValues) { // eslint-disable-line no-unused-vars
-      const sorted     = [...historicalValues].sort((a, b) => a - b);
-      const below      = sorted.filter(v => v < recentValue).length;
-      const percentile = sorted.length ? below / sorted.length : 0.5;
-      // 50th percentile → 1.0, 90th → ~1.85, below median → 0.5
-      return 0.5 + 1.5 * percentile;
+      return Math.max(...sigs.map(s => s.quality * recencyDecay(s.signal_date) * s.dollar_mod));
     }
 
     // ── Cluster computation ──────────────────────────────────────────────────
@@ -552,7 +472,7 @@
     // Formula:
     //   score = structuralScore × lift × convergence × recencyWeight × temporalBonus
     //   convergence = Σ(layerContribution) × LAYER_BONUS[layerCount - 1]
-    //   layerContribution = max(sigQuality × recencyDecay × dollarModifier) per layer
+    //   layerContribution = max(quality × recencyDecay × dollar_mod) per layer
     //
     function computeClusters(signals) {
       // Convergence window: 30 days. Baseline: six 14-day periods covering days 14–98.
@@ -567,12 +487,11 @@
         byIso.get(sig.iso).push(sig);
       }
 
-      const allScored = [];  // every ISO with meaningful activity — for full diagnostic
-      const clusters  = [];  // ISOs that pass eligibility gates
+      const clusters = [];  // ISOs that pass eligibility gates
 
       for (const [iso, sigs] of byIso) {
-        const profile         = profileCache[iso] || null;
-        const structuralScore = profile ? (profile.structural_interest_score || 1) : 1;
+        const profile         = isoProfile[iso] || null;
+        const structuralScore = profile ? (profile.score || 1) : 1;
 
         // ── 30-day convergence window: collect signals per layer ─────────────
         const layerSigs = {};
@@ -581,8 +500,8 @@
           if ((sig.signal_date || '') < w30) continue;
           // FR signals only count as a layer if they pass the policy keyword check.
           // A FR cultural property or routine notice does not constitute regulatory activity.
-          if ((sig.source || '').toLowerCase() === 'federalregister' && !FR_POLICY_RE.test(sig.title || '')) continue;
-          const layer = sigLayer(sig);
+          if (sig.is_fr_policy === false) continue;
+          const layer = sig.layer;
           if (layer) layerSigs[layer].push(sig);
         }
 
@@ -632,28 +551,23 @@
           for (const sig of sigs) {
             const d = sig.signal_date || '';
             if (d >= pStart && d < pEnd) {
-              if ((sig.source || '').toLowerCase() === 'federalregister' && !FR_POLICY_RE.test(sig.title || '')) continue;
-              const layer = sigLayer(sig);
+              if (sig.is_fr_policy === false) continue;
+              const layer = sig.layer;
               if (layer) pLayerSigs[layer].push(sig);
             }
           }
           const pWeighted = ALL_LAYERS.reduce((s, l) => {
             const ls = pLayerSigs[l];
-            return s + (ls.length ? Math.max(...ls.map(sigQuality)) : 0);
+            return s + (ls.length ? Math.max(...ls.map(q => q.quality)) : 0);
           }, 0);
           periodCounts.push(pWeighted);
         }
 
         const hasBaseline  = periodCounts.some(c => c > 0);
         const baselineMean = periodCounts.reduce((a, b) => a + b, 0) / 6;
-        const baselineVar  = periodCounts.reduce((a, b) => a + (b - baselineMean) ** 2, 0) / 6;
-        const baselineStd  = Math.sqrt(baselineVar);  // stored for Z-score / percentile upgrade
-
         // Ratio lift — primary formula
         const ratioLift = hasBaseline ? recentWeighted / Math.max(baselineMean, 0.5) : 1.0;
-        const lift      = ratioLift;
-        // ACTIVATE: replace ratio lift with percentile lift once 90-day history exists.
-        // const lift = computePercentileLift(iso, recentWeighted, periodCounts);
+        const lift = ratioLift;
 
         // ── Recency weight: median signal date within the 30-day window ───────
         const windowDates   = activeLayers.flatMap(l => layerSigs[l])
@@ -666,30 +580,12 @@
 
         const score = Math.round(Math.log2(structuralScore + 1) * lift * convergence * recencyWeight * temporalBonus * 100) / 100;
 
-        // ── Weekly layer counts (6 weeks) — stored for future CUSUM upgrade ──
-        // CUSUM would track consecutive weeks above baselineMean to boost persistent spikes.
-        const weeklyLayerCounts = [];
-        for (let w = 0; w < 6; w++) {
-          const wStart  = isoOffset((w + 1) * 7);
-          const wEnd    = isoOffset(w * 7);
-          const wLayers = new Set();
-          for (const sig of sigs) {
-            const d = sig.signal_date || '';
-            if (d >= wStart && d <= wEnd) {
-              if ((sig.source || '').toLowerCase() === 'federalregister' && !FR_POLICY_RE.test(sig.title || '')) continue;
-              const layer = sigLayer(sig);
-              if (layer) wLayers.add(layer);
-            }
-          }
-          weeklyLayerCounts.push(wLayers.size);
-        }
-
         const entry = {
           iso,
           structuralScore,
-          lift:             Math.round(lift * 100) / 100,
-          convergence:      Math.round(convergence * 100) / 100,
-          recentWeighted:   Math.round(recentWeighted * 100) / 100,
+          lift:           Math.round(lift * 100) / 100,
+          convergence:    Math.round(convergence * 100) / 100,
+          recentWeighted: Math.round(recentWeighted * 100) / 100,
           layerBonus,
           temporalBonus,
           temporalMaxGap,
@@ -700,11 +596,8 @@
           layerCount,
           contributions,
           medianDate,
-          baselineStats:    { mean: Math.round(baselineMean * 100) / 100, std: Math.round(baselineStd * 100) / 100, periods: periodCounts },
-          weeklyLayerCounts,
+          baselineStats:  { mean: Math.round(baselineMean * 100) / 100, periods: periodCounts },
         };
-
-        allScored.push(entry);
 
         // ── Eligibility gates ─────────────────────────────────────────────────
         // Gate 1: at least 2 distinct layers must have fired in the 30-day window.
@@ -716,28 +609,6 @@
       }
 
       clusters.sort((a, b) => b.score - a.score);
-      allScored.sort((a, b) => b.score - a.score);
-
-      // ── Full diagnostic — all countries with meaningful activity ─────────
-      console.log('=== HARPY CLUSTER DIAGNOSTIC — ALL SCORED COUNTRIES ===');
-      console.table(allScored.map(cl => ({
-        iso:          cl.iso,
-        structural:   cl.structuralScore,
-        log2_struct:  Math.round(Math.log2(cl.structuralScore + 1) * 100) / 100,
-        lift:         cl.lift,
-        r_weighted:   cl.recentWeighted,
-        lyr_bonus:    cl.layerBonus,
-        temporal:     cl.temporalBonus,
-        t_gap_d:      cl.temporalMaxGap,
-        convergence:  cl.convergence,
-        recency:      cl.recencyWeight,
-        score:        cl.score,
-        layers:       cl.activeLayers.join('+'),
-        n_layers:     cl.layerCount,
-        b_mean:       cl.baselineStats.mean,
-        median_date:  cl.medianDate,
-        eligible:     clusters.includes(cl),
-      })));
 
       console.log('=== ZONE 1 — CONVERGENCE (eligible clusters) ===');
       console.table(clusters.map((cl, rank) => ({
@@ -760,7 +631,8 @@
 
     // ── Zone 2: Notable signal computation ───────────────────────────────────
     // Scores each individual signal in the last 30 days:
-    //   score = sigQuality × dollarModifier × log2(structuralScore + 1) × recencyDecay
+    //   score = quality × dollar_mod × log2(structuralScore + 1) × recencyDecay
+    // quality and dollar_mod are precomputed by build_signals.py.
     // One entry per country (best signal per ISO). Top 5 returned.
 
     function computeNotableSignals(signals) {
@@ -772,13 +644,12 @@
         if ((sig.signal_date || '') < w30) continue;
         const decay = recencyDecay(sig.signal_date);
         if (!decay) continue;
-        const quality = sigQuality(sig);
+        const quality = sig.quality || 0;
         if (quality < 0.7) continue;  // Zone 2 minimum: DSCA(1.0), FARA(0.9), FR-policy(0.8), SAM(0.7)
         // LDA(0.5) excluded — standalone lobbying disclosure is not a standalone signal.
         // Exception path (FARA-equivalent foreign govt LDA) not yet detectable from data.
-        const profile       = profileCache[sig.iso] || null;
-        const structScore   = profile ? (profile.structural_interest_score || 1) : 1;
-        const score = quality * dollarModifier(sig) * Math.log2(structScore + 1) * decay;
+        const structScore = sig.profile ? (sig.profile.score || 1) : 1;
+        const score = quality * (sig.dollar_mod || 1) * Math.log2(structScore + 1) * decay;
         scored.push({ sig, score: Math.round(score * 10000) / 10000, structScore });
       }
 
@@ -801,8 +672,8 @@
         iso:         e.sig.iso,
         score:       e.score,
         source:      e.sig.source,
-        quality:     sigQuality(e.sig),
-        dollar_mod:  Math.round(dollarModifier(e.sig) * 1000) / 1000,
+        quality:     e.sig.quality,
+        dollar_mod:  Math.round((e.sig.dollar_mod || 1) * 1000) / 1000,
         log2_struct: Math.round(Math.log2(e.structScore + 1) * 1000) / 1000,
         decay:       recencyDecay(e.sig.signal_date),
         date:        e.sig.signal_date,
@@ -903,7 +774,7 @@
       } else {
         // clusters contains all eligibility-gated countries, sorted by score — no hard cap
         for (const cl of clusters) {
-          const profile = profileCache[cl.iso] || null;
+          const profile = isoProfile[cl.iso] || null;
           const name    = (profile ? profile.name : cl.iso).toUpperCase();
 
           const entry = document.createElement('div');
@@ -913,7 +784,7 @@
           let html = `<div class="cl-header"><span class="cl-name">${esc(name)}</span></div>`;
 
           // Structural interest factors only — no source labels
-          const factors = profile && profile.key_structural_interests;
+          const factors = profile && profile.factors;
           if (factors && factors.length) {
             html += `<div class="cl-factors" style="opacity:0.8">${esc(factors.slice(0, 3).join(' \xb7 '))}</div>`;
           }
@@ -931,7 +802,7 @@
       container.appendChild(z2Label);
 
       for (const { sig, structScore } of notable) {
-        const profile = profileCache[sig.iso] || null;
+        const profile = sig.profile || null;
         const name    = (profile ? profile.name : sig.iso).toUpperCase();
 
         // Clean title: strip leading "Country — " from DSCA records
@@ -976,7 +847,7 @@
       if (activeFilter) {
         visible = signals.filter(s => s.iso === activeFilter);
         feedHdr.style.display = '';
-        const p = profileCache[activeFilter];
+        const p = isoProfile[activeFilter];
         feedLabel.textContent = p ? p.name : activeFilter;
         toggleBtn.textContent = '[clear filter]';
         toggleBtn.onclick = () => {
@@ -1013,14 +884,15 @@
         }
         feedEl.appendChild(hdr);
         for (const sig of monthSigs) {
-          feedEl.appendChild(renderItem(sig, profileCache[sig.iso] || null, signals));
+          feedEl.appendChild(renderItem(sig, signals));
         }
       }
     }
 
     // ── Render one item ──────────────────────────────────────────────────────
 
-    function renderItem(sig, profile, signals) {
+    function renderItem(sig, signals) {
+      const profile = sig.profile || null;
       const country = profile ? profile.name : sig.iso;
       const el      = document.createElement('div');
       el.className  = 'item';
@@ -1029,9 +901,9 @@
       let countryTooltip = '';
       if (profile) {
         const ttParts = [];
-        const s = profile.structural_interest_score;
+        const s = profile.score;
         if (s != null) ttParts.push(`Structural interest: ${s}/10`);
-        if (profile.score_rationale) ttParts.push(profile.score_rationale);
+        if (profile.rationale) ttParts.push(profile.rationale);
         if (ttParts.length) countryTooltip = ` data-tooltip="${esc(ttParts.join('\n'))}"`;
       }
 
@@ -1116,19 +988,8 @@
 
       updatedEl.textContent = fmtUpdated(data.generated_at);
 
-      // Dedupe, skip US/null/XX iso, filter to 2025+, sort newest first
-      // XX = FARA records where country extraction failed in fetch_fara.py pipeline
-      const seen = new Set();
-      const signals = (data.signals || [])
-        .filter(s => s.iso && s.iso !== 'US' && s.iso !== 'XX')
-        .filter(s => (s.signal_date || '') >= '2025-01-01')
-        .filter(s => {
-          const key = s.cn_number || `${s.iso}|${s.signal_date}|${s.description}`;
-          if (seen.has(key)) return false;
-          seen.add(key);
-          return true;
-        })
-        .sort((a, b) => (b.signal_date || '').localeCompare(a.signal_date || ''));
+      // signals.json is pre-filtered, deduped, and sorted by build_signals.py
+      const signals = data.signals || [];
 
       statusEl.remove();
 
@@ -1138,8 +999,12 @@
         return;
       }
 
-      // Load all profiles in parallel
-      await Promise.all([...new Set(signals.map(s => s.iso))].map(loadProfile));
+      // Build iso→profile map from embedded profiles (no HTTP fetches needed)
+      for (const sig of signals) {
+        if (sig.iso && sig.profile && !isoProfile[sig.iso]) {
+          isoProfile[sig.iso] = sig.profile;
+        }
+      }
 
       const clusters = computeClusters(signals);
       const notable  = computeNotableSignals(signals);
@@ -1290,18 +1155,17 @@
           const iso = ISO_NUM_TO_A2[+f.id];
           if (iso) isoToLayer.set(iso, layer);
 
-          layer.on('mouseover', async e => {
+          layer.on('mouseover', e => {
             hoveredIso = iso;
             layer.setStyle({ fillColor: HOVER_COLOR });
-            const profile = iso ? await loadProfile(iso) : null;
-            if (hoveredIso !== iso) return; // user moved away while loading
+            const profile = iso ? (isoProfile[iso] || null) : null;
             const name = profile ? (profile.name || iso) : iso;
             let ttHtml = `<div class="tt-score">${esc(name)}</div>`;
             if (profile) {
-              if (profile.structural_interest_score != null)
-                ttHtml += `<div class="tt-rationale">${esc('Structural interest: ' + profile.structural_interest_score + '/10')}</div>`;
-              if (profile.score_rationale)
-                ttHtml += `<div class="tt-rationale">${esc(profile.score_rationale)}</div>`;
+              if (profile.score != null)
+                ttHtml += `<div class="tt-rationale">${esc('Structural interest: ' + profile.score + '/10')}</div>`;
+              if (profile.rationale)
+                ttHtml += `<div class="tt-rationale">${esc(profile.rationale)}</div>`;
             }
             tooltipEl.innerHTML = ttHtml;
             tooltipEl.style.display = 'block';

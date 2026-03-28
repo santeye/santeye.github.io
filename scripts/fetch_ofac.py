@@ -24,74 +24,15 @@ from datetime import datetime, timezone
 from pathlib import Path
 import urllib.request
 
+sys.path.insert(0, str(Path(__file__).parent))
+from utils import country_to_iso2, profile_score, append_and_write, write_error
+
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
 
 SDN_URL = "https://www.treasury.gov/ofac/downloads/sdn.xml"
 MIN_SCORE = 4  # profiles below this are dropped; missing profiles are kept
-
-# ---------------------------------------------------------------------------
-# Country name → ISO alpha-2
-# Covers the full-name strings that appear in OFAC address/country fields.
-# ---------------------------------------------------------------------------
-
-COUNTRY_NAME_TO_ISO2 = {
-    "afghanistan": "AF", "albania": "AL", "algeria": "DZ", "angola": "AO",
-    "armenia": "AM", "australia": "AU", "austria": "AT", "azerbaijan": "AZ",
-    "bahrain": "BH", "bangladesh": "BD", "belarus": "BY", "belgium": "BE",
-    "belize": "BZ", "benin": "BJ", "bolivia": "BO",
-    "bosnia": "BA", "bosnia and herzegovina": "BA",
-    "botswana": "BW", "brazil": "BR", "bulgaria": "BG", "burkina faso": "BF",
-    "burma": "MM", "burundi": "BI", "cambodia": "KH", "cameroon": "CM",
-    "canada": "CA", "central african republic": "CF", "chad": "TD",
-    "chile": "CL", "china": "CN", "colombia": "CO", "comoros": "KM",
-    "congo": "CG", "democratic republic of congo": "CD",
-    "democratic republic of the congo": "CD", "drc": "CD",
-    "costa rica": "CR", "croatia": "HR", "cuba": "CU", "cyprus": "CY",
-    "czech republic": "CZ", "denmark": "DK", "djibouti": "DJ",
-    "dominican republic": "DO", "ecuador": "EC", "egypt": "EG",
-    "el salvador": "SV", "equatorial guinea": "GQ", "eritrea": "ER",
-    "estonia": "EE", "ethiopia": "ET", "finland": "FI", "france": "FR",
-    "gabon": "GA", "gambia": "GM", "georgia": "GE", "germany": "DE",
-    "ghana": "GH", "greece": "GR", "guatemala": "GT", "guinea": "GN",
-    "guinea-bissau": "GW", "haiti": "HT", "honduras": "HN", "hong kong": "HK",
-    "hungary": "HU", "india": "IN", "indonesia": "ID", "iran": "IR",
-    "iraq": "IQ", "ireland": "IE", "israel": "IL", "italy": "IT",
-    "ivory coast": "CI", "cote d'ivoire": "CI", "jamaica": "JM",
-    "japan": "JP", "jordan": "JO", "kazakhstan": "KZ", "kenya": "KE",
-    "kosovo": "XK", "kuwait": "KW", "kyrgyzstan": "KG", "laos": "LA",
-    "latvia": "LV", "lebanon": "LB", "liberia": "LR", "libya": "LY",
-    "lithuania": "LT", "luxembourg": "LU", "madagascar": "MG", "malawi": "MW",
-    "malaysia": "MY", "mali": "ML", "mauritania": "MR", "mauritius": "MU",
-    "mexico": "MX", "moldova": "MD", "mongolia": "MN", "montenegro": "ME",
-    "morocco": "MA", "mozambique": "MZ", "myanmar": "MM", "namibia": "NA",
-    "nepal": "NP", "netherlands": "NL", "nicaragua": "NI", "niger": "NE",
-    "nigeria": "NG", "north korea": "KP", "north macedonia": "MK",
-    "norway": "NO", "oman": "OM", "pakistan": "PK", "panama": "PA",
-    "papua new guinea": "PG", "paraguay": "PY", "peru": "PE",
-    "philippines": "PH", "poland": "PL", "portugal": "PT", "qatar": "QA",
-    "romania": "RO", "russia": "RU", "russian federation": "RU",
-    "rwanda": "RW", "saudi arabia": "SA", "senegal": "SN", "serbia": "RS",
-    "sierra leone": "SL", "singapore": "SG", "slovakia": "SK",
-    "slovenia": "SI", "somalia": "SO", "south africa": "ZA",
-    "south korea": "KR", "south sudan": "SS", "spain": "ES",
-    "sri lanka": "LK", "sudan": "SD", "sweden": "SE", "switzerland": "CH",
-    "syria": "SY", "taiwan": "TW", "tajikistan": "TJ", "tanzania": "TZ",
-    "thailand": "TH", "timor-leste": "TL", "east timor": "TL", "togo": "TG",
-    "tunisia": "TN", "turkey": "TR", "turkmenistan": "TM", "uganda": "UG",
-    "ukraine": "UA", "united arab emirates": "AE", "uae": "AE",
-    "united kingdom": "GB", "united states": "US", "usa": "US",
-    "uruguay": "UY", "uzbekistan": "UZ", "venezuela": "VE", "vietnam": "VN",
-    "viet nam": "VN", "west bank": "PS", "gaza": "PS", "palestine": "PS",
-    "yemen": "YE", "zambia": "ZM", "zimbabwe": "ZW",
-    # Common OFAC alternates
-    "korea, north": "KP", "korea, south": "KR",
-    "iran, islamic republic of": "IR",
-    "syrian arab republic": "SY",
-    "libyan arab jamahiriya": "LY",
-    "lao people's democratic republic": "LA",
-}
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -104,10 +45,6 @@ KNOWN_UIDS_PATH = REPO_ROOT / "data" / "ofac_known_uids.json"
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
-
-
-def country_to_iso2(name: str):
-    return COUNTRY_NAME_TO_ISO2.get(name.strip().lower())
 
 
 def parse_publish_date(raw: str) -> str:
@@ -132,21 +69,11 @@ def save_known_uids(uids: set[int]):
     KNOWN_UIDS_PATH.write_text(json.dumps(sorted(uids)))
 
 
-def load_profile_score(iso2: str):
-    p = REPO_ROOT / "data" / "profiles" / f"{iso2}.json"
-    if not p.exists():
-        return None
-    try:
-        return json.loads(p.read_text()).get("structural_interest_score")
-    except Exception:
-        return None
-
-
 def should_include(iso2) -> bool:
     """Keep if: no iso (unknown), no profile (unknown), or score >= MIN_SCORE."""
     if iso2 is None:
         return True
-    score = load_profile_score(iso2)
+    score = profile_score(iso2)
     if score is None:
         return True
     return score >= MIN_SCORE
@@ -249,7 +176,7 @@ def entry_to_signals(entry: dict, signal_date: str) -> list[dict]:
             "value_usd": None,
             "description": description,
             "programs": programs,
-            "raw_score": 1.0,
+            "raw_score": profile_score(iso2),
         })
 
     return signals
@@ -271,7 +198,7 @@ def main():
         print(f"[ofac] Downloaded {len(data):,} bytes")
     except Exception as e:
         print(f"[ofac] ERROR: download failed: {e}", file=sys.stderr)
-        _write_error(str(e))
+        write_error(SIGNALS_PATH, "ofac", str(e))
         sys.exit(0)
 
     # Parse
@@ -280,7 +207,7 @@ def main():
         print(f"[ofac] Publish_Date: {publish_date}, total entries: {len(entries)}")
     except Exception as e:
         print(f"[ofac] ERROR: XML parse failed: {e}", file=sys.stderr)
-        _write_error(str(e))
+        write_error(SIGNALS_PATH, "ofac", str(e))
         sys.exit(0)
 
     current_uids = {e["uid"] for e in entries}
@@ -309,12 +236,6 @@ def main():
 
     new_entries = [e for e in entries if e["uid"] in new_uids]
 
-    # Load existing signals
-    try:
-        existing = json.loads(SIGNALS_PATH.read_text())
-    except Exception:
-        existing = {"generated_at": None, "sources": ["ofac"], "signals": []}
-
     new_signals = []
     for entry in new_entries:
         new_signals.extend(entry_to_signals(entry, publish_date))
@@ -327,33 +248,11 @@ def main():
         iso = s.get("iso") or "—"
         print(f"[ofac] + uid={s['uid']}  {iso}  {s['title'][:60]}")
 
-    all_signals = existing.get("signals", []) + new_signals
-    all_signals.sort(key=lambda s: s.get("signal_date") or "")
-
-    SIGNALS_PATH.write_text(json.dumps({
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "sources": ["ofac"],
-        "signals": all_signals,
-    }, indent=2))
-    print(f"[ofac] Wrote {len(all_signals)} total signals ({len(new_signals)} new) → {SIGNALS_PATH}")
+    added = append_and_write(SIGNALS_PATH, "ofac", new_signals, lambda s: s.get("uid"))
+    print(f"[ofac] {added} new signal(s) written → {SIGNALS_PATH}")
 
     # Update known UIDs (include current full set to handle OFAC removals)
     save_known_uids(current_uids)
-
-
-def _write_error(error: str):
-    """On failure, preserve existing signals if any and record error state."""
-    try:
-        existing = json.loads(SIGNALS_PATH.read_text()) if SIGNALS_PATH.exists() else {}
-    except Exception:
-        existing = {}
-    existing.update({
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "sources": ["ofac"],
-        "error": error,
-    })
-    existing.setdefault("signals", [])
-    SIGNALS_PATH.write_text(json.dumps(existing, indent=2))
 
 
 if __name__ == "__main__":

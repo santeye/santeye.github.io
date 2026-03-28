@@ -25,6 +25,9 @@ import urllib.parse
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+from utils import country_to_iso2, profile_score, load_existing, append_and_write, write_error
+
 try:
     import curl_cffi.requests as cffi_requests
     _CFFI_SESSION = cffi_requests.Session()
@@ -52,59 +55,6 @@ FARA_BASE              = "https://efile.fara.gov/api/v1"
 LOOKBACK_DAYS          = 1
 LOOKBACK_DAYS_BACKFILL = 365
 ENRICH_DELAY           = 2.0  # seconds between enrichment calls
-
-# ---------------------------------------------------------------------------
-# Country name → ISO alpha-2
-# ---------------------------------------------------------------------------
-
-COUNTRY_NAME_TO_ISO2 = {
-    "afghanistan": "AF", "albania": "AL", "algeria": "DZ", "angola": "AO",
-    "armenia": "AM", "australia": "AU", "austria": "AT", "azerbaijan": "AZ",
-    "bahrain": "BH", "bangladesh": "BD", "belarus": "BY", "belgium": "BE",
-    "belize": "BZ", "benin": "BJ", "bolivia": "BO",
-    "bosnia and herzegovina": "BA", "bosnia": "BA",
-    "botswana": "BW", "brazil": "BR", "bulgaria": "BG", "burkina faso": "BF",
-    "burma": "MM", "burundi": "BI", "cambodia": "KH", "cameroon": "CM",
-    "canada": "CA", "central african republic": "CF", "chad": "TD",
-    "chile": "CL", "china": "CN", "colombia": "CO", "comoros": "KM",
-    "congo": "CG", "democratic republic of the congo": "CD", "drc": "CD",
-    "costa rica": "CR", "croatia": "HR", "cuba": "CU", "cyprus": "CY",
-    "czech republic": "CZ", "denmark": "DK", "djibouti": "DJ",
-    "dominican republic": "DO", "ecuador": "EC", "egypt": "EG",
-    "el salvador": "SV", "equatorial guinea": "GQ", "eritrea": "ER",
-    "estonia": "EE", "ethiopia": "ET", "finland": "FI", "france": "FR",
-    "gabon": "GA", "gambia": "GM", "georgia": "GE", "germany": "DE",
-    "ghana": "GH", "greece": "GR", "guatemala": "GT", "guinea": "GN",
-    "guinea-bissau": "GW", "haiti": "HT", "honduras": "HN", "hungary": "HU",
-    "india": "IN", "indonesia": "ID", "iran": "IR", "iraq": "IQ",
-    "ireland": "IE", "israel": "IL", "italy": "IT", "ivory coast": "CI",
-    "cote d'ivoire": "CI", "jamaica": "JM", "japan": "JP", "jordan": "JO",
-    "kazakhstan": "KZ", "kenya": "KE", "kosovo": "XK", "kuwait": "KW",
-    "kyrgyzstan": "KG", "laos": "LA", "latvia": "LV", "lebanon": "LB",
-    "liberia": "LR", "libya": "LY", "lithuania": "LT", "madagascar": "MG",
-    "malawi": "MW", "malaysia": "MY", "mali": "ML", "mauritania": "MR",
-    "mexico": "MX", "moldova": "MD", "mongolia": "MN", "montenegro": "ME",
-    "morocco": "MA", "mozambique": "MZ", "myanmar": "MM", "namibia": "NA",
-    "nepal": "NP", "netherlands": "NL", "nicaragua": "NI", "niger": "NE",
-    "nigeria": "NG", "north korea": "KP", "north macedonia": "MK",
-    "norway": "NO", "oman": "OM", "pakistan": "PK", "panama": "PA",
-    "papua new guinea": "PG", "paraguay": "PY", "peru": "PE",
-    "philippines": "PH", "poland": "PL", "portugal": "PT", "qatar": "QA",
-    "romania": "RO", "russia": "RU", "russian federation": "RU",
-    "rwanda": "RW", "saudi arabia": "SA", "senegal": "SN", "serbia": "RS",
-    "sierra leone": "SL", "singapore": "SG", "slovakia": "SK",
-    "slovenia": "SI", "somalia": "SO", "south africa": "ZA",
-    "south korea": "KR", "south sudan": "SS", "spain": "ES",
-    "sri lanka": "LK", "sudan": "SD", "sweden": "SE", "switzerland": "CH",
-    "syria": "SY", "taiwan": "TW", "tajikistan": "TJ", "tanzania": "TZ",
-    "thailand": "TH", "timor-leste": "TL", "togo": "TG", "tunisia": "TN",
-    "turkey": "TR", "turkmenistan": "TM", "uganda": "UG", "ukraine": "UA",
-    "united arab emirates": "AE", "uae": "AE", "united kingdom": "GB",
-    "united states": "US", "usa": "US", "uruguay": "UY", "uzbekistan": "UZ",
-    "venezuela": "VE", "vietnam": "VN", "viet nam": "VN",
-    "west bank": "PS", "gaza": "PS", "palestine": "PS",
-    "yemen": "YE", "zambia": "ZM", "zimbabwe": "ZW",
-}
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -140,29 +90,6 @@ def unwrap_rowset(data: dict) -> list:
 def parse_date(raw: str) -> str:
     """'2026-03-23T00:00:00' → '2026-03-23'"""
     return raw[:10] if raw else ""
-
-
-def country_to_iso2(name: str) -> str:
-    if not name:
-        return "XX"
-    return COUNTRY_NAME_TO_ISO2.get(name.strip().lower(), "XX")
-
-
-def load_profile_score(iso2: str):
-    p = REPO_ROOT / "data" / "profiles" / f"{iso2}.json"
-    if not p.exists():
-        return None
-    try:
-        return json.loads(p.read_text()).get("structural_interest_score")
-    except Exception:
-        return None
-
-
-def raw_score_for(iso2: str) -> float:
-    if iso2 == "XX":
-        return 0.0
-    score = load_profile_score(iso2)
-    return float(score) if score is not None else 0.0
 
 
 # ---------------------------------------------------------------------------
@@ -303,21 +230,13 @@ def main():
         data = api_get(url)
     except Exception as e:
         print(f"[fara] ERROR: request failed: {e}", file=sys.stderr)
-        _write_error(str(e))
+        write_error(SIGNALS_PATH, "fara", str(e))
         sys.exit(0)
 
     new_rows = unwrap_rowset(data)
     print(f"[fara] {len(new_rows)} new registration(s)")
 
-    # Load existing signals; build dedup set
-    if SIGNALS_PATH.exists():
-        try:
-            existing = json.loads(SIGNALS_PATH.read_text())
-        except Exception:
-            existing = {"generated_at": None, "sources": ["fara"], "signals": []}
-    else:
-        existing = {"generated_at": None, "sources": ["fara"], "signals": []}
-
+    existing = load_existing(SIGNALS_PATH, "fara")
     known_reg_numbers = {
         s.get("registration_number")
         for s in existing.get("signals", [])
@@ -386,7 +305,7 @@ def main():
             "title":       title,
             "value_usd":   pdf_data["value_usd"],
             "description": description,
-            "raw_score":   raw_score_for(iso),
+            "raw_score":   profile_score(iso),
             "weight":      1.0,
             "page_url":    page_url,
         }
@@ -396,29 +315,8 @@ def main():
 
     print(f"[fara] {len(new_signals)} new signal(s)")
 
-    all_signals = existing.get("signals", []) + new_signals
-    all_signals.sort(key=lambda s: s.get("signal_date") or "")
-
-    SIGNALS_PATH.write_text(json.dumps({
-        "generated_at": today.isoformat(),
-        "sources":      ["fara"],
-        "signals":      all_signals,
-    }, indent=2))
-    print(f"[fara] Wrote {len(all_signals)} total signals ({len(new_signals)} new) → {SIGNALS_PATH}")
-
-
-def _write_error(error: str):
-    try:
-        existing = json.loads(SIGNALS_PATH.read_text()) if SIGNALS_PATH.exists() else {}
-    except Exception:
-        existing = {}
-    existing.update({
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "sources": ["fara"],
-        "error": error,
-    })
-    existing.setdefault("signals", [])
-    SIGNALS_PATH.write_text(json.dumps(existing, indent=2))
+    added = append_and_write(SIGNALS_PATH, "fara", new_signals, lambda s: s.get("registration_number"))
+    print(f"[fara] {added} new signal(s) written → {SIGNALS_PATH}")
 
 
 if __name__ == "__main__":

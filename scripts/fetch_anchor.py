@@ -31,6 +31,9 @@ from datetime import datetime, timedelta, timezone
 _USD = "[$]"
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+from utils import profile_score, load_existing as _load_existing, append_and_write
+
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
@@ -49,32 +52,10 @@ COMPANIES = [
 
 REPO_ROOT    = Path(__file__).parent.parent
 SIGNALS_PATH = REPO_ROOT / "data" / "anchor_signals.json"
-IL_PROFILE   = REPO_ROOT / "data" / "profiles" / "IL.json"
 
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
-
-def load_il_score():
-    if IL_PROFILE.exists():
-        try:
-            return float(json.loads(IL_PROFILE.read_text()).get("structural_interest_score", 8))
-        except Exception:
-            pass
-    return 8.0
-
-
-def load_existing(path: Path):
-    if path.exists():
-        try:
-            data = json.loads(path.read_text())
-            signals = data.get("signals", [])
-            seen = {s["accession"] for s in signals if "accession" in s}
-            return signals, seen
-        except Exception:
-            pass
-    return [], set()
-
 
 def http_get(url: str, retries: int = 3) -> bytes:
     for attempt in range(retries):
@@ -222,8 +203,10 @@ def main():
     cutoff = (datetime.now(timezone.utc) - timedelta(days=lookback)).strftime("%Y-%m-%d")
     print(f"[anchor] lookback={lookback}d  cutoff={cutoff}")
 
-    il_score = load_il_score()
-    existing_signals, seen_ids = load_existing(SIGNALS_PATH)
+    il_score = profile_score("IL") or 8.0
+    _existing = _load_existing(SIGNALS_PATH, "anchor_budget")
+    existing_signals = _existing.get("signals", [])
+    seen_ids = {s["accession"] for s in existing_signals if "accession" in s}
     print(f"[anchor] existing={len(existing_signals)}  seen={len(seen_ids)}")
 
     new_signals = []
@@ -302,10 +285,9 @@ def main():
         print("[anchor] nothing new — exiting")
         return
 
-    all_signals = existing_signals + new_signals
     SIGNALS_PATH.parent.mkdir(parents=True, exist_ok=True)
-    SIGNALS_PATH.write_text(json.dumps({"signals": all_signals}, indent=2, ensure_ascii=False))
-    print(f"[anchor] wrote {len(all_signals)} total to {SIGNALS_PATH}")
+    added = append_and_write(SIGNALS_PATH, "anchor_budget", new_signals, lambda s: s.get("accession"))
+    print(f"[anchor] {added} new signal(s) written → {SIGNALS_PATH}")
 
 
 if __name__ == "__main__":

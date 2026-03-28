@@ -20,6 +20,10 @@ import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+import sys
+sys.path.insert(0, str(Path(__file__).parent))
+from utils import profile_score
+
 from bs4 import BeautifulSoup
 from curl_cffi import requests as cffi_requests
 
@@ -667,7 +671,7 @@ def scrape_daily(signals_path):
             "title":       parsed.get("weapon_system") or item["title"],
             "value_usd":   parsed.get("value_usd"),
             "description": desc,
-            "raw_score":   None,
+            "raw_score":   profile_score(iso2),
             "cn_number":   cn,
             "pdf_url":     None,
             "page_url":    item["article_url"],
@@ -806,7 +810,7 @@ def scrape_state_arms(signals_path):
             "title":       weapon,
             "value_usd":   value_usd,
             "description": first_para,
-            "raw_score":   None,
+            "raw_score":   profile_score(iso2),
             "cn_number":   None,
             "page_url":    page_url,
             "wp_id":       wp_id,
@@ -946,7 +950,7 @@ def write_signals(notifications_path, signals_path):
             "value_usd":   None,
             "description": None,
             "quantity":    None,
-            "raw_score":   None,
+            "raw_score":   profile_score(iso2),
             "cn_number":   r.get("cn_number"),
             "pdf_url":     r.get("pdf_url"),
             "page_url":    None,

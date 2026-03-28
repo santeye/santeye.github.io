@@ -21,6 +21,9 @@ import urllib.parse
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+from utils import profile_score, load_existing, append_and_write, write_error
+
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
@@ -54,23 +57,6 @@ def api_get(url: str, retries: int = 3) -> dict:
                 time.sleep(wait)
                 continue
             raise
-
-
-def load_profile_score(iso2: str):
-    p = REPO_ROOT / "data" / "profiles" / f"{iso2}.json"
-    if not p.exists():
-        return None
-    try:
-        return json.loads(p.read_text()).get("structural_interest_score")
-    except Exception:
-        return None
-
-
-def raw_score_for(iso2: str) -> float:
-    if not iso2 or iso2 == "XX":
-        return 0.0
-    score = load_profile_score(iso2)
-    return float(score) if score is not None else 0.0
 
 
 def pick_iso(filing: dict) -> str:
@@ -155,7 +141,7 @@ def to_signal(filing: dict) -> dict:
         "value_usd":   None,
         "description": build_description(filing),
         "url":         filing.get("filing_document_url"),
-        "raw_score":   raw_score_for(iso),
+        "raw_score":   profile_score(iso),
         "weight":      1.0,
     }
 
@@ -201,19 +187,12 @@ def main():
         filings = fetch_filings(after_str)
     except Exception as e:
         print(f"[lda] ERROR: {e}", file=sys.stderr)
-        _write_error(str(e))
+        write_error(SIGNALS_PATH, "lda", str(e))
         sys.exit(0)
 
     print(f"[lda] {len(filings)} raw filing(s) returned")
 
-    if SIGNALS_PATH.exists():
-        try:
-            existing = json.loads(SIGNALS_PATH.read_text())
-        except Exception:
-            existing = {"generated_at": None, "sources": ["lda"], "signals": []}
-    else:
-        existing = {"generated_at": None, "sources": ["lda"], "signals": []}
-
+    existing = load_existing(SIGNALS_PATH, "lda")
     known_uuids = {
         s.get("filing_uuid")
         for s in existing.get("signals", [])
@@ -236,29 +215,8 @@ def main():
 
     print(f"[lda] {len(new_signals)} new signal(s) after filter")
 
-    all_signals = existing.get("signals", []) + new_signals
-    all_signals.sort(key=lambda s: s.get("signal_date") or "")
-
-    SIGNALS_PATH.write_text(json.dumps({
-        "generated_at": today.isoformat(),
-        "sources":      ["lda"],
-        "signals":      all_signals,
-    }, indent=2))
-    print(f"[lda] Wrote {len(all_signals)} total signals ({len(new_signals)} new) → {SIGNALS_PATH}")
-
-
-def _write_error(error: str):
-    try:
-        existing = json.loads(SIGNALS_PATH.read_text()) if SIGNALS_PATH.exists() else {}
-    except Exception:
-        existing = {}
-    existing.update({
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "sources":      ["lda"],
-        "error":        error,
-    })
-    existing.setdefault("signals", [])
-    SIGNALS_PATH.write_text(json.dumps(existing, indent=2))
+    added = append_and_write(SIGNALS_PATH, "lda", new_signals, lambda s: s.get("filing_uuid"))
+    print(f"[lda] {added} new signal(s) written → {SIGNALS_PATH}")
 
 
 if __name__ == "__main__":
