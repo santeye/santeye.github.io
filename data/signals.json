@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-29T01:00:35.392380+00:00",
+  "generated_at": "2026-03-29T01:07:01.099545+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13063,6 +13063,42 @@
       "is_fr_policy": null
     },
     {
+      "registration_number": 7634,
+      "iso": "IQ",
+      "source": "fara",
+      "signal_date": "2025-08-13",
+      "title": "Independence Front For Freedom And Peace",
+      "value_usd": null,
+      "description": "The registrant is a U.S.-based nonprofit organization engaged in advocacy, research, and outreach to promote political, economic, and humanitarian initiatives for the proposed Eastern Levant Region (Sunni region in Iraq), fostering strategic partnerships and raising awareness within the united states. Citizenship UNITED STATES Position Executive director and founder Name See Appendix for Response Residence Address 27 Ivy Street PORTLAND, ME 04102 Received by NSD/FARA Registration Unit 08/13/2025 1:18:27 PM (PAGE 3) II\u2014FOREIGN PRINCIPAL III-ACTIVITIES If yes, describe fully.\u2026",
+      "page_url": "https://efile.fara.gov/docs/7634-Registration-Statement-20250813-1.pdf",
+      "registrant": "Independence Front For Freedom And Peace",
+      "principal": null,
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": {
+        "name": "Iraq",
+        "score": 7,
+        "factors": [
+          "hydrocarbons",
+          "active conflict",
+          "proxy hub",
+          "US basing",
+          "sanctions"
+        ],
+        "rationale": "Massive hydrocarbon reserves \u2014 top-5 global producer (+2), active conflict \u2014 militia warfare and ISIS remnants (+2), Iran-US proxy contest (+1), major US basing presence (+1), active sanctions history and ongoing restrictions (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
       "filing_uuid": "3acf0250-6a1c-41e3-a736-21d9bc20342d",
       "iso": "IL",
       "source": "lda",
@@ -18020,6 +18056,40 @@
       "is_fr_policy": null
     },
     {
+      "registration_number": 7608,
+      "iso": "KR",
+      "source": "fara",
+      "signal_date": "2025-06-06",
+      "title": "Gilley's Fastener Sales and Consulting LLC",
+      "value_usd": null,
+      "description": "Promote the sales of mechanical fasteners for YM Co. LTD, a publicly traded company located in South Korea, supporting quality interaction and provide communication to the customers of YM Co. LTD. Provide sales status related documents to YM co. LTD weekly. Position Sole Proprietor Citizenship UNITED STATES",
+      "page_url": "https://efile.fara.gov/docs/7608-Registration-Statement-20250606-1.pdf",
+      "registrant": "Gilley's Fastener Sales and Consulting LLC",
+      "principal": null,
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": {
+        "name": "South Korea",
+        "score": 4,
+        "factors": [
+          "US basing",
+          "nuclear program",
+          "regional power"
+        ],
+        "rationale": "Major US basing \u2014 28,000 troops, USFK (+1), latent nuclear capability \u2014 active discussion of indigenous program (+2), regional power and semiconductor/industrial hub (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
       "filing_uuid": "5c882f8c-5516-4a08-b6b1-6ad5e4ffc5ff",
       "iso": "CA",
       "source": "lda",
@@ -20146,6 +20216,41 @@
       "is_fr_policy": null
     },
     {
+      "registration_number": 7579,
+      "iso": "PK",
+      "source": "fara",
+      "signal_date": "2025-04-25",
+      "title": "Javelin Advisors LLC",
+      "value_usd": null,
+      "description": "Javelin Advisors, LLC is a government relations and consulting Foreign Prine ipal(s) Islamic Republic of Pakistan Islamic Republic of Pakistan",
+      "page_url": "https://efile.fara.gov/docs/7579-Registration-Statement-20250425-1.pdf",
+      "registrant": "Javelin Advisors LLC",
+      "principal": null,
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": {
+        "name": "Pakistan",
+        "score": 6,
+        "factors": [
+          "nuclear program",
+          "active conflict",
+          "BRI exposure",
+          "proxy hub"
+        ],
+        "rationale": "Active nuclear weapons program (+2), active conflict \u2014 TTP insurgency, Baloch separatism (+2), major BRI/CPEC corridor (+1), regional proxy hub \u2014 Taliban, Afghan spillover (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
       "filing_uuid": "8bd68636-51ff-4d35-bdec-de4bbf773ee5",
       "iso": "LU",
       "source": "lda",
@@ -21579,6 +21684,41 @@
       },
       "layer": "influence",
       "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "registration_number": 7571,
+      "iso": "QA",
+      "source": "fara",
+      "signal_date": "2025-04-10",
+      "title": "The Kerik Group LLC",
+      "value_usd": null,
+      "description": "Consulting services Position Sole Managing Member Citizenship UNITED STATES Name See Appendix for Response Residence Address 905 Old Mill Road Franklin Lakes, NJ 07417 Foreign Prine ipal(s) Embassy of the State of Qatar in Washington, D.C. Received by NSD/FARA Registration Unit 04/10/2025 7:50:48 PM (PAGE 3) II\u2014FOREIGN PRINCIPAL III-ACTIVITIES If yes, describe fully. Foreign Principal Activities/Services IV\u2014FINANCIAL INFORMATION If yes, set forth below in the required detail and separately for each such foreign principal an account of such monies.3 Foreign PrincipalDate Received From Whom\u2026",
+      "page_url": "https://efile.fara.gov/docs/7571-Registration-Statement-20250410-1.pdf",
+      "registrant": "The Kerik Group LLC",
+      "principal": null,
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": {
+        "name": "Qatar",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "LNG",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "World's largest LNG exporter \u2014 hydrocarbon reserves (+2), Al Udeid Air Base \u2014 largest US air base in Middle East (+1), proxy hub \u2014 Hamas, Taliban mediation (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.9,
       "dollar_mod": 1.0,
       "is_fr_policy": null
     },
