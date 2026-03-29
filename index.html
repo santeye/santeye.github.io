@@ -853,7 +853,6 @@
             for (const feedItem of allItems) {
               if (feedItem.dataset.sigKey === key) {
                 feedItem.classList.add('expanded');
-                feedItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 break;
               }
             }
