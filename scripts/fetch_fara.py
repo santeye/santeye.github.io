@@ -56,6 +56,30 @@ LOOKBACK_DAYS          = 1
 LOOKBACK_DAYS_BACKFILL = 365
 ENRICH_DELAY           = 2.0  # seconds between enrichment calls
 
+# Sub-state entities and FARA-specific country name variants that
+# country_to_iso2 (utils.py) does not cover. Keys are lowercase.
+FARA_ISO_OVERRIDES = {
+    "republika srpska":                 "BA",
+    "republic of srpska":               "BA",
+    "government of republika srpska":   "BA",
+    "bermuda":                          "BM",
+    "republic of the congo":            "CG",
+    "congo, republic of":               "CG",
+    "congo, republic of the":           "CG",
+    "democratic republic of the congo": "CD",
+    "congo, democratic republic of the": "CD",
+    "cayman islands":                   "KY",
+    "british virgin islands":           "VG",
+    "turks and caicos islands":         "TC",
+    "turks and caicos":                 "TC",
+    "isle of man":                      "IM",
+    "jersey":                           "JE",
+    "guernsey":                         "GG",
+    "macau":                            "MO",
+    "macao":                            "MO",
+    "western sahara":                   "EH",
+}
+
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
@@ -66,6 +90,16 @@ SIGNALS_PATH = REPO_ROOT / "data" / "fara_signals.json"
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
+def fara_country_to_iso2(name: str):
+    """Resolve FARA country name to ISO alpha-2, checking local overrides first."""
+    if not name:
+        return None
+    key = name.strip().lower()
+    if key in FARA_ISO_OVERRIDES:
+        return FARA_ISO_OVERRIDES[key]
+    return country_to_iso2(name)
+
 
 def api_get(url: str) -> dict:
     """Fetch a FARA API URL, follow redirects, return parsed JSON."""
@@ -274,7 +308,7 @@ def main():
             fp_name      = ""
             country_name = ""
 
-        iso         = country_to_iso2(country_name)
+        iso         = fara_country_to_iso2(country_name)
         fp_short    = fp_name.split(",")[0].strip() if fp_name else ""
         title       = f"{registrant} — {fp_short}" if fp_short else registrant
 
@@ -292,22 +326,20 @@ def main():
         desc_fallback = ", ".join(filter(None, [registrant, fp_name, country_name]))
         description   = pdf_data["description"] or desc_fallback
 
-        # Append target groups to description if found
-        if pdf_data["target_groups"]:
-            targets_str = ", ".join(pdf_data["target_groups"])
-            description = f"{description} — targets: {targets_str}"
-
         sig = {
             "registration_number": reg_number,
-            "iso":         iso,
-            "source":      "fara",
-            "signal_date": filed_date,
-            "title":       title,
-            "value_usd":   pdf_data["value_usd"],
-            "description": description,
-            "raw_score":   profile_score(iso),
-            "weight":      1.0,
-            "page_url":    page_url,
+            "iso":          iso,
+            "source":       "fara",
+            "signal_date":  filed_date,
+            "title":        title,
+            "value_usd":    pdf_data["value_usd"],
+            "description":  description,
+            "registrant":   registrant or None,
+            "principal":    fp_name or None,
+            "target_groups": pdf_data["target_groups"],
+            "raw_score":    profile_score(iso),
+            "weight":       1.0,
+            "page_url":     page_url,
         }
         new_signals.append(sig)
         known_reg_numbers.add(reg_number)

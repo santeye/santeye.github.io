@@ -4,9 +4,8 @@ fetch_lda.py — LDA lobbying disclosure pipeline for HARPY
 
 Polls https://lda.gov/api/v1/filings/ for new registrations (filing_type=RR)
 posted since yesterday. Filters to high-signal records:
-  - client.country != "US", OR
   - foreign_entities is non-empty, OR
-  - any lobbying_activity general_issue_code in {DEF, FOR, TRD, ENE, HCR}
+  - any lobbying_activity general_issue_code in {DEF, FOR, TRD, ENE, SCI, HOM}
 
 Deduplicates by filing_uuid. Appends to data/lda_signals.json.
 No API key required — anonymous rate limit (15 req/min) is sufficient.
@@ -31,7 +30,7 @@ from utils import profile_score, load_existing, append_and_write, write_error
 LDA_BASE               = "https://lda.gov/api/v1/filings"
 LOOKBACK_DAYS          = 1
 LOOKBACK_DAYS_BACKFILL = 365
-HIGH_SIGNAL_CODES      = {"DEF", "FOR", "TRD", "ENE", "HCR"}
+HIGH_SIGNAL_CODES      = {"DEF", "FOR", "TRD", "ENE", "SCI", "HOM"}
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -85,9 +84,6 @@ def pick_iso(filing: dict) -> str:
 
 
 def is_high_signal(filing: dict) -> bool:
-    client_country = ((filing.get("client") or {}).get("country") or "US").upper()
-    if client_country != "US":
-        return True
     if filing.get("foreign_entities"):
         return True
     for act in (filing.get("lobbying_activities") or []):
@@ -132,17 +128,25 @@ def to_signal(filing: dict) -> dict:
     signal_date = dt_posted[:10] if dt_posted else ""
     iso         = pick_iso(filing)
 
+    issue_codes = sorted(set(
+        (act.get("general_issue_code") or "").upper()
+        for act in (filing.get("lobbying_activities") or [])
+        if act.get("general_issue_code")
+    ))
+
     return {
-        "filing_uuid": filing.get("filing_uuid"),
-        "iso":         iso,
-        "source":      "lda",
-        "signal_date": signal_date,
-        "title":       title,
-        "value_usd":   None,
-        "description": build_description(filing),
-        "url":         filing.get("filing_document_url"),
-        "raw_score":   profile_score(iso),
-        "weight":      1.0,
+        "filing_uuid":   filing.get("filing_uuid"),
+        "iso":           iso,
+        "source":        "lda",
+        "signal_date":   signal_date,
+        "title":         title,
+        "value_usd":     None,
+        "description":   build_description(filing),
+        "lobbying_firm": registrant_name or None,
+        "issue_codes":   issue_codes,
+        "url":           filing.get("filing_document_url"),
+        "raw_score":     profile_score(iso),
+        "weight":        1.0,
     }
 
 
@@ -207,8 +211,6 @@ def main():
         if not is_high_signal(filing):
             continue
         sig = to_signal(filing)
-        if sig["iso"] == "XX":
-            continue
         new_signals.append(sig)
         known_uuids.add(uuid)
         print(f"[lda] + {sig['iso']}  {sig['title'][:60]}")
