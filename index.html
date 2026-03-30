@@ -317,21 +317,20 @@
 
     // ── Source labels / short names ──────────────────────────────────────────
 
-    const SOURCE_COLORS = {
-      dsca:            '#4a9eff',  // blue   — arms sale notification
-      fara:            '#f97316',  // orange — foreign agent registration
-      lda:             '#94a3b8',  // slate  — domestic lobbying
-      ofac:            '#ef4444',  // red    — sanctions designation
-      bis:             '#c084fc',  // purple — export control designation
-      federalregister: '#64748b',  // grey   — policy/regulatory notice
-      sam:             '#34d399',  // green  — procurement contract
-      imf:             '#f59e0b',  // amber  — financial monitoring
-      anchor_budget:   '#22d3ee',  // cyan   — Elbit 6-K
-      cftc:            '#a78bfa',  // violet — COT market positioning
+    // Layer colors — used only when a country filter is active (feed badges go grey otherwise).
+    // Palette avoids red and yellow families: those belong to the map zone colors.
+    const LAYER_COLORS = {
+      military:    '#3b82f6',  // blue
+      influence:   '#10b981',  // emerald
+      regulatory:  '#a855f7',  // purple
+      procurement: '#06b6d4',  // cyan
+      financial:   '#f97316',  // orange
+      legislative: '#94a3b8',  // slate
+      adversarial: '#ec4899',  // rose  (red reserved for map convergence zone)
     };
 
-    function sourceColor(source) {
-      return SOURCE_COLORS[(source || '').toLowerCase()] || '#a0a0b0';
+    function layerColor(layer) {
+      return LAYER_COLORS[layer] || '#a0a0b0';
     }
 
     const SOURCE_LABELS = {
@@ -822,7 +821,7 @@
           : raw;
         if (title.length > 55) title = title.slice(0, 52) + '\u2026';
 
-        const color  = sourceColor(sig.source);
+        const color  = layerColor(sig.layer);
         const badge  = sourceShort(sig.source);
         const valStr = sig.value_usd ? fmtValue(sig.value_usd) : '';
 
@@ -970,7 +969,7 @@
           `<span class="${countryClass}"${countryTooltip}>${esc(country)}</span>` +
           `<span class="item-sep">\xb7</span>` +
           `<span class="item-title">${esc(titleStr)}</span>` +
-          `<span class="item-src" style="color:${sourceColor(sig.source)}">${esc(sourceShort(sig.source))}</span>` +
+          `<span class="item-src" style="color:${activeFilter ? layerColor(sig.layer) : 'var(--muted)'}">${esc(sourceShort(sig.source))}</span>` +
           `<span class="item-date">${esc(fmtDate(sig.signal_date))}</span>` +
         `</div>` +
         (hasDetail ? `<div class="item-detail">${detailInner}</div>` : '');
