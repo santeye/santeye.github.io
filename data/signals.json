@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-31T22:54:30.973118+00:00",
+  "generated_at": "2026-04-01T21:15:16.750696+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -73,6 +73,47 @@
       "is_fr_policy": null
     },
     {
+      "filing_uuid": "6343a5b2-158e-4f03-acfc-8169f881fa78",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-31",
+      "title": "America First Refining \u2014 via Continental Strategy, Llc",
+      "value_usd": null,
+      "description": "MAN, TRD; Issues related to energy and industrial development.",
+      "lobbying_firm": "Continental Strategy, Llc",
+      "issue_codes": [
+        "MAN",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/6343a5b2-158e-4f03-acfc-8169f881fa78/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "dc6ccce6-4d48-46b2-ac0f-a3b1d46f4a41",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-31",
+      "title": "Geminus.Ai Inc. \u2014 via The Vogel Group",
+      "value_usd": null,
+      "description": "BUD, DEF, ENG; Issues related to artificial intelligence for industrial energy and defense systems",
+      "lobbying_firm": "The Vogel Group",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/dc6ccce6-4d48-46b2-ac0f-a3b1d46f4a41/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
       "filing_uuid": "3fc8defa-e8cf-4199-bbe1-750e367fd287",
       "iso": "MA",
       "source": "lda",
@@ -129,6 +170,113 @@
       "is_fr_policy": null
     },
     {
+      "filing_uuid": "97f45d59-a4c1-4c5e-994b-54c10b641243",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-31",
+      "title": "Aerodesign Services \u2014 via The Nathaniel Group Llc",
+      "value_usd": null,
+      "description": "AER, AVI, DEF, TRA; Aerospace, Aviation, Transportation, Defense",
+      "lobbying_firm": "The Nathaniel Group Llc",
+      "issue_codes": [
+        "AER",
+        "AVI",
+        "DEF",
+        "TRA"
+      ],
+      "url": "https://lda.gov/filings/public/filing/97f45d59-a4c1-4c5e-994b-54c10b641243/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "924159e5-3560-4aff-8700-21f6ff057da8",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-31",
+      "title": "Cleveland Clinic Foundation \u2014 via Center Road Solutions",
+      "value_usd": null,
+      "description": "SCI; Issus pertaining to the FY2027 Commerce, Justice, Science; Energy and Water Development; and Interio\u2026",
+      "lobbying_firm": "Center Road Solutions",
+      "issue_codes": [
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/924159e5-3560-4aff-8700-21f6ff057da8/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "d437f003-d5bc-40cf-91da-1279d7ee6420",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-31",
+      "title": "Safetraces, Inc. \u2014 via The Livingston Group, Llc",
+      "value_usd": null,
+      "description": "BUD, DEF, HCR; Technology for predicting, detecting, and preventing airborne biological threats.",
+      "lobbying_firm": "The Livingston Group, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "HCR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/d437f003-d5bc-40cf-91da-1279d7ee6420/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "0fce5193-b538-43ac-9331-2069530372d7",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-31",
+      "title": "World Wildlife Fund \u2014 via Oxford Alley Policy Advisory",
+      "value_usd": null,
+      "description": "BAN, ECN, FOR, NAT, RES; EXIM Reauthorization",
+      "lobbying_firm": "Oxford Alley Policy Advisory",
+      "issue_codes": [
+        "BAN",
+        "ECN",
+        "FOR",
+        "NAT",
+        "RES"
+      ],
+      "url": "https://lda.gov/filings/public/filing/0fce5193-b538-43ac-9331-2069530372d7/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "5c0e4a45-373e-47f4-96d9-b5d547391fc4",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-31",
+      "title": "Natera, Inc. \u2014 via Ervin Graves Strategy Group, Llc",
+      "value_usd": null,
+      "description": "BUD, DEF, HCR, INS; Insurance coverage for laboratory testing.",
+      "lobbying_firm": "Ervin Graves Strategy Group, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "HCR",
+        "INS"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5c0e4a45-373e-47f4-96d9-b5d547391fc4/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
       "filing_uuid": "a3aea893-0332-41c8-b112-7512f2ba2649",
       "iso": "NO",
       "source": "lda",
@@ -152,6 +300,263 @@
         ],
         "rationale": "Major hydrocarbon producer \u2014 European gas anchor (+2), rare earth deposits including world-class Fen discovery (+2), Arctic strategic position (+1)"
       },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "e4bd1f39-ffe0-4226-8d21-697833ef847f",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-30",
+      "title": "Altana Technologies, Inc. \u2014 via Miller Strategies, Llc",
+      "value_usd": null,
+      "description": "HOM, TRD; General issues related to trade and trade facilitation.",
+      "lobbying_firm": "Miller Strategies, Llc",
+      "issue_codes": [
+        "HOM",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e4bd1f39-ffe0-4226-8d21-697833ef847f/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "a88f8d8d-929b-465e-ab97-73fe25a38c22",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-30",
+      "title": "Digital Childhood Alliance \u2014 via Free State Advocacy, Llc",
+      "value_usd": null,
+      "description": "MIA, SCI; App Store Accountability Act",
+      "lobbying_firm": "Free State Advocacy, Llc",
+      "issue_codes": [
+        "MIA",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/a88f8d8d-929b-465e-ab97-73fe25a38c22/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "16fe7017-893e-45ec-b638-aed9e735069a",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-30",
+      "title": "Group14 Technologies \u2014 via Acg Advocacy",
+      "value_usd": null,
+      "description": "CPT, TRD; Patent infringement. Trade issues.",
+      "lobbying_firm": "Acg Advocacy",
+      "issue_codes": [
+        "CPT",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/16fe7017-893e-45ec-b638-aed9e735069a/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "c51b7c68-8087-41e0-af9d-913511289677",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-30",
+      "title": "Daric \u2014 via Cassidy & Associates, Inc.",
+      "value_usd": null,
+      "description": "BUD, DEF; FY27 Defense Appropriations",
+      "lobbying_firm": "Cassidy & Associates, Inc.",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/c51b7c68-8087-41e0-af9d-913511289677/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "c20eb3e8-254b-4015-aa67-6b6d447acea2",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-30",
+      "title": "New American Industrial Alliance \u2014 via New American Industrial Alliance",
+      "value_usd": null,
+      "description": "AER, BAN, BUD, CHM, CPI, DEF, ENG, ENV, MAN, MAR, ROD, RRR, SCI, SMB, TAX, TRA, URB, UTI, WAS; Manufacturing, energy, AI, defense",
+      "lobbying_firm": "New American Industrial Alliance",
+      "issue_codes": [
+        "AER",
+        "BAN",
+        "BUD",
+        "CHM",
+        "CPI",
+        "DEF",
+        "ENG",
+        "ENV",
+        "MAN",
+        "MAR",
+        "ROD",
+        "RRR",
+        "SCI",
+        "SMB",
+        "TAX",
+        "TRA",
+        "URB",
+        "UTI",
+        "WAS"
+      ],
+      "url": "https://lda.gov/filings/public/filing/c20eb3e8-254b-4015-aa67-6b6d447acea2/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "83440fcb-2a92-4212-8618-19c38dd80f4e",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-30",
+      "title": "Seekr Technologies, Inc. \u2014 via Ballard Partners",
+      "value_usd": null,
+      "description": "SCI; Introduction of unique technologies to federal users.",
+      "lobbying_firm": "Ballard Partners",
+      "issue_codes": [
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/83440fcb-2a92-4212-8618-19c38dd80f4e/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "f56b0952-b69a-40f3-aeeb-26d63dd3b8c4",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-30",
+      "title": "Molrix \u2014 via Agm Consulting Services, Inc.",
+      "value_usd": null,
+      "description": "DEF; Missile Defense, Space Systems Defense, Additive Manufacturing, Robotics for Defense Manufacturing",
+      "lobbying_firm": "Agm Consulting Services, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/f56b0952-b69a-40f3-aeeb-26d63dd3b8c4/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "f6cf363f-7189-4309-bbad-974ed263267d",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-30",
+      "title": "Facetec, Inc. \u2014 via Ballard Partners",
+      "value_usd": null,
+      "description": "SCI; Advocacy regarding its facial recognition technology.",
+      "lobbying_firm": "Ballard Partners",
+      "issue_codes": [
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/f6cf363f-7189-4309-bbad-974ed263267d/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "39655528-175c-48e0-8988-04bfe7afddaf",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-30",
+      "title": "Northrop Grumman Systems Corporation \u2014 via Ballard Partners",
+      "value_usd": null,
+      "description": "DEF; Advocacy regarding matters relating to the defense industrial base and federal government procuremen\u2026",
+      "lobbying_firm": "Ballard Partners",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/39655528-175c-48e0-8988-04bfe7afddaf/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "8a6c7e1b-0d54-44dd-a670-e05fe04415a9",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-30",
+      "title": "American Copper Fabricators Coalition \u2014 via Rock Creek Trade Llp",
+      "value_usd": null,
+      "description": "MAN, NAT, TAR, TRD; 1) Export controls on high-quality copper scrap 2) Unwrought copper feedstock 3) Downstream copper p\u2026",
+      "lobbying_firm": "Rock Creek Trade Llp",
+      "issue_codes": [
+        "MAN",
+        "NAT",
+        "TAR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/8a6c7e1b-0d54-44dd-a670-e05fe04415a9/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "b1ee08de-3faf-4db6-b7e0-a41d1a00f567",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-30",
+      "title": "Mahzi Therapeutics \u2014 via The Kpm Group Dc Llc",
+      "value_usd": null,
+      "description": "HCR, MED, SCI; Priority review voucher (PRV) re-authorization, ICD-10 codes",
+      "lobbying_firm": "The Kpm Group Dc Llc",
+      "issue_codes": [
+        "HCR",
+        "MED",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b1ee08de-3faf-4db6-b7e0-a41d1a00f567/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "ddcc386e-05a3-43dd-a8a3-ab29e097e3b5",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-30",
+      "title": "Logiqal Inc. \u2014 via Lewis-Burke Associates, Llc",
+      "value_usd": null,
+      "description": "BUD, DEF, SCI; Issues related to the National Quantum Initiative.",
+      "lobbying_firm": "Lewis-Burke Associates, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/ddcc386e-05a3-43dd-a8a3-ab29e097e3b5/print/",
+      "profile": null,
       "layer": "influence",
       "quality": 0.5,
       "dollar_mod": 1.0,
@@ -182,6 +587,25 @@
         ],
         "rationale": "Major US basing \u2014 Souda Bay, Alexandroupolis (+1), controls Aegean Sea access \u2014 strategic maritime corridor (+1), NATO southeastern flank and Eastern Med gas contest (+1)"
       },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "e3ece5f0-fb01-405d-9e6e-9866c7b57ae5",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-03-30",
+      "title": "Cipher Tech \u2014 via Ervin Graves Strategy Group, Llc",
+      "value_usd": null,
+      "description": "DEF; Legislation and appropriations related to cybersecurity, digital forensics, and malware reverse engi\u2026",
+      "lobbying_firm": "Ervin Graves Strategy Group, Llc",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e3ece5f0-fb01-405d-9e6e-9866c7b57ae5/print/",
+      "profile": null,
       "layer": "influence",
       "quality": 0.5,
       "dollar_mod": 1.0,
@@ -1534,6 +1958,31 @@
       },
       "layer": "influence",
       "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "registration_number": 7699,
+      "iso": "XX",
+      "source": "fara",
+      "signal_date": "2026-02-24",
+      "title": "LGS LLC \u2014 We Invest in Nationhood",
+      "value_usd": null,
+      "description": "Consulting Services",
+      "page_url": "https://efile.fara.gov/docs/7699-Registration-Statement-20260224-1.pdf",
+      "registrant": "LGS LLC",
+      "principal": "We Invest in Nationhood",
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.9,
       "dollar_mod": 1.0,
       "is_fr_policy": null
     },
@@ -4821,6 +5270,31 @@
       "is_fr_policy": null
     },
     {
+      "registration_number": 7679,
+      "iso": "XX",
+      "source": "fara",
+      "signal_date": "2025-12-18",
+      "title": "Nestpoint Associates LLC \u2014 Ministry of the Presidency",
+      "value_usd": null,
+      "description": "Nestpoint Associates LLC is a government affairs and public policy consultancy that provides strategic advisory services to clients on regulatory, legislative, and policy matters. Citizenship UNITED STATES UNITED STATES UNITED STATES UNITED STATES See Appendix for Response Residence Address fara unit fara unit FARA Unit FARA Unit Received by NSD/FARA Registration Unit 12/18/2025 4:20:13 PM (PAGE 3) II\u2014FOREIGN PRINCIPAL III-ACTIVITIES If yes, describe fully. Foreign Principal Activities/Services IV\u2014FINANCIAL INFORMATION If yes, set forth below in the required detail and separately for each\u2026",
+      "page_url": "https://efile.fara.gov/docs/7679-Registration-Statement-20251218-1.pdf",
+      "registrant": "Nestpoint Associates LLC",
+      "principal": "Ministry of the Presidency",
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
       "filing_uuid": "55260929-56a0-41ad-ac70-996b41468f28",
       "iso": "AU",
       "source": "lda",
@@ -5241,6 +5715,31 @@
       },
       "layer": "military",
       "quality": 1.0,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "registration_number": 7675,
+      "iso": "XX",
+      "source": "fara",
+      "signal_date": "2025-12-08",
+      "title": "VEON Ltd.",
+      "value_usd": null,
+      "description": "VEON, through its operating companies, is a leading digital operator strategically positioned across six frontier markets: Bangladesh, Kazakhstan, Pakistan, Ukraine Uzbekistan and Kyrgyzstan (currently classified as held for sale). As a holding company, VEON relies on the performance of our operating subsidiaries and their ability to pay dividends or make other transfers to VEON Ltd. to maintain funding. Name See Appendix for Response Name See Appendix for Response Received by NSD/FARA Registration Unit 12/08/2025 1:10:47 PM (PAGE 3) II\u2014FOREIGN PRINCIPAL III-ACTIVITIES If yes, describe fully.\u2026",
+      "page_url": "https://efile.fara.gov/docs/7675-Registration-Statement-20251208-1.pdf",
+      "registrant": "VEON Ltd.",
+      "principal": null,
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.9,
       "dollar_mod": 1.0,
       "is_fr_policy": null
     },
@@ -6866,6 +7365,31 @@
       "is_fr_policy": null
     },
     {
+      "registration_number": 7666,
+      "iso": "XX",
+      "source": "fara",
+      "signal_date": "2025-11-03",
+      "title": "GrayRobinson \u2014 The Colombo Plan",
+      "value_usd": null,
+      "description": "Professional Services Firm 1337 30th Street, NW Washington, DC 20007 539 9th Street SE, Apt 2 Washington, DC 20003",
+      "page_url": "https://efile.fara.gov/docs/7666-Registration-Statement-20251103-1.pdf",
+      "registrant": "GrayRobinson",
+      "principal": "The Colombo Plan",
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
       "filing_uuid": "4b85d57d-6e3a-4030-bd10-4b8adfb2e512",
       "iso": "GB",
       "source": "lda",
@@ -6893,6 +7417,31 @@
       },
       "layer": "influence",
       "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "registration_number": 7664,
+      "iso": "XX",
+      "source": "fara",
+      "signal_date": "2025-10-24",
+      "title": "American Future Fund \u2014 Zygmunt Solorz",
+      "value_usd": null,
+      "description": "Nonprofit corporation operating as a social welfare organization under section 501(c)(4) of the Internal Revenue Code . Services Providing support in increasing awareness and informing opinion in the U.S. about issues relevant to the principal\u2019s interests in ways that reflect the principal\u2019s perspectives. Position Executive chairman Received by NSD/FARA Registration Unit 10/24/2025 2:10:51 PM (PAGE 3) II\u2014FOREIGN PRINCIPAL III-ACTIVITIES If yes, describe fully. Foreign Principal Activities/Services IV\u2014FINANCIAL INFORMATION If yes, set forth below in the required detail and separately for each\u2026",
+      "page_url": "https://efile.fara.gov/docs/7664-Registration-Statement-20251024-1.pdf",
+      "registrant": "American Future Fund",
+      "principal": "Zygmunt Solorz",
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.9,
       "dollar_mod": 1.0,
       "is_fr_policy": null
     },
@@ -12356,6 +12905,56 @@
       "is_fr_policy": null
     },
     {
+      "registration_number": 7622,
+      "iso": "XX",
+      "source": "fara",
+      "signal_date": "2025-07-07",
+      "title": "Bendler, Dale Britt \u2014 Ibrahim Issaoui",
+      "value_usd": 7.0,
+      "description": "(1) Give a complete description of the ownership and control structure of the registrant. ServicesName Residence Address Foreign Prine ipal(s) Received by NSD/FARA Registration Unit 07/07/2025 9:32:03 PM",
+      "page_url": "https://efile.fara.gov/docs/7622-Registration-Statement-20250707-1.pdf",
+      "registrant": "Bendler, Dale Britt",
+      "principal": "Ibrahim Issaoui",
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "registration_number": 7621,
+      "iso": "XX",
+      "source": "fara",
+      "signal_date": "2025-07-07",
+      "title": "88 Dragons PR, Inc. \u2014 Agency for Steering",
+      "value_usd": null,
+      "description": "General communications, public relations, logistics, and corporate affairs consulting firm.",
+      "page_url": "https://efile.fara.gov/docs/7621-Registration-Statement-20250707-1.pdf",
+      "registrant": "88 Dragons PR, Inc.",
+      "principal": "Agency for Steering",
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
       "filing_uuid": "43d1bd09-d27f-4a4d-a303-bd49b2c14a46",
       "iso": "IL",
       "source": "lda",
@@ -13156,6 +13755,31 @@
         ],
         "rationale": "Active conflict/instability (+2), Taliban sanctions (+1), BRI engagement/Chinese interest (+1), regional proxy hub (+1)"
       },
+      "layer": "influence",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "registration_number": 7614,
+      "iso": "XX",
+      "source": "fara",
+      "signal_date": "2025-06-18",
+      "title": "Frinzi, James",
+      "value_usd": null,
+      "description": "(1) Give a complete description of the ownership and control structure of the registrant. ServicesName Residence Address Foreign Prine ipal(s) Received by NSD/FARA Registration Unit 06/18/2025 11:06:36 AM",
+      "page_url": "https://efile.fara.gov/docs/7614-Registration-Statement-20250618-1.pdf",
+      "registrant": "Frinzi, James",
+      "principal": null,
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": null,
       "layer": "influence",
       "quality": 0.9,
       "dollar_mod": 1.0,
@@ -14257,6 +14881,31 @@
       "is_fr_policy": null
     },
     {
+      "registration_number": 7598,
+      "iso": "XX",
+      "source": "fara",
+      "signal_date": "2025-05-26",
+      "title": "Forward Global US, Inc.",
+      "value_usd": null,
+      "description": "Advocacy, communications, research, and advisory services. 4000 WILSON BLVD, APT 308 ARLINGTON, VA 22203 Registrant has agreed to provide strategic communications and public affairs services to the pri nci pal. Registrant has agreed to provide strategic communications and public affairs services to the pri nci pal. Registrant has agreed to provide strategic communications and public affairs services to the pri nci pal. Registrant has agreed to provide strategic communications and public affairs services to the pri nci pal. Registrant has agreed to provide strategic communications and public\u2026",
+      "page_url": "https://efile.fara.gov/docs/7598-Registration-Statement-20250526-1.pdf",
+      "registrant": "Forward Global US, Inc.",
+      "principal": null,
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
       "registration_number": 7597,
       "iso": "IL",
       "source": "fara",
@@ -14792,6 +15441,31 @@
       "is_fr_policy": null
     },
     {
+      "registration_number": 7588,
+      "iso": "XX",
+      "source": "fara",
+      "signal_date": "2025-05-09",
+      "title": "IPG DXTRA Entertainment, Inc. d/b/a Rogers & Cowan PMK",
+      "value_usd": null,
+      "description": "Entertainment marketing and public relations.",
+      "page_url": "https://efile.fara.gov/docs/7588-Registration-Statement-20250509-1.pdf",
+      "registrant": "IPG DXTRA Entertainment, Inc. d/b/a Rogers & Cowan PMK",
+      "principal": null,
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
       "filing_uuid": "eb480721-bffb-42a2-a5f3-e96647402b0f",
       "iso": "NO",
       "source": "lda",
@@ -14972,6 +15646,31 @@
       },
       "layer": "influence",
       "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "registration_number": 7585,
+      "iso": "XX",
+      "source": "fara",
+      "signal_date": "2025-05-05",
+      "title": "Conscience Point Consulting",
+      "value_usd": null,
+      "description": "Public relations and government affairs firm Citizenship UNITED STATES Services Assist with strategy on outreach to policymakers, assist in setting up meetings with policymakers, speaking to policymakers. Residence Address On file with doj Received by NSD/FARA Registration Unit 05/05/2025 10:16:52 AM (PAGE 3) II\u2014FOREIGN PRINCIPAL III-ACTIVITIES If yes, describe fully. Foreign Principal Activities/Services IV\u2014FINANCIAL INFORMATION If yes, set forth below in the required detail and separately for each such foreign principal an account of such monies.3 Subtotal Sei den Law LLP $ $ 50,000.00> $\u2026",
+      "page_url": "https://efile.fara.gov/docs/7585-Registration-Statement-20250505-1.pdf",
+      "registrant": "Conscience Point Consulting",
+      "principal": null,
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.9,
       "dollar_mod": 1.0,
       "is_fr_policy": null
     },
@@ -16520,6 +17219,31 @@
       "is_fr_policy": null
     },
     {
+      "registration_number": 7573,
+      "iso": "XX",
+      "source": "fara",
+      "signal_date": "2025-04-14",
+      "title": "Todoroki, John",
+      "value_usd": null,
+      "description": "(1) Give a complete description of the ownership and control structure of the registrant. ServicesName Residence Address Foreign Prine ipal(s) Received by NSD/FARA Registration Unit 04/14/2025 12:33:42 PM",
+      "page_url": "https://efile.fara.gov/docs/7573-Registration-Statement-20250414-1.pdf",
+      "registrant": "Todoroki, John",
+      "principal": null,
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
       "filing_uuid": "3cd449ee-1f35-48d1-bf83-8a9ef6a94f6c",
       "iso": "CN",
       "source": "lda",
@@ -16627,6 +17351,31 @@
       },
       "layer": "influence",
       "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "registration_number": 7572,
+      "iso": "XX",
+      "source": "fara",
+      "signal_date": "2025-04-11",
+      "title": "Orchid Advisors, LLC",
+      "value_usd": null,
+      "description": "Orchid Advisors, LLC",
+      "page_url": "https://efile.fara.gov/docs/7572-Registration-Statement-20250411-1.pdf",
+      "registrant": "Orchid Advisors, LLC",
+      "principal": null,
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.9,
       "dollar_mod": 1.0,
       "is_fr_policy": null
     },
@@ -16750,6 +17499,31 @@
         ],
         "rationale": "World's largest LNG exporter \u2014 hydrocarbon reserves (+2), Al Udeid Air Base \u2014 largest US air base in Middle East (+1), proxy hub \u2014 Hamas, Taliban mediation (+1)"
       },
+      "layer": "influence",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "registration_number": 7570,
+      "iso": "XX",
+      "source": "fara",
+      "signal_date": "2025-04-10",
+      "title": "Seiden Law LLP",
+      "value_usd": null,
+      "description": "Law fi rm Received by NSD/FARA Registration Unit 04/10/2025 2:00:39 PM (PAGE 3) II\u2014FOREIGN PRINCIPAL III-ACTIVITIES If yes, describe fully. Foreign Principal Activities/Services IV\u2014FINANCIAL INFORMATION If yes, set forth below in the required detail and separately for each such foreign principal an account of such monies.3 Foreign PrincipalDate Received From Whom Purpose Amount Subtotal 7. List every foreign principal1 for whom the registrant is acting or has agreed to act. Foreign Principal Foreign Principal Address Islamic Republic of Pakistan 3517 International Court NW Washington, D.C.\u2026",
+      "page_url": "https://efile.fara.gov/docs/7570-Registration-Statement-20250410-1.pdf",
+      "registrant": "Seiden Law LLP",
+      "principal": null,
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": null,
       "layer": "influence",
       "quality": 0.9,
       "dollar_mod": 1.0,
@@ -17160,6 +17934,31 @@
         ],
         "rationale": "West African regional economic hub (+1), Sahel instability spillover risk (+1)"
       },
+      "layer": "influence",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "registration_number": 7564,
+      "iso": "XX",
+      "source": "fara",
+      "signal_date": "2025-04-02",
+      "title": "Asterix LLC",
+      "value_usd": null,
+      "description": "Public policy and business consulting",
+      "page_url": "https://efile.fara.gov/docs/7564-Registration-Statement-20250402-1.pdf",
+      "registrant": "Asterix LLC",
+      "principal": null,
+      "target_groups": [
+        "Public officials",
+        "Legislators",
+        "Government agencies",
+        "Newspapers",
+        "Editors",
+        "Libraries"
+      ],
+      "profile": null,
       "layer": "influence",
       "quality": 0.9,
       "dollar_mod": 1.0,
