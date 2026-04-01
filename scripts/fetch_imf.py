@@ -613,11 +613,11 @@ def main() -> None:
         sdr_str = f"SDR {sdr:.1f}M" if sdr else "amount undisclosed"
         title = f"{label} — {arr_label} approved ({sdr_str})"
         desc = (
-            f"IMF Executive Board approved new {arr_label} for {label}. "
+            f"IMF Executive Board approved {arr_label} for {label}. "
             f"Total access: {sdr_str}"
             + (f" (~${sdr * sdr_rate / 1000:.1f}B)" if sdr and sdr * sdr_rate >= 1000 else
                f" (~${sdr * sdr_rate:.0f}M)" if sdr else "")
-            + ". Board approval date per MONA."
+            + "."
         )
         imf_id = make_imf_id("approval", a["arr_num"], a["board_date"])
         signals.append(build_signal(
@@ -645,11 +645,17 @@ def main() -> None:
         review = d["review_type"].strip()
         basis_short = d["basis"][:80] if d["basis"] else arr_label
         title = f"{label} — {arr_label} disbursement {sdr_str}"
+        # Lead with what was released and under what program; include the review
+        # label or basis phrase as context. "Basis" from MONA is typically "Fifth
+        # Review", "Third Review", etc. — more readable than the raw review code.
+        review_phrase = (
+            basis_short if basis_short and basis_short != arr_label
+            else (review if review and review.upper() != "R0" else "Initial tranche")
+        )
         desc = (
-            f"Actual disbursement of {sdr_str} (~${sdr * sdr_rate:.0f}M USD) "
-            f"under {arr_label}. "
-            + (f"Review: {review}. " if review and review.upper() != "R0" else "Initial tranche. ")
-            + (f"Basis: {basis_short}." if basis_short and basis_short != arr_label else "")
+            f"{sdr_str} (~${sdr * sdr_rate:.0f}M) disbursed under {arr_label}"
+            + (f" — {review_phrase}" if review_phrase else "")
+            + "."
         )
         imf_id = make_imf_id("disbursement", d["arr_num"], d["actual_date"], str(sdr))
         signals.append(build_signal(

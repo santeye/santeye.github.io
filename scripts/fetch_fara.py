@@ -322,9 +322,17 @@ def main():
         print(f"[fara] PDF {page_url}")
         pdf_data = enrich_from_pdf(page_url)
 
-        # Description: prefer PDF Item 5h; fall back to API fields
-        desc_fallback = ", ".join(filter(None, [registrant, fp_name, country_name]))
-        description   = pdf_data["description"] or desc_fallback
+        # Description: prefer PDF Item 5h (nature of registrant's business).
+        # Fallback when PDF parse fails: construct from API fields in a readable form.
+        if fp_name and country_name:
+            desc_fallback = f"Registered to represent {fp_name} ({country_name})"
+        elif fp_name:
+            desc_fallback = f"Registered to represent {fp_name}"
+        elif country_name:
+            desc_fallback = f"{registrant} — foreign agent for {country_name}"
+        else:
+            desc_fallback = registrant
+        description = pdf_data["description"] or desc_fallback
 
         sig = {
             "registration_number": reg_number,

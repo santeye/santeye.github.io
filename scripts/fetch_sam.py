@@ -131,14 +131,16 @@ def build_description(record):
     award = record.get("award") or {}
     parts = []
     notice_type = (record.get("type") or record.get("baseType") or "").strip()
-    psc = (record.get("classificationCode") or "").strip()
     awardee = ((award.get("awardee") or {}).get("name") or "").strip()
+    # classificationCode (PSC) is a 4-char technical code — not human-readable; omitted.
+    # Include the SAM record's own description field when it contains useful content.
+    sam_desc = (record.get("description") or "").strip()
     if notice_type:
         parts.append(notice_type)
-    if psc:
-        parts.append(psc)
     if awardee:
         parts.append(awardee)
+    if sam_desc and len(sam_desc) > 20:
+        parts.append(sam_desc[:200])
     return " · ".join(parts) if parts else None
 
 

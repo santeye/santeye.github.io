@@ -357,6 +357,10 @@ def parse_article_page(html):
             body_text = body_text[idx:]
             break
 
+    # Strip "WASHINGTON, Month DD, YYYY – " location/date preamble so the
+    # description begins with the actual notification text, not the dateline.
+    body_text = re.sub(r"^WASHINGTON\b[^–—\-\n]*[-–—]\s*", "", body_text).strip()
+
     # First 1-2 sentences from body as description
     if body_text:
         sentences = re.split(r"(?<=\.)\s+(?=[A-Z])", body_text.strip())

@@ -56,6 +56,9 @@ FIELDS = [
 
 INCLUDE_TYPES = {"Rule", "Proposed Rule", "Notice", "Presidential Document"}
 
+# FR titles are verbatim from the Federal Register API — not rewritten.
+# The noise filter below drops routine domestic/administrative documents.
+# If a title slips through that is clearly non-apparatus, add a pattern here.
 NOISE_PATTERNS = re.compile(
     r"\b(meeting|sunshine act|comment period|vacancy|nomination|"
     r"privacy act|records management|information collection|"
@@ -63,7 +66,9 @@ NOISE_PATTERNS = re.compile(
     r"viticultural area|winegrowing|alcohol|tobacco|"
     r"flood insurance|flood plain|flood map|"
     r"small business|disadvantaged business|"
-    r"environmental impact|environmental assessment)\b",
+    r"environmental impact|environmental assessment|"
+    r"culturally significant objects|exhibition|"
+    r"national bank chartering|bank chartering)\b",
     re.IGNORECASE,
 )
 

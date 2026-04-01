@@ -181,6 +181,10 @@ def make_description(text: str, accession: str) -> str:
     sentences = re.split(r"(?<=[.!?])\s+", text)
     for s in sentences[1:6]:
         s = s.strip()
+        # Strip leading parenthetical stock-ticker boilerplate before the useful content.
+        # Elbit press releases open with "(NASDAQ: ESLT) (TASE: ESLT) ("Elbit Systems"
+        # or the "Company") announced today that..." — strip everything up to the verb.
+        s = re.sub(r"^(?:\([^)]+\)\s*)+", "", s).strip()
         if (len(s) > 60
                 and not re.match(r"(?:Haifa|Tel Aviv|Jerusalem|Herzliya|EX-|EXHIBIT)", s, re.I)
                 and not re.match(r"[A-Z]{2,}\s+[A-Z]{2,}", s)):  # skip ALL-CAPS header lines
