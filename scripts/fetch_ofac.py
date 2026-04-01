@@ -176,6 +176,9 @@ def entry_to_signals(entry: dict, signal_date: str) -> list[dict]:
             "value_usd": None,
             "description": description,
             "programs": programs,
+            # Per-entry OFAC SDN search link. The Details.aspx?id= parameter
+            # takes the integer UID from the SDN XML — one URL per designation.
+            "page_url": f"https://sanctionssearch.ofac.treas.gov/Details.aspx?id={uid}",
         })
 
     return signals

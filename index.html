@@ -225,6 +225,15 @@
     .item-country:hover,
     .item-country.active-filter { color: var(--text); }
 
+    .item-country-unresolved {
+      font-size: 11px;
+      color: var(--muted);
+      opacity: 0.45;
+      flex-shrink: 0;
+      cursor: default;
+      font-style: italic;
+    }
+
     .item-sep { color: var(--sep); user-select: none; padding: 0 5px; flex-shrink: 0; }
 
     .item-title {
@@ -485,7 +494,7 @@
       // Group all signals by ISO
       const byIso = new Map();
       for (const sig of signals) {
-        if (!sig.iso) continue;
+        if (!sig.iso || sig.iso === 'XX') continue;
         if (!byIso.has(sig.iso)) byIso.set(sig.iso, []);
         byIso.get(sig.iso).push(sig);
       }
@@ -644,6 +653,7 @@
       // Score every signal in the 30-day window
       const scored = [];
       for (const sig of signals) {
+        if (!sig.iso || sig.iso === 'XX') continue;
         if ((sig.signal_date || '') < w30) continue;
         const decay = recencyDecay(sig.signal_date);
         if (!decay) continue;
@@ -923,6 +933,7 @@
     // ── Render one item ──────────────────────────────────────────────────────
 
     function renderItem(sig, signals) {
+      const isUnresolved = sig.iso === 'XX';
       const profile = sig.profile || null;
       const country = profile ? profile.name : sig.iso;
       const el      = document.createElement('div');
@@ -932,7 +943,9 @@
 
       // Country tooltip with structural interest context
       let countryTooltip = '';
-      if (profile) {
+      if (isUnresolved) {
+        countryTooltip = ` data-tooltip="Country not determined from filing — excluded from map and convergence scoring"`;
+      } else if (profile) {
         const ttParts = [];
         const s = profile.score;
         if (s != null) ttParts.push(`Structural interest: ${s}/10`);
@@ -952,8 +965,11 @@
       if (sig.value_usd != null) titleStr += '  ' + fmtValue(sig.value_usd);
 
       const hasDetail = !!(descRaw || sourceUrl);
-      const isFiltered   = activeFilter === sig.iso;
-      const countryClass = 'item-country' + (isFiltered ? ' active-filter' : '');
+      const isFiltered   = !isUnresolved && activeFilter === sig.iso;
+      const countryClass = isUnresolved
+        ? 'item-country-unresolved'
+        : 'item-country' + (isFiltered ? ' active-filter' : '');
+      const countryText  = isUnresolved ? 'unresolved' : esc(country);
 
       // Expanded detail: description + source link
       let detailInner = '';
@@ -968,7 +984,7 @@
 
       el.innerHTML =
         `<div class="item-row">` +
-          `<span class="${countryClass}"${countryTooltip}>${esc(country)}</span>` +
+          `<span class="${countryClass}"${countryTooltip}>${countryText}</span>` +
           `<span class="item-sep">\xb7</span>` +
           `<span class="item-title">${esc(titleStr)}</span>` +
           `<span class="item-src">${esc(sourceShort(sig.source))}</span>` +
@@ -979,13 +995,14 @@
       if (hasDetail) {
         el.querySelector('.item-row').addEventListener('click', e => {
           if (e.target.classList.contains('item-country')) return;
+          if (e.target.classList.contains('item-country-unresolved')) return;
           const wasExpanded = el.classList.contains('expanded');
           document.querySelectorAll('.item.expanded').forEach(i => i.classList.remove('expanded'));
           if (!wasExpanded) el.classList.add('expanded');
         });
       }
 
-      if (sig.iso) {
+      if (sig.iso && !isUnresolved) {
         el.querySelector('.item-country').addEventListener('click', e => {
           e.stopPropagation();
           activeFilter = activeFilter === sig.iso ? null : sig.iso;

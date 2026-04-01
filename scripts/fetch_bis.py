@@ -220,6 +220,9 @@ def entity_to_signal(ent, date_discovered):
         "value_usd":   None,
         "description": description,
         "raw_score":   profile_score(iso),
+        # No per-entity permalink exists in the eCFR. This links to the full
+        # Entity List supplement where the entry can be found by name + country.
+        "page_url":    "https://www.ecfr.gov/current/title-15/chapter-VII/subchapter-C/part-744/appendix-Supplement%20No.%204%20to%20Part%20744",
     }
 
 

@@ -4,7 +4,7 @@ build_signals.py — Aggregation and enrichment layer for HARPY.
 
 Reads all data/*_signals.json source files, then:
   1. Merges all records
-  2. Filters: drops iso null/US/XX, drops records before DATE_CUTOFF
+  2. Filters: drops iso null/US, drops records before DATE_CUTOFF (XX passes through as "unresolved")
   3. Deduplicates: cn_number (DSCA) or iso|signal_date|description composite key
   4. Enriches each signal with precomputed fields:
        profile      — nested {name, score, factors, rationale} from country profile
@@ -107,14 +107,15 @@ def main():
         counts_per_source[source_name] = len(signals)
         print(f"  Found: {filename}  ({len(signals)} records)")
 
-    # Filter
+    # Filter — XX records pass through (rendered as "unresolved" in feed, excluded from map/scoring)
     filtered = [
         s for s in raw_signals
         if s.get("iso")
-        and s.get("iso") not in ("US", "XX")
+        and s.get("iso") != "US"
         and (s.get("signal_date") or "") >= DATE_CUTOFF
     ]
-    print(f"\n  After filter (iso valid, date >= {DATE_CUTOFF}): {len(filtered)} / {len(raw_signals)}")
+    xx_count = sum(1 for s in filtered if s.get("iso") == "XX")
+    print(f"\n  After filter (iso valid, date >= {DATE_CUTOFF}): {len(filtered)} / {len(raw_signals)} ({xx_count} unresolved XX)")
 
     # Deduplicate
     seen = set()

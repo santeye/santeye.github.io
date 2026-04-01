@@ -85,8 +85,8 @@ def get_filing_docs(cik_num: str, accession: str) -> list:
         return []
 
 
-def fetch_exhibit(cik_num: str, accession: str, docs: list) -> str:
-    """Fetch the press release exhibit from the filing. Returns plain text."""
+def fetch_exhibit(cik_num: str, accession: str, docs: list) -> tuple[str, str | None]:
+    """Fetch the press release exhibit from the filing. Returns (plain_text, exhibit_url)."""
     acc_nodash = accession.replace("-", "")
     # Prefer files named exhibit*, ex99*, ex-99*, zk* (Elbit pattern)
     priority = sorted(docs, key=lambda d: (
@@ -107,10 +107,10 @@ def fetch_exhibit(cik_num: str, accession: str, docs: list) -> str:
             text = html.unescape(text)           # decode &#160; &#8217; etc.
             text = re.sub(r"\s+", " ", text).strip()
             if len(text) > 200:
-                return text
+                return text, url
         except Exception:
             continue
-    return ""
+    return "", None
 
 
 def extract_value_usd(text: str):
@@ -247,7 +247,7 @@ def main():
                 continue
 
             time.sleep(REQUEST_DELAY)
-            text = fetch_exhibit(cik_num, accession, docs)
+            text, exhibit_url = fetch_exhibit(cik_num, accession, docs)
             if not text or len(text) < 100:
                 continue
 
@@ -263,6 +263,9 @@ def main():
             desc      = make_description(text, accession)
 
             acc_nodash = accession.replace("-", "")
+            # exhibit_url points to the specific press release document (zk*.htm or ex99*.htm).
+            # Fall back to the filing index page if the exhibit URL wasn't captured.
+            filing_index = f"https://www.sec.gov/Archives/edgar/data/{cik_num}/{acc_nodash}/"
 
             sig = {
                 "iso":         buyer_iso if buyer_iso != "IL" else iso,
@@ -274,7 +277,7 @@ def main():
                 "raw_score":   il_score,
                 "weight":      1.0,
                 "accession":   accession,
-                "page_url":    f"https://www.sec.gov/Archives/edgar/data/{cik_num}/{acc_nodash}/",
+                "page_url":    exhibit_url or filing_index,
             }
             new_signals.append(sig)
             seen_ids.add(accession)

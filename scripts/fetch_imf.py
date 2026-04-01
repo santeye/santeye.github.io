@@ -566,7 +566,13 @@ def main() -> None:
     print(f"  Raw extracts — delays: {len(delay_data)}, approvals: {len(approval_data)}, disbursements: {len(disburse_data)}")
 
     # --- Build signals ---
-    mona_page = "https://www.imf.org/external/np/pdr/mona/"
+    # Individual arrangement URLs are not programmatically derivable from the
+    # arr_number alone — MONA uses JavaScript-rendered pages with no stable
+    # per-arrangement deep link. The MONA index page is the best available URL.
+    # For approval signals, a dated press release exists at
+    # https://www.imf.org/en/News/Articles/... but its URL requires a separate
+    # search by country + board_date, which is not in scope here.
+    mona_page = "https://www.imf.org/external/np/pdr/mona/index.aspx"
     signals: list[dict] = []
 
     # 1. DELAYS (highest priority)

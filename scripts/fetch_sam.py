@@ -158,6 +158,8 @@ def to_signal(record):
         "title": record.get("title"),
         "value_usd": value,
         "description": build_description(record),
+        # uiLink from SAM API resolves to the specific opportunity page:
+        # https://sam.gov/opp/{opportunityId}/view
         "page_url": record.get("uiLink"),
     }
 

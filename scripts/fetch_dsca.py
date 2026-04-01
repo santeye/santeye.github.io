@@ -953,7 +953,9 @@ def write_signals(notifications_path, signals_path):
             "raw_score":   profile_score(iso2),
             "cn_number":   r.get("cn_number"),
             "pdf_url":     r.get("pdf_url"),
-            "page_url":    None,
+            # Library-scraped records have no article page — use the PDF directly.
+            # Daily scraper and state scraper records set page_url to the article URL.
+            "page_url":    r.get("pdf_url"),
         }
         if iso2 == "XN":
             nato.append(entry)
