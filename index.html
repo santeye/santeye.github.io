@@ -416,6 +416,25 @@
     }
     .theme-entry:hover .th-why,
     .theme-entry.active .th-why { color: var(--text); }
+
+    /* ── z-score badge (velocity_anomaly themes) ── */
+    .th-z-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      flex-shrink: 0;
+      padding: 0 4px;
+      border: 1px solid currentColor;
+      white-space: nowrap;
+    }
+
+    /* ── Scrollable narratives list ── */
+    .theme-entries-scroll {
+      max-height: 280px;
+      overflow-y: auto;
+    }
+    .theme-entries-scroll::-webkit-scrollbar { width: 4px; }
+    .theme-entries-scroll::-webkit-scrollbar-thumb { background: var(--sep); }
   </style>
 </head>
 <body>
@@ -587,17 +606,8 @@
       tooltipEl.style.top  = Math.min(y, window.innerHeight - tooltipEl.offsetHeight - 8) + 'px';
     });
 
-    // ── Layer taxonomy ───────────────────────────────────────────────────────
-    // sig.layer is precomputed by build_signals.py — no runtime lookup needed.
-    // ALL_LAYERS defines taxonomy order for convergence scoring.
-    const ALL_LAYERS = ['military', 'influence', 'regulatory', 'procurement', 'financial', 'legislative', 'adversarial'];
-
-    // Layer bonus — indexed by active layer count (0-based: index 0 = 1 layer, index 4 = 5+ layers).
-    // Extensible: append entries to reward additional layers.
-    const LAYER_BONUS = [1.0, 1.3, 1.8, 2.5, 3.5];
-
-    // Recency decay within the 30-day convergence window.
-    // 0–7 days → 1.0, 8–14 days → 0.8, 15–30 days → 0.5, beyond → 0 (excluded upstream).
+    // ── Recency decay for notable signal scoring ────────────────────────────
+    // 0–7 days → 1.0, 8–14 days → 0.8, 15–30 days → 0.5, beyond → 0.
     function recencyDecay(signalDate) {
       if (!signalDate) return 0;
       const ageDays = Math.round((Date.now() - new Date(signalDate).getTime()) / 86400000);
@@ -607,174 +617,6 @@
       return 0;
     }
 
-    // Per-layer contribution: max(quality × decay × dollar_mod) across all signals in the layer.
-    // quality and dollar_mod are precomputed by build_signals.py.
-    function layerContribution(sigs) {
-      if (!sigs.length) return 0;
-      return Math.max(...sigs.map(s => s.quality * recencyDecay(s.signal_date) * s.dollar_mod));
-    }
-
-    // ── Cluster computation ──────────────────────────────────────────────────
-    //
-    // Formula:
-    //   score = structuralScore × lift × convergence × recencyWeight × temporalBonus
-    //   convergence = Σ(layerContribution) × LAYER_BONUS[layerCount - 1]
-    //   layerContribution = max(quality × recencyDecay × dollar_mod) per layer
-    //
-    function computeClusters(signals) {
-      // Convergence window: 30 days. Baseline: six 14-day periods covering days 14–98.
-      const w30     = isoOffset(30);
-      const cutoffs = [0, 14, 28, 42, 56, 70, 84, 98].map(d => isoOffset(d));
-
-      // Group all signals by ISO
-      const byIso = new Map();
-      for (const sig of signals) {
-        if (!sig.iso || sig.iso === 'XX') continue;
-        if (!byIso.has(sig.iso)) byIso.set(sig.iso, []);
-        byIso.get(sig.iso).push(sig);
-      }
-
-      const clusters = [];  // ISOs that pass eligibility gates
-
-      for (const [iso, sigs] of byIso) {
-        const profile         = isoProfile[iso] || null;
-        const structuralScore = profile ? (profile.score || 1) : 1;
-
-        // ── 30-day convergence window: collect signals per layer ─────────────
-        const layerSigs = {};
-        for (const l of ALL_LAYERS) layerSigs[l] = [];
-        for (const sig of sigs) {
-          if ((sig.signal_date || '') < w30) continue;
-          // FR signals only count as a layer if they pass the policy keyword check.
-          // A FR cultural property or routine notice does not constitute regulatory activity.
-          if (sig.is_fr_policy === false) continue;
-          const layer = sig.layer;
-          if (layer) layerSigs[layer].push(sig);
-        }
-
-        const activeLayers = ALL_LAYERS.filter(l => layerSigs[l].length > 0);
-        const layerCount   = activeLayers.length;
-
-        // Per-layer contributions (quality × decay × dollarMod)
-        const contributions = {};
-        for (const l of activeLayers) contributions[l] = layerContribution(layerSigs[l]);
-        const recentWeighted = Object.values(contributions).reduce((s, v) => s + v, 0);
-        if (recentWeighted < 0.1) continue;  // nothing meaningful firing
-
-        // Layer bonus — capped at the last defined index
-        const layerBonus = LAYER_BONUS[Math.min(layerCount - 1, LAYER_BONUS.length - 1)];
-
-        // Convergence
-        const convergence = recentWeighted * layerBonus;
-
-        // ── Temporal coherence bonus ─────────────────────────────────────────
-        // Uses the most-recent signal date per layer to compute pairwise inter-layer gaps.
-        let temporalBonus   = 1.0;
-        let temporalMaxGap  = null;
-        if (layerCount >= 2) {
-          const latestPerLayer = activeLayers.map(l =>
-            Math.max(...layerSigs[l].map(s => new Date(s.signal_date || '1970-01-01').getTime()))
-          );
-          let maxGapDays = 0;
-          for (let i = 0; i < latestPerLayer.length; i++) {
-            for (let j = i + 1; j < latestPerLayer.length; j++) {
-              const gap = Math.abs(latestPerLayer[i] - latestPerLayer[j]) / 86400000;
-              if (gap > maxGapDays) maxGapDays = gap;
-            }
-          }
-          temporalMaxGap = Math.round(maxGapDays * 10) / 10;
-          temporalBonus  = maxGapDays <= 3 ? 1.8 : maxGapDays <= 7 ? 1.4 : 1.0;
-        }
-
-        // ── Baseline: six 14d periods — plain quality max per layer (no decay) ─
-        // No decay applied here: each historical period is uniformly "old."
-        // Baseline uses same layer taxonomy so lift is a stable relative metric.
-        const periodCounts = [];
-        for (let p = 0; p < 6; p++) {
-          const pEnd        = cutoffs[p + 1];
-          const pStart      = cutoffs[p + 2];
-          const pLayerSigs  = {};
-          for (const l of ALL_LAYERS) pLayerSigs[l] = [];
-          for (const sig of sigs) {
-            const d = sig.signal_date || '';
-            if (d >= pStart && d < pEnd) {
-              if (sig.is_fr_policy === false) continue;
-              const layer = sig.layer;
-              if (layer) pLayerSigs[layer].push(sig);
-            }
-          }
-          const pWeighted = ALL_LAYERS.reduce((s, l) => {
-            const ls = pLayerSigs[l];
-            return s + (ls.length ? Math.max(...ls.map(q => q.quality)) : 0);
-          }, 0);
-          periodCounts.push(pWeighted);
-        }
-
-        const hasBaseline  = periodCounts.some(c => c > 0);
-        const baselineMean = periodCounts.reduce((a, b) => a + b, 0) / 6;
-        // Ratio lift — primary formula
-        const ratioLift = hasBaseline ? recentWeighted / Math.max(baselineMean, 0.5) : 1.0;
-        const lift = ratioLift;
-
-        // ── Recency weight: median signal date within the 30-day window ───────
-        const windowDates   = activeLayers.flatMap(l => layerSigs[l])
-          .map(s => s.signal_date).filter(Boolean).sort();
-        const medianDate    = windowDates[Math.floor(windowDates.length / 2)] || null;
-        const recencyWeight = !medianDate                 ? 0.7
-          : medianDate >= isoOffset(7)  ? 1.0
-          : medianDate >= isoOffset(14) ? 0.7
-          :                               0.5;
-
-        const score = Math.round(Math.log2(structuralScore + 1) * lift * convergence * recencyWeight * temporalBonus * 100) / 100;
-
-        const entry = {
-          iso,
-          structuralScore,
-          lift:           Math.round(lift * 100) / 100,
-          convergence:    Math.round(convergence * 100) / 100,
-          recentWeighted: Math.round(recentWeighted * 100) / 100,
-          layerBonus,
-          temporalBonus,
-          temporalMaxGap,
-          recencyWeight,
-          score,
-          layerSigs,
-          activeLayers,
-          layerCount,
-          contributions,
-          medianDate,
-          baselineStats:  { mean: Math.round(baselineMean * 100) / 100, periods: periodCounts },
-        };
-
-        // ── Eligibility gates ─────────────────────────────────────────────────
-        // Gate 1: at least 2 distinct layers must have fired in the 30-day window.
-        // Gate 2: structural score ≥ 4, or ≥ 2 with 3+ distinct layers (deep convergence exception).
-        // If fewer than 5 countries qualify, show however many do — never pad with single-layer entries.
-        const meetsLayers     = layerCount >= 2;
-        const meetsStructural = structuralScore >= 4 || (structuralScore >= 2 && layerCount >= 3);
-        if (meetsLayers && meetsStructural) clusters.push(entry);
-      }
-
-      clusters.sort((a, b) => b.score - a.score);
-
-      console.log('=== ZONE 1 — CONVERGENCE (eligible clusters) ===');
-      console.table(clusters.map((cl, rank) => ({
-        rank:         rank + 1,
-        iso:          cl.iso,
-        score:        cl.score,
-        log2_struct:  Math.round(Math.log2(cl.structuralScore + 1) * 100) / 100,
-        lift:         cl.lift,
-        r_weighted:   cl.recentWeighted,
-        lyr_bonus:    cl.layerBonus,
-        temporal:     cl.temporalBonus,
-        t_gap_d:      cl.temporalMaxGap,
-        convergence:  cl.convergence,
-        recency:      cl.recencyWeight,
-        layers:       cl.activeLayers.join('+'),
-      })));
-
-      return clusters;  // variable length — no hard cap, never padded with single-layer entries
-    }
 
     // ── Zone 2: Notable signal computation ───────────────────────────────────
     // Scores each individual signal in the last 30 days:
@@ -837,54 +679,7 @@
       return (sig.source || '') + '|' + (sig.signal_date || '') + '|' + (sig.title || '').slice(0, 60);
     }
 
-    // ── Layer line synthesis ─────────────────────────────────────────────────
-
-    // Produces one human-readable line per firing layer.
-    // Uses the most-recent signal in that layer's 14d window for the summary.
-    function synthesizeLayerLine(layer, sigs) {
-      if (!sigs.length) return null;
-      const sorted = [...sigs].sort((a, b) => (b.signal_date || '').localeCompare(a.signal_date || ''));
-      const top    = sorted[0];
-      const date   = fmtDateShort(top.signal_date);
-      const extra  = sigs.length > 1 ? ' +' + (sigs.length - 1) : '';
-
-      if (layer === 'military') {
-        const val        = top.value_usd ? fmtValue(top.value_usd) + ' ' : '';
-        const titleRaw   = top.title || '';
-        const titleClean = titleRaw.includes(' \u2014 ')
-          ? titleRaw.split(' \u2014 ').slice(1).join(' \u2014 ')
-          : titleRaw;
-        const title = titleClean.length > 45 ? titleClean.slice(0, 42) + '\u2026' : titleClean;
-        return `${sourceShort(top.source)}: ${val}${title} ${date}${extra}`;
-      }
-
-      if (layer === 'influence') {
-        const counts = {};
-        for (const s of sigs) {
-          const k = sourceShort(s.source);
-          counts[k] = (counts[k] || 0) + 1;
-        }
-        const parts = Object.entries(counts).map(([k, n]) => `${k} ${n}`);
-        return parts.join('  ') + ' \u2014 ' + date;
-      }
-
-      if (layer === 'regulatory') {
-        const titleRaw = top.title || '';
-        const title    = titleRaw.length > 50 ? titleRaw.slice(0, 47) + '\u2026' : titleRaw;
-        return `${sourceShort(top.source)}: ${title} ${date}${extra}`;
-      }
-
-      if (layer === 'procurement') {
-        const val      = top.value_usd ? fmtValue(top.value_usd) + ' ' : '';
-        const titleRaw = top.title || '';
-        const title    = titleRaw.length > 45 ? titleRaw.slice(0, 42) + '\u2026' : titleRaw;
-        return `${sourceShort(top.source)}: ${val}${title} ${date}${extra}`;
-      }
-
-      return sourceShort(top.source) + ': ' + sigs.length + ' \u2014 ' + date;
-    }
-
-    // ── Render clusters ──────────────────────────────────────────────────────
+    // ── Render notable signals ───────────────────────────────────────────────
 
     let activeFilter = null;
     let themeFilter  = null;  // Set<string> of ISOs when a narrative theme is active
@@ -904,73 +699,18 @@
     let activeFeedSrcs   = new Set(Object.values(LAYER_SRC_MAP).flat().map(([src]) => src));
     let minProfileScore  = 0;
 
-    function renderClusters(clusters, notable, signals) {
+    function renderNotable(notable, signals) {
       const wrap      = document.getElementById('clusters-wrap');
       const container = document.getElementById('clusters');
 
-      // Show the panel whenever there is something to display in either zone
-      if (!clusters.length && !notable.length) return;
+      if (!notable.length) return;
       wrap.style.display = '';
       container.innerHTML = '';
 
-      // Helper: make an entry clickable for feed filtering
-      function bindFilter(entry, iso) {
-        entry.addEventListener('click', () => {
-          themeFilter = null; activeTheme = null;
-          document.querySelectorAll('.theme-entry.active').forEach(r => r.classList.remove('active'));
-          if (activeFilter === iso) {
-            activeFilter = null;
-            entry.classList.remove('active');
-          } else {
-            container.querySelectorAll('.cluster-entry.active')
-              .forEach(r => r.classList.remove('active'));
-            activeFilter = iso;
-            entry.classList.add('active');
-          }
-          syncMapFilter(activeFilter);
-          renderFeed(signals);
-        });
-      }
-
-      // ── Zone 1: CONVERGENCE ───────────────────────────────────────────────
-      const z1Label = document.createElement('div');
-      z1Label.className = 'zone-label';
-      z1Label.innerHTML = 'CONVERGENCE <span class="zone-tip" data-tip="Countries where 2+ independent signal layers (military, procurement, regulatory, influence) have overlapping activity in the last 30 days. Rare by design.">?</span>';
-      container.appendChild(z1Label);
-
-      if (!clusters.length) {
-        const empty = document.createElement('div');
-        empty.className = 'zone-empty';
-        empty.textContent = 'no cross-layer signals in current window';
-        container.appendChild(empty);
-      } else {
-        // clusters contains all eligibility-gated countries, sorted by score — no hard cap
-        for (const cl of clusters) {
-          const profile = isoProfile[cl.iso] || null;
-          const name    = (profile ? profile.name : cl.iso).toUpperCase();
-
-          const entry = document.createElement('div');
-          entry.className = 'cluster-entry';
-          entry.dataset.iso = cl.iso;
-
-          let html = `<div class="cl-header"><span class="cl-name">${esc(name)}</span></div>`;
-
-          // Structural interest factors only — no source labels
-          const factors = profile && profile.factors;
-          if (factors && factors.length) {
-            html += `<div class="cl-factors" style="opacity:0.8">${esc(factors.slice(0, 3).join(' \xb7 '))}</div>`;
-          }
-
-          entry.innerHTML = html;
-          bindFilter(entry, cl.iso);
-          container.appendChild(entry);
-        }
-      }
-
-      // ── Zone 2: NOTABLE SIGNALS ───────────────────────────────────────────
+      // ── Notable Signals ───────────────────────────────────────────────────
       const z2Label = document.createElement('div');
-      z2Label.className = 'zone-label zone-sep';
-      z2Label.innerHTML = 'NOTABLE SIGNALS <span class="zone-tip" data-tip="The highest-quality individual signals from the last 30 days, one per country. A country can appear here and in Convergence.">?</span>';
+      z2Label.className = 'zone-label';
+      z2Label.innerHTML = 'NOTABLE SIGNALS <span class="zone-tip" data-tip="The highest-quality individual signals from the last 30 days, one per country.">?</span>';
       container.appendChild(z2Label);
 
       for (const { sig, structScore } of notable) {
@@ -1107,6 +847,19 @@
         row1.appendChild(pill);
       }
 
+      // Theme filter indicator — shown when a narrative theme is active
+      const themeIndicator = document.createElement('span');
+      themeIndicator.id = 'theme-filter-indicator';
+      themeIndicator.className = 'filter-pill';
+      themeIndicator.style.display = 'none';
+      themeIndicator.addEventListener('click', () => {
+        themeFilter = null; activeTheme = null; activeFilter = null;
+        document.querySelectorAll('.theme-entry.active').forEach(r => r.classList.remove('active'));
+        syncMapFilter(null);
+        renderFeed(signals);
+      });
+      row1.appendChild(themeIndicator);
+
       const countEl = document.createElement('span');
       countEl.className = 'filter-count';
       countEl.id = 'filter-count';
@@ -1181,6 +934,21 @@
         };
       } else {
         feedHdr.style.display = 'none';
+      }
+
+      // Sync theme filter indicator in filter bar
+      const themeIndicator = document.getElementById('theme-filter-indicator');
+      if (themeIndicator) {
+        if (activeTheme) {
+          const label = activeTheme.title.length > 38 ? activeTheme.title.slice(0, 35) + '\u2026' : activeTheme.title;
+          themeIndicator.textContent = '\u00d7 ' + label;
+          themeIndicator.style.setProperty('--pill-color', THEME_TYPE_COLORS[activeTheme.type] || '#a0a0b0');
+          themeIndicator.classList.add('active');
+          themeIndicator.style.display = '';
+        } else {
+          themeIndicator.classList.remove('active');
+          themeIndicator.style.display = 'none';
+        }
       }
 
       const visible = applyFeedFilters(signals);
@@ -1320,6 +1088,11 @@
       hdr.textContent = 'NARRATIVES';
       section.appendChild(hdr);
 
+      // Scrollable container for theme entries
+      const scrollWrap = document.createElement('div');
+      scrollWrap.className = 'theme-entries-scroll';
+      section.appendChild(scrollWrap);
+
       const maxScore = themes[0].score || 1;
 
       for (const theme of themes) {
@@ -1333,10 +1106,22 @@
         const filled = Math.max(1, Math.round((theme.score / maxScore) * 5));
         const bar    = '\u2588'.repeat(filled) + '\u2591'.repeat(5 - filled);
 
+        // For velocity_anomaly: extract z-score from title "(+4.0σ)" and render as badge
+        let titleText = theme.title;
+        let zBadgeHtml = '';
+        if (theme.type === 'velocity_anomaly') {
+          const zMatch = theme.title.match(/\(([+-]?\d+\.?\d*)\u03c3\)/);
+          if (zMatch) {
+            zBadgeHtml = `<span class="th-z-badge" style="color:${esc(color)};border-color:${esc(color)}">${esc(zMatch[1])}\u03c3</span>`;
+            titleText = theme.title.replace(/\s*\([+-]?\d+\.?\d*\u03c3\)/, '').trim();
+          }
+        }
+
         entry.innerHTML =
           `<div class="th-header">` +
             `<span class="th-badge" style="color:${esc(color)};border-color:${esc(color)}">${esc(label)}</span>` +
-            `<span class="th-title">${esc(theme.title)}</span>` +
+            (zBadgeHtml || '') +
+            `<span class="th-title">${esc(titleText)}</span>` +
             `<span class="th-score">${esc(bar)} ${theme.score.toFixed(2)}</span>` +
           `</div>` +
           `<div class="th-why">${esc(theme.why)}</div>`;
@@ -1354,22 +1139,36 @@
           } else {
             entry.classList.add('active');
             const validIsos = (theme.countries || []).filter(iso => iso && iso !== 'XX' && iso !== 'US');
-            themeFilter  = validIsos.length ? new Set(validIsos) : null;
             activeTheme  = theme;
             activeFilter = null;
-            // Highlight single-country themes on map; multi-country resets to world view
-            syncMapFilter(validIsos.length === 1 ? validIsos[0] : null);
+
+            if (theme.type === 'cftc_overlap') {
+              // CFTC: theme.countries is already the overlap (basket ∩ active signals).
+              // Filter feed to overlap only; highlight FULL basket on map.
+              themeFilter = validIsos.length ? new Set(validIsos) : null;
+
+              // Find the full basket from the CFTC signal for map highlighting
+              const commodity = (theme.signal_keys && theme.signal_keys[0] || '').replace(/^cftc:/, '');
+              const cftcSig   = signals.find(s => s.source === 'cftc' && s.commodity === commodity);
+              const fullBasket = new Set(
+                ((cftcSig && cftcSig.basket) || validIsos).filter(iso => iso && iso !== 'US')
+              );
+              syncMapFilter(null, fullBasket);
+            } else {
+              themeFilter = validIsos.length ? new Set(validIsos) : null;
+              // Single-country: zoom map; multi-country: world view
+              syncMapFilter(validIsos.length === 1 ? validIsos[0] : null);
+            }
           }
 
           renderFeed(signals);
 
           if (themeFilter) {
-            // Scroll to feed section so the filtered results are in view
             document.getElementById('feed-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
         });
 
-        section.appendChild(entry);
+        scrollWrap.appendChild(entry);
       }
     }
 
@@ -1410,13 +1209,12 @@
         }
       }
 
-      const clusters = computeClusters(signals);
       const notable  = computeNotableSignals(signals);
-      renderClusters(clusters, notable, signals);
+      renderNotable(notable, signals);
       renderNarratives(data.themes || [], signals);
       initFilterBar(signals);
       renderFeed(signals);
-      initMap(clusters, notable, signals);
+      initMap(notable, signals);
     }
 
     main();
@@ -1466,13 +1264,11 @@
     let leafletMap = null;
     let syncMapFilter = () => {};  // assigned after initMap; no-op until then
 
-    async function initMap(clusters, notable, signals) {
+    async function initMap(notable, signals) {
       const mapEl = document.getElementById('map');
       mapEl.style.display = '';
 
-      const clusterIsos = new Set(clusters.map(c => c.iso));
-      // Notable-only: countries in Zone 2 but not Zone 1
-      const notableIsos = new Set(notable.map(n => n.sig.iso).filter(iso => !clusterIsos.has(iso)));
+      const notableIsos = new Set(notable.map(n => n.sig.iso));
 
       // Lazy-load world topology
       let world;
@@ -1531,19 +1327,17 @@
         scrollWheelZoom: true,
       });
 
-      const BASE_COLOR          = '#484848';
-      const NOTABLE_COLOR       = '#c8a800';  // Zone 2 only — warm yellow, readable on dark
-      const ZONE1_COLOR         = '#6b0000';  // Zone 1 convergence — red
-      const ACTIVE_ZONE1_COLOR  = '#b52020';  // active + convergence: brighter red preserves zone identity
-      const ACTIVE_NOTABLE_COLOR = '#e8cc00'; // active + notable: brighter yellow
-      const HOVER_COLOR         = '#b8b8b8';
-      const ACTIVE_COLOR        = '#d8d8d8';  // active + no zone
-      const BORDER_COLOR        = '#252525';
+      const BASE_COLOR           = '#484848';
+      const NOTABLE_COLOR        = '#c8a800';  // notable — warm yellow, readable on dark
+      const ACTIVE_NOTABLE_COLOR = '#e8cc00';  // active + notable: brighter yellow
+      const BASKET_COLOR         = '#c8a800';  // CFTC basket highlight (same warmth as notable)
+      const HOVER_COLOR          = '#b8b8b8';
+      const ACTIVE_COLOR         = '#d8d8d8';  // active + no zone
+      const BORDER_COLOR         = '#252525';
 
       const isoToLayer = new Map();
 
       function baseColorFor(iso) {
-        if (iso && clusterIsos.has(iso)) return ZONE1_COLOR;   // convergence wins
         if (iso && notableIsos.has(iso)) return NOTABLE_COLOR;
         if (activeFilter && iso === activeFilter) return ACTIVE_COLOR;
         return BASE_COLOR;
@@ -1620,17 +1414,18 @@
       leafletMap.invalidateSize();
       leafletMap.setView([25, 10], 1);
 
-      // Expose map highlight + zoom so cluster/feed clicks can sync the map
-      syncMapFilter = function(activeIso) {
+      // Expose map highlight + zoom so cluster/feed/theme clicks can sync the map.
+      // basketHighlight (optional Set<ISO>) highlights CFTC basket countries without zooming.
+      syncMapFilter = function(activeIso, basketHighlight) {
         for (const [layerIso, lyr] of isoToLayer) {
-          const isActive = activeIso && layerIso === activeIso;
+          const isActive   = activeIso && layerIso === activeIso;
+          const inBasket   = basketHighlight && basketHighlight.has(layerIso);
           let color;
-          if (isActive && clusterIsos.has(layerIso))    color = ACTIVE_ZONE1_COLOR;
-          else if (isActive && notableIsos.has(layerIso)) color = ACTIVE_NOTABLE_COLOR;
-          else if (isActive)                             color = ACTIVE_COLOR;
-          else if (clusterIsos.has(layerIso))            color = ZONE1_COLOR;
-          else if (notableIsos.has(layerIso))            color = NOTABLE_COLOR;
-          else                                           color = BASE_COLOR;
+          if (isActive && notableIsos.has(layerIso)) color = ACTIVE_NOTABLE_COLOR;
+          else if (isActive)                         color = ACTIVE_COLOR;
+          else if (notableIsos.has(layerIso))        color = NOTABLE_COLOR;
+          else if (inBasket)                         color = BASKET_COLOR;
+          else                                       color = BASE_COLOR;
           lyr.setStyle({ fillColor: color });
         }
         if (activeIso) {
