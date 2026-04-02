@@ -150,15 +150,14 @@ def build_description(filing: dict) -> str:
     client = filing.get("client") or {}
     client_country_display = (client.get("country_display") or client.get("country") or "").strip()
 
+    # Issue codes are already in the title — don't repeat them here.
     parts = []
-    if codes:
-        parts.append(_expand_codes(sorted(set(codes))))
     if client_country_display and client_country_display.upper() not in (
         "UNITED STATES OF AMERICA", "US", "UNITED STATES"
     ):
         parts.append(client_country_display)
     if first_desc:
-        parts.append(first_desc[:100] + ("…" if len(first_desc) > 100 else ""))
+        parts.append(first_desc[:120] + ("…" if len(first_desc) > 120 else ""))
 
     return "; ".join(parts)
 
