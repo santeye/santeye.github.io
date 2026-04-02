@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-01T22:51:11.177303+00:00",
+  "generated_at": "2026-04-02T22:44:53.477987+00:00",
   "sources": [
     "lda"
   ],
@@ -7222,6 +7222,213 @@
         "DEF"
       ],
       "url": "https://lda.gov/filings/public/filing/5392c34d-073b-4d3f-9dba-ff711cc04ace/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "39d3f678-745f-435b-ac73-04bb2449480e",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-01",
+      "title": "Defense, Aviation, Budget \u2014 Rtx Corp And Affiliates via Keast Strategic Solutions, Llc",
+      "value_usd": null,
+      "description": "Authorization, appropriations, and agency actions related to FAA modernization, defense products and systems.",
+      "lobbying_firm": "Keast Strategic Solutions, Llc",
+      "issue_codes": [
+        "AVI",
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/39d3f678-745f-435b-ac73-04bb2449480e/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "3dfb9fb2-9c5e-420a-9bb8-7a8c05adb4ff",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-01",
+      "title": "Defense, Budget \u2014 Hcbs Advocacy, Llc via Keast Strategic Solutions, Llc",
+      "value_usd": null,
+      "description": "Authorization, appropriations, and agency actions related to privatized housing and barracks, energy and other enhanced \u2026",
+      "lobbying_firm": "Keast Strategic Solutions, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/3dfb9fb2-9c5e-420a-9bb8-7a8c05adb4ff/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "e2259b41-7bc1-4c75-85ec-f093f849c724",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-01",
+      "title": "Defense, Science/Technology, Budget \u2014 Relativity Space, Inc. via Keast Strategic Solutions, Llc",
+      "value_usd": null,
+      "description": "Issues related to authorization, appropriations, and agency decision making associated with space launch and technology.",
+      "lobbying_firm": "Keast Strategic Solutions, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "SCI",
+        "TRA"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e2259b41-7bc1-4c75-85ec-f093f849c724/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "bff9f496-ebdf-4b53-8629-4b39405adb9b",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-01",
+      "title": "Defense, Aerospace, Budget \u2014 Umbra Lab, Inc. via Keast Strategic Solutions, Llc",
+      "value_usd": null,
+      "description": "Issues related to authorization and appropriations regarding space sensors.",
+      "lobbying_firm": "Keast Strategic Solutions, Llc",
+      "issue_codes": [
+        "AER",
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/bff9f496-ebdf-4b53-8629-4b39405adb9b/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "b4cf9a50-124d-4fa5-ad85-909fbcbc2543",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-02",
+      "title": "Defense \u2014 413, Llc via Fidelity Strategies",
+      "value_usd": null,
+      "description": "Issues related to federal appropriations and related non-governmental organizations",
+      "lobbying_firm": "Fidelity Strategies",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b4cf9a50-124d-4fa5-ad85-909fbcbc2543/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "5b12369f-9376-454a-918d-80019d4db385",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-02",
+      "title": "Defense, Government, Veterans \u2014 Sourcewell via Omega Strategies, Llc.",
+      "value_usd": null,
+      "description": "Intergovernmental Service Agreements (IGSA) and related authorities for National Guard, Veterans Affairs, and other fede\u2026",
+      "lobbying_firm": "Omega Strategies, Llc.",
+      "issue_codes": [
+        "DEF",
+        "GOV",
+        "VET"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5b12369f-9376-454a-918d-80019d4db385/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "12463922-1083-4f56-97f9-2bacacd08b6b",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-02",
+      "title": "Defense, Aerospace \u2014 Sumaria Systems, Llc via Fidelity Strategies",
+      "value_usd": null,
+      "description": "Issues related to the support of defense IT and engineering services",
+      "lobbying_firm": "Fidelity Strategies",
+      "issue_codes": [
+        "AER",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/12463922-1083-4f56-97f9-2bacacd08b6b/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "ea9ecf0f-78a1-4447-ab4e-7527f53484fe",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-02",
+      "title": "Defense \u2014 Infinity Labs (Ilabs) via Fidelity Strategies",
+      "value_usd": null,
+      "description": "Issues related to the support of defense technology and innovation",
+      "lobbying_firm": "Fidelity Strategies",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/ea9ecf0f-78a1-4447-ab4e-7527f53484fe/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "734b9f88-b908-493d-9326-d8675987f8fd",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-02",
+      "title": "Defense, Budget, Media \u2014 Respond-Us via Cornerstone Government Affairs, Inc.",
+      "value_usd": null,
+      "description": "Educate Congressional offices on Military Health System requirements in trauma in support of NDAA and appropriations mat\u2026",
+      "lobbying_firm": "Cornerstone Government Affairs, Inc.",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "MED"
+      ],
+      "url": "https://lda.gov/filings/public/filing/734b9f88-b908-493d-9326-d8675987f8fd/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "cd401068-15af-4323-9ea6-576d66e7c9b8",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-02",
+      "title": "Defense \u2014 Liberty Military Housing via Cassidy & Associates, Inc.",
+      "value_usd": null,
+      "description": "Identify and develop strong advocates for Liberty in both the House and Senate. Build long-term relationships with Membe\u2026",
+      "lobbying_firm": "Cassidy & Associates, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/cd401068-15af-4323-9ea6-576d66e7c9b8/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "e9109a1e-bb39-4976-bc99-5c590c03613f",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-02",
+      "title": "Trade \u2014 Verity Systems, Inc. via Ben Barnes Group Lp",
+      "value_usd": null,
+      "description": "Trade issue",
+      "lobbying_firm": "Ben Barnes Group Lp",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e9109a1e-bb39-4976-bc99-5c590c03613f/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "74f20b6d-853d-4582-821f-f7c3f6629b24",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-02",
+      "title": "Defense, Science/Technology, Manufacturing \u2014 Surmet Corp. via Ervin Graves Strategy Group, Llc",
+      "value_usd": null,
+      "description": "Legislation and policy related to the industrialization of transparent ceramic materials.",
+      "lobbying_firm": "Ervin Graves Strategy Group, Llc",
+      "issue_codes": [
+        "DEF",
+        "MAN",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/74f20b6d-853d-4582-821f-f7c3f6629b24/print/",
       "raw_score": null,
       "weight": 1.0
     }

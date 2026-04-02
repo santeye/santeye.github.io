@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-01T22:51:12.513371+00:00",
+  "generated_at": "2026-04-02T22:44:55.053286+00:00",
   "sources": [
     "federalregister"
   ],
@@ -5171,6 +5171,17 @@
       "description": "Notice of proposed rulemaking. \u00b7 FinCEN is proposing a rule to establish a whistleblower program that offers incentives and protections to encourage individuals who have information about potential violations of the Bank Secrecy Act (BSA), International Emergency Economic Powers Act (IEEPA), Trading With the Enemy Act of 1917 (TWEA), and Foreign Narcotics Kingpin Designation Act (Kingpin Act) to voluntarily report such information (the \"Whistleblower Program\"). The proposed rule would implement section 6314 of the Anti-Money Laundering Act of 2020 (AML Act) and the Anti-Money Laundering Whistleblower Improvement Act (AML Whistleblower Improvement Act), which were enacted into law as part of the National Defense Authorization Act for Fiscal Year 2021 (FY21 NDAA) and the Consolidated Appropriations Act of 2023, respectively. The Whistleblower Program will contribute to the U.S. government's efforts to safeguard the financial system from illicit use, promote national security, and combat money laundering, terrorist financing, proliferation financing, and related crimes. This notice of proposed rulemaking invites comments from the public regarding all aspects of the proposed rule, as well as comments in response to specific questions.",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/04/01/2026-06271/whistleblower-incentives-and-protections"
+    },
+    {
+      "document_number": "2026-06413",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-04-02",
+      "title": "Revised Non-Foreign Overseas Per Diem Rates; Correction",
+      "value_usd": null,
+      "description": "Notice of revised per diem rates in non-foreign areas outside the continental United States (U.S.); correction. \u00b7 On Tuesday, March 31, 2026, the DoD published a notice titled Revised Non-foreign Overseas Per Diem Rates. Subsequent to publication in the Federal Register, the DoD realized that the dates in the table next to the Puerto Rico locations should be 04/01/2026 but incorrectly published as 03/01/2026. This correction reprints the revised table in its entirety.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/04/02/2026-06413/revised-non-foreign-overseas-per-diem-rates-correction"
     }
   ]
 }
