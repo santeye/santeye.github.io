@@ -297,6 +297,72 @@
     .tt-rationale { color: var(--muted); }
 
     #feed-toggle-btn:hover { opacity: 1 !important; }
+
+    /* ── Filter bar ── */
+    #filter-bar {
+      padding: 8px 0 6px;
+      border-bottom: 1px solid var(--sep);
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .filter-row {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+
+    .filter-pill {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 1px 6px;
+      border: 1px solid var(--sep);
+      color: var(--muted);
+      cursor: pointer;
+      user-select: none;
+      background: transparent;
+      font-family: var(--mono);
+    }
+    .filter-pill:hover { color: var(--text); border-color: var(--muted); }
+    .filter-pill.active {
+      color: var(--pill-color, var(--text));
+      border-color: var(--pill-color, var(--text));
+    }
+    .filter-pill.active:hover {
+      color: var(--pill-color, var(--text));
+      border-color: var(--pill-color, var(--text));
+    }
+
+    .filter-vsep {
+      width: 1px;
+      height: 12px;
+      background: var(--sep);
+      flex-shrink: 0;
+      margin: 0 3px;
+    }
+
+    .filter-label {
+      font-size: 10px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.5;
+      flex-shrink: 0;
+      padding-right: 1px;
+    }
+
+    .filter-count {
+      margin-left: auto;
+      font-size: 10px;
+      color: var(--muted);
+      opacity: 0.45;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+    }
   </style>
 </head>
 <body>
@@ -317,6 +383,7 @@
         <span id="feed-label"></span>
         <span id="feed-toggle-btn" style="cursor:pointer;margin-left:8px;text-transform:none;font-size:10px;opacity:0.6"></span>
       </div>
+      <div id="filter-bar" style="display:none"></div>
       <div id="feed"></div>
     </div>
   </div>
@@ -753,6 +820,20 @@
 
     let activeFilter = null;
 
+    // ── Feed filter state ────────────────────────────────────────────────────
+    let showUnresolved  = false;
+    const ALL_FEED_LAYERS = ['military','influence','regulatory','procurement','financial'];
+    const LAYER_SRC_MAP   = {
+      military:    [['dsca','DSCA'],['anchor_budget','ELBIT']],
+      influence:   [['fara','FARA'],['lda','LDA']],
+      regulatory:  [['federalregister','FR'],['ofac','OFAC'],['bis','BIS']],
+      procurement: [['sam','SAM']],
+      financial:   [['imf','IMF'],['cftc','CFTC']],
+    };
+    let activeFeedLayers = new Set(ALL_FEED_LAYERS);
+    let activeFeedSrcs   = new Set(Object.values(LAYER_SRC_MAP).flat().map(([src]) => src));
+    let minProfileScore  = 0;
+
     function renderClusters(clusters, notable, signals) {
       const wrap      = document.getElementById('clusters-wrap');
       const container = document.getElementById('clusters');
@@ -875,6 +956,136 @@
       }
     }
 
+    // ── Feed filter application ──────────────────────────────────────────────
+
+    function applyFeedFilters(sigs) {
+      return sigs.filter(sig => {
+        if (activeFilter && sig.iso !== activeFilter) return false;
+        if (sig.iso === 'XX' && !showUnresolved) return false;
+        if (sig.layer && !activeFeedLayers.has(sig.layer)) return false;
+        if (!activeFeedSrcs.has(sig.source)) return false;
+        if (minProfileScore > 0) {
+          const score = sig.profile ? (sig.profile.score || 0) : 0;
+          if (score < minProfileScore) return false;
+        }
+        return true;
+      });
+    }
+
+    // ── Filter bar initialisation ────────────────────────────────────────────
+
+    function initFilterBar(signals) {
+      const bar = document.getElementById('filter-bar');
+      bar.style.display = '';
+
+      // ── Row 1: unresolved · layers · score ──────────────────────────────
+      const row1 = document.createElement('div');
+      row1.className = 'filter-row';
+
+      // Unresolved toggle
+      const unresPill = document.createElement('span');
+      unresPill.className = 'filter-pill';
+      unresPill.title = 'Show records where country could not be determined';
+      unresPill.textContent = 'XX';
+      unresPill.addEventListener('click', () => {
+        showUnresolved = !showUnresolved;
+        unresPill.classList.toggle('active', showUnresolved);
+        renderFeed(signals);
+      });
+      row1.appendChild(unresPill);
+
+      const sep1 = document.createElement('span'); sep1.className = 'filter-vsep';
+      row1.appendChild(sep1);
+
+      const layerLabel = document.createElement('span');
+      layerLabel.className = 'filter-label';
+      layerLabel.textContent = 'layer';
+      row1.appendChild(layerLabel);
+
+      for (const layer of ALL_FEED_LAYERS) {
+        const color = layerColor(layer);
+        const pill = document.createElement('span');
+        pill.className = 'filter-pill active';
+        pill.dataset.layer = layer;
+        pill.style.setProperty('--pill-color', color);
+        pill.textContent = layer.toUpperCase();
+        pill.addEventListener('click', () => {
+          const on = activeFeedLayers.has(layer);
+          if (on) { activeFeedLayers.delete(layer); pill.classList.remove('active'); }
+          else    { activeFeedLayers.add(layer);    pill.classList.add('active'); }
+          // Sync source pills for this layer
+          bar.querySelectorAll(`.src-pill[data-layer="${layer}"]`).forEach(sp => {
+            const src = sp.dataset.src;
+            if (on) { activeFeedSrcs.delete(src); sp.classList.remove('active'); }
+            else    { activeFeedSrcs.add(src);    sp.classList.add('active'); }
+          });
+          renderFeed(signals);
+        });
+        row1.appendChild(pill);
+      }
+
+      const sep2 = document.createElement('span'); sep2.className = 'filter-vsep';
+      row1.appendChild(sep2);
+
+      const scoreLabel = document.createElement('span');
+      scoreLabel.className = 'filter-label';
+      scoreLabel.textContent = 'score';
+      row1.appendChild(scoreLabel);
+
+      for (const [label, val] of [['ALL',0],['4+',4],['6+',6],['8+',8]]) {
+        const pill = document.createElement('span');
+        pill.className = 'filter-pill score-pill' + (val === 0 ? ' active' : '');
+        pill.dataset.score = val;
+        pill.textContent = label;
+        pill.addEventListener('click', () => {
+          minProfileScore = val;
+          bar.querySelectorAll('.score-pill').forEach(sp =>
+            sp.classList.toggle('active', +sp.dataset.score === val)
+          );
+          renderFeed(signals);
+        });
+        row1.appendChild(pill);
+      }
+
+      const countEl = document.createElement('span');
+      countEl.className = 'filter-count';
+      countEl.id = 'filter-count';
+      row1.appendChild(countEl);
+
+      bar.appendChild(row1);
+
+      // ── Row 2: sources grouped by layer ─────────────────────────────────
+      const row2 = document.createElement('div');
+      row2.className = 'filter-row';
+
+      let first = true;
+      for (const [layer, srcs] of Object.entries(LAYER_SRC_MAP)) {
+        if (!first) {
+          const sep = document.createElement('span'); sep.className = 'filter-vsep';
+          row2.appendChild(sep);
+        }
+        first = false;
+        for (const [src, label] of srcs) {
+          const color = layerColor(layer);
+          const pill = document.createElement('span');
+          pill.className = 'filter-pill src-pill active';
+          pill.dataset.src = src;
+          pill.dataset.layer = layer;
+          pill.style.setProperty('--pill-color', color);
+          pill.textContent = label;
+          pill.addEventListener('click', () => {
+            const on = activeFeedSrcs.has(src);
+            if (on) { activeFeedSrcs.delete(src); pill.classList.remove('active'); }
+            else    { activeFeedSrcs.add(src);    pill.classList.add('active'); }
+            renderFeed(signals);
+          });
+          row2.appendChild(pill);
+        }
+      }
+
+      bar.appendChild(row2);
+    }
+
     // ── Render feed ──────────────────────────────────────────────────────────
 
     function renderFeed(signals) {
@@ -884,9 +1095,7 @@
       const toggleBtn = document.getElementById('feed-toggle-btn');
       feedEl.innerHTML = '';
 
-      let visible;
       if (activeFilter) {
-        visible = signals.filter(s => s.iso === activeFilter);
         feedHdr.style.display = '';
         const p = isoProfile[activeFilter];
         feedLabel.textContent = p ? p.name : activeFilter;
@@ -898,9 +1107,12 @@
           renderFeed(signals);
         };
       } else {
-        visible = signals;
         feedHdr.style.display = 'none';
       }
+
+      const visible = applyFeedFilters(signals);
+      const countEl = document.getElementById('filter-count');
+      if (countEl) countEl.textContent = visible.length + '\u00a0signals';
 
       if (!visible.length) {
         feedEl.innerHTML = '<div style="color:var(--muted);font-size:12px;padding:16px 0">no signals</div>';
@@ -1059,6 +1271,7 @@
       const clusters = computeClusters(signals);
       const notable  = computeNotableSignals(signals);
       renderClusters(clusters, notable, signals);
+      initFilterBar(signals);
       renderFeed(signals);
       initMap(clusters, notable, signals);
     }
