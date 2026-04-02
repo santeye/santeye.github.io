@@ -179,8 +179,12 @@ def to_signal(filing: dict) -> dict:
     others   = [c for c in raw_codes if c not in HIGH_SIGNAL_CODES]
     top_codes = (priority + others)[:3]
     domain_str = _expand_codes(top_codes) if top_codes else ""
-    if client_name and domain_str:
-        title = f"{client_name} ({domain_str}) — via {registrant_name}"
+    # Issue domains lead — they explain why the entry is in the feed.
+    # Client and firm follow as context. "via" never starts the title.
+    if domain_str and client_name:
+        title = f"{domain_str} — {client_name} via {registrant_name}"
+    elif domain_str:
+        title = f"{domain_str} — via {registrant_name}"
     elif client_name:
         title = f"{client_name} — via {registrant_name}"
     else:
