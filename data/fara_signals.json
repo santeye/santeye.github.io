@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T22:44:46.281696+00:00",
+  "generated_at": "2026-04-03T22:44:08.342097+00:00",
   "sources": [
     "fara"
   ],
@@ -2470,6 +2470,21 @@
       "registrant": "Javelin Advisors, LLC",
       "principal": "Taipei Economic and Cultural Representative Office in the United States",
       "target_groups": []
+    },
+    {
+      "registration_number": 7711,
+      "iso": "RU",
+      "source": "fara",
+      "signal_date": "2026-04-02",
+      "title": "Sher Tremonte LLP registered to represent Alexey Kuzovkin",
+      "value_usd": null,
+      "description": "Registered to represent Alexey Kuzovkin (RUSSIA)",
+      "registrant": "Sher Tremonte LLP",
+      "principal": "Alexey Kuzovkin",
+      "target_groups": [],
+      "raw_score": 10.0,
+      "weight": 1.0,
+      "page_url": "https://efile.fara.gov/docs/7711-Registration-Statement-20260402-1.pdf"
     }
   ]
 }
