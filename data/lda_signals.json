@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T22:49:16.635565+00:00",
+  "generated_at": "2026-04-07T22:51:21.650361+00:00",
   "sources": [
     "lda"
   ],
@@ -7838,6 +7838,249 @@
         "NAT"
       ],
       "url": "https://lda.gov/filings/public/filing/6af54a48-7238-4158-973b-07f7badc1179/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "5b501f27-4cb9-4f46-a1a9-1dc3a8c14e48",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-06",
+      "title": "Foreign Affairs, Government \u2014 Will Hughes via The Dlm Group",
+      "value_usd": null,
+      "description": "Federal Appointments",
+      "lobbying_firm": "The Dlm Group",
+      "issue_codes": [
+        "FOR",
+        "GOV"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5b501f27-4cb9-4f46-a1a9-1dc3a8c14e48/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "7e7d71bf-4efd-428d-a8f7-748b935a7116",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-06",
+      "title": "Foreign Affairs, Government \u2014 Mark Blackburn via The Dlm Group",
+      "value_usd": null,
+      "description": "State Department Appointments",
+      "lobbying_firm": "The Dlm Group",
+      "issue_codes": [
+        "FOR",
+        "GOV"
+      ],
+      "url": "https://lda.gov/filings/public/filing/7e7d71bf-4efd-428d-a8f7-748b935a7116/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "c7185139-287a-4d33-8e37-435913cabf91",
+      "iso": "CH",
+      "source": "lda",
+      "signal_date": "2026-04-06",
+      "title": "Science/Technology, Trade, Finance \u2014 Zurich American Insurance Company via Tiber Creek Group",
+      "value_usd": null,
+      "description": "Issues related to TRIA reauthorization, third party litigation funding, data centers, artificial intelligence, surety bo\u2026",
+      "lobbying_firm": "Tiber Creek Group",
+      "issue_codes": [
+        "FIN",
+        "INS",
+        "LBR",
+        "SCI",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/c7185139-287a-4d33-8e37-435913cabf91/print/",
+      "raw_score": 2.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "e978804e-0592-43d9-919a-71d1e67492e0",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-06",
+      "title": "Homeland Security, Transportation \u2014 Aeva Technologies, Inc. via Tiber Creek Group",
+      "value_usd": null,
+      "description": "Issues related to self-driving technologies; H.R. 4802 - Securing Infrastructure from Adversaries Act of 2025; H.R. 6576\u2026",
+      "lobbying_firm": "Tiber Creek Group",
+      "issue_codes": [
+        "HOM",
+        "TRA"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e978804e-0592-43d9-919a-71d1e67492e0/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "75843ae6-2e26-449b-b01b-1adf79e2209e",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-06",
+      "title": "Defense \u2014 Aurelius Systems, Inc. via Cassidy & Associates, Inc.",
+      "value_usd": null,
+      "description": "FY27 NDAA and Defense Appropriations",
+      "lobbying_firm": "Cassidy & Associates, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/75843ae6-2e26-449b-b01b-1adf79e2209e/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "f2697fe2-12a5-4347-8ed5-c951eefe304d",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-06",
+      "title": "Science/Technology, Aerospace, Budget \u2014 Firehawk Aerospace Inc. via The Artemis Group, Llc (Oklahoma)",
+      "value_usd": null,
+      "description": "Space issues and appropriations generally",
+      "lobbying_firm": "The Artemis Group, Llc (Oklahoma)",
+      "issue_codes": [
+        "AER",
+        "BUD",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/f2697fe2-12a5-4347-8ed5-c951eefe304d/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "662239b0-baae-4840-9bea-365db0a8c7cd",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-06",
+      "title": "Defense, Science/Technology, Aerospace \u2014 Loft Federal via Capitol Precision Strategies",
+      "value_usd": null,
+      "description": "Issues related to Department of Defense appropriations and authorization for FY2027, including: FY2027 Defense Appropria\u2026",
+      "lobbying_firm": "Capitol Precision Strategies",
+      "issue_codes": [
+        "AER",
+        "DEF",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/662239b0-baae-4840-9bea-365db0a8c7cd/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "8f3f278b-defb-4948-99e7-7ba1c715b94e",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-06",
+      "title": "Energy \u2014 Nextnrg Inc via Government Relations Group, Llc",
+      "value_usd": null,
+      "description": "energy Solutions",
+      "lobbying_firm": "Government Relations Group, Llc",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/8f3f278b-defb-4948-99e7-7ba1c715b94e/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "4fb39e05-dfd7-498f-90ee-5bdd35421093",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Science/Technology, Budget \u2014 Research Corporation Of The University Of Hawaii via The Wayfinder Group",
+      "value_usd": null,
+      "description": "Issues related to federal funding for research and equipment",
+      "lobbying_firm": "The Wayfinder Group",
+      "issue_codes": [
+        "BUD",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/4fb39e05-dfd7-498f-90ee-5bdd35421093/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "f6746549-ee0e-4f25-bceb-5e509285da4c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Defense, Energy \u2014 Mp Materials Corp. via Pioneer Public Affairs",
+      "value_usd": null,
+      "description": "Advocate on issues relating to rare earth materials and critical minerals.",
+      "lobbying_firm": "Pioneer Public Affairs",
+      "issue_codes": [
+        "DEF",
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/f6746549-ee0e-4f25-bceb-5e509285da4c/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "451c7752-bc75-459d-836e-9ce3a2685367",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Defense \u2014 Arkenstone Defense, Inc. via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "National Defense Authorization Act; Department of Defense Appropriations.",
+      "lobbying_firm": "Holland & Knight Llp",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/451c7752-bc75-459d-836e-9ce3a2685367/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "a28784ba-39be-47bf-b407-7985cd1c8e1d",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Defense, Agriculture, Budget \u2014 Blueprint Biosecurity Action via Cornerstone Government Affairs, Inc.",
+      "value_usd": null,
+      "description": "Identify and advance policy and funding opportunities to promote respiratory protection and clean air technologies to pr\u2026",
+      "lobbying_firm": "Cornerstone Government Affairs, Inc.",
+      "issue_codes": [
+        "AGR",
+        "BUD",
+        "DEF",
+        "HCR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/a28784ba-39be-47bf-b407-7985cd1c8e1d/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "204e7a1d-0e33-4899-8ad9-ce4868a9e980",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Trade, Health, Manufacturing \u2014 Novo Nordisk, Inc. via S-3 Group",
+      "value_usd": null,
+      "description": "Issues related to compounding and counterfeit drugs; drug pricing and implementation of the Inflation Reduction Act; cov\u2026",
+      "lobbying_firm": "S-3 Group",
+      "issue_codes": [
+        "HCR",
+        "MMM",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/204e7a1d-0e33-4899-8ad9-ce4868a9e980/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "dcca1de5-ef8d-4d83-a622-ce41166cca2b",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Trade, Agriculture \u2014 Silverleafe Cotton Tracing via Torridon Law Pllc",
+      "value_usd": null,
+      "description": "Issues related to international cotton dispute.",
+      "lobbying_firm": "Torridon Law Pllc",
+      "issue_codes": [
+        "AGR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/dcca1de5-ef8d-4d83-a622-ce41166cca2b/print/",
       "raw_score": null,
       "weight": 1.0
     }

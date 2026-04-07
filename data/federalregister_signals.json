@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T22:49:17.849681+00:00",
+  "generated_at": "2026-04-07T22:51:22.878422+00:00",
   "sources": [
     "federalregister"
   ],
@@ -5248,6 +5248,28 @@
       "description": "Notice",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/04/06/2026-06596/list-of-countries-requiring-cooperation-with-an-international-boycott"
+    },
+    {
+      "document_number": "2026-06723",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-04-07",
+      "title": "Notice of OFAC Sanctions Actions",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing updates to the identifying information of one or more persons currently included in OFAC's Specially Designated Nationals and Blocked Persons List (SDN List). OFAC is also publishing the names of one or more persons whose property and interests in property have been unblocked and who have been removed from the SDN List.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/04/07/2026-06723/notice-of-ofac-sanctions-actions"
+    },
+    {
+      "document_number": "2026-06688",
+      "iso": "IR",
+      "source": "federalregister",
+      "signal_date": "2026-04-07",
+      "title": "Report to Congress Pursuant to the National Defense Authorization Act for Fiscal Year 2013 (FY13 NDAA)",
+      "value_usd": null,
+      "description": "Notice of report. \u00b7 Section 1245(e) of subtitle D of title XII of the National Defense Authorization Act for Fiscal Year 2013 (also known as the Iran Freedom and Counter-Proliferation Act of 2012 (IFCA)), as delegated by Presidential Memorandum of June 3, 2013, requires the Secretary of State, in consultation with the Secretary of the Treasury, every 180 days, to submit to the appropriate congressional committees and publish in the Federal Register a report that contains a determination with respect to: (1) Whether Iran is (A) using any of the materials described in IFCA as a medium for barter, swap, or any other exchange or transaction, or (B) listing any of such materials as assets of the Government of Iran for purposes of the national balance sheet of Iran; (2) which sectors of the economy of Iran are controlled directly or indirectly by Iran's Islamic Revolutionary Guard Corps (IRGC); and (3) which of the materials described in subsection (d) of section 1245 are used in connection with the nuclear, military, or ballistic missile programs of Iran. Materials described are graphite, raw or semi- finished metals such as aluminum and steel, coal, and software for integrating industrial processes.",
+      "raw_score": 9.0,
+      "page_url": "https://www.federalregister.gov/documents/2026/04/07/2026-06688/report-to-congress-pursuant-to-the-national-defense-authorization-act-for-fiscal-year-2013-fy13-ndaa"
     }
   ]
 }
