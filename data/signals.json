@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-07T22:51:25.871793+00:00",
+  "generated_at": "2026-04-08T22:54:22.326807+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,230 @@
     "sam"
   ],
   "signals": [
+    {
+      "filing_uuid": "fa9c2db6-ae53-4fd1-be2b-d0443f67590c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Trade, Tariffs \u2014 Revolution Concrete Mixers via Lsn Partners, Llc",
+      "value_usd": null,
+      "description": "Import and export trade and tariff related issues",
+      "lobbying_firm": "Lsn Partners, Llc",
+      "issue_codes": [
+        "TAR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/fa9c2db6-ae53-4fd1-be2b-d0443f67590c/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "7e0fa91f-b42b-49b4-86a1-327ff184238f",
+      "iso": "CA",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Energy \u2014 Enbridge (U.S.) Inc. via Michael Best Strategies Llc",
+      "value_usd": null,
+      "description": "Issues related to energy, regulatory, and pipeline policy; permitting reform.",
+      "lobbying_firm": "Michael Best Strategies Llc",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/7e0fa91f-b42b-49b4-86a1-327ff184238f/print/",
+      "profile": {
+        "name": "Canada",
+        "score": 5,
+        "factors": [
+          "hydrocarbons",
+          "strategic minerals",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), strategic minerals including uranium and rare earths (+2)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "79682649-5ea8-486d-8e78-6b9bdd89afa7",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Defense \u2014 Echomav via Cassidy & Associates, Inc.",
+      "value_usd": null,
+      "description": "FY27 NDAA and Appropriations",
+      "lobbying_firm": "Cassidy & Associates, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/79682649-5ea8-486d-8e78-6b9bdd89afa7/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "017057d5-2bf6-4c9e-981d-6b67cf28ba9b",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Science/Technology \u2014 Materic, Llc via Ervin Graves Strategy Group, Llc",
+      "value_usd": null,
+      "description": "Advocating for custom manufacturing and R&D that develops and scales advanced materials for applications like electronic\u2026",
+      "lobbying_firm": "Ervin Graves Strategy Group, Llc",
+      "issue_codes": [
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/017057d5-2bf6-4c9e-981d-6b67cf28ba9b/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "71629c10-9177-42c6-bbb2-a2b1764652c8",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Defense \u2014 Airtec, Inc. via Ervin Graves Strategy Group, Llc",
+      "value_usd": null,
+      "description": "Advocating for aviation and mission support services for government and defense operations.",
+      "lobbying_firm": "Ervin Graves Strategy Group, Llc",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/71629c10-9177-42c6-bbb2-a2b1764652c8/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "5000e0bd-8925-4d06-bc2d-2d91e8ef8574",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Defense \u2014 Clark Street Associates On Behalf Of Lightpath Technologies via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "Funding for production of defense related materials.",
+      "lobbying_firm": "Holland & Knight Llp",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5000e0bd-8925-4d06-bc2d-2d91e8ef8574/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "405925fe-5486-4b48-b8bb-d73203c556df",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Defense \u2014 Owt Global via C. Baker Consulting, Inc.",
+      "value_usd": null,
+      "description": "FY 2027 President's Budget Request (Defense) FY 2027 National Defense Authorization Act (House and Senate Versions) FY 2\u2026",
+      "lobbying_firm": "C. Baker Consulting, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/405925fe-5486-4b48-b8bb-d73203c556df/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "1d67c39c-7766-4aba-8df4-82519b9eb222",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Defense \u2014 Pison Technologies via C. Baker Consulting, Inc.",
+      "value_usd": null,
+      "description": "FY 2027 President's Budget Request FY 2027 Defense Appropriations Act (House and Senate Versions)",
+      "lobbying_firm": "C. Baker Consulting, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1d67c39c-7766-4aba-8df4-82519b9eb222/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "2bf07859-28e1-4a6d-9397-ab00894023d0",
+      "iso": "NO",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Trade \u2014 Hoegh Autoliners Asa via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "Norway; International trade issues regarding Hoeghs North American operations.",
+      "lobbying_firm": "Holland & Knight Llp",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/2bf07859-28e1-4a6d-9397-ab00894023d0/print/",
+      "profile": {
+        "name": "Norway",
+        "score": 5,
+        "factors": [
+          "hydrocarbons",
+          "strategic minerals",
+          "rare earths",
+          "Arctic"
+        ],
+        "rationale": "Major hydrocarbon producer \u2014 European gas anchor (+2), rare earth deposits including world-class Fen discovery (+2), Arctic strategic position (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "041666d7-3b95-4d6f-93c2-000381defbf4",
+      "iso": "AU",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Defense, Foreign Affairs, Budget \u2014 Fivecast Pty Ltd via Ark Strategy",
+      "value_usd": null,
+      "description": "Australia; FY appropriations (Defense, Intelligence, State Dept, DHS)",
+      "lobbying_firm": "Ark Strategy",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "FOR",
+        "INT"
+      ],
+      "url": "https://lda.gov/filings/public/filing/041666d7-3b95-4d6f-93c2-000381defbf4/print/",
+      "profile": {
+        "name": "Australia",
+        "score": 5,
+        "factors": [
+          "strategic minerals",
+          "US basing",
+          "AUKUS",
+          "regional power",
+          "hydrocarbons"
+        ],
+        "rationale": "Major strategic minerals producer and processor \u2014 rare earths, lithium, uranium (+2), major US basing and AUKUS partner (+1), regional power Indo-Pacific (+1), hydrocarbon exports (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "document_number": "2026-06688",
       "iso": "IR",
@@ -156,6 +380,212 @@
         "TRD"
       ],
       "url": "https://lda.gov/filings/public/filing/dcca1de5-ef8d-4d83-a622-ce41166cca2b/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "cdcfa8f4-3b65-4250-b674-bab50c465c16",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Defense, Budget \u2014 Simetri via Grayrobinson Pa",
+      "value_usd": null,
+      "description": "Issues related to medical simulation technology for military medical personnel training.",
+      "lobbying_firm": "Grayrobinson Pa",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/cdcfa8f4-3b65-4250-b674-bab50c465c16/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "47cccaf0-2dd2-4dde-98cf-c01420e1126e",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Defense \u2014 Arktos via J.A. Green And Company (Formerly Llc)",
+      "value_usd": null,
+      "description": "DEF",
+      "lobbying_firm": "J.A. Green And Company (Formerly Llc)",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/47cccaf0-2dd2-4dde-98cf-c01420e1126e/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "7775ec88-303d-42e8-9394-5abe875a2520",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Trade, Budget, Government \u2014 Webb County, Tx via Akin Gump Strauss Hauer & Feld",
+      "value_usd": null,
+      "description": "Matters related to federal funding and government operations.",
+      "lobbying_firm": "Akin Gump Strauss Hauer & Feld",
+      "issue_codes": [
+        "BUD",
+        "GOV",
+        "TRA",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/7775ec88-303d-42e8-9394-5abe875a2520/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "7450e976-8ab5-491f-ab5e-12d3a4c02381",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Science/Technology, Budget \u2014 Quantinuum Llc via Xla Advisors, Llc",
+      "value_usd": null,
+      "description": "Quantum computing and technology issues. Energy and water development appropriations.",
+      "lobbying_firm": "Xla Advisors, Llc",
+      "issue_codes": [
+        "BUD",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/7450e976-8ab5-491f-ab5e-12d3a4c02381/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "cdf8794b-9eec-478c-b0c7-a763d6481959",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Defense, Budget, Clean Air/Water \u2014 Town Of Benson via Electus Governmental Affairs",
+      "value_usd": null,
+      "description": "Needing appropriations for updates to water and sewer infrastructure.",
+      "lobbying_firm": "Electus Governmental Affairs",
+      "issue_codes": [
+        "BUD",
+        "CAW",
+        "DEF",
+        "UTI",
+        "WAS"
+      ],
+      "url": "https://lda.gov/filings/public/filing/cdf8794b-9eec-478c-b0c7-a763d6481959/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "80828abc-bda9-4a2b-a9bd-f44f8dcbb520",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Defense \u2014 Stone Solutions And Research Collective via Az Dc Consulting, Llc",
+      "value_usd": null,
+      "description": "Represent direct interests, identify opportunities, and enable partnerships with the federal government.",
+      "lobbying_firm": "Az Dc Consulting, Llc",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/80828abc-bda9-4a2b-a9bd-f44f8dcbb520/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "98e73f8b-6f97-43b7-a31c-e23ccff6423a",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Defense, Veterans \u2014 Cabana Mental Health via The Dionne Company",
+      "value_usd": null,
+      "description": "Advocating for mental health services within the military Onesource program. Educate and advocate for mental health serv\u2026",
+      "lobbying_firm": "The Dionne Company",
+      "issue_codes": [
+        "DEF",
+        "VET"
+      ],
+      "url": "https://lda.gov/filings/public/filing/98e73f8b-6f97-43b7-a31c-e23ccff6423a/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "c4638d94-b9e6-4732-a92d-62abe76a3550",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Science/Technology, Budget, Consumer Issues \u2014 Toshiba America, Inc. via Barnes & Thornburg, Llp",
+      "value_usd": null,
+      "description": "FY27 Commerce, Justice, Science Appropriations bill; FY27 Energy-Water Appropriations bill; FY27 Homeland Security Appro\u2026",
+      "lobbying_firm": "Barnes & Thornburg, Llp",
+      "issue_codes": [
+        "BUD",
+        "CPI",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/c4638d94-b9e6-4732-a92d-62abe76a3550/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "27e9f9be-4d5b-4889-b173-d00198b25580",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Science/Technology, Trade, Consumer Issues \u2014 Dropbox via H&M Strategies Llp",
+      "value_usd": null,
+      "description": "Issues related to patent eligibility and review, Issues related to artificial intelligence (AI), issues related to inter\u2026",
+      "lobbying_firm": "H&M Strategies Llp",
+      "issue_codes": [
+        "CPI",
+        "CPT",
+        "CSP",
+        "SCI",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/27e9f9be-4d5b-4889-b173-d00198b25580/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "43feb0c0-f751-47e3-b91e-e67af3571f45",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Trade \u2014 Trapac, Llc via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "Importation of goods in connection with TraPacs port operations.",
+      "lobbying_firm": "Holland & Knight Llp",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/43feb0c0-f751-47e3-b91e-e67af3571f45/print/",
       "profile": null,
       "layer": "influence",
       "quality": 0.5,
@@ -20224,9 +20654,59 @@
   ],
   "themes": [
     {
+      "type": "layer_sequence",
+      "title": "Israel \u2014 influence \u2192 military sequence (2d gap)",
+      "score": 29.705,
+      "countries": [
+        "IL"
+      ],
+      "signal_keys": [
+        "lda:02b247dd-5ef5-4daf-8026-9aa9990c11ab",
+        "fara:7639",
+        "lda:be2e4266-f514-4548-b671-3a98bfc8767c",
+        "fara:7649",
+        "dsca:25-87",
+        "dsca:25-86",
+        "fara:7631",
+        "lda:db02a0ad-016a-4d22-84b5-bea6199865a1",
+        "anchor_budget:0001178913-25-002709",
+        "anchor_budget:0001178913-26-000214",
+        "lda:230cd9be-1b81-4399-8639-6cf996d8409c",
+        "anchor_budget:0001178913-25-003866",
+        "lda:b9c836ec-0f69-482f-9662-b04da19414d7",
+        "lda:3617103c-e5f5-499c-85e0-19d41d656217",
+        "lda:61286692-a9d8-4f1b-ad6d-d9895aa68093",
+        "lda:95829355-4d3f-49e0-b58d-af95ef38aab2",
+        "lda:abb42902-e3ce-4c4f-ae90-e18e2ac50d0b",
+        "anchor_budget:0001178913-25-003892",
+        "lda:89d58de4-66ae-407a-ab26-5bb91515b346",
+        "fara:7641",
+        "lda:aa02bf22-db21-4088-9747-ef99383ce2d5",
+        "anchor_budget:0001178913-26-000482",
+        "anchor_budget:0001178913-26-000537",
+        "fara:7662",
+        "lda:23a26e3e-93ac-454b-a73e-59ea7b246315",
+        "fara:7652",
+        "fara:7653",
+        "lda:ce764ef3-8477-4669-b8e8-2ccdd3fb177d",
+        "lda:895d05f5-ff41-4dcf-8a87-536c24a73d6b",
+        "lda:97b0efa1-dc2e-4b8e-b4be-08932e46042e",
+        "anchor_budget:0001178913-25-002470",
+        "lda:43d1bd09-d27f-4a4d-a303-bd49b2c14a46",
+        "dsca:25-28",
+        "lda:0f917ce3-cfa5-4aad-b185-7e24987959c3",
+        "fara:7597",
+        "lda:b83f409b-3e87-4419-89ec-670d9b8c4388",
+        "lda:b831c491-998c-4299-a6f9-00d248f5f9be",
+        "anchor_budget:0001178913-25-002820",
+        "lda:7997ced4-7bd2-4e54-9743-32ec1b25a83d"
+      ],
+      "why": "fara filing on 2025-08-11 preceded anchor_budget on 2025-08-13 by 2d."
+    },
+    {
       "type": "velocity_anomaly",
-      "title": "United Kingdom \u2014 6 signals in 30 days (+4.6\u03c3)",
-      "score": 45.198,
+      "title": "United Kingdom \u2014 5 signals in 30 days (+3.5\u03c3)",
+      "score": 29.618,
       "countries": [
         "GB"
       ],
@@ -20235,60 +20715,9 @@
         "lda:585860bc-af15-4e03-a51e-7b10e683c7cd",
         "dsca:Submarine Combat and Weapon Systems, Tec",
         "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
-        "lda:0530d8ed-e131-4ee6-88ca-bd6a18e0c2ab",
-        "lda:fb7fed96-f152-4700-bb3d-6cd848a19cac"
+        "lda:0530d8ed-e131-4ee6-88ca-bd6a18e0c2ab"
       ],
-      "why": "3.5 weighted signals in 30 days vs 1.2 avg (+4.6\u03c3). Sources: dsca\u00d71, lda\u00d75"
-    },
-    {
-      "type": "layer_sequence",
-      "title": "Israel \u2014 influence \u2192 military sequence (2d gap)",
-      "score": 29.705,
-      "countries": [
-        "IL"
-      ],
-      "signal_keys": [
-        "lda:ce764ef3-8477-4669-b8e8-2ccdd3fb177d",
-        "anchor_budget:0001178913-25-002470",
-        "lda:b83f409b-3e87-4419-89ec-670d9b8c4388",
-        "lda:89d58de4-66ae-407a-ab26-5bb91515b346",
-        "fara:7652",
-        "lda:97b0efa1-dc2e-4b8e-b4be-08932e46042e",
-        "lda:aa02bf22-db21-4088-9747-ef99383ce2d5",
-        "lda:be2e4266-f514-4548-b671-3a98bfc8767c",
-        "fara:7641",
-        "dsca:25-87",
-        "anchor_budget:0001178913-26-000537",
-        "anchor_budget:0001178913-26-000214",
-        "lda:895d05f5-ff41-4dcf-8a87-536c24a73d6b",
-        "lda:23a26e3e-93ac-454b-a73e-59ea7b246315",
-        "lda:02b247dd-5ef5-4daf-8026-9aa9990c11ab",
-        "fara:7649",
-        "lda:b831c491-998c-4299-a6f9-00d248f5f9be",
-        "lda:abb42902-e3ce-4c4f-ae90-e18e2ac50d0b",
-        "lda:43d1bd09-d27f-4a4d-a303-bd49b2c14a46",
-        "lda:230cd9be-1b81-4399-8639-6cf996d8409c",
-        "lda:61286692-a9d8-4f1b-ad6d-d9895aa68093",
-        "lda:b9c836ec-0f69-482f-9662-b04da19414d7",
-        "fara:7631",
-        "lda:3617103c-e5f5-499c-85e0-19d41d656217",
-        "anchor_budget:0001178913-26-000482",
-        "lda:95829355-4d3f-49e0-b58d-af95ef38aab2",
-        "dsca:25-86",
-        "lda:db02a0ad-016a-4d22-84b5-bea6199865a1",
-        "fara:7653",
-        "anchor_budget:0001178913-25-003892",
-        "anchor_budget:0001178913-25-003866",
-        "fara:7639",
-        "anchor_budget:0001178913-25-002820",
-        "fara:7597",
-        "dsca:25-28",
-        "anchor_budget:0001178913-25-002709",
-        "fara:7662",
-        "lda:0f917ce3-cfa5-4aad-b185-7e24987959c3",
-        "lda:7997ced4-7bd2-4e54-9743-32ec1b25a83d"
-      ],
-      "why": "fara filing on 2025-08-11 preceded anchor_budget on 2025-08-13 by 2d."
+      "why": "3.0 weighted signals in 30 days vs 1.2 avg (+3.5\u03c3). Sources: dsca\u00d71, lda\u00d74"
     },
     {
       "type": "cftc_overlap",
@@ -20306,8 +20735,54 @@
     },
     {
       "type": "actor_concentration",
+      "title": "31 firms lobbying on Canada issues",
+      "score": 15.0,
+      "countries": [
+        "CA"
+      ],
+      "signal_keys": [
+        "lda:7e0fa91f-b42b-49b4-86a1-327ff184238f",
+        "lda:e56bf1d6-a3ef-41b5-9273-a37f78aa63f0",
+        "lda:47801959-b318-424b-9329-f7446a5f6fe9",
+        "lda:6b26dee6-1102-468a-94ce-2aa0c5f5ca4e",
+        "lda:6772dcc3-2c44-4863-81a6-b71e8a8dbd35",
+        "lda:351df1eb-cfb8-4910-ac5e-4c994706b529",
+        "lda:6aad996f-4f1d-4679-8fc4-60cbe09b4528",
+        "lda:f9c9d651-3cd4-4bc3-803e-e940e2af1e9b",
+        "lda:ebaafdc1-22c3-42de-ab5c-841d5984c131",
+        "lda:b50587f3-c842-45a9-8d92-65aa0d275bf7",
+        "lda:80988889-06cd-46ef-8e5e-44c38795ab17",
+        "lda:b3993f13-1622-499c-b0c4-38c4bad8d91f",
+        "lda:8020cfc0-263b-4453-baa3-5e28eb88d2b7",
+        "lda:4b59ed80-25c5-41fd-b853-f006b6cbd657",
+        "lda:f31fd7e2-34fd-44e6-9e8e-16a426a9e43d",
+        "lda:29c42575-0d47-4d6b-b27e-c995584d7839",
+        "lda:6cccb16f-ed34-4943-a2ff-a978cef3f98c",
+        "lda:ff600795-95d0-4936-862f-b49e2705ac39",
+        "lda:0e0dbb72-ad2e-43f1-ab01-7583265dc345",
+        "lda:71dfc6cc-008a-4c0b-9f7f-17c3326d9c51",
+        "lda:bd1e604e-2306-4142-b028-bd3295a59167",
+        "lda:13cf1f80-3e5c-4301-8861-97921823385a",
+        "lda:702ac4b3-e1e4-44bd-a844-4e9505f85284",
+        "lda:a32cf54e-69d5-4d71-ba45-54be6d6f2fd5",
+        "lda:40faf759-e496-4f78-95d3-f94019a9af8f",
+        "lda:90686b78-ffc3-4f99-a5ca-6683607ebde6",
+        "lda:5c882f8c-5516-4a08-b6b1-6ad5e4ffc5ff",
+        "lda:8572eb93-0306-47b0-bd26-18f88b0a96f7",
+        "lda:21ea2a4f-bd90-4d49-84ca-634015307750",
+        "lda:5ab73508-fdeb-4acb-9c9a-dc752f4015bc",
+        "lda:819c7516-26f2-4d48-aee6-801acd4fd6fd",
+        "lda:fdde5926-4772-4249-921c-3f3c4dadb641",
+        "lda:8121992c-a04e-4e59-83e9-29c90e7eb0ad",
+        "lda:296d0dc2-fb65-4f28-96ef-ec5ea18f28cf",
+        "lda:547f048b-f522-4e38-8c9f-2469b9439068"
+      ],
+      "why": "31 distinct lobbying firms on CA in 371d."
+    },
+    {
+      "type": "actor_concentration",
       "title": "27 firms lobbying on Japan issues",
-      "score": 14.973,
+      "score": 14.725,
       "countries": [
         "JP"
       ],
@@ -20362,53 +20837,38 @@
     },
     {
       "type": "actor_concentration",
-      "title": "31 firms lobbying on Canada issues",
-      "score": 13.348,
+      "title": "17 firms lobbying on Australia issues",
+      "score": 12.51,
       "countries": [
-        "CA"
+        "AU"
       ],
       "signal_keys": [
-        "lda:e56bf1d6-a3ef-41b5-9273-a37f78aa63f0",
-        "lda:47801959-b318-424b-9329-f7446a5f6fe9",
-        "lda:6b26dee6-1102-468a-94ce-2aa0c5f5ca4e",
-        "lda:6772dcc3-2c44-4863-81a6-b71e8a8dbd35",
-        "lda:351df1eb-cfb8-4910-ac5e-4c994706b529",
-        "lda:6aad996f-4f1d-4679-8fc4-60cbe09b4528",
-        "lda:f9c9d651-3cd4-4bc3-803e-e940e2af1e9b",
-        "lda:ebaafdc1-22c3-42de-ab5c-841d5984c131",
-        "lda:b50587f3-c842-45a9-8d92-65aa0d275bf7",
-        "lda:80988889-06cd-46ef-8e5e-44c38795ab17",
-        "lda:b3993f13-1622-499c-b0c4-38c4bad8d91f",
-        "lda:8020cfc0-263b-4453-baa3-5e28eb88d2b7",
-        "lda:4b59ed80-25c5-41fd-b853-f006b6cbd657",
-        "lda:f31fd7e2-34fd-44e6-9e8e-16a426a9e43d",
-        "lda:29c42575-0d47-4d6b-b27e-c995584d7839",
-        "lda:6cccb16f-ed34-4943-a2ff-a978cef3f98c",
-        "lda:ff600795-95d0-4936-862f-b49e2705ac39",
-        "lda:0e0dbb72-ad2e-43f1-ab01-7583265dc345",
-        "lda:71dfc6cc-008a-4c0b-9f7f-17c3326d9c51",
-        "lda:bd1e604e-2306-4142-b028-bd3295a59167",
-        "lda:13cf1f80-3e5c-4301-8861-97921823385a",
-        "lda:702ac4b3-e1e4-44bd-a844-4e9505f85284",
-        "lda:a32cf54e-69d5-4d71-ba45-54be6d6f2fd5",
-        "lda:40faf759-e496-4f78-95d3-f94019a9af8f",
-        "lda:90686b78-ffc3-4f99-a5ca-6683607ebde6",
-        "lda:5c882f8c-5516-4a08-b6b1-6ad5e4ffc5ff",
-        "lda:8572eb93-0306-47b0-bd26-18f88b0a96f7",
-        "lda:21ea2a4f-bd90-4d49-84ca-634015307750",
-        "lda:5ab73508-fdeb-4acb-9c9a-dc752f4015bc",
-        "lda:819c7516-26f2-4d48-aee6-801acd4fd6fd",
-        "lda:fdde5926-4772-4249-921c-3f3c4dadb641",
-        "lda:8121992c-a04e-4e59-83e9-29c90e7eb0ad",
-        "lda:296d0dc2-fb65-4f28-96ef-ec5ea18f28cf",
-        "lda:547f048b-f522-4e38-8c9f-2469b9439068"
+        "lda:041666d7-3b95-4d6f-93c2-000381defbf4",
+        "lda:0aba115d-62b5-4226-aacd-e4b353d0852a",
+        "lda:2e5ee5f5-981f-4379-aaf7-cd37f560b9da",
+        "lda:06f041a9-2003-4e3c-8e5c-fcbed26fa750",
+        "lda:fb475305-8665-4755-8615-8f3b5348ee72",
+        "lda:55260929-56a0-41ad-ac70-996b41468f28",
+        "lda:2fe0ef7f-1cd0-48dc-8e3b-7fb1ecb6bf4d",
+        "lda:a591d6e7-9f7c-4303-ac02-ee889fc3bc5e",
+        "lda:f605f735-22d9-47dc-927e-09ae1b900729",
+        "lda:5c1abbc2-8016-41f7-8fe2-3599654c3c35",
+        "lda:15b374fc-075b-46bc-af89-035f1b111bde",
+        "lda:0f78f6c5-0768-43b6-b950-5d02a496b78c",
+        "lda:95355046-63dc-442e-a808-5599387fa24a",
+        "lda:1123d22d-4536-469c-ac24-9d62f88f5159",
+        "lda:a8c5f1d2-0cdf-487d-86c7-a1f25fbe626a",
+        "lda:79c081bd-371f-4cb0-87a7-0e467ebd7275",
+        "lda:735626a0-9c20-48f5-9a41-4cb8ee74861f",
+        "lda:632193bd-fd93-4218-95c4-21f3572be2ec",
+        "lda:f73cea5a-1a47-4a69-be75-73de58de16a9"
       ],
-      "why": "31 distinct lobbying firms on CA in 363d."
+      "why": "17 distinct lobbying firms on AU in 378d."
     },
     {
       "type": "actor_concentration",
       "title": "26 firms lobbying on United Kingdom issues",
-      "score": 12.694,
+      "score": 12.484,
       "countries": [
         "GB"
       ],
@@ -20452,27 +20912,27 @@
         "CA"
       ],
       "signal_keys": [
-        "lda:a32cf54e-69d5-4d71-ba45-54be6d6f2fd5",
-        "dsca:25-98",
-        "dsca:25-40",
-        "lda:29c42575-0d47-4d6b-b27e-c995584d7839",
-        "lda:ff600795-95d0-4936-862f-b49e2705ac39",
-        "lda:0e0dbb72-ad2e-43f1-ab01-7583265dc345",
-        "lda:bd1e604e-2306-4142-b028-bd3295a59167",
-        "lda:6cccb16f-ed34-4943-a2ff-a978cef3f98c",
-        "lda:4b59ed80-25c5-41fd-b853-f006b6cbd657",
-        "lda:90686b78-ffc3-4f99-a5ca-6683607ebde6",
-        "lda:71dfc6cc-008a-4c0b-9f7f-17c3326d9c51",
-        "fara:7651",
         "lda:702ac4b3-e1e4-44bd-a844-4e9505f85284",
-        "lda:40faf759-e496-4f78-95d3-f94019a9af8f",
-        "lda:f31fd7e2-34fd-44e6-9e8e-16a426a9e43d",
-        "lda:5c882f8c-5516-4a08-b6b1-6ad5e4ffc5ff",
+        "dsca:25-40",
         "lda:13cf1f80-3e5c-4301-8861-97921823385a",
-        "lda:80988889-06cd-46ef-8e5e-44c38795ab17",
-        "lda:b3993f13-1622-499c-b0c4-38c4bad8d91f",
+        "lda:a32cf54e-69d5-4d71-ba45-54be6d6f2fd5",
+        "lda:ff600795-95d0-4936-862f-b49e2705ac39",
+        "dsca:25-76",
+        "lda:f31fd7e2-34fd-44e6-9e8e-16a426a9e43d",
+        "fara:7651",
+        "lda:5c882f8c-5516-4a08-b6b1-6ad5e4ffc5ff",
+        "lda:71dfc6cc-008a-4c0b-9f7f-17c3326d9c51",
+        "lda:bd1e604e-2306-4142-b028-bd3295a59167",
+        "lda:29c42575-0d47-4d6b-b27e-c995584d7839",
+        "lda:6cccb16f-ed34-4943-a2ff-a978cef3f98c",
+        "lda:90686b78-ffc3-4f99-a5ca-6683607ebde6",
+        "lda:0e0dbb72-ad2e-43f1-ab01-7583265dc345",
         "lda:8020cfc0-263b-4453-baa3-5e28eb88d2b7",
-        "dsca:25-76"
+        "lda:4b59ed80-25c5-41fd-b853-f006b6cbd657",
+        "lda:b3993f13-1622-499c-b0c4-38c4bad8d91f",
+        "dsca:25-98",
+        "lda:40faf759-e496-4f78-95d3-f94019a9af8f",
+        "lda:80988889-06cd-46ef-8e5e-44c38795ab17"
       ],
       "why": "fara filing on 2025-09-24 preceded dsca on 2025-10-01 by 7d."
     },
@@ -20484,39 +20944,39 @@
         "GB"
       ],
       "signal_keys": [
-        "dsca:25-45",
-        "lda:e5d44148-8dcc-4cd5-addf-711c8645b105",
-        "lda:6659448e-df12-400c-a5e4-3ac186408495",
-        "lda:0a0eb801-ece9-445c-b137-93067243f611",
-        "lda:479f3c57-c8c4-42ce-9b02-df81c074950b",
-        "lda:bb69d0d4-0582-4274-9b63-3f259d449a17",
         "lda:7188da03-6553-429d-8a9f-8701c6ac8239",
+        "lda:6659448e-df12-400c-a5e4-3ac186408495",
         "lda:d5c2c532-49eb-4383-b189-cbd100de8f6d",
-        "dsca:Submarine Combat and Weapon Systems, Tec",
-        "lda:394a4baa-d7d4-4601-8df6-73164daa015d",
-        "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
-        "lda:4b85d57d-6e3a-4030-bd10-4b8adfb2e512",
-        "lda:59d97468-7777-4bc4-98f9-d3712106c28b",
-        "lda:5c08dc1a-7e69-4d2e-8de2-cf8d9444d87c",
-        "lda:0530d8ed-e131-4ee6-88ca-bd6a18e0c2ab",
+        "lda:479f3c57-c8c4-42ce-9b02-df81c074950b",
         "lda:a5ad2bf3-635d-413d-9f54-b6f983e4d72c",
-        "lda:4a9becce-1dab-4de1-a0d9-2d5f042218e8",
-        "lda:0cbebfcc-8cfe-42eb-b8ed-6929892edb7d",
-        "dsca:25-95",
-        "lda:66fdbb45-e0c5-4487-b779-063917e7bda4",
-        "lda:d35f8b9f-28c8-45da-9a64-6aae1430b1da",
+        "lda:59d97468-7777-4bc4-98f9-d3712106c28b",
         "lda:6d5640d5-2508-4763-ba47-e7671af466e3",
-        "lda:b98967f4-7f22-4baf-a976-483d5045882e",
+        "dsca:25-95",
+        "dsca:25-45",
         "lda:fb7fed96-f152-4700-bb3d-6cd848a19cac",
+        "lda:b98967f4-7f22-4baf-a976-483d5045882e",
+        "lda:bb69d0d4-0582-4274-9b63-3f259d449a17",
+        "lda:4a9becce-1dab-4de1-a0d9-2d5f042218e8",
+        "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
+        "lda:0cbebfcc-8cfe-42eb-b8ed-6929892edb7d",
+        "lda:394a4baa-d7d4-4601-8df6-73164daa015d",
+        "lda:0a0eb801-ece9-445c-b137-93067243f611",
+        "lda:5c08dc1a-7e69-4d2e-8de2-cf8d9444d87c",
+        "lda:d35f8b9f-28c8-45da-9a64-6aae1430b1da",
+        "lda:e5d44148-8dcc-4cd5-addf-711c8645b105",
+        "dsca:Submarine Combat and Weapon Systems, Tec",
+        "lda:4b85d57d-6e3a-4030-bd10-4b8adfb2e512",
+        "lda:66fdbb45-e0c5-4487-b779-063917e7bda4",
         "lda:56525500-d34c-4ca1-a48f-d5673043fa28",
-        "lda:611e7e33-829a-4fec-9baf-9ba49ea27f35"
+        "lda:611e7e33-829a-4fec-9baf-9ba49ea27f35",
+        "lda:0530d8ed-e131-4ee6-88ca-bd6a18e0c2ab"
       ],
       "why": "lda filing on 2026-03-19 preceded dsca on 2026-03-20 by 1d."
     },
     {
       "type": "actor_concentration",
       "title": "16 firms lobbying on China issues",
-      "score": 9.934,
+      "score": 9.77,
       "countries": [
         "CN"
       ],
@@ -20541,35 +21001,6 @@
       "why": "16 distinct lobbying firms on CN in 322d."
     },
     {
-      "type": "actor_concentration",
-      "title": "16 firms lobbying on Australia issues",
-      "score": 9.874,
-      "countries": [
-        "AU"
-      ],
-      "signal_keys": [
-        "lda:0aba115d-62b5-4226-aacd-e4b353d0852a",
-        "lda:2e5ee5f5-981f-4379-aaf7-cd37f560b9da",
-        "lda:06f041a9-2003-4e3c-8e5c-fcbed26fa750",
-        "lda:fb475305-8665-4755-8615-8f3b5348ee72",
-        "lda:55260929-56a0-41ad-ac70-996b41468f28",
-        "lda:2fe0ef7f-1cd0-48dc-8e3b-7fb1ecb6bf4d",
-        "lda:a591d6e7-9f7c-4303-ac02-ee889fc3bc5e",
-        "lda:f605f735-22d9-47dc-927e-09ae1b900729",
-        "lda:5c1abbc2-8016-41f7-8fe2-3599654c3c35",
-        "lda:15b374fc-075b-46bc-af89-035f1b111bde",
-        "lda:0f78f6c5-0768-43b6-b950-5d02a496b78c",
-        "lda:95355046-63dc-442e-a808-5599387fa24a",
-        "lda:1123d22d-4536-469c-ac24-9d62f88f5159",
-        "lda:a8c5f1d2-0cdf-487d-86c7-a1f25fbe626a",
-        "lda:79c081bd-371f-4cb0-87a7-0e467ebd7275",
-        "lda:735626a0-9c20-48f5-9a41-4cb8ee74861f",
-        "lda:632193bd-fd93-4218-95c4-21f3572be2ec",
-        "lda:f73cea5a-1a47-4a69-be75-73de58de16a9"
-      ],
-      "why": "16 distinct lobbying firms on AU in 364d."
-    },
-    {
       "type": "cftc_overlap",
       "title": "Wheat positioning anomaly \u2014 2 exposed countries active",
       "score": 8.768,
@@ -20585,7 +21016,7 @@
     {
       "type": "actor_concentration",
       "title": "13 firms lobbying on South Korea issues",
-      "score": 8.757,
+      "score": 8.613,
       "countries": [
         "KR"
       ],
@@ -20623,8 +21054,26 @@
     },
     {
       "type": "actor_concentration",
+      "title": "6 firms lobbying on Norway issues",
+      "score": 8.422,
+      "countries": [
+        "NO"
+      ],
+      "signal_keys": [
+        "lda:2bf07859-28e1-4a6d-9397-ab00894023d0",
+        "lda:a3aea893-0332-41c8-b112-7512f2ba2649",
+        "lda:5bdef9fd-f6ee-41f9-8787-b6cddaff1dbf",
+        "lda:fedcb26c-4373-4c37-8a03-c4baab850721",
+        "lda:fa2f6a39-cfa8-4072-a3b9-0ba3226a60bb",
+        "lda:e3dfbde7-e208-4d57-a2d2-7e35cf7aed5e",
+        "lda:eb480721-bffb-42a2-a5f3-e96647402b0f"
+      ],
+      "why": "6 distinct lobbying firms on NO in 334d."
+    },
+    {
+      "type": "actor_concentration",
       "title": "23 firms lobbying on Israel issues",
-      "score": 8.52,
+      "score": 8.379,
       "countries": [
         "IL"
       ],
@@ -20663,43 +21112,26 @@
         "AU"
       ],
       "signal_keys": [
-        "dsca:25-88",
-        "lda:95355046-63dc-442e-a808-5599387fa24a",
-        "lda:1123d22d-4536-469c-ac24-9d62f88f5159",
-        "lda:0f78f6c5-0768-43b6-b950-5d02a496b78c",
-        "lda:5c1abbc2-8016-41f7-8fe2-3599654c3c35",
-        "lda:f73cea5a-1a47-4a69-be75-73de58de16a9",
-        "lda:735626a0-9c20-48f5-9a41-4cb8ee74861f",
         "dsca:25-50",
-        "dsca:25-10",
+        "lda:735626a0-9c20-48f5-9a41-4cb8ee74861f",
         "lda:15b374fc-075b-46bc-af89-035f1b111bde",
-        "lda:a8c5f1d2-0cdf-487d-86c7-a1f25fbe626a",
+        "lda:f73cea5a-1a47-4a69-be75-73de58de16a9",
+        "dsca:25-88",
+        "dsca:25-10",
         "lda:79c081bd-371f-4cb0-87a7-0e467ebd7275",
-        "lda:632193bd-fd93-4218-95c4-21f3572be2ec"
+        "lda:0f78f6c5-0768-43b6-b950-5d02a496b78c",
+        "lda:632193bd-fd93-4218-95c4-21f3572be2ec",
+        "lda:95355046-63dc-442e-a808-5599387fa24a",
+        "lda:5c1abbc2-8016-41f7-8fe2-3599654c3c35",
+        "lda:1123d22d-4536-469c-ac24-9d62f88f5159",
+        "lda:a8c5f1d2-0cdf-487d-86c7-a1f25fbe626a"
       ],
       "why": "lda filing on 2025-07-24 preceded dsca on 2025-08-06 by 13d."
     },
     {
       "type": "actor_concentration",
-      "title": "5 firms lobbying on Norway issues",
-      "score": 6.787,
-      "countries": [
-        "NO"
-      ],
-      "signal_keys": [
-        "lda:a3aea893-0332-41c8-b112-7512f2ba2649",
-        "lda:5bdef9fd-f6ee-41f9-8787-b6cddaff1dbf",
-        "lda:fedcb26c-4373-4c37-8a03-c4baab850721",
-        "lda:fa2f6a39-cfa8-4072-a3b9-0ba3226a60bb",
-        "lda:e3dfbde7-e208-4d57-a2d2-7e35cf7aed5e",
-        "lda:eb480721-bffb-42a2-a5f3-e96647402b0f"
-      ],
-      "why": "5 distinct lobbying firms on NO in 325d."
-    },
-    {
-      "type": "actor_concentration",
       "title": "12 firms lobbying on France issues",
-      "score": 6.299,
+      "score": 6.195,
       "countries": [
         "FR"
       ],
@@ -20724,7 +21156,7 @@
     {
       "type": "actor_concentration",
       "title": "15 firms lobbying on Switzerland issues",
-      "score": 5.901,
+      "score": 5.803,
       "countries": [
         "CH"
       ],
@@ -20752,7 +21184,7 @@
     {
       "type": "actor_concentration",
       "title": "15 firms lobbying on Germany issues",
-      "score": 5.866,
+      "score": 5.769,
       "countries": [
         "DE"
       ],

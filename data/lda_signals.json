@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-07T22:51:21.650361+00:00",
+  "generated_at": "2026-04-08T22:54:16.816736+00:00",
   "sources": [
     "lda"
   ],
@@ -8082,6 +8082,346 @@
       ],
       "url": "https://lda.gov/filings/public/filing/dcca1de5-ef8d-4d83-a622-ce41166cca2b/print/",
       "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "cdcfa8f4-3b65-4250-b674-bab50c465c16",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Defense, Budget \u2014 Simetri via Grayrobinson Pa",
+      "value_usd": null,
+      "description": "Issues related to medical simulation technology for military medical personnel training.",
+      "lobbying_firm": "Grayrobinson Pa",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/cdcfa8f4-3b65-4250-b674-bab50c465c16/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "47cccaf0-2dd2-4dde-98cf-c01420e1126e",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Defense \u2014 Arktos via J.A. Green And Company (Formerly Llc)",
+      "value_usd": null,
+      "description": "DEF",
+      "lobbying_firm": "J.A. Green And Company (Formerly Llc)",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/47cccaf0-2dd2-4dde-98cf-c01420e1126e/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "7775ec88-303d-42e8-9394-5abe875a2520",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Trade, Budget, Government \u2014 Webb County, Tx via Akin Gump Strauss Hauer & Feld",
+      "value_usd": null,
+      "description": "Matters related to federal funding and government operations.",
+      "lobbying_firm": "Akin Gump Strauss Hauer & Feld",
+      "issue_codes": [
+        "BUD",
+        "GOV",
+        "TRA",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/7775ec88-303d-42e8-9394-5abe875a2520/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "7450e976-8ab5-491f-ab5e-12d3a4c02381",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Science/Technology, Budget \u2014 Quantinuum Llc via Xla Advisors, Llc",
+      "value_usd": null,
+      "description": "Quantum computing and technology issues. Energy and water development appropriations.",
+      "lobbying_firm": "Xla Advisors, Llc",
+      "issue_codes": [
+        "BUD",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/7450e976-8ab5-491f-ab5e-12d3a4c02381/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "cdf8794b-9eec-478c-b0c7-a763d6481959",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Defense, Budget, Clean Air/Water \u2014 Town Of Benson via Electus Governmental Affairs",
+      "value_usd": null,
+      "description": "Needing appropriations for updates to water and sewer infrastructure.",
+      "lobbying_firm": "Electus Governmental Affairs",
+      "issue_codes": [
+        "BUD",
+        "CAW",
+        "DEF",
+        "UTI",
+        "WAS"
+      ],
+      "url": "https://lda.gov/filings/public/filing/cdf8794b-9eec-478c-b0c7-a763d6481959/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "80828abc-bda9-4a2b-a9bd-f44f8dcbb520",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Defense \u2014 Stone Solutions And Research Collective via Az Dc Consulting, Llc",
+      "value_usd": null,
+      "description": "Represent direct interests, identify opportunities, and enable partnerships with the federal government.",
+      "lobbying_firm": "Az Dc Consulting, Llc",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/80828abc-bda9-4a2b-a9bd-f44f8dcbb520/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "98e73f8b-6f97-43b7-a31c-e23ccff6423a",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Defense, Veterans \u2014 Cabana Mental Health via The Dionne Company",
+      "value_usd": null,
+      "description": "Advocating for mental health services within the military Onesource program. Educate and advocate for mental health serv\u2026",
+      "lobbying_firm": "The Dionne Company",
+      "issue_codes": [
+        "DEF",
+        "VET"
+      ],
+      "url": "https://lda.gov/filings/public/filing/98e73f8b-6f97-43b7-a31c-e23ccff6423a/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "c4638d94-b9e6-4732-a92d-62abe76a3550",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Science/Technology, Budget, Consumer Issues \u2014 Toshiba America, Inc. via Barnes & Thornburg, Llp",
+      "value_usd": null,
+      "description": "FY27 Commerce, Justice, Science Appropriations bill; FY27 Energy-Water Appropriations bill; FY27 Homeland Security Appro\u2026",
+      "lobbying_firm": "Barnes & Thornburg, Llp",
+      "issue_codes": [
+        "BUD",
+        "CPI",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/c4638d94-b9e6-4732-a92d-62abe76a3550/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "27e9f9be-4d5b-4889-b173-d00198b25580",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Science/Technology, Trade, Consumer Issues \u2014 Dropbox via H&M Strategies Llp",
+      "value_usd": null,
+      "description": "Issues related to patent eligibility and review, Issues related to artificial intelligence (AI), issues related to inter\u2026",
+      "lobbying_firm": "H&M Strategies Llp",
+      "issue_codes": [
+        "CPI",
+        "CPT",
+        "CSP",
+        "SCI",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/27e9f9be-4d5b-4889-b173-d00198b25580/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "43feb0c0-f751-47e3-b91e-e67af3571f45",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-07",
+      "title": "Trade \u2014 Trapac, Llc via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "Importation of goods in connection with TraPacs port operations.",
+      "lobbying_firm": "Holland & Knight Llp",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/43feb0c0-f751-47e3-b91e-e67af3571f45/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "fa9c2db6-ae53-4fd1-be2b-d0443f67590c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Trade, Tariffs \u2014 Revolution Concrete Mixers via Lsn Partners, Llc",
+      "value_usd": null,
+      "description": "Import and export trade and tariff related issues",
+      "lobbying_firm": "Lsn Partners, Llc",
+      "issue_codes": [
+        "TAR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/fa9c2db6-ae53-4fd1-be2b-d0443f67590c/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "7e0fa91f-b42b-49b4-86a1-327ff184238f",
+      "iso": "CA",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Energy \u2014 Enbridge (U.S.) Inc. via Michael Best Strategies Llc",
+      "value_usd": null,
+      "description": "Issues related to energy, regulatory, and pipeline policy; permitting reform.",
+      "lobbying_firm": "Michael Best Strategies Llc",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/7e0fa91f-b42b-49b4-86a1-327ff184238f/print/",
+      "raw_score": 5.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "79682649-5ea8-486d-8e78-6b9bdd89afa7",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Defense \u2014 Echomav via Cassidy & Associates, Inc.",
+      "value_usd": null,
+      "description": "FY27 NDAA and Appropriations",
+      "lobbying_firm": "Cassidy & Associates, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/79682649-5ea8-486d-8e78-6b9bdd89afa7/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "017057d5-2bf6-4c9e-981d-6b67cf28ba9b",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Science/Technology \u2014 Materic, Llc via Ervin Graves Strategy Group, Llc",
+      "value_usd": null,
+      "description": "Advocating for custom manufacturing and R&D that develops and scales advanced materials for applications like electronic\u2026",
+      "lobbying_firm": "Ervin Graves Strategy Group, Llc",
+      "issue_codes": [
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/017057d5-2bf6-4c9e-981d-6b67cf28ba9b/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "71629c10-9177-42c6-bbb2-a2b1764652c8",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Defense \u2014 Airtec, Inc. via Ervin Graves Strategy Group, Llc",
+      "value_usd": null,
+      "description": "Advocating for aviation and mission support services for government and defense operations.",
+      "lobbying_firm": "Ervin Graves Strategy Group, Llc",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/71629c10-9177-42c6-bbb2-a2b1764652c8/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "5000e0bd-8925-4d06-bc2d-2d91e8ef8574",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Defense \u2014 Clark Street Associates On Behalf Of Lightpath Technologies via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "Funding for production of defense related materials.",
+      "lobbying_firm": "Holland & Knight Llp",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5000e0bd-8925-4d06-bc2d-2d91e8ef8574/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "405925fe-5486-4b48-b8bb-d73203c556df",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Defense \u2014 Owt Global via C. Baker Consulting, Inc.",
+      "value_usd": null,
+      "description": "FY 2027 President's Budget Request (Defense) FY 2027 National Defense Authorization Act (House and Senate Versions) FY 2\u2026",
+      "lobbying_firm": "C. Baker Consulting, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/405925fe-5486-4b48-b8bb-d73203c556df/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "1d67c39c-7766-4aba-8df4-82519b9eb222",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Defense \u2014 Pison Technologies via C. Baker Consulting, Inc.",
+      "value_usd": null,
+      "description": "FY 2027 President's Budget Request FY 2027 Defense Appropriations Act (House and Senate Versions)",
+      "lobbying_firm": "C. Baker Consulting, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1d67c39c-7766-4aba-8df4-82519b9eb222/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "2bf07859-28e1-4a6d-9397-ab00894023d0",
+      "iso": "NO",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Trade \u2014 Hoegh Autoliners Asa via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "Norway; International trade issues regarding Hoeghs North American operations.",
+      "lobbying_firm": "Holland & Knight Llp",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/2bf07859-28e1-4a6d-9397-ab00894023d0/print/",
+      "raw_score": 5.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "041666d7-3b95-4d6f-93c2-000381defbf4",
+      "iso": "AU",
+      "source": "lda",
+      "signal_date": "2026-04-08",
+      "title": "Defense, Foreign Affairs, Budget \u2014 Fivecast Pty Ltd via Ark Strategy",
+      "value_usd": null,
+      "description": "Australia; FY appropriations (Defense, Intelligence, State Dept, DHS)",
+      "lobbying_firm": "Ark Strategy",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "FOR",
+        "INT"
+      ],
+      "url": "https://lda.gov/filings/public/filing/041666d7-3b95-4d6f-93c2-000381defbf4/print/",
+      "raw_score": 5.0,
       "weight": 1.0
     }
   ]
