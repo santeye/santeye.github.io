@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-08T22:54:16.816736+00:00",
+  "generated_at": "2026-04-09T22:54:12.684322+00:00",
   "sources": [
     "lda"
   ],
@@ -8422,6 +8422,23 @@
       ],
       "url": "https://lda.gov/filings/public/filing/041666d7-3b95-4d6f-93c2-000381defbf4/print/",
       "raw_score": 5.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "1d77f055-6814-4bfa-ab53-2a9efc454ddf",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-09",
+      "title": "Science/Technology, Budget \u2014 Windward Fund via Esp Advisors, Llc",
+      "value_usd": null,
+      "description": "Issues related to ocean carbon dioxide removal research and development; S. 3910/H.R.7656 ReSCUE Oceans Act, FY2027 Comm\u2026",
+      "lobbying_firm": "Esp Advisors, Llc",
+      "issue_codes": [
+        "BUD",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1d77f055-6814-4bfa-ab53-2a9efc454ddf/print/",
+      "raw_score": null,
       "weight": 1.0
     }
   ]
