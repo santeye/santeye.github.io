@@ -20,6 +20,7 @@ Fields stripped from source records: raw_score, weight (both unused downstream).
 
 import json
 import glob
+import hashlib
 import math
 import os
 import statistics
@@ -28,13 +29,20 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+try:
+    import anthropic as _anthropic
+    _ANTHROPIC_AVAILABLE = True
+except ImportError:
+    _ANTHROPIC_AVAILABLE = False
+
 sys.path.insert(0, str(Path(__file__).parent))
 from utils import (
     load_profile, SOURCE_LAYER_MAP, source_quality, dollar_modifier, FR_POLICY_RE,
 )
 
-DATA_DIR    = os.path.join(os.path.dirname(__file__), "..", "data")
-OUTPUT_FILE = os.path.join(DATA_DIR, "signals.json")
+DATA_DIR         = os.path.join(os.path.dirname(__file__), "..", "data")
+OUTPUT_FILE      = os.path.join(DATA_DIR, "signals.json")
+PROSE_CACHE_FILE = os.path.join(DATA_DIR, "prose_cache.json")
 
 DATE_CUTOFF = "2025-01-01"   # signals before this date are excluded from output
 
@@ -398,6 +406,126 @@ def compute_themes(enriched: list) -> list:
     return themes[:20]
 
 
+def _load_anthropic_key() -> str:
+    key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not key:
+        env_path = Path(__file__).parent.parent / ".env"
+        try:
+            with open(env_path) as f:
+                for line in f:
+                    if line.startswith("ANTHROPIC_API_KEY="):
+                        key = line.strip().split("=", 1)[1]
+                        break
+        except FileNotFoundError:
+            pass
+    return key
+
+
+def _prose_cache_key(theme: dict) -> str:
+    raw = f"{theme['type']}|{','.join(sorted(theme['countries']))}|{theme['title']}"
+    return hashlib.sha256(raw.encode()).hexdigest()[:16]
+
+
+_PROSE_SYSTEM = (
+    "You are an intelligence analyst writing briefing notes for a senior analyst who monitors "
+    "geopolitical risk through government apparatus signals — procurement filings, arms sales, "
+    "sanctions designations, lobbying activity, financial flows.\n\n"
+    "Write exactly two things for each detected pattern:\n"
+    "1. One sentence of geopolitical context (what this pattern typically precedes or indicates "
+    "in historical and structural terms)\n"
+    "2. Two \"watch for\" items — concrete, near-term, specific to the countries and sources involved\n\n"
+    "Rules:\n"
+    "- Write for someone who already knows the subject matter. No explaining basics.\n"
+    "- The context sentence must be ≤25 words.\n"
+    "- Each watch-for item must be ≤15 words.\n"
+    "- Be direct. Never write \"could,\" \"might,\" or \"potentially\" in watch-for items.\n"
+    "- Ground everything in the specific countries and signal types provided.\n"
+    "- Return valid JSON only, no other text: {\"narrative_prose\": \"...\", \"watch_for\": [\"...\", \"...\"]}"
+)
+
+
+def generate_prose_for_themes(themes: list, enriched: list) -> list:
+    """Add narrative_prose and watch_for to each theme via Claude API. Cache results."""
+    # Always ensure fields are present, even if we skip generation
+    for t in themes:
+        t.setdefault("narrative_prose", "")
+        t.setdefault("watch_for", [])
+
+    if not _ANTHROPIC_AVAILABLE:
+        print("  anthropic package not installed — skipping prose generation", file=sys.stderr)
+        return themes
+
+    api_key = _load_anthropic_key()
+    if not api_key:
+        print("  ANTHROPIC_API_KEY not set — skipping prose generation", file=sys.stderr)
+        return themes
+
+    # Signal lookup by key
+    sig_lookup: dict = {_signal_key(s): s for s in enriched}
+
+    # Load cache
+    cache: dict = {}
+    try:
+        with open(PROSE_CACHE_FILE) as f:
+            cache = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+
+    client = _anthropic.Anthropic(api_key=api_key)
+    cache_updated = False
+
+    for theme in themes:
+        ck = _prose_cache_key(theme)
+        if ck in cache:
+            theme["narrative_prose"] = cache[ck].get("narrative_prose", "")
+            theme["watch_for"] = cache[ck].get("watch_for", [])
+            continue
+
+        signal_lines = []
+        for sk in theme.get("signal_keys", [])[:3]:
+            sig = sig_lookup.get(sk)
+            if sig:
+                signal_lines.append(f"- [{sig.get('source', '?')}] {sig.get('title', '')}")
+
+        user_msg = (
+            f"Pattern type: {theme['type']}\n"
+            f"Pattern title: {theme['title']}\n"
+            f"Countries involved: {', '.join(theme['countries'])}\n"
+            f"Algorithm finding: {theme['why']}\n"
+            f"Contributing signals:\n"
+            + ("\n".join(signal_lines) if signal_lines else "- (none resolved)")
+        )
+
+        try:
+            resp = client.messages.create(
+                model="claude-haiku-4-5-20251001",
+                max_tokens=200,
+                temperature=0,
+                system=_PROSE_SYSTEM,
+                messages=[{"role": "user", "content": user_msg}],
+            )
+            parsed = json.loads(resp.content[0].text)
+            prose = parsed.get("narrative_prose", "")
+            watch_for = parsed.get("watch_for", [])
+        except Exception as e:
+            print(f"  Prose generation failed for '{theme['title'][:60]}': {e}", file=sys.stderr)
+            prose = ""
+            watch_for = []
+
+        theme["narrative_prose"] = prose
+        theme["watch_for"] = watch_for
+        cache[ck] = {"narrative_prose": prose, "watch_for": watch_for}
+        cache_updated = True
+        print(f"  Prose: {theme['title'][:60]}")
+
+    if cache_updated:
+        with open(PROSE_CACHE_FILE, "w") as f:
+            json.dump(cache, f, indent=2)
+        print(f"  Prose cache updated ({len(cache)} entries → {PROSE_CACHE_FILE})")
+
+    return themes
+
+
 def main():
     pattern      = os.path.join(DATA_DIR, "*_signals.json")
     source_files = sorted(glob.glob(pattern))
@@ -456,6 +584,7 @@ def main():
     enriched.sort(key=lambda s: s.get("signal_date") or "", reverse=True)
 
     themes = compute_themes(enriched)
+    themes = generate_prose_for_themes(themes, enriched)
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),

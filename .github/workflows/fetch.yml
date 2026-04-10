@@ -64,10 +64,12 @@ jobs:
 
       - name: Run build_signals.py
         run: $PYTHON scripts/build_signals.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Commit updated data
         run: |
-          git add data/signals.json data/dsca_signals.json data/dsca_nato.json data/sam_signals.json data/ofac_signals.json data/ofac_known_uids.json data/fara_signals.json data/lda_signals.json data/federalregister_signals.json data/anchor_signals.json data/cftc_signals.json
+          git add data/signals.json data/prose_cache.json data/dsca_signals.json data/dsca_nato.json data/sam_signals.json data/ofac_signals.json data/ofac_known_uids.json data/fara_signals.json data/lda_signals.json data/federalregister_signals.json data/anchor_signals.json data/cftc_signals.json
           git commit -m "update signals [skip ci]" || echo "nothing to commit"
           git pull --rebase origin main
           git push origin main
