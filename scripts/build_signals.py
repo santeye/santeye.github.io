@@ -427,29 +427,23 @@ def _prose_cache_key(theme: dict) -> str:
 
 
 _PROSE_SYSTEM = (
-    "You are an intelligence analyst writing briefing notes for a senior analyst who monitors "
-    "geopolitical risk through government apparatus signals — procurement filings, arms sales, "
-    "sanctions designations, lobbying activity, financial flows.\n\n"
-    "Write exactly two things for each detected pattern:\n"
-    "1. One sentence of geopolitical context (what this pattern typically precedes or indicates "
-    "in historical and structural terms)\n"
-    "2. Two \"watch for\" items — concrete, near-term, specific to the countries and sources involved\n\n"
-    "Rules:\n"
-    "- Write for someone who already knows the subject matter. No explaining basics.\n"
-    "- The context sentence must be ≤25 words.\n"
-    "- Each watch-for item must be ≤15 words.\n"
-    "- Be direct. Never write \"could,\" \"might,\" or \"potentially\" in watch-for items.\n"
-    "- Ground everything in the specific countries and signal types provided.\n"
-    "- Return valid JSON only, no other text: {\"narrative_prose\": \"...\", \"watch_for\": [\"...\", \"...\"]}"
+    "You are writing intelligence briefing notes based strictly on government filing data and your "
+    "training knowledge about named entities. You never speculate. You never infer intent. You state "
+    "only what is documented in the data or publicly known about the entities named. If you are "
+    "uncertain, you say nothing rather than guess. Return valid JSON only: "
+    "{\"headline\": \"...\", \"body\": \"...\", \"connections\": [...], \"dig_into\": [...]}"
 )
 
 
 def generate_prose_for_themes(themes: list, enriched: list) -> list:
-    """Add narrative_prose and watch_for to each theme via Claude API. Cache results."""
-    # Always ensure fields are present, even if we skip generation
+    """Add narrative dict to each theme via Claude API. Cache results.
+
+    Top 10 themes (by score) get narrative generated. Themes ranked 10+ get narrative: null.
+    Cache entries with old schema keys (narrative_prose, watch_for) are discarded as stale.
+    """
+    # Default all themes to null; will be filled in for top 10 below
     for t in themes:
-        t.setdefault("narrative_prose", "")
-        t.setdefault("watch_for", [])
+        t["narrative"] = None
 
     if not _ANTHROPIC_AVAILABLE:
         print("  anthropic package not installed — skipping prose generation", file=sys.stderr)
@@ -463,60 +457,110 @@ def generate_prose_for_themes(themes: list, enriched: list) -> list:
     # Signal lookup by key
     sig_lookup: dict = {_signal_key(s): s for s in enriched}
 
-    # Load cache
+    # Build iso → list-of-signals index for context lookup
+    by_iso: dict = {}
+    for s in enriched:
+        iso = s.get("iso")
+        if iso and iso not in ("XX", "US"):
+            by_iso.setdefault(iso, []).append(s)
+
+    # Load cache — discard entries with old schema
     cache: dict = {}
     try:
         with open(PROSE_CACHE_FILE) as f:
-            cache = json.load(f)
+            raw_cache = json.load(f)
+        for k, v in raw_cache.items():
+            if isinstance(v, dict) and "narrative" in v and "narrative_prose" not in v and "watch_for" not in v:
+                cache[k] = v
     except (FileNotFoundError, json.JSONDecodeError):
         pass
 
     client = _anthropic.Anthropic(api_key=api_key)
     cache_updated = False
 
-    for theme in themes:
+    today = datetime.now(timezone.utc).date()
+
+    for theme in themes[:10]:
         ck = _prose_cache_key(theme)
         if ck in cache:
-            theme["narrative_prose"] = cache[ck].get("narrative_prose", "")
-            theme["watch_for"] = cache[ck].get("watch_for", [])
+            theme["narrative"] = cache[ck]["narrative"]
             continue
 
-        signal_lines = []
-        for sk in theme.get("signal_keys", [])[:3]:
+        # Build contributing signal details (up to 5 from signal_keys)
+        theme_signal_keys = set(theme.get("signal_keys", []))
+        contrib_lines = []
+        for sk in theme.get("signal_keys", [])[:5]:
             sig = sig_lookup.get(sk)
-            if sig:
-                signal_lines.append(f"- [{sig.get('source', '?')}] {sig.get('title', '')}")
+            if not sig:
+                continue
+            parts = [f"[{sig.get('source', '?')}] {sig.get('title', '')}"]
+            if sig.get("signal_date"):
+                parts.append(f"date={sig['signal_date']}")
+            if sig.get("value_usd"):
+                parts.append(f"value=${sig['value_usd']:,.0f}")
+            if sig.get("description"):
+                parts.append(f"description={sig['description'][:200]}")
+            contrib_lines.append("- " + " | ".join(parts))
+
+        # Build context signals: same countries, last 90 days, not already in signal_keys (up to 10)
+        context_lines = []
+        theme_countries = theme.get("countries", [])
+        context_seen: set = set()
+        for iso in theme_countries:
+            for s in by_iso.get(iso, []):
+                sk = _signal_key(s)
+                if sk in theme_signal_keys or sk in context_seen:
+                    continue
+                date_str = s.get("signal_date", "")
+                try:
+                    sd = datetime.strptime(date_str[:10], "%Y-%m-%d").date()
+                    if (today - sd).days > 90:
+                        continue
+                except (ValueError, TypeError):
+                    continue
+                context_seen.add(sk)
+                context_lines.append(
+                    f"- [{s.get('source', '?')}] {s.get('title', '')} ({date_str})"
+                )
+                if len(context_lines) >= 10:
+                    break
+            if len(context_lines) >= 10:
+                break
 
         user_msg = (
             f"Pattern type: {theme['type']}\n"
             f"Pattern title: {theme['title']}\n"
-            f"Countries involved: {', '.join(theme['countries'])}\n"
-            f"Algorithm finding: {theme['why']}\n"
-            f"Contributing signals:\n"
-            + ("\n".join(signal_lines) if signal_lines else "- (none resolved)")
+            f"Score: {theme['score']}\n"
+            f"Countries involved: {', '.join(theme_countries)}\n"
+            f"Algorithm finding: {theme['why']}\n\n"
+            f"Contributing signals (primary):\n"
+            + ("\n".join(contrib_lines) if contrib_lines else "- (none resolved)")
+            + "\n\nOther signals from same countries (last 90 days):\n"
+            + ("\n".join(context_lines) if context_lines else "- (none)")
         )
 
         try:
             resp = client.messages.create(
-                model="claude-haiku-4-5-20251001",
-                max_tokens=200,
+                model="claude-sonnet-4-6",
+                max_tokens=400,
                 temperature=0,
                 system=_PROSE_SYSTEM,
                 messages=[{"role": "user", "content": user_msg}],
             )
             parsed = json.loads(resp.content[0].text)
-            prose = parsed.get("narrative_prose", "")
-            watch_for = parsed.get("watch_for", [])
+            narrative = {
+                "headline":    parsed.get("headline", ""),
+                "body":        parsed.get("body", ""),
+                "connections": parsed.get("connections", []),
+                "dig_into":    parsed.get("dig_into", []),
+            }
+            theme["narrative"] = narrative
+            cache[ck] = {"narrative": narrative}
+            cache_updated = True
+            print(f"  Prose: {theme['title'][:60]}")
         except Exception as e:
             print(f"  Prose generation failed for '{theme['title'][:60]}': {e}", file=sys.stderr)
-            prose = ""
-            watch_for = []
-
-        theme["narrative_prose"] = prose
-        theme["watch_for"] = watch_for
-        cache[ck] = {"narrative_prose": prose, "watch_for": watch_for}
-        cache_updated = True
-        print(f"  Prose: {theme['title'][:60]}")
+            theme["narrative"] = None
 
     if cache_updated:
         with open(PROSE_CACHE_FILE, "w") as f:
