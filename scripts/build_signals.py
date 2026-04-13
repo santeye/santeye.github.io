@@ -150,7 +150,7 @@ def compute_themes(enriched: list) -> list:
 
     for principal, sigs in by_principal.items():
         registrants = {s.get("registrant") for s in sigs if s.get("registrant")}
-        if len(registrants) < 2:
+        if len(registrants) < 3:
             continue
         isos = [s.get("iso") for s in sigs if s.get("iso") and s.get("iso") not in ("XX", "US")]
         iso = isos[0] if isos else "XX"
@@ -178,40 +178,57 @@ def compute_themes(enriched: list) -> list:
             "why": f"{firm_count} distinct registrants for {principal} in {window_days}d. Baseline: 1–2 per principal.",
         })
 
-    # LDA: group by iso
+    # LDA: group by lobbying_firm — flag a single firm representing multiple foreign-country clients
+    # "Multiple firms on one country" is meaningless (that's just an active lobbying ecosystem).
+    # "One firm with multiple foreign-country clients simultaneously" is actual concentration.
     lda_sigs = [s for s in enriched if s.get("source") == "lda"
-                and s.get("iso") not in (None, "XX", "US")]
-    by_iso_lda: dict = {}
+                and s.get("iso") not in (None, "XX", "US")
+                and s.get("lobbying_firm")]
+    by_firm: dict = {}
     for s in lda_sigs:
-        by_iso_lda.setdefault(s["iso"], []).append(s)
+        by_firm.setdefault(s["lobbying_firm"], []).append(s)
 
-    for iso, sigs in by_iso_lda.items():
-        firms = {s.get("lobbying_firm") for s in sigs if s.get("lobbying_firm")}
-        if len(firms) < 2:
+    for firm, sigs in by_firm.items():
+        # Count distinct foreign ISOs this firm is representing
+        isos_represented = {s["iso"] for s in sigs}
+        # Established multi-country lobbying shops (Akin Gump, Holland & Knight, etc.)
+        # always represent many countries — that's their business model, not a signal.
+        # Only flag firms whose total foreign-country footprint in our data is ≤ 6.
+        if len(isos_represented) > 6:
             continue
-        ps = prof_score(sigs[0])
+        if len(isos_represented) < 3:
+            continue
+        # Require at least 2 represented countries to have structural score ≥ 5
+        # "Firm lobbies for Australia, Canada, New Zealand" is not a signal
+        high_interest = sum(
+            1 for iso in isos_represented
+            for s in [next((x for x in sigs if x.get("iso") == iso), None)]
+            if s and (s.get("profile") or {}).get("score", 0) >= 5
+        )
+        if high_interest < 2:
+            continue
         most_recent_days = min((days_ago(s.get("signal_date")) for s in sigs), default=9999)
         recency_w = math.exp(-most_recent_days / 60)
-        firm_count = len(firms)
-        score = math.log2(firm_count + 1) * (ps + 1) * recency_w * 0.5
+        # Weight by sum of profile scores of represented countries
+        ps_sum = sum(
+            max((s.get("profile") or {}).get("score") or 0 for s in sigs if s.get("iso") == iso)
+            for iso in isos_represented
+        )
+        iso_count = len(isos_represented)
+        score = math.log2(iso_count + 1) * (ps_sum / iso_count + 1) * recency_w
         if score <= 1.0:
             continue
-        country_name = profile_name(sigs[0])
-        dates = sorted([s.get("signal_date", "") for s in sigs if s.get("signal_date")])
-        try:
-            window_days = (
-                datetime.strptime(dates[-1][:10], "%Y-%m-%d").date() -
-                datetime.strptime(dates[0][:10], "%Y-%m-%d").date()
-            ).days if len(dates) >= 2 else 0
-        except ValueError:
-            window_days = 0
+        country_names = []
+        for iso in sorted(isos_represented):
+            iso_sigs = [s for s in sigs if s.get("iso") == iso]
+            country_names.append(profile_name(iso_sigs[0]) if iso_sigs else iso)
         themes.append({
             "type": "actor_concentration",
-            "title": f"{firm_count} firms lobbying on {country_name} issues",
+            "title": f"{firm} lobbying for {iso_count} countries simultaneously",
             "score": round(score, 3),
-            "countries": [iso],
+            "countries": sorted(isos_represented),
             "signal_keys": [_signal_key(s) for s in sigs],
-            "why": f"{firm_count} distinct lobbying firms on {iso} in {window_days}d.",
+            "why": f"{firm} filed LDA disclosures for {', '.join(country_names[:5])}{'...' if iso_count > 5 else ''} in the same period.",
         })
 
     # ── Algorithm 2: Velocity Anomaly ────────────────────────────────────────
@@ -267,6 +284,14 @@ def compute_themes(enriched: list) -> list:
         })
 
     # ── Algorithm 3: Layer Sequence Detection ────────────────────────────────
+    #
+    # Approach: for each country, count quality-weighted cross-layer pairs in each
+    # historical 30-day window. Flag only when the current window is anomalously
+    # high vs. the country's own baseline. This prevents countries that are simply
+    # active (many signals → many chance pairs) from dominating.
+    #
+    # Window tightened from 90d to 30d: a FARA filing and DSCA award 3 months apart
+    # is not a meaningful sequence. 30 days is tight enough to suggest temporal coupling.
 
     MEANINGFUL_SEQ = {
         ("influence", "military"),
@@ -282,52 +307,95 @@ def compute_themes(enriched: list) -> list:
     for s in seq_sigs:
         by_iso_seq.setdefault(s["iso"], []).append(s)
 
-    for iso, sigs in by_iso_seq.items():
-        sigs_sorted = sorted(sigs, key=lambda s: s["signal_date"])
-        valid_pairs = []
-        country_score = 0.0
-
-        for i, sig_a in enumerate(sigs_sorted):
-            da_str = sig_a["signal_date"]
+    def count_pairs_in_window(sigs_sorted: list, window_start_days: int, window_end_days: int) -> float:
+        """Quality-weighted pair count for signals whose signal_date falls in [window_start_days, window_end_days) ago."""
+        window_sigs = [s for s in sigs_sorted
+                       if window_end_days > days_ago(s["signal_date"]) >= window_start_days]
+        total = 0.0
+        for i, sig_a in enumerate(window_sigs):
             try:
-                da = datetime.strptime(da_str[:10], "%Y-%m-%d").date()
+                da = datetime.strptime(sig_a["signal_date"][:10], "%Y-%m-%d").date()
             except ValueError:
                 continue
-            for sig_b in sigs_sorted[i + 1:]:
-                db_str = sig_b["signal_date"]
+            for sig_b in window_sigs[i + 1:]:
                 try:
-                    db = datetime.strptime(db_str[:10], "%Y-%m-%d").date()
+                    db = datetime.strptime(sig_b["signal_date"][:10], "%Y-%m-%d").date()
                 except ValueError:
                     continue
                 if db <= da:
                     continue
                 gap = (db - da).days
-                if gap > 90:
-                    break  # sorted, so all further sig_b are also too far
+                if gap > 30:
+                    break
                 layer_a, layer_b = sig_a.get("layer"), sig_b.get("layer")
                 if not layer_a or not layer_b or layer_a == layer_b:
                     continue
                 if (layer_a, layer_b) not in MEANINGFUL_SEQ:
                     continue
-                pair_score = sig_a.get("quality", 0) * sig_b.get("quality", 0) * math.exp(-gap / 30)
+                total += sig_a.get("quality", 0) * sig_b.get("quality", 0) * math.exp(-gap / 15)
+        return total
+
+    for iso, sigs in by_iso_seq.items():
+        sigs_sorted = sorted(sigs, key=lambda s: s["signal_date"])
+
+        oldest_days = max(days_ago(s["signal_date"]) for s in sigs)
+        n_prior = oldest_days // 30
+        if n_prior < 3:
+            continue  # not enough history for a baseline
+
+        current_pairs = count_pairs_in_window(sigs_sorted, 0, 30)
+        if current_pairs <= 0:
+            continue
+
+        prior_counts = [count_pairs_in_window(sigs_sorted, w * 30, (w + 1) * 30)
+                        for w in range(1, n_prior + 1)]
+        baseline_mean = statistics.mean(prior_counts)
+        baseline_std = statistics.stdev(prior_counts) if len(prior_counts) >= 3 else 1.0
+        seq_z = (current_pairs - baseline_mean) / max(baseline_std, 0.1)
+
+        if seq_z < 1.5:
+            continue  # not anomalous vs this country's own history
+
+        # Find the best pair in the current window for the title/why
+        current_sigs = [s for s in sigs_sorted if days_ago(s["signal_date"]) < 30]
+        valid_pairs = []
+        for i, sig_a in enumerate(current_sigs):
+            try:
+                da = datetime.strptime(sig_a["signal_date"][:10], "%Y-%m-%d").date()
+            except ValueError:
+                continue
+            for sig_b in current_sigs[i + 1:]:
+                try:
+                    db = datetime.strptime(sig_b["signal_date"][:10], "%Y-%m-%d").date()
+                except ValueError:
+                    continue
+                if db <= da:
+                    continue
+                gap = (db - da).days
+                if gap > 30:
+                    break
+                layer_a, layer_b = sig_a.get("layer"), sig_b.get("layer")
+                if not layer_a or not layer_b or layer_a == layer_b:
+                    continue
+                if (layer_a, layer_b) not in MEANINGFUL_SEQ:
+                    continue
                 p = sig_a.get("profile") or sig_b.get("profile")
                 ps = (p.get("score") if p else None) or 0
-                w_score = pair_score * math.log2(ps + 2)
+                w_score = sig_a.get("quality", 0) * sig_b.get("quality", 0) * math.log2(ps + 2)
                 valid_pairs.append({
                     "sig_a": sig_a, "sig_b": sig_b,
-                    "gap": gap, "pair_score": pair_score, "w_score": w_score,
+                    "gap": gap, "w_score": w_score,
                     "layer_a": layer_a, "layer_b": layer_b,
                 })
-                country_score += pair_score
 
-        if country_score <= 0.3 or not valid_pairs:
+        if not valid_pairs:
             continue
 
         best = max(valid_pairs, key=lambda p: p["w_score"])
         p = sigs_sorted[0].get("profile")
         ps = (p.get("score") if p else None) or 0
         country_name = profile_name(sigs_sorted[0])
-        score = country_score * math.log2(ps + 2)
+        score = seq_z * math.log2(ps + 2) * current_pairs
 
         involved = list({_signal_key(p["sig_a"]) for p in valid_pairs} |
                         {_signal_key(p["sig_b"]) for p in valid_pairs})
@@ -338,9 +406,10 @@ def compute_themes(enriched: list) -> list:
             "countries": [iso],
             "signal_keys": involved,
             "why": (
-                f"{best['sig_a'].get('source')} filing on {best['sig_a']['signal_date']} "
-                f"preceded {best['sig_b'].get('source')} on {best['sig_b']['signal_date']} "
-                f"by {best['gap']}d."
+                f"{best['sig_a'].get('source')} on {best['sig_a']['signal_date']} "
+                f"→ {best['sig_b'].get('source')} on {best['sig_b']['signal_date']} "
+                f"({best['gap']}d). Current window {current_pairs:.2f} weighted pairs "
+                f"vs {baseline_mean:.2f} baseline ({seq_z:+.1f}\u03c3)."
             ),
         })
 
@@ -489,7 +558,11 @@ def generate_prose_for_themes(themes: list, enriched: list) -> list:
 
     today = datetime.now(timezone.utc).date()
 
-    for theme in themes[:10]:
+    # Only generate prose for themes with score above floor — weak themes stay null
+    # and are invisible in the narratives panel. Better 3 real narratives than 10 noisy ones.
+    PROSE_SCORE_FLOOR = 15.0
+
+    for theme in [t for t in themes[:10] if t.get("score", 0) >= PROSE_SCORE_FLOOR]:
         ck = _prose_cache_key(theme)
         if ck in cache:
             theme["narrative"] = cache[ck]["narrative"]

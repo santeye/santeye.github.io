@@ -68,5 +68,96 @@
       "body": "16 firms active in 322 days span CFIUS defense, tariff relief, tech regulation, and USPS contracts \u2014 covering nearly every friction point in US-China commercial policy. This breadth suggests Chinese-linked corporates are anticipating a broad regulatory tightening, not reacting to isolated actions.",
       "prompt": "Across these five LDA filings \u2014 Haier/GE Appliances via Mehlman Consulting (energy/manufacturing/supply chain), Grand Pharmaceutical via Checkmate (CFIUS), Arashi Vision via DGA Group (tech/consumer products), Primemax Medical via Mayer Brown (tariffs), and Win.It America via Carmen Group (USPS contract) \u2014 which House or Senate subcommittees have jurisdiction over each issue area, and how does the lobbying target distribution compare to the current legislative calendar for tariff authority, CFIUS reform, and FCC equipment rules? Which of these engagements is most likely to produce a near-term regulatory outcome?"
     }
+  },
+  "0ec51835a6d9c9e7": {
+    "narrative": {
+      "headline": "AUKUS submarine weapons integration driving UK lobbying surge",
+      "body": "A $1B DSCA notification for AUKUS-specific vertical launch tubes and common weapon launchers followed UK-linked LDA filings on patents and AI risk within days. The sequencing suggests UK defense contractors are pre-positioning on IP and technology-control frameworks ahead of AUKUS submarine integration contracts.",
+      "prompt": "The March 20 DSCA notification covers AUKUS-specific vertical deployment tubes and common weapon launchers for the UK at $1B. Which HASC or SASC subcommittees have jurisdiction over AUKUS submarine weapons integration? Given the EZ Lynk patent lobbying (UK, March 16) and the AUKUS common weapon launcher program, are there active patent disputes or licensing frameworks that could affect U.S. industry teaming arrangements for SSN-AUKUS vertical launch systems? What public AUKUS industrial base agreements govern IP ownership on jointly developed submarine weapons?"
+    }
+  },
+  "b0c12edb6ea66dd3": {
+    "narrative": {
+      "headline": "Holland & Knight running a de facto foreign commercial lobbying practice",
+      "body": "Nine simultaneous LDA filings span defense procurement (H&K, CAE), pharma tariffs (Alvotech), chemical regulation (LG Chem), and shipping (H\u00f6egh) \u2014 distinct policy arenas unified by one firm. This suggests H&K is systematically positioning as the preferred single-firm solution for foreign commercial clients needing U.S. regulatory or procurement access.",
+      "prompt": "Holland & Knight filed LDA disclosures in Q1 2026 for Heckler & Koch (Germany, defense), CAE Inc. (Canada, Army procurement/FAA), LG Chem (South Korea, Lautenberg Act fees reauthorization), Alvotech (Iceland, pharma tariffs), and H\u00f6egh Autoliners (Norway, maritime trade). For each client, identify the specific House or Senate subcommittee with jurisdiction, the relevant procurement office or regulatory agency, and assess whether any of these engagements could trigger FARA registration requirements rather than LDA disclosure. Which client's activities most likely cross the LDA-to-FARA threshold given the 'educating members' framing used for H&K?"
+    }
+  },
+  "dec660884bd92ed6": {
+    "narrative": {
+      "headline": "Ballard Partners positioning as Trump-era access broker for Venezuela-adjacent deals",
+      "body": "Ballard's simultaneous filings for Knob Petroleum, Vale Maritimo, and Elo Atlantic all center on Venezuelan operations and permissions\u2014suggesting a coordinated push to exploit OFAC/sanctions relief signals. This is likely access arbitrage: clients buying Trump-connected lobbying ahead of anticipated Venezuela policy shifts.",
+      "prompt": "Ballard Partners filed LDA disclosures in Q1 2026 for Knob Petroleum Corp (Panama/Venezuela), Vale Maritimo C.A. (Venezuela), and Elo Atlantic SL (Spain/Venezuela natural resources). Analyze: What specific OFAC general licenses or Treasury/State waivers would these clients need to legally operate in Venezuela? Which House Foreign Affairs or Senate Foreign Relations subcommittees have jurisdiction over Venezuela sanctions policy? Has the Trump administration issued any Venezuela sanctions modifications since January 2025 that these filings may be anticipating?"
+    }
+  },
+  "b0c437a98ab9a164": {
+    "narrative": {
+      "headline": "Brownstein running diversified foreign-interest portfolio across 11 markets simultaneously",
+      "body": "Filings span pharma manufacturing (Lonza/CH), Chinese LED acquisition CFIUS exposure (SET/CN), Venezuelan oil (Salamander), maritime logistics, and cash payment advocacy \u2014 unrelated sectors, unified by one firm. This suggests Brownstein is deliberately building a multi-jurisdictional practice to capture tariff-era regulatory work, not a coincidence of timing.",
+      "prompt": "Sensor Electronic Technology's LDA filing cites 'issues related to planned acquisition of LED manufacturer' with a China nexus. Brownstein is the registered lobbyist. Using public CFIUS annual reports, Commerce Entity List data, and LDA filings, assess: How often do lobbying engagements tied to Chinese-linked tech acquisitions precede or accompany CFIUS mitigation negotiations? Which House or Senate subcommittees (e.g., Senate Banking, House Foreign Affairs) would have jurisdiction over a UV-LED acquisition with dual-use implications, and what does the lobbying target list likely look like?"
+    }
+  },
+  "3bc695292031ef29": {
+    "narrative": {
+      "headline": "Akin Gump consolidating tariff/trade defense across 12 jurisdictions under Section 232 surge",
+      "body": "Filings cluster around Section 232 investigations (polysilicon, steel, canned fish) and supply chain policy\u2014all pressure points from the current tariff escalation cycle. Akin Gump is likely positioning as the go-to firm for foreign-linked entities needing simultaneous USTR, Commerce, and congressional access.",
+      "prompt": "Akin Gump filed LDA disclosures for clients including United Solar Polysilicon (Oman, Section 232 polysilicon), US Steel (capital investment policy), and Mutandis USA (canned fish tariffs), all in the same reporting period. Which House Ways and Means or Senate Finance subcommittees have jurisdiction over these specific Section 232 proceedings, and how does having a single lobbying firm represent both domestic producers (US Steel, Mesabi Metallics) and foreign-linked manufacturers (United Solar Polysilicon) create potential conflicts in tariff exclusion petition processes at Commerce?"
+    }
+  },
+  "a844e2324433d221": {
+    "narrative": {
+      "headline": "Ark Strategy quietly building allied-nation defense tech portfolio in Congress",
+      "body": "Ark Strategy filed LDA disclosures for three allied clients\u2014Australian OSINT firm Fivecast, UK lab-automation firm Automata, and US drone/missile firm Terminal Autonomy\u2014all targeting Defense and appropriations committees. This suggests a deliberate strategy to bundle allied-nation dual-use tech into FY appropriations as AUKUS and Ukraine supplemental funding debates intensify.",
+      "prompt": "Ark Strategy is lobbying Congress for Fivecast Pty Ltd (Australia, OSINT/defense intelligence), Automata Technologies (UK, biolab automation), and Terminal Autonomy Inc (attritable one-way unmanned systems) across Defense, Intelligence, and State Dept appropriations. Which specific House and Senate Appropriations subcommittees have jurisdiction over each client's target programs? Are any of these clients positioned for AUKUS Pillar II technology-sharing pathways or FMS eligibility, and how does the FY2026 defense appropriations timeline affect their lobbying window? Use public LDA filings, DSCA notices, and congressional committee assignments."
+    }
+  },
+  "3adad74f4f3b155b": {
+    "narrative": {
+      "headline": "Continental Strategy building multi-sector foreign client portfolio across trade pressure points",
+      "body": "Continental Strategy filed LDA disclosures for 11 clients spanning energy, luxury goods, floriculture, and private sector councils \u2014 all sectors facing active U.S. tariff or trade policy exposure in 2025-26. The concentration suggests the firm is deliberately positioning as a one-stop shop for foreign commercial interests navigating the current protectionist environment.",
+      "prompt": "Continental Strategy LLC represents clients from Argentina, Canada, Switzerland, Chile, Colombia, Honduras, Kazakhstan, Mexico, Panama, and the British Virgin Islands under LDA filings \u2014 covering energy (Gran Tierra Energy), luxury watches (Richemont), cut flowers (Asocolflores), and Honduran private sector advocacy (COHEP). Which Senate Finance or House Ways and Means subcommittees have jurisdiction over the specific tariff schedules affecting Swiss watches (HTS Chapter 91) and Colombian floriculture (HTS Chapter 06), and how have recent Section 232/301 actions or GSP expiration affected lobbying volume for these product categories? Use public LDA and USTR data."
+    }
+  },
+  "7e4630a6a3b3ece4": {
+    "narrative": {
+      "headline": "ML Strategies bridges allied minerals and Chinese rail in same portfolio",
+      "body": "ML Strategies simultaneously lobbies for Australian rare earth funding (Iluka), Canadian critical care tech (Thornhill), and Chinese state-linked rail manufacturer CRRC MA on transportation issues. The CRRC engagement is the outlier \u2014 CRRC's parent faces federal procurement bans, making active Hill lobbying on 'transportation issues' worth scrutiny.",
+      "prompt": "CRRC MA Corporation is a subsidiary of Chinese state-owned CRRC, which is barred from federal transit contracts under the FY2020 NDAA Section 3502 and subsequent restrictions. ML Strategies filed an LDA disclosure for CRRC MA on 'transportation issues' in September 2025. Which congressional committees (House Transportation & Infrastructure, Senate Commerce) have jurisdiction over any potential waiver or carve-out proceedings? Is there pending reauthorization or appropriations language that could affect CRRC MA's existing installed-base service contracts with U.S. transit agencies, and what specific legislative vehicles might CRRC MA be targeting?"
+    }
+  },
+  "043e639e314dcd25": {
+    "narrative": {
+      "headline": "Vogel Group assembles tech/trade portfolio spanning four allied nations",
+      "body": "Vogel is simultaneously lobbying for a UAE telecom investor, Austrian photonics firm, Taiwanese chip IP holder, and Japanese HVAC manufacturer \u2014 spanning trade, patent reform, and manufacturing policy. This suggests Vogel is positioning as a specialist in allied-nation commercial interests navigating U.S. tariff and IP legislation.",
+      "prompt": "The Vogel Group has active LDA filings for AMS-OSRAM (Austria, trade/investment), Realtek Semiconductor (Taiwan, patent reform), MTN Dubai (UAE, investment alignment), and Mitsubishi Electric US (Japan, HVAC manufacturing). Given concurrent Congressional activity on semiconductor patent reform and Section 232 tariff exemptions, which House or Senate subcommittees have jurisdiction over each issue area, and how does Realtek's patent reform lobbying intersect with the PREVAIL Act or ITC reform proposals? Which of these four clients faces the most acute near-term legislative risk?"
+    }
+  },
+  "43665bfdfce434c5": {
+    "narrative": {
+      "headline": "Miller Strategies consolidating NATO-allied critical minerals and defense portfolio",
+      "body": "Miller Strategies filed LDA disclosures across six NATO/Five Eyes nations covering FMS, critical minerals, rare earths, and embodied AI supply chains in a single period. This suggests deliberate positioning as a one-stop shop for allied-nation defense-industrial clients navigating U.S. export controls and procurement.",
+      "prompt": "Miller Strategies, LLC filed LDA disclosures for Sig Sauer (FMS/small arms), Aclara Technologies (rare earth supply chains), Sibelco North America (critical minerals export), and 1X Technologies (embodied AI) \u2014 all with ties to Belgium, Canada, Germany, UK, Netherlands, or Norway. Which House or Senate subcommittees have jurisdiction over FMS reform, critical minerals export financing, and allied AI procurement simultaneously? Are any of these clients positioned to benefit from pending NDAA provisions or DoD critical minerals directives, and does concentrating this portfolio in one firm create any FARA or LDA disclosure gaps?"
+    }
+  },
+  "95f116a56bec4c69": {
+    "narrative": {
+      "headline": "Valcour LLC quietly built a four-country Middle East/UK portfolio",
+      "body": "Valcour filed LDA disclosures covering UK defense logistics (Aggreko), Iraqi banking infrastructure (Qi Card), Lebanese foreign/banking policy (Salim Khalil), and Saudi energy (Midad Energy) within a single registration cycle. This suggests Valcour is positioning as a boutique firm specializing in MENA sovereign-adjacent clients needing Washington access on sanctions, energy, and financial system issues.",
+      "prompt": "Valcour LLC holds LDA registrations for Qi Card (Iraq banking), Salim Khalil (Lebanon foreign/banking policy), Midad Energy (Saudi Arabia energy), and Aggreko US (temporary power/defense). Which House and Senate subcommittees have jurisdiction over each issue area \u2014 SFRC, HFAC, Senate Banking, House Financial Services, SASC? For the Iraq and Lebanon clients specifically, how do OFAC sanctions regimes and correspondent banking restrictions shape what lobbying outcomes are even achievable, and which executive branch offices (Treasury OIA, State NEA) would be the realistic targets?"
+    }
+  },
+  "7d4def73fbd8867c": {
+    "narrative": {
+      "headline": "Checkmate lobbying four high-scrutiny countries signals regulatory arbitrage practice",
+      "body": "Checkmate Government Relations filed LDA disclosures covering CFIUS navigation (China/Grand Pharma), energy licensing (Switzerland/Gunvor), patent issues (UK/Ez Lynk), and finance (Pakistan/Innovairrs) within a single quarter. The portfolio suggests a boutique specializing in cross-border regulatory friction points \u2014 CFIUS clearance, OFAC licensing, and IP disputes \u2014 not coincidental overlap.",
+      "prompt": "Checkmate Government Relations filed four LDA disclosures in Q4 2025\u2013Q1 2026 covering CFIUS issues for Grand Pharmaceutical Group (China), energy product licensing for Gunvor Group (Switzerland), patent matters for Ez Lynk SEZC (UK), and finance issues for Innovairrs & Co. (Pakistan). Gunvor has prior OFAC exposure; Grand Pharma is navigating CFIUS. Which House or Senate subcommittees have jurisdiction over these overlapping issues \u2014 CFIUS reform, OFAC general licensing for energy, and patent validity for foreign-registered entities \u2014 and how do their current legislative calendars affect each client's timeline?"
+    }
+  },
+  "373530c3e92b8dfc": {
+    "narrative": {
+      "headline": "Michael Best bundling allied-nation trade and defense access under one roof",
+      "body": "Michael Best holds simultaneous mandates for Canadian trade (USMCA), Korean industrial interests (KORUS), and a Cyprus-linked defense sensor firm targeting NDAA27 appropriations. This consolidation suggests the firm is positioning as a one-stop shop for allied-nation market access during a high-stakes tariff and defense-budget cycle.",
+      "prompt": "Michael Best Strategies LLC filed LDA disclosures for: (1) Business Council of Canada on USMCA, (2) Federation of Korean Industries on KORUS and tariff treatment, and (3) Theon Sensors USA / T Industries (Cyprus-linked) targeting NDAA27 and FY27 defense appropriations committees. Given that HASC and SASC are simultaneously marking up NDAA27 while USMCA and Korean tariff reviews are active, analyze whether a single lobbying firm holding mandates for foreign industry councils AND a foreign-origin defense supplier creates disclosure or conflict-of-interest risks under LDA Section 4(b) or FARA thresholds. Which congressional subcommittees have jurisdiction over all three issue areas simultaneously?"
+    }
   }
 }

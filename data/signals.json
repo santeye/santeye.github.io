@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T07:03:05.941567+00:00",
+  "generated_at": "2026-04-13T07:09:35.052721+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -20674,61 +20674,6 @@
   ],
   "themes": [
     {
-      "type": "layer_sequence",
-      "title": "Israel \u2014 influence \u2192 military sequence (2d gap)",
-      "score": 29.705,
-      "countries": [
-        "IL"
-      ],
-      "signal_keys": [
-        "lda:23a26e3e-93ac-454b-a73e-59ea7b246315",
-        "lda:43d1bd09-d27f-4a4d-a303-bd49b2c14a46",
-        "lda:230cd9be-1b81-4399-8639-6cf996d8409c",
-        "lda:7997ced4-7bd2-4e54-9743-32ec1b25a83d",
-        "anchor_budget:0001178913-26-000482",
-        "fara:7641",
-        "anchor_budget:0001178913-25-002709",
-        "lda:b831c491-998c-4299-a6f9-00d248f5f9be",
-        "fara:7653",
-        "lda:02b247dd-5ef5-4daf-8026-9aa9990c11ab",
-        "anchor_budget:0001178913-25-002470",
-        "lda:aa02bf22-db21-4088-9747-ef99383ce2d5",
-        "anchor_budget:0001178913-25-003866",
-        "lda:db02a0ad-016a-4d22-84b5-bea6199865a1",
-        "lda:95829355-4d3f-49e0-b58d-af95ef38aab2",
-        "lda:0f917ce3-cfa5-4aad-b185-7e24987959c3",
-        "dsca:25-28",
-        "lda:abb42902-e3ce-4c4f-ae90-e18e2ac50d0b",
-        "lda:61286692-a9d8-4f1b-ad6d-d9895aa68093",
-        "fara:7639",
-        "fara:7652",
-        "lda:3617103c-e5f5-499c-85e0-19d41d656217",
-        "dsca:25-87",
-        "anchor_budget:0001178913-26-000214",
-        "fara:7649",
-        "lda:89d58de4-66ae-407a-ab26-5bb91515b346",
-        "lda:b9c836ec-0f69-482f-9662-b04da19414d7",
-        "fara:7631",
-        "lda:ce764ef3-8477-4669-b8e8-2ccdd3fb177d",
-        "anchor_budget:0001178913-25-002820",
-        "anchor_budget:0001178913-25-003892",
-        "anchor_budget:0001178913-26-000537",
-        "lda:be2e4266-f514-4548-b671-3a98bfc8767c",
-        "fara:7662",
-        "lda:895d05f5-ff41-4dcf-8a87-536c24a73d6b",
-        "dsca:25-86",
-        "lda:97b0efa1-dc2e-4b8e-b4be-08932e46042e",
-        "lda:b83f409b-3e87-4419-89ec-670d9b8c4388",
-        "fara:7597"
-      ],
-      "why": "fara filing on 2025-08-11 preceded anchor_budget on 2025-08-13 by 2d.",
-      "narrative": {
-        "headline": "Elbit's $435M win follows multi-front Israeli lobbying surge",
-        "body": "A cluster of Israeli-linked LDA filings spanning defense tech, satellite appropriations, and tariff relief preceded Elbit's $435M international contract award by months. The lobbying breadth suggests coordinated market-access groundwork, with Lightsolver and ACWIS targeting the same federal funding channels Elbit likely benefits from.",
-        "prompt": "Elbit Systems recently announced ~$435M in contracts from an 'international customer.' Cross-reference Elbit's active FMS cases and DSCA notifications from 2024\u20132025. Which HASC or SASC subcommittees have jurisdiction over the likely platform categories (given Elbit's portfolio: UAS, EW, optronics)? Does Lightsolver Ltd's lobbying via Groisman LLC for 'federal agency programs and funding mechanisms' overlap with DoD SBIR/STTR or DARPA lines that could feed into Elbit's supply chain or joint programs?"
-      }
-    },
-    {
       "type": "velocity_anomaly",
       "title": "United Kingdom \u2014 5 signals in 30 days (+3.0\u03c3)",
       "score": 25.502,
@@ -20747,6 +20692,25 @@
         "headline": "AUKUS submarine tech triggers UK lobbying surge across unrelated sectors",
         "body": "A $1B DSCA notification for AUKUS vertical launch tube development anchors a 3\u03c3 spike, with four concurrent LDA filings spanning AI risk, patents, F1 security, and FY27 defense appropriations. The breadth suggests UK-adjacent interests are rushing to position before AUKUS-driven budget and regulatory decisions crystallize in FY27 markups.",
         "prompt": "The March 2026 DSCA notification covers AUKUS-specific vertical deployment tubes and common weapon launchers for the UK at $1B. Given that AUKUS submarine industrial base decisions are currently being shaped in FY27 defense appropriations, which House and Senate subcommittees have jurisdiction over the AUKUS submarine technology transfer provisions, and how does the FMS case structure for embedded UK personnel differ from standard cooperative development agreements? What procurement or authorization triggers could explain why lobbying on unrelated UK-linked issues (AI, patents, F1 event security) would cluster in the same 30-day window as this DSCA notification?"
+      }
+    },
+    {
+      "type": "layer_sequence",
+      "title": "United Kingdom \u2014 influence \u2192 military sequence (4d gap)",
+      "score": 20.317,
+      "countries": [
+        "GB"
+      ],
+      "signal_keys": [
+        "lda:0530d8ed-e131-4ee6-88ca-bd6a18e0c2ab",
+        "dsca:Submarine Combat and Weapon Systems, Tec",
+        "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406"
+      ],
+      "why": "lda on 2026-03-16 \u2192 dsca on 2026-03-20 (4d). Current window 0.85 weighted pairs vs 0.00 baseline (+8.5\u03c3).",
+      "narrative": {
+        "headline": "AUKUS submarine weapons integration driving UK lobbying surge",
+        "body": "A $1B DSCA notification for AUKUS-specific vertical launch tubes and common weapon launchers followed UK-linked LDA filings on patents and AI risk within days. The sequencing suggests UK defense contractors are pre-positioning on IP and technology-control frameworks ahead of AUKUS submarine integration contracts.",
+        "prompt": "The March 20 DSCA notification covers AUKUS-specific vertical deployment tubes and common weapon launchers for the UK at $1B. Which HASC or SASC subcommittees have jurisdiction over AUKUS submarine weapons integration? Given the EZ Lynk patent lobbying (UK, March 16) and the AUKUS common weapon launcher program, are there active patent disputes or licensing frameworks that could affect U.S. industry teaming arrangements for SSN-AUKUS vertical launch systems? What public AUKUS industrial base agreements govern IP ownership on jointly developed submarine weapons?"
       }
     },
     {
@@ -20770,291 +20734,117 @@
     },
     {
       "type": "actor_concentration",
-      "title": "31 firms lobbying on Canada issues",
-      "score": 13.801,
+      "title": "Ark Strategy lobbying for 3 countries simultaneously",
+      "score": 12.881,
       "countries": [
-        "CA"
-      ],
-      "signal_keys": [
-        "lda:7e0fa91f-b42b-49b4-86a1-327ff184238f",
-        "lda:e56bf1d6-a3ef-41b5-9273-a37f78aa63f0",
-        "lda:47801959-b318-424b-9329-f7446a5f6fe9",
-        "lda:6b26dee6-1102-468a-94ce-2aa0c5f5ca4e",
-        "lda:6772dcc3-2c44-4863-81a6-b71e8a8dbd35",
-        "lda:351df1eb-cfb8-4910-ac5e-4c994706b529",
-        "lda:6aad996f-4f1d-4679-8fc4-60cbe09b4528",
-        "lda:f9c9d651-3cd4-4bc3-803e-e940e2af1e9b",
-        "lda:ebaafdc1-22c3-42de-ab5c-841d5984c131",
-        "lda:b50587f3-c842-45a9-8d92-65aa0d275bf7",
-        "lda:80988889-06cd-46ef-8e5e-44c38795ab17",
-        "lda:b3993f13-1622-499c-b0c4-38c4bad8d91f",
-        "lda:8020cfc0-263b-4453-baa3-5e28eb88d2b7",
-        "lda:4b59ed80-25c5-41fd-b853-f006b6cbd657",
-        "lda:f31fd7e2-34fd-44e6-9e8e-16a426a9e43d",
-        "lda:29c42575-0d47-4d6b-b27e-c995584d7839",
-        "lda:6cccb16f-ed34-4943-a2ff-a978cef3f98c",
-        "lda:ff600795-95d0-4936-862f-b49e2705ac39",
-        "lda:0e0dbb72-ad2e-43f1-ab01-7583265dc345",
-        "lda:71dfc6cc-008a-4c0b-9f7f-17c3326d9c51",
-        "lda:bd1e604e-2306-4142-b028-bd3295a59167",
-        "lda:13cf1f80-3e5c-4301-8861-97921823385a",
-        "lda:702ac4b3-e1e4-44bd-a844-4e9505f85284",
-        "lda:a32cf54e-69d5-4d71-ba45-54be6d6f2fd5",
-        "lda:40faf759-e496-4f78-95d3-f94019a9af8f",
-        "lda:90686b78-ffc3-4f99-a5ca-6683607ebde6",
-        "lda:5c882f8c-5516-4a08-b6b1-6ad5e4ffc5ff",
-        "lda:8572eb93-0306-47b0-bd26-18f88b0a96f7",
-        "lda:21ea2a4f-bd90-4d49-84ca-634015307750",
-        "lda:5ab73508-fdeb-4acb-9c9a-dc752f4015bc",
-        "lda:819c7516-26f2-4d48-aee6-801acd4fd6fd",
-        "lda:fdde5926-4772-4249-921c-3f3c4dadb641",
-        "lda:8121992c-a04e-4e59-83e9-29c90e7eb0ad",
-        "lda:296d0dc2-fb65-4f28-96ef-ec5ea18f28cf",
-        "lda:547f048b-f522-4e38-8c9f-2469b9439068"
-      ],
-      "why": "31 distinct lobbying firms on CA in 371d.",
-      "narrative": {
-        "headline": "Canadian firms flooding DC lobbying as tariff pressure peaks",
-        "body": "31 firms filed Canada-related lobbying across energy, defense, and critical minerals in under 13 months \u2014 spanning pipelines (Enbridge), quantum computing (D-Wave), graphite (Alabama Graphite Partners), and hydrogen (Snow Lake). This surge likely reflects Canadian-linked entities repositioning ahead of tariff and supply-chain legislation, not routine advocacy.",
-        "prompt": "Across these LDA filings \u2014 Enbridge via Michael Best Strategies, D-Wave Government via Capitol 6 Advisors (targeting 2027 Defense and Energy Appropriations), Alabama Graphite Partners via Da Vinci Group, and Snow Lake Energy via The Roosevelt Group \u2014 which House and Senate subcommittees have jurisdiction over the specific appropriations bills being targeted? For each company, assess whether their lobbying posture suggests they are seeking tariff exemptions, defense procurement set-asides, or critical minerals designation under IRA or NDAA provisions. Which of these is best positioned given current committee composition?"
-      }
-    },
-    {
-      "type": "actor_concentration",
-      "title": "27 firms lobbying on Japan issues",
-      "score": 13.548,
-      "countries": [
-        "JP"
-      ],
-      "signal_keys": [
-        "lda:ed2f83c0-18ef-4300-b0a7-639839b209f3",
-        "lda:0bdb1928-e35e-487e-9aeb-1c5f59121872",
-        "lda:c9cb5ae1-5448-40b7-8cc2-00927a5b951a",
-        "lda:0dde4e28-b044-496a-89f0-bb48708af48c",
-        "lda:30523921-2179-41ae-85b1-cfc7a5c90066",
-        "lda:7cb03d9d-a43c-422e-aa39-c3c3f3678deb",
-        "lda:0200656a-c22b-464c-a506-6fe1932e4dde",
-        "lda:49e249e4-b75b-4d22-a1c8-d9d99ffbfb82",
-        "lda:80d3171f-5d9f-42b1-ba98-a46fd7d6d97e",
-        "lda:f27223c6-4f7d-41eb-9100-b25240c4b222",
-        "lda:9b25dd5d-c34a-434d-af7a-b14b37284403",
-        "lda:06d22dba-40b9-443b-859f-d4f7cab561d5",
-        "lda:5ae3bcfc-37a9-43cd-a6a6-4e4b4617a683",
-        "lda:68ce0b13-49cb-48d3-b36d-ad55cbf41d6e",
-        "lda:5a174cfd-ca19-4128-a134-4e9a543e8b98",
-        "lda:37568a8c-1ba5-4b4a-a678-4a28dbac67e9",
-        "lda:464a9e15-6ac9-47b2-a607-d4c8e8aac435",
-        "lda:8c105394-a307-4185-9349-81b59a35d5d0",
-        "lda:2a154258-9eb8-4a64-bbf1-16c7e925f42f",
-        "lda:d76450a7-757a-4c4c-a322-0266c61a398e",
-        "lda:d4b3502a-85a6-42a8-857b-4e03d8177c00",
-        "lda:7252a152-4a01-455b-b2ca-2a1541ad7920",
-        "lda:7078e1ea-c5eb-4e7f-8bcc-93a4a5c2c4be",
-        "lda:cf53a64b-7c90-4593-822f-32f93d60fb20",
-        "lda:8729b8cb-6077-455e-ab4f-70d57167fe18",
-        "lda:bd30daf8-16f4-4371-ad3e-106fbdac42ed",
-        "lda:3193f805-bdeb-46e7-a952-b6fa1092ec6e",
-        "lda:85d06d9a-d5c6-4ef6-b4ae-de65c791580f",
-        "lda:8b38e59b-93e1-474c-ab64-ea64757c06e1",
-        "lda:b4b95c34-7ceb-4309-a6e2-4c7aa317f67a",
-        "lda:07f61cc0-575d-4c1a-8701-12b5a4e1ce42"
-      ],
-      "why": "27 distinct lobbying firms on JP in 369d.",
-      "narrative": {
-        "headline": "Japan Inc. mobilizing across sectors ahead of tariff renegotiation",
-        "body": "27 firms filed Japan-linked lobbying disclosures across pharma, auto, energy, and steel in under a year \u2014 spanning Daiichi Sankyo on drug pricing, Toyota Tsusho on critical minerals, and US Steel on capital investment. This breadth suggests coordinated defensive positioning ahead of bilateral trade framework talks, not routine compliance.",
-        "prompt": "Using LDA filings from Daiichi Sankyo (Marshall & Popp), Sumitomo Pharma (Arnold & Porter), Kyowa Kirin (Corcoran Partners), and Toyota Tsusho (self-filing) in 2025-2026, analyze the overlap between their lobbying issue codes \u2014 trade/tariffs, drug pricing, critical minerals \u2014 and the current US-Japan trade negotiation agenda. Which Senate Finance or Ways and Means subcommittees have jurisdiction over these intersecting issues, and are any of these firms coordinating through the same trade associations or coalitions?"
-      }
-    },
-    {
-      "type": "layer_sequence",
-      "title": "Canada \u2014 influence \u2192 military sequence (7d gap)",
-      "score": 11.856,
-      "countries": [
-        "CA"
-      ],
-      "signal_keys": [
-        "lda:40faf759-e496-4f78-95d3-f94019a9af8f",
-        "lda:bd1e604e-2306-4142-b028-bd3295a59167",
-        "lda:0e0dbb72-ad2e-43f1-ab01-7583265dc345",
-        "dsca:25-76",
-        "lda:29c42575-0d47-4d6b-b27e-c995584d7839",
-        "lda:4b59ed80-25c5-41fd-b853-f006b6cbd657",
-        "lda:90686b78-ffc3-4f99-a5ca-6683607ebde6",
-        "lda:b3993f13-1622-499c-b0c4-38c4bad8d91f",
-        "lda:80988889-06cd-46ef-8e5e-44c38795ab17",
-        "lda:a32cf54e-69d5-4d71-ba45-54be6d6f2fd5",
-        "dsca:25-98",
-        "dsca:25-40",
-        "lda:5c882f8c-5516-4a08-b6b1-6ad5e4ffc5ff",
-        "lda:f31fd7e2-34fd-44e6-9e8e-16a426a9e43d",
-        "fara:7651",
-        "lda:13cf1f80-3e5c-4301-8861-97921823385a",
-        "lda:702ac4b3-e1e4-44bd-a844-4e9505f85284",
-        "lda:71dfc6cc-008a-4c0b-9f7f-17c3326d9c51",
-        "lda:ff600795-95d0-4936-862f-b49e2705ac39",
-        "lda:8020cfc0-263b-4453-baa3-5e28eb88d2b7",
-        "lda:6cccb16f-ed34-4943-a2ff-a978cef3f98c"
-      ],
-      "why": "fara filing on 2025-09-24 preceded dsca on 2025-10-01 by 7d.",
-      "narrative": {
-        "headline": "Canada locks in $1.75B HIMARS sale amid active tariff lobbying",
-        "body": "A $1.75B HIMARS DSCA notification followed FARA registration and multiple Canadian trade/auto tariff LDA filings within days. Canada is likely using defense procurement commitments to offset U.S. trade pressure and demonstrate alliance burden-sharing.",
-        "prompt": "The October 2025 DSCA notification approved a $1.75B HIMARS sale to Canada. Analyze how Canada has historically used FMS purchases to manage bilateral trade friction with the U.S. Which Senate/House subcommittees oversee both the HIMARS FMS case and U.S.-Canada tariff policy simultaneously? Does the timing of this DSCA notification relative to active auto and energy tariff lobbying suggest a quid pro quo pattern in prior U.S.-Canada defense-trade negotiations?"
-      }
-    },
-    {
-      "type": "actor_concentration",
-      "title": "17 firms lobbying on Australia issues",
-      "score": 11.51,
-      "countries": [
-        "AU"
+        "AU",
+        "GB",
+        "UA"
       ],
       "signal_keys": [
         "lda:041666d7-3b95-4d6f-93c2-000381defbf4",
-        "lda:0aba115d-62b5-4226-aacd-e4b353d0852a",
-        "lda:2e5ee5f5-981f-4379-aaf7-cd37f560b9da",
-        "lda:06f041a9-2003-4e3c-8e5c-fcbed26fa750",
-        "lda:fb475305-8665-4755-8615-8f3b5348ee72",
-        "lda:55260929-56a0-41ad-ac70-996b41468f28",
-        "lda:2fe0ef7f-1cd0-48dc-8e3b-7fb1ecb6bf4d",
-        "lda:a591d6e7-9f7c-4303-ac02-ee889fc3bc5e",
-        "lda:f605f735-22d9-47dc-927e-09ae1b900729",
-        "lda:5c1abbc2-8016-41f7-8fe2-3599654c3c35",
-        "lda:15b374fc-075b-46bc-af89-035f1b111bde",
-        "lda:0f78f6c5-0768-43b6-b950-5d02a496b78c",
-        "lda:95355046-63dc-442e-a808-5599387fa24a",
-        "lda:1123d22d-4536-469c-ac24-9d62f88f5159",
-        "lda:a8c5f1d2-0cdf-487d-86c7-a1f25fbe626a",
-        "lda:79c081bd-371f-4cb0-87a7-0e467ebd7275",
-        "lda:735626a0-9c20-48f5-9a41-4cb8ee74861f",
-        "lda:632193bd-fd93-4218-95c4-21f3572be2ec",
-        "lda:f73cea5a-1a47-4a69-be75-73de58de16a9"
+        "lda:d35f8b9f-28c8-45da-9a64-6aae1430b1da",
+        "lda:06dba7cc-ca2d-444d-9cb5-127db6484c46"
       ],
-      "why": "17 distinct lobbying firms on AU in 378d.",
-      "narrative": {
-        "headline": "Australian firms flooding DC lobbying on AUKUS-adjacent defense and critical minerals",
-        "body": "17 firms registered on AU-linked issues in 378 days, spanning counter-drone tech (DroneShield), rare earths (Iluka), OSINT (Fivecast), and wheat tariffs \u2014 a broad portfolio clustering around AUKUS implementation and supply chain positioning. This suggests Australian entities are aggressively pre-positioning for FY2026 appropriations and critical minerals legislation before congressional authorization windows close.",
-        "prompt": "Analyze the FY2026 defense and intelligence appropriations process as it relates to Australian-origin firms lobbying Congress. Specifically: which subcommittees (HASC, SASC, HPSCI) have jurisdiction over AUKUS technology transfer and critical minerals provisions that would benefit Fivecast (OSINT/AI), Iluka Resources (rare earths), and DroneShield (counter-UAS)? Are there active authorization or appropriations vehicles \u2014 NDAA, IIJA, or standalone bills \u2014 where these firms could secure earmarks or preferred vendor status? What is the FMS or direct commercial sale pathway for DroneShield given its counter-UAS focus?"
-      }
+      "why": "Ark Strategy filed LDA disclosures for Australia, United Kingdom, Ukraine in the same period.",
+      "narrative": null
     },
     {
       "type": "actor_concentration",
-      "title": "26 firms lobbying on United Kingdom issues",
-      "score": 11.486,
+      "title": "Ml Strategies, Llc lobbying for 3 countries simultaneously",
+      "score": 11.171,
       "countries": [
-        "GB"
-      ],
-      "signal_keys": [
-        "lda:29e67f85-e020-4714-8d85-9cf4e447eb0f",
-        "lda:585860bc-af15-4e03-a51e-7b10e683c7cd",
-        "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
-        "lda:0530d8ed-e131-4ee6-88ca-bd6a18e0c2ab",
-        "lda:fb7fed96-f152-4700-bb3d-6cd848a19cac",
-        "lda:bb69d0d4-0582-4274-9b63-3f259d449a17",
-        "lda:59d97468-7777-4bc4-98f9-d3712106c28b",
-        "lda:4a9becce-1dab-4de1-a0d9-2d5f042218e8",
-        "lda:d35f8b9f-28c8-45da-9a64-6aae1430b1da",
-        "lda:479f3c57-c8c4-42ce-9b02-df81c074950b",
-        "lda:d5c2c532-49eb-4383-b189-cbd100de8f6d",
-        "lda:a5ad2bf3-635d-413d-9f54-b6f983e4d72c",
-        "lda:4b85d57d-6e3a-4030-bd10-4b8adfb2e512",
-        "lda:611e7e33-829a-4fec-9baf-9ba49ea27f35",
-        "lda:5c08dc1a-7e69-4d2e-8de2-cf8d9444d87c",
-        "lda:0cbebfcc-8cfe-42eb-b8ed-6929892edb7d",
-        "lda:0a0eb801-ece9-445c-b137-93067243f611",
-        "lda:b98967f4-7f22-4baf-a976-483d5045882e",
-        "lda:7188da03-6553-429d-8a9f-8701c6ac8239",
-        "lda:56525500-d34c-4ca1-a48f-d5673043fa28",
-        "lda:66fdbb45-e0c5-4487-b779-063917e7bda4",
-        "lda:394a4baa-d7d4-4601-8df6-73164daa015d",
-        "lda:6d5640d5-2508-4763-ba47-e7671af466e3",
-        "lda:6659448e-df12-400c-a5e4-3ac186408495",
-        "lda:e5d44148-8dcc-4cd5-addf-711c8645b105",
-        "lda:42390480-4932-4cda-aed0-4cbabc0c7c4c",
-        "lda:927bb250-36ed-453d-8c80-9a54578b3012",
-        "lda:5b8cbd70-3fac-4c5a-8477-cad725752995"
-      ],
-      "why": "26 distinct lobbying firms on GB in 363d.",
-      "narrative": {
-        "headline": "UK lobbying surge spans defense, pharma, AI, and trade simultaneously",
-        "body": "26 firms filed UK-related lobbying across defense appropriations, AI risk, pharma pricing, patent disputes, and event security in under a year. The breadth suggests firms are front-running a US-UK trade framework negotiation, not reacting to isolated policy moves.",
-        "prompt": "Given concurrent UK-related lobbying filings covering FY27 defense appropriations (Delta Three Oscar/Galvanize), pharmaceutical trade and tariffs (GSK/Marshall & Popp), AI superintelligence risk (Control AI/Nathan Morrison), and patent issues (EZ Lynk/Checkmate), plus a DSCA submarine systems notification in March 2026: which House and Senate subcommittees have overlapping jurisdiction over a potential US-UK bilateral trade or technology agreement, and how are defense FMS provisions typically carved out or included in such frameworks?"
-      }
-    },
-    {
-      "type": "layer_sequence",
-      "title": "United Kingdom \u2014 influence \u2192 military sequence (1d gap)",
-      "score": 10.968,
-      "countries": [
-        "GB"
-      ],
-      "signal_keys": [
-        "lda:a5ad2bf3-635d-413d-9f54-b6f983e4d72c",
-        "lda:0cbebfcc-8cfe-42eb-b8ed-6929892edb7d",
-        "lda:d5c2c532-49eb-4383-b189-cbd100de8f6d",
-        "lda:bb69d0d4-0582-4274-9b63-3f259d449a17",
-        "dsca:25-45",
-        "lda:479f3c57-c8c4-42ce-9b02-df81c074950b",
-        "lda:d35f8b9f-28c8-45da-9a64-6aae1430b1da",
-        "lda:7188da03-6553-429d-8a9f-8701c6ac8239",
-        "lda:e5d44148-8dcc-4cd5-addf-711c8645b105",
-        "lda:6659448e-df12-400c-a5e4-3ac186408495",
-        "lda:0a0eb801-ece9-445c-b137-93067243f611",
-        "dsca:25-95",
-        "lda:fb7fed96-f152-4700-bb3d-6cd848a19cac",
-        "lda:4b85d57d-6e3a-4030-bd10-4b8adfb2e512",
-        "lda:b98967f4-7f22-4baf-a976-483d5045882e",
-        "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
-        "lda:66fdbb45-e0c5-4487-b779-063917e7bda4",
-        "lda:394a4baa-d7d4-4601-8df6-73164daa015d",
-        "lda:56525500-d34c-4ca1-a48f-d5673043fa28",
-        "lda:5c08dc1a-7e69-4d2e-8de2-cf8d9444d87c",
-        "lda:0530d8ed-e131-4ee6-88ca-bd6a18e0c2ab",
-        "lda:6d5640d5-2508-4763-ba47-e7671af466e3",
-        "dsca:Submarine Combat and Weapon Systems, Tec",
-        "lda:4a9becce-1dab-4de1-a0d9-2d5f042218e8",
-        "lda:59d97468-7777-4bc4-98f9-d3712106c28b",
-        "lda:611e7e33-829a-4fec-9baf-9ba49ea27f35"
-      ],
-      "why": "lda filing on 2026-03-19 preceded dsca on 2026-03-20 by 1d.",
-      "narrative": {
-        "headline": "UK lobbying surge precedes $861M C-17 sustainment DSCA by one day",
-        "body": "An LDA filing on 2026-03-19 immediately preceded the DSCA C-17 Globemaster sustainment notification, with parallel UK-linked defense and trade lobbying active across the same window. The tight sequencing suggests coordinated pre-notification groundwork, likely to smooth congressional review of a high-value sole-source sustainment package.",
-        "prompt": "The $861M DSCA notification for UK C-17 Globemaster III sustainment (2025-08-26) likely involves Boeing as primary contractor under a sole-source FMS case. Which House and Senate subcommittees hold jurisdiction over this notification's 30-day review window, and is there public evidence of any holds or informal objections filed? Also, how does this sustainment value compare to prior UK C-17 FMS cases, and does the scale suggest a multi-year omnibus structure rather than a single task order?"
-      }
-    },
-    {
-      "type": "actor_concentration",
-      "title": "16 firms lobbying on China issues",
-      "score": 8.989,
-      "countries": [
+        "AU",
+        "CA",
         "CN"
       ],
       "signal_keys": [
-        "lda:b607d4b4-b2a3-471c-8470-71fb5718c3a8",
-        "lda:3570c195-924c-4462-9dad-a2ec7bca9f6b",
-        "lda:483e74eb-7163-4279-952f-7bbda09ab401",
-        "lda:8bfb90a1-836c-4f5d-9bc1-94d7543a758c",
-        "lda:280f374d-e22e-4533-ab1b-e44279b1023a",
-        "lda:5d0c08a7-b16c-4848-8b9c-d62104e6996a",
-        "lda:0ec5feb8-5b0a-49db-b235-7e893869fd07",
-        "lda:3a6d4bab-1e9a-42fd-8e1e-b0758a99bec7",
-        "lda:f4e532fd-dd5e-4abe-9d8f-5793e9220df2",
+        "lda:0aba115d-62b5-4226-aacd-e4b353d0852a",
         "lda:28721173-15d2-4863-af01-145babb131e0",
-        "lda:b8b09920-a089-4e40-badb-eaaa93cf6a8d",
-        "lda:9a8ffa09-7d2e-439b-8454-180f2c3e3574",
-        "lda:48098416-eae4-4d70-ac5c-6de6eb1b0527",
-        "lda:255de4af-7bc5-4b6c-afc9-9a3d40289edd",
-        "lda:3cd449ee-1f35-48d1-bf83-8a9ef6a94f6c",
-        "lda:1964570a-131f-47e5-b8a3-b06aedeb8f49"
+        "lda:8572eb93-0306-47b0-bd26-18f88b0a96f7"
       ],
-      "why": "16 distinct lobbying firms on CN in 322d.",
-      "narrative": {
-        "headline": "China-linked firms flooding DC with defensive lobbying ahead of tariff escalation",
-        "body": "16 firms active in 322 days span CFIUS defense, tariff relief, tech regulation, and USPS contracts \u2014 covering nearly every friction point in US-China commercial policy. This breadth suggests Chinese-linked corporates are anticipating a broad regulatory tightening, not reacting to isolated actions.",
-        "prompt": "Across these five LDA filings \u2014 Haier/GE Appliances via Mehlman Consulting (energy/manufacturing/supply chain), Grand Pharmaceutical via Checkmate (CFIUS), Arashi Vision via DGA Group (tech/consumer products), Primemax Medical via Mayer Brown (tariffs), and Win.It America via Carmen Group (USPS contract) \u2014 which House or Senate subcommittees have jurisdiction over each issue area, and how does the lobbying target distribution compare to the current legislative calendar for tariff authority, CFIUS reform, and FCC equipment rules? Which of these engagements is most likely to produce a near-term regulatory outcome?"
-      }
+      "why": "Ml Strategies, Llc filed LDA disclosures for Australia, Canada, China in the same period.",
+      "narrative": null
+    },
+    {
+      "type": "actor_concentration",
+      "title": "The Vogel Group lobbying for 4 countries simultaneously",
+      "score": 10.75,
+      "countries": [
+        "AE",
+        "AT",
+        "JP",
+        "TW"
+      ],
+      "signal_keys": [
+        "lda:c5b48f7a-e0bf-4024-a6cd-64fe8818ce79",
+        "lda:39a79e04-8f2f-4e59-8c88-fcc0857d269d",
+        "lda:b19a3624-d187-47e3-b043-35bdcb237327",
+        "lda:3193f805-bdeb-46e7-a952-b6fa1092ec6e"
+      ],
+      "why": "The Vogel Group filed LDA disclosures for United Arab Emirates, Austria, Japan, Taiwan in the same period.",
+      "narrative": null
+    },
+    {
+      "type": "actor_concentration",
+      "title": "Miller Strategies, Llc lobbying for 6 countries simultaneously",
+      "score": 10.745,
+      "countries": [
+        "BE",
+        "CA",
+        "DE",
+        "GB",
+        "NL",
+        "NO"
+      ],
+      "signal_keys": [
+        "lda:a3aea893-0332-41c8-b112-7512f2ba2649",
+        "lda:cda4808a-58a4-4cc6-983a-662ff3f00332",
+        "lda:aee7fc83-a7eb-4254-8f2f-9be7f81a4fc2",
+        "lda:dc9c619e-c53e-46db-972e-8e280e436dca",
+        "lda:90686b78-ffc3-4f99-a5ca-6683607ebde6",
+        "lda:e5d44148-8dcc-4cd5-addf-711c8645b105"
+      ],
+      "why": "Miller Strategies, Llc filed LDA disclosures for Belgium, Canada, Germany, United Kingdom, Netherlands... in the same period.",
+      "narrative": null
+    },
+    {
+      "type": "actor_concentration",
+      "title": "Valcour Llc lobbying for 4 countries simultaneously",
+      "score": 9.95,
+      "countries": [
+        "GB",
+        "IQ",
+        "LB",
+        "SA"
+      ],
+      "signal_keys": [
+        "lda:ea1fd866-a723-4ffc-9086-9c10df9ff4a3",
+        "lda:979a1e0e-6804-4034-ba6f-b36cca1de372",
+        "lda:cf9876c7-bdf7-415a-a52a-442af9fd448a",
+        "lda:42390480-4932-4cda-aed0-4cbabc0c7c4c"
+      ],
+      "why": "Valcour Llc filed LDA disclosures for United Kingdom, Iraq, Lebanon, Saudi Arabia in the same period.",
+      "narrative": null
+    },
+    {
+      "type": "actor_concentration",
+      "title": "Checkmate Government Relations lobbying for 4 countries simultaneously",
+      "score": 9.828,
+      "countries": [
+        "CH",
+        "CN",
+        "GB",
+        "PK"
+      ],
+      "signal_keys": [
+        "lda:0530d8ed-e131-4ee6-88ca-bd6a18e0c2ab",
+        "lda:903827ee-49d7-4adb-8784-7c2896ec570e",
+        "lda:3570c195-924c-4462-9dad-a2ec7bca9f6b",
+        "lda:cfe8af57-94bf-46b6-953b-89bd96fa21f6"
+      ],
+      "why": "Checkmate Government Relations filed LDA disclosures for Switzerland, China, United Kingdom, Pakistan in the same period.",
+      "narrative": null
     },
     {
       "type": "cftc_overlap",
@@ -21087,213 +20877,175 @@
     },
     {
       "type": "actor_concentration",
-      "title": "13 firms lobbying on South Korea issues",
-      "score": 7.924,
+      "title": "Bgr Government Affairs lobbying for 6 countries simultaneously",
+      "score": 8.408,
       "countries": [
-        "KR"
-      ],
-      "signal_keys": [
-        "lda:fdcb3f4b-823a-4257-a18a-a398f1497e0b",
-        "lda:607bcf96-6915-481a-8281-3aa073a1960b",
-        "lda:35b5c741-ffe0-43cd-966f-d9399f24a670",
-        "lda:7c445862-8615-4b93-ba5c-4803cd0d1869",
-        "lda:b41b4a1b-872a-4551-8146-f2d8184fbb00",
-        "lda:f7f6bfed-6f4c-402c-8f4d-32105a4113d4",
-        "lda:af75dd70-c63e-435e-809a-b768165205e8",
-        "lda:bb7d1eb2-b768-4f63-9dcc-490bd0ff3f57",
-        "lda:6a4ffa30-4232-4b3f-ac93-a6ea5cd2e1aa",
-        "lda:a71e53ea-3105-4c01-bd76-7e4a930e2c9c",
-        "lda:56ca8275-8799-4ac1-a545-e77221043e00",
-        "lda:af328b55-4bfc-4072-8cda-73bc9129e6fd",
-        "lda:f7d82844-2167-4de1-9a7e-3ce2c75a8a56",
-        "lda:5ea129e2-6cc3-40f8-b988-bf93aa1cfe5d"
-      ],
-      "why": "13 distinct lobbying firms on KR in 371d.",
-      "narrative": null
-    },
-    {
-      "type": "actor_concentration",
-      "title": "6 firms lobbying on Norway issues",
-      "score": 7.749,
-      "countries": [
-        "NO"
-      ],
-      "signal_keys": [
-        "lda:2bf07859-28e1-4a6d-9397-ab00894023d0",
-        "lda:a3aea893-0332-41c8-b112-7512f2ba2649",
-        "lda:5bdef9fd-f6ee-41f9-8787-b6cddaff1dbf",
-        "lda:fedcb26c-4373-4c37-8a03-c4baab850721",
-        "lda:fa2f6a39-cfa8-4072-a3b9-0ba3226a60bb",
-        "lda:e3dfbde7-e208-4d57-a2d2-7e35cf7aed5e",
-        "lda:eb480721-bffb-42a2-a5f3-e96647402b0f"
-      ],
-      "why": "6 distinct lobbying firms on NO in 334d.",
-      "narrative": null
-    },
-    {
-      "type": "actor_concentration",
-      "title": "23 firms lobbying on Israel issues",
-      "score": 7.709,
-      "countries": [
-        "IL"
-      ],
-      "signal_keys": [
-        "lda:a0b3981d-2734-4af7-a21e-b9a58c04fd73",
-        "lda:89d58de4-66ae-407a-ab26-5bb91515b346",
-        "lda:db02a0ad-016a-4d22-84b5-bea6199865a1",
-        "lda:61286692-a9d8-4f1b-ad6d-d9895aa68093",
-        "lda:97b0efa1-dc2e-4b8e-b4be-08932e46042e",
-        "lda:aa02bf22-db21-4088-9747-ef99383ce2d5",
-        "lda:230cd9be-1b81-4399-8639-6cf996d8409c",
-        "lda:3617103c-e5f5-499c-85e0-19d41d656217",
-        "lda:95829355-4d3f-49e0-b58d-af95ef38aab2",
-        "lda:be2e4266-f514-4548-b671-3a98bfc8767c",
-        "lda:ce764ef3-8477-4669-b8e8-2ccdd3fb177d",
-        "lda:02b247dd-5ef5-4daf-8026-9aa9990c11ab",
-        "lda:0f917ce3-cfa5-4aad-b185-7e24987959c3",
-        "lda:b83f409b-3e87-4419-89ec-670d9b8c4388",
-        "lda:3acf0250-6a1c-41e3-a736-21d9bc20342d",
-        "lda:7997ced4-7bd2-4e54-9743-32ec1b25a83d",
-        "lda:b9c836ec-0f69-482f-9662-b04da19414d7",
-        "lda:43d1bd09-d27f-4a4d-a303-bd49b2c14a46",
-        "lda:895d05f5-ff41-4dcf-8a87-536c24a73d6b",
-        "lda:23a26e3e-93ac-454b-a73e-59ea7b246315",
-        "lda:d24482c0-753a-4198-b469-3f482567a7ec",
-        "lda:b831c491-998c-4299-a6f9-00d248f5f9be",
-        "lda:abb42902-e3ce-4c4f-ae90-e18e2ac50d0b"
-      ],
-      "why": "23 distinct lobbying firms on IL in 323d.",
-      "narrative": null
-    },
-    {
-      "type": "layer_sequence",
-      "title": "Australia \u2014 influence \u2192 military sequence (13d gap)",
-      "score": 6.809,
-      "countries": [
-        "AU"
-      ],
-      "signal_keys": [
-        "lda:632193bd-fd93-4218-95c4-21f3572be2ec",
-        "lda:79c081bd-371f-4cb0-87a7-0e467ebd7275",
-        "lda:1123d22d-4536-469c-ac24-9d62f88f5159",
-        "dsca:25-50",
-        "lda:0f78f6c5-0768-43b6-b950-5d02a496b78c",
-        "lda:a8c5f1d2-0cdf-487d-86c7-a1f25fbe626a",
-        "lda:95355046-63dc-442e-a808-5599387fa24a",
-        "lda:5c1abbc2-8016-41f7-8fe2-3599654c3c35",
-        "dsca:25-88",
-        "lda:15b374fc-075b-46bc-af89-035f1b111bde",
-        "lda:f73cea5a-1a47-4a69-be75-73de58de16a9",
-        "dsca:25-10",
-        "lda:735626a0-9c20-48f5-9a41-4cb8ee74861f"
-      ],
-      "why": "lda filing on 2025-07-24 preceded dsca on 2025-08-06 by 13d.",
-      "narrative": null
-    },
-    {
-      "type": "actor_concentration",
-      "title": "12 firms lobbying on France issues",
-      "score": 5.7,
-      "countries": [
-        "FR"
+        "CN",
+        "DK",
+        "FR",
+        "GB",
+        "KY",
+        "NL"
       ],
       "signal_keys": [
         "lda:92fb004b-7621-485b-af8d-d60c7568c3d3",
-        "lda:3306f9b4-e43d-4f89-8453-7ff85adfe600",
+        "lda:e59da1f1-7c68-4596-a70a-a7bea6d541bb",
+        "lda:40d075e7-22ac-44db-a4a1-358d44b04a03",
+        "lda:4d827843-6fa8-479b-900e-57522e69bd22",
+        "lda:5d0c08a7-b16c-4848-8b9c-d62104e6996a",
+        "lda:0cbebfcc-8cfe-42eb-b8ed-6929892edb7d",
+        "lda:cbbb646b-6553-4f75-a1a0-f7cb61059cfb",
+        "lda:dc771a4e-9320-4e19-8db4-a62818d72f7c"
+      ],
+      "why": "Bgr Government Affairs filed LDA disclosures for China, Denmark, France, United Kingdom, Cayman Islands... in the same period.",
+      "narrative": null
+    },
+    {
+      "type": "actor_concentration",
+      "title": "Marshall & Popp, Llc lobbying for 3 countries simultaneously",
+      "score": 7.068,
+      "countries": [
+        "AU",
+        "GB",
+        "JP"
+      ],
+      "signal_keys": [
+        "lda:fb7fed96-f152-4700-bb3d-6cd848a19cac",
+        "lda:0dde4e28-b044-496a-89f0-bb48708af48c",
+        "lda:5c1abbc2-8016-41f7-8fe2-3599654c3c35"
+      ],
+      "why": "Marshall & Popp, Llc filed LDA disclosures for Australia, United Kingdom, Japan in the same period.",
+      "narrative": null
+    },
+    {
+      "type": "actor_concentration",
+      "title": "Dga Group Government Relations Llc lobbying for 4 countries simultaneously",
+      "score": 6.406,
+      "countries": [
+        "BR",
+        "CN",
+        "FR",
+        "JP"
+      ],
+      "signal_keys": [
         "lda:b8376ef7-3b7a-4305-8f20-7d8aec6883ad",
-        "lda:73533da5-59d7-4b2c-b64a-ae025b5b9e06",
-        "lda:7ce63d6b-7954-4bde-9823-e5c4f3ca50ee",
-        "lda:13d82356-4a13-43f1-9554-62a9785c3637",
-        "lda:8b9fa82f-031a-424e-9c9a-e420e2450ad1",
+        "lda:8b4a87d4-b173-48be-b641-a5013b4fc06e",
+        "lda:483e74eb-7163-4279-952f-7bbda09ab401",
+        "lda:7078e1ea-c5eb-4e7f-8bcc-93a4a5c2c4be"
+      ],
+      "why": "Dga Group Government Relations Llc filed LDA disclosures for Brazil, China, France, Japan in the same period.",
+      "narrative": null
+    },
+    {
+      "type": "actor_concentration",
+      "title": "Mayer Brown Llp lobbying for 5 countries simultaneously",
+      "score": 3.889,
+      "countries": [
+        "BE",
+        "CN",
+        "FI",
+        "FR",
+        "JP"
+      ],
+      "signal_keys": [
+        "lda:39409af6-5b6d-48c6-b0d4-67272a5cc7cd",
+        "lda:8bfb90a1-836c-4f5d-9bc1-94d7543a758c",
+        "lda:5ae3bcfc-37a9-43cd-a6a6-4e4b4617a683",
         "lda:75f43883-e9cc-41b1-9b25-6915840ed0a1",
-        "lda:4824219d-a87d-42a9-afb4-b39d5ea44bb4",
-        "lda:81b3f8cc-9e98-45dd-85d1-549af49c4c29",
-        "lda:9824945a-b61f-428d-9873-7d03b8850017",
-        "lda:28c544fa-25f4-4e31-ad98-17716e70db5b",
-        "lda:4a109e37-8ab0-486a-ae26-fbd34b36bb83",
-        "lda:0db03a68-e4eb-48e7-b766-170fe4b0a1c9"
+        "lda:6939f1ab-4fc6-415d-b082-7141bbee0923"
       ],
-      "why": "12 distinct lobbying firms on FR in 317d.",
+      "why": "Mayer Brown Llp filed LDA disclosures for Belgium, China, Finland, France, Japan in the same period.",
       "narrative": null
     },
     {
       "type": "actor_concentration",
-      "title": "15 firms lobbying on Switzerland issues",
-      "score": 5.339,
+      "title": "Covenant Government Affairs, Llc lobbying for 3 countries simultaneously",
+      "score": 2.959,
       "countries": [
-        "CH"
+        "AU",
+        "CA",
+        "SG"
       ],
       "signal_keys": [
-        "lda:c7185139-287a-4d33-8e37-435913cabf91",
-        "lda:c7f06a13-52d2-4334-8b29-0682bcf980df",
-        "lda:6992a00c-91ca-4dc9-935a-717b8a8ae3c7",
-        "lda:cfe8af57-94bf-46b6-953b-89bd96fa21f6",
-        "lda:dea7cf16-3b1b-487f-91b5-5b1890786f47",
-        "lda:99d08c62-cf86-4bf2-8013-e67fa4c1fa8b",
-        "lda:4499beb0-5ecd-439c-b360-a79811698342",
-        "lda:3f883e3c-8265-4d6d-b98a-832e9203eb5e",
-        "lda:832b9e42-ab36-48fa-8e3b-5b87b1e3e92e",
-        "lda:747494c6-1742-4a7e-b172-40b226442c2c",
-        "lda:8042cf29-a536-45b6-b2f0-f114b8f57d08",
-        "lda:7054d343-96ea-4e85-8dee-946059f317c6",
-        "lda:695a8e00-ec8c-4620-b58e-8b96a56c9f36",
-        "lda:e1a9e309-8bbb-4bc2-a8b6-8f31df9902c0",
-        "lda:a2bbea36-8497-4ca1-9749-6b465838ed95",
-        "lda:1d389c4c-5632-41a6-8c57-7c676c628c6a",
-        "lda:92c338e0-73be-45d2-bc56-5abf9136421f"
+        "lda:06f041a9-2003-4e3c-8e5c-fcbed26fa750",
+        "lda:ebaafdc1-22c3-42de-ab5c-841d5984c131",
+        "lda:775d3569-666b-48b3-8ad1-e31e64c26bd5",
+        "lda:4b59ed80-25c5-41fd-b853-f006b6cbd657"
       ],
-      "why": "15 distinct lobbying firms on CH in 369d.",
+      "why": "Covenant Government Affairs, Llc filed LDA disclosures for Australia, Canada, Singapore in the same period.",
       "narrative": null
     },
     {
       "type": "actor_concentration",
-      "title": "15 firms lobbying on Germany issues",
-      "score": 5.308,
+      "title": "Invariant Llc lobbying for 4 countries simultaneously",
+      "score": 2.872,
       "countries": [
-        "DE"
+        "AU",
+        "DE",
+        "TR",
+        "TW"
       ],
       "signal_keys": [
-        "lda:ce850d1d-aefb-4733-9e32-7e13a074eac5",
-        "lda:7824ba93-c193-463b-9710-89bdc5af60da",
-        "lda:c64c4483-47d5-4239-af15-af0b7dd80867",
-        "lda:6b8fbb23-d070-452b-8bc5-3954f614e263",
-        "lda:cda4808a-58a4-4cc6-983a-662ff3f00332",
-        "lda:d091c9b4-a5a0-4fdf-9029-09cc9055a7bd",
-        "lda:6f7d0b0d-168d-4799-998a-3179c04395c7",
-        "lda:505b08c2-399b-43b0-9cbc-61b06fbfbb4b",
-        "lda:ee9cb308-122c-48ee-869e-c0d39411aeca",
-        "lda:0e1a4fda-b9a9-49bd-9a1e-7b4d8bf2f8e6",
-        "lda:d6bbaba8-cea7-4672-98b7-2612d07816b9",
-        "lda:2caee672-593a-4638-9bf1-6307451b8019",
-        "lda:e149abcf-fc29-4ce3-9884-ae6ef1607746",
-        "lda:2257cc54-3e7b-4183-ba21-d7ebec88d05b",
+        "lda:95ef728b-bf54-4df7-a22b-175bbc0a40c1",
+        "lda:55260929-56a0-41ad-ac70-996b41468f28",
         "lda:cf192ac6-8d01-4f07-ad69-45504b0217df",
-        "lda:d6bcd7f1-1510-4d5e-96d2-8c4bf268eb3b",
-        "lda:22888ad0-d652-4839-8b4e-0e70be73527c"
+        "lda:7bd791f6-d51a-4726-b877-cc759a253e03"
       ],
-      "why": "15 distinct lobbying firms on DE in 318d.",
+      "why": "Invariant Llc filed LDA disclosures for Australia, Germany, Turkey, Taiwan in the same period.",
       "narrative": null
     },
     {
       "type": "actor_concentration",
-      "title": "8 firms lobbying on Mexico issues",
-      "score": 4.97,
+      "title": "King & Spalding Llp lobbying for 3 countries simultaneously",
+      "score": 2.507,
       "countries": [
-        "MX"
+        "AT",
+        "BR",
+        "CA"
       ],
       "signal_keys": [
-        "lda:2546e933-cf40-44b7-8a69-91c428ae13e8",
-        "lda:2ef359ee-f0c5-4586-a28c-0c7b5bc20152",
-        "lda:132e29be-136d-4443-b1b5-a0cac6af74a5",
-        "lda:2f2c9a63-d080-46ba-9616-0706aaa1772f",
-        "lda:a926a262-7eaf-44ac-810f-83eeb17fab4a",
-        "lda:7fce4739-977b-402c-a6b3-df6c165a6927",
-        "lda:e62ea394-3634-428d-af5a-43f7087b0c5a",
-        "lda:a00390d6-7009-4692-977c-7dcf5235f72b",
-        "lda:ab4ab513-c0ba-4cac-b336-830690997caa",
-        "lda:aa9149be-5a9b-4845-83f1-6f67d9b651c6"
+        "lda:7966fa9c-08f9-4c18-9500-f8d72be58655",
+        "lda:b50587f3-c842-45a9-8d92-65aa0d275bf7",
+        "lda:b88780ee-54dd-4925-a02b-53232aad058e"
       ],
-      "why": "8 distinct lobbying firms on MX in 347d.",
+      "why": "King & Spalding Llp filed LDA disclosures for Austria, Brazil, Canada in the same period.",
+      "narrative": null
+    },
+    {
+      "type": "actor_concentration",
+      "title": "Capital Park Partners Llc lobbying for 3 countries simultaneously",
+      "score": 1.927,
+      "countries": [
+        "GB",
+        "IL",
+        "JP"
+      ],
+      "signal_keys": [
+        "lda:9b25dd5d-c34a-434d-af7a-b14b37284403",
+        "lda:a5ad2bf3-635d-413d-9f54-b6f983e4d72c",
+        "lda:02b247dd-5ef5-4daf-8026-9aa9990c11ab",
+        "lda:b4b95c34-7ceb-4309-a6e2-4c7aa317f67a"
+      ],
+      "why": "Capital Park Partners Llc filed LDA disclosures for United Kingdom, Israel, Japan in the same period.",
+      "narrative": null
+    },
+    {
+      "type": "actor_concentration",
+      "title": "Arentfox Schiff Llp lobbying for 4 countries simultaneously",
+      "score": 1.439,
+      "countries": [
+        "CH",
+        "DE",
+        "GB",
+        "IQ"
+      ],
+      "signal_keys": [
+        "lda:6f7d0b0d-168d-4799-998a-3179c04395c7",
+        "lda:6d5640d5-2508-4763-ba47-e7671af466e3",
+        "lda:2abfd98d-27af-4e12-9a20-6b52c9e31639",
+        "lda:1d389c4c-5632-41a6-8c57-7c676c628c6a"
+      ],
+      "why": "Arentfox Schiff Llp filed LDA disclosures for Switzerland, Germany, United Kingdom, Iraq in the same period.",
       "narrative": null
     }
   ]
