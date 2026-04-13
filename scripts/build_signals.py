@@ -542,12 +542,18 @@ def generate_prose_for_themes(themes: list, enriched: list) -> list:
         try:
             resp = client.messages.create(
                 model="claude-sonnet-4-6",
-                max_tokens=400,
+                max_tokens=2048,
                 temperature=0,
                 system=_PROSE_SYSTEM,
                 messages=[{"role": "user", "content": user_msg}],
             )
-            parsed = json.loads(resp.content[0].text)
+            raw = resp.content[0].text.strip()
+            if raw.startswith("```"):
+                raw = raw.split("```", 2)[1]
+                if raw.startswith("json"):
+                    raw = raw[4:]
+                raw = raw.strip().rstrip("`").strip()
+            parsed = json.loads(raw)
             narrative = {
                 "headline":    parsed.get("headline", ""),
                 "body":        parsed.get("body", ""),

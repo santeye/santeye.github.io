@@ -1,0 +1,258 @@
+{
+  "efdb18868a795032": {
+    "narrative": {
+      "headline": "Israeli Defense Contractor Elbit Systems Anchors Influence-to-Contract Sequence With $645M in Awards",
+      "body": "Government filing data shows a pattern in which FARA-registered lobbying activity preceded significant defense budget announcements involving Israeli entities. Elbit Systems of America, LLC retained Akin Gump Strauss Hauer & Feld, filing on 2025-10-03 to cover issues related to homeland security and defense policy. Elbit Systems subsequently announced contracts totaling approximately $210 million from the Israel Ministry of Defense for tank upgrades (2025-11-19) and approximately $435 million from an undisclosed international customer (2026-02-17), bringing documented contract value to roughly $645 million across the observed window. A separate FARA filing by Solel Boneh via Thorn Run Partners (2025-09-11) covers Israeli energy infrastructure and education-related activity, representing a distinct but concurrent Israeli foreign principal presence in Washington. Federal Science Partners LLC filed on behalf of aviation-adjacent interests (2026-01-16) covering FAA Unmanned Aircraft System Traffic Management, a domain where Israeli UAS technology firms are active. Kela Defense US, Inc., via Maven Advocacy Partners LLC, filed in the Defense, Homeland Security, and Science/Technology categories as recently as 2026-02-20, indicating continued and broadening Israeli defense-sector lobbying activity in the United States.",
+      "connections": [
+        "Elbit Systems of America, LLC \u2014 retained Akin Gump Strauss Hauer & Feld for homeland security and defense policy lobbying",
+        "Elbit Systems (NASDAQ: ESLT / TASE: ESLT) \u2014 parent of Elbit Systems of America; recipient of $210M Israel MoD tank upgrade contracts and $435M international customer contracts",
+        "Akin Gump Strauss Hauer & Feld \u2014 registered lobbyist/FARA agent for Elbit Systems of America",
+        "Solel Boneh \u2014 Israeli foreign principal registered via Thorn Run Partners covering energy infrastructure",
+        "Thorn Run Partners \u2014 FARA registrant for Solel Boneh",
+        "Federal Science Partners LLC \u2014 FARA registrant covering FAA UTM on behalf of Secure Texas Enterprise Partners GP, LLC",
+        "Kela Defense US, Inc. \u2014 Israeli defense-sector entity registered via Maven Advocacy Partners LLC",
+        "Maven Advocacy Partners LLC \u2014 FARA/LDA registrant for Kela Defense US"
+      ],
+      "dig_into": [
+        "Identity of the undisclosed 'international customer' in the $435M Elbit Systems contract announced 2026-02-17",
+        "Scope of Akin Gump's specific lobbying contacts and congressional targets on behalf of Elbit Systems of America",
+        "Relationship between Secure Texas Enterprise Partners GP and Israeli UAS or defense technology interests given the FAA UTM filing context",
+        "Kela Defense US, Inc. \u2014 corporate structure, Israeli parent entity, and specific U.S. government programs being pursued",
+        "Whether Solel Boneh's energy infrastructure lobbying intersects with any U.S. government financing or export programs",
+        "Timing correlation: whether the 2-day gap between the August 2025 FARA filing and the anchor budget signal reflects a recurring pattern across multiple filing cycles"
+      ]
+    }
+  },
+  "40e4e4ec86e08d06": {
+    "narrative": {
+      "headline": "UK-Linked Washington Activity Spikes 3\u03c3 Above Baseline, Spanning AUKUS Submarines, AI Risk, and Formula One Security",
+      "body": "Filing activity connected to United Kingdom interests in Washington has reached 3.0 standard deviations above its 30-day average, driven by four lobbying disclosures and one Defense Security Cooperation Agency notification filed between March 16 and March 31, 2026.\n\nThe largest and most structurally significant signal is a $1 billion DSCA notification dated March 20, 2026, covering technical assistance for AUKUS-specific vertical deployment tubes, common weapon launchers, and embedded U.S.-UK personnel. This is consistent with the trilateral AUKUS submarine pathway commitments made by the United States, United Kingdom, and Australia, and represents a documented procurement milestone in that program.\n\nSeparately, Formula One Group, represented by R&R Partners, filed on March 31 covering federal event security, visa, and entry issues with a United Kingdom nexus. Formula One Group is headquartered in the UK and holds a U.S. Grand Prix calendar presence; the filing's homeland security and tourism scope suggests engagement around race event logistics or personnel entry procedures.\n\nDelta Three Oscar, a less publicly documented entity, filed March 26 via Galvanize Partners on FY27 Defense Appropriations with no UK-specific description, but its inclusion in this cluster by the detection algorithm suggests a UK-adjacent defense interest.\n\nControl AI US, Inc. filed March 19 on artificial superintelligence risks and loss-of-control scenarios. The UK nexus here is consistent with the UK's established role in international AI safety governance, including the AI Safety Institute and the Bletchley Park summit framework.\n\nEZ Lynk, SEZC filed March 16 on patent issues with a United Kingdom designation. EZ Lynk is a Cayman Islands-registered automotive technology firm previously subject to U.S. EPA enforcement action; the UK patent angle is not further specified in the filing.\n\nBackground signals from the prior 90 days include GlaxoSmithKline on trade and pharma, Drax Biomass on energy and agriculture trade, and URENCO USA on nuclear energy and trade \u2014 all consistent with ongoing UK commercial interests in U.S. regulatory and legislative processes.",
+      "connections": [
+        "Formula One Group (UK-headquartered) \u2192 R&R Partners \u2192 DHS/visa/entry lobbying",
+        "AUKUS trilateral framework \u2192 DSCA $1B notification \u2192 UK submarine vertical deployment tube development",
+        "Control AI US, Inc. \u2192 Nathan Morrison \u2192 AI superintelligence risk lobbying with UK nexus (consistent with UK AI Safety Institute mandate)",
+        "EZ Lynk, SEZC (Cayman Islands) \u2192 Checkmate Government Relations \u2192 UK patent issues",
+        "Delta Three Oscar \u2192 Galvanize Partners \u2192 FY27 Defense Appropriations",
+        "GlaxoSmithKline (UK) \u2192 Marshall & Popp \u2192 U.S. trade/pharma (background signal)",
+        "URENCO USA (UK-Dutch-German consortium) \u2192 Haro Solutions \u2192 U.S. energy/trade (background signal)"
+      ],
+      "dig_into": [
+        "What is Delta Three Oscar? The entity name is non-standard and does not correspond to a publicly prominent defense contractor; its beneficial ownership and UK connection warrant identification before the FY27 appropriations cycle advances.",
+        "What specific AUKUS vertical deployment tube contracts or subcontracts flow from the $1B DSCA notification, and which U.S. and UK defense primes are positioned to receive them?",
+        "What is the specific U.S. patent dispute or proceeding that EZ Lynk is engaging on with a UK designation \u2014 given the company's prior EPA enforcement history, any UK regulatory or IP angle is worth tracing.",
+        "Is Control AI US, Inc. affiliated with any UK AI safety organization, think tank, or government-linked body? The filing's framing mirrors UK government AI safety language closely.",
+        "What federal event security or visa policy is Formula One Group seeking to influence, and does it relate to specific 2026 or 2027 U.S. Grand Prix scheduling or international driver/crew entry procedures?"
+      ]
+    }
+  },
+  "698de24510b059f5": {
+    "narrative": {
+      "headline": "27 Lobbying Firms Active on Japan-Related Issues in Under a Year, Concentrated in Pharma, Trade, and Manufacturing",
+      "body": "U.S. government filings show 27 distinct lobbying firms engaged on Japan-related issues over a 369-day window, reflecting a broad and sustained effort by Japanese-affiliated corporate interests to shape U.S. policy across multiple sectors. The concentration of activity is notable: pharmaceutical and manufacturing interests dominate, with trade and tariff concerns emerging as a cross-cutting theme.\n\nOn the pharmaceutical side, three Japanese-origin companies are actively retained counsel. Sumitomo Pharma America, Inc. has engaged Arnold & Porter Kaye Scholer to address prescription drug pricing and issues affecting small-to-mid-size pharmaceutical companies. Kyowa Kirin, Inc. \u2014 a subsidiary of the Tokyo-based Kyowa Kirin Co., Ltd. \u2014 is working through Corcoran Partners on pharmaceutical policy broadly. Daiichi Sankyo, Inc., the U.S. arm of the major Japanese pharmaceutical group, has retained Marshall & Popp to cover both drug pricing and pharmaceutical manufacturing, with explicit reference to trade and tariffs \u2014 suggesting sensitivity to potential import duties on medicines or active pharmaceutical ingredients.\n\nIn the manufacturing and trade space, Toyota Tsusho America, Inc. \u2014 the trading arm of the Toyota Group \u2014 is self-lobbying on federal policy covering trade, logistics, supply chain, critical minerals, green energy, and recycling. This filing spans a wide policy perimeter and reflects the company's exposure to U.S. industrial and energy transition policy. United States Steel Corporation, via Akin Gump Strauss Hauer & Feld, is registered on 'policy and regulatory issues related to US capital investments' \u2014 a filing that takes on significance given Nippon Steel's announced acquisition bid for U.S. Steel, which has faced sustained regulatory and political scrutiny from the Committee on Foreign Investment in the United States (CFIUS) and successive administrations.\n\nThe aggregation of 27 firms across these sectors within roughly one year indicates that Japan-linked entities are not relying on a single lobbying relationship but are instead building broad coalitions of representation \u2014 a pattern consistent with entities anticipating a complex and potentially adversarial U.S. policy environment on trade, drug pricing, and foreign investment.",
+      "connections": [
+        "Nippon Steel / U.S. Steel acquisition \u2014 Akin Gump's engagement for U.S. Steel on 'capital investments' policy sits directly in the context of the pending and contested Nippon Steel takeover bid",
+        "U.S. drug pricing legislation \u2014 Multiple Japanese pharma subsidiaries (Sumitomo, Kyowa Kirin, Daiichi Sankyo) are simultaneously lobbying on pricing, suggesting coordinated sector-wide concern about IRA drug negotiation provisions or future pricing reforms",
+        "U.S.-Japan trade negotiations \u2014 Daiichi Sankyo and Toyota Tsusho filings both reference tariffs and trade, coinciding with broader U.S.-Japan trade tension over auto tariffs and pharmaceutical import policy",
+        "Critical minerals supply chain \u2014 Toyota Tsusho's lobbying scope includes critical minerals and green energy, intersecting with U.S. efforts to reduce dependence on Chinese mineral supply chains where Japanese trading companies are active alternative suppliers"
+      ],
+      "dig_into": [
+        "What is the current CFIUS status of the Nippon Steel / U.S. Steel transaction and how does Akin Gump's registered scope align with that review process?",
+        "Are Sumitomo Pharma, Kyowa Kirin, and Daiichi Sankyo coordinating through any industry association (e.g., PhRMA or a Japan-specific pharma group) in addition to their individual lobbying engagements?",
+        "Which of the 27 lobbying firms are newly registered versus long-standing relationships \u2014 a spike in new registrations would indicate a reactive posture to a specific policy trigger",
+        "Does Toyota Tsusho's critical minerals lobbying connect to any specific U.S. government offtake agreements, DOE loan applications, or Defense Production Act proceedings?",
+        "Have any of these filings been amended to add or remove issue areas, which could indicate shifting policy priorities in response to executive or legislative developments?"
+      ]
+    }
+  },
+  "577ca605b4250b00": {
+    "narrative": {
+      "headline": "Canada-linked lobbying cluster precedes military vehicle sale approval, with defense and trade filings spanning multiple sectors",
+      "body": "A sequence of U.S. lobbying activity tied to Canadian government and commercial interests preceded a $160 million Foreign Military Sale approval for Joint Light Tactical Vehicles to Canada, announced by the State Department on August 8, 2025. The DSCA notification followed a FARA filing dated September 24, 2025 by seven days \u2014 though the JLTV sale itself was announced in August, suggesting parallel rather than strictly sequential influence activity across the filing window.\n\nThe primary contributing signals show a broad lobbying front. Cassidy & Associates filed on behalf of Barnacle \u2014 a defense and maritime client \u2014 covering the FY2026 National Defense Authorization Act and Coast Guard Authorization Act, both directly relevant to U.S.-Canada defense procurement and interoperability. Separately, Lighthouse Strategies filed on behalf of The Metals Company regarding an executive order on seabed minerals, a file with both defense-industrial and Canada-specific dimensions given the company's Canadian incorporation and deep-sea mining interests.\n\nOn the trade side, Ballard Partners filed for the Binational Softwood Lumber Council, a longstanding bilateral trade irritant, while Apco Worldwide filed for Canada Goose Inc. on apparel trade policy \u2014 both reflecting active Canadian commercial lobbying during a period of elevated U.S.-Canada trade tension.\n\nThe broader 90-day signal set shows continued Canadian-linked defense lobbying: Snow Lake Energy (critical minerals, defense), CAE Inc. (defense aviation simulation), Alabama Graphite Partners (graphite supply chain, defense), and D-Wave Government Inc. (quantum computing, defense and science). This pattern reflects sustained Canadian-origin lobbying across critical minerals, defense technology, and energy infrastructure \u2014 sectors central to current U.S. defense industrial base policy.",
+      "connections": [
+        "Cassidy & Associates \u2014 Barnacle: NDAA and Coast Guard Authorization Act lobbying directly intersects with the DSCA JLTV approval for Canada, both touching U.S.-Canada defense procurement frameworks",
+        "The Metals Company \u2014 Lighthouse Strategies: Canadian-incorporated deep-sea mining firm lobbying on seabed minerals executive order; intersects with critical minerals supply chain policy relevant to defense",
+        "Binational Softwood Lumber Council \u2014 Ballard Partners: Active trade lobbying during period of elevated U.S.-Canada tariff tensions, parallel to defense sale activity",
+        "Snow Lake Energy, Alabama Graphite Partners, D-Wave Government Inc.: Canadian-origin entities lobbying on defense-adjacent critical minerals and technology in the same 90-day window, reinforcing a multi-sector Canadian influence presence"
+      ],
+      "dig_into": [
+        "What is Barnacle's specific role in U.S.-Canada maritime or defense procurement, and why is it engaging U.S. lobbyists on the FY26 NDAA?",
+        "The Metals Company's seabed minerals lobbying: does the referenced executive order affect Canadian-flagged or Canadian-financed deep-sea mining operations specifically?",
+        "JLTV sale to Canada: is this part of a broader NATO interoperability procurement or a bilateral arrangement, and are there offset or industrial participation agreements involved?",
+        "D-Wave Government Inc. and Snow Lake Energy both filed defense-category LDA disclosures \u2014 what specific U.S. defense programs or contracts are these Canadian firms pursuing?",
+        "The FARA filing dated 2025-09-24 that anchors the algorithm's sequence: which foreign principal does it represent and what activities does it disclose?"
+      ]
+    }
+  },
+  "755ecd8ff013806a": {
+    "narrative": {
+      "headline": "17 Lobbying Firms Active on Australia-Related Issues in Washington Over 12-Month Period",
+      "body": "Federal lobbying disclosures show 17 distinct firms have registered to lobby on matters involving Australia over a 378-day window, spanning defense technology, critical minerals, trade policy, and energy infrastructure. The concentration of firms suggests sustained and diversifying Australian commercial and governmental interests seeking U.S. policy engagement.\n\nThe most recent filing, dated April 2026, shows Fivecast Pty Ltd \u2014 an Australian AI-powered open-source intelligence company \u2014 retained Ark Strategy to lobby on FY appropriations across Defense, Intelligence, State Department, and DHS accounts. Fivecast has previously secured contracts with U.S. defense and intelligence agencies.\n\nIluka Resources, an Australian mineral sands company, engaged ML Strategies in March 2026 to advocate for U.S. government funding support for rare earth mineral processing facilities. Iluka has been developing a rare earth refinery in Australia and has sought to position itself within allied-nation critical minerals supply chains.\n\nDroneShield, an Australian counter-drone technology firm listed on the ASX, retained The Roosevelt Group in January 2026 to advocate for its counter-UAS product offerings before U.S. government audiences. DroneShield has publicly pursued U.S. defense contracts.\n\nManildra Milling Corporation, an Australian wheat processing company with U.S. operations, engaged Covenant Government Affairs in January 2026 on wheat gluten tariff matters and broader Australia-U.S. trade policy \u2014 a filing that reflects ongoing sensitivity around agricultural trade terms between the two countries.\n\nBuckeye Partners, a U.S.-based midstream energy infrastructure firm, filed a disclosure referencing Australia in the context of Army Corps of Engineers work on a Puerto Rico channel and WRDA authorization \u2014 the precise nature of the Australia connection in this filing is not elaborated in the available description.\n\nThe cluster of filings reflects several converging policy environments: AUKUS implementation and associated defense procurement, U.S. critical minerals diversification away from China, counter-drone technology demand, and agricultural trade tensions.",
+      "connections": [
+        "Fivecast Pty Ltd \u2014 Australian OSINT/AI firm with prior U.S. defense and intelligence agency engagement",
+        "Iluka Resources \u2014 Australian rare earth and mineral sands company developing domestic refinery capacity",
+        "DroneShield \u2014 ASX-listed Australian counter-UAS technology company pursuing U.S. defense contracts",
+        "Manildra Milling Corporation \u2014 Australian wheat processor with U.S. commercial presence",
+        "Ark Strategy, ML Strategies, The Roosevelt Group, Covenant Government Affairs, Mabry Public Affairs \u2014 registered lobbying firms handling Australia-linked accounts",
+        "AUKUS trilateral security partnership \u2014 broader policy context for Australian defense-sector lobbying activity in Washington"
+      ],
+      "dig_into": [
+        "What specific U.S. appropriations line items is Fivecast targeting, and has it received prior U.S. government contracts?",
+        "Has Iluka Resources engaged with the U.S. Department of Energy's critical minerals loan or grant programs?",
+        "What U.S. military or DHS procurement vehicles is DroneShield pursuing, and has it won any U.S. contracts to date?",
+        "What is the current U.S. tariff status on wheat gluten imports from Australia, and is Manildra subject to any active trade remedy proceedings?",
+        "What is the specific Australia nexus in the Buckeye Partners filing \u2014 is there an Australian entity involved in the Puerto Rico infrastructure project?",
+        "Which of the 17 firms are registered as foreign agents under FARA versus standard LDA registrants, and which clients are foreign nationals or entities?"
+      ]
+    }
+  },
+  "7a094f75206b3b8e": {
+    "narrative": {
+      "headline": "26 Lobbying Firms Active on UK-Related Issues in Under a Year, Spanning Defense, AI, Trade, and Event Security",
+      "body": "Federal lobbying disclosures show 26 distinct firms have filed registrations or activity reports touching United Kingdom-related issues within a 363-day window, a concentration that reflects the breadth of active US-UK policy intersections across multiple sectors.\n\nThe most recent filings span a wide range of subject matter. Formula One Group, represented by R&R Partners, Inc., is lobbying on federal event security and visa and entry issues with a UK nexus, filed through March 2026. This likely relates to F1's expanding US race calendar and the movement of personnel and equipment between jurisdictions.\n\nEZ Lynk, SEZC \u2014 a Cayman Islands-registered automotive technology company \u2014 retained Checkmate Government Relations on patent issues with a United Kingdom dimension. EZ Lynk has previously been involved in litigation with the EPA over vehicle emissions tuning devices, adding regulatory context to its patent-focused lobbying.\n\nGlaxoSmithKline, the UK-headquartered pharmaceutical multinational, engaged Marshall & Popp, LLC on pharmaceutical manufacturing, drug pricing, trade, and tariffs. This filing is consistent with GSK's known exposure to US drug pricing legislation and ongoing US-UK trade framework negotiations.\n\nControl AI US, Inc., via lobbyist Nathan Morrison, is active on issues related to artificial superintelligence risk and loss-of-control scenarios \u2014 a filing that reflects the UK's prominent role in international AI safety governance, including the Bletchley Park AI Safety Summit framework.\n\nDelta Three Oscar, represented by Galvanize Partners LLC, filed on FY27 Defense Appropriations. The entity name is non-standard and warrants further identification; the filing does not specify a UK connection in the excerpt but appears within the broader GB-flagged cluster.\n\nSeparately, a Defense Security Cooperation Agency notice dated March 20, 2026 documents a potential sale involving submarine combat and weapon systems, technical support, and US and UK embedded personnel \u2014 consistent with AUKUS-related activity and the deepening US-UK defense industrial relationship.",
+      "connections": [
+        "Formula One Group \u2014 R&R Partners, Inc. \u2014 federal event security and UK visa/entry issues",
+        "GlaxoSmithKline \u2014 Marshall & Popp, LLC \u2014 drug pricing, trade, tariffs, pharmaceutical manufacturing",
+        "EZ Lynk, SEZC \u2014 Checkmate Government Relations \u2014 UK patent issues, automotive technology",
+        "Control AI US, Inc. \u2014 Nathan Morrison \u2014 AI superintelligence risk, UK AI safety governance context",
+        "Delta Three Oscar \u2014 Galvanize Partners LLC \u2014 FY27 Defense Appropriations",
+        "DSCA \u2014 submarine combat systems sale \u2014 US-UK embedded personnel, AUKUS context"
+      ],
+      "dig_into": [
+        "Identify Delta Three Oscar: the entity name is atypical for a lobbying client and its UK nexus is not specified in available data",
+        "EZ Lynk, SEZC is Cayman-registered \u2014 clarify ultimate beneficial ownership and the specific UK patent dispute or proceeding referenced",
+        "Control AI US, Inc. appears to be a recently formed advocacy entity; determine its founding, funding sources, and relationship to UK-based AI safety organizations such as those connected to the Bletchley process",
+        "GSK's simultaneous exposure to US drug pricing legislation and US-UK trade negotiations creates dual lobbying pressure \u2014 review whether Marshall & Popp filings reference specific legislative vehicles",
+        "Cross-reference the DSCA submarine systems notice against AUKUS submarine pathway timelines and any related congressional notifications to assess whether the 26-firm lobbying cluster is partly defense-industrial in origin"
+      ]
+    }
+  },
+  "cacae2ab5bb377f5": {
+    "narrative": {
+      "headline": "UK-Linked Entities Active Across AI, Defense, and Energy Lobbying Ahead of DSCA Filing",
+      "body": "A cluster of UK-affiliated entities filed lobbying disclosures in the United States across defense, energy, and artificial intelligence sectors in the period immediately preceding a Defense Security Cooperation Agency (DSCA) filing on 2026-03-20. The 1-day gap between the final LDA filing and the DSCA action is the core algorithmic signal.\n\nThe most proximate LDA filing came from Control AI US, Inc. (filed 2026-03-19), lobbying on issues related to artificial superintelligence risks and loss-of-control scenarios, registered under Homeland Security and Science/Technology issue areas. Control AI is a UK-founded AI safety advocacy organization. This filing immediately preceded the DSCA action.\n\nArm Limited, the UK-headquartered semiconductor and chip architecture company (majority-owned by SoftBank), has been lobbying via FGS Global on AI and semiconductor industry issues since at least September 2025. Arm's chip architectures are foundational to a wide range of defense and dual-use systems globally.\n\nAMETEK Airtechnology Group Ltd, a UK-based subsidiary of US-listed AMETEK Inc., filed in November 2025 regarding advocacy with the US Army on thermal management system retrofits for ground vehicles \u2014 a direct defense procurement lobbying effort.\n\nUrenco USA (Louisiana Energy Services LLC), the US operating arm of the UK-Dutch-German Urenco uranium enrichment consortium, filed in January 2026 on nuclear fuel enrichment and low-enriched uranium supply issues \u2014 relevant to both civilian and defense nuclear programs.\n\nGulfsands Petroleum, a UK-registered oil and gas company with historical operations in Syria, filed in June 2025 on Middle East energy operations and Syrian economic reconstruction strategies.\n\nTwo additional UK-linked filings appeared in the broader 90-day window: Formula One Group (UK-headquartered, Liberty Media-owned) via R&R Partners, and Delta Three Oscar via Galvanize Partners LLC on defense matters.",
+      "connections": [
+        "Arm Limited \u2192 SoftBank Group (majority owner, Japanese conglomerate with broad technology and defense-adjacent investments)",
+        "Arm Limited \u2192 US semiconductor and AI policy ecosystem via FGS Global lobbying",
+        "AMETEK Airtechnology Group Ltd \u2192 AMETEK Inc. (NYSE: AME, US defense and industrial electronics parent)",
+        "Urenco USA \u2192 Urenco Group (tripartite UK-Dutch-German government-backed uranium enrichment consortium)",
+        "Control AI US, Inc. \u2192 Control AI (UK-founded AI safety nonprofit, focused on frontier AI governance)",
+        "Gulfsands Petroleum \u2192 historical Syria operations (Block 26 concession, suspended under sanctions)",
+        "Delta Three Oscar \u2192 Galvanize Partners LLC (defense-focused lobbying firm, Washington DC)"
+      ],
+      "dig_into": [
+        "What was the specific DSCA notification filed on 2026-03-20, and which country or entity was the intended recipient of the defense sale or transfer?",
+        "Does the DSCA filing involve UK-origin defense technology, components, or a UK-allied end-user \u2014 which would explain the LDA-to-DSCA sequence?",
+        "What is Delta Three Oscar \u2014 the entity name is non-standard and warrants identification before drawing any conclusions about its defense lobbying purpose",
+        "Is Control AI US, Inc. engaging specifically with DHS or DoD on AI safety standards that could affect defense procurement criteria?",
+        "Urenco's enrichment services filing \u2014 does this relate to US government contracts for naval nuclear fuel or the HALEU (high-assay low-enriched uranium) program relevant to advanced reactors and defense applications?",
+        "AMETEK thermal management retrofit advocacy \u2014 which specific US Army ground vehicle platform is referenced, and is this connected to any active procurement action?"
+      ]
+    }
+  },
+  "dbaa0940aacc0d5c": {
+    "narrative": {
+      "headline": "16 Lobbying Firms Active on China-Related Issues in Under a Year, Spanning Trade, Tech, Finance, and Supply Chains",
+      "body": "Federal disclosure data shows 16 distinct lobbying firms have filed registrations or reports covering China-related issues within a 322-day window, reflecting sustained and broad engagement with U.S. policy on China across multiple sectors.\n\nThe most substantive filings involve: Haier US Appliance Solutions (doing business as GE Appliances), represented by Mehlman Consulting, focusing on global appliance manufacturing, supply chains, and energy policy \u2014 areas directly affected by tariff regimes and export controls tied to China; Grand Pharmaceutical Group Ltd (formerly East Ocean Medical (Hong Kong) Limited), represented by Checkmate Government Relations, specifically flagging CFIUS review processes \u2014 a disclosure that is notable given the firm's Hong Kong origins and pharmaceutical sector focus; Arashi Vision (U.S.) LLC, represented by DGA Group, covering technology and consumer product legislation \u2014 Arashi Vision is the U.S. entity of the Chinese action camera brand Insta360; Primemax Medical Industries, represented by Mayer Brown, on tariff issues affecting medical supply chains with Chinese manufacturing exposure; and Win.It America Inc, represented by Carmen Group, on USPS shipping services contracts \u2014 Win.It is a logistics firm with operations tied to cross-border e-commerce flows from China.\n\nThe concentration of 16 firms on China-related lobbying in this window is consistent with the policy environment following the expansion of Section 301 tariffs, CFIUS reform activity, and ongoing legislative scrutiny of Chinese-linked technology and pharmaceutical supply chains. The CFIUS filing by Grand Pharmaceutical is particularly notable as it indicates active engagement with national security review processes.\n\nA separate CFTC positioning signal shows hedge funds adding long positions in corn futures at +2.6 standard deviations above normal as of late March 2026, which may reflect expectations around U.S.-China agricultural trade dynamics, though no direct link to the lobbying filings is established in the data.",
+      "connections": [
+        "Haier US Appliance Solutions / GE Appliances \u2014 Haier Group (Chinese state-linked) acquired GE's appliance division in 2016; Mehlman Consulting represents the U.S. entity on supply chain and energy policy",
+        "Grand Pharmaceutical Group Ltd \u2014 Hong Kong-listed pharmaceutical company formerly named East Ocean Medical; CFIUS engagement suggests a transaction or investment under national security review",
+        "Arashi Vision (U.S.) LLC \u2014 U.S. subsidiary of Shenzhen-based Arashi Vision Inc., maker of Insta360 cameras; lobbying on tech and consumer product regulation",
+        "Win.It America Inc \u2014 logistics firm operating in cross-border e-commerce, with business model dependent on USPS international mail and parcel contracts",
+        "Primemax Medical Industries \u2014 medical device/supply company lobbying on tariffs, indicating Chinese manufacturing exposure in its supply chain"
+      ],
+      "dig_into": [
+        "What specific CFIUS transaction or filing prompted Grand Pharmaceutical Group to retain Checkmate Government Relations \u2014 search CFIUS public notices and SEC filings for Grand Pharmaceutical or East Ocean Medical",
+        "Arashi Vision's U.S. lobbying scope: whether DGA Group filings reference specific bills such as RESTRICT Act successors or FCC equipment authorization rules affecting Chinese-brand consumer electronics",
+        "Win.It America's USPS contract status: whether it holds or is competing for an ePacket or international mail processing contract, and whether USPS has flagged any review of Chinese-linked logistics vendors",
+        "Mehlman Consulting's full client roster on China/trade issues to assess whether GE Appliances lobbying is coordinated with broader industry coalition activity",
+        "The corn futures positioning spike: cross-reference with USDA export inspection data for China-bound shipments and any recent U.S.-China agricultural trade announcements"
+      ]
+    }
+  },
+  "c3944e9b82d5081f": {
+    "narrative": {
+      "headline": "Managed Money Builds Unusual Wheat Short Position as AU, CA, RU Lobbying Activity Clusters",
+      "body": "CFTC Commitments of Traders data dated 2026-03-24 shows managed money net short 994 contracts in wheat futures, registering a 52-week z-score of +2.77 \u2014 a statistically notable deviation from baseline positioning. The exposure basket identified by the algorithm includes Russia, Ukraine, the United States, Australia, Canada, and India, of which three (AU, CA, RU) have generated recent signals in the dataset.\n\nThe CFTC signal itself reflects positioning data only. Managed money net short anomalies at this magnitude can reflect hedging activity, speculative bets on price decline, or repositioning ahead of supply data \u2014 the data does not indicate which.\n\nWithin the same 90-day window, Australian-linked entities filed multiple LDA disclosures in Washington covering defense, foreign affairs, and budget issues. Fivecast Pty Ltd (via Ark Strategy, 2026-04-08) and Iluka Resources (via ML Strategies, 2026-03-25) filed on defense. DroneShield (via The Roosevelt Group, 2026-01-30) also filed on defense. Notably, Manildra Milling Corporation \u2014 an Australian wheat processor \u2014 filed on Trade, Agriculture, and Tariffs via Covenant Government Affairs on 2026-01-19, which is the only LDA signal in this cluster with a direct agricultural commodity connection.\n\nCanadian-linked entities filed on energy and defense topics: Enbridge (U.S.) Inc. via Michael Best Strategies (2026-04-08), Snow Lake Energy Ltd. via The Roosevelt Group (2026-02-25), and D-Wave Government Inc. via Capitol 6 Advisors (2026-03-31). Gran Tierra Energy and Alabama Graphite Partners also appear in the cluster with energy and defense filings.\n\nNo Russian-entity LDA filings appear in the contributing signals. Russia's inclusion derives solely from its status as a major wheat-exporting nation within the CFTC basket definition.\n\nThe algorithm flags co-occurrence of the wheat positioning anomaly with active lobbying signals from exposed countries. No causal or intentional link between the CFTC positioning and the LDA filings is established by the data.",
+      "connections": [
+        {
+          "entity": "Manildra Milling Corporation",
+          "type": "corporate",
+          "country": "AU",
+          "relevance": "Australian wheat processor with direct agricultural commodity interest; filed on Trade, Agriculture, and Tariffs in January 2026 \u2014 the only LDA signal in this cluster with explicit wheat-sector relevance"
+        },
+        {
+          "entity": "Fivecast Pty Ltd",
+          "type": "corporate",
+          "country": "AU",
+          "relevance": "Australian entity filing on Defense, Foreign Affairs, and Budget via Ark Strategy; part of AU signal cluster"
+        },
+        {
+          "entity": "Iluka Resources, Limited",
+          "type": "corporate",
+          "country": "AU",
+          "relevance": "Australian mineral sands company filing on Defense via ML Strategies; part of AU signal cluster"
+        },
+        {
+          "entity": "DroneShield",
+          "type": "corporate",
+          "country": "AU",
+          "relevance": "Australian defense technology company filing on Defense via The Roosevelt Group; part of AU signal cluster"
+        },
+        {
+          "entity": "Enbridge (U.S.) Inc.",
+          "type": "corporate",
+          "country": "CA",
+          "relevance": "Canadian energy infrastructure company filing on Energy via Michael Best Strategies; part of CA signal cluster"
+        },
+        {
+          "entity": "Snow Lake Energy Ltd.",
+          "type": "corporate",
+          "country": "CA",
+          "relevance": "Canadian energy company filing on Defense via The Roosevelt Group; part of CA signal cluster"
+        },
+        {
+          "entity": "D-Wave Government Inc.",
+          "type": "corporate",
+          "country": "CA",
+          "relevance": "Canadian quantum computing company filing on Defense, Science/Technology, and Budget; part of CA signal cluster"
+        },
+        {
+          "entity": "Russia",
+          "type": "country",
+          "country": "RU",
+          "relevance": "Included in CFTC wheat exposure basket as a major global wheat exporter; no LDA filings present in this dataset"
+        }
+      ],
+      "dig_into": [
+        "Manildra Milling Corporation's specific lobbying asks on Trade and Agriculture \u2014 whether tariff or export-related provisions are targeted would clarify relevance to wheat positioning",
+        "CFTC historical context: whether prior managed money net short anomalies at this z-score magnitude in wheat have preceded significant price moves or supply announcements",
+        "Whether The Roosevelt Group represents multiple entities in this cluster (DroneShield, Snow Lake Energy) and whether that firm has any agricultural commodity clients not visible here",
+        "Ukraine's absence from the LDA signal set despite being in the CFTC basket \u2014 given its status as a major wheat exporter, any lobbying or policy signals from Ukrainian-linked entities would be material",
+        "Timing of Manildra's January 2026 filing relative to the March 2026 CFTC anomaly date \u2014 whether any tariff or trade policy developments in that window affected Australian wheat export conditions",
+        "Whether the managed money short position has since been covered or extended beyond the 2026-03-24 snapshot date"
+      ]
+    }
+  },
+  "c0e03e0409ce3eb2": {
+    "narrative": {
+      "headline": "31 Lobbying Firms Active on Canada-Related Issues in Under 13 Months, Spanning Energy, Defense, and Critical Minerals",
+      "body": "U.S. lobbying disclosure filings show 31 distinct firms have registered to lobby on issues touching Canada within a 371-day window, reflecting sustained and broad engagement across multiple policy domains. The concentration of firms \u2014 rather than a single dominant actor \u2014 suggests organic, client-driven demand rather than a coordinated campaign.\n\nThe most prominent cluster involves energy infrastructure and critical minerals. Enbridge (U.S.) Inc., the U.S. subsidiary of the Canadian pipeline giant, retained Michael Best Strategies LLC to lobby on energy, regulatory, and pipeline policy, including permitting reform \u2014 areas directly relevant to cross-border pipeline operations. Alabama Graphite Partners LLC engaged Da Vinci Group on graphite production projects with defense and homeland security dimensions, reflecting U.S. government interest in securing non-Chinese critical mineral supply chains, in which Canadian sources are frequently discussed. Snow Lake Energy Ltd., a Canadian hydrogen and nuclear development company, retained The Roosevelt Group to pursue congressional funding and administration outreach \u2014 filings explicitly cite Canada as a subject.\n\nIn the defense and technology space, D-Wave Government Inc., the U.S.-facing arm of Canadian quantum computing firm D-Wave Systems, engaged Capitol 6 Advisors through the 535 Group to pursue appropriations in the FY2027 Defense and Energy and Water bills. D-Wave is a publicly traded company (NYSE: QBTS) with Canadian origins and active U.S. government contracts.\n\nGran Tierra Energy Inc., a Calgary-headquartered oil and gas company operating in Latin America, retained Continental Strategy LLC for government relations on Latin American projects, with Canada listed as a subject country \u2014 consistent with the company's Canadian corporate domicile and cross-border investor relations needs.\n\nA separate FARA filing from JM Burkman & Associates LLC lists Andean Medjedovic as a foreign principal (registered February 2026). Andean Medjedovic is publicly identified as a Canadian national previously associated with the Indexed Universe and KyberSwap cryptocurrency exploit cases. The nature of the representation is not detailed in available filing summaries.\n\nThe breadth of sectors \u2014 pipelines, quantum computing, graphite, hydrogen, and cryptocurrency-adjacent foreign representation \u2014 indicates that Canada-related lobbying activity in Washington is driven by diverse commercial and regulatory interests rather than a single policy flashpoint.",
+      "connections": [
+        "Enbridge (U.S.) Inc. \u2192 Michael Best Strategies LLC \u2192 pipeline and permitting reform lobbying",
+        "D-Wave Government Inc. \u2192 Capitol 6 Advisors / 535 Group \u2192 FY2027 defense and energy appropriations",
+        "Snow Lake Energy Ltd. \u2192 The Roosevelt Group \u2192 congressional and administration outreach, Canada cited",
+        "Alabama Graphite Partners LLC \u2192 Da Vinci Group \u2192 critical minerals, defense and homeland security framing",
+        "Gran Tierra Energy Inc. \u2192 Continental Strategy LLC \u2192 Latin America projects, Canadian corporate domicile",
+        "JM Burkman & Associates LLC \u2192 Andean Medjedovic \u2192 FARA registration, Canadian national as foreign principal"
+      ],
+      "dig_into": [
+        "What specific pipeline or permitting legislation is Enbridge targeting, and does it relate to cross-border capacity or Line 5 proceedings?",
+        "D-Wave's U.S. government contract history and whether FY2027 appropriations requests are for quantum computing procurement or R&D grants",
+        "Snow Lake Energy's hydrogen or nuclear projects and whether they involve U.S. Department of Energy funding mechanisms",
+        "The scope of JM Burkman's representation of Andean Medjedovic \u2014 FARA filings may contain activity reports detailing contacts with U.S. officials",
+        "Whether Alabama Graphite Partners has any supply agreements or MOUs with U.S. defense agencies under the Defense Production Act",
+        "Full list of all 31 lobbying firms to identify any overlap in clients or coordinated messaging on Canada-U.S. trade or tariff policy"
+      ]
+    }
+  }
+}
