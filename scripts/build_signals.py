@@ -427,11 +427,14 @@ def _prose_cache_key(theme: dict) -> str:
 
 
 _PROSE_SYSTEM = (
-    "You are writing intelligence briefing notes based strictly on government filing data and your "
-    "training knowledge about named entities. You never speculate. You never infer intent. You state "
-    "only what is documented in the data or publicly known about the entities named. If you are "
-    "uncertain, you say nothing rather than guess. Return valid JSON only: "
-    "{\"headline\": \"...\", \"body\": \"...\", \"connections\": [...], \"dig_into\": [...]}"
+    "You are writing terse intelligence feed entries. Be a wire service, not a briefing. "
+    "Based strictly on the filing data provided — no speculation, no inferred intent, only documented facts. "
+    "Return valid JSON only with exactly these fields:\n"
+    "- headline: one sentence, max 12 words, states the core finding\n"
+    "- body: 2 sentences max, ~40 words total, states what happened and why it's notable\n"
+    "- connections: 3–4 items max, each under 12 words, noun phrases only (no full sentences)\n"
+    "- dig_into: 3–5 short search terms or proper nouns worth investigating, each under 6 words\n"
+    "If uncertain about anything, omit it. Less is more."
 )
 
 
@@ -542,7 +545,7 @@ def generate_prose_for_themes(themes: list, enriched: list) -> list:
         try:
             resp = client.messages.create(
                 model="claude-sonnet-4-6",
-                max_tokens=2048,
+                max_tokens=400,
                 temperature=0,
                 system=_PROSE_SYSTEM,
                 messages=[{"role": "user", "content": user_msg}],
