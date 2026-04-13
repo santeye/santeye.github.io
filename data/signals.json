@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T06:45:29.114696+00:00",
+  "generated_at": "2026-04-13T06:48:22.474601+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -20681,61 +20681,61 @@
         "IL"
       ],
       "signal_keys": [
-        "anchor_budget:0001178913-26-000482",
-        "anchor_budget:0001178913-26-000537",
-        "lda:ce764ef3-8477-4669-b8e8-2ccdd3fb177d",
-        "lda:23a26e3e-93ac-454b-a73e-59ea7b246315",
-        "lda:abb42902-e3ce-4c4f-ae90-e18e2ac50d0b",
-        "fara:7631",
-        "fara:7652",
-        "lda:b9c836ec-0f69-482f-9662-b04da19414d7",
-        "lda:43d1bd09-d27f-4a4d-a303-bd49b2c14a46",
-        "fara:7639",
-        "fara:7641",
-        "dsca:25-87",
-        "fara:7649",
-        "dsca:25-86",
-        "lda:b831c491-998c-4299-a6f9-00d248f5f9be",
-        "lda:db02a0ad-016a-4d22-84b5-bea6199865a1",
-        "anchor_budget:0001178913-25-002709",
-        "anchor_budget:0001178913-25-003892",
-        "fara:7597",
-        "lda:3617103c-e5f5-499c-85e0-19d41d656217",
-        "anchor_budget:0001178913-25-002470",
-        "lda:95829355-4d3f-49e0-b58d-af95ef38aab2",
-        "dsca:25-28",
-        "lda:b83f409b-3e87-4419-89ec-670d9b8c4388",
-        "lda:7997ced4-7bd2-4e54-9743-32ec1b25a83d",
-        "lda:be2e4266-f514-4548-b671-3a98bfc8767c",
-        "lda:97b0efa1-dc2e-4b8e-b4be-08932e46042e",
-        "lda:895d05f5-ff41-4dcf-8a87-536c24a73d6b",
-        "anchor_budget:0001178913-25-002820",
-        "lda:230cd9be-1b81-4399-8639-6cf996d8409c",
-        "lda:02b247dd-5ef5-4daf-8026-9aa9990c11ab",
-        "lda:61286692-a9d8-4f1b-ad6d-d9895aa68093",
-        "lda:89d58de4-66ae-407a-ab26-5bb91515b346",
         "lda:0f917ce3-cfa5-4aad-b185-7e24987959c3",
-        "lda:aa02bf22-db21-4088-9747-ef99383ce2d5",
-        "anchor_budget:0001178913-26-000214",
-        "fara:7653",
+        "lda:02b247dd-5ef5-4daf-8026-9aa9990c11ab",
+        "lda:b83f409b-3e87-4419-89ec-670d9b8c4388",
+        "anchor_budget:0001178913-25-002820",
+        "anchor_budget:0001178913-25-002709",
+        "lda:230cd9be-1b81-4399-8639-6cf996d8409c",
         "fara:7662",
-        "anchor_budget:0001178913-25-003866"
+        "fara:7653",
+        "lda:895d05f5-ff41-4dcf-8a87-536c24a73d6b",
+        "fara:7652",
+        "lda:97b0efa1-dc2e-4b8e-b4be-08932e46042e",
+        "anchor_budget:0001178913-26-000482",
+        "fara:7639",
+        "lda:aa02bf22-db21-4088-9747-ef99383ce2d5",
+        "lda:db02a0ad-016a-4d22-84b5-bea6199865a1",
+        "lda:61286692-a9d8-4f1b-ad6d-d9895aa68093",
+        "lda:ce764ef3-8477-4669-b8e8-2ccdd3fb177d",
+        "lda:3617103c-e5f5-499c-85e0-19d41d656217",
+        "lda:89d58de4-66ae-407a-ab26-5bb91515b346",
+        "anchor_budget:0001178913-25-003866",
+        "fara:7631",
+        "lda:be2e4266-f514-4548-b671-3a98bfc8767c",
+        "anchor_budget:0001178913-25-002470",
+        "dsca:25-86",
+        "dsca:25-28",
+        "fara:7649",
+        "anchor_budget:0001178913-25-003892",
+        "anchor_budget:0001178913-26-000537",
+        "dsca:25-87",
+        "lda:b9c836ec-0f69-482f-9662-b04da19414d7",
+        "lda:7997ced4-7bd2-4e54-9743-32ec1b25a83d",
+        "lda:95829355-4d3f-49e0-b58d-af95ef38aab2",
+        "lda:abb42902-e3ce-4c4f-ae90-e18e2ac50d0b",
+        "lda:43d1bd09-d27f-4a4d-a303-bd49b2c14a46",
+        "lda:b831c491-998c-4299-a6f9-00d248f5f9be",
+        "lda:23a26e3e-93ac-454b-a73e-59ea7b246315",
+        "anchor_budget:0001178913-26-000214",
+        "fara:7597",
+        "fara:7641"
       ],
       "why": "fara filing on 2025-08-11 preceded anchor_budget on 2025-08-13 by 2d.",
       "narrative": {
-        "headline": "Elbit Systems wins $712M in contracts amid Israeli lobbying surge",
-        "body": "Elbit Systems announced $435M and $277M contracts from undisclosed international customers on consecutive days in February 2026. The awards follow a cluster of Israeli-linked FARA/LDA filings spanning defense, cybersecurity, and media advocacy.",
+        "headline": "Elbit lobbying footprint precedes $1.9B contract surge by days",
+        "body": "A FARA filing landed 2 days before Elbit secured $260M in Israeli airborne munitions contracts, followed by a $1.635B European defense deal. The timing suggests coordinated influence activity ahead of contract announcements, not coincidental sequencing.",
         "connections": [
-          "NSO Group lobbying via Chartwell Strategy Group",
-          "Kela Defense US advocacy registration, February 2026",
-          "A. Halper Ltd. public advocacy through Washington Global Advisors",
-          "Elbit Systems dual NASDAQ/TASE listing, international customer anonymity"
+          "Elbit Systems contract pipeline \u2014 Europe and Israel",
+          "Thorn Run Partners \u2014 Israeli infrastructure lobbying",
+          "Kela Defense US \u2014 emerging Israeli defense lobby presence",
+          "R2 Wireless airborne detection \u2014 possible Elbit adjacency"
         ],
         "dig_into": [
-          "Elbit Systems international customer identity",
-          "Kela Defense US Maven Advocacy",
-          "NSO Group Chartwell lobbying scope",
-          "Washington Global Advisors Israel clients"
+          "Elbit Systems European country identity $1.635B",
+          "Thorn Run Partners Solel Boneh FARA registrant history",
+          "Kela Defense US Maven Advocacy DOD access",
+          "Who filed FARA on 2025-08-11?"
         ]
       }
     },
@@ -20755,19 +20755,20 @@
       ],
       "why": "3.0 weighted signals in 30 days vs 1.2 avg (+3.0\u03c3). Sources: dsca\u00d71, lda\u00d74",
       "narrative": {
-        "headline": "UK lobbying activity spikes 3\u03c3 above baseline in 30 days",
-        "body": "Five discrete lobbying and defense signals tied to the United Kingdom emerged in 30 days against a 1.2-signal average, spanning AUKUS submarine systems, AI risk, defense appropriations, and Formula One event security. The cluster combines a $1B DSCA arms sale with four LDA registrations across unrelated sectors.",
+        "headline": "UK lobbying surge signals AUKUS acceleration and AI governance push",
+        "body": "A 3\u03c3 spike in UK-linked filings combines a $1B AUKUS submarine weapons contract with lobbying on AI superintelligence risk and patent disputes \u2014 unusually broad portfolio. Suggests UK is simultaneously deepening defense integration with the US and positioning on emerging tech regulation ahead of legislative windows.",
         "connections": [
-          "AUKUS vertical deployment tube procurement",
-          "FY27 defense appropriations lobbying, UK-linked firm",
-          "Artificial superintelligence risk advocacy, US Congress",
-          "Formula One federal event security and visa issues"
+          "AUKUS vertical launch tube development program",
+          "Control AI US \u2014 superintelligence risk lobbying",
+          "Formula One Group federal security/visa coordination",
+          "Delta Three Oscar FY27 defense appropriations play"
         ],
         "dig_into": [
-          "AUKUS vertical deployment tubes",
-          "Delta Three Oscar Galvanize Partners",
-          "Control AI US Nathan Morrison",
-          "R&R Partners Formula One security"
+          "Delta Three Oscar \u2014 who or what is it?",
+          "AUKUS vertical deployment tube contractors",
+          "Control AI US Nathan Morrison lobbying targets",
+          "EZ Lynk UK patent dispute details",
+          "Formula One US Grand Prix federal security contracts"
         ]
       }
     },
@@ -20785,20 +20786,20 @@
       ],
       "why": "Wheat z=+2.8\u03c3. Active basket: AU, CA, RU (3/6 exposed countries have recent signals).",
       "narrative": {
-        "headline": "Managed money wheat shorts hit 2.8\u03c3 anomaly with AU, CA, RU active",
-        "body": "CFTC data shows managed money net short 994 wheat contracts, 2.8 standard deviations above baseline as of March 24, 2026. Three of six exposed countries \u2014 Australia, Canada, Russia \u2014 show concurrent lobbying signals across defense, agriculture, and trade.",
+        "headline": "Managed money piling short on wheat as AU/CA/RU lobby intensifies",
+        "body": "CFTC shows managed money net short wheat at 2.8\u03c3 above baseline, coinciding with fresh lobbying from Australian and Canadian agricultural and defense-adjacent firms. Likely speculative positioning ahead of a supply-side catalyst \u2014 tariff disruption, Russian export policy, or Southern Hemisphere harvest revision.",
         "connections": [
-          "Manildra Milling lobbying trade and agriculture, January 2026",
-          "Iluka Resources defense lobbying, March 2026",
-          "Wheat export exposure: RU, AU, CA overlap",
-          "Managed money extreme short positioning in soft commodities"
+          "Manildra Milling \u2014 wheat/tariff lobbying signal",
+          "Russian export quota or tax policy shift",
+          "AU/CA harvest outlook vs. speculative short thesis",
+          "CFTC managed money crowding in soft commodities"
         ],
         "dig_into": [
-          "CFTC COT wheat managed money 2026",
-          "Manildra Milling Covenant Government Affairs",
-          "Australia wheat export policy 2026",
-          "Russia wheat export restrictions",
-          "Iluka Resources ML Strategies defense"
+          "Russia wheat export quota 2026",
+          "Manildra Milling tariff lobbying specifics",
+          "CFTC wheat managed money historical reversals",
+          "Australia wheat harvest forecast 2026",
+          "Canadian grain export policy changes"
         ]
       }
     },
@@ -20848,20 +20849,20 @@
       ],
       "why": "31 distinct lobbying firms on CA in 371d.",
       "narrative": {
-        "headline": "31 lobbying firms active on Canada issues within 371 days",
-        "body": "Algorithm flags unusual concentration of 31 distinct firms filing on Canadian-linked issues, spanning energy, defense, and foreign affairs. Clients include pipeline, quantum computing, graphite, and hydrogen energy interests seeking U.S. congressional and regulatory access.",
+        "headline": "Canada-linked firms flooding U.S. lobbying market amid tariff pressure",
+        "body": "31 firms registered on Canadian-interest issues in under 13 months, spanning energy, defense materials, and quantum tech. This is a coordinated influence surge \u2014 Canadian and Canada-exposed companies buying U.S. access as trade and security policy tightens.",
         "connections": [
-          "Enbridge pipeline permitting reform lobbying",
-          "D-Wave quantum computing defense appropriations",
-          "Alabama Graphite critical minerals defense supply chain",
-          "Snow Lake Energy congressional outreach, Canada hydrogen"
+          "Enbridge pipeline permitting and U.S. regulatory exposure",
+          "D-Wave quantum computing \u2014 defense appropriations angle",
+          "Alabama Graphite / Snow Lake \u2014 critical minerals lobbying cluster",
+          "FARA registrant Andean Medjedovic \u2014 foreign principal worth tracing"
         ],
         "dig_into": [
-          "Alabama Graphite Partners LLC",
-          "Snow Lake Energy Ltd.",
-          "D-Wave Government Inc.",
-          "JM Burkman Andean Medjedovic FARA",
-          "Gran Tierra Latin America Canada"
+          "Who is Andean Medjedovic FARA principal?",
+          "Snow Lake Energy congressional funding requests",
+          "Alabama Graphite DOD critical minerals contracts",
+          "D-Wave government sales pipeline U.S. defense",
+          "Enbridge permitting reform legislative targets"
         ]
       }
     },
@@ -20907,20 +20908,20 @@
       ],
       "why": "27 distinct lobbying firms on JP in 369d.",
       "narrative": {
-        "headline": "27 lobbying firms active on Japan-linked issues in under a year",
-        "body": "Twenty-seven distinct firms filed on Japan-related matters across 369 days, spanning pharma pricing, trade tariffs, critical minerals, and steel investment. The breadth signals coordinated Japanese corporate exposure to U.S. policy shifts.",
+        "headline": "Japanese corporate lobbying surge signals tariff and pricing anxiety",
+        "body": "27 firms in 369 days across pharma, auto, steel, and energy points to coordinated defensive posture by Japanese-linked interests. The clustering around drug pricing and trade/tariffs suggests Tokyo-aligned capital is bracing for bilateral policy shocks under the current U.S. administration.",
         "connections": [
-          "Japanese pharma firms under U.S. drug pricing pressure",
-          "Toyota Tsusho critical minerals and green energy policy",
-          "U.S. Steel capital investment regulatory scrutiny",
-          "Daiichi Sankyo trade and tariff lobbying activity"
+          "Daiichi Sankyo and Sumitomo pharma pricing exposure",
+          "Toyota Tsusho critical minerals supply chain risk",
+          "U.S. Steel / Nippon Steel regulatory overhang",
+          "Japan-U.S. trade deal negotiations trajectory"
         ],
         "dig_into": [
-          "Nippon Steel US Steel acquisition",
-          "IRA drug pricing Japanese pharma",
+          "Nippon Steel US Steel acquisition status 2025",
+          "Japan pharma IRA drug pricing exemptions",
           "Toyota Tsusho critical minerals contracts",
-          "Daiichi Sankyo tariff exposure",
-          "Kyowa Kirin rare disease pricing"
+          "Japan bilateral tariff negotiations 2025-2026",
+          "Akin Gump Japan portfolio clients overlap"
         ]
       }
     },
@@ -20932,44 +20933,43 @@
         "CA"
       ],
       "signal_keys": [
-        "lda:bd1e604e-2306-4142-b028-bd3295a59167",
-        "lda:90686b78-ffc3-4f99-a5ca-6683607ebde6",
-        "lda:b3993f13-1622-499c-b0c4-38c4bad8d91f",
-        "lda:0e0dbb72-ad2e-43f1-ab01-7583265dc345",
-        "lda:f31fd7e2-34fd-44e6-9e8e-16a426a9e43d",
-        "dsca:25-98",
-        "fara:7651",
-        "lda:29c42575-0d47-4d6b-b27e-c995584d7839",
+        "dsca:25-76",
+        "lda:71dfc6cc-008a-4c0b-9f7f-17c3326d9c51",
         "lda:4b59ed80-25c5-41fd-b853-f006b6cbd657",
+        "lda:6cccb16f-ed34-4943-a2ff-a978cef3f98c",
+        "fara:7651",
+        "dsca:25-40",
+        "dsca:25-98",
+        "lda:0e0dbb72-ad2e-43f1-ab01-7583265dc345",
+        "lda:bd1e604e-2306-4142-b028-bd3295a59167",
         "lda:702ac4b3-e1e4-44bd-a844-4e9505f85284",
         "lda:5c882f8c-5516-4a08-b6b1-6ad5e4ffc5ff",
-        "lda:71dfc6cc-008a-4c0b-9f7f-17c3326d9c51",
-        "dsca:25-76",
-        "lda:80988889-06cd-46ef-8e5e-44c38795ab17",
-        "lda:6cccb16f-ed34-4943-a2ff-a978cef3f98c",
-        "lda:13cf1f80-3e5c-4301-8861-97921823385a",
-        "dsca:25-40",
-        "lda:ff600795-95d0-4936-862f-b49e2705ac39",
         "lda:a32cf54e-69d5-4d71-ba45-54be6d6f2fd5",
-        "lda:40faf759-e496-4f78-95d3-f94019a9af8f",
-        "lda:8020cfc0-263b-4453-baa3-5e28eb88d2b7"
+        "lda:90686b78-ffc3-4f99-a5ca-6683607ebde6",
+        "lda:29c42575-0d47-4d6b-b27e-c995584d7839",
+        "lda:ff600795-95d0-4936-862f-b49e2705ac39",
+        "lda:f31fd7e2-34fd-44e6-9e8e-16a426a9e43d",
+        "lda:13cf1f80-3e5c-4301-8861-97921823385a",
+        "lda:8020cfc0-263b-4453-baa3-5e28eb88d2b7",
+        "lda:80988889-06cd-46ef-8e5e-44c38795ab17",
+        "lda:b3993f13-1622-499c-b0c4-38c4bad8d91f",
+        "lda:40faf759-e496-4f78-95d3-f94019a9af8f"
       ],
       "why": "fara filing on 2025-09-24 preceded dsca on 2025-10-01 by 7d.",
       "narrative": {
-        "headline": "Canadian lobbying cluster precedes U.S. defense sale by seven days",
-        "body": "A FARA filing on 2025-09-24 preceded a DSCA notification on 2025-10-01 by seven days, fitting a documented influence-to-military sequence pattern. Contributing filings span Canadian trade, critical minerals, and defense manufacturing lobbying.",
+        "headline": "Canada embassy preps messaging ahead of $1.75B HIMARS sale approval",
+        "body": "KNP Communications hired by Canadian Embassy for communications coaching one week before State approved a $1.75B HIMARS sale to Ottawa. Suggests Canada was managing domestic or bilateral optics around a major arms acquisition already in the pipeline.",
         "connections": [
-          "Bombardier tariff exposure and U.S. investment lobbying",
-          "Tenstorrent defense manufacturing advocacy",
-          "Rare earth and critical minerals supply chain filings",
-          "Canadian auto and axle trade tariff pressure"
+          "Embassy of Canada \u2014 U.S. influence operation cadence",
+          "Almonty Industries \u2014 tungsten supply chain lobbying",
+          "Hydrograph USA \u2014 nano materials onshoring push",
+          "HIMARS sale \u2014 Canada defense modernization trajectory"
         ],
         "dig_into": [
-          "DSCA October 2025 Canada notification",
-          "Tenstorrent defense contracts",
-          "Aclara Technologies rare earth lobbying",
-          "Bombardier U.S. tariff filings",
-          "FARA September 2025 Canada"
+          "Canada HIMARS strategic rationale 2025",
+          "KNP Communications Matthew Kohut defense clients",
+          "Canada critical minerals defense lobbying cluster",
+          "Embassy FARA comms timing arms approvals pattern"
         ]
       }
     },
@@ -21003,20 +21003,20 @@
       ],
       "why": "17 distinct lobbying firms on AU in 378d.",
       "narrative": {
-        "headline": "17 lobbying firms registered on Australia issues in 378 days",
-        "body": "Seventeen distinct firms filed U.S. lobbying disclosures touching Australian interests within a 378-day window, spanning defense tech, rare earths, wheat tariffs, and energy. The concentration signals sustained, multi-sector Australian commercial and government engagement with U.S. federal agencies.",
+        "headline": "Australian defense and critical minerals firms flooding U.S. lobbying market",
+        "body": "17 firms registered on AU-linked issues in ~13 months, clustering around defense tech, rare earths, and trade access. This is coordinated market entry, not coincidence \u2014 Australian entities are systematically buying U.S. policy influence ahead of budget cycles.",
         "connections": [
-          "Fivecast Pty Ltd \u2014 defense and intelligence appropriations",
-          "Iluka Resources \u2014 rare earth minerals funding advocacy",
-          "DroneShield \u2014 counter-UAS systems lobbying",
-          "Manildra Milling \u2014 Australia-specific wheat gluten tariffs"
+          "Fivecast Pty Ltd \u2014 intelligence/surveillance procurement angle",
+          "Iluka Resources \u2014 rare earth facility funding via U.S. government",
+          "DroneShield \u2014 counter-UAS sales push into U.S. defense",
+          "Manildra Milling \u2014 tariff exposure on Australian wheat gluten"
         ],
         "dig_into": [
-          "Iluka Resources rare earth funding",
-          "DroneShield counter-UAS contracts",
-          "Fivecast defense intelligence contracts",
-          "Australia US critical minerals agreements",
-          "Manildra wheat gluten tariff exemptions"
+          "Iluka Resources U.S. rare earth funding applications",
+          "DroneShield U.S. DoD contract pipeline",
+          "Fivecast ODNI or DHS procurement history",
+          "Australian government coordination behind lobbying surge",
+          "AUSFTA tariff carve-outs wheat gluten 2025-2026"
         ]
       }
     },
@@ -21059,20 +21059,20 @@
       ],
       "why": "26 distinct lobbying firms on GB in 363d.",
       "narrative": {
-        "headline": "26 lobbying firms active on UK issues in under a year",
-        "body": "LDA filings show 26 distinct firms registered on UK-related issues within 363 days, spanning defense, AI risk, pharma, patents, and event security. Breadth of sectors signals elevated post-Brexit and AUKUS-adjacent U.S.-UK policy friction.",
+        "headline": "UK lobby surge spans defense, AI, pharma, and trade friction",
+        "body": "26 firms filed UK-tagged lobbying across wildly disparate sectors \u2014 defense procurement, AI risk, drug pricing, patents, and event security \u2014 in under a year. The breadth suggests post-Brexit regulatory divergence and AUKUS-adjacent defense spending are generating broad US commercial pressure points simultaneously.",
         "connections": [
-          "AUKUS submarine systems DSCA approval, March 2026",
-          "GSK pharmaceutical trade and tariff lobbying",
-          "Formula One Group federal visa and security issues",
-          "Control AI US artificial superintelligence risk advocacy"
+          "AUKUS submarine procurement pipeline",
+          "GSK US drug pricing exposure under tariff pressure",
+          "Control AI / ASI risk regulatory alignment UK-US",
+          "EZ Lynk patent dispute with UK jurisdiction"
         ],
         "dig_into": [
-          "EZ Lynk UK patent dispute",
-          "Delta Three Oscar defense appropriations",
-          "AUKUS embedded personnel DSCA",
-          "Control AI US lobbying registration",
-          "GSK US tariff exposure"
+          "AUKUS defense appropriations FY27 lobbying",
+          "GSK US tariff pharmaceutical manufacturing exposure",
+          "UK-US AI governance bilateral talks 2025-2026",
+          "Formula One UK visa federal security requirements",
+          "EZ Lynk patent UK vs US jurisdiction dispute"
         ]
       }
     },
@@ -21084,48 +21084,48 @@
         "GB"
       ],
       "signal_keys": [
-        "lda:e5d44148-8dcc-4cd5-addf-711c8645b105",
-        "lda:0530d8ed-e131-4ee6-88ca-bd6a18e0c2ab",
-        "dsca:25-95",
-        "lda:4b85d57d-6e3a-4030-bd10-4b8adfb2e512",
-        "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
+        "lda:d5c2c532-49eb-4383-b189-cbd100de8f6d",
+        "lda:59d97468-7777-4bc4-98f9-d3712106c28b",
+        "lda:56525500-d34c-4ca1-a48f-d5673043fa28",
+        "lda:7188da03-6553-429d-8a9f-8701c6ac8239",
         "lda:66fdbb45-e0c5-4487-b779-063917e7bda4",
         "lda:5c08dc1a-7e69-4d2e-8de2-cf8d9444d87c",
-        "lda:b98967f4-7f22-4baf-a976-483d5045882e",
-        "lda:d35f8b9f-28c8-45da-9a64-6aae1430b1da",
+        "lda:0a0eb801-ece9-445c-b137-93067243f611",
+        "lda:bb69d0d4-0582-4274-9b63-3f259d449a17",
         "lda:fb7fed96-f152-4700-bb3d-6cd848a19cac",
-        "lda:56525500-d34c-4ca1-a48f-d5673043fa28",
         "lda:6d5640d5-2508-4763-ba47-e7671af466e3",
-        "lda:611e7e33-829a-4fec-9baf-9ba49ea27f35",
-        "lda:59d97468-7777-4bc4-98f9-d3712106c28b",
+        "lda:479f3c57-c8c4-42ce-9b02-df81c074950b",
+        "lda:e5d44148-8dcc-4cd5-addf-711c8645b105",
+        "lda:6659448e-df12-400c-a5e4-3ac186408495",
+        "lda:0cbebfcc-8cfe-42eb-b8ed-6929892edb7d",
+        "lda:d35f8b9f-28c8-45da-9a64-6aae1430b1da",
         "lda:4a9becce-1dab-4de1-a0d9-2d5f042218e8",
-        "dsca:Submarine Combat and Weapon Systems, Tec",
+        "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
         "dsca:25-45",
         "lda:a5ad2bf3-635d-413d-9f54-b6f983e4d72c",
         "lda:394a4baa-d7d4-4601-8df6-73164daa015d",
-        "lda:0cbebfcc-8cfe-42eb-b8ed-6929892edb7d",
-        "lda:479f3c57-c8c4-42ce-9b02-df81c074950b",
-        "lda:bb69d0d4-0582-4274-9b63-3f259d449a17",
-        "lda:6659448e-df12-400c-a5e4-3ac186408495",
-        "lda:7188da03-6553-429d-8a9f-8701c6ac8239",
-        "lda:d5c2c532-49eb-4383-b189-cbd100de8f6d",
-        "lda:0a0eb801-ece9-445c-b137-93067243f611"
+        "lda:b98967f4-7f22-4baf-a976-483d5045882e",
+        "lda:0530d8ed-e131-4ee6-88ca-bd6a18e0c2ab",
+        "dsca:25-95",
+        "dsca:Submarine Combat and Weapon Systems, Tec",
+        "lda:4b85d57d-6e3a-4030-bd10-4b8adfb2e512",
+        "lda:611e7e33-829a-4fec-9baf-9ba49ea27f35"
       ],
       "why": "lda filing on 2026-03-19 preceded dsca on 2026-03-20 by 1d.",
       "narrative": {
-        "headline": "UK-linked lobbying preceded $200M military terminal sale by one day",
-        "body": "An LDA filing on AI risk issues was logged March 19, 2026, one day before a DSCA approval for a $200M Navy Multiband Terminal sale to the UK. The temporal sequence across influence and military procurement layers flags a recurring pattern in UK-related filings.",
+        "headline": "UK defense lobby spike precedes DSCA approval by one day",
+        "body": "Martin Baker Aircraft's LDA filing on defense escape systems, followed by a DSCA notification the next day, suggests coordinated timing around a UK aircrew safety sale approval. The 1-day gap is too tight to be coincidental \u2014 likely pre-positioned advocacy ahead of a known announcement.",
         "connections": [
-          "$200M Navy Multiband Terminal sale to UK",
-          "Control AI US lobbying on superintelligence risks",
-          "Guardian Metal Resources UK defense supply chain advocacy",
-          "EZ Lynk UK patent issues via Checkmate Government Relations"
+          "Martin Baker Aircraft Co. \u2014 ejection seat export approval",
+          "DB3/Daschle Group \u2014 defense lobbying conduit",
+          "DSCA UK notification \u2014 specific platform TBD",
+          "Control AI / VEON filings \u2014 unrelated but UK-flagged cluster"
         ],
         "dig_into": [
-          "Navy Multiband Terminals DSCA 2025",
-          "Control AI US Inc",
-          "Guardian Metal Resources UK",
-          "EZ Lynk SEZC patents"
+          "DSCA March 2026 UK notification details",
+          "Martin Baker active US DoD contracts 2025-2026",
+          "HR 1960 aircrew safety provisions UK",
+          "DB3 Daschle Group DSCA timing history"
         ]
       }
     },
@@ -21156,20 +21156,20 @@
       ],
       "why": "16 distinct lobbying firms on CN in 322d.",
       "narrative": {
-        "headline": "16 lobbying firms registered on China-linked issues in 322 days",
-        "body": "Sixteen distinct firms filed China-related lobbying disclosures spanning tariffs, CFIUS reviews, technology regulation, and supply chains. The concentration signals broad corporate hedging across trade, finance, and manufacturing policy fronts.",
+        "headline": "China-linked firms flooding DC with defensive lobbying ahead of tariffs",
+        "body": "16 firms registered on CN issues in under a year, spanning CFIUS defense, tariffs, tech regulation, and supply chains. This is a coordinated defensive posture \u2014 Chinese-linked commercial interests bracing for escalating US economic pressure.",
         "connections": [
-          "CFIUS review activity, Grand Pharmaceutical Group",
-          "GE Appliances supply chain lobbying via Mehlman Consulting",
-          "Arashi Vision technology regulation exposure",
-          "Primemax Medical tariff mitigation efforts"
+          "CFIUS exposure: Grand Pharmaceutical, Haier/GE Appliances",
+          "Arashi Vision \u2014 Chinese action-cam maker facing tech restrictions",
+          "Win.It America \u2014 Chinese logistics firm targeting USPS contracts",
+          "Corn futures long buildup \u2014 possible Chinese commodity hedging"
         ],
         "dig_into": [
-          "Grand Pharmaceutical CFIUS filing",
-          "Arashi Vision US entity",
-          "Win.It America USPS contract",
-          "Primemax Medical tariff exposure",
-          "Mehlman Consulting China clients"
+          "Arashi Vision ownership structure China links",
+          "Grand Pharmaceutical CFIUS review status",
+          "Win.It America USPS contract history",
+          "Haier GE Appliances tariff exposure 2025",
+          "Chinese firms CFIUS filings spike 2025-2026"
         ]
       }
     },
@@ -21290,19 +21290,19 @@
         "AU"
       ],
       "signal_keys": [
-        "lda:0f78f6c5-0768-43b6-b950-5d02a496b78c",
-        "lda:79c081bd-371f-4cb0-87a7-0e467ebd7275",
-        "dsca:25-88",
-        "lda:5c1abbc2-8016-41f7-8fe2-3599654c3c35",
-        "dsca:25-10",
-        "dsca:25-50",
+        "lda:a8c5f1d2-0cdf-487d-86c7-a1f25fbe626a",
         "lda:f73cea5a-1a47-4a69-be75-73de58de16a9",
-        "lda:632193bd-fd93-4218-95c4-21f3572be2ec",
-        "lda:15b374fc-075b-46bc-af89-035f1b111bde",
+        "dsca:25-88",
         "lda:1123d22d-4536-469c-ac24-9d62f88f5159",
+        "lda:0f78f6c5-0768-43b6-b950-5d02a496b78c",
+        "dsca:25-10",
         "lda:735626a0-9c20-48f5-9a41-4cb8ee74861f",
         "lda:95355046-63dc-442e-a808-5599387fa24a",
-        "lda:a8c5f1d2-0cdf-487d-86c7-a1f25fbe626a"
+        "lda:15b374fc-075b-46bc-af89-035f1b111bde",
+        "lda:5c1abbc2-8016-41f7-8fe2-3599654c3c35",
+        "lda:79c081bd-371f-4cb0-87a7-0e467ebd7275",
+        "lda:632193bd-fd93-4218-95c4-21f3572be2ec",
+        "dsca:25-50"
       ],
       "why": "lda filing on 2025-07-24 preceded dsca on 2025-08-06 by 13d.",
       "narrative": null
