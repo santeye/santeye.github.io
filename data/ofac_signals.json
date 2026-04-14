@@ -1,7 +1,92 @@
 {
-  "generated_at": "2026-03-23T23:35:56.461807+00:00",
+  "generated_at": "2026-04-14T22:55:06.344259+00:00",
   "sources": [
     "ofac"
   ],
-  "signals": []
+  "signals": [
+    {
+      "uid": 57219,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-04-14",
+      "title": "Jesus Reymundo RAMOS VAZQUEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DEL NORESTE)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57219"
+    },
+    {
+      "uid": 57220,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-04-14",
+      "title": "Eduardo Javier ISLAS VALDEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DEL NORESTE)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57220"
+    },
+    {
+      "uid": 57222,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-04-14",
+      "title": "Juan Pablo PENILLA RODRIGUEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DEL NORESTE)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57222"
+    },
+    {
+      "uid": 57223,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-04-14",
+      "title": "CASINO CENTENARIO (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DEL NORESTE)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57223"
+    },
+    {
+      "uid": 57224,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-04-14",
+      "title": "COMERCIALIZADORA Y ARRENDADORA DE MEXICO, S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: CASINO CENTENARIO)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57224"
+    },
+    {
+      "uid": 57225,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-04-14",
+      "title": "DIAMANTE CASINO (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: COMERCIALIZADORA Y ARRENDADORA DE MEXICO, S.A. DE C.V.)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57225"
+    }
+  ]
 }
