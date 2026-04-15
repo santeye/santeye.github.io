@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T22:55:36.916308+00:00",
+  "generated_at": "2026-04-15T22:53:12.141354+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,425 @@
     "sam"
   ],
   "signals": [
+    {
+      "filing_uuid": "2cecbd6f-b3cc-40cf-89b7-d3dcc46713c2",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Defense \u2014 Thallios Inc. via Strategic Marketing Innovations",
+      "value_usd": null,
+      "description": "Appropriations for USVs",
+      "lobbying_firm": "Strategic Marketing Innovations",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/2cecbd6f-b3cc-40cf-89b7-d3dcc46713c2/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "38a07457-ef5c-47b7-b34e-fc74313ffab0",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Defense \u2014 Caliburn via C6 Strategies, Llc (Fka Ms. Dana W. Hudson)",
+      "value_usd": null,
+      "description": "Advocate for enhanced operating systems for robotics systems and their payloads.",
+      "lobbying_firm": "C6 Strategies, Llc (Fka Ms. Dana W. Hudson)",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/38a07457-ef5c-47b7-b34e-fc74313ffab0/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "d6aeee65-f68c-4bf8-8339-cb263d7b72c4",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Defense, Science/Technology, Manufacturing \u2014 Nanohmics Inc. via Strategic Marketing Innovations",
+      "value_usd": null,
+      "description": "\"Advanced Materials Defense Manufacturing Basic Research\"",
+      "lobbying_firm": "Strategic Marketing Innovations",
+      "issue_codes": [
+        "DEF",
+        "MAN",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/d6aeee65-f68c-4bf8-8339-cb263d7b72c4/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "7fb1bd48-ce50-4d9b-ab45-bcd7209270f3",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Defense \u2014 Dupont Specialty Products Usa, Llc via Strategic Marketing Innovations",
+      "value_usd": null,
+      "description": "FY 2026 defense appropriations bill",
+      "lobbying_firm": "Strategic Marketing Innovations",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/7fb1bd48-ce50-4d9b-ab45-bcd7209270f3/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "1d63e37e-1b07-49ec-978e-20ff5e61eb53",
+      "iso": "KR",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Transportation, Trucking \u2014 Lx Pantos America, Inc. via Lee, Hong, Degerman, Kang & Waimey, A Professional Corporation",
+      "value_usd": null,
+      "description": "Global logistics and the movement of goods",
+      "lobbying_firm": "Lee, Hong, Degerman, Kang & Waimey, A Professional Corporation",
+      "issue_codes": [
+        "TRA",
+        "TRU"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1d63e37e-1b07-49ec-978e-20ff5e61eb53/print/",
+      "profile": {
+        "name": "South Korea",
+        "score": 4,
+        "factors": [
+          "US basing",
+          "nuclear program",
+          "regional power"
+        ],
+        "rationale": "Major US basing \u2014 28,000 troops, USFK (+1), latent nuclear capability \u2014 active discussion of indigenous program (+2), regional power and semiconductor/industrial hub (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "62c2f0e7-ccbd-460c-ace2-e8cc7e6016a7",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Defense \u2014 Asrc Federal Holding Company via Harborpoint Strategies Llc",
+      "value_usd": null,
+      "description": "Defense contractor related issues and initiatives",
+      "lobbying_firm": "Harborpoint Strategies Llc",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/62c2f0e7-ccbd-460c-ace2-e8cc7e6016a7/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "ccbefb19-916d-40d3-b12b-15c1cd5889d7",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Energy \u2014 Energy Eight, Llc via Rubin, Turnbull & Associates",
+      "value_usd": null,
+      "description": "Advocate on issues related to energy, passive energy solutions, and power quality.",
+      "lobbying_firm": "Rubin, Turnbull & Associates",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/ccbefb19-916d-40d3-b12b-15c1cd5889d7/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "b62a5aa5-7a65-4170-bb29-1ffe3af41706",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Trade \u2014 Fragrance Creators Association via Rubin, Turnbull & Associates",
+      "value_usd": null,
+      "description": "Advocate on issues related to fragrance, EPA chemical review, and trade.",
+      "lobbying_firm": "Rubin, Turnbull & Associates",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b62a5aa5-7a65-4170-bb29-1ffe3af41706/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "f1bcf6a2-721b-4e1d-bb7b-aefddf9d74f0",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Energy, Environment \u2014 Scout Clean Energy Llc via Holland & Hart Llp",
+      "value_usd": null,
+      "description": "Discussing project benefits and requesting assistance on permit process.",
+      "lobbying_firm": "Holland & Hart Llp",
+      "issue_codes": [
+        "ENG",
+        "ENV"
+      ],
+      "url": "https://lda.gov/filings/public/filing/f1bcf6a2-721b-4e1d-bb7b-aefddf9d74f0/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "889f52e7-e245-4d20-9993-e5cfd77b170f",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Energy, Trade \u2014 Atlantic Energy Investment Llc via Rubin, Turnbull & Associates",
+      "value_usd": null,
+      "description": "Advocate on issues related to energy, minerals, and energy production.",
+      "lobbying_firm": "Rubin, Turnbull & Associates",
+      "issue_codes": [
+        "ENG",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/889f52e7-e245-4d20-9993-e5cfd77b170f/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "747701d7-2687-4534-bb64-71760ed70093",
+      "iso": "JP",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Defense \u2014 Rigaku Analytical Devices, Inc. via Ervin Graves Strategy Group, Llc",
+      "value_usd": null,
+      "description": "Advocacy related to funding, policy, and procurement of handheld Raman chemical detection technologies.",
+      "lobbying_firm": "Ervin Graves Strategy Group, Llc",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/747701d7-2687-4534-bb64-71760ed70093/print/",
+      "profile": {
+        "name": "Japan",
+        "score": 6,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "strategic minerals",
+          "US basing"
+        ],
+        "rationale": "Latent nuclear program \u2014 plutonium stockpile, can weaponize rapidly (+2), regional power (+1), strategic minerals processing hub (+2), major US basing \u2014 Yokosuka, Kadena, Okinawa (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "f8a0625e-f0b6-4dd6-8049-899009119177",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Energy \u2014 Arc Clean Technology via Cassidy & Associates, Inc.",
+      "value_usd": null,
+      "description": "Deployment of ARC-100 reactor",
+      "lobbying_firm": "Cassidy & Associates, Inc.",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/f8a0625e-f0b6-4dd6-8049-899009119177/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 56868,
+      "iso": "IN",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "FLEET TANQO PRIVATE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56868",
+      "profile": {
+        "name": "India",
+        "score": 7,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "strategic minerals",
+          "Indian Ocean",
+          "US partner"
+        ],
+        "rationale": "Nuclear weapons program (+2), regional power (+1), strategic minerals including rare earths (+2), Indian Ocean chokepoint adjacency \u2014 controls Andaman sea lanes (+1), major US security partner and arms customer (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57024,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "TAYLOR SHIPPING FZCO (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57024",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57075,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "Seyed Naiemaei Badroddin MOOSAVI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57075",
+      "profile": {
+        "name": "United Kingdom",
+        "score": 5,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "US partner",
+          "maritime chokepoint"
+        ],
+        "rationale": "Active nuclear weapons program \u2014 Trident (+2), regional power and global basing network (+1), major US interoperability partner \u2014 Five Eyes, AUKUS (+1), controls Gibraltar and Diego Garcia chokepoints (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57081,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "SHIPSTAR SHIPCHANDLING LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HOUSE OF SHIPPING INVESTMENT FZCO)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57081",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57082,
+      "iso": "IN",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "HOUSE OF SHIPPING PRIVATE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HOUSE OF SHIPPING INVESTMENT FZCO)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57082",
+      "profile": {
+        "name": "India",
+        "score": 7,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "strategic minerals",
+          "Indian Ocean",
+          "US partner"
+        ],
+        "rationale": "Nuclear weapons program (+2), regional power (+1), strategic minerals including rare earths (+2), Indian Ocean chokepoint adjacency \u2014 controls Andaman sea lanes (+1), major US security partner and arms customer (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57083,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "ACS TRADING LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MOOSAVI, Seyed Naiemaei Badroddin)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57083",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "filing_uuid": "8fb0a48e-cd79-4345-8058-ef4d6ec5998b",
       "iso": "VE",
@@ -333,6 +752,142 @@
         "ENG"
       ],
       "url": "https://lda.gov/filings/public/filing/36a8c415-c54b-4431-9d0e-0a3c65f9a28a/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "294d426a-032d-4acd-b2a3-524fafbccbd9",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-14",
+      "title": "Defense, Aerospace \u2014 Firefly Aerospace via Washington Navigators",
+      "value_usd": null,
+      "description": "Aerospace Funding and Policy",
+      "lobbying_firm": "Washington Navigators",
+      "issue_codes": [
+        "AER",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/294d426a-032d-4acd-b2a3-524fafbccbd9/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "b435a808-79fe-4dcf-be37-831191cd4789",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-14",
+      "title": "Defense \u2014 Mpower Technology via Tanagra Enterprises Llc",
+      "value_usd": null,
+      "description": "Issues related to commercial space",
+      "lobbying_firm": "Tanagra Enterprises Llc",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b435a808-79fe-4dcf-be37-831191cd4789/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "7bebac99-1320-4824-8566-10afe5685a01",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-14",
+      "title": "Energy, Fuel/Oil \u2014 San Joaquin Refining via Cr Federal",
+      "value_usd": null,
+      "description": "Energy Fuels Refining",
+      "lobbying_firm": "Cr Federal",
+      "issue_codes": [
+        "ENG",
+        "FUE"
+      ],
+      "url": "https://lda.gov/filings/public/filing/7bebac99-1320-4824-8566-10afe5685a01/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "e448c796-126f-4d12-9811-fda7604cfdd5",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-14",
+      "title": "Foreign Affairs \u2014 Palmerino De Grazia via Corcoran & Associates, Inc. Dba Corcoran Partners",
+      "value_usd": null,
+      "description": "Issues related to U.S.-Venezuela bilateral relations Return of stolen property",
+      "lobbying_firm": "Corcoran & Associates, Inc. Dba Corcoran Partners",
+      "issue_codes": [
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e448c796-126f-4d12-9811-fda7604cfdd5/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "dbdd127c-0db8-4a55-a5cd-a250ccc958fe",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-14",
+      "title": "Defense, Budget \u2014 Mla Associates via Hawley Llc",
+      "value_usd": null,
+      "description": "Issues related to defense authorization, appropriations, and industrial base operations.",
+      "lobbying_firm": "Hawley Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/dbdd127c-0db8-4a55-a5cd-a250ccc958fe/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "f1f27b2a-41e6-461e-aafe-934605d059e4",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-14",
+      "title": "Defense \u2014 Dittolive Inc. via Checkmate Government Relations",
+      "value_usd": null,
+      "description": "Issues related to defense funding opportunities.",
+      "lobbying_firm": "Checkmate Government Relations",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/f1f27b2a-41e6-461e-aafe-934605d059e4/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "3ca667eb-fe49-48a1-9f71-7934394f06ef",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-14",
+      "title": "Defense \u2014 Supplycore Llc via Checkmate Government Relations",
+      "value_usd": null,
+      "description": "Issues related to equipment that supports defense and logistical affairs.",
+      "lobbying_firm": "Checkmate Government Relations",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/3ca667eb-fe49-48a1-9f71-7934394f06ef/print/",
       "profile": null,
       "layer": "influence",
       "quality": 0.5,
@@ -21589,50 +22144,73 @@
   ],
   "themes": [
     {
+      "type": "velocity_anomaly",
+      "title": "United Arab Emirates \u2014 5 signals in 30 days (+5.8\u03c3)",
+      "score": 70.91,
+      "countries": [
+        "AE"
+      ],
+      "signal_keys": [
+        "ofac:TAYLOR SHIPPING FZCO (Entity)",
+        "ofac:SHIPSTAR SHIPCHANDLING LLC (Entity)",
+        "ofac:ACS TRADING LLC (Entity)",
+        "dsca:Fixed Site-Low, Slow, Small Unmanned Air",
+        "dsca:F-16 Munitions and Upgrades"
+      ],
+      "why": "4.7 weighted signals in 30 days vs 0.3 avg (+5.8\u03c3). Sources: dsca\u00d72, ofac\u00d73",
+      "narrative": {
+        "headline": "UAE simultaneously buys US air defenses and hosts Iranian sanctions networks",
+        "body": "Three UAE-registered entities linked to Iranian figures (Shamkhani, Moosavi) hit OFAC the same week the US approved $2.7B in UAE air defense and F-16 munitions sales. UAE is playing both sides: deepening US security ties while remaining a permissive jurisdiction for Iranian sanctions evasion.",
+        "prompt": "I just saw a pattern where the UAE received $2.74B in US arms approvals (Fixed Site counter-drone systems and F-16 munitions/upgrades via DSCA) on 2026-03-19, while three UAE-registered entities \u2014 Taylor Shipping FZCO, Shipstar Shipchandling LLC, and ACS Trading LLC \u2014 were sanctioned by OFAC on 2026-04-15 for links to Mohammad Hossein Shamkhani, House of Shipping Investment FZCO, and Seyed Naiemaei Badroddin Moosavi respectively. Please: (1) explain who each entity and named individual is and what they actually do; (2) describe how they relate to each other and to UAE's role in Iranian sanctions evasion and US Gulf security architecture; (3) assess the DSCA approvals and OFAC designations independently \u2014 are the arms sales routine Gulf security business, and is this sanctions cluster anomalous in scale or targeting; (4) give a clear verdict on whether this coincidence signals a deliberate US pressure-plus-reward strategy toward UAE, an orchestrated crackdown, or noise \u2014 and what specifically I should watch for next."
+      }
+    },
+    {
       "type": "convergence",
       "title": "United Kingdom \u2014 velocity spike + layer sequence",
-      "score": 45.819,
+      "score": 54.019,
       "countries": [
         "GB"
       ],
       "signal_keys": [
-        "lda:29e67f85-e020-4714-8d85-9cf4e447eb0f",
-        "lda:585860bc-af15-4e03-a51e-7b10e683c7cd",
         "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
-        "lda:0530d8ed-e131-4ee6-88ca-bd6a18e0c2ab",
+        "ofac:Seyed Naiemaei Badroddin MOOSAVI (Indivi",
+        "lda:585860bc-af15-4e03-a51e-7b10e683c7cd",
+        "lda:29e67f85-e020-4714-8d85-9cf4e447eb0f",
         "dsca:Submarine Combat and Weapon Systems, Tec"
       ],
-      "why": "[velocity_anomaly] 3.0 weighted signals in 30 days vs 1.2 avg (+3.0\u03c3). Sources: dsca\u00d71, lda\u00d74 | [layer_sequence] lda on 2026-03-16 \u2192 dsca on 2026-03-20 (4d). Current window 0.85 weighted pairs vs 0.00 baseline (+8.5\u03c3).",
+      "why": "[velocity_anomaly] 3.4 weighted signals in 30 days vs 1.3 avg (+3.7\u03c3). Sources: dsca\u00d71, lda\u00d73, ofac\u00d71 | [layer_sequence] lda on 2026-03-19 \u2192 dsca on 2026-03-20 (1d). Current window 0.83 weighted pairs vs 0.00 baseline (+8.3\u03c3).",
       "_components": [
         {
           "type": "velocity_anomaly",
-          "title": "United Kingdom \u2014 5 signals in 30 days (+3.0\u03c3)",
-          "score": 25.502,
+          "title": "United Kingdom \u2014 5 signals in 30 days (+3.7\u03c3)",
+          "score": 34.851,
           "countries": [
             "GB"
           ],
           "signal_keys": [
+            "ofac:Seyed Naiemaei Badroddin MOOSAVI (Indivi",
             "lda:29e67f85-e020-4714-8d85-9cf4e447eb0f",
             "lda:585860bc-af15-4e03-a51e-7b10e683c7cd",
             "dsca:Submarine Combat and Weapon Systems, Tec",
-            "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
-            "lda:0530d8ed-e131-4ee6-88ca-bd6a18e0c2ab"
+            "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406"
           ],
-          "why": "3.0 weighted signals in 30 days vs 1.2 avg (+3.0\u03c3). Sources: dsca\u00d71, lda\u00d74"
+          "why": "3.4 weighted signals in 30 days vs 1.3 avg (+3.7\u03c3). Sources: dsca\u00d71, lda\u00d73, ofac\u00d71"
         },
         {
           "type": "layer_sequence",
-          "title": "United Kingdom \u2014 influence \u2192 military sequence (4d gap)",
-          "score": 20.317,
+          "title": "United Kingdom \u2014 influence \u2192 military sequence (1d gap)",
+          "score": 19.168,
           "countries": [
             "GB"
           ],
           "signal_keys": [
-            "dsca:Submarine Combat and Weapon Systems, Tec",
             "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
-            "lda:0530d8ed-e131-4ee6-88ca-bd6a18e0c2ab"
+            "dsca:Submarine Combat and Weapon Systems, Tec",
+            "ofac:Seyed Naiemaei Badroddin MOOSAVI (Indivi",
+            "lda:585860bc-af15-4e03-a51e-7b10e683c7cd",
+            "lda:29e67f85-e020-4714-8d85-9cf4e447eb0f"
           ],
-          "why": "lda on 2026-03-16 \u2192 dsca on 2026-03-20 (4d). Current window 0.85 weighted pairs vs 0.00 baseline (+8.5\u03c3)."
+          "why": "lda on 2026-03-19 \u2192 dsca on 2026-03-20 (1d). Current window 0.83 weighted pairs vs 0.00 baseline (+8.3\u03c3)."
         }
       ],
       "narrative": {
@@ -21643,23 +22221,18 @@
     },
     {
       "type": "velocity_anomaly",
-      "title": "Mexico \u2014 4 signals in 30 days (+4.9\u03c3)",
-      "score": 40.126,
+      "title": "Mexico \u2014 3 signals in 30 days (+3.8\u03c3)",
+      "score": 26.272,
       "countries": [
         "MX"
       ],
       "signal_keys": [
         "ofac:Jesus Reymundo RAMOS VAZQUEZ (Individual",
         "ofac:COMERCIALIZADORA Y ARRENDADORA DE MEXICO",
-        "ofac:DIAMANTE CASINO (Entity)",
-        "lda:2546e933-cf40-44b7-8a69-91c428ae13e8"
+        "ofac:DIAMANTE CASINO (Entity)"
       ],
-      "why": "3.2 weighted signals in 30 days vs 0.6 avg (+4.9\u03c3). Sources: lda\u00d71, ofac\u00d73",
-      "narrative": {
-        "headline": "CDN money laundering via casinos exposed as cattle lobby surges",
-        "body": "OFAC sanctioned Jesus Reymundo Ramos Vazquez, Comercializadora Y Arrendadora De Mexico, and Diamante Casino in a single action linking Cartel del Noreste to casino front operations. Simultaneously, Chihuahua cattle ranchers are lobbying hard on US border closure \u2014 suggesting the border disruption is creating pressure on both legitimate and illicit cross-border economic actors.",
-        "prompt": "I just saw a pattern flagging simultaneous OFAC sanctions against Cartel del Noreste-linked individuals and entities (Jesus Reymundo Ramos Vazquez, Comercializadora Y Arrendadora De Mexico S.A. de C.V., Diamante Casino, Casino Centenario) alongside aggressive lobbying by Union Ganadera Regional De Chihuahua via Squire Patton Boggs and McGinley LLC on US cattle import border closures. (1) Who are each of these entities and what do they actually do? (2) How does Cartel del Noreste's casino money-laundering network relate to the Chihuahua cattle corridor, and what is the broader border policy context? (3) Assess independently: are these OFAC designations routine CDN enforcement or an escalation, and is the cattle lobby activity anomalous in scale or timing? (4) Give a clear verdict: coordinated pressure on the same border corridor, thematic coincidence, or noise \u2014 and what should I watch for next?"
-      }
+      "why": "2.7 weighted signals in 30 days vs 0.6 avg (+3.8\u03c3). Sources: ofac\u00d73",
+      "narrative": null
     },
     {
       "type": "cftc_overlap",
@@ -21698,7 +22271,7 @@
     {
       "type": "actor_concentration",
       "title": "Ark Strategy lobbying for 3 countries simultaneously",
-      "score": 12.668,
+      "score": 12.458,
       "countries": [
         "AU",
         "GB",
@@ -21715,7 +22288,7 @@
     {
       "type": "actor_concentration",
       "title": "Cassidy & Associates, Inc. lobbying for 3 countries simultaneously",
-      "score": 12.667,
+      "score": 12.457,
       "countries": [
         "AU",
         "CA",
@@ -21733,7 +22306,7 @@
     {
       "type": "actor_concentration",
       "title": "Ml Strategies, Llc lobbying for 3 countries simultaneously",
-      "score": 10.987,
+      "score": 10.805,
       "countries": [
         "AU",
         "CA",
@@ -21750,7 +22323,7 @@
     {
       "type": "actor_concentration",
       "title": "The Vogel Group lobbying for 4 countries simultaneously",
-      "score": 10.573,
+      "score": 10.398,
       "countries": [
         "AE",
         "AT",
@@ -21769,7 +22342,7 @@
     {
       "type": "actor_concentration",
       "title": "Miller Strategies, Llc lobbying for 6 countries simultaneously",
-      "score": 10.567,
+      "score": 10.393,
       "countries": [
         "BE",
         "CA",
@@ -21792,7 +22365,7 @@
     {
       "type": "actor_concentration",
       "title": "Valcour Llc lobbying for 4 countries simultaneously",
-      "score": 9.785,
+      "score": 9.623,
       "countries": [
         "GB",
         "IQ",
@@ -21811,7 +22384,7 @@
     {
       "type": "actor_concentration",
       "title": "Checkmate Government Relations lobbying for 4 countries simultaneously",
-      "score": 9.666,
+      "score": 9.506,
       "countries": [
         "CH",
         "CN",
@@ -21859,7 +22432,7 @@
     {
       "type": "actor_concentration",
       "title": "Bgr Government Affairs lobbying for 6 countries simultaneously",
-      "score": 8.269,
+      "score": 8.132,
       "countries": [
         "CN",
         "DK",
@@ -21884,7 +22457,7 @@
     {
       "type": "actor_concentration",
       "title": "Marshall & Popp, Llc lobbying for 3 countries simultaneously",
-      "score": 6.952,
+      "score": 6.837,
       "countries": [
         "AU",
         "GB",
@@ -21901,7 +22474,7 @@
     {
       "type": "actor_concentration",
       "title": "Dga Group Government Relations Llc lobbying for 4 countries simultaneously",
-      "score": 6.301,
+      "score": 6.196,
       "countries": [
         "BR",
         "CN",
@@ -21920,7 +22493,7 @@
     {
       "type": "actor_concentration",
       "title": "Mayer Brown Llp lobbying for 5 countries simultaneously",
-      "score": 3.825,
+      "score": 3.761,
       "countries": [
         "BE",
         "CN",
@@ -21941,7 +22514,7 @@
     {
       "type": "actor_concentration",
       "title": "Covenant Government Affairs, Llc lobbying for 3 countries simultaneously",
-      "score": 2.91,
+      "score": 2.862,
       "countries": [
         "AU",
         "CA",
@@ -21959,7 +22532,7 @@
     {
       "type": "actor_concentration",
       "title": "Invariant Llc lobbying for 4 countries simultaneously",
-      "score": 2.824,
+      "score": 2.778,
       "countries": [
         "AU",
         "DE",
@@ -21973,23 +22546,6 @@
         "lda:7bd791f6-d51a-4726-b877-cc759a253e03"
       ],
       "why": "Invariant Llc filed LDA disclosures for Australia, Germany, Turkey, Taiwan in the same period.",
-      "narrative": null
-    },
-    {
-      "type": "actor_concentration",
-      "title": "King & Spalding Llp lobbying for 3 countries simultaneously",
-      "score": 2.466,
-      "countries": [
-        "AT",
-        "BR",
-        "CA"
-      ],
-      "signal_keys": [
-        "lda:7966fa9c-08f9-4c18-9500-f8d72be58655",
-        "lda:b50587f3-c842-45a9-8d92-65aa0d275bf7",
-        "lda:b88780ee-54dd-4925-a02b-53232aad058e"
-      ],
-      "why": "King & Spalding Llp filed LDA disclosures for Austria, Brazil, Canada in the same period.",
       "narrative": null
     }
   ]

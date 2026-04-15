@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T22:55:06.344259+00:00",
+  "generated_at": "2026-04-15T22:52:28.177945+00:00",
   "sources": [
     "ofac"
   ],
@@ -87,6 +87,370 @@
         "SDGT"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57225"
+    },
+    {
+      "uid": 56868,
+      "iso": "IN",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "FLEET TANQO PRIVATE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56868"
+    },
+    {
+      "uid": 56951,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "SILVAR (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: FLEET TANQO PRIVATE LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56951"
+    },
+    {
+      "uid": 56952,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "DAPHNE V (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: FLEET TANQO PRIVATE LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56952"
+    },
+    {
+      "uid": 56953,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "ANAYA (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: FLEET TANQO PRIVATE LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56953"
+    },
+    {
+      "uid": 56954,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "VERSA (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: FLEET TANQO PRIVATE LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56954"
+    },
+    {
+      "uid": 56955,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "HORAE (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: FLEET TANQO PRIVATE LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56955"
+    },
+    {
+      "uid": 56956,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "AURA LINES INC. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56956"
+    },
+    {
+      "uid": 56957,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "AURA (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: AURA LINES INC.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56957"
+    },
+    {
+      "uid": 56958,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "HAPUKA MARINE LTD. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56958"
+    },
+    {
+      "uid": 56959,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "CAUVERI (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: HAPUKA MARINE LTD.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56959"
+    },
+    {
+      "uid": 57023,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "SHIPZA SHIPPING LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57023"
+    },
+    {
+      "uid": 57024,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "TAYLOR SHIPPING FZCO (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57024"
+    },
+    {
+      "uid": 57030,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "NARDIE INTERNATIONAL S.A. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57030"
+    },
+    {
+      "uid": 57031,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "ANIKA LINES INC. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57031"
+    },
+    {
+      "uid": 57032,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "BELLARIS (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: NARDIE INTERNATIONAL S.A.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57032"
+    },
+    {
+      "uid": 57033,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "ANIKA (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: ANIKA LINES INC.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57033"
+    },
+    {
+      "uid": 57071,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "HOUSE OF SHIPPING INVESTMENT FZCO (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57071"
+    },
+    {
+      "uid": 57072,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "CORPLINX CONSULTANCY LLC FZ (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57072"
+    },
+    {
+      "uid": 57073,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "MERITRON DMCC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57073"
+    },
+    {
+      "uid": 57074,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "HELMATIC CONSULTANCY DMCC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57074"
+    },
+    {
+      "uid": 57075,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "Seyed Naiemaei Badroddin MOOSAVI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57075"
+    },
+    {
+      "uid": 57076,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "ORIEL GROUP (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57076"
+    },
+    {
+      "uid": 57080,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "Tanjore Sunilkumar SRINIVAS (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57080"
+    },
+    {
+      "uid": 57081,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "SHIPSTAR SHIPCHANDLING LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HOUSE OF SHIPPING INVESTMENT FZCO)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57081"
+    },
+    {
+      "uid": 57082,
+      "iso": "IN",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "HOUSE OF SHIPPING PRIVATE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HOUSE OF SHIPPING INVESTMENT FZCO)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57082"
+    },
+    {
+      "uid": 57083,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "ACS TRADING LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MOOSAVI, Seyed Naiemaei Badroddin)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57083"
+    },
+    {
+      "uid": 57084,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "LOTUS UNIVERSAL LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MOOSAVI, Seyed Naiemaei Badroddin)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57084"
+    },
+    {
+      "uid": 57085,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-04-15",
+      "title": "Chetan Prakash BALHOTRA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57085"
     }
   ]
 }
