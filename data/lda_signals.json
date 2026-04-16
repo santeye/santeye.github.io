@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T22:52:49.613639+00:00",
+  "generated_at": "2026-04-16T22:54:50.360574+00:00",
   "sources": [
     "lda"
   ],
@@ -9391,6 +9391,187 @@
         "ENG"
       ],
       "url": "https://lda.gov/filings/public/filing/f8a0625e-f0b6-4dd6-8049-899009119177/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "d7d16f18-77ab-49e3-b5ee-8475455400e4",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Science/Technology \u2014 Edera L3C via Brownstein Hyatt Farber Schreck, Llp",
+      "value_usd": null,
+      "description": "Healthcare IT issues and AI",
+      "lobbying_firm": "Brownstein Hyatt Farber Schreck, Llp",
+      "issue_codes": [
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/d7d16f18-77ab-49e3-b5ee-8475455400e4/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "9c1c8c1f-4798-446a-85dc-2ffd7503e0b5",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Energy, Maritime, Transportation \u2014 Crowley Maritime Corporation via Mirsonia Group",
+      "value_usd": null,
+      "description": "Issues related to maritime commerce, microgrids and LNG in Puerto Rico.",
+      "lobbying_firm": "Mirsonia Group",
+      "issue_codes": [
+        "ENG",
+        "MAR",
+        "TRA"
+      ],
+      "url": "https://lda.gov/filings/public/filing/9c1c8c1f-4798-446a-85dc-2ffd7503e0b5/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "cf6477ea-cfb9-4b48-8e94-e37a3dfb1a7c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Defense \u2014 Haptech Defense Systems via Strategic Marketing Innovations",
+      "value_usd": null,
+      "description": "Electromagnetic recoil & instrumentation Systems",
+      "lobbying_firm": "Strategic Marketing Innovations",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/cf6477ea-cfb9-4b48-8e94-e37a3dfb1a7c/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "ed83aac4-887b-4f15-907c-96e8fbb45a4d",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Defense, Budget \u2014 Providence College via Mcallister & Quinn, Llc",
+      "value_usd": null,
+      "description": "Department of Defense Appropriations No bill number - Department of Defense Appropriations Act, 2027 - Provisions relate\u2026",
+      "lobbying_firm": "Mcallister & Quinn, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/ed83aac4-887b-4f15-907c-96e8fbb45a4d/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "6a049259-f2d6-4ce2-be82-0f27e419ed80",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Defense \u2014 Voyager Technologies via Strategic Marketing Innovations",
+      "value_usd": null,
+      "description": "Defense appropriations",
+      "lobbying_firm": "Strategic Marketing Innovations",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/6a049259-f2d6-4ce2-be82-0f27e419ed80/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "996c05ca-23cb-4a96-a62b-126a1f20e248",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Foreign Affairs, Agriculture \u2014 Winrock International via Kyle House Group",
+      "value_usd": null,
+      "description": "Education and advocacy on domestic and global agriculture programs",
+      "lobbying_firm": "Kyle House Group",
+      "issue_codes": [
+        "AGR",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/996c05ca-23cb-4a96-a62b-126a1f20e248/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "4a3a31f8-853e-4f95-8755-d6fc599a3752",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Defense \u2014 General Atomics via Strategic Marketing Innovations",
+      "value_usd": null,
+      "description": "Defense appropriations",
+      "lobbying_firm": "Strategic Marketing Innovations",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/4a3a31f8-853e-4f95-8755-d6fc599a3752/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "f7699ab2-5c87-4912-b0fd-44c5bd2172fd",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Defense, Budget \u2014 Echandia Marine Us via Mcallister & Quinn, Llc",
+      "value_usd": null,
+      "description": "Department of Defense Appropriations S. 2572 - Department of Defense Appropriations Act, 2026 - Provisions related to Ec\u2026",
+      "lobbying_firm": "Mcallister & Quinn, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/f7699ab2-5c87-4912-b0fd-44c5bd2172fd/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "89f85cba-e2e8-4154-93d9-b1bfeea06bb9",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Energy \u2014 Balanced Rock Power, Llc via Lot Sixteen Llc",
+      "value_usd": null,
+      "description": "Permitting and approvals of renewable energy projects on public lands",
+      "lobbying_firm": "Lot Sixteen Llc",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/89f85cba-e2e8-4154-93d9-b1bfeea06bb9/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "078d126b-77f3-4b7f-8395-fbcd011e42f1",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Science/Technology \u2014 Match Group Holdings via Acg Advocacy",
+      "value_usd": null,
+      "description": "Website and app technology issues.",
+      "lobbying_firm": "Acg Advocacy",
+      "issue_codes": [
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/078d126b-77f3-4b7f-8395-fbcd011e42f1/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "b1548447-5826-45a4-aead-bb8848abd109",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Defense \u2014 Aviation Llc via Acg Advocacy",
+      "value_usd": null,
+      "description": "Defense technology and open systems issues.",
+      "lobbying_firm": "Acg Advocacy",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b1548447-5826-45a4-aead-bb8848abd109/print/",
       "raw_score": null,
       "weight": 1.0
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T22:52:31.721070+00:00",
+  "generated_at": "2026-04-16T22:54:37.005478+00:00",
   "sources": [
     "fara"
   ],
@@ -2500,7 +2500,21 @@
       "raw_score": 7.0,
       "weight": 1.0,
       "page_url": "https://efile.fara.gov/docs/7712-Registration-Statement-20260406-1.pdf"
+    },
+    {
+      "registration_number": 7716,
+      "iso": null,
+      "source": "fara",
+      "signal_date": "2026-04-15",
+      "title": "Investe Piaui LLC",
+      "value_usd": null,
+      "description": "Investe Piaui LLC",
+      "registrant": "Investe Piaui LLC",
+      "principal": null,
+      "target_groups": [],
+      "raw_score": null,
+      "weight": 1.0,
+      "page_url": "https://efile.fara.gov/docs/7716-Registration-Statement-20260415-1.pdf"
     }
-  ],
-  "error": "HTTP Error 404: 404"
+  ]
 }

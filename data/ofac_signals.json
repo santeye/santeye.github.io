@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T22:52:28.177945+00:00",
+  "generated_at": "2026-04-16T22:54:18.429318+00:00",
   "sources": [
     "ofac"
   ],
@@ -451,6 +451,19 @@
         "IRAN-EO13902"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57085"
+    },
+    {
+      "uid": 57070,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-04-16",
+      "title": "Feiwu BIAN (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "NICARAGUA"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57070"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T22:53:12.141354+00:00",
+  "generated_at": "2026-04-16T22:55:19.312860+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,73 @@
     "sam"
   ],
   "signals": [
+    {
+      "filing_uuid": "078d126b-77f3-4b7f-8395-fbcd011e42f1",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Science/Technology \u2014 Match Group Holdings via Acg Advocacy",
+      "value_usd": null,
+      "description": "Website and app technology issues.",
+      "lobbying_firm": "Acg Advocacy",
+      "issue_codes": [
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/078d126b-77f3-4b7f-8395-fbcd011e42f1/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "b1548447-5826-45a4-aead-bb8848abd109",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Defense \u2014 Aviation Llc via Acg Advocacy",
+      "value_usd": null,
+      "description": "Defense technology and open systems issues.",
+      "lobbying_firm": "Acg Advocacy",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b1548447-5826-45a4-aead-bb8848abd109/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57070,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-04-16",
+      "title": "Feiwu BIAN (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "NICARAGUA"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57070",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "filing_uuid": "2cecbd6f-b3cc-40cf-89b7-d3dcc46713c2",
       "iso": "XX",
@@ -259,6 +326,163 @@
         "ENG"
       ],
       "url": "https://lda.gov/filings/public/filing/f8a0625e-f0b6-4dd6-8049-899009119177/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "d7d16f18-77ab-49e3-b5ee-8475455400e4",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Science/Technology \u2014 Edera L3C via Brownstein Hyatt Farber Schreck, Llp",
+      "value_usd": null,
+      "description": "Healthcare IT issues and AI",
+      "lobbying_firm": "Brownstein Hyatt Farber Schreck, Llp",
+      "issue_codes": [
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/d7d16f18-77ab-49e3-b5ee-8475455400e4/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "9c1c8c1f-4798-446a-85dc-2ffd7503e0b5",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Energy, Maritime, Transportation \u2014 Crowley Maritime Corporation via Mirsonia Group",
+      "value_usd": null,
+      "description": "Issues related to maritime commerce, microgrids and LNG in Puerto Rico.",
+      "lobbying_firm": "Mirsonia Group",
+      "issue_codes": [
+        "ENG",
+        "MAR",
+        "TRA"
+      ],
+      "url": "https://lda.gov/filings/public/filing/9c1c8c1f-4798-446a-85dc-2ffd7503e0b5/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "cf6477ea-cfb9-4b48-8e94-e37a3dfb1a7c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Defense \u2014 Haptech Defense Systems via Strategic Marketing Innovations",
+      "value_usd": null,
+      "description": "Electromagnetic recoil & instrumentation Systems",
+      "lobbying_firm": "Strategic Marketing Innovations",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/cf6477ea-cfb9-4b48-8e94-e37a3dfb1a7c/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "ed83aac4-887b-4f15-907c-96e8fbb45a4d",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Defense, Budget \u2014 Providence College via Mcallister & Quinn, Llc",
+      "value_usd": null,
+      "description": "Department of Defense Appropriations No bill number - Department of Defense Appropriations Act, 2027 - Provisions relate\u2026",
+      "lobbying_firm": "Mcallister & Quinn, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/ed83aac4-887b-4f15-907c-96e8fbb45a4d/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "6a049259-f2d6-4ce2-be82-0f27e419ed80",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Defense \u2014 Voyager Technologies via Strategic Marketing Innovations",
+      "value_usd": null,
+      "description": "Defense appropriations",
+      "lobbying_firm": "Strategic Marketing Innovations",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/6a049259-f2d6-4ce2-be82-0f27e419ed80/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "996c05ca-23cb-4a96-a62b-126a1f20e248",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Foreign Affairs, Agriculture \u2014 Winrock International via Kyle House Group",
+      "value_usd": null,
+      "description": "Education and advocacy on domestic and global agriculture programs",
+      "lobbying_firm": "Kyle House Group",
+      "issue_codes": [
+        "AGR",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/996c05ca-23cb-4a96-a62b-126a1f20e248/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "f7699ab2-5c87-4912-b0fd-44c5bd2172fd",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Defense, Budget \u2014 Echandia Marine Us via Mcallister & Quinn, Llc",
+      "value_usd": null,
+      "description": "Department of Defense Appropriations S. 2572 - Department of Defense Appropriations Act, 2026 - Provisions related to Ec\u2026",
+      "lobbying_firm": "Mcallister & Quinn, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/f7699ab2-5c87-4912-b0fd-44c5bd2172fd/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "89f85cba-e2e8-4154-93d9-b1bfeea06bb9",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-15",
+      "title": "Energy \u2014 Balanced Rock Power, Llc via Lot Sixteen Llc",
+      "value_usd": null,
+      "description": "Permitting and approvals of renewable energy projects on public lands",
+      "lobbying_firm": "Lot Sixteen Llc",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/89f85cba-e2e8-4154-93d9-b1bfeea06bb9/print/",
       "profile": null,
       "layer": "influence",
       "quality": 0.5,
@@ -22145,8 +22369,8 @@
   "themes": [
     {
       "type": "velocity_anomaly",
-      "title": "United Arab Emirates \u2014 5 signals in 30 days (+5.8\u03c3)",
-      "score": 70.91,
+      "title": "United Arab Emirates \u2014 5 signals in 30 days (+7.6\u03c3)",
+      "score": 91.985,
       "countries": [
         "AE"
       ],
@@ -22157,11 +22381,11 @@
         "dsca:Fixed Site-Low, Slow, Small Unmanned Air",
         "dsca:F-16 Munitions and Upgrades"
       ],
-      "why": "4.7 weighted signals in 30 days vs 0.3 avg (+5.8\u03c3). Sources: dsca\u00d72, ofac\u00d73",
+      "why": "4.7 weighted signals in 30 days vs 0.3 avg (+7.6\u03c3). Sources: dsca\u00d72, ofac\u00d73",
       "narrative": {
         "headline": "UAE simultaneously buys US air defenses and hosts Iranian sanctions networks",
-        "body": "Three UAE-registered entities linked to Iranian figures (Shamkhani, Moosavi) hit OFAC the same week the US approved $2.7B in UAE air defense and F-16 munitions sales. UAE is playing both sides: deepening US security ties while remaining a permissive jurisdiction for Iranian sanctions evasion.",
-        "prompt": "I just saw a pattern where the UAE received $2.74B in US arms approvals (Fixed Site counter-drone systems and F-16 munitions/upgrades via DSCA) on 2026-03-19, while three UAE-registered entities \u2014 Taylor Shipping FZCO, Shipstar Shipchandling LLC, and ACS Trading LLC \u2014 were sanctioned by OFAC on 2026-04-15 for links to Mohammad Hossein Shamkhani, House of Shipping Investment FZCO, and Seyed Naiemaei Badroddin Moosavi respectively. Please: (1) explain who each entity and named individual is and what they actually do; (2) describe how they relate to each other and to UAE's role in Iranian sanctions evasion and US Gulf security architecture; (3) assess the DSCA approvals and OFAC designations independently \u2014 are the arms sales routine Gulf security business, and is this sanctions cluster anomalous in scale or targeting; (4) give a clear verdict on whether this coincidence signals a deliberate US pressure-plus-reward strategy toward UAE, an orchestrated crackdown, or noise \u2014 and what specifically I should watch for next."
+        "body": "Three UAE-registered entities linked to Iranian figures (including Shamkhani family network) were OFAC-designated the same day the US approved $2.7B in UAE arms sales. The UAE is playing both sides \u2014 absorbing US security hardware while remaining a permissive jurisdiction for Iranian sanctions evasion.",
+        "prompt": "I just saw a pattern where the UAE received two major US arms approvals ($2.1B Fixed Site counter-drone system, $644M F-16 munitions/upgrades, both March 19 2026) while three UAE-based entities \u2014 Taylor Shipping FZCO, Shipstar Shipchandling LLC, and ACS Trading LLC \u2014 were OFAC-designated on April 15 2026 for links to Mohammad Hossein Shamkhani, House of Shipping Investment FZCO, and Seyed Naiemaei Badroddin Moosavi respectively. Please: (1) explain who each of these entities and individuals are and what they actually do; (2) describe how they relate to each other and to UAE's role in Iranian sanctions evasion and US Gulf security architecture; (3) assess the arms sales and OFAC designations independently \u2014 are the sales routine FMS or strategically significant, and is this designation cluster anomalous in scale or targeting; (4) give a clear verdict on whether this is a macro signal about UAE dual-positioning worth monitoring, an orchestrated pattern, or noise \u2014 and what specifically I should watch for next."
       }
     },
     {
@@ -22173,10 +22397,10 @@
       ],
       "signal_keys": [
         "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
-        "ofac:Seyed Naiemaei Badroddin MOOSAVI (Indivi",
-        "lda:585860bc-af15-4e03-a51e-7b10e683c7cd",
         "lda:29e67f85-e020-4714-8d85-9cf4e447eb0f",
-        "dsca:Submarine Combat and Weapon Systems, Tec"
+        "ofac:Seyed Naiemaei Badroddin MOOSAVI (Indivi",
+        "dsca:Submarine Combat and Weapon Systems, Tec",
+        "lda:585860bc-af15-4e03-a51e-7b10e683c7cd"
       ],
       "why": "[velocity_anomaly] 3.4 weighted signals in 30 days vs 1.3 avg (+3.7\u03c3). Sources: dsca\u00d71, lda\u00d73, ofac\u00d71 | [layer_sequence] lda on 2026-03-19 \u2192 dsca on 2026-03-20 (1d). Current window 0.83 weighted pairs vs 0.00 baseline (+8.3\u03c3).",
       "_components": [
@@ -22204,11 +22428,11 @@
             "GB"
           ],
           "signal_keys": [
-            "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
-            "dsca:Submarine Combat and Weapon Systems, Tec",
             "ofac:Seyed Naiemaei Badroddin MOOSAVI (Indivi",
-            "lda:585860bc-af15-4e03-a51e-7b10e683c7cd",
-            "lda:29e67f85-e020-4714-8d85-9cf4e447eb0f"
+            "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
+            "lda:29e67f85-e020-4714-8d85-9cf4e447eb0f",
+            "dsca:Submarine Combat and Weapon Systems, Tec",
+            "lda:585860bc-af15-4e03-a51e-7b10e683c7cd"
           ],
           "why": "lda on 2026-03-19 \u2192 dsca on 2026-03-20 (1d). Current window 0.83 weighted pairs vs 0.00 baseline (+8.3\u03c3)."
         }
@@ -22232,7 +22456,31 @@
         "ofac:DIAMANTE CASINO (Entity)"
       ],
       "why": "2.7 weighted signals in 30 days vs 0.6 avg (+3.8\u03c3). Sources: ofac\u00d73",
-      "narrative": null
+      "narrative": {
+        "headline": "CDN-linked casino network hit by OFAC cluster designation",
+        "body": "Three same-day OFAC designations tie Jesus Ramos Vazquez, Comercializadora Y Arrendadora, and Diamante Casino into a single CDN money-laundering web via casino fronts. This suggests U.S. enforcement is actively dismantling Cartel del Noreste's financial infrastructure, likely ahead of broader pressure on Mexico.",
+        "prompt": "I just saw an OFAC designation cluster from April 14, 2026 targeting Jesus Reymundo Ramos Vazquez, Comercializadora Y Arrendadora De Mexico S.A. DE C.V., and Diamante Casino \u2014 all linked to Cartel del Noreste (CDN) and Casino Centenario. There's also recent U.S. lobbying by Union Ganadera Regional De Chihuahua via Squire Patton Boggs on trade, and a Zerinvest Inc. lobbying filing on trade and taxation. (1) Who are each of these entities and what do they actually do? (2) How do CDN, these casino fronts, and the lobbying actors relate to each other and to current U.S.-Mexico policy dynamics? (3) Assess independently: is this OFAC cluster routine cartel enforcement or an escalation signal? Is the Chihuahua cattle rancher lobbying anomalous given border/trade tensions? (4) Is this a coordinated enforcement-plus-economic-pressure pattern worth monitoring, or coincidental noise \u2014 and what should I watch for next?"
+      }
+    },
+    {
+      "type": "velocity_anomaly",
+      "title": "China \u2014 4 signals in 30 days (+2.9\u03c3)",
+      "score": 26.222,
+      "countries": [
+        "CN"
+      ],
+      "signal_keys": [
+        "ofac:Feiwu BIAN (Individual)",
+        "cftc:Corn",
+        "cftc:Corn",
+        "cftc:Corn"
+      ],
+      "why": "2.5 weighted signals in 30 days vs 0.8 avg (+2.9\u03c3). Sources: cftc\u00d73, ofac\u00d71",
+      "narrative": {
+        "headline": "Extreme corn long positioning coincides with fresh China-linked OFAC sanction",
+        "body": "Managed money corn longs hit +2.9\u03c3 above baseline (279,630 contracts) while OFAC sanctioned individual Feiwu Bian weeks later. Suggests traders may be pricing in Chinese import disruption or retaliatory agricultural trade restrictions ahead of formal policy action.",
+        "prompt": "I just saw a pattern flagging simultaneous signals on China: managed money corn futures net longs at +2.9\u03c3 (279,630 contracts, CFTC COT data, March 24 2026), and an OFAC sanctions designation of individual Feiwu Bian (April 16 2026). Background lobbying signals include Haier/GE Appliances via Mehlman Consulting, Grand Pharmaceutical Group via Checkmate Government Relations, and Arashi Vision via DGA Group. Please: (1) explain who Feiwu Bian is and what each lobbying entity actually does; (2) describe how these actors relate to US-China trade and sanctions policy; (3) assess independently \u2014 is the corn positioning anomalous relative to agricultural trade war history, and is the Bian designation routine or escalatory; (4) give a clear verdict: is this a macro ag-trade signal worth monitoring, an orchestrated pattern, or noise \u2014 and what specifically should I watch next?"
+      }
     },
     {
       "type": "cftc_overlap",
@@ -22271,7 +22519,7 @@
     {
       "type": "actor_concentration",
       "title": "Ark Strategy lobbying for 3 countries simultaneously",
-      "score": 12.458,
+      "score": 12.252,
       "countries": [
         "AU",
         "GB",
@@ -22288,7 +22536,7 @@
     {
       "type": "actor_concentration",
       "title": "Cassidy & Associates, Inc. lobbying for 3 countries simultaneously",
-      "score": 12.457,
+      "score": 12.251,
       "countries": [
         "AU",
         "CA",
@@ -22304,9 +22552,23 @@
       "narrative": null
     },
     {
+      "type": "layer_sequence",
+      "title": "China \u2014 financial \u2192 regulatory sequence (23d gap)",
+      "score": 10.799,
+      "countries": [
+        "CN"
+      ],
+      "signal_keys": [
+        "ofac:Feiwu BIAN (Individual)",
+        "cftc:Corn"
+      ],
+      "why": "cftc on 2026-03-24 \u2192 ofac on 2026-04-16 (23d). Current window 0.55 weighted pairs vs 0.00 baseline (+5.5\u03c3).",
+      "narrative": null
+    },
+    {
       "type": "actor_concentration",
       "title": "Ml Strategies, Llc lobbying for 3 countries simultaneously",
-      "score": 10.805,
+      "score": 10.627,
       "countries": [
         "AU",
         "CA",
@@ -22323,7 +22585,7 @@
     {
       "type": "actor_concentration",
       "title": "The Vogel Group lobbying for 4 countries simultaneously",
-      "score": 10.398,
+      "score": 10.226,
       "countries": [
         "AE",
         "AT",
@@ -22342,7 +22604,7 @@
     {
       "type": "actor_concentration",
       "title": "Miller Strategies, Llc lobbying for 6 countries simultaneously",
-      "score": 10.393,
+      "score": 10.221,
       "countries": [
         "BE",
         "CA",
@@ -22365,7 +22627,7 @@
     {
       "type": "actor_concentration",
       "title": "Valcour Llc lobbying for 4 countries simultaneously",
-      "score": 9.623,
+      "score": 9.464,
       "countries": [
         "GB",
         "IQ",
@@ -22384,7 +22646,7 @@
     {
       "type": "actor_concentration",
       "title": "Checkmate Government Relations lobbying for 4 countries simultaneously",
-      "score": 9.506,
+      "score": 9.349,
       "countries": [
         "CH",
         "CN",
@@ -22432,7 +22694,7 @@
     {
       "type": "actor_concentration",
       "title": "Bgr Government Affairs lobbying for 6 countries simultaneously",
-      "score": 8.132,
+      "score": 7.998,
       "countries": [
         "CN",
         "DK",
@@ -22457,7 +22719,7 @@
     {
       "type": "actor_concentration",
       "title": "Marshall & Popp, Llc lobbying for 3 countries simultaneously",
-      "score": 6.837,
+      "score": 6.724,
       "countries": [
         "AU",
         "GB",
@@ -22474,7 +22736,7 @@
     {
       "type": "actor_concentration",
       "title": "Dga Group Government Relations Llc lobbying for 4 countries simultaneously",
-      "score": 6.196,
+      "score": 6.094,
       "countries": [
         "BR",
         "CN",
@@ -22493,7 +22755,7 @@
     {
       "type": "actor_concentration",
       "title": "Mayer Brown Llp lobbying for 5 countries simultaneously",
-      "score": 3.761,
+      "score": 3.699,
       "countries": [
         "BE",
         "CN",
@@ -22509,43 +22771,6 @@
         "lda:6939f1ab-4fc6-415d-b082-7141bbee0923"
       ],
       "why": "Mayer Brown Llp filed LDA disclosures for Belgium, China, Finland, France, Japan in the same period.",
-      "narrative": null
-    },
-    {
-      "type": "actor_concentration",
-      "title": "Covenant Government Affairs, Llc lobbying for 3 countries simultaneously",
-      "score": 2.862,
-      "countries": [
-        "AU",
-        "CA",
-        "SG"
-      ],
-      "signal_keys": [
-        "lda:06f041a9-2003-4e3c-8e5c-fcbed26fa750",
-        "lda:ebaafdc1-22c3-42de-ab5c-841d5984c131",
-        "lda:775d3569-666b-48b3-8ad1-e31e64c26bd5",
-        "lda:4b59ed80-25c5-41fd-b853-f006b6cbd657"
-      ],
-      "why": "Covenant Government Affairs, Llc filed LDA disclosures for Australia, Canada, Singapore in the same period.",
-      "narrative": null
-    },
-    {
-      "type": "actor_concentration",
-      "title": "Invariant Llc lobbying for 4 countries simultaneously",
-      "score": 2.778,
-      "countries": [
-        "AU",
-        "DE",
-        "TR",
-        "TW"
-      ],
-      "signal_keys": [
-        "lda:95ef728b-bf54-4df7-a22b-175bbc0a40c1",
-        "lda:55260929-56a0-41ad-ac70-996b41468f28",
-        "lda:cf192ac6-8d01-4f07-ad69-45504b0217df",
-        "lda:7bd791f6-d51a-4726-b877-cc759a253e03"
-      ],
-      "why": "Invariant Llc filed LDA disclosures for Australia, Germany, Turkey, Taiwan in the same period.",
       "narrative": null
     }
   ]

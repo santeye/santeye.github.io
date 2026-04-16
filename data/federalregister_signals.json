@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T22:52:50.981117+00:00",
+  "generated_at": "2026-04-16T22:54:51.853084+00:00",
   "sources": [
     "federalregister"
   ],
@@ -5589,6 +5589,39 @@
       "description": "Arms sales notice. \u00b7 The DoD is publishing the unclassified text of an arms sales notification.",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/04/15/2026-07242/arms-sales-notification"
+    },
+    {
+      "document_number": "2026-07425",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-04-16",
+      "title": "Notice of OFAC Sanctions Action",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing the names of one or more persons that have been placed on OFAC's Specially Designated Nationals and Blocked Persons List (SDN List) based on OFAC's determination that one or more applicable legal criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of these persons are blocked, and U.S. persons are generally prohibited from engaging in transactions with them.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/04/16/2026-07425/notice-of-ofac-sanctions-action"
+    },
+    {
+      "document_number": "2026-07416",
+      "iso": "US",
+      "source": "federalregister",
+      "signal_date": "2026-04-16",
+      "title": "Imposition of Special Measure Prohibiting Certain Transmittals of Funds Involving CIBanco S.A., Instituci\u00f3n de Banca Multiple; Amendment",
+      "value_usd": null,
+      "description": "Order; amendment of order. \u00b7 FinCEN is issuing notice of an order amending its June 2025 order finding that CIBanco S.A., Instituci[oacute]n de Banca Multiple (CIBanco), is a financial institution operating outside of the United States that is of primary money laundering concern in connection with illicit opioid trafficking and imposing a special measure prohibiting certain transmittals of funds involving CIBanco. This amendment allows for certain transmittals of funds to facilitate payments necessary for the Government of Mexico to liquidate CIBanco.",
+      "raw_score": 10.0,
+      "page_url": "https://www.federalregister.gov/documents/2026/04/16/2026-07416/imposition-of-special-measure-prohibiting-certain-transmittals-of-funds-involving-cibanco-sa"
+    },
+    {
+      "document_number": "2026-07337",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-04-16",
+      "title": "Notice of Department of State Sanctions Action",
+      "value_usd": null,
+      "description": "Notice of Department of State Sanctions Actions Pursuant to the Executive Order Blocking Property With Respect To Specified Harmful Foreign Activities of the Government of the Russian Federation. \u00b7 The U.S. Department of State is publishing the name of a person who has been removed from the Department of the Treasury's List of Specially Designated Nationals and Blocked Persons (SDN List), administered by the Office of Foreign Assets Control (OFAC).",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/04/16/2026-07337/notice-of-department-of-state-sanctions-action"
     }
   ]
 }
