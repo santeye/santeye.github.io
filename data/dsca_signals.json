@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-16T22:52:35.474731+00:00",
+  "generated_at": "2026-04-17T22:52:09.866178+00:00",
   "sources": [
     "dsca"
   ],
@@ -14272,6 +14272,18 @@
       "cn_number": null,
       "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/03/united-kingdom-submarine-combat-and-weapon-systems-technical-support-u-s-and-uk-embedded-personnel-and-associated-training/",
       "wp_id": 673769
+    },
+    {
+      "iso": "DE",
+      "source": "dsca",
+      "signal_date": "2026-04-17",
+      "title": "Integrated Combat System, Supporting Equipment, and Support",
+      "value_usd": 11900000000.0,
+      "description": "The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Germany to Integrated Combat System, Supporting Equipment, and Support.",
+      "raw_score": 4.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/04/germany-integrated-combat-system-supporting-equipment-and-support/",
+      "wp_id": 678205
     }
   ]
 }

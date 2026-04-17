@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-16T22:55:19.312860+00:00",
+  "generated_at": "2026-04-17T22:54:39.845745+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,745 @@
     "sam"
   ],
   "signals": [
+    {
+      "iso": "DE",
+      "source": "dsca",
+      "signal_date": "2026-04-17",
+      "title": "Integrated Combat System, Supporting Equipment, and Support",
+      "value_usd": 11900000000.0,
+      "description": "The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Germany to Integrated Combat System, Supporting Equipment, and Support.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/04/germany-integrated-combat-system-supporting-equipment-and-support/",
+      "wp_id": 678205,
+      "profile": {
+        "name": "Germany",
+        "score": 4,
+        "factors": [
+          "US basing",
+          "nuclear hosting",
+          "regional power"
+        ],
+        "rationale": "Major US basing \u2014 EUCOM, Ramstein, Landstuhl (+1), US tactical nuclear weapons hosted (+2 latent nuclear), regional power and NATO anchor (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.3,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "6618f29c-bd57-4772-bd11-640cc85cae3b",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Defense, Energy, Homeland Security \u2014 Quantum Knight via Quantum Policy Group",
+      "value_usd": null,
+      "description": "Use of post-quantum crytography and crypto systems to secure government and civilian IT and OT systems.",
+      "lobbying_firm": "Quantum Policy Group",
+      "issue_codes": [
+        "BUD",
+        "CPI",
+        "DEF",
+        "ENG",
+        "HOM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/6618f29c-bd57-4772-bd11-640cc85cae3b/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "fcf8836d-1596-4708-8111-76cca9b5c3bc",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Defense \u2014 Valkyrie Systems Aerospace, Inc. via Porter Group, Llc",
+      "value_usd": null,
+      "description": "NDAA and Defense Appropriations",
+      "lobbying_firm": "Porter Group, Llc",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/fcf8836d-1596-4708-8111-76cca9b5c3bc/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "15763f1a-d7ce-43a8-bdeb-c0d9bb588fb1",
+      "iso": "DK",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Energy \u2014 Candela Renewables, Llc via Lot Sixteen Llc",
+      "value_usd": null,
+      "description": "permitting and approvals of renewable energy projects on public lands",
+      "lobbying_firm": "Lot Sixteen Llc",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/15763f1a-d7ce-43a8-bdeb-c0d9bb588fb1/print/",
+      "profile": {
+        "name": "Denmark",
+        "score": 6,
+        "factors": [
+          "maritime chokepoint",
+          "Danish Straits",
+          "strategic minerals",
+          "Greenland",
+          "Arctic"
+        ],
+        "rationale": "Controls Danish Straits \u2014 only Baltic Sea exit, chokepoint (+3), Greenland: rare earth and strategic mineral deposits (+2), Arctic sovereignty and NATO position (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "9a71aeec-2021-44da-b07b-c3f49c4b8cae",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Science/Technology \u2014 Syenta Inc. via Mcallister & Quinn, Llc",
+      "value_usd": null,
+      "description": "Semiconductor Manufacturing, National Security",
+      "lobbying_firm": "Mcallister & Quinn, Llc",
+      "issue_codes": [
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/9a71aeec-2021-44da-b07b-c3f49c4b8cae/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "371b6d6f-8798-4e90-a63d-01b79d377377",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Defense, Budget \u2014 Koa Bio, Llc via Mcallister & Quinn, Llc",
+      "value_usd": null,
+      "description": "Defense Appropriations No bill number - Department of Defense Appropriations Bill, 2027 - Provisions related to KoaBios \u2026",
+      "lobbying_firm": "Mcallister & Quinn, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/371b6d6f-8798-4e90-a63d-01b79d377377/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "fb93f592-4352-4df0-a7dd-78eab25a1528",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Energy \u2014 Midwest Alliance For Clean Hydrogen, Llc via Bose Public Affairs Group",
+      "value_usd": null,
+      "description": "Federal support for clean hydrogen projects",
+      "lobbying_firm": "Bose Public Affairs Group",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/fb93f592-4352-4df0-a7dd-78eab25a1528/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "d4c63af7-2455-42c0-b2b9-86cfc4845106",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Science/Technology \u2014 Albert Invent via Monument Advocacy",
+      "value_usd": null,
+      "description": "Issues related to artificial intelligence tools to support chemical and materials science innovation and chemical safety\u2026",
+      "lobbying_firm": "Monument Advocacy",
+      "issue_codes": [
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/d4c63af7-2455-42c0-b2b9-86cfc4845106/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "758322d5-3e0e-44cb-ab4d-5f2772db67c6",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Trade, Automotive \u2014 Lightship Energy, Inc via Monument Advocacy",
+      "value_usd": null,
+      "description": "Issues related to the importation and classification of electric vehicles and components.",
+      "lobbying_firm": "Monument Advocacy",
+      "issue_codes": [
+        "AUT",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/758322d5-3e0e-44cb-ab4d-5f2772db67c6/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "b2089fee-c8e1-4e02-93ca-3a048f124c2b",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Energy, Taxation \u2014 Maritime Innovation Coalition via Bracewell Llp",
+      "value_usd": null,
+      "description": "Energy, environment, and tax issues pertaining to clean maritime fuels",
+      "lobbying_firm": "Bracewell Llp",
+      "issue_codes": [
+        "ENG",
+        "TAX"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b2089fee-c8e1-4e02-93ca-3a048f124c2b/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "01855836-594e-42e4-b682-c58c96c385e7",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Energy \u2014 Lis Technologies Inc via Cove Strategies",
+      "value_usd": null,
+      "description": "Education of advanced laser technology used in advanced small modular reactors",
+      "lobbying_firm": "Cove Strategies",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/01855836-594e-42e4-b682-c58c96c385e7/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "e7be963a-70e9-4d04-a0ee-3c2b74ccd523",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Defense \u2014 Telesat Government Solutions via Velos",
+      "value_usd": null,
+      "description": "Satellites and commercial space",
+      "lobbying_firm": "Velos",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e7be963a-70e9-4d04-a0ee-3c2b74ccd523/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "41560d9f-ca91-42e9-9341-3615de1c90b8",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Defense, Budget, Health \u2014 Halomine, Inc. (D/B/A Avantguard, Inc.) via Mcallister & Quinn, Llc",
+      "value_usd": null,
+      "description": "Department of Defense Appropriations S. 2572 - Department of Defense Appropriations Act, 2026 - Provisions related to Av\u2026",
+      "lobbying_firm": "Mcallister & Quinn, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "HCR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/41560d9f-ca91-42e9-9341-3615de1c90b8/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "c651e347-6865-4828-99ef-1abd60b8c2fb",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Energy \u2014 Glassman Enterprises, Llc On Behalf Of The Coalition For Green Capital via Invariant Llc",
+      "value_usd": null,
+      "description": "Energy finance policy issues.",
+      "lobbying_firm": "Invariant Llc",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/c651e347-6865-4828-99ef-1abd60b8c2fb/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "cfec1efc-ceef-436f-81e3-c4eb74022fab",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Defense, Energy, Trade \u2014 Constellium Rolled Products Ravenswood, Llc via Edward C. Olivares, Llc",
+      "value_usd": null,
+      "description": "FY27 Defense Appropriations, FY27 NDAA, Department of Energy financial assistance, Sec 232 tariffs on aluminum, export r\u2026",
+      "lobbying_firm": "Edward C. Olivares, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "ENG",
+        "TAR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/cfec1efc-ceef-436f-81e3-c4eb74022fab/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "3af6959d-4104-4f00-b887-047cb4178728",
+      "iso": "IE",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Health \u2014 Minimed Group, Inc. via Minimed Group, Inc.",
+      "value_usd": null,
+      "description": "Issues related to diabetes care and devices.",
+      "lobbying_firm": "Minimed Group, Inc.",
+      "issue_codes": [
+        "HCR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/3af6959d-4104-4f00-b887-047cb4178728/print/",
+      "profile": {
+        "name": "Ireland",
+        "score": 2,
+        "factors": [
+          "undersea cables",
+          "US tech hub"
+        ],
+        "rationale": "Atlantic chokepoint position for trans-Atlantic undersea cable landings \u2014 hosts several major cable systems (+1), US tech and pharma domicile hub with significant financial exposure to US policy (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "8b20a8b0-0ad7-4577-b5af-c1580ec94380",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Defense, Telecom, Transportation \u2014 Shift5 via Fulcrum Public Affairs Llc",
+      "value_usd": null,
+      "description": "Issues related to operational technology systems and cybersecurity.",
+      "lobbying_firm": "Fulcrum Public Affairs Llc",
+      "issue_codes": [
+        "DEF",
+        "TEC",
+        "TRA"
+      ],
+      "url": "https://lda.gov/filings/public/filing/8b20a8b0-0ad7-4577-b5af-c1580ec94380/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "e26bb8df-f7fa-4311-8591-5ecd7d28ee3a",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Defense, Science/Technology \u2014 Axadvocacy Government Relations On Behalf Of Phantom Neuro via Integrus Strategies, Llc",
+      "value_usd": null,
+      "description": "Issues related to autonomous drone controllers and neurologically controlled prosthetics. Issues related to FY27 SAC/HAC\u2026",
+      "lobbying_firm": "Integrus Strategies, Llc",
+      "issue_codes": [
+        "DEF",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e26bb8df-f7fa-4311-8591-5ecd7d28ee3a/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "8adf7711-5f11-44ba-8968-d9fe15644462",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Defense, Science/Technology \u2014 Gxo, Inc. via Mrc Government Strategies And Advocacy",
+      "value_usd": null,
+      "description": "Issues related to commercial space, satellites, microelectronics",
+      "lobbying_firm": "Mrc Government Strategies And Advocacy",
+      "issue_codes": [
+        "DEF",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/8adf7711-5f11-44ba-8968-d9fe15644462/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "1b71b0e1-ea6b-4637-aea6-98f81d351d82",
+      "iso": "SG",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Trade \u2014 Evolution Electric Vehicles via Ballard Partners",
+      "value_usd": null,
+      "description": "Customs and duties, and trade.",
+      "lobbying_firm": "Ballard Partners",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1b71b0e1-ea6b-4637-aea6-98f81d351d82/print/",
+      "profile": {
+        "name": "Singapore",
+        "score": 5,
+        "factors": [
+          "maritime chokepoint",
+          "Malacca Strait",
+          "US basing",
+          "regional hub"
+        ],
+        "rationale": "Controls eastern Malacca Strait \u2014 most critical maritime chokepoint by volume (+3), major US naval access (+1), regional financial and logistics hub (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "7c182547-8da2-48f5-ab17-e623d5a692a5",
+      "iso": "GB",
+      "source": "lda",
+      "signal_date": "2026-04-17",
+      "title": "Defense, Budget \u2014 Needlesmart via Monument Advocacy",
+      "value_usd": null,
+      "description": "Digital vaccination system to be used by DOD to reduce needle stick injuries and electronically send digital vaccination\u2026",
+      "lobbying_firm": "Monument Advocacy",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/7c182547-8da2-48f5-ab17-e623d5a692a5/print/",
+      "profile": {
+        "name": "United Kingdom",
+        "score": 5,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "US partner",
+          "maritime chokepoint"
+        ],
+        "rationale": "Active nuclear weapons program \u2014 Trident (+2), regional power and global basing network (+1), major US interoperability partner \u2014 Five Eyes, AUKUS (+1), controls Gibraltar and Diego Garcia chokepoints (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57365,
+      "iso": "CO",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "FENIX HUMAN RESOURCES S.A.S. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57365",
+      "profile": {
+        "name": "Colombia",
+        "score": 6,
+        "factors": [
+          "active conflict",
+          "hydrocarbons",
+          "US basing",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active ELN/FARC-dissident conflict (+2), hydrocarbon reserves (+2), major US basing and regional security partner (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57366,
+      "iso": "CO",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Jose Libardo QUIJANO TORRES (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: FENIX HUMAN RESOURCES S.A.S.)",
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57366",
+      "profile": {
+        "name": "Colombia",
+        "score": 6,
+        "factors": [
+          "active conflict",
+          "hydrocarbons",
+          "US basing",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active ELN/FARC-dissident conflict (+2), hydrocarbon reserves (+2), major US basing and regional security partner (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57367,
+      "iso": "CO",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Jose Oscar GARCIA BATTE (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: INTERNATIONAL SERVICES AGENCY S.A.S.)",
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57367",
+      "profile": {
+        "name": "Colombia",
+        "score": 6,
+        "factors": [
+          "active conflict",
+          "hydrocarbons",
+          "US basing",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active ELN/FARC-dissident conflict (+2), hydrocarbon reserves (+2), major US basing and regional security partner (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57368,
+      "iso": "CO",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "GLOBAL QOWA AL BASHERIA S.A.S. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: GARCIA BATTE, Jose Oscar)",
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57368",
+      "profile": {
+        "name": "Colombia",
+        "score": 6,
+        "factors": [
+          "active conflict",
+          "hydrocarbons",
+          "US basing",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active ELN/FARC-dissident conflict (+2), hydrocarbon reserves (+2), major US basing and regional security partner (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57369,
+      "iso": "CO",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Omar Fernando GARCIA BATTE (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: GLOBAL QOWA AL BASHERIA S.A.S.)",
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57369",
+      "profile": {
+        "name": "Colombia",
+        "score": 6,
+        "factors": [
+          "active conflict",
+          "hydrocarbons",
+          "US basing",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active ELN/FARC-dissident conflict (+2), hydrocarbon reserves (+2), major US basing and regional security partner (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57424,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Radhwan Yousif Hameed ALMOHAMMED (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: KATA'IB HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57424",
+      "profile": {
+        "name": "Iraq",
+        "score": 7,
+        "factors": [
+          "hydrocarbons",
+          "active conflict",
+          "proxy hub",
+          "US basing",
+          "sanctions"
+        ],
+        "rationale": "Massive hydrocarbon reserves \u2014 top-5 global producer (+2), active conflict \u2014 militia warfare and ISIS remnants (+2), Iran-US proxy contest (+1), major US basing presence (+1), active sanctions history and ongoing restrictions (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57425,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Husham Hashim JAYTHOOM (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HARAKAT AL-NUJABA)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57425",
+      "profile": {
+        "name": "Iraq",
+        "score": 7,
+        "factors": [
+          "hydrocarbons",
+          "active conflict",
+          "proxy hub",
+          "US basing",
+          "sanctions"
+        ],
+        "rationale": "Massive hydrocarbon reserves \u2014 top-5 global producer (+2), active conflict \u2014 militia warfare and ISIS remnants (+2), Iran-US proxy contest (+1), major US basing presence (+1), active sanctions history and ongoing restrictions (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57428,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Khalid Jameel Abed ALBAKHATRA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: KATA'IB SAYYID AL-SHUHADA)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57428",
+      "profile": {
+        "name": "Iraq",
+        "score": 7,
+        "factors": [
+          "hydrocarbons",
+          "active conflict",
+          "proxy hub",
+          "US basing",
+          "sanctions"
+        ],
+        "rationale": "Massive hydrocarbon reserves \u2014 top-5 global producer (+2), active conflict \u2014 militia warfare and ISIS remnants (+2), Iran-US proxy contest (+1), major US basing presence (+1), active sanctions history and ongoing restrictions (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57431,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Safaa Adnan Jabbar SUWAED (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ASA'IB AHL AL-HAQ)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57431",
+      "profile": {
+        "name": "Iraq",
+        "score": 7,
+        "factors": [
+          "hydrocarbons",
+          "active conflict",
+          "proxy hub",
+          "US basing",
+          "sanctions"
+        ],
+        "rationale": "Massive hydrocarbon reserves \u2014 top-5 global producer (+2), active conflict \u2014 militia warfare and ISIS remnants (+2), Iran-US proxy contest (+1), major US basing presence (+1), active sanctions history and ongoing restrictions (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "TM",
+      "source": "sam",
+      "signal_date": "2026-04-17",
+      "title": "Articulating Boom Lifts",
+      "value_usd": null,
+      "description": "Presolicitation \u00b7 https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ff3b3d3255f249bda11a54fffd54d9d0",
+      "page_url": "https://sam.gov/workspace/contract/opp/ff3b3d3255f249bda11a54fffd54d9d0/view",
+      "profile": {
+        "name": "Turkmenistan",
+        "score": 2,
+        "factors": [
+          "hydrocarbons"
+        ],
+        "rationale": "World's fourth-largest natural gas reserves (+2)"
+      },
+      "layer": "procurement",
+      "quality": 0.7,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "filing_uuid": "078d126b-77f3-4b7f-8395-fbcd011e42f1",
       "iso": "XX",
@@ -45,6 +784,405 @@
         "DEF"
       ],
       "url": "https://lda.gov/filings/public/filing/b1548447-5826-45a4-aead-bb8848abd109/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "dcac5c1c-c647-4baf-ae01-7782fa0579d1",
+      "iso": "GB",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Trade, Consumer Safety, Health \u2014 Reckitt Benckiser Llc via Reckitt Benckiser Llc",
+      "value_usd": null,
+      "description": "Issues related to manufacturing and marketing of consumer health, hygiene, and household cleaning products.",
+      "lobbying_firm": "Reckitt Benckiser Llc",
+      "issue_codes": [
+        "CSP",
+        "HCR",
+        "MAN",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/dcac5c1c-c647-4baf-ae01-7782fa0579d1/print/",
+      "profile": {
+        "name": "United Kingdom",
+        "score": 5,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "US partner",
+          "maritime chokepoint"
+        ],
+        "rationale": "Active nuclear weapons program \u2014 Trident (+2), regional power and global basing network (+1), major US interoperability partner \u2014 Five Eyes, AUKUS (+1), controls Gibraltar and Diego Garcia chokepoints (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "14e2f0c9-9937-4da3-80ac-e50e2c9c7517",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Defense, Budget \u2014 University Of Maryland, Baltimore via Cassidy & Associates, Inc.",
+      "value_usd": null,
+      "description": "Federal funding for facilities and equipment to support the development of a combat casualty care institute to accelerat\u2026",
+      "lobbying_firm": "Cassidy & Associates, Inc.",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/14e2f0c9-9937-4da3-80ac-e50e2c9c7517/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "8093127d-a4e9-428e-bda9-a4e686187e6a",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Defense \u2014 Scientific Systems Company, Inc. via Strategic Marketing Innovations",
+      "value_usd": null,
+      "description": "Funding support for autonomy and navigation capabilities",
+      "lobbying_firm": "Strategic Marketing Innovations",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/8093127d-a4e9-428e-bda9-a4e686187e6a/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "1f32fd5d-d93d-4062-ae30-092c71c5909f",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Defense \u2014 Ralliant Corporation via Strategic Marketing Innovations",
+      "value_usd": null,
+      "description": "Kinetic capabilities",
+      "lobbying_firm": "Strategic Marketing Innovations",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1f32fd5d-d93d-4062-ae30-092c71c5909f/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "7448d301-97bf-4b61-bcc2-9ad3c2298d70",
+      "iso": "TR",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Energy, Foreign Affairs \u2014 Can 2 Termik Anonim Sirketi via Continental Strategy, Llc",
+      "value_usd": null,
+      "description": "T\u00fcrkiye; Energy project opportunities in Latin America",
+      "lobbying_firm": "Continental Strategy, Llc",
+      "issue_codes": [
+        "ENG",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/7448d301-97bf-4b61-bcc2-9ad3c2298d70/print/",
+      "profile": {
+        "name": "Turkey",
+        "score": 8,
+        "factors": [
+          "maritime chokepoint",
+          "Turkish Straits",
+          "Bosphorus",
+          "nuclear hosting",
+          "US basing",
+          "regional power",
+          "proxy hub"
+        ],
+        "rationale": "Controls Turkish Straits \u2014 Bosphorus and Dardanelles, only Black Sea exit (+3), US nuclear weapons at Incirlik (+2), major US basing (+1), regional power \u2014 NATO member playing both sides (+1), proxy hub Syria/Libya/Azerbaijan/Ukraine (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "5fc9e099-8c0c-4939-a4e5-f813e31cdd95",
+      "iso": "GT",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Trade \u2014 Fundarveja via Continental Strategy, Llc",
+      "value_usd": null,
+      "description": "Guatemala; Tariffs",
+      "lobbying_firm": "Continental Strategy, Llc",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5fc9e099-8c0c-4939-a4e5-f813e31cdd95/print/",
+      "profile": {
+        "name": "Guatemala",
+        "score": 1,
+        "factors": [
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "2c50ffd2-8fc9-4cad-a94f-63eca0609c5c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Energy, Budget, Manufacturing \u2014 Gelion Us Corp. via Squire Patton Boggs",
+      "value_usd": null,
+      "description": "Advocacy to support domestic battery manufacturing and supply chains.",
+      "lobbying_firm": "Squire Patton Boggs",
+      "issue_codes": [
+        "BUD",
+        "ENG",
+        "MAN"
+      ],
+      "url": "https://lda.gov/filings/public/filing/2c50ffd2-8fc9-4cad-a94f-63eca0609c5c/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "8d3ed56c-0700-4707-aba8-4420ce6513c5",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Defense \u2014 Gmg Holdco via Strategic Marketing Innovations",
+      "value_usd": null,
+      "description": "Department of Navy funding",
+      "lobbying_firm": "Strategic Marketing Innovations",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/8d3ed56c-0700-4707-aba8-4420ce6513c5/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "a15ab99a-95c4-44eb-a119-c690b5bf7b2f",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Defense \u2014 Code Metal, Inc. via Strategic Marketing Innovations",
+      "value_usd": null,
+      "description": "FY27 Defense Appropriations",
+      "lobbying_firm": "Strategic Marketing Innovations",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/a15ab99a-95c4-44eb-a119-c690b5bf7b2f/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "59d21fa4-60eb-4991-8961-2ef533eb7395",
+      "iso": "CA",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Chemicals \u2014 Biolab via Wilmer Cutler Pickering Hale And Dorr Llp",
+      "value_usd": null,
+      "description": "Issues related to chemical safety standards and regulations.",
+      "lobbying_firm": "Wilmer Cutler Pickering Hale And Dorr Llp",
+      "issue_codes": [
+        "CHM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/59d21fa4-60eb-4991-8961-2ef533eb7395/print/",
+      "profile": {
+        "name": "Canada",
+        "score": 5,
+        "factors": [
+          "hydrocarbons",
+          "strategic minerals",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), strategic minerals including uranium and rare earths (+2)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "bc92edcf-d236-434e-a7ca-da1ac8997494",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Defense, Budget \u2014 Hawaii Pacific University via Mcallister & Quinn, Llc",
+      "value_usd": null,
+      "description": "Department of Defense Appropriations H.R. 4016 - S. 2572 - Department of Defense Appropriations Act, 2026 - Provisions r\u2026",
+      "lobbying_firm": "Mcallister & Quinn, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/bc92edcf-d236-434e-a7ca-da1ac8997494/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "5ae9d6d6-b739-4676-ac36-7a2d2432c6b1",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Defense, Homeland Security, Budget \u2014 9 Mothers Defense Corporation via Maven Advocacy Partners Llc",
+      "value_usd": null,
+      "description": "Issues related to government-funded programs and related appropriations.",
+      "lobbying_firm": "Maven Advocacy Partners Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "HOM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5ae9d6d6-b739-4676-ac36-7a2d2432c6b1/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "c66be2b0-ea0b-4522-a228-aa0475b4dfc0",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Defense, Homeland Security, Budget \u2014 Vision Products, Llc via Maven Advocacy Partners Llc",
+      "value_usd": null,
+      "description": "Issues related to federal grant and innovation funding opportunities.",
+      "lobbying_firm": "Maven Advocacy Partners Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "HOM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/c66be2b0-ea0b-4522-a228-aa0475b4dfc0/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "f0700183-37b6-4a56-9465-aa79e56fd399",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Energy, Taxation \u2014 American Biomass Energy Association via H.A. Cumber & Company, Inc.",
+      "value_usd": null,
+      "description": "Proposed 45Z tax credit rules. Implementation of the Renewable Fuel Standard Program (RFS) by the Environmental Protecti\u2026",
+      "lobbying_firm": "H.A. Cumber & Company, Inc.",
+      "issue_codes": [
+        "ENG",
+        "TAX"
+      ],
+      "url": "https://lda.gov/filings/public/filing/f0700183-37b6-4a56-9465-aa79e56fd399/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "7118d9ce-5437-4f30-a621-35bd7c3f90b4",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Defense, Automotive \u2014 Aptiv via Ferox Strategies",
+      "value_usd": null,
+      "description": "General issues related to the automotive and defense industries.",
+      "lobbying_firm": "Ferox Strategies",
+      "issue_codes": [
+        "AUT",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/7118d9ce-5437-4f30-a621-35bd7c3f90b4/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "d4dbfd99-6f1c-4fff-b93e-54049f14214a",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Science/Technology, Budget, Consumer Safety \u2014 Cornerstone Government Affairs Obo Id.Me, Llc via Dinino Associates, Llc",
+      "value_usd": null,
+      "description": "Issues related to ID.mes digital identity solution to provide verified identity for commercial and public sector service\u2026",
+      "lobbying_firm": "Dinino Associates, Llc",
+      "issue_codes": [
+        "BUD",
+        "CSP",
+        "GOV",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/d4dbfd99-6f1c-4fff-b93e-54049f14214a/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "867c5191-5754-4c70-bc10-381e1319b7ce",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Defense \u2014 Asei via Paddock Associates, Llc",
+      "value_usd": null,
+      "description": "FY'26 Defense Appropriations FY'26 Defense Authorization",
+      "lobbying_firm": "Paddock Associates, Llc",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/867c5191-5754-4c70-bc10-381e1319b7ce/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "12d2a537-8011-4de5-907a-2123e2bd615d",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-04-16",
+      "title": "Science/Technology, Manufacturing \u2014 American Alliance For Biomanufacturing via Cassidy & Associates, Inc.",
+      "value_usd": null,
+      "description": "Bio-based products and technologies",
+      "lobbying_firm": "Cassidy & Associates, Inc.",
+      "issue_codes": [
+        "MAN",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/12d2a537-8011-4de5-907a-2123e2bd615d/print/",
       "profile": null,
       "layer": "influence",
       "quality": 0.5,
@@ -653,6 +1791,43 @@
       },
       "layer": "regulatory",
       "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "RU",
+      "source": "cftc",
+      "signal_date": "2026-04-14",
+      "title": "Wheat \u2014 hedge funds covering shorts (+2.0\u03c3)",
+      "value_usd": null,
+      "description": "Institutional traders (managed money) are net short Wheat at 5,550 contracts \u2014 2.0\u03c3 above the 52-week norm. Exposed countries: Russia, Ukraine, Australia, Canada, India.",
+      "z_score": 2.038,
+      "basket": [
+        "RU",
+        "UA",
+        "US",
+        "AU",
+        "CA",
+        "IN"
+      ],
+      "commodity": "Wheat",
+      "net_position": -5550,
+      "profile": {
+        "name": "Russia",
+        "score": 10,
+        "factors": [
+          "nuclear program",
+          "hydrocarbons",
+          "active conflict",
+          "sanctions",
+          "regional power",
+          "Arctic",
+          "proxy hub"
+        ],
+        "rationale": "Active nuclear weapons \u2014 largest arsenal (+2), major hydrocarbon producer and pipeline network (+2), active conflict \u2014 Ukraine war (+2), comprehensive sanctions regime (+1), regional power and global proxy hub (+1), controls Arctic sea routes (+1), strategic minerals (+1)"
+      },
+      "layer": "financial",
+      "quality": 0.55,
       "dollar_mod": 1.0,
       "is_fr_policy": null
     },
@@ -22369,6 +23544,27 @@
   "themes": [
     {
       "type": "velocity_anomaly",
+      "title": "Colombia \u2014 5 signals in 30 days (+7.3\u03c3)",
+      "score": 99.18,
+      "countries": [
+        "CO"
+      ],
+      "signal_keys": [
+        "ofac:FENIX HUMAN RESOURCES S.A.S. (Entity)",
+        "ofac:Jose Libardo QUIJANO TORRES (Individual)",
+        "ofac:Jose Oscar GARCIA BATTE (Individual)",
+        "ofac:GLOBAL QOWA AL BASHERIA S.A.S. (Entity)",
+        "ofac:Omar Fernando GARCIA BATTE (Individual)"
+      ],
+      "why": "4.5 weighted signals in 30 days vs 0.3 avg (+7.3\u03c3). Sources: ofac\u00d75",
+      "narrative": {
+        "headline": "OFAC hits Colombian labor-export network with Arabic-named shell",
+        "body": "Five same-day OFAC designations target two Colombian staffing networks \u2014 Fenix Human Resources and Global Qowa Al Basheria \u2014 linked via the Garcia Batte brothers and Quijano Torres. The Arabic-branded entity suggests likely Gulf labor trafficking or sanctions evasion routing through Colombia.",
+        "prompt": "I just saw an OFAC velocity anomaly: five same-day designations (2026-04-17) targeting a Colombian network including FENIX HUMAN RESOURCES S.A.S., GLOBAL QOWA AL BASHERIA S.A.S., INTERNATIONAL SERVICES AGENCY S.A.S., Jose Oscar GARCIA BATTE, Omar Fernando GARCIA BATTE, and Jose Libardo QUIJANO TORRES. There's also recent FARA activity by Corvus Strategic Partners PLLC representing the Republic of Colombia, and LDA lobbying by Asocolflores via Continental Strategy LLC. (1) Who are each of these entities and what do they actually do? (2) How do the Garcia Batte brothers' two separate corporate nodes relate, and what does the Arabic branding of Global Qowa Al Basheria suggest about geography or counterparty? (3) Assess the OFAC cluster, the FARA filing, and the Asocolflores lobbying independently \u2014 is each routine or anomalous? (4) Does their coincidence signal a broader Colombia sanctions/trade pressure campaign, and what should I watch for next?"
+      }
+    },
+    {
+      "type": "velocity_anomaly",
       "title": "United Arab Emirates \u2014 5 signals in 30 days (+7.6\u03c3)",
       "score": 91.985,
       "countries": [
@@ -22391,34 +23587,38 @@
     {
       "type": "convergence",
       "title": "United Kingdom \u2014 velocity spike + layer sequence",
-      "score": 54.019,
+      "score": 91.727,
       "countries": [
         "GB"
       ],
       "signal_keys": [
-        "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
+        "lda:7c182547-8da2-48f5-ab17-e623d5a692a5",
+        "lda:dcac5c1c-c647-4baf-ae01-7782fa0579d1",
+        "dsca:Submarine Combat and Weapon Systems, Tec",
         "lda:29e67f85-e020-4714-8d85-9cf4e447eb0f",
         "ofac:Seyed Naiemaei Badroddin MOOSAVI (Indivi",
-        "dsca:Submarine Combat and Weapon Systems, Tec",
+        "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
         "lda:585860bc-af15-4e03-a51e-7b10e683c7cd"
       ],
-      "why": "[velocity_anomaly] 3.4 weighted signals in 30 days vs 1.3 avg (+3.7\u03c3). Sources: dsca\u00d71, lda\u00d73, ofac\u00d71 | [layer_sequence] lda on 2026-03-19 \u2192 dsca on 2026-03-20 (1d). Current window 0.83 weighted pairs vs 0.00 baseline (+8.3\u03c3).",
+      "why": "[velocity_anomaly] 4.4 weighted signals in 30 days vs 1.3 avg (+5.9\u03c3). Sources: dsca\u00d71, lda\u00d75, ofac\u00d71 | [layer_sequence] lda on 2026-03-19 \u2192 dsca on 2026-03-20 (1d). Current window 0.83 weighted pairs vs 0.00 baseline (+8.3\u03c3).",
       "_components": [
         {
           "type": "velocity_anomaly",
-          "title": "United Kingdom \u2014 5 signals in 30 days (+3.7\u03c3)",
-          "score": 34.851,
+          "title": "United Kingdom \u2014 7 signals in 30 days (+5.9\u03c3)",
+          "score": 72.559,
           "countries": [
             "GB"
           ],
           "signal_keys": [
+            "lda:7c182547-8da2-48f5-ab17-e623d5a692a5",
+            "lda:dcac5c1c-c647-4baf-ae01-7782fa0579d1",
             "ofac:Seyed Naiemaei Badroddin MOOSAVI (Indivi",
             "lda:29e67f85-e020-4714-8d85-9cf4e447eb0f",
             "lda:585860bc-af15-4e03-a51e-7b10e683c7cd",
             "dsca:Submarine Combat and Weapon Systems, Tec",
             "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406"
           ],
-          "why": "3.4 weighted signals in 30 days vs 1.3 avg (+3.7\u03c3). Sources: dsca\u00d71, lda\u00d73, ofac\u00d71"
+          "why": "4.4 weighted signals in 30 days vs 1.3 avg (+5.9\u03c3). Sources: dsca\u00d71, lda\u00d75, ofac\u00d71"
         },
         {
           "type": "layer_sequence",
@@ -22428,10 +23628,10 @@
             "GB"
           ],
           "signal_keys": [
-            "ofac:Seyed Naiemaei Badroddin MOOSAVI (Indivi",
-            "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
             "lda:29e67f85-e020-4714-8d85-9cf4e447eb0f",
             "dsca:Submarine Combat and Weapon Systems, Tec",
+            "ofac:Seyed Naiemaei Badroddin MOOSAVI (Indivi",
+            "lda:5822c8aa-0ec7-4fcb-8649-dab9d8f07406",
             "lda:585860bc-af15-4e03-a51e-7b10e683c7cd"
           ],
           "why": "lda on 2026-03-19 \u2192 dsca on 2026-03-20 (1d). Current window 0.83 weighted pairs vs 0.00 baseline (+8.3\u03c3)."
@@ -22441,6 +23641,42 @@
         "headline": "AUKUS submarine deal anchors UK lobbying velocity spike",
         "body": "A $1B DSCA notification for AUKUS vertical launch tube development followed four UK-tagged lobbying registrations within days, producing an 8.5\u03c3 layer-sequence anomaly. The influence-then-military pattern suggests coordinated groundwork for FY27 defense appropriations tied to AUKUS industrial commitments.",
         "prompt": "I just saw a pattern alert flagging unusual lobbying and defense sales activity around the United Kingdom. A $1B DSCA notification for AUKUS submarine combat systems (vertical deployment tubes, common weapon launchers) was preceded by several UK-tagged lobbying filings: Delta Three Oscar via Galvanize Partners LLC on FY27 Defense Appropriations, Control AI US Inc. via Nathan Morrison on AI superintelligence risk, EZ Lynk SEZC via Checkmate Government Relations on UK patent issues, and Formula One Group via R&R Partners on federal event security and visas. Please: (1) explain who each of these entities is and what they actually do; (2) describe how they relate to each other and to AUKUS, UK-US defense industrial policy, and FY27 appropriations; (3) assess the DSCA notification and each lobbying filing independently \u2014 is the arms sale routine AUKUS progression or anomalous in scale? is the lobbying cluster coincidental or coordinated? treat these as separate questions first; (4) give a clear verdict on whether this is a macro-thematic signal worth monitoring, an orchestrated pattern, or noise, and tell me specifically what to watch for next."
+      }
+    },
+    {
+      "type": "velocity_anomaly",
+      "title": "Iraq \u2014 4 signals in 30 days (+5.8\u03c3)",
+      "score": 65.736,
+      "countries": [
+        "IQ"
+      ],
+      "signal_keys": [
+        "ofac:Radhwan Yousif Hameed ALMOHAMMED (Indivi",
+        "ofac:Husham Hashim JAYTHOOM (Individual)",
+        "ofac:Khalid Jameel Abed ALBAKHATRA (Individua",
+        "ofac:Safaa Adnan Jabbar SUWAED (Individual)"
+      ],
+      "why": "3.6 weighted signals in 30 days vs 0.6 avg (+5.8\u03c3). Sources: ofac\u00d74",
+      "narrative": null
+    },
+    {
+      "type": "velocity_anomaly",
+      "title": "China \u2014 4 signals in 30 days (+3.3\u03c3)",
+      "score": 30.258,
+      "countries": [
+        "CN"
+      ],
+      "signal_keys": [
+        "ofac:Feiwu BIAN (Individual)",
+        "cftc:Corn",
+        "cftc:Corn",
+        "cftc:Corn"
+      ],
+      "why": "2.5 weighted signals in 30 days vs 0.8 avg (+3.3\u03c3). Sources: cftc\u00d73, ofac\u00d71",
+      "narrative": {
+        "headline": "Corn futures surge and China OFAC hit signal food-security stress",
+        "body": "Managed money corn longs hit +2.9\u03c3 while an individual Chinese national was sanctioned days later. Suggests anticipatory positioning around China import disruption or retaliatory trade escalation affecting grain flows.",
+        "prompt": "I just saw a pattern flagging simultaneous signals on China: managed money corn futures net longs at +2.9\u03c3 (279,630 contracts, CFTC COT data, basket includes US/UA/BR/AR/CN), and an OFAC designation of a Chinese individual named Feiwu BIAN on 2026-04-16. Background lobbying signals include Haier US Appliance Solution (dba GE Appliances) via Mehlman Consulting, Grand Pharmaceutical Group Ltd via Checkmate Government Relations, and Arashi Vision (U.S.) LLC via DGA Group. Please: (1) explain who each entity is and what they actually do; (2) describe how they relate to each other and the broader US-China trade/sanctions policy context; (3) assess each data stream independently \u2014 is the corn positioning anomalous relative to seasonal norms and trade war history, and is the BIAN designation routine or escalatory? treat them as separate questions before asking whether their coincidence means anything; (4) give a clear verdict: macro-thematic signal, orchestrated pattern, or noise \u2014 and what specifically should I watch for next?"
       }
     },
     {
@@ -22460,26 +23696,6 @@
         "headline": "CDN-linked casino network hit by OFAC cluster designation",
         "body": "Three same-day OFAC designations tie Jesus Ramos Vazquez, Comercializadora Y Arrendadora, and Diamante Casino into a single CDN money-laundering web via casino fronts. This suggests U.S. enforcement is actively dismantling Cartel del Noreste's financial infrastructure, likely ahead of broader pressure on Mexico.",
         "prompt": "I just saw an OFAC designation cluster from April 14, 2026 targeting Jesus Reymundo Ramos Vazquez, Comercializadora Y Arrendadora De Mexico S.A. DE C.V., and Diamante Casino \u2014 all linked to Cartel del Noreste (CDN) and Casino Centenario. There's also recent U.S. lobbying by Union Ganadera Regional De Chihuahua via Squire Patton Boggs on trade, and a Zerinvest Inc. lobbying filing on trade and taxation. (1) Who are each of these entities and what do they actually do? (2) How do CDN, these casino fronts, and the lobbying actors relate to each other and to current U.S.-Mexico policy dynamics? (3) Assess independently: is this OFAC cluster routine cartel enforcement or an escalation signal? Is the Chihuahua cattle rancher lobbying anomalous given border/trade tensions? (4) Is this a coordinated enforcement-plus-economic-pressure pattern worth monitoring, or coincidental noise \u2014 and what should I watch for next?"
-      }
-    },
-    {
-      "type": "velocity_anomaly",
-      "title": "China \u2014 4 signals in 30 days (+2.9\u03c3)",
-      "score": 26.222,
-      "countries": [
-        "CN"
-      ],
-      "signal_keys": [
-        "ofac:Feiwu BIAN (Individual)",
-        "cftc:Corn",
-        "cftc:Corn",
-        "cftc:Corn"
-      ],
-      "why": "2.5 weighted signals in 30 days vs 0.8 avg (+2.9\u03c3). Sources: cftc\u00d73, ofac\u00d71",
-      "narrative": {
-        "headline": "Extreme corn long positioning coincides with fresh China-linked OFAC sanction",
-        "body": "Managed money corn longs hit +2.9\u03c3 above baseline (279,630 contracts) while OFAC sanctioned individual Feiwu Bian weeks later. Suggests traders may be pricing in Chinese import disruption or retaliatory agricultural trade restrictions ahead of formal policy action.",
-        "prompt": "I just saw a pattern flagging simultaneous signals on China: managed money corn futures net longs at +2.9\u03c3 (279,630 contracts, CFTC COT data, March 24 2026), and an OFAC sanctions designation of individual Feiwu Bian (April 16 2026). Background lobbying signals include Haier/GE Appliances via Mehlman Consulting, Grand Pharmaceutical Group via Checkmate Government Relations, and Arashi Vision via DGA Group. Please: (1) explain who Feiwu Bian is and what each lobbying entity actually does; (2) describe how these actors relate to US-China trade and sanctions policy; (3) assess independently \u2014 is the corn positioning anomalous relative to agricultural trade war history, and is the Bian designation routine or escalatory; (4) give a clear verdict: is this a macro ag-trade signal worth monitoring, an orchestrated pattern, or noise \u2014 and what specifically should I watch next?"
       }
     },
     {
@@ -22517,9 +23733,24 @@
       "narrative": null
     },
     {
+      "type": "cftc_overlap",
+      "title": "Wheat positioning anomaly \u2014 3 exposed countries active",
+      "score": 13.587,
+      "countries": [
+        "AU",
+        "CA",
+        "RU"
+      ],
+      "signal_keys": [
+        "cftc:Wheat"
+      ],
+      "why": "Wheat z=+2.0\u03c3. Active basket: AU, CA, RU (3/6 exposed countries have recent signals).",
+      "narrative": null
+    },
+    {
       "type": "actor_concentration",
       "title": "Ark Strategy lobbying for 3 countries simultaneously",
-      "score": 12.252,
+      "score": 12.05,
       "countries": [
         "AU",
         "GB",
@@ -22536,7 +23767,7 @@
     {
       "type": "actor_concentration",
       "title": "Cassidy & Associates, Inc. lobbying for 3 countries simultaneously",
-      "score": 12.251,
+      "score": 12.049,
       "countries": [
         "AU",
         "CA",
@@ -22568,7 +23799,7 @@
     {
       "type": "actor_concentration",
       "title": "Ml Strategies, Llc lobbying for 3 countries simultaneously",
-      "score": 10.627,
+      "score": 10.451,
       "countries": [
         "AU",
         "CA",
@@ -22585,7 +23816,7 @@
     {
       "type": "actor_concentration",
       "title": "The Vogel Group lobbying for 4 countries simultaneously",
-      "score": 10.226,
+      "score": 10.057,
       "countries": [
         "AE",
         "AT",
@@ -22604,7 +23835,7 @@
     {
       "type": "actor_concentration",
       "title": "Miller Strategies, Llc lobbying for 6 countries simultaneously",
-      "score": 10.221,
+      "score": 10.052,
       "countries": [
         "BE",
         "CA",
@@ -22627,7 +23858,7 @@
     {
       "type": "actor_concentration",
       "title": "Valcour Llc lobbying for 4 countries simultaneously",
-      "score": 9.464,
+      "score": 9.308,
       "countries": [
         "GB",
         "IQ",
@@ -22646,7 +23877,7 @@
     {
       "type": "actor_concentration",
       "title": "Checkmate Government Relations lobbying for 4 countries simultaneously",
-      "score": 9.349,
+      "score": 9.195,
       "countries": [
         "CH",
         "CN",
@@ -22694,7 +23925,7 @@
     {
       "type": "actor_concentration",
       "title": "Bgr Government Affairs lobbying for 6 countries simultaneously",
-      "score": 7.998,
+      "score": 7.866,
       "countries": [
         "CN",
         "DK",
@@ -22714,63 +23945,6 @@
         "lda:dc771a4e-9320-4e19-8db4-a62818d72f7c"
       ],
       "why": "Bgr Government Affairs filed LDA disclosures for China, Denmark, France, United Kingdom, Cayman Islands... in the same period.",
-      "narrative": null
-    },
-    {
-      "type": "actor_concentration",
-      "title": "Marshall & Popp, Llc lobbying for 3 countries simultaneously",
-      "score": 6.724,
-      "countries": [
-        "AU",
-        "GB",
-        "JP"
-      ],
-      "signal_keys": [
-        "lda:fb7fed96-f152-4700-bb3d-6cd848a19cac",
-        "lda:0dde4e28-b044-496a-89f0-bb48708af48c",
-        "lda:5c1abbc2-8016-41f7-8fe2-3599654c3c35"
-      ],
-      "why": "Marshall & Popp, Llc filed LDA disclosures for Australia, United Kingdom, Japan in the same period.",
-      "narrative": null
-    },
-    {
-      "type": "actor_concentration",
-      "title": "Dga Group Government Relations Llc lobbying for 4 countries simultaneously",
-      "score": 6.094,
-      "countries": [
-        "BR",
-        "CN",
-        "FR",
-        "JP"
-      ],
-      "signal_keys": [
-        "lda:b8376ef7-3b7a-4305-8f20-7d8aec6883ad",
-        "lda:8b4a87d4-b173-48be-b641-a5013b4fc06e",
-        "lda:483e74eb-7163-4279-952f-7bbda09ab401",
-        "lda:7078e1ea-c5eb-4e7f-8bcc-93a4a5c2c4be"
-      ],
-      "why": "Dga Group Government Relations Llc filed LDA disclosures for Brazil, China, France, Japan in the same period.",
-      "narrative": null
-    },
-    {
-      "type": "actor_concentration",
-      "title": "Mayer Brown Llp lobbying for 5 countries simultaneously",
-      "score": 3.699,
-      "countries": [
-        "BE",
-        "CN",
-        "FI",
-        "FR",
-        "JP"
-      ],
-      "signal_keys": [
-        "lda:39409af6-5b6d-48c6-b0d4-67272a5cc7cd",
-        "lda:8bfb90a1-836c-4f5d-9bc1-94d7543a758c",
-        "lda:5ae3bcfc-37a9-43cd-a6a6-4e4b4617a683",
-        "lda:75f43883-e9cc-41b1-9b25-6915840ed0a1",
-        "lda:6939f1ab-4fc6-415d-b082-7141bbee0923"
-      ],
-      "why": "Mayer Brown Llp filed LDA disclosures for Belgium, China, Finland, France, Japan in the same period.",
       "narrative": null
     }
   ]

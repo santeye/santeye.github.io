@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-16T22:54:54.516533+00:00",
+  "generated_at": "2026-04-17T22:54:15.961707+00:00",
   "sources": [
     "cftc"
   ],
@@ -134,6 +134,25 @@
       ],
       "commodity": "Corn",
       "net_position": 210976
+    },
+    {
+      "iso": "RU",
+      "source": "cftc",
+      "signal_date": "2026-04-14",
+      "title": "Wheat \u2014 hedge funds covering shorts (+2.0\u03c3)",
+      "value_usd": null,
+      "description": "Institutional traders (managed money) are net short Wheat at 5,550 contracts \u2014 2.0\u03c3 above the 52-week norm. Exposed countries: Russia, Ukraine, Australia, Canada, India.",
+      "z_score": 2.038,
+      "basket": [
+        "RU",
+        "UA",
+        "US",
+        "AU",
+        "CA",
+        "IN"
+      ],
+      "commodity": "Wheat",
+      "net_position": -5550
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-16T22:54:51.853084+00:00",
+  "generated_at": "2026-04-17T22:54:13.119288+00:00",
   "sources": [
     "federalregister"
   ],
@@ -5622,6 +5622,39 @@
       "description": "Notice of Department of State Sanctions Actions Pursuant to the Executive Order Blocking Property With Respect To Specified Harmful Foreign Activities of the Government of the Russian Federation. \u00b7 The U.S. Department of State is publishing the name of a person who has been removed from the Department of the Treasury's List of Specially Designated Nationals and Blocked Persons (SDN List), administered by the Office of Foreign Assets Control (OFAC).",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/04/16/2026-07337/notice-of-department-of-state-sanctions-action"
+    },
+    {
+      "document_number": "2026-07601",
+      "iso": "US",
+      "source": "federalregister",
+      "signal_date": "2026-04-17",
+      "title": "Schedule of Fees for Consular Services-Fee for Administrative Processing of Request for Certificate of Loss of Nationality of the United States; Correction",
+      "value_usd": null,
+      "description": "Correcting amendment. \u00b7 The Department of State is correcting a rulemaking that appeared in the Federal Register on March 13, 2026. There was an erroneous paragraph designation in an amendatory instruction.",
+      "raw_score": 10.0,
+      "page_url": "https://www.federalregister.gov/documents/2026/04/17/2026-07601/schedule-of-fees-for-consular-services-fee-for-administrative-processing-of-request-for-certificate"
+    },
+    {
+      "document_number": "2026-07519",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-04-17",
+      "title": "Increase in Threshold for Requiring Information Reporting With Respect to Certain Payees; Extension and Modification of Limitation on Wagering Losses",
+      "value_usd": null,
+      "description": "Notice of proposed rulemaking. \u00b7 This document contains proposed amendments relating to the dollar thresholds in regulations governing information reporting for payments made in the course of a trade or business and the corresponding backup withholding regulations. This document also contains proposed amendments to the regulations governing wagering losses. The proposed regulations reflect recent changes to the statutory law. These changes will affect persons who make payments in the course of their trade or business and those persons claiming a deduction for wagering losses.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/04/17/2026-07519/increase-in-threshold-for-requiring-information-reporting-with-respect-to-certain-payees-extension"
+    },
+    {
+      "document_number": "2026-07481",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-04-17",
+      "title": "Extension of the TRICARE Childbirth and Breastfeeding Support Demonstration; Correction",
+      "value_usd": null,
+      "description": "Notice of demonstration extension; correction. \u00b7 On Friday, April 10, 2026, the DoD published a notice titled Extension of the TRICARE Childbirth and Breastfeeding Support Demonstration. Subsequent to publication in the Federal Register, the DoD realized that the docket identifier was not included. This notice corrects the error.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/04/17/2026-07481/extension-of-the-tricare-childbirth-and-breastfeeding-support-demonstration-correction"
     }
   ]
 }

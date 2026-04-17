@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-16T22:54:18.429318+00:00",
+  "generated_at": "2026-04-17T22:53:52.646560+00:00",
   "sources": [
     "ofac"
   ],
@@ -464,6 +464,162 @@
         "NICARAGUA"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57070"
+    },
+    {
+      "uid": 57365,
+      "iso": "CO",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "FENIX HUMAN RESOURCES S.A.S. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57365"
+    },
+    {
+      "uid": 57366,
+      "iso": "CO",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Jose Libardo QUIJANO TORRES (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: FENIX HUMAN RESOURCES S.A.S.)",
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57366"
+    },
+    {
+      "uid": 57367,
+      "iso": "CO",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Jose Oscar GARCIA BATTE (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: INTERNATIONAL SERVICES AGENCY S.A.S.)",
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57367"
+    },
+    {
+      "uid": 57368,
+      "iso": "CO",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "GLOBAL QOWA AL BASHERIA S.A.S. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: GARCIA BATTE, Jose Oscar)",
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57368"
+    },
+    {
+      "uid": 57369,
+      "iso": "CO",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Omar Fernando GARCIA BATTE (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: GLOBAL QOWA AL BASHERIA S.A.S.)",
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57369"
+    },
+    {
+      "uid": 57424,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Radhwan Yousif Hameed ALMOHAMMED (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: KATA'IB HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57424"
+    },
+    {
+      "uid": 57425,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Husham Hashim JAYTHOOM (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HARAKAT AL-NUJABA)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57425"
+    },
+    {
+      "uid": 57426,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Hasan Dheyab Hamzah HAMZAH (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: KATA'IB HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57426"
+    },
+    {
+      "uid": 57427,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Ammar Jasim Kadhim AL RAMMAHI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: KATA'IB HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57427"
+    },
+    {
+      "uid": 57428,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Khalid Jameel Abed ALBAKHATRA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: KATA'IB SAYYID AL-SHUHADA)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57428"
+    },
+    {
+      "uid": 57429,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Saeed Kadhim MUKHAMIS (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: KATA'IB SAYYID AL-SHUHADA)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57429"
+    },
+    {
+      "uid": 57431,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-04-17",
+      "title": "Safaa Adnan Jabbar SUWAED (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ASA'IB AHL AL-HAQ)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57431"
     }
   ]
 }
