@@ -679,7 +679,7 @@ _PROSE_SYSTEM = (
     "Country co-occurrence alone FAILS. Layer co-occurrence alone FAILS. "
     "Temporal overlap alone FAILS.\n"
     "If you cannot name the causal mechanism in one sentence, output:\n"
-    '  {"coherent": false, "reason": "<one sentence>", "narrative": null, "prompt": null}\n'
+    '  {"coherent": false, "reason": "<one sentence>", "headline": null, "body": null, "prompt": null}\n'
     "and stop.\n\n"
     "STEP 2 — NARRATIVE (only if coherent)\n"
     "State what happened, what the mechanism is, and why it is upstream of public knowledge. "
@@ -696,7 +696,8 @@ _PROSE_SYSTEM = (
     "Return valid JSON only with exactly these fields:\n"
     "- coherent: boolean\n"
     "- reason: string (rejection reason if coherent=false, otherwise null)\n"
-    "- narrative: string (2-3 sentences if coherent=true, otherwise null)\n"
+    "- headline: string (if coherent=true: max 12 words, states the mechanism — not a description; null if false)\n"
+    "- body: string (if coherent=true: 2 sentences max, ~40 words. Sentence 1: what the data shows. Sentence 2: what the mechanism means or what comes next; null if false)\n"
     "- prompt: string (research prompt if coherent=true, otherwise null)\n"
     "No other fields."
 )
@@ -861,13 +862,9 @@ def generate_prose_for_themes(themes: list, enriched: list) -> list:
                 print(f"  Prose rejected (incoherent): {theme['title'][:60]} [score={theme.get('score', 0):.1f}] — {reason}", file=sys.stderr)
                 theme["narrative"] = None
                 continue
-            narrative_text = parsed.get("narrative") or ""
-            sentences = [s.strip() for s in narrative_text.split(". ") if s.strip()]
-            headline = sentences[0] + ("." if sentences and not sentences[0].endswith(".") else "") if sentences else ""
-            body = ". ".join(sentences[1:]) + ("." if len(sentences) > 1 and not narrative_text.rstrip().endswith(".") else "") if len(sentences) > 1 else ""
             narrative = {
-                "headline": headline,
-                "body":     body,
+                "headline": parsed.get("headline") or "",
+                "body":     parsed.get("body") or "",
                 "prompt":   parsed.get("prompt") or "",
             }
             theme["narrative"] = narrative
