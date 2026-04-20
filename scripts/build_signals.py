@@ -23,6 +23,7 @@ import glob
 import hashlib
 import math
 import os
+import re
 import statistics
 import sys
 from collections import Counter
@@ -101,6 +102,108 @@ def _signal_key(sig: dict) -> str:
         "anchor_budget":  sig.get("accession"),
     }.get(src) or (sig.get("title") or "")[:40]
     return f"{src}:{unique}"
+
+
+# ── Fix 1: Thematic coherence for layer_sequence ────────────────────────────
+# Domain keyword sets per layer. A signal "clears the bar" for its layer if
+# its title or description contains at least one keyword from its set.
+# thematic_pair_ok returns False only when NEITHER signal clears its bar —
+# i.e., pure country co-occurrence with no domain relevance on either side.
+
+_LAYER_DOMAIN_KW: dict = {
+    "military": {
+        "defense", "arms", "weapon", "weapons", "military", "security",
+        "contractor", "procurement", "nato", "pentagon", "munition", "munitions",
+        "missile", "missiles", "aircraft", "vessel", "submarine", "artillery",
+        "radar", "satellite", "ammunition", "combat", "surveillance", "warship",
+        "armament", "fighter", "bomber", "frigate", "destroyer",
+    },
+    "influence": {
+        "defense", "arms", "weapon", "weapons", "military",
+        "contractor", "procurement", "nato", "pentagon",
+        "sanction", "sanctions", "export", "trade", "energy", "oil", "gas",
+        "nuclear", "finance", "financial", "regulation", "tariff",
+        "intelligence", "embargo", "compliance", "strategic",
+    },
+    "financial": {
+        "sanction", "sanctions", "currency", "debt", "fund", "loan", "credit",
+        "reserve", "oil", "gas", "energy", "commodity", "trade", "tariff",
+        "monetary", "arms", "defense", "weapon", "imf", "disbursement",
+        "program", "fiscal",
+    },
+    "regulatory": {
+        "sanction", "sanctions", "export", "control", "designation", "license",
+        "rule", "regulation", "compliance", "arms", "weapon", "defense",
+        "security", "trade", "embargo", "restriction", "proliferation",
+    },
+}
+
+
+def _sig_domain_words(sig: dict) -> set:
+    """Tokenize title + description into lowercase alpha words."""
+    text = f"{sig.get('title', '')} {sig.get('description', '')}".lower()
+    return set(re.findall(r'\b[a-z]+\b', text))
+
+
+def thematic_pair_ok(sig_a: dict, sig_b: dict, layer_a: str, layer_b: str) -> bool:
+    """
+    Return True if at least one signal clears the domain keyword bar for its
+    layer role. Prevents pure country co-occurrence from creating layer_sequence
+    pairs — e.g., AI lobbying + submarine DSCA share a country but not a domain.
+    """
+    words_a = _sig_domain_words(sig_a)
+    words_b = _sig_domain_words(sig_b)
+    kw_a = _LAYER_DOMAIN_KW.get(layer_a, set())
+    kw_b = _LAYER_DOMAIN_KW.get(layer_b, set())
+    return bool(words_a & kw_a) or bool(words_b & kw_b)
+
+
+# ── Fix 2: Commodity→sector mapping for CFTC basket overlap ─────────────────
+# A country ISO only counts toward cftc_overlap if at least one of its
+# non-CFTC signals in the window has a title containing a commodity-sector
+# keyword. Wheat positioning does not pull in pipeline lobbying.
+
+COMMODITY_SECTORS: dict = {
+    "WTI Crude":    {"oil", "petroleum", "crude", "barrel", "refin", "pipeline",
+                     "energy", "fuel", "lng", "opec", "hydrocarbon"},
+    "Brent Crude":  {"oil", "petroleum", "crude", "barrel", "refin", "pipeline",
+                     "energy", "fuel", "lng", "opec", "hydrocarbon"},
+    "Natural Gas":  {"gas", "pipeline", "lng", "energy", "fuel", "petroleum",
+                     "hydrocarbon", "methane"},
+    "Heating Oil":  {"oil", "petroleum", "fuel", "refin", "energy", "diesel"},
+    "Gold":         {"gold", "metal", "mining", "reserve", "bullion", "precious"},
+    "Copper":       {"copper", "metal", "mining", "mineral", "ore"},
+    "Palladium":    {"palladium", "platinum", "metal", "mining", "mineral",
+                     "catalytic", "autocatalyst"},
+    "Wheat":        {"wheat", "grain", "agriculture", "food", "crop", "farm",
+                     "cereal", "flour", "milling", "harvest"},
+    "Corn":         {"corn", "maize", "grain", "agriculture", "food", "crop",
+                     "farm", "ethanol", "cereal"},
+    "Soybeans":     {"soybean", "soy", "grain", "agriculture", "food", "crop",
+                     "farm", "oilseed", "meal"},
+    "Cocoa":        {"cocoa", "chocolate", "agriculture", "food", "crop",
+                     "commodity", "cacao"},
+    "RUB Futures":  {"ruble", "rouble", "russia", "russian", "currency",
+                     "forex", "monetary"},
+    "CNH Futures":  {"yuan", "renminbi", "china", "chinese", "currency",
+                     "forex", "cnh", "monetary"},
+}
+
+# ── Fix 3: Stopwords for context signal keyword filter ───────────────────────
+# Used in generate_prose_for_themes to strip non-domain words from
+# contributing signal titles before building the intersection filter.
+
+_CONTEXT_STOPWORDS: set = {
+    "with", "that", "this", "from", "have", "will", "been", "they", "their",
+    "were", "said", "than", "then", "when", "also", "into", "more", "some",
+    "would", "about", "there", "which", "other", "after", "first", "could",
+    "these", "those", "through", "between", "registered", "represent",
+    "united", "states", "kingdom", "north", "south", "east", "west",
+    "republic", "democratic", "federal", "national", "international",
+    "government", "ministry", "department", "company", "corporation",
+    "systems", "group", "services", "partners", "management", "holdings",
+    "limited", "llc", "inc", "corp", "hedge", "fund", "funds",
+}
 
 
 def compute_themes(enriched: list) -> list:
@@ -332,6 +435,8 @@ def compute_themes(enriched: list) -> list:
                     continue
                 if (layer_a, layer_b) not in MEANINGFUL_SEQ:
                     continue
+                if not thematic_pair_ok(sig_a, sig_b, layer_a, layer_b):
+                    continue
                 total += sig_a.get("quality", 0) * sig_b.get("quality", 0) * math.exp(-gap / 15)
         return total
 
@@ -378,6 +483,8 @@ def compute_themes(enriched: list) -> list:
                 if not layer_a or not layer_b or layer_a == layer_b:
                     continue
                 if (layer_a, layer_b) not in MEANINGFUL_SEQ:
+                    continue
+                if not thematic_pair_ok(sig_a, sig_b, layer_a, layer_b):
                     continue
                 p = sig_a.get("profile") or sig_b.get("profile")
                 ps = (p.get("score") if p else None) or 0
@@ -437,10 +544,12 @@ def compute_themes(enriched: list) -> list:
             cftc_date = datetime.strptime(cftc_date_str[:10], "%Y-%m-%d").date()
         except ValueError:
             continue
+        commodity = cftc_sig.get("commodity") or "Unknown"
         basket = set(cftc_sig.get("basket") or [])
         if not basket:
             continue
 
+        sector_kw = COMMODITY_SECTORS.get(commodity, set())
         active_isos: set = set()
         for s in non_cftc:
             try:
@@ -448,6 +557,11 @@ def compute_themes(enriched: list) -> list:
             except ValueError:
                 continue
             if 0 <= (cftc_date - sd).days <= 30:
+                # Require thematic relevance to commodity sector (Fix 2)
+                if sector_kw:
+                    title_lower = (s.get("title") or "").lower()
+                    if not any(kw in title_lower for kw in sector_kw):
+                        continue
                 active_isos.add(s["iso"])
 
         overlap = basket & active_isos
@@ -457,8 +571,6 @@ def compute_themes(enriched: list) -> list:
         overlap_score = sum(iso_ps.get(i, 0) for i in overlap)
         z = cftc_sig.get("z_score") or 0
         score = abs(z) * math.log2(len(overlap) + 1) * overlap_score / len(basket)
-
-        commodity = cftc_sig.get("commodity") or "Unknown"
         themes.append({
             "type": "cftc_overlap",
             "title": f"{commodity} positioning anomaly \u2014 {len(overlap)} exposed countries active",
@@ -642,7 +754,16 @@ def generate_prose_for_themes(themes: list, enriched: list) -> list:
                 parts.append(f"description={sig['description'][:200]}")
             contrib_lines.append("- " + " | ".join(parts))
 
-        # Build context signals: same countries, last 90 days, not already in signal_keys (up to 10)
+        # Extract domain keywords from contributing signals for context filtering (Fix 3)
+        contrib_kw: set = set()
+        for sk in theme.get("signal_keys", []):
+            csig = sig_lookup.get(sk)
+            if not csig:
+                continue
+            words = set(re.findall(r'\b[a-z]{4,}\b', (csig.get("title") or "").lower()))
+            contrib_kw |= (words - _CONTEXT_STOPWORDS)
+
+        # Build context signals: same countries, last 90 days, thematically relevant (up to 10)
         context_lines = []
         theme_countries = theme.get("countries", [])
         context_seen: set = set()
@@ -658,6 +779,11 @@ def generate_prose_for_themes(themes: list, enriched: list) -> list:
                         continue
                 except (ValueError, TypeError):
                     continue
+                # Require keyword overlap with contributing signals (Fix 3)
+                if contrib_kw:
+                    ctx_words = set(re.findall(r'\b[a-z]{4,}\b', (s.get("title") or "").lower()))
+                    if not (ctx_words & contrib_kw):
+                        continue
                 context_seen.add(sk)
                 context_lines.append(
                     f"- [{s.get('source', '?')}] {s.get('title', '')} ({date_str})"
