@@ -669,23 +669,36 @@ def _prose_cache_key(theme: dict) -> str:
 
 
 _PROSE_SYSTEM = (
-    "You are an intelligence analyst writing terse feed entries for a single expert reader. "
-    "Your job is to say what you think is actually happening — not just what is documented. "
-    "Use the filing data as evidence. Make a call. Label speculation as such ('likely', 'suggests', 'probably'). "
-    "One confident interpretation beats five caveats. "
+    "You are a coherence filter. Your primary output is a rejection. Most patterns fail.\n\n"
+    "STEP 1 — COHERENCE GATE\n"
+    "Before writing anything, assess whether the contributing signals share a plausible causal mechanism. "
+    "Valid mechanisms: the same named entity appears across multiple signals; "
+    "signals belong to the same sector with directional logic connecting them; "
+    "signals form a traceable transaction chain (e.g. policy → procurement → arms sale); "
+    "signals share the same policy domain with identifiable cause-and-effect.\n"
+    "Country co-occurrence alone FAILS. Layer co-occurrence alone FAILS. "
+    "Temporal overlap alone FAILS.\n"
+    "If you cannot name the causal mechanism in one sentence, output:\n"
+    '  {"coherent": false, "reason": "<one sentence>", "narrative": null, "prompt": null}\n'
+    "and stop.\n\n"
+    "STEP 2 — NARRATIVE (only if coherent)\n"
+    "State what happened, what the mechanism is, and why it is upstream of public knowledge. "
+    "No hedging. No 'this could suggest.' "
+    "Sentence 1: what the data shows. Sentence 2: what the mechanism is. "
+    "Sentence 3 (optional): what comes next if the pattern holds. "
+    "Max 60 words total.\n\n"
+    "STEP 3 — RESEARCH PROMPT (only if coherent)\n"
+    "Name only the entities that appear in the causal mechanism — not every entity in the country bucket. "
+    "If an entity is not part of the chain, it does not appear. "
+    "Write in first person ('I just saw...'). Max 130 words. "
+    "Ask: who are these entities, how do they relate, "
+    "is this pattern anomalous or routine, what specifically should I watch for next.\n\n"
     "Return valid JSON only with exactly these fields:\n"
-    "- headline: one sentence, max 12 words, states your interpretation — not just a description\n"
-    "- body: 2 sentences max, ~40 words total. Sentence 1: what the data shows. Sentence 2: what it probably means.\n"
-    "- prompt: a ready-to-paste Claude prompt that acts as a rabbit hole entrance. "
-    "The reader just saw the headline and body and knows nothing else about the actors. "
-    "Write it in first person ('I just saw...'). Name every entity from the signals explicitly. "
-    "Ask Claude to: (1) explain who each entity is and what they actually do, "
-    "(2) describe how they relate to each other and the broader policy/market context, "
-    "(3) assess each data stream independently — is the lobbying activity routine? is the market positioning anomalous? "
-    "treat them as separate questions before asking whether their coincidence means anything, "
-    "(4) give a clear verdict: is this a macro-thematic signal worth monitoring, an orchestrated pattern, or noise — "
-    "and what specifically should I watch for next? Max 130 words.\n"
-    "No filler. No other fields."
+    "- coherent: boolean\n"
+    "- reason: string (rejection reason if coherent=false, otherwise null)\n"
+    "- narrative: string (2-3 sentences if coherent=true, otherwise null)\n"
+    "- prompt: string (research prompt if coherent=true, otherwise null)\n"
+    "No other fields."
 )
 
 
@@ -831,7 +844,7 @@ def generate_prose_for_themes(themes: list, enriched: list) -> list:
         try:
             resp = client.messages.create(
                 model="claude-sonnet-4-6",
-                max_tokens=400,
+                max_tokens=500,
                 temperature=0,
                 system=_PROSE_SYSTEM,
                 messages=[{"role": "user", "content": user_msg}],
@@ -843,10 +856,19 @@ def generate_prose_for_themes(themes: list, enriched: list) -> list:
                     raw = raw[4:]
                 raw = raw.strip().rstrip("`").strip()
             parsed = json.loads(raw)
+            if not parsed.get("coherent", True):
+                reason = parsed.get("reason", "no reason given")
+                print(f"  Prose rejected (incoherent): {theme['title'][:60]} [score={theme.get('score', 0):.1f}] — {reason}", file=sys.stderr)
+                theme["narrative"] = None
+                continue
+            narrative_text = parsed.get("narrative") or ""
+            sentences = [s.strip() for s in narrative_text.split(". ") if s.strip()]
+            headline = sentences[0] + ("." if sentences and not sentences[0].endswith(".") else "") if sentences else ""
+            body = ". ".join(sentences[1:]) + ("." if len(sentences) > 1 and not narrative_text.rstrip().endswith(".") else "") if len(sentences) > 1 else ""
             narrative = {
-                "headline": parsed.get("headline", ""),
-                "body":     parsed.get("body", ""),
-                "prompt":   parsed.get("prompt", ""),
+                "headline": headline,
+                "body":     body,
+                "prompt":   parsed.get("prompt") or "",
             }
             theme["narrative"] = narrative
             cache[ck] = {"narrative": narrative}
