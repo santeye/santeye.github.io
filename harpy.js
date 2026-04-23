@@ -379,6 +379,10 @@
       el.dataset.sigKey = sigKey(sig);
       el.style.setProperty('--layer-color', layerColor(sig.layer));
 
+      const score = (profile && profile.score) || 0;
+      el.style.setProperty('--bar-width', (2 + Math.floor((score / 10) * 3)) + 'px');
+      el.style.setProperty('--bar-opacity', (0.25 + (score / 10) * 0.65).toFixed(2));
+
       let countryTooltip = '';
       if (isUnresolved) {
         countryTooltip = ` data-tooltip="Country not determined from filing — excluded from map and convergence scoring"`;
@@ -469,23 +473,23 @@
         block.className = 'narrative-block';
 
         const narrative = theme.narrative;
-
-        // Country chips — the thing that makes you curious
         const validIsos = (theme.countries || []).filter(iso => iso && iso !== 'XX' && iso !== 'US');
+
+        // Country chips — full name, click to filter feed + scroll
         if (validIsos.length) {
           const chipsEl = document.createElement('div');
           chipsEl.className = 'narrative-countries';
           for (const iso of validIsos) {
             const chip = document.createElement('span');
             chip.className = 'narrative-country-chip';
-            chip.textContent = iso;
+            chip.textContent = (isoProfile[iso] && isoProfile[iso].name) || iso;
             chip.addEventListener('click', e => {
               e.stopPropagation();
               themeFilter = null; activeTheme = null;
-              document.querySelectorAll('.narrative-block.active').forEach(r => r.classList.remove('active'));
               activeFilter = activeFilter === iso ? null : iso;
               updateFilterBarBrass();
               renderFeed(signals);
+              document.getElementById('feed-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
             chipsEl.appendChild(chip);
           }
@@ -505,22 +509,11 @@
             block.appendChild(headline);
           }
 
-          // Body hidden by default; expand toggle reveals it
           if (narrative.body) {
             const body = document.createElement('div');
             body.className = 'narrative-body';
             body.textContent = narrative.body;
             block.appendChild(body);
-
-            const expandBtn = document.createElement('span');
-            expandBtn.className = 'narrative-expand-btn';
-            expandBtn.textContent = '· · ·';
-            expandBtn.addEventListener('click', e => {
-              e.stopPropagation();
-              const open = block.classList.toggle('body-open');
-              expandBtn.textContent = open ? 'collapse' : '· · ·';
-            });
-            block.appendChild(expandBtn);
           }
 
           if (narrative.prompt) {
@@ -538,24 +531,11 @@
           }
         }
 
-        // Click handler: toggle theme filter
+        // Click block = expand/collapse. One open at a time.
         block.addEventListener('click', () => {
-          const wasActive = block.classList.contains('active');
-          document.querySelectorAll('.narrative-block.active').forEach(r => r.classList.remove('active'));
-
-          if (wasActive) {
-            themeFilter  = null;
-            activeTheme  = null;
-            activeFilter = null;
-          } else {
-            block.classList.add('active');
-            activeTheme  = theme;
-            activeFilter = null;
-            themeFilter  = validIsos.length ? new Set(validIsos) : null;
-          }
-
-          updateFilterBarBrass();
-          renderFeed(signals);
+          const wasOpen = block.classList.contains('body-open');
+          document.querySelectorAll('.narrative-block.body-open').forEach(b => b.classList.remove('body-open'));
+          if (!wasOpen) block.classList.add('body-open');
         });
 
         list.appendChild(block);
