@@ -793,7 +793,7 @@ def generate_prose_for_themes(themes: list, enriched: list) -> list:
 
     # Only generate prose for themes with score above floor — weak themes stay null
     # and are invisible in the narratives panel. Better 3 real narratives than 10 noisy ones.
-    PROSE_SCORE_FLOOR = 18.0
+    PROSE_SCORE_FLOOR = 8.0
 
     for theme in [t for t in themes[:10] if t.get("score", 0) >= PROSE_SCORE_FLOOR]:
         ck = _prose_cache_key(theme)
