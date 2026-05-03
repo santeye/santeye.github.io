@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T22:58:43.453301+00:00",
+  "generated_at": "2026-05-03T04:07:05.293924+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -26761,25 +26761,25 @@
     {
       "type": "convergence",
       "title": "China \u2014 first appearance + influence \u2192 action",
-      "score": 60.105,
+      "score": 54.329,
       "countries": [
         "CN"
       ],
       "signal_keys": [
-        "ofac:Feiwu BIAN (Individual)",
-        "ofac:Xinchun LI (Individual)",
-        "ofac:QINGDAO HAIYE OIL TERMINAL CO., LTD. (En",
-        "ofac:TAI LUNG TRADING LIMITED (Entity)",
         "ofac:MULLINGAR TRADING COMPANY LIMITED (Entit",
+        "ofac:TAI LUNG TRADING LIMITED (Entity)",
+        "ofac:Feiwu BIAN (Individual)",
+        "ofac:COSTIN SHIPPING LIMITED (Entity)",
+        "ofac:Xinchun LI (Individual)",
         "lda:b607d4b4-b2a3-471c-8470-71fb5718c3a8",
-        "ofac:COSTIN SHIPPING LIMITED (Entity)"
+        "ofac:QINGDAO HAIYE OIL TERMINAL CO., LTD. (En"
       ],
       "why": "[first_appearance] ofac filed for China after first recorded of silence (profile score: 10). Signal: QINGDAO HAIYE OIL TERMINAL CO., LTD. (Entity) | [influence_before_action] lda on 2026-02-17 \u2192 ofac on 2026-04-16 (58d gap). No prior lda+action sequence in preceding 180d.",
       "_components": [
         {
           "type": "first_appearance",
           "title": "China \u2014 ofac after first recorded silence",
-          "score": 46.274,
+          "score": 40.498,
           "countries": [
             "CN"
           ],
@@ -26812,7 +26812,7 @@
     {
       "type": "first_appearance",
       "title": "Iran \u2014 ofac after first recorded silence",
-      "score": 41.647,
+      "score": 36.448,
       "countries": [
         "IR"
       ],
@@ -26837,7 +26837,7 @@
     {
       "type": "first_appearance",
       "title": "United Kingdom \u2014 ofac after first recorded silence",
-      "score": 23.137,
+      "score": 20.249,
       "countries": [
         "GB"
       ],
@@ -26851,67 +26851,26 @@
       "narrative": null
     },
     {
-      "type": "first_appearance",
-      "title": "Turkey \u2014 ofac after first recorded silence",
-      "score": 19.006,
-      "countries": [
-        "TR"
-      ],
-      "signal_keys": [
-        "ofac:EMTI FIBER TEXTILE IMPORT EXPORT TRADE L"
-      ],
-      "why": "ofac filed for Turkey after first recorded of silence (profile score: 8). Signal: EMTI FIBER TEXTILE IMPORT EXPORT TRADE LIMITED COMPANY (Entity)",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "India \u2014 ofac after first recorded silence",
-      "score": 19.003,
-      "countries": [
-        "IN"
-      ],
-      "signal_keys": [
-        "ofac:Satishkumar Hareshbhai SUTARIA (Individu",
-        "ofac:FLEET TANQO PRIVATE LIMITED (Entity)",
-        "ofac:HOUSE OF SHIPPING PRIVATE LIMITED (Entit"
-      ],
-      "why": "ofac filed for India after first recorded of silence (profile score: 7). Signal: Satishkumar Hareshbhai SUTARIA (Individual)",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "Panama \u2014 ofac after first recorded silence",
-      "score": 18.943,
-      "countries": [
-        "PA"
-      ],
-      "signal_keys": [
-        "ofac:NAXOS MARITIME AND TRADING S.A. (Entity)"
-      ],
-      "why": "ofac filed for Panama after first recorded of silence (profile score: 5). Signal: NAXOS MARITIME AND TRADING S.A. (Entity)",
-      "narrative": null
-    },
-    {
       "type": "convergence",
       "title": "Colombia \u2014 first appearance + influence \u2192 action",
-      "score": 18.732,
+      "score": 17.369,
       "countries": [
         "CO"
       ],
       "signal_keys": [
-        "ofac:Jose Oscar GARCIA BATTE (Individual)",
-        "ofac:FENIX HUMAN RESOURCES S.A.S. (Entity)",
-        "ofac:Jose Libardo QUIJANO TORRES (Individual)",
         "ofac:Omar Fernando GARCIA BATTE (Individual)",
         "ofac:GLOBAL QOWA AL BASHERIA S.A.S. (Entity)",
-        "fara:7692"
+        "fara:7692",
+        "ofac:FENIX HUMAN RESOURCES S.A.S. (Entity)",
+        "ofac:Jose Oscar GARCIA BATTE (Individual)",
+        "ofac:Jose Libardo QUIJANO TORRES (Individual)"
       ],
       "why": "[first_appearance] ofac filed for Colombia after first recorded of silence (profile score: 6). Signal: FENIX HUMAN RESOURCES S.A.S. (Entity) | [influence_before_action] fara on 2026-02-12 \u2192 ofac on 2026-04-17 (64d gap). No prior fara+action sequence in preceding 180d.",
       "_components": [
         {
           "type": "first_appearance",
           "title": "Colombia \u2014 ofac after first recorded silence",
-          "score": 10.918,
+          "score": 9.555,
           "countries": [
             "CO"
           ],
@@ -26932,8 +26891,8 @@
             "CO"
           ],
           "signal_keys": [
-            "ofac:FENIX HUMAN RESOURCES S.A.S. (Entity)",
-            "fara:7692"
+            "fara:7692",
+            "ofac:FENIX HUMAN RESOURCES S.A.S. (Entity)"
           ],
           "why": "fara on 2026-02-12 \u2192 ofac on 2026-04-17 (64d gap). No prior fara+action sequence in preceding 180d."
         }
@@ -26941,50 +26900,30 @@
       "narrative": null
     },
     {
-      "type": "first_appearance",
-      "title": "United Arab Emirates \u2014 ofac after first recorded silence",
-      "score": 18.51,
-      "countries": [
-        "AE"
-      ],
-      "signal_keys": [
-        "ofac:Pedram PIROUZAN (Individual)",
-        "ofac:AL SAHRA TRADE PETRO DMCC (Entity)",
-        "ofac:Janelyn Eusebio EMPERADOR (Individual)",
-        "ofac:Mohammad VAHIDI (Individual)",
-        "ofac:CHABOK FZCO (Entity)",
-        "ofac:TAYLOR SHIPPING FZCO (Entity)",
-        "ofac:SHIPSTAR SHIPCHANDLING LLC (Entity)",
-        "ofac:ACS TRADING LLC (Entity)"
-      ],
-      "why": "ofac filed for United Arab Emirates after first recorded of silence (profile score: 4). Signal: Pedram PIROUZAN (Individual)",
-      "narrative": null
-    },
-    {
       "type": "convergence",
       "title": "Mexico \u2014 first appearance + influence \u2192 action",
-      "score": 18.458,
+      "score": 17.102,
       "countries": [
         "MX"
       ],
       "signal_keys": [
-        "lda:2546e933-cf40-44b7-8a69-91c428ae13e8",
-        "ofac:QUIMICA SOLUCIONES Y LOGISTICA INTEGRAL ",
-        "ofac:BOTANICA 2000 (Entity)",
         "ofac:Jesus Reymundo RAMOS VAZQUEZ (Individual",
-        "ofac:COMERCIALIZADORA Y ARRENDADORA DE MEXICO",
-        "ofac:DESARROLLOS CARTOK S.A. DE C.V. (Entity)",
-        "ofac:DIAMANTE CASINO (Entity)",
-        "ofac:Ramiro Baltazar FELIX HERAS (Individual)",
+        "ofac:Jose de Jesus RAMIREZ TORRES (Individual",
+        "ofac:BOTANICA 2000 (Entity)",
         "ofac:CORPORATIVO Y ENLACE RAM S.A. DE C.V. (E",
-        "ofac:Jose de Jesus RAMIREZ TORRES (Individual"
+        "lda:2546e933-cf40-44b7-8a69-91c428ae13e8",
+        "ofac:COMERCIALIZADORA Y ARRENDADORA DE MEXICO",
+        "ofac:Ramiro Baltazar FELIX HERAS (Individual)",
+        "ofac:QUIMICA SOLUCIONES Y LOGISTICA INTEGRAL ",
+        "ofac:DIAMANTE CASINO (Entity)",
+        "ofac:DESARROLLOS CARTOK S.A. DE C.V. (Entity)"
       ],
       "why": "[first_appearance] ofac filed for Mexico after first recorded of silence (profile score: 4). Signal: Jose de Jesus RAMIREZ TORRES (Individual) | [influence_before_action] lda on 2026-03-16 \u2192 ofac on 2026-04-14 (29d gap). No prior lda+action sequence in preceding 180d.",
       "_components": [
         {
           "type": "first_appearance",
           "title": "Mexico \u2014 ofac after first recorded silence",
-          "score": 10.859,
+          "score": 9.503,
           "countries": [
             "MX"
           ],
@@ -27019,8 +26958,69 @@
     },
     {
       "type": "first_appearance",
-      "title": "Qatar \u2014 dsca after 401d silence",
-      "score": 15.767,
+      "title": "Turkey \u2014 ofac after first recorded silence",
+      "score": 16.634,
+      "countries": [
+        "TR"
+      ],
+      "signal_keys": [
+        "ofac:EMTI FIBER TEXTILE IMPORT EXPORT TRADE L"
+      ],
+      "why": "ofac filed for Turkey after first recorded of silence (profile score: 8). Signal: EMTI FIBER TEXTILE IMPORT EXPORT TRADE LIMITED COMPANY (Entity)",
+      "narrative": null
+    },
+    {
+      "type": "first_appearance",
+      "title": "India \u2014 ofac after first recorded silence",
+      "score": 16.631,
+      "countries": [
+        "IN"
+      ],
+      "signal_keys": [
+        "ofac:Satishkumar Hareshbhai SUTARIA (Individu",
+        "ofac:FLEET TANQO PRIVATE LIMITED (Entity)",
+        "ofac:HOUSE OF SHIPPING PRIVATE LIMITED (Entit"
+      ],
+      "why": "ofac filed for India after first recorded of silence (profile score: 7). Signal: Satishkumar Hareshbhai SUTARIA (Individual)",
+      "narrative": null
+    },
+    {
+      "type": "first_appearance",
+      "title": "Panama \u2014 ofac after first recorded silence",
+      "score": 16.579,
+      "countries": [
+        "PA"
+      ],
+      "signal_keys": [
+        "ofac:NAXOS MARITIME AND TRADING S.A. (Entity)"
+      ],
+      "why": "ofac filed for Panama after first recorded of silence (profile score: 5). Signal: NAXOS MARITIME AND TRADING S.A. (Entity)",
+      "narrative": null
+    },
+    {
+      "type": "first_appearance",
+      "title": "United Arab Emirates \u2014 ofac after first recorded silence",
+      "score": 16.199,
+      "countries": [
+        "AE"
+      ],
+      "signal_keys": [
+        "ofac:Pedram PIROUZAN (Individual)",
+        "ofac:AL SAHRA TRADE PETRO DMCC (Entity)",
+        "ofac:Janelyn Eusebio EMPERADOR (Individual)",
+        "ofac:Mohammad VAHIDI (Individual)",
+        "ofac:CHABOK FZCO (Entity)",
+        "ofac:TAYLOR SHIPPING FZCO (Entity)",
+        "ofac:SHIPSTAR SHIPCHANDLING LLC (Entity)",
+        "ofac:ACS TRADING LLC (Entity)"
+      ],
+      "why": "ofac filed for United Arab Emirates after first recorded of silence (profile score: 4). Signal: Pedram PIROUZAN (Individual)",
+      "narrative": null
+    },
+    {
+      "type": "first_appearance",
+      "title": "Qatar \u2014 dsca after 403d silence",
+      "score": 13.821,
       "countries": [
         "QA"
       ],
@@ -27028,13 +27028,13 @@
         "dsca:Advanced Precision Kill Weapons System",
         "dsca:Patriot Missile Replenishment"
       ],
-      "why": "dsca filed for Qatar after 401d of silence (profile score: 4). Signal: Advanced Precision Kill Weapons System",
+      "why": "dsca filed for Qatar after 403d of silence (profile score: 4). Signal: Advanced Precision Kill Weapons System",
       "narrative": null
     },
     {
       "type": "first_appearance",
       "title": "Vietnam \u2014 ofac after first recorded silence",
-      "score": 15.154,
+      "score": 13.263,
       "countries": [
         "VN"
       ],
@@ -27047,7 +27047,7 @@
     {
       "type": "first_appearance",
       "title": "Iraq \u2014 ofac after first recorded silence",
-      "score": 12.738,
+      "score": 11.148,
       "countries": [
         "IQ"
       ],
@@ -27063,7 +27063,7 @@
     {
       "type": "first_appearance",
       "title": "Tunisia \u2014 dsca after first recorded silence",
-      "score": 7.876,
+      "score": 6.893,
       "countries": [
         "TN"
       ],
@@ -27075,21 +27075,8 @@
     },
     {
       "type": "first_appearance",
-      "title": "Russia \u2014 fara after first recorded silence",
-      "score": 6.694,
-      "countries": [
-        "RU"
-      ],
-      "signal_keys": [
-        "fara:7711"
-      ],
-      "why": "fara filed for Russia after first recorded of silence (profile score: 10). Signal: Sher Tremonte LLP registered to represent Alexey Kuzovkin",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
       "title": "Egypt \u2014 fara after first recorded silence",
-      "score": 6.118,
+      "score": 5.354,
       "countries": [
         "EG"
       ],
@@ -27100,19 +27087,6 @@
       "narrative": null
     },
     {
-      "type": "first_appearance",
-      "title": "Lithuania \u2014 dsca after first recorded silence",
-      "score": 5.644,
-      "countries": [
-        "LT"
-      ],
-      "signal_keys": [
-        "dsca:AIM-9X Sidewinder Block II Missiles"
-      ],
-      "why": "dsca filed for Lithuania after first recorded of silence (profile score: 2). Signal: AIM-9X Sidewinder Block II Missiles",
-      "narrative": null
-    },
-    {
       "type": "influence_before_action",
       "title": "Panama \u2014 lda \u2192 ofac (62d)",
       "score": 4.955,
@@ -27120,10 +27094,23 @@
         "PA"
       ],
       "signal_keys": [
-        "ofac:NAXOS MARITIME AND TRADING S.A. (Entity)",
-        "lda:ca9dd4da-876f-4b86-9823-c580d39d74da"
+        "lda:ca9dd4da-876f-4b86-9823-c580d39d74da",
+        "ofac:NAXOS MARITIME AND TRADING S.A. (Entity)"
       ],
       "why": "lda on 2026-02-25 \u2192 ofac on 2026-04-28 (62d gap). No prior lda+action sequence in preceding 180d.",
+      "narrative": null
+    },
+    {
+      "type": "first_appearance",
+      "title": "Lithuania \u2014 dsca after first recorded silence",
+      "score": 4.939,
+      "countries": [
+        "LT"
+      ],
+      "signal_keys": [
+        "dsca:AIM-9X Sidewinder Block II Missiles"
+      ],
+      "why": "dsca filed for Lithuania after first recorded of silence (profile score: 2). Signal: AIM-9X Sidewinder Block II Missiles",
       "narrative": null
     }
   ]

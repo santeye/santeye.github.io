@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T22:58:38.644854+00:00",
+  "generated_at": "2026-05-03T04:07:01.736435+00:00",
   "sources": [
     "federalregister"
   ],
@@ -5930,7 +5930,105 @@
       "description": "30-Day information collection notice. \u00b7 The DoD has submitted to OMB for clearance the following proposal for collection of information under the provisions of the Paperwork Reduction Act.",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/04/30/2026-08440/submission-for-omb-review-comment-request"
+    },
+    {
+      "document_number": "2026-08546",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-01",
+      "title": "Section 6435 Payments; Refunds for Previously Taxed Dyed Fuel",
+      "value_usd": null,
+      "description": "Notice of proposed rulemaking. \u00b7 In the Rules and Regulations section of this issue of the Federal Register are temporary regulations regarding the statutory provision providing for payments to taxpayers with respect to certain previously taxed dyed fuel. Specifically, the temporary regulations provide guidance as to the taxpayers that may claim such payments and the procedures these taxpayers must follow to claim the payments. The text of those regulations also serves as the text of these proposed regulations. These proposed regulations would affect taxpayers that withdraw previously taxed dyed fuel from a terminal.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/01/2026-08546/section-6435-payments-refunds-for-previously-taxed-dyed-fuel"
+    },
+    {
+      "document_number": "2026-08545",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-01",
+      "title": "Section 6435 Payments; Refunds for Previously Taxed Dyed Fuel",
+      "value_usd": null,
+      "description": "Temporary regulations. \u00b7 This document contains temporary regulations regarding the statutory provision providing for payments to taxpayers with respect to certain previously taxed dyed fuel. Specifically, these temporary regulations provide guidance delineating which taxpayers may claim such payments and the procedures these taxpayers must follow to claim the payments. The text of the temporary regulations also serves as the text of the proposed regulations set forth in the notice of proposed rulemaking on this subject in the proposed rules section in this issue of the Federal Register. These temporary regulations affect taxpayers that withdraw previously taxed dyed fuel from a terminal.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/01/2026-08545/section-6435-payments-refunds-for-previously-taxed-dyed-fuel"
+    },
+    {
+      "document_number": "2026-08615",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-04",
+      "title": "Notice of Intent To Grant an Exclusive Patent License",
+      "value_usd": null,
+      "description": "Notice of intent. \u00b7 Pursuant to the Bayh-Dole Act and implementing regulations, the Department of the Air Force hereby gives notice of its intent to grant an exclusive patent license to DarkPulse, a C Corporation, 3 Columbus Circle, Floor 15, New York, NY 10019.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/04/2026-08615/notice-of-intent-to-grant-an-exclusive-patent-license"
+    },
+    {
+      "document_number": "2026-08613",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-04",
+      "title": "Treatment of Income From Indian Fishing Rights-Related Activity as Compensation",
+      "value_usd": null,
+      "description": "Final Regulations. \u00b7 This document contains final regulations providing that amounts paid to a member of an Indian Tribe as remuneration for services performed in a fishing rights-related activity may be treated as compensation for purposes of applying the limits on qualified retirement plan benefits and contributions. These regulations affect participants, beneficiaries, sponsors, and administrators of Tribal plans.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/04/2026-08613/treatment-of-income-from-indian-fishing-rights-related-activity-as-compensation"
+    },
+    {
+      "document_number": "2026-08610",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-04",
+      "title": "Acquisition of Items for Which Federal Prison Industries Has a Significant Market Share",
+      "value_usd": null,
+      "description": "Notice. \u00b7 DoD is publishing the updated annual list of product categories for which the Federal Prison Industries' share of the DoD market is greater than five percent.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/04/2026-08610/acquisition-of-items-for-which-federal-prison-industries-has-a-significant-market-share"
+    },
+    {
+      "document_number": "2026-08601",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-04",
+      "title": "Notice of Intent To Grant a Partially Exclusive Patent License",
+      "value_usd": null,
+      "description": "Notice of intent. \u00b7 Pursuant to the Bayh-Dole Act and implementing regulations, the Department of the Air Force hereby gives notice of its intent to grant a partially exclusive (the field to include means turbomachinery applications and turbomachinery systems where the invention is on the component with radial air flow) patent license to Hyphen Innovations, LLC having a place of business at 4231 Pennywood Drive, Beavercreek, OH 45430.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/04/2026-08601/notice-of-intent-to-grant-a-partially-exclusive-patent-license"
+    },
+    {
+      "document_number": "2026-08598",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-04",
+      "title": "Notice of Intent To Grant a Joint Ownership Agreement With an Exclusive Patent License",
+      "value_usd": null,
+      "description": "Notice of intent. \u00b7 Pursuant to the Bayh-Dole Act and implementing regulations, the Department of the Air Force hereby gives notice of its intent to grant a joint ownership agreement with an exclusive (the field to include all fields) patent license to Board of Regents, of The University of Texas System having a place of business at 701 S Nedderman. Box 19145. Arlington, Texas 76019-0145.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/04/2026-08598/notice-of-intent-to-grant-a-joint-ownership-agreement-with-an-exclusive-patent-license"
+    },
+    {
+      "document_number": "2026-08591",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-04",
+      "title": "Proposals by Non-Federal Interests for Inclusion in the Annual Report to Congress on Future Water Resources Development",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The Assistant Secretary of the Army for Civil Works (ASA(CW)) is soliciting proposals for inclusion in the 2027 Annual Report to Congress on Future Water Resources Development (Annual Report). The Annual Report includes proposals submitted by non-federal interests for new feasibility studies, proposed modifications to authorized water resources development projects or feasibility studies, and proposed modifications to environmental infrastructure program authorities. The Annual Report is authorized under Section 7001 of the Water Resources Reform and Development Act (WRRDA) of 2014 as amended (33 U.S.C. 2282d).",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/04/2026-08591/proposals-by-non-federal-interests-for-inclusion-in-the-annual-report-to-congress-on-future-water"
+    },
+    {
+      "document_number": "2026-08589",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-04",
+      "title": "Notice of Intent To Grant a Partially Exclusive Patent License",
+      "value_usd": null,
+      "description": "Notice of intent. \u00b7 Pursuant to the Bayh-Dole Act and implementing regulations, the Department of the Air Force hereby gives notice of its intent to grant a partially exclusive (the field to include the pharmaceutical manufacturing and supply chain sector) patent license to Sensor Biometrics, Inc. having a place of business at 8031 West Center Road, Suite 303, Omaha, Nebraska 68124.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/04/2026-08589/notice-of-intent-to-grant-a-partially-exclusive-patent-license"
     }
-  ],
-  "error": "[Errno 60] Operation timed out"
+  ]
 }
