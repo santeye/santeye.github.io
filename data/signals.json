@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T04:07:05.293924+00:00",
+  "generated_at": "2026-05-04T23:03:07.349925+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,48 @@
     "sam"
   ],
   "signals": [
+    {
+      "filing_uuid": "ef486d3f-301a-4024-b625-daa11ef0c1b3",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-04",
+      "title": "Energy \u2014 The Bennett Consulting Group O/B/O Energy Substantiation via Patel Partners Llc",
+      "value_usd": null,
+      "description": "Clarity Act and Responsible Financial Innovation Act (RFIA)",
+      "lobbying_firm": "Patel Partners Llc",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/ef486d3f-301a-4024-b625-daa11ef0c1b3/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "07dec833-d383-4d3a-b5d1-ce8eb900fff5",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-03",
+      "title": "Trade, Consumer Safety, Economics \u2014 Byrna Technologies Inc. via Capitol Pathway Advisors Llc",
+      "value_usd": null,
+      "description": "Engagement on consumer safety standards, federal procurement and grant eligibility, interstate commerce and shipping iss\u2026",
+      "lobbying_firm": "Capitol Pathway Advisors Llc",
+      "issue_codes": [
+        "CSP",
+        "ECN",
+        "FIR",
+        "MAN",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/07dec833-d383-4d3a-b5d1-ce8eb900fff5/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "iso": "IL",
       "source": "dsca",
@@ -26761,25 +26803,25 @@
     {
       "type": "convergence",
       "title": "China \u2014 first appearance + influence \u2192 action",
-      "score": 54.329,
+      "score": 51.717,
       "countries": [
         "CN"
       ],
       "signal_keys": [
-        "ofac:MULLINGAR TRADING COMPANY LIMITED (Entit",
         "ofac:TAI LUNG TRADING LIMITED (Entity)",
-        "ofac:Feiwu BIAN (Individual)",
         "ofac:COSTIN SHIPPING LIMITED (Entity)",
+        "ofac:QINGDAO HAIYE OIL TERMINAL CO., LTD. (En",
+        "ofac:MULLINGAR TRADING COMPANY LIMITED (Entit",
+        "ofac:Feiwu BIAN (Individual)",
         "ofac:Xinchun LI (Individual)",
-        "lda:b607d4b4-b2a3-471c-8470-71fb5718c3a8",
-        "ofac:QINGDAO HAIYE OIL TERMINAL CO., LTD. (En"
+        "lda:b607d4b4-b2a3-471c-8470-71fb5718c3a8"
       ],
       "why": "[first_appearance] ofac filed for China after first recorded of silence (profile score: 10). Signal: QINGDAO HAIYE OIL TERMINAL CO., LTD. (Entity) | [influence_before_action] lda on 2026-02-17 \u2192 ofac on 2026-04-16 (58d gap). No prior lda+action sequence in preceding 180d.",
       "_components": [
         {
           "type": "first_appearance",
           "title": "China \u2014 ofac after first recorded silence",
-          "score": 40.498,
+          "score": 37.886,
           "countries": [
             "CN"
           ],
@@ -26801,8 +26843,8 @@
             "CN"
           ],
           "signal_keys": [
-            "ofac:Feiwu BIAN (Individual)",
-            "lda:b607d4b4-b2a3-471c-8470-71fb5718c3a8"
+            "lda:b607d4b4-b2a3-471c-8470-71fb5718c3a8",
+            "ofac:Feiwu BIAN (Individual)"
           ],
           "why": "lda on 2026-02-17 \u2192 ofac on 2026-04-16 (58d gap). No prior lda+action sequence in preceding 180d."
         }
@@ -26812,7 +26854,7 @@
     {
       "type": "first_appearance",
       "title": "Iran \u2014 ofac after first recorded silence",
-      "score": 36.448,
+      "score": 34.098,
       "countries": [
         "IR"
       ],
@@ -26837,7 +26879,7 @@
     {
       "type": "first_appearance",
       "title": "United Kingdom \u2014 ofac after first recorded silence",
-      "score": 20.249,
+      "score": 18.943,
       "countries": [
         "GB"
       ],
@@ -26853,24 +26895,24 @@
     {
       "type": "convergence",
       "title": "Colombia \u2014 first appearance + influence \u2192 action",
-      "score": 17.369,
+      "score": 16.753,
       "countries": [
         "CO"
       ],
       "signal_keys": [
+        "fara:7692",
         "ofac:Omar Fernando GARCIA BATTE (Individual)",
         "ofac:GLOBAL QOWA AL BASHERIA S.A.S. (Entity)",
-        "fara:7692",
+        "ofac:Jose Libardo QUIJANO TORRES (Individual)",
         "ofac:FENIX HUMAN RESOURCES S.A.S. (Entity)",
-        "ofac:Jose Oscar GARCIA BATTE (Individual)",
-        "ofac:Jose Libardo QUIJANO TORRES (Individual)"
+        "ofac:Jose Oscar GARCIA BATTE (Individual)"
       ],
       "why": "[first_appearance] ofac filed for Colombia after first recorded of silence (profile score: 6). Signal: FENIX HUMAN RESOURCES S.A.S. (Entity) | [influence_before_action] fara on 2026-02-12 \u2192 ofac on 2026-04-17 (64d gap). No prior fara+action sequence in preceding 180d.",
       "_components": [
         {
           "type": "first_appearance",
           "title": "Colombia \u2014 ofac after first recorded silence",
-          "score": 9.555,
+          "score": 8.939,
           "countries": [
             "CO"
           ],
@@ -26891,8 +26933,8 @@
             "CO"
           ],
           "signal_keys": [
-            "fara:7692",
-            "ofac:FENIX HUMAN RESOURCES S.A.S. (Entity)"
+            "ofac:FENIX HUMAN RESOURCES S.A.S. (Entity)",
+            "fara:7692"
           ],
           "why": "fara on 2026-02-12 \u2192 ofac on 2026-04-17 (64d gap). No prior fara+action sequence in preceding 180d."
         }
@@ -26902,20 +26944,20 @@
     {
       "type": "convergence",
       "title": "Mexico \u2014 first appearance + influence \u2192 action",
-      "score": 17.102,
+      "score": 16.489,
       "countries": [
         "MX"
       ],
       "signal_keys": [
-        "ofac:Jesus Reymundo RAMOS VAZQUEZ (Individual",
         "ofac:Jose de Jesus RAMIREZ TORRES (Individual",
-        "ofac:BOTANICA 2000 (Entity)",
-        "ofac:CORPORATIVO Y ENLACE RAM S.A. DE C.V. (E",
-        "lda:2546e933-cf40-44b7-8a69-91c428ae13e8",
-        "ofac:COMERCIALIZADORA Y ARRENDADORA DE MEXICO",
-        "ofac:Ramiro Baltazar FELIX HERAS (Individual)",
-        "ofac:QUIMICA SOLUCIONES Y LOGISTICA INTEGRAL ",
         "ofac:DIAMANTE CASINO (Entity)",
+        "lda:2546e933-cf40-44b7-8a69-91c428ae13e8",
+        "ofac:BOTANICA 2000 (Entity)",
+        "ofac:Ramiro Baltazar FELIX HERAS (Individual)",
+        "ofac:Jesus Reymundo RAMOS VAZQUEZ (Individual",
+        "ofac:CORPORATIVO Y ENLACE RAM S.A. DE C.V. (E",
+        "ofac:COMERCIALIZADORA Y ARRENDADORA DE MEXICO",
+        "ofac:QUIMICA SOLUCIONES Y LOGISTICA INTEGRAL ",
         "ofac:DESARROLLOS CARTOK S.A. DE C.V. (Entity)"
       ],
       "why": "[first_appearance] ofac filed for Mexico after first recorded of silence (profile score: 4). Signal: Jose de Jesus RAMIREZ TORRES (Individual) | [influence_before_action] lda on 2026-03-16 \u2192 ofac on 2026-04-14 (29d gap). No prior lda+action sequence in preceding 180d.",
@@ -26923,7 +26965,7 @@
         {
           "type": "first_appearance",
           "title": "Mexico \u2014 ofac after first recorded silence",
-          "score": 9.503,
+          "score": 8.89,
           "countries": [
             "MX"
           ],
@@ -26959,7 +27001,7 @@
     {
       "type": "first_appearance",
       "title": "Turkey \u2014 ofac after first recorded silence",
-      "score": 16.634,
+      "score": 15.561,
       "countries": [
         "TR"
       ],
@@ -26972,7 +27014,7 @@
     {
       "type": "first_appearance",
       "title": "India \u2014 ofac after first recorded silence",
-      "score": 16.631,
+      "score": 15.558,
       "countries": [
         "IN"
       ],
@@ -26987,7 +27029,7 @@
     {
       "type": "first_appearance",
       "title": "Panama \u2014 ofac after first recorded silence",
-      "score": 16.579,
+      "score": 15.509,
       "countries": [
         "PA"
       ],
@@ -27000,7 +27042,7 @@
     {
       "type": "first_appearance",
       "title": "United Arab Emirates \u2014 ofac after first recorded silence",
-      "score": 16.199,
+      "score": 15.154,
       "countries": [
         "AE"
       ],
@@ -27019,8 +27061,8 @@
     },
     {
       "type": "first_appearance",
-      "title": "Qatar \u2014 dsca after 403d silence",
-      "score": 13.821,
+      "title": "Qatar \u2014 dsca after 404d silence",
+      "score": 12.94,
       "countries": [
         "QA"
       ],
@@ -27028,13 +27070,13 @@
         "dsca:Advanced Precision Kill Weapons System",
         "dsca:Patriot Missile Replenishment"
       ],
-      "why": "dsca filed for Qatar after 403d of silence (profile score: 4). Signal: Advanced Precision Kill Weapons System",
+      "why": "dsca filed for Qatar after 404d of silence (profile score: 4). Signal: Advanced Precision Kill Weapons System",
       "narrative": null
     },
     {
       "type": "first_appearance",
       "title": "Vietnam \u2014 ofac after first recorded silence",
-      "score": 13.263,
+      "score": 12.407,
       "countries": [
         "VN"
       ],
@@ -27047,7 +27089,7 @@
     {
       "type": "first_appearance",
       "title": "Iraq \u2014 ofac after first recorded silence",
-      "score": 11.148,
+      "score": 10.429,
       "countries": [
         "IQ"
       ],
@@ -27063,7 +27105,7 @@
     {
       "type": "first_appearance",
       "title": "Tunisia \u2014 dsca after first recorded silence",
-      "score": 6.893,
+      "score": 6.448,
       "countries": [
         "TN"
       ],
@@ -27076,7 +27118,7 @@
     {
       "type": "first_appearance",
       "title": "Egypt \u2014 fara after first recorded silence",
-      "score": 5.354,
+      "score": 5.009,
       "countries": [
         "EG"
       ],
@@ -27094,8 +27136,8 @@
         "PA"
       ],
       "signal_keys": [
-        "lda:ca9dd4da-876f-4b86-9823-c580d39d74da",
-        "ofac:NAXOS MARITIME AND TRADING S.A. (Entity)"
+        "ofac:NAXOS MARITIME AND TRADING S.A. (Entity)",
+        "lda:ca9dd4da-876f-4b86-9823-c580d39d74da"
       ],
       "why": "lda on 2026-02-25 \u2192 ofac on 2026-04-28 (62d gap). No prior lda+action sequence in preceding 180d.",
       "narrative": null
@@ -27103,7 +27145,7 @@
     {
       "type": "first_appearance",
       "title": "Lithuania \u2014 dsca after first recorded silence",
-      "score": 4.939,
+      "score": 4.621,
       "countries": [
         "LT"
       ],

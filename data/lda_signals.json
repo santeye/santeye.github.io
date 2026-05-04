@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-03T04:07:00.718377+00:00",
+  "generated_at": "2026-05-04T23:03:02.101352+00:00",
   "sources": [
     "lda"
   ],
@@ -11596,6 +11596,42 @@
       ],
       "url": "https://lda.gov/filings/public/filing/717c1938-524b-4f41-8dbc-5de8ec92dadb/print/",
       "raw_score": 4.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "07dec833-d383-4d3a-b5d1-ce8eb900fff5",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-03",
+      "title": "Trade, Consumer Safety, Economics \u2014 Byrna Technologies Inc. via Capitol Pathway Advisors Llc",
+      "value_usd": null,
+      "description": "Engagement on consumer safety standards, federal procurement and grant eligibility, interstate commerce and shipping iss\u2026",
+      "lobbying_firm": "Capitol Pathway Advisors Llc",
+      "issue_codes": [
+        "CSP",
+        "ECN",
+        "FIR",
+        "MAN",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/07dec833-d383-4d3a-b5d1-ce8eb900fff5/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "ef486d3f-301a-4024-b625-daa11ef0c1b3",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-04",
+      "title": "Energy \u2014 The Bennett Consulting Group O/B/O Energy Substantiation via Patel Partners Llc",
+      "value_usd": null,
+      "description": "Clarity Act and Responsible Financial Innovation Act (RFIA)",
+      "lobbying_firm": "Patel Partners Llc",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/ef486d3f-301a-4024-b625-daa11ef0c1b3/print/",
+      "raw_score": null,
       "weight": 1.0
     }
   ]
