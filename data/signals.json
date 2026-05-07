@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T23:03:07.349925+00:00",
+  "generated_at": "2026-05-07T23:19:34.400420+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,612 @@
     "sam"
   ],
   "signals": [
+    {
+      "document_number": "2026-09092",
+      "iso": "VE",
+      "source": "federalregister",
+      "signal_date": "2026-05-07",
+      "title": "Publication of Venezuela Sanctions Regulations Web General Licenses 46, 46A, and 46B",
+      "value_usd": null,
+      "description": "Publication of web general licenses. \u00b7 The Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing three general licenses (GLs) issued pursuant to the Venezuela Sanctions Regulations: GLs 46, 46A, and 46B, each of which was previously made available on OFAC's website.",
+      "page_url": "https://www.federalregister.gov/documents/2026/05/07/2026-09092/publication-of-venezuela-sanctions-regulations-web-general-licenses-46-46a-and-46b",
+      "profile": {
+        "name": "Venezuela",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "Western Hemisphere",
+          "sanctions"
+        ],
+        "rationale": "Western Hemisphere presence (+1), world's largest proven hydrocarbon reserves (+2), comprehensive US sanctions regime (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.8,
+      "dollar_mod": 1.0,
+      "is_fr_policy": true
+    },
+    {
+      "document_number": "2026-09090",
+      "iso": "VE",
+      "source": "federalregister",
+      "signal_date": "2026-05-07",
+      "title": "Publication of Venezuela Sanctions Regulations Web General Licenses 47, 48, 49, and 50",
+      "value_usd": null,
+      "description": "Publication of web general licenses. \u00b7 The Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing four general licenses (GLs) issued pursuant to the Venezuela Sanctions Regulations: GLs 47, 48, 49, and 50, which were previously made available on OFAC's website.",
+      "page_url": "https://www.federalregister.gov/documents/2026/05/07/2026-09090/publication-of-venezuela-sanctions-regulations-web-general-licenses-47-48-49-and-50",
+      "profile": {
+        "name": "Venezuela",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "Western Hemisphere",
+          "sanctions"
+        ],
+        "rationale": "Western Hemisphere presence (+1), world's largest proven hydrocarbon reserves (+2), comprehensive US sanctions regime (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.8,
+      "dollar_mod": 1.0,
+      "is_fr_policy": true
+    },
+    {
+      "document_number": "2026-09086",
+      "iso": "CD",
+      "source": "federalregister",
+      "signal_date": "2026-05-07",
+      "title": "Publication of a Democratic Republic of the Congo Sanctions Regulations Web General License",
+      "value_usd": null,
+      "description": "Publication of a web general license. \u00b7 The Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing a general license (GL) issued pursuant to the Democratic Republic of the Congo Sanctions Regulations: GL 1. This GL was previously made available on OFAC's website.",
+      "page_url": "https://www.federalregister.gov/documents/2026/05/07/2026-09086/publication-of-a-democratic-republic-of-the-congo-sanctions-regulations-web-general-license",
+      "profile": {
+        "name": "Congo (Democratic Republic)",
+        "score": 6,
+        "factors": [
+          "active conflict",
+          "strategic minerals",
+          "cobalt",
+          "coltan",
+          "BRI exposure",
+          "proxy hub"
+        ],
+        "rationale": "Active multi-faction conflict (+2), world's largest cobalt reserves plus coltan and strategic minerals (+2), Chinese mining dominance/BRI (+1), regional proxy hub M23/Rwanda/Uganda (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.8,
+      "dollar_mod": 1.0,
+      "is_fr_policy": true
+    },
+    {
+      "document_number": "2026-09084",
+      "iso": "BY",
+      "source": "federalregister",
+      "signal_date": "2026-05-07",
+      "title": "Publication of a Belarus Sanctions Regulations Web General License",
+      "value_usd": null,
+      "description": "Publication of a web general license. \u00b7 The Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing a general license (GL) issued pursuant to the Belarus Sanctions Regulations: GL 14. This GL was previously made available on OFAC's website.",
+      "page_url": "https://www.federalregister.gov/documents/2026/05/07/2026-09084/publication-of-a-belarus-sanctions-regulations-web-general-license",
+      "profile": {
+        "name": "Belarus",
+        "score": 5,
+        "factors": [
+          "active conflict",
+          "sanctions",
+          "proxy hub",
+          "nuclear hosting",
+          "Russian forward base"
+        ],
+        "rationale": "Occupied/co-belligerent in Ukraine war, Russian forward position (+2), active sanctions regime (+1), Russia proxy hub (+1), nuclear weapons hosted (+1 latent nuclear)"
+      },
+      "layer": "regulatory",
+      "quality": 0.8,
+      "dollar_mod": 1.0,
+      "is_fr_policy": true
+    },
+    {
+      "filing_uuid": "8846d4cf-da82-48cf-baf4-c3ef563a0c9c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-07",
+      "title": "Defense, Manufacturing \u2014 Bluglass via Michael Best Strategies Llc",
+      "value_usd": null,
+      "description": "Federal funding, DoW and Congressional advocacy, annual NDAA and defense budget appropriations",
+      "lobbying_firm": "Michael Best Strategies Llc",
+      "issue_codes": [
+        "DEF",
+        "MAN"
+      ],
+      "url": "https://lda.gov/filings/public/filing/8846d4cf-da82-48cf-baf4-c3ef563a0c9c/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "42c0dcb1-10ce-46df-97d6-920671e9a7a1",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-07",
+      "title": "Defense \u2014 Autonomous Defense Technologies Corp via Autonomous Defense Technologies Corp",
+      "value_usd": null,
+      "description": "Unmanned Aerial System acquisition",
+      "lobbying_firm": "Autonomous Defense Technologies Corp",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/42c0dcb1-10ce-46df-97d6-920671e9a7a1/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "5d6b38c3-1f5f-42df-b019-ae7602e70bf4",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-07",
+      "title": "Trade, Taxation \u2014 Advansix Inc. via Advansix Inc.",
+      "value_usd": null,
+      "description": "Implementation of the One Big Beautiful Bill Act (P.L. 119-21) tax provisions. Implementation of the Section 45Q carbon \u2026",
+      "lobbying_firm": "Advansix Inc.",
+      "issue_codes": [
+        "TAX",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5d6b38c3-1f5f-42df-b019-ae7602e70bf4/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "aeded150-cd6c-4a57-9234-6dcba0c490fe",
+      "iso": "DE",
+      "source": "lda",
+      "signal_date": "2026-05-07",
+      "title": "Budget \u2014 Capitol Counsel, Llc On Behalf Of Bayer Corporation via Michael R. Pawlowski",
+      "value_usd": null,
+      "description": "Legislative issues related to the appropriations process.",
+      "lobbying_firm": "Michael R. Pawlowski",
+      "issue_codes": [
+        "BUD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/aeded150-cd6c-4a57-9234-6dcba0c490fe/print/",
+      "profile": {
+        "name": "Germany",
+        "score": 4,
+        "factors": [
+          "US basing",
+          "nuclear hosting",
+          "regional power"
+        ],
+        "rationale": "Major US basing \u2014 EUCOM, Ramstein, Landstuhl (+1), US tactical nuclear weapons hosted (+2 latent nuclear), regional power and NATO anchor (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "46989e74-ac99-4490-9fc8-1ef99799a849",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-07",
+      "title": "Trade \u2014 Bsyd Corporation via Ryberg And Smith, L.L.C.",
+      "value_usd": null,
+      "description": "Tariffs on organic sugar imports",
+      "lobbying_firm": "Ryberg And Smith, L.L.C.",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/46989e74-ac99-4490-9fc8-1ef99799a849/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57533,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-05-07",
+      "title": "Mustafa Hashim Lazim AL-BEHADILI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ASA'IB AHL AL-HAQ)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57533",
+      "profile": {
+        "name": "Iraq",
+        "score": 7,
+        "factors": [
+          "hydrocarbons",
+          "active conflict",
+          "proxy hub",
+          "US basing",
+          "sanctions"
+        ],
+        "rationale": "Massive hydrocarbon reserves \u2014 top-5 global producer (+2), active conflict \u2014 militia warfare and ISIS remnants (+2), Iran-US proxy contest (+1), major US basing presence (+1), active sanctions history and ongoing restrictions (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57534,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-05-07",
+      "title": "GULF ENERGY OIL SERVICES LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: AL-BEHADILI, Mustafa Hashim Lazim)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57534",
+      "profile": {
+        "name": "Iraq",
+        "score": 7,
+        "factors": [
+          "hydrocarbons",
+          "active conflict",
+          "proxy hub",
+          "US basing",
+          "sanctions"
+        ],
+        "rationale": "Massive hydrocarbon reserves \u2014 top-5 global producer (+2), active conflict \u2014 militia warfare and ISIS remnants (+2), Iran-US proxy contest (+1), major US basing presence (+1), active sanctions history and ongoing restrictions (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57553,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-05-07",
+      "title": "Ali Maarij AL-BAHADLY (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SAID, Salim Ahmed)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57553",
+      "profile": {
+        "name": "Iraq",
+        "score": 7,
+        "factors": [
+          "hydrocarbons",
+          "active conflict",
+          "proxy hub",
+          "US basing",
+          "sanctions"
+        ],
+        "rationale": "Massive hydrocarbon reserves \u2014 top-5 global producer (+2), active conflict \u2014 militia warfare and ISIS remnants (+2), Iran-US proxy contest (+1), major US basing presence (+1), active sanctions history and ongoing restrictions (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57554,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-05-07",
+      "title": "Mohammed Issa Kadhim AL SHUWAILI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: QASIR, Ali)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57554",
+      "profile": {
+        "name": "Iraq",
+        "score": 7,
+        "factors": [
+          "hydrocarbons",
+          "active conflict",
+          "proxy hub",
+          "US basing",
+          "sanctions"
+        ],
+        "rationale": "Massive hydrocarbon reserves \u2014 top-5 global producer (+2), active conflict \u2014 militia warfare and ISIS remnants (+2), Iran-US proxy contest (+1), major US basing presence (+1), active sanctions history and ongoing restrictions (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57555,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-05-07",
+      "title": "Ahmed Khudair Maksus MAKSUS (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: KATA'IB SAYYID AL-SHUHADA)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57555",
+      "profile": {
+        "name": "Iraq",
+        "score": 7,
+        "factors": [
+          "hydrocarbons",
+          "active conflict",
+          "proxy hub",
+          "US basing",
+          "sanctions"
+        ],
+        "rationale": "Massive hydrocarbon reserves \u2014 top-5 global producer (+2), active conflict \u2014 militia warfare and ISIS remnants (+2), Iran-US proxy contest (+1), major US basing presence (+1), active sanctions history and ongoing restrictions (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57602,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-05-07",
+      "title": "Ania Guillermina LASTRES MORERA (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57602",
+      "profile": {
+        "name": "Cuba",
+        "score": 4,
+        "factors": [
+          "sanctions",
+          "proxy hub",
+          "Western Hemisphere",
+          "Russian/Chinese presence"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active US sanctions regime (+1), Russian/Chinese intelligence infrastructure (+1), regional proxy hub (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "72c0ab64-8a63-4cd2-993a-6f974a64058e",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-06",
+      "title": "Defense, Small Business, Utilities \u2014 Ny Fiber 1 Llc, Dba Global Interxchange (Gix) via Corcoran & Associates, Inc. Dba Corcoran Partners",
+      "value_usd": null,
+      "description": "Networking, grant funding, infrastructure resiliency",
+      "lobbying_firm": "Corcoran & Associates, Inc. Dba Corcoran Partners",
+      "issue_codes": [
+        "DEF",
+        "SMB",
+        "UTI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/72c0ab64-8a63-4cd2-993a-6f974a64058e/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "1a8de2c2-51f5-4854-ae71-7d67c694b81f",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-06",
+      "title": "Homeland Security \u2014 Bw Arbour Apartments Llc via Converge Public Strategies",
+      "value_usd": null,
+      "description": "Obtaining FEMA review for a student housing project on Alafaya Trail in Orange County, Florida.",
+      "lobbying_firm": "Converge Public Strategies",
+      "issue_codes": [
+        "HOM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1a8de2c2-51f5-4854-ae71-7d67c694b81f/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "6de5b9a3-a66a-46df-b218-cf48c4db380c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-06",
+      "title": "Defense, Health, Manufacturing \u2014 Metrohealth System via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "Support for inclusion of a study on military civilian partnerships for excellence; support for development of national t\u2026",
+      "lobbying_firm": "Holland & Knight Llp",
+      "issue_codes": [
+        "DEF",
+        "HCR",
+        "MMM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/6de5b9a3-a66a-46df-b218-cf48c4db380c/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "e8cbfd4e-69a7-4241-92dc-5d8a8d2a4bc7",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-06",
+      "title": "Defense, Homeland Security, Budget \u2014 Netrise, Inc. via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "Issues related to software supply chain security.",
+      "lobbying_firm": "Holland & Knight Llp",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "HOM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e8cbfd4e-69a7-4241-92dc-5d8a8d2a4bc7/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "1fe10698-0c4d-4ee4-9e17-b2a29fb35682",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-06",
+      "title": "Energy \u2014 Mewbourne Oil Company via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "Advocate for access to public lands for oil and gas development.",
+      "lobbying_firm": "Holland & Knight Llp",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1fe10698-0c4d-4ee4-9e17-b2a29fb35682/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "46339d34-1ca7-4cdd-b1bd-ed8c00b95b95",
+      "iso": "CH",
+      "source": "lda",
+      "signal_date": "2026-05-06",
+      "title": "Manufacturing \u2014 Quercis Pharma Ag via Covenant Government Affairs, Llc",
+      "value_usd": null,
+      "description": "Switzerland; Support for stakeholder engagement and coordination related to clinical research activities within the Veterans Health A\u2026",
+      "lobbying_firm": "Covenant Government Affairs, Llc",
+      "issue_codes": [
+        "MAN"
+      ],
+      "url": "https://lda.gov/filings/public/filing/46339d34-1ca7-4cdd-b1bd-ed8c00b95b95/print/",
+      "profile": {
+        "name": "Switzerland",
+        "score": 2,
+        "factors": [
+          "arms intermediary hub",
+          "commodity trading",
+          "financial flows"
+        ],
+        "rationale": "Dominant global arms intermediary and commodity trading hub \u2014 Glencore, Gunvor, Trafigura all domiciled here (+1), hosting point for sanctioned-state financial flows and offshore wealth (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "ad995050-d4c8-4fb6-8b5f-f55d5b292b4f",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-06",
+      "title": "Defense \u2014 Noblis via Meridian Hill Strategies Formerly Known As \"Ernest C. Baynard Iv\"",
+      "value_usd": null,
+      "description": "Defense specific to supporting DHA and medical capabilities. Wildland Fire prevention.",
+      "lobbying_firm": "Meridian Hill Strategies Formerly Known As \"Ernest C. Baynard Iv\"",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/ad995050-d4c8-4fb6-8b5f-f55d5b292b4f/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "CA",
+      "source": "dsca",
+      "signal_date": "2026-05-05",
+      "title": "C-17 Sustainment",
+      "value_usd": 540000000.0,
+      "description": "Transmittal # 26-44 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Canada for its purchase of C-17 sustainment services and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/canada-c-17-sustainment/",
+      "wp_id": 680973,
+      "profile": {
+        "name": "Canada",
+        "score": 5,
+        "factors": [
+          "hydrocarbons",
+          "strategic minerals",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), strategic minerals including uranium and rare earths (+2)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.2049295319867226,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "UA",
+      "source": "dsca",
+      "signal_date": "2026-05-05",
+      "title": "Joint Direct Attack Munitions \u2013 Extended Range",
+      "value_usd": 373600000.0,
+      "description": "Transmittal # 26-30 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Ukraine for Joint Direct Attack Munitions \u2013 Extended Range and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/ukraine-joint-direct-attack-munitions-extended-range/",
+      "wp_id": 680970,
+      "profile": {
+        "name": "Ukraine",
+        "score": 8,
+        "factors": [
+          "active conflict",
+          "occupied territory",
+          "strategic minerals",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Active full-scale war with Russia (+2), occupied territory \u2014 Crimea, Donbas (+2), major strategic minerals \u2014 rare earths, titanium, manganese, lithium (+2), active broad sanctions regime (+1), NATO/EU proxy contest (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.192930515066854,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "PH",
+      "source": "dsca",
+      "signal_date": "2026-05-05",
+      "title": "Bell 505 Jet Ranger X Helicopter",
+      "value_usd": 150000000.0,
+      "description": "Transmittal #26-36 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of the Philippines of Bell 505 Jet Ranger X Helicopters and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/philippines-bell-505-jet-ranger-x-helicopter/",
+      "wp_id": 680963,
+      "profile": {
+        "name": "Philippines",
+        "score": 5,
+        "factors": [
+          "maritime chokepoint",
+          "South China Sea",
+          "US basing",
+          "active conflict"
+        ],
+        "rationale": "South China Sea \u2014 controls key straits including San Bernardino and Luzon (+3), major US basing resurgence \u2014 EDCA sites (+1), active low-level conflict \u2014 NPA, Abu Sayyaf (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.163206844429176,
+      "is_fr_policy": null
+    },
     {
       "filing_uuid": "ef486d3f-301a-4024-b625-daa11ef0c1b3",
       "iso": "XX",
@@ -26803,17 +27409,17 @@
     {
       "type": "convergence",
       "title": "China \u2014 first appearance + influence \u2192 action",
-      "score": 51.717,
+      "score": 44.85,
       "countries": [
         "CN"
       ],
       "signal_keys": [
-        "ofac:TAI LUNG TRADING LIMITED (Entity)",
         "ofac:COSTIN SHIPPING LIMITED (Entity)",
-        "ofac:QINGDAO HAIYE OIL TERMINAL CO., LTD. (En",
+        "ofac:TAI LUNG TRADING LIMITED (Entity)",
         "ofac:MULLINGAR TRADING COMPANY LIMITED (Entit",
-        "ofac:Feiwu BIAN (Individual)",
         "ofac:Xinchun LI (Individual)",
+        "ofac:QINGDAO HAIYE OIL TERMINAL CO., LTD. (En",
+        "ofac:Feiwu BIAN (Individual)",
         "lda:b607d4b4-b2a3-471c-8470-71fb5718c3a8"
       ],
       "why": "[first_appearance] ofac filed for China after first recorded of silence (profile score: 10). Signal: QINGDAO HAIYE OIL TERMINAL CO., LTD. (Entity) | [influence_before_action] lda on 2026-02-17 \u2192 ofac on 2026-04-16 (58d gap). No prior lda+action sequence in preceding 180d.",
@@ -26821,7 +27427,7 @@
         {
           "type": "first_appearance",
           "title": "China \u2014 ofac after first recorded silence",
-          "score": 37.886,
+          "score": 31.019,
           "countries": [
             "CN"
           ],
@@ -26843,8 +27449,8 @@
             "CN"
           ],
           "signal_keys": [
-            "lda:b607d4b4-b2a3-471c-8470-71fb5718c3a8",
-            "ofac:Feiwu BIAN (Individual)"
+            "ofac:Feiwu BIAN (Individual)",
+            "lda:b607d4b4-b2a3-471c-8470-71fb5718c3a8"
           ],
           "why": "lda on 2026-02-17 \u2192 ofac on 2026-04-16 (58d gap). No prior lda+action sequence in preceding 180d."
         }
@@ -26853,8 +27459,29 @@
     },
     {
       "type": "first_appearance",
+      "title": "Iraq \u2014 ofac after first recorded silence",
+      "score": 32.392,
+      "countries": [
+        "IQ"
+      ],
+      "signal_keys": [
+        "ofac:Mustafa Hashim Lazim AL-BEHADILI (Indivi",
+        "ofac:GULF ENERGY OIL SERVICES LIMITED (Entity",
+        "ofac:Ali Maarij AL-BAHADLY (Individual)",
+        "ofac:Mohammed Issa Kadhim AL SHUWAILI (Indivi",
+        "ofac:Ahmed Khudair Maksus MAKSUS (Individual)",
+        "ofac:Radhwan Yousif Hameed ALMOHAMMED (Indivi",
+        "ofac:Husham Hashim JAYTHOOM (Individual)",
+        "ofac:Khalid Jameel Abed ALBAKHATRA (Individua",
+        "ofac:Safaa Adnan Jabbar SUWAED (Individual)"
+      ],
+      "why": "ofac filed for Iraq after first recorded of silence (profile score: 7). Signal: Mustafa Hashim Lazim AL-BEHADILI (Individual)",
+      "narrative": null
+    },
+    {
+      "type": "first_appearance",
       "title": "Iran \u2014 ofac after first recorded silence",
-      "score": 34.098,
+      "score": 27.917,
       "countries": [
         "IR"
       ],
@@ -26878,8 +27505,34 @@
     },
     {
       "type": "first_appearance",
+      "title": "Cuba \u2014 ofac after first recorded silence",
+      "score": 18.51,
+      "countries": [
+        "CU"
+      ],
+      "signal_keys": [
+        "ofac:Ania Guillermina LASTRES MORERA (Individ"
+      ],
+      "why": "ofac filed for Cuba after first recorded of silence (profile score: 4). Signal: Ania Guillermina LASTRES MORERA (Individual)",
+      "narrative": null
+    },
+    {
+      "type": "first_appearance",
+      "title": "Philippines \u2014 dsca after 401d silence",
+      "score": 17.248,
+      "countries": [
+        "PH"
+      ],
+      "signal_keys": [
+        "dsca:Bell 505 Jet Ranger X Helicopter"
+      ],
+      "why": "dsca filed for Philippines after 401d of silence (profile score: 5). Signal: Bell 505 Jet Ranger X Helicopter",
+      "narrative": null
+    },
+    {
+      "type": "first_appearance",
       "title": "United Kingdom \u2014 ofac after first recorded silence",
-      "score": 18.943,
+      "score": 15.509,
       "countries": [
         "GB"
       ],
@@ -26894,37 +27547,21 @@
     },
     {
       "type": "convergence",
-      "title": "Colombia \u2014 first appearance + influence \u2192 action",
-      "score": 16.753,
+      "title": "Colombia \u2014 influence \u2192 action + first appearance",
+      "score": 15.133,
       "countries": [
         "CO"
       ],
       "signal_keys": [
-        "fara:7692",
-        "ofac:Omar Fernando GARCIA BATTE (Individual)",
-        "ofac:GLOBAL QOWA AL BASHERIA S.A.S. (Entity)",
-        "ofac:Jose Libardo QUIJANO TORRES (Individual)",
         "ofac:FENIX HUMAN RESOURCES S.A.S. (Entity)",
-        "ofac:Jose Oscar GARCIA BATTE (Individual)"
+        "fara:7692",
+        "ofac:Jose Oscar GARCIA BATTE (Individual)",
+        "ofac:GLOBAL QOWA AL BASHERIA S.A.S. (Entity)",
+        "ofac:Omar Fernando GARCIA BATTE (Individual)",
+        "ofac:Jose Libardo QUIJANO TORRES (Individual)"
       ],
-      "why": "[first_appearance] ofac filed for Colombia after first recorded of silence (profile score: 6). Signal: FENIX HUMAN RESOURCES S.A.S. (Entity) | [influence_before_action] fara on 2026-02-12 \u2192 ofac on 2026-04-17 (64d gap). No prior fara+action sequence in preceding 180d.",
+      "why": "[influence_before_action] fara on 2026-02-12 \u2192 ofac on 2026-04-17 (64d gap). No prior fara+action sequence in preceding 180d. | [first_appearance] ofac filed for Colombia after first recorded of silence (profile score: 6). Signal: FENIX HUMAN RESOURCES S.A.S. (Entity)",
       "_components": [
-        {
-          "type": "first_appearance",
-          "title": "Colombia \u2014 ofac after first recorded silence",
-          "score": 8.939,
-          "countries": [
-            "CO"
-          ],
-          "signal_keys": [
-            "ofac:FENIX HUMAN RESOURCES S.A.S. (Entity)",
-            "ofac:Jose Libardo QUIJANO TORRES (Individual)",
-            "ofac:Jose Oscar GARCIA BATTE (Individual)",
-            "ofac:GLOBAL QOWA AL BASHERIA S.A.S. (Entity)",
-            "ofac:Omar Fernando GARCIA BATTE (Individual)"
-          ],
-          "why": "ofac filed for Colombia after first recorded of silence (profile score: 6). Signal: FENIX HUMAN RESOURCES S.A.S. (Entity)"
-        },
         {
           "type": "influence_before_action",
           "title": "Colombia \u2014 fara \u2192 ofac (64d)",
@@ -26937,35 +27574,64 @@
             "fara:7692"
           ],
           "why": "fara on 2026-02-12 \u2192 ofac on 2026-04-17 (64d gap). No prior fara+action sequence in preceding 180d."
+        },
+        {
+          "type": "first_appearance",
+          "title": "Colombia \u2014 ofac after first recorded silence",
+          "score": 7.319,
+          "countries": [
+            "CO"
+          ],
+          "signal_keys": [
+            "ofac:FENIX HUMAN RESOURCES S.A.S. (Entity)",
+            "ofac:Jose Libardo QUIJANO TORRES (Individual)",
+            "ofac:Jose Oscar GARCIA BATTE (Individual)",
+            "ofac:GLOBAL QOWA AL BASHERIA S.A.S. (Entity)",
+            "ofac:Omar Fernando GARCIA BATTE (Individual)"
+          ],
+          "why": "ofac filed for Colombia after first recorded of silence (profile score: 6). Signal: FENIX HUMAN RESOURCES S.A.S. (Entity)"
         }
       ],
       "narrative": null
     },
     {
       "type": "convergence",
-      "title": "Mexico \u2014 first appearance + influence \u2192 action",
-      "score": 16.489,
+      "title": "Mexico \u2014 influence \u2192 action + first appearance",
+      "score": 14.878,
       "countries": [
         "MX"
       ],
       "signal_keys": [
-        "ofac:Jose de Jesus RAMIREZ TORRES (Individual",
-        "ofac:DIAMANTE CASINO (Entity)",
-        "lda:2546e933-cf40-44b7-8a69-91c428ae13e8",
-        "ofac:BOTANICA 2000 (Entity)",
+        "ofac:DESARROLLOS CARTOK S.A. DE C.V. (Entity)",
         "ofac:Ramiro Baltazar FELIX HERAS (Individual)",
-        "ofac:Jesus Reymundo RAMOS VAZQUEZ (Individual",
-        "ofac:CORPORATIVO Y ENLACE RAM S.A. DE C.V. (E",
-        "ofac:COMERCIALIZADORA Y ARRENDADORA DE MEXICO",
+        "ofac:DIAMANTE CASINO (Entity)",
         "ofac:QUIMICA SOLUCIONES Y LOGISTICA INTEGRAL ",
-        "ofac:DESARROLLOS CARTOK S.A. DE C.V. (Entity)"
+        "ofac:Jesus Reymundo RAMOS VAZQUEZ (Individual",
+        "lda:2546e933-cf40-44b7-8a69-91c428ae13e8",
+        "ofac:CORPORATIVO Y ENLACE RAM S.A. DE C.V. (E",
+        "ofac:BOTANICA 2000 (Entity)",
+        "ofac:COMERCIALIZADORA Y ARRENDADORA DE MEXICO",
+        "ofac:Jose de Jesus RAMIREZ TORRES (Individual"
       ],
-      "why": "[first_appearance] ofac filed for Mexico after first recorded of silence (profile score: 4). Signal: Jose de Jesus RAMIREZ TORRES (Individual) | [influence_before_action] lda on 2026-03-16 \u2192 ofac on 2026-04-14 (29d gap). No prior lda+action sequence in preceding 180d.",
+      "why": "[influence_before_action] lda on 2026-03-16 \u2192 ofac on 2026-04-14 (29d gap). No prior lda+action sequence in preceding 180d. | [first_appearance] ofac filed for Mexico after first recorded of silence (profile score: 4). Signal: Jose de Jesus RAMIREZ TORRES (Individual)",
       "_components": [
+        {
+          "type": "influence_before_action",
+          "title": "Mexico \u2014 lda \u2192 ofac (29d)",
+          "score": 7.599,
+          "countries": [
+            "MX"
+          ],
+          "signal_keys": [
+            "ofac:Jesus Reymundo RAMOS VAZQUEZ (Individual",
+            "lda:2546e933-cf40-44b7-8a69-91c428ae13e8"
+          ],
+          "why": "lda on 2026-03-16 \u2192 ofac on 2026-04-14 (29d gap). No prior lda+action sequence in preceding 180d."
+        },
         {
           "type": "first_appearance",
           "title": "Mexico \u2014 ofac after first recorded silence",
-          "score": 8.89,
+          "score": 7.279,
           "countries": [
             "MX"
           ],
@@ -26981,19 +27647,6 @@
             "ofac:DIAMANTE CASINO (Entity)"
           ],
           "why": "ofac filed for Mexico after first recorded of silence (profile score: 4). Signal: Jose de Jesus RAMIREZ TORRES (Individual)"
-        },
-        {
-          "type": "influence_before_action",
-          "title": "Mexico \u2014 lda \u2192 ofac (29d)",
-          "score": 7.599,
-          "countries": [
-            "MX"
-          ],
-          "signal_keys": [
-            "ofac:Jesus Reymundo RAMOS VAZQUEZ (Individual",
-            "lda:2546e933-cf40-44b7-8a69-91c428ae13e8"
-          ],
-          "why": "lda on 2026-03-16 \u2192 ofac on 2026-04-14 (29d gap). No prior lda+action sequence in preceding 180d."
         }
       ],
       "narrative": null
@@ -27001,7 +27654,7 @@
     {
       "type": "first_appearance",
       "title": "Turkey \u2014 ofac after first recorded silence",
-      "score": 15.561,
+      "score": 12.74,
       "countries": [
         "TR"
       ],
@@ -27014,7 +27667,7 @@
     {
       "type": "first_appearance",
       "title": "India \u2014 ofac after first recorded silence",
-      "score": 15.558,
+      "score": 12.738,
       "countries": [
         "IN"
       ],
@@ -27029,7 +27682,7 @@
     {
       "type": "first_appearance",
       "title": "Panama \u2014 ofac after first recorded silence",
-      "score": 15.509,
+      "score": 12.698,
       "countries": [
         "PA"
       ],
@@ -27042,7 +27695,7 @@
     {
       "type": "first_appearance",
       "title": "United Arab Emirates \u2014 ofac after first recorded silence",
-      "score": 15.154,
+      "score": 12.407,
       "countries": [
         "AE"
       ],
@@ -27061,8 +27714,8 @@
     },
     {
       "type": "first_appearance",
-      "title": "Qatar \u2014 dsca after 404d silence",
-      "score": 12.94,
+      "title": "Qatar \u2014 dsca after 407d silence",
+      "score": 10.619,
       "countries": [
         "QA"
       ],
@@ -27070,13 +27723,13 @@
         "dsca:Advanced Precision Kill Weapons System",
         "dsca:Patriot Missile Replenishment"
       ],
-      "why": "dsca filed for Qatar after 404d of silence (profile score: 4). Signal: Advanced Precision Kill Weapons System",
+      "why": "dsca filed for Qatar after 407d of silence (profile score: 4). Signal: Advanced Precision Kill Weapons System",
       "narrative": null
     },
     {
       "type": "first_appearance",
       "title": "Vietnam \u2014 ofac after first recorded silence",
-      "score": 12.407,
+      "score": 10.158,
       "countries": [
         "VN"
       ],
@@ -27088,24 +27741,8 @@
     },
     {
       "type": "first_appearance",
-      "title": "Iraq \u2014 ofac after first recorded silence",
-      "score": 10.429,
-      "countries": [
-        "IQ"
-      ],
-      "signal_keys": [
-        "ofac:Radhwan Yousif Hameed ALMOHAMMED (Indivi",
-        "ofac:Husham Hashim JAYTHOOM (Individual)",
-        "ofac:Khalid Jameel Abed ALBAKHATRA (Individua",
-        "ofac:Safaa Adnan Jabbar SUWAED (Individual)"
-      ],
-      "why": "ofac filed for Iraq after first recorded of silence (profile score: 7). Signal: Radhwan Yousif Hameed ALMOHAMMED (Individual)",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
       "title": "Tunisia \u2014 dsca after first recorded silence",
-      "score": 6.448,
+      "score": 5.28,
       "countries": [
         "TN"
       ],
@@ -27113,19 +27750,6 @@
         "dsca:Border Security Project Phase III"
       ],
       "why": "dsca filed for Tunisia after first recorded of silence (profile score: 2). Signal: Border Security Project Phase III",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "Egypt \u2014 fara after first recorded silence",
-      "score": 5.009,
-      "countries": [
-        "EG"
-      ],
-      "signal_keys": [
-        "fara:7712"
-      ],
-      "why": "fara filed for Egypt after first recorded of silence (profile score: 7). Signal: NexusOne Consulting registered to represent Emad El Said Youssef Saad El-Galada ",
       "narrative": null
     },
     {
@@ -27145,7 +27769,7 @@
     {
       "type": "first_appearance",
       "title": "Lithuania \u2014 dsca after first recorded silence",
-      "score": 4.621,
+      "score": 3.783,
       "countries": [
         "LT"
       ],

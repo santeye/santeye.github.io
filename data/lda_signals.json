@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T23:03:02.101352+00:00",
+  "generated_at": "2026-05-07T23:19:29.096961+00:00",
   "sources": [
     "lda"
   ],
@@ -11631,6 +11631,206 @@
         "ENG"
       ],
       "url": "https://lda.gov/filings/public/filing/ef486d3f-301a-4024-b625-daa11ef0c1b3/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "72c0ab64-8a63-4cd2-993a-6f974a64058e",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-06",
+      "title": "Defense, Small Business, Utilities \u2014 Ny Fiber 1 Llc, Dba Global Interxchange (Gix) via Corcoran & Associates, Inc. Dba Corcoran Partners",
+      "value_usd": null,
+      "description": "Networking, grant funding, infrastructure resiliency",
+      "lobbying_firm": "Corcoran & Associates, Inc. Dba Corcoran Partners",
+      "issue_codes": [
+        "DEF",
+        "SMB",
+        "UTI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/72c0ab64-8a63-4cd2-993a-6f974a64058e/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "1a8de2c2-51f5-4854-ae71-7d67c694b81f",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-06",
+      "title": "Homeland Security \u2014 Bw Arbour Apartments Llc via Converge Public Strategies",
+      "value_usd": null,
+      "description": "Obtaining FEMA review for a student housing project on Alafaya Trail in Orange County, Florida.",
+      "lobbying_firm": "Converge Public Strategies",
+      "issue_codes": [
+        "HOM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1a8de2c2-51f5-4854-ae71-7d67c694b81f/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "6de5b9a3-a66a-46df-b218-cf48c4db380c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-06",
+      "title": "Defense, Health, Manufacturing \u2014 Metrohealth System via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "Support for inclusion of a study on military civilian partnerships for excellence; support for development of national t\u2026",
+      "lobbying_firm": "Holland & Knight Llp",
+      "issue_codes": [
+        "DEF",
+        "HCR",
+        "MMM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/6de5b9a3-a66a-46df-b218-cf48c4db380c/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "e8cbfd4e-69a7-4241-92dc-5d8a8d2a4bc7",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-06",
+      "title": "Defense, Homeland Security, Budget \u2014 Netrise, Inc. via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "Issues related to software supply chain security.",
+      "lobbying_firm": "Holland & Knight Llp",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "HOM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e8cbfd4e-69a7-4241-92dc-5d8a8d2a4bc7/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "1fe10698-0c4d-4ee4-9e17-b2a29fb35682",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-06",
+      "title": "Energy \u2014 Mewbourne Oil Company via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "Advocate for access to public lands for oil and gas development.",
+      "lobbying_firm": "Holland & Knight Llp",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1fe10698-0c4d-4ee4-9e17-b2a29fb35682/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "46339d34-1ca7-4cdd-b1bd-ed8c00b95b95",
+      "iso": "CH",
+      "source": "lda",
+      "signal_date": "2026-05-06",
+      "title": "Manufacturing \u2014 Quercis Pharma Ag via Covenant Government Affairs, Llc",
+      "value_usd": null,
+      "description": "Switzerland; Support for stakeholder engagement and coordination related to clinical research activities within the Veterans Health A\u2026",
+      "lobbying_firm": "Covenant Government Affairs, Llc",
+      "issue_codes": [
+        "MAN"
+      ],
+      "url": "https://lda.gov/filings/public/filing/46339d34-1ca7-4cdd-b1bd-ed8c00b95b95/print/",
+      "raw_score": 2.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "ad995050-d4c8-4fb6-8b5f-f55d5b292b4f",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-06",
+      "title": "Defense \u2014 Noblis via Meridian Hill Strategies Formerly Known As \"Ernest C. Baynard Iv\"",
+      "value_usd": null,
+      "description": "Defense specific to supporting DHA and medical capabilities. Wildland Fire prevention.",
+      "lobbying_firm": "Meridian Hill Strategies Formerly Known As \"Ernest C. Baynard Iv\"",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/ad995050-d4c8-4fb6-8b5f-f55d5b292b4f/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "8846d4cf-da82-48cf-baf4-c3ef563a0c9c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-07",
+      "title": "Defense, Manufacturing \u2014 Bluglass via Michael Best Strategies Llc",
+      "value_usd": null,
+      "description": "Federal funding, DoW and Congressional advocacy, annual NDAA and defense budget appropriations",
+      "lobbying_firm": "Michael Best Strategies Llc",
+      "issue_codes": [
+        "DEF",
+        "MAN"
+      ],
+      "url": "https://lda.gov/filings/public/filing/8846d4cf-da82-48cf-baf4-c3ef563a0c9c/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "42c0dcb1-10ce-46df-97d6-920671e9a7a1",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-07",
+      "title": "Defense \u2014 Autonomous Defense Technologies Corp via Autonomous Defense Technologies Corp",
+      "value_usd": null,
+      "description": "Unmanned Aerial System acquisition",
+      "lobbying_firm": "Autonomous Defense Technologies Corp",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/42c0dcb1-10ce-46df-97d6-920671e9a7a1/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "5d6b38c3-1f5f-42df-b019-ae7602e70bf4",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-07",
+      "title": "Trade, Taxation \u2014 Advansix Inc. via Advansix Inc.",
+      "value_usd": null,
+      "description": "Implementation of the One Big Beautiful Bill Act (P.L. 119-21) tax provisions. Implementation of the Section 45Q carbon \u2026",
+      "lobbying_firm": "Advansix Inc.",
+      "issue_codes": [
+        "TAX",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5d6b38c3-1f5f-42df-b019-ae7602e70bf4/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "aeded150-cd6c-4a57-9234-6dcba0c490fe",
+      "iso": "DE",
+      "source": "lda",
+      "signal_date": "2026-05-07",
+      "title": "Budget \u2014 Capitol Counsel, Llc On Behalf Of Bayer Corporation via Michael R. Pawlowski",
+      "value_usd": null,
+      "description": "Legislative issues related to the appropriations process.",
+      "lobbying_firm": "Michael R. Pawlowski",
+      "issue_codes": [
+        "BUD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/aeded150-cd6c-4a57-9234-6dcba0c490fe/print/",
+      "raw_score": 4.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "46989e74-ac99-4490-9fc8-1ef99799a849",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-07",
+      "title": "Trade \u2014 Bsyd Corporation via Ryberg And Smith, L.L.C.",
+      "value_usd": null,
+      "description": "Tariffs on organic sugar imports",
+      "lobbying_firm": "Ryberg And Smith, L.L.C.",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/46989e74-ac99-4490-9fc8-1ef99799a849/print/",
       "raw_score": null,
       "weight": 1.0
     }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T23:03:00.828707+00:00",
+  "generated_at": "2026-05-07T23:19:27.504490+00:00",
   "sources": [
     "fara"
   ],
@@ -2517,5 +2517,5 @@
       "page_url": "https://efile.fara.gov/docs/7716-Registration-Statement-20260415-1.pdf"
     }
   ],
-  "error": "<urlopen error [Errno 54] Connection reset by peer>"
+  "error": "<urlopen error timed out>"
 }

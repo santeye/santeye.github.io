@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T23:01:19.053084+00:00",
+  "generated_at": "2026-05-07T23:17:15.235037+00:00",
   "sources": [
     "dsca"
   ],
@@ -14368,6 +14368,42 @@
       "cn_number": null,
       "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/united-arab-emirates-advanced-precision-kill-weapons-system/",
       "wp_id": 680774
+    },
+    {
+      "iso": "CA",
+      "source": "dsca",
+      "signal_date": "2026-05-05",
+      "title": "C-17 Sustainment",
+      "value_usd": 540000000.0,
+      "description": "Transmittal # 26-44 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Canada for its purchase of C-17 sustainment services and related equipment.",
+      "raw_score": 5.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/canada-c-17-sustainment/",
+      "wp_id": 680973
+    },
+    {
+      "iso": "UA",
+      "source": "dsca",
+      "signal_date": "2026-05-05",
+      "title": "Joint Direct Attack Munitions \u2013 Extended Range",
+      "value_usd": 373600000.0,
+      "description": "Transmittal # 26-30 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Ukraine for Joint Direct Attack Munitions \u2013 Extended Range and related equipment.",
+      "raw_score": 8.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/ukraine-joint-direct-attack-munitions-extended-range/",
+      "wp_id": 680970
+    },
+    {
+      "iso": "PH",
+      "source": "dsca",
+      "signal_date": "2026-05-05",
+      "title": "Bell 505 Jet Ranger X Helicopter",
+      "value_usd": 150000000.0,
+      "description": "Transmittal #26-36 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of the Philippines of Bell 505 Jet Ranger X Helicopters and related equipment.",
+      "raw_score": 5.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/philippines-bell-505-jet-ranger-x-helicopter/",
+      "wp_id": 680963
     }
   ]
 }

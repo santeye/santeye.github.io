@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T22:58:03.592902+00:00",
+  "generated_at": "2026-05-07T23:18:57.280108+00:00",
   "sources": [
     "ofac"
   ],
@@ -2407,6 +2407,123 @@
         "IRAN-EO13902"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57527"
+    },
+    {
+      "uid": 57533,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-05-07",
+      "title": "Mustafa Hashim Lazim AL-BEHADILI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ASA'IB AHL AL-HAQ)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57533"
+    },
+    {
+      "uid": 57534,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-05-07",
+      "title": "GULF ENERGY OIL SERVICES LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: AL-BEHADILI, Mustafa Hashim Lazim)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57534"
+    },
+    {
+      "uid": 57535,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-05-07",
+      "title": "GULF GENERAL CONTRACTING LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: AL-BEHADILI, Mustafa Hashim Lazim)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57535"
+    },
+    {
+      "uid": 57536,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-05-07",
+      "title": "GULF ENERGY FOR GENERAL TRANSPORT AND MARINE SERVICES AND REAL ESTATE CONSULTANCY LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: AL-BEHADILI, Mustafa Hashim Lazim)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57536"
+    },
+    {
+      "uid": 57537,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-05-07",
+      "title": "IRAQ INTERNATIONAL ENERGY FOR THE IMPORT AND SALE FOR PETROLEUM PRODUCTS LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: AL-BEHADILI, Mustafa Hashim Lazim)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57537"
+    },
+    {
+      "uid": 57553,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-05-07",
+      "title": "Ali Maarij AL-BAHADLY (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SAID, Salim Ahmed)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57553"
+    },
+    {
+      "uid": 57554,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-05-07",
+      "title": "Mohammed Issa Kadhim AL SHUWAILI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: QASIR, Ali)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57554"
+    },
+    {
+      "uid": 57555,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-05-07",
+      "title": "Ahmed Khudair Maksus MAKSUS (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: KATA'IB SAYYID AL-SHUHADA)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57555"
+    },
+    {
+      "uid": 57602,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-05-07",
+      "title": "Ania Guillermina LASTRES MORERA (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57602"
     }
   ]
 }
