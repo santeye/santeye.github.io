@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T23:18:57.280108+00:00",
+  "generated_at": "2026-05-11T23:03:37.462739+00:00",
   "sources": [
     "ofac"
   ],
@@ -2524,6 +2524,343 @@
         "CUBA-EO"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57602"
+    },
+    {
+      "uid": 57556,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "HITEX INSULATION NINGBO COMPANY LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: PISHGAM ELECTRONIC SAFEH COMPANY)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57556"
+    },
+    {
+      "uid": 57557,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "Genping LI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HITEX INSULATION NINGBO COMPANY LIMITED)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57557"
+    },
+    {
+      "uid": 57568,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "Ahmad Mohammadi ZADEH (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "SDGT",
+        "IFSR",
+        "IRGC"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57568"
+    },
+    {
+      "uid": 57569,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "Samad Fathi SALAMI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "SDGT",
+        "IFSR",
+        "IRGC"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57569"
+    },
+    {
+      "uid": 57570,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "Mohammadreza Ashrafi GHEHI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "SDGT",
+        "IFSR",
+        "IRGC"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57570"
+    },
+    {
+      "uid": 57571,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "HONG KONG BLUE OCEAN LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57571"
+    },
+    {
+      "uid": 57572,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "OCEAN ALLIANZ SHIPPING LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57572"
+    },
+    {
+      "uid": 57573,
+      "iso": "OM",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "ZEUS LOGISTICS GROUP (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57573"
+    },
+    {
+      "uid": 57574,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "JIANDI HK LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57574"
+    },
+    {
+      "uid": 57575,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "HONG KONG SANMU LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57575"
+    },
+    {
+      "uid": 57576,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "MAX HONOR INTERNATIONAL TRADE CO., LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57576"
+    },
+    {
+      "uid": 57577,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "ATIC ENERGY FZE (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57577"
+    },
+    {
+      "uid": 57578,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "BLANCA GOODS WHOLESALER LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57578"
+    },
+    {
+      "uid": 57579,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "UNIVERSAL FORTUNE TRADING LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: NATIONAL IRANIAN OIL COMPANY)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57579"
+    },
+    {
+      "uid": 57593,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "MEENTROPY TECHNOLOGY HANGZHOU CO LTD (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-CON-ARMS-EO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57593"
+    },
+    {
+      "uid": 57595,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "HK HESIN INDUSTRY CO LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: CENTER FOR INNOVATION AND TECHNOLOGY COOPERATION)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57595"
+    },
+    {
+      "uid": 57596,
+      "iso": "BY",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "ARMORY ALLIANCE LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: CENTER FOR INNOVATION AND TECHNOLOGY COOPERATION)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57596"
+    },
+    {
+      "uid": 57597,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "AE INTERNATIONAL TRADE CO LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: CENTER FOR INNOVATION AND TECHNOLOGY COOPERATION)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57597"
+    },
+    {
+      "uid": 57598,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "ELITE ENERGY FZCO (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: AE INTERNATIONAL TRADE CO LIMITED)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57598"
+    },
+    {
+      "uid": 57599,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "YUSHITA SHANGHAI INTERNATIONAL TRADE CO LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: CENTER FOR INNOVATION AND TECHNOLOGY COOPERATION)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57599"
+    },
+    {
+      "uid": 57600,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "MUSTAD LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57600"
+    },
+    {
+      "uid": 57601,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "THE EARTH EYE CO (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-CON-ARMS-EO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57601"
+    },
+    {
+      "uid": 57613,
+      "iso": "BY",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "Mohammed Ali TOLIBOV (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ARMORY ALLIANCE LLC)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57613"
+    },
+    {
+      "uid": 57614,
+      "iso": "BY",
+      "source": "ofac",
+      "signal_date": "2026-05-11",
+      "title": "Mohammadmahdi MALEKI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CENTER FOR INNOVATION AND TECHNOLOGY COOPERATION)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57614"
     }
   ]
 }

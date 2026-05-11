@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T23:19:29.939946+00:00",
+  "generated_at": "2026-05-11T23:03:40.038506+00:00",
   "sources": [
     "federalregister"
   ],
@@ -6370,6 +6370,61 @@
       "description": "Arms sales notice. \u00b7 The DoW is publishing the unclassified text of an arms sales notification.",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/05/07/2026-08999/arms-sales-notification"
+    },
+    {
+      "document_number": "2026-09141",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-08",
+      "title": "Section 45Z Clean Fuel Production Credit; Hearing",
+      "value_usd": null,
+      "description": "Notification of change to telephonic-only public hearing on a proposed rulemaking. \u00b7 This document announces that the public hearing scheduled for Wednesday, May 27, 2026, Thursday, May 28, 2026, and Friday, May 29, 2026, for the notice of proposed rulemaking (REG-121244-23) published in the Federal Register on Wednesday, February 4, 2026, has been changed to a telephonic-only hearing. These proposed regulations would provide rules for determining clean fuel production credits, including credit eligibility rules, emissions rates, and certification and registration requirements.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/08/2026-09141/section-45z-clean-fuel-production-credit-hearing"
+    },
+    {
+      "document_number": "2026-09112",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-08",
+      "title": "Renewal of Department of Defense Federal Advisory Committees-U.S. Army Science Board",
+      "value_usd": null,
+      "description": "Renewal of Federal Advisory Committee. \u00b7 The Department of War (DoW) is publishing this notice to announce it is renewing the U.S. Army Science Board (ASB) as a discretionary Federal advisory committee.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/08/2026-09112/renewal-of-department-of-defense-federal-advisory-committees-us-army-science-board"
+    },
+    {
+      "document_number": "2026-09251",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-11",
+      "title": "Notice of OFAC Sanctions Action",
+      "value_usd": null,
+      "description": "Notice \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing the names of one or more persons and vessels that have been placed on OFAC's Specially Designated Nationals and Blocked Persons List (SDN List) based on OFAC's determination that one or more applicable legal criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of these persons are blocked, and U.S. persons are generally prohibited from engaging in transactions with them. The vessels placed on the SDN List have been identified as property in which a blocked person has an interest.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/11/2026-09251/notice-of-ofac-sanctions-action"
+    },
+    {
+      "document_number": "2026-09250",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-11",
+      "title": "Notice of OFAC Sanctions Action",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing the names of one or more persons that have been placed on OFAC's Specially Designated Nationals and Blocked Persons List (SDN List) based on OFAC's determination that one or more applicable legal criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of these persons are blocked, and U.S. persons are generally prohibited from engaging in transactions with them.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/11/2026-09250/notice-of-ofac-sanctions-action"
+    },
+    {
+      "document_number": "2026-09249",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-11",
+      "title": "Notice of OFAC Sanctions Action",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing the names of one or more persons that have been placed on OFAC's Specially Designated Nationals and Blocked Persons List (SDN List) based on OFAC's determination that one or more applicable legal criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of these persons are blocked, and U.S. persons are generally prohibited from engaging in transactions with them.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/11/2026-09249/notice-of-ofac-sanctions-action"
     }
   ]
 }

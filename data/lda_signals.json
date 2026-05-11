@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T23:19:29.096961+00:00",
+  "generated_at": "2026-05-11T23:03:38.946486+00:00",
   "sources": [
     "lda"
   ],
@@ -11831,6 +11831,22 @@
         "TRD"
       ],
       "url": "https://lda.gov/filings/public/filing/46989e74-ac99-4490-9fc8-1ef99799a849/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "5cf9cf06-80c4-4e41-9935-e31d888f29e9",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-11",
+      "title": "Trade \u2014 Hogan Lovells, Llp Obo Zhongji Innolight Co., Ltd. via Mo Strategies, Inc.",
+      "value_usd": null,
+      "description": "Discussions related to semiconductors/AI access and trade.",
+      "lobbying_firm": "Mo Strategies, Inc.",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5cf9cf06-80c4-4e41-9935-e31d888f29e9/print/",
       "raw_score": null,
       "weight": 1.0
     }

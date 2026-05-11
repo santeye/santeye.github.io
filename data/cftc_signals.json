@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T23:19:34.242629+00:00",
+  "generated_at": "2026-05-11T23:03:43.072383+00:00",
   "sources": [
     "cftc"
   ],
@@ -190,6 +190,24 @@
       ],
       "commodity": "Corn",
       "net_position": 265572
+    },
+    {
+      "iso": "CN",
+      "source": "cftc",
+      "signal_date": "2026-05-05",
+      "title": "Corn \u2014 hedge funds adding longs (+2.7\u03c3)",
+      "value_usd": null,
+      "description": "Institutional traders (managed money) are net long Corn at 344,641 contracts \u2014 2.7\u03c3 above the 52-week norm. Exposed countries: Ukraine, Brazil, Argentina, China.",
+      "z_score": 2.706,
+      "basket": [
+        "US",
+        "UA",
+        "BR",
+        "AR",
+        "CN"
+      ],
+      "commodity": "Corn",
+      "net_position": 344641
     }
   ]
 }
