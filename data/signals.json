@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T06:26:47.893349+00:00",
+  "generated_at": "2026-05-12T06:45:54.675369+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -27821,8 +27821,8 @@
         "OM"
       ],
       "signal_keys": [
-        "ofac:ZEUS LOGISTICS GROUP (Entity)",
-        "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424"
+        "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424",
+        "ofac:ZEUS LOGISTICS GROUP (Entity)"
       ],
       "why": "[first_appearance] ofac filed for Oman after first recorded of silence (profile score: 6). Signal: ZEUS LOGISTICS GROUP (Entity) | [influence_before_action] lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d.",
       "_components": [
