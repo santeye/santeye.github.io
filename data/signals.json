@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T23:03:43.249353+00:00",
+  "generated_at": "2026-05-12T06:26:47.893349+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -27815,108 +27815,21 @@
   "themes": [
     {
       "type": "convergence",
-      "title": "China \u2014 first appearance + influence \u2192 action",
-      "score": 60.105,
-      "countries": [
-        "CN"
-      ],
-      "signal_keys": [
-        "ofac:Feiwu BIAN (Individual)",
-        "ofac:HK HESIN INDUSTRY CO LIMITED (Entity)",
-        "ofac:Xinchun LI (Individual)",
-        "ofac:COSTIN SHIPPING LIMITED (Entity)",
-        "ofac:HONG KONG BLUE OCEAN LIMITED (Entity)",
-        "ofac:TAI LUNG TRADING LIMITED (Entity)",
-        "ofac:QINGDAO HAIYE OIL TERMINAL CO., LTD. (En",
-        "ofac:MULLINGAR TRADING COMPANY LIMITED (Entit",
-        "ofac:MEENTROPY TECHNOLOGY HANGZHOU CO LTD (En",
-        "lda:b607d4b4-b2a3-471c-8470-71fb5718c3a8",
-        "ofac:Genping LI (Individual)",
-        "ofac:HITEX INSULATION NINGBO COMPANY LIMITED "
-      ],
-      "why": "[first_appearance] ofac filed for China after first recorded of silence (profile score: 10). Signal: HITEX INSULATION NINGBO COMPANY LIMITED (Entity) | [influence_before_action] lda on 2026-02-17 \u2192 ofac on 2026-04-16 (58d gap). No prior lda+action sequence in preceding 180d.",
-      "_components": [
-        {
-          "type": "first_appearance",
-          "title": "China \u2014 ofac after first recorded silence",
-          "score": 46.274,
-          "countries": [
-            "CN"
-          ],
-          "signal_keys": [
-            "ofac:HITEX INSULATION NINGBO COMPANY LIMITED ",
-            "ofac:Genping LI (Individual)",
-            "ofac:HONG KONG BLUE OCEAN LIMITED (Entity)",
-            "ofac:MEENTROPY TECHNOLOGY HANGZHOU CO LTD (En",
-            "ofac:HK HESIN INDUSTRY CO LIMITED (Entity)",
-            "ofac:QINGDAO HAIYE OIL TERMINAL CO., LTD. (En",
-            "ofac:Xinchun LI (Individual)",
-            "ofac:MULLINGAR TRADING COMPANY LIMITED (Entit",
-            "ofac:COSTIN SHIPPING LIMITED (Entity)",
-            "ofac:TAI LUNG TRADING LIMITED (Entity)",
-            "ofac:Feiwu BIAN (Individual)"
-          ],
-          "why": "ofac filed for China after first recorded of silence (profile score: 10). Signal: HITEX INSULATION NINGBO COMPANY LIMITED (Entity)"
-        },
-        {
-          "type": "influence_before_action",
-          "title": "China \u2014 lda \u2192 ofac (58d)",
-          "score": 13.831,
-          "countries": [
-            "CN"
-          ],
-          "signal_keys": [
-            "ofac:Feiwu BIAN (Individual)",
-            "lda:b607d4b4-b2a3-471c-8470-71fb5718c3a8"
-          ],
-          "why": "lda on 2026-02-17 \u2192 ofac on 2026-04-16 (58d gap). No prior lda+action sequence in preceding 180d."
-        }
-      ],
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "Iran \u2014 ofac after first recorded silence",
-      "score": 41.647,
-      "countries": [
-        "IR"
-      ],
-      "signal_keys": [
-        "ofac:Ahmad Mohammadi ZADEH (Individual)",
-        "ofac:NASSER GHASEMI RAD AND ASSOCIATES PARTNE",
-        "ofac:Morteza Ali BAKHSHI (Individual)",
-        "ofac:Masoud KAVOUSI (Individual)",
-        "ofac:Ehsan MOSLEHI (Individual)",
-        "ofac:Mahmud TADAYYON (Individual)",
-        "ofac:Alireza KAHKOUI (Individual)",
-        "ofac:Fahim MALEKI (Individual)",
-        "ofac:Sorayya Mehri HAJIBABA (Individual)",
-        "ofac:Kamal Sabah BALKHKANLU (Individual)",
-        "ofac:Danial KHALILI (Individual)",
-        "ofac:Hamidreza ROKNIFARD (Individual)",
-        "ofac:SEPEHR KAVEH KISH INTERNATIONAL TRADING ",
-        "ofac:SAMAN AIR SERVICES COMPANY (Entity)"
-      ],
-      "why": "ofac filed for Iran after first recorded of silence (profile score: 9). Signal: Ahmad Mohammadi ZADEH (Individual)",
-      "narrative": null
-    },
-    {
-      "type": "convergence",
       "title": "Oman \u2014 first appearance + influence \u2192 action",
-      "score": 37.897,
+      "score": 36.106,
       "countries": [
         "OM"
       ],
       "signal_keys": [
-        "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424",
-        "ofac:ZEUS LOGISTICS GROUP (Entity)"
+        "ofac:ZEUS LOGISTICS GROUP (Entity)",
+        "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424"
       ],
       "why": "[first_appearance] ofac filed for Oman after first recorded of silence (profile score: 6). Signal: ZEUS LOGISTICS GROUP (Entity) | [influence_before_action] lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d.",
       "_components": [
         {
           "type": "first_appearance",
           "title": "Oman \u2014 ofac after first recorded silence",
-          "score": 27.765,
+          "score": 25.974,
           "countries": [
             "OM"
           ],
@@ -27933,8 +27846,8 @@
             "OM"
           ],
           "signal_keys": [
-            "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424",
-            "ofac:ZEUS LOGISTICS GROUP (Entity)"
+            "ofac:ZEUS LOGISTICS GROUP (Entity)",
+            "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424"
           ],
           "why": "lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d."
         }
@@ -27943,29 +27856,8 @@
     },
     {
       "type": "first_appearance",
-      "title": "Iraq \u2014 ofac after first recorded silence",
-      "score": 24.81,
-      "countries": [
-        "IQ"
-      ],
-      "signal_keys": [
-        "ofac:Mustafa Hashim Lazim AL-BEHADILI (Indivi",
-        "ofac:GULF ENERGY OIL SERVICES LIMITED (Entity",
-        "ofac:Ali Maarij AL-BAHADLY (Individual)",
-        "ofac:Mohammed Issa Kadhim AL SHUWAILI (Indivi",
-        "ofac:Ahmed Khudair Maksus MAKSUS (Individual)",
-        "ofac:Radhwan Yousif Hameed ALMOHAMMED (Indivi",
-        "ofac:Husham Hashim JAYTHOOM (Individual)",
-        "ofac:Khalid Jameel Abed ALBAKHATRA (Individua",
-        "ofac:Safaa Adnan Jabbar SUWAED (Individual)"
-      ],
-      "why": "ofac filed for Iraq after first recorded of silence (profile score: 7). Signal: Mustafa Hashim Lazim AL-BEHADILI (Individual)",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
       "title": "Belarus \u2014 ofac after first recorded silence",
-      "score": 23.137,
+      "score": 21.645,
       "countries": [
         "BY"
       ],
@@ -27978,31 +27870,8 @@
     },
     {
       "type": "first_appearance",
-      "title": "United Arab Emirates \u2014 ofac after first recorded silence",
-      "score": 18.51,
-      "countries": [
-        "AE"
-      ],
-      "signal_keys": [
-        "ofac:OCEAN ALLIANZ SHIPPING LLC (Entity)",
-        "ofac:UNIVERSAL FORTUNE TRADING LLC (Entity)",
-        "ofac:ELITE ENERGY FZCO (Entity)",
-        "ofac:Pedram PIROUZAN (Individual)",
-        "ofac:AL SAHRA TRADE PETRO DMCC (Entity)",
-        "ofac:Janelyn Eusebio EMPERADOR (Individual)",
-        "ofac:Mohammad VAHIDI (Individual)",
-        "ofac:CHABOK FZCO (Entity)",
-        "ofac:TAYLOR SHIPPING FZCO (Entity)",
-        "ofac:SHIPSTAR SHIPCHANDLING LLC (Entity)",
-        "ofac:ACS TRADING LLC (Entity)"
-      ],
-      "why": "ofac filed for United Arab Emirates after first recorded of silence (profile score: 4). Signal: OCEAN ALLIANZ SHIPPING LLC (Entity)",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
       "title": "Cuba \u2014 ofac after first recorded silence",
-      "score": 14.177,
+      "score": 13.263,
       "countries": [
         "CU"
       ],
@@ -28010,249 +27879,6 @@
         "ofac:Ania Guillermina LASTRES MORERA (Individ"
       ],
       "why": "ofac filed for Cuba after first recorded of silence (profile score: 4). Signal: Ania Guillermina LASTRES MORERA (Individual)",
-      "narrative": null
-    },
-    {
-      "type": "convergence",
-      "title": "Colombia \u2014 influence \u2192 action + first appearance",
-      "score": 13.42,
-      "countries": [
-        "CO"
-      ],
-      "signal_keys": [
-        "ofac:Jose Oscar GARCIA BATTE (Individual)",
-        "fara:7692",
-        "ofac:FENIX HUMAN RESOURCES S.A.S. (Entity)",
-        "ofac:Jose Libardo QUIJANO TORRES (Individual)",
-        "ofac:GLOBAL QOWA AL BASHERIA S.A.S. (Entity)",
-        "ofac:Omar Fernando GARCIA BATTE (Individual)"
-      ],
-      "why": "[influence_before_action] fara on 2026-02-12 \u2192 ofac on 2026-04-17 (64d gap). No prior fara+action sequence in preceding 180d. | [first_appearance] ofac filed for Colombia after first recorded of silence (profile score: 6). Signal: FENIX HUMAN RESOURCES S.A.S. (Entity)",
-      "_components": [
-        {
-          "type": "influence_before_action",
-          "title": "Colombia \u2014 fara \u2192 ofac (64d)",
-          "score": 7.814,
-          "countries": [
-            "CO"
-          ],
-          "signal_keys": [
-            "ofac:FENIX HUMAN RESOURCES S.A.S. (Entity)",
-            "fara:7692"
-          ],
-          "why": "fara on 2026-02-12 \u2192 ofac on 2026-04-17 (64d gap). No prior fara+action sequence in preceding 180d."
-        },
-        {
-          "type": "first_appearance",
-          "title": "Colombia \u2014 ofac after first recorded silence",
-          "score": 5.606,
-          "countries": [
-            "CO"
-          ],
-          "signal_keys": [
-            "ofac:FENIX HUMAN RESOURCES S.A.S. (Entity)",
-            "ofac:Jose Libardo QUIJANO TORRES (Individual)",
-            "ofac:Jose Oscar GARCIA BATTE (Individual)",
-            "ofac:GLOBAL QOWA AL BASHERIA S.A.S. (Entity)",
-            "ofac:Omar Fernando GARCIA BATTE (Individual)"
-          ],
-          "why": "ofac filed for Colombia after first recorded of silence (profile score: 6). Signal: FENIX HUMAN RESOURCES S.A.S. (Entity)"
-        }
-      ],
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "Philippines \u2014 dsca after 405d silence",
-      "score": 13.253,
-      "countries": [
-        "PH"
-      ],
-      "signal_keys": [
-        "dsca:Bell 505 Jet Ranger X Helicopter"
-      ],
-      "why": "dsca filed for Philippines after 405d of silence (profile score: 5). Signal: Bell 505 Jet Ranger X Helicopter",
-      "narrative": null
-    },
-    {
-      "type": "convergence",
-      "title": "Mexico \u2014 influence \u2192 action + first appearance",
-      "score": 13.174,
-      "countries": [
-        "MX"
-      ],
-      "signal_keys": [
-        "ofac:QUIMICA SOLUCIONES Y LOGISTICA INTEGRAL ",
-        "lda:2546e933-cf40-44b7-8a69-91c428ae13e8",
-        "ofac:BOTANICA 2000 (Entity)",
-        "ofac:Jose de Jesus RAMIREZ TORRES (Individual",
-        "ofac:COMERCIALIZADORA Y ARRENDADORA DE MEXICO",
-        "ofac:Ramiro Baltazar FELIX HERAS (Individual)",
-        "ofac:DESARROLLOS CARTOK S.A. DE C.V. (Entity)",
-        "ofac:CORPORATIVO Y ENLACE RAM S.A. DE C.V. (E",
-        "ofac:Jesus Reymundo RAMOS VAZQUEZ (Individual",
-        "ofac:DIAMANTE CASINO (Entity)"
-      ],
-      "why": "[influence_before_action] lda on 2026-03-16 \u2192 ofac on 2026-04-14 (29d gap). No prior lda+action sequence in preceding 180d. | [first_appearance] ofac filed for Mexico after first recorded of silence (profile score: 4). Signal: Jose de Jesus RAMIREZ TORRES (Individual)",
-      "_components": [
-        {
-          "type": "influence_before_action",
-          "title": "Mexico \u2014 lda \u2192 ofac (29d)",
-          "score": 7.599,
-          "countries": [
-            "MX"
-          ],
-          "signal_keys": [
-            "ofac:Jesus Reymundo RAMOS VAZQUEZ (Individual",
-            "lda:2546e933-cf40-44b7-8a69-91c428ae13e8"
-          ],
-          "why": "lda on 2026-03-16 \u2192 ofac on 2026-04-14 (29d gap). No prior lda+action sequence in preceding 180d."
-        },
-        {
-          "type": "first_appearance",
-          "title": "Mexico \u2014 ofac after first recorded silence",
-          "score": 5.575,
-          "countries": [
-            "MX"
-          ],
-          "signal_keys": [
-            "ofac:Jose de Jesus RAMIREZ TORRES (Individual",
-            "ofac:CORPORATIVO Y ENLACE RAM S.A. DE C.V. (E",
-            "ofac:Ramiro Baltazar FELIX HERAS (Individual)",
-            "ofac:BOTANICA 2000 (Entity)",
-            "ofac:DESARROLLOS CARTOK S.A. DE C.V. (Entity)",
-            "ofac:QUIMICA SOLUCIONES Y LOGISTICA INTEGRAL ",
-            "ofac:Jesus Reymundo RAMOS VAZQUEZ (Individual",
-            "ofac:COMERCIALIZADORA Y ARRENDADORA DE MEXICO",
-            "ofac:DIAMANTE CASINO (Entity)"
-          ],
-          "why": "ofac filed for Mexico after first recorded of silence (profile score: 4). Signal: Jose de Jesus RAMIREZ TORRES (Individual)"
-        }
-      ],
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "United Kingdom \u2014 ofac after first recorded silence",
-      "score": 11.879,
-      "countries": [
-        "GB"
-      ],
-      "signal_keys": [
-        "ofac:THRIVING TIMES INTERNATIONAL CO LTD (Ent",
-        "ofac:SHUQUN LTD (Entity)",
-        "ofac:SANOVO LTD (Entity)",
-        "ofac:Seyed Naiemaei Badroddin MOOSAVI (Indivi"
-      ],
-      "why": "ofac filed for United Kingdom after first recorded of silence (profile score: 5). Signal: THRIVING TIMES INTERNATIONAL CO LTD (Entity)",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "Turkey \u2014 ofac after first recorded silence",
-      "score": 9.758,
-      "countries": [
-        "TR"
-      ],
-      "signal_keys": [
-        "ofac:EMTI FIBER TEXTILE IMPORT EXPORT TRADE L"
-      ],
-      "why": "ofac filed for Turkey after first recorded of silence (profile score: 8). Signal: EMTI FIBER TEXTILE IMPORT EXPORT TRADE LIMITED COMPANY (Entity)",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "India \u2014 ofac after first recorded silence",
-      "score": 9.756,
-      "countries": [
-        "IN"
-      ],
-      "signal_keys": [
-        "ofac:Satishkumar Hareshbhai SUTARIA (Individu",
-        "ofac:FLEET TANQO PRIVATE LIMITED (Entity)",
-        "ofac:HOUSE OF SHIPPING PRIVATE LIMITED (Entit"
-      ],
-      "why": "ofac filed for India after first recorded of silence (profile score: 7). Signal: Satishkumar Hareshbhai SUTARIA (Individual)",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "Panama \u2014 ofac after first recorded silence",
-      "score": 9.726,
-      "countries": [
-        "PA"
-      ],
-      "signal_keys": [
-        "ofac:NAXOS MARITIME AND TRADING S.A. (Entity)"
-      ],
-      "why": "ofac filed for Panama after first recorded of silence (profile score: 5). Signal: NAXOS MARITIME AND TRADING S.A. (Entity)",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "Qatar \u2014 dsca after 411d silence",
-      "score": 8.159,
-      "countries": [
-        "QA"
-      ],
-      "signal_keys": [
-        "dsca:Advanced Precision Kill Weapons System",
-        "dsca:Patriot Missile Replenishment"
-      ],
-      "why": "dsca filed for Qatar after 411d of silence (profile score: 4). Signal: Advanced Precision Kill Weapons System",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "Vietnam \u2014 ofac after first recorded silence",
-      "score": 7.781,
-      "countries": [
-        "VN"
-      ],
-      "signal_keys": [
-        "ofac:THIEN AN HOA BINH COMPANY LIMITED (Entit"
-      ],
-      "why": "ofac filed for Vietnam after first recorded of silence (profile score: 4). Signal: THIEN AN HOA BINH COMPANY LIMITED (Entity)",
-      "narrative": null
-    },
-    {
-      "type": "influence_before_action",
-      "title": "Panama \u2014 lda \u2192 ofac (62d)",
-      "score": 4.955,
-      "countries": [
-        "PA"
-      ],
-      "signal_keys": [
-        "lda:ca9dd4da-876f-4b86-9823-c580d39d74da",
-        "ofac:NAXOS MARITIME AND TRADING S.A. (Entity)"
-      ],
-      "why": "lda on 2026-02-25 \u2192 ofac on 2026-04-28 (62d gap). No prior lda+action sequence in preceding 180d.",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "Tunisia \u2014 dsca after first recorded silence",
-      "score": 4.044,
-      "countries": [
-        "TN"
-      ],
-      "signal_keys": [
-        "dsca:Border Security Project Phase III"
-      ],
-      "why": "dsca filed for Tunisia after first recorded of silence (profile score: 2). Signal: Border Security Project Phase III",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "Lithuania \u2014 dsca after first recorded silence",
-      "score": 2.897,
-      "countries": [
-        "LT"
-      ],
-      "signal_keys": [
-        "dsca:AIM-9X Sidewinder Block II Missiles"
-      ],
-      "why": "dsca filed for Lithuania after first recorded of silence (profile score: 2). Signal: AIM-9X Sidewinder Block II Missiles",
       "narrative": null
     }
   ]
