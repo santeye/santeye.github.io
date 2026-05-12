@@ -22,7 +22,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from utils import profile_score, load_existing, append_and_write, write_error
+from utils import profile_score, load_existing, append_and_write, write_error, org_name_to_iso
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -93,11 +93,18 @@ def api_get(url: str, retries: int = 3) -> dict:
 def pick_iso(filing: dict) -> str:
     """
     ISO priority:
-    1. client.country if non-US
-    2. first foreign_entity.country
-    3. registrant.country if non-US
-    4. "XX"
+    1. Known domestic org → forced ISO (utils.ORG_ISO_OVERRIDES)
+    2. client.country if non-US
+    3. first foreign_entity.country
+    4. registrant.country if non-US
+    5. "XX"
     """
+    registrant_name = ((filing.get("registrant") or {}).get("name") or "")
+    client_name_raw = ((filing.get("client") or {}).get("name") or "")
+    org_iso = org_name_to_iso(registrant_name) or org_name_to_iso(client_name_raw)
+    if org_iso:
+        return org_iso
+
     client_country = ((filing.get("client") or {}).get("country") or "").upper()
     if client_country and client_country != "US":
         return client_country
@@ -200,18 +207,20 @@ def to_signal(filing: dict) -> dict:
     ))
 
     return {
-        "filing_uuid":   filing.get("filing_uuid"),
-        "iso":           iso,
-        "source":        "lda",
-        "signal_date":   signal_date,
-        "title":         title,
-        "value_usd":     None,
-        "description":   build_description(filing),
-        "lobbying_firm": registrant_name or None,
-        "issue_codes":   issue_codes,
-        "url":           filing.get("filing_document_url"),
-        "raw_score":     profile_score(iso),
-        "weight":        1.0,
+        "filing_uuid":    filing.get("filing_uuid"),
+        "iso":            iso,
+        "source":         "lda",
+        "signal_date":    signal_date,
+        "title":          title,
+        "value_usd":      None,
+        "description":    build_description(filing),
+        "lobbying_firm":  registrant_name or None,
+        "registrant_id":  filing.get("registrant", {}).get("id"),
+        "client_name":    (filing.get("client", {}).get("name") or "").title(),
+        "issue_codes":    issue_codes,
+        "url":            filing.get("filing_document_url"),
+        "raw_score":      profile_score(iso),
+        "weight":         1.0,
     }
 
 

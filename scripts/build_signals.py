@@ -26,6 +26,7 @@ import os
 import re
 import sys
 from collections import Counter, defaultdict
+from itertools import combinations
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -46,7 +47,16 @@ PROSE_CACHE_FILE = os.path.join(DATA_DIR, "prose_cache.json")
 
 DATE_CUTOFF = "2025-01-01"   # signals before this date are excluded from output
 
-STRIP_FIELDS = {"raw_score", "weight"}
+STRIP_FIELDS = {"raw_score", "weight", "_entities"}
+
+_ENTITY_STOPWORDS = {
+    "the", "and", "for", "with", "from", "into", "upon", "this", "that",
+    "llc", "inc", "corp", "ltd", "via", "per",
+}
+
+def extract_entities(title: str) -> set:
+    tokens = re.findall(r'\b[A-Z][a-z]{2,}\b', title or "")
+    return {t for t in tokens if t.lower() not in _ENTITY_STOPWORDS}
 
 
 def build_profile_block(iso: str):
@@ -196,6 +206,25 @@ def compute_themes(enriched: list) -> list:
               if s.get("iso") and s.get("iso") not in ("XX", "US")
               and s.get("signal_date")]
 
+    for s in enriched:
+        s["_entities"] = extract_entities(s.get("title", ""))
+
+    pair_counts = Counter((s["iso"], s.get("source", "")) for s in active)
+
+    def suppression(iso, src):
+        return 0.3 if pair_counts[(iso, src)] >= 4 else 1.0
+
+    known_lda_pairs: set = set()
+    try:
+        with open(os.path.join(DATA_DIR, "lda_signals.json")) as f:
+            for sig in json.load(f).get("signals", []):
+                rid = sig.get("registrant_id")
+                cn = sig.get("client_name", "")
+                if rid and cn:
+                    known_lda_pairs.add((rid, cn))
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+
     # ── Algorithm 1: First Appearance ────────────────────────────────────────
     #
     # Country X receives a signal from source S, and has not appeared in source S
@@ -238,6 +267,7 @@ def compute_themes(enriched: list) -> list:
 
         recency_w = math.exp(-min(days_ago(best["signal_date"]), 30) / 15)
         score = ps * best.get("quality", 0.5) * recency_w * math.log2(last_days / 30 + 2)
+        score *= suppression(iso, src)
 
         country_name = profile_name(best)
         themes.append({
@@ -270,6 +300,11 @@ def compute_themes(enriched: list) -> list:
     for iso, sigs in by_iso.items():
         current = [s for s in sigs if days_ago(s.get("signal_date", "")) < IBA_WINDOW]
         inf_sigs = [s for s in current if s.get("source") in INFLUENCE_SOURCES]
+        inf_sigs = [
+            s for s in inf_sigs
+            if s.get("source") != "lda"
+            or (s.get("registrant_id"), s.get("client_name", "")) not in known_lda_pairs
+        ]
         act_sigs = [s for s in current if s.get("source") in ACTION_SOURCES]
 
         if not inf_sigs or not act_sigs:
@@ -295,6 +330,7 @@ def compute_themes(enriched: list) -> list:
                     math.exp(-gap / 45) *
                     (inf.get("quality", 0) + act.get("quality", 0))
                 )
+                pair_score *= suppression(iso, inf.get("source", "")) * suppression(iso, act.get("source", ""))
                 if pair_score > best_score:
                     best_score = pair_score
                     best_pair = (inf, act, gap)
@@ -304,7 +340,7 @@ def compute_themes(enriched: list) -> list:
 
         inf_sig, act_sig, gap = best_pair
         ps = prof_score(inf_sig) or prof_score(act_sig)
-        if ps < 3:
+        if ps < 4:
             continue
 
         # Standing-relationship check: both layers present in the prior window too
@@ -401,6 +437,19 @@ def compute_themes(enriched: list) -> list:
 
     themes.sort(key=lambda t: t["score"], reverse=True)
 
+    sig_lookup = {_signal_key(s): s for s in enriched}
+
+    def _has_entity_overlap(themes_list, sig_lkp):
+        entity_sets = []
+        for t in themes_list:
+            es = set()
+            for sk in t.get("signal_keys", []):
+                sig = sig_lkp.get(sk)
+                if sig:
+                    es |= sig.get("_entities", set())
+            entity_sets.append(es)
+        return any(a & b for a, b in combinations(entity_sets, 2))
+
     # ── Convergence collapse ─────────────────────────────────────────────────
     # Two independent algorithms firing on the same country is a stronger signal
     # than either alone. Collapse into a single convergence theme.
@@ -414,6 +463,8 @@ def compute_themes(enriched: list) -> list:
     convergence_themes = []
     for iso, matching in single_country_above_floor.items():
         if len(matching) < 2:
+            continue
+        if not _has_entity_overlap(matching, sig_lookup):
             continue
         collapsed_isos.add(iso)
         combined_score = sum(t["score"] for t in matching)
@@ -444,7 +495,7 @@ def compute_themes(enriched: list) -> list:
         themes.extend(convergence_themes)
         themes.sort(key=lambda t: t["score"], reverse=True)
 
-    return themes[:20]
+    return themes[:3]
 
 
 def _load_anthropic_key() -> str:
@@ -506,6 +557,15 @@ _PROSE_SYSTEM = (
     "- body: string (if coherent=true: 2 sentences max, ~40 words. Sentence 1: what the data shows. Sentence 2: what the mechanism means or what comes next; null if false)\n"
     "- prompt: string (research prompt if coherent=true, otherwise null)\n"
     "No other fields."
+)
+
+
+_COHERENCE_SYSTEM = (
+    "You are a binary coherence filter. Given a pattern and its contributing signals, "
+    "answer one question: do these signals share a named causal mechanism — "
+    "a specific entity, program, or policy domain with directional logic connecting them? "
+    "Country co-occurrence alone fails. Temporal overlap alone fails. Layer co-occurrence alone fails. "
+    "Return JSON only: {\"coherent\": true|false, \"reason\": \"one sentence\"}"
 )
 
 
@@ -648,6 +708,26 @@ def generate_prose_for_themes(themes: list, enriched: list) -> list:
             )
 
         try:
+            coherence_resp = client.messages.create(
+                model="claude-sonnet-4-6",
+                max_tokens=150,
+                temperature=0,
+                system=_COHERENCE_SYSTEM,
+                messages=[{"role": "user", "content": user_msg}],
+            )
+            coherence_raw = coherence_resp.content[0].text.strip()
+            if coherence_raw.startswith("```"):
+                coherence_raw = coherence_raw.split("```", 2)[1]
+                if coherence_raw.startswith("json"):
+                    coherence_raw = coherence_raw[4:]
+                coherence_raw = coherence_raw.strip().rstrip("`").strip()
+            coherence_parsed = json.loads(coherence_raw)
+            if not coherence_parsed.get("coherent", True):
+                reason = coherence_parsed.get("reason", "no reason")
+                print(f"  Pre-filter rejected: {theme['title'][:60]} — {reason}", file=sys.stderr)
+                theme["narrative"] = None
+                continue
+
             resp = client.messages.create(
                 model="claude-sonnet-4-6",
                 max_tokens=500,
@@ -747,6 +827,9 @@ def main():
 
     themes = compute_themes(enriched)
     themes = generate_prose_for_themes(themes, enriched)
+
+    for s in enriched:
+        s.pop("_entities", None)
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),

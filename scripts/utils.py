@@ -108,6 +108,39 @@ def country_to_iso2(name: str):
 
 
 # ---------------------------------------------------------------------------
+# Domestic org → ISO overrides
+# US-incorporated orgs structurally tied to a foreign country. Substring match
+# on lowercase org name. Used by LDA (and any future influence-layer source)
+# to resolve domestic lobbying entities that would otherwise resolve to XX/US.
+# ---------------------------------------------------------------------------
+
+ORG_ISO_OVERRIDES: list[tuple[str, str]] = [
+    # Israel
+    ("aipac",                              "IL"),
+    ("american israel public affairs",     "IL"),
+    ("aief",                               "IL"),
+    ("american israel education",          "IL"),
+    ("jinsa",                              "IL"),
+    ("jewish institute for national",      "IL"),
+    ("foundation for defense of democrac", "IL"),
+    ("christians united for israel",       "IL"),
+    ("israeli-american coalition",         "IL"),
+    ("israel allies foundation",           "IL"),
+]
+
+
+def org_name_to_iso(name: str) -> str | None:
+    """Return ISO alpha-2 if org name matches a known domestic org override, else None."""
+    if not name:
+        return None
+    lower = name.lower()
+    for substring, iso in ORG_ISO_OVERRIDES:
+        if substring in lower:
+            return iso
+    return None
+
+
+# ---------------------------------------------------------------------------
 # ISO alpha-3 → alpha-2  (for SAM.gov API and similar sources)
 # ---------------------------------------------------------------------------
 

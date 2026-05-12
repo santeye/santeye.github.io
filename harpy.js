@@ -121,6 +121,21 @@
       return (sig.source || '') + '|' + (sig.signal_date || '') + '|' + (sig.title || '').slice(0, 60);
     }
 
+    function themeKey(sig) {
+      const src = sig.source || '';
+      if (src === 'fara')            return `fara:${sig.registration_number}`;
+      if (src === 'lda')             return `lda:${sig.filing_uuid}`;
+      if (src === 'dsca')            return `dsca:${sig.cn_number}`;
+      if (src === 'cftc')            return `cftc:${sig.commodity}`;
+      if (src === 'imf')             return `imf:${sig.imf_id}`;
+      if (src === 'federalregister') return `federalregister:${sig.document_number}`;
+      if (src === 'anchor_budget')   return `anchor_budget:${sig.accession}`;
+      if (src === 'ofac')            return `ofac:${sig.uid}`;
+      if (src === 'bis')             return `bis:${sig.uid}`;
+      if (src === 'sam')             return `sam:${sig.uid}`;
+      return `${src}:${sig.signal_date}`;
+    }
+
     let activeFilter = null;
     let themeFilter  = null;
     let activeTheme  = null;
@@ -462,8 +477,10 @@
       if (!themes || !themes.length) return;
 
       const withNarrative = themes.filter(t => t.narrative != null);
-      const toRender = withNarrative.slice(0, 10);
+      const toRender = withNarrative.slice(0, 3);
       if (!toRender.length) return;
+
+      const themeKeyMap = new Map(signals.map(s => [themeKey(s), s]));
 
       section.style.display = '';
       list.innerHTML = '';
@@ -514,6 +531,109 @@
             body.className = 'narrative-body';
             body.textContent = narrative.body;
             block.appendChild(body);
+          }
+
+          if (narrative.prompt) {
+            const btn = document.createElement('button');
+            btn.className = 'narrative-prompt-btn';
+            btn.textContent = 'Take this further →';
+            btn.addEventListener('click', e => {
+              e.stopPropagation();
+              navigator.clipboard.writeText(narrative.prompt).then(() => {
+                btn.textContent = 'copied';
+                setTimeout(() => { btn.textContent = 'Take this further →'; }, 2000);
+              }).catch(() => {});
+            });
+            block.appendChild(btn);
+          }
+
+          const themeSignalKeys = theme.signal_keys || [];
+          const resolvedSigs = themeSignalKeys
+            .map(sk => themeKeyMap.get(sk))
+            .filter(Boolean)
+            .sort((a, b) => (a.signal_date || '').localeCompare(b.signal_date || ''));
+
+          if (resolvedSigs.length >= 2) {
+            const timeline = document.createElement('div');
+            timeline.className = 'narrative-timeline';
+
+            const dates = resolvedSigs.map(s => new Date(s.signal_date));
+            const minDate = dates[0];
+            const maxDate = dates[dates.length - 1];
+            const totalDays = Math.max(1, (maxDate - minDate) / 86400000);
+
+            resolvedSigs.forEach((sig, i) => {
+              const dotWrap = document.createElement('div');
+              dotWrap.className = 'narrative-timeline-item';
+              const sigDays = (new Date(sig.signal_date) - minDate) / 86400000;
+              dotWrap.style.left = `${Math.min(95, (sigDays / totalDays) * 90)}%`;
+
+              const dot = document.createElement('div');
+              dot.className = 'narrative-timeline-dot';
+              dot.style.background = layerColor(sig.layer);
+
+              const label = document.createElement('div');
+              label.className = 'narrative-timeline-label';
+              const d = new Date(sig.signal_date);
+              const mon = d.toLocaleString('en-US', { month: 'short' });
+              label.textContent = `[${sig.source}] ${mon} ${d.getDate()}`;
+
+              dotWrap.appendChild(dot);
+              dotWrap.appendChild(label);
+              timeline.appendChild(dotWrap);
+
+              if (i < resolvedSigs.length - 1) {
+                const nextDays = (new Date(resolvedSigs[i+1].signal_date) - new Date(sig.signal_date)) / 86400000;
+                if (nextDays > 0) {
+                  const gap = document.createElement('div');
+                  gap.className = 'narrative-timeline-gap';
+                  gap.style.left = `${Math.min(95, (sigDays / totalDays) * 90) + 2}%`;
+                  gap.textContent = `${Math.round(nextDays)}d`;
+                  timeline.appendChild(gap);
+                }
+              }
+            });
+
+            block.appendChild(timeline);
+          }
+
+          if (resolvedSigs.length > 0) {
+            const toggle = document.createElement('button');
+            toggle.className = 'narrative-signals-toggle';
+            toggle.textContent = 'show signals';
+
+            const sigList = document.createElement('div');
+            sigList.className = 'narrative-signals-list';
+            sigList.style.display = 'none';
+
+            resolvedSigs.forEach(sig => {
+              const item = document.createElement('div');
+              item.className = 'narrative-signal-item';
+              item.textContent = sig.title || '';
+
+              const sk = sigKey(sig);
+              const feedEl = document.querySelector(`[data-sig-key="${CSS.escape(sk)}"]`);
+              if (feedEl) {
+                item.classList.add('clickable');
+                item.addEventListener('click', e => {
+                  e.stopPropagation();
+                  feedEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  feedEl.classList.add('highlight');
+                  setTimeout(() => feedEl.classList.remove('highlight'), 1500);
+                });
+              }
+              sigList.appendChild(item);
+            });
+
+            toggle.addEventListener('click', e => {
+              e.stopPropagation();
+              const isOpen = sigList.style.display !== 'none';
+              sigList.style.display = isOpen ? 'none' : 'block';
+              toggle.textContent = isOpen ? 'show signals' : 'hide signals';
+            });
+
+            block.appendChild(toggle);
+            block.appendChild(sigList);
           }
 
         }

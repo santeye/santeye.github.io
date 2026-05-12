@@ -441,4 +441,112 @@
 
     :focus { outline: 1px solid var(--brass); outline-offset: 1px; }
     :focus:not(:focus-visible) { outline: none; }
+
+    /* Narrative timing strip */
+    .narrative-timeline {
+      position: relative;
+      height: 48px;
+      margin: 12px 0 8px;
+      border-top: 1px solid var(--border);
+    }
+
+    .narrative-timeline-item {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: translateX(-50%);
+    }
+
+    .narrative-timeline-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-bottom: 4px;
+    }
+
+    .narrative-timeline-label {
+      font-size: 9px;
+      color: var(--text-tertiary);
+      white-space: nowrap;
+      font-family: var(--font-mono);
+    }
+
+    .narrative-timeline-gap {
+      position: absolute;
+      font-size: 9px;
+      color: var(--text-tertiary);
+      top: 14px;
+      transform: translateX(-50%);
+      font-family: var(--font-mono);
+    }
+
+    /* Raw signals expand */
+    .narrative-signals-toggle {
+      background: none;
+      border: none;
+      color: var(--text-tertiary);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      cursor: pointer;
+      padding: 4px 0;
+      margin-top: 4px;
+      display: block;
+    }
+
+    .narrative-signals-toggle:hover {
+      color: var(--text-secondary);
+    }
+
+    .narrative-signals-list {
+      margin-top: 6px;
+      border-top: 1px solid var(--border);
+      padding-top: 6px;
+    }
+
+    .narrative-signal-item {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--text-secondary);
+      padding: 3px 0;
+      border-bottom: 1px solid var(--border);
+      line-height: 1.4;
+    }
+
+    .narrative-signal-item:last-child {
+      border-bottom: none;
+    }
+
+    .narrative-signal-item.clickable {
+      cursor: pointer;
+      color: var(--text-primary);
+    }
+
+    .narrative-signal-item.clickable:hover {
+      color: var(--brass);
+    }
+
+    /* Research prompt CTA */
+    .narrative-prompt-btn {
+      background: none;
+      border: none;
+      color: var(--brass);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      cursor: pointer;
+      padding: 4px 0;
+      margin-top: 6px;
+      display: block;
+      letter-spacing: 0.02em;
+    }
+
+    .narrative-prompt-btn:hover {
+      color: var(--text-primary);
+    }
+
+    /* Signal highlight flash */
+    .highlight {
+      background: var(--brass-subtle) !important;
+      transition: background 0.2s;
+    }
   
