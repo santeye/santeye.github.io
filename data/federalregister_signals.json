@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14T23:05:54.625811+00:00",
+  "generated_at": "2026-05-15T23:05:46.686339+00:00",
   "sources": [
     "federalregister"
   ],
@@ -6601,6 +6601,72 @@
       "description": "Notice. \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing the names of one or more persons that have been placed on OFAC's Specially Designated Nationals and Blocked Persons List (SDN List) based on OFAC's determination that one or more applicable legal criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of these persons are blocked, and U.S. persons are generally prohibited from engaging in transactions with them.",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/05/14/2026-09631/notice-of-ofac-sanctions-action"
+    },
+    {
+      "document_number": "2026-09795",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-15",
+      "title": "Determination Under Subsection 402(d)(1) of the Trade Act of 1974, As Amended Extension of Waiver Authority",
+      "value_usd": null,
+      "description": "Notice",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/15/2026-09795/determination-under-subsection-402d1-of-the-trade-act-of-1974-as-amended-extension-of-waiver"
+    },
+    {
+      "document_number": "2026-09761",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-15",
+      "title": "Notice of Department of State Sanctions Action",
+      "value_usd": null,
+      "description": "Notice of Department of State Sanctions Action Pursuant to the Executive Order Blocking Property With Respect To Specified Harmful Foreign Activities of the Government of the Russian Federation. \u00b7 The U.S. Department of State is publishing the name of a person who has been removed from the Department of the Treasury's List of Specially Designated Nationals and Blocked Persons (SDN List), administered by the Office of Foreign Assets Control (OFAC).",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/15/2026-09761/notice-of-department-of-state-sanctions-action"
+    },
+    {
+      "document_number": "2026-09760",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-15",
+      "title": "Notice of Department of State Sanctions Action",
+      "value_usd": null,
+      "description": "Notice of Department of State Sanctions Action Pursuant to the Executive Order Blocking Property With Respect To Specified Harmful Foreign Activities of the Government of the Russian Federation. \u00b7 The U.S. Department of State is publishing the name of one person who has been removed from the Department of the Treasury's List of Specially Designated Nationals and Blocked Persons (SDN List), administered by the Office of Foreign Assets Control (OFAC).",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/15/2026-09760/notice-of-department-of-state-sanctions-action"
+    },
+    {
+      "document_number": "2026-09759",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-15",
+      "title": "Bureau of Political-Military Affairs, Directorate of Defense Trade Controls: Notifications to the Congress of Proposed Commercial Export Licenses",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The Directorate of Defense Trade Controls and the Department of State give notice that the attached Notifications of Proposed Commercial Export Licenses were submitted to Congress on the dates indicated.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/15/2026-09759/bureau-of-political-military-affairs-directorate-of-defense-trade-controls-notifications-to-the"
+    },
+    {
+      "document_number": "2026-09758",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-15",
+      "title": "Notice of OFAC Sanctions Action",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing the names of one or more persons that have been placed on OFAC's Specially Designated Nationals and Blocked Persons List (SDN List) based on OFAC's determination that one or more applicable legal criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of these persons are blocked, and U.S. persons are generally prohibited from engaging in transactions with them.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/15/2026-09758/notice-of-ofac-sanctions-action"
+    },
+    {
+      "document_number": "2026-09721",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-15",
+      "title": "Renewal of Department of Defense Federal Advisory Committees-Air University Board of Visitors",
+      "value_usd": null,
+      "description": "Renewal of Federal Advisory Committee. \u00b7 The Department of War (DoW) is publishing this notice to announce it is renewing the Air University Board of Visitors (AU BoV) as a discretionary Federal advisory committee.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/15/2026-09721/renewal-of-department-of-defense-federal-advisory-committees-air-university-board-of-visitors"
     }
   ]
 }

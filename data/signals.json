@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14T23:06:11.097262+00:00",
+  "generated_at": "2026-05-15T23:06:01.833763+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,105 @@
     "sam"
   ],
   "signals": [
+    {
+      "filing_uuid": "0c1dc47a-508b-4448-a901-f597ae8ac216",
+      "iso": "DK",
+      "source": "lda",
+      "signal_date": "2026-05-15",
+      "title": "Manufacturing \u2014 Coloplast Corporation via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "Legislation and regulatory policy involving the Medicare Durable Medical Equipment, Prosthetics, Orthotics, and Supplies\u2026",
+      "lobbying_firm": "Holland & Knight Llp",
+      "registrant_id": 18466,
+      "client_name": "Coloplast Corporation",
+      "issue_codes": [
+        "MMM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/0c1dc47a-508b-4448-a901-f597ae8ac216/print/",
+      "profile": {
+        "name": "Denmark",
+        "score": 6,
+        "factors": [
+          "maritime chokepoint",
+          "Danish Straits",
+          "strategic minerals",
+          "Greenland",
+          "Arctic"
+        ],
+        "rationale": "Controls Danish Straits \u2014 only Baltic Sea exit, chokepoint (+3), Greenland: rare earth and strategic mineral deposits (+2), Arctic sovereignty and NATO position (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "1b6ed782-6921-4f29-8084-eba1abd55d61",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-15",
+      "title": "Defense, Banking, Finance \u2014 Defense Industrial Base Capital Fund via Invariant Llc",
+      "value_usd": null,
+      "description": "Issues related to Community Reinvestment Act (CRA) modernization and capital formation for defense industrial base manuf\u2026",
+      "lobbying_firm": "Invariant Llc",
+      "registrant_id": 314237,
+      "client_name": "Defense Industrial Base Capital Fund",
+      "issue_codes": [
+        "BAN",
+        "DEF",
+        "FIN",
+        "TAX"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1b6ed782-6921-4f29-8084-eba1abd55d61/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "449b6dd2-44f6-4b1c-9de2-89ea8efdc933",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-15",
+      "title": "Defense, Manufacturing \u2014 Vulcan Elements Inc. via Invariant Llc",
+      "value_usd": null,
+      "description": "Issues related to the supply chain and production of rare earth magnets.",
+      "lobbying_firm": "Invariant Llc",
+      "registrant_id": 314237,
+      "client_name": "Vulcan Elements Inc.",
+      "issue_codes": [
+        "DEF",
+        "MAN"
+      ],
+      "url": "https://lda.gov/filings/public/filing/449b6dd2-44f6-4b1c-9de2-89ea8efdc933/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "4548a597-7ed8-463f-84a0-a1686ec49931",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-15",
+      "title": "Defense \u2014 Hyfix Spatial Intelligence, Inc. via Invariant Llc",
+      "value_usd": null,
+      "description": "Domestic chip production and manufacturing efforts, wireless systems, sensing, and supply chain security.",
+      "lobbying_firm": "Invariant Llc",
+      "registrant_id": 314237,
+      "client_name": "Hyfix Spatial Intelligence, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/4548a597-7ed8-463f-84a0-a1686ec49931/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "filing_uuid": "bcbdc82b-4bea-4ea4-82f6-d98b066b3436",
       "iso": "XX",
@@ -66,6 +165,103 @@
         ],
         "rationale": "Active nuclear weapons program \u2014 Trident (+2), regional power and global basing network (+1), major US interoperability partner \u2014 Five Eyes, AUKUS (+1), controls Gibraltar and Diego Garcia chokepoints (+1)"
       },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "b644d185-c9c3-40f4-a249-82846c4b690c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-14",
+      "title": "Defense, Manufacturing \u2014 Qarbon Aerospace via Capital Park Partners Llc",
+      "value_usd": null,
+      "description": "National Defense Authorization and Appropriations Act advocacy for advanced composite materials and manufacturing",
+      "lobbying_firm": "Capital Park Partners Llc",
+      "registrant_id": 401104692,
+      "client_name": "Qarbon Aerospace",
+      "issue_codes": [
+        "DEF",
+        "MAN"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b644d185-c9c3-40f4-a249-82846c4b690c/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "9ed621cb-f02d-426d-a748-65c3a9d57d63",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-14",
+      "title": "Defense, Science/Technology, Budget \u2014 Broad Institute Inc. via Broad Institute Inc.",
+      "value_usd": null,
+      "description": "General education about biomedical research and support for scientific funding. Transparency of federal funding for medi\u2026",
+      "lobbying_firm": "Broad Institute Inc.",
+      "registrant_id": 401110651,
+      "client_name": "Broad Institute Inc.",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "MED",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/9ed621cb-f02d-426d-a748-65c3a9d57d63/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "ca625961-48d8-4aa5-9881-be3ed255299c",
+      "iso": "KR",
+      "source": "lda",
+      "signal_date": "2026-05-14",
+      "title": "Trade \u2014 Korea Iron And Steel Association (Kosa) via Arnold & Porter Kaye Scholer Llp",
+      "value_usd": null,
+      "description": "South Korea; Issues related to international trade, including issues related to Section 232 measures.",
+      "lobbying_firm": "Arnold & Porter Kaye Scholer Llp",
+      "registrant_id": 4301,
+      "client_name": "Korea Iron And Steel Association (Kosa)",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/ca625961-48d8-4aa5-9881-be3ed255299c/print/",
+      "profile": {
+        "name": "South Korea",
+        "score": 4,
+        "factors": [
+          "US basing",
+          "nuclear program",
+          "regional power"
+        ],
+        "rationale": "Major US basing \u2014 28,000 troops, USFK (+1), latent nuclear capability \u2014 active discussion of indigenous program (+2), regional power and semiconductor/industrial hub (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "751fb8fe-a8fd-4ed8-8fdd-e61839384eeb",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-14",
+      "title": "Defense \u2014 Lacks Enterprises via Banner Public Affairs, Llc",
+      "value_usd": null,
+      "description": "Drone manufacturing for the Department of Defense",
+      "lobbying_firm": "Banner Public Affairs, Llc",
+      "registrant_id": 401046942,
+      "client_name": "Lacks Enterprises",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/751fb8fe-a8fd-4ed8-8fdd-e61839384eeb/print/",
+      "profile": null,
       "layer": "influence",
       "quality": 0.5,
       "dollar_mod": 1.0,
@@ -505,6 +701,40 @@
       "profile": null,
       "layer": "influence",
       "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "CN",
+      "source": "cftc",
+      "signal_date": "2026-05-12",
+      "title": "Corn \u2014 hedge funds adding longs (+2.2\u03c3)",
+      "value_usd": null,
+      "description": "Institutional traders (managed money) are net long Corn at 295,620 contracts \u2014 2.2\u03c3 above the 52-week norm. Exposed countries: Ukraine, Brazil, Argentina, China.",
+      "z_score": 2.192,
+      "basket": [
+        "US",
+        "UA",
+        "BR",
+        "AR",
+        "CN"
+      ],
+      "commodity": "Corn",
+      "net_position": 295620,
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "financial",
+      "quality": 0.55,
       "dollar_mod": 1.0,
       "is_fr_policy": null
     },
@@ -28916,20 +29146,20 @@
     {
       "type": "convergence",
       "title": "Oman \u2014 first appearance + influence \u2192 action",
-      "score": 32.864,
+      "score": 31.398,
       "countries": [
         "OM"
       ],
       "signal_keys": [
-        "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424",
-        "ofac:ZEUS LOGISTICS GROUP (Entity)"
+        "ofac:ZEUS LOGISTICS GROUP (Entity)",
+        "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424"
       ],
       "why": "[first_appearance] ofac filed for Oman after first recorded of silence (profile score: 6). Signal: ZEUS LOGISTICS GROUP (Entity) | [influence_before_action] lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d.",
       "_components": [
         {
           "type": "first_appearance",
           "title": "Oman \u2014 ofac after first recorded silence",
-          "score": 22.732,
+          "score": 21.266,
           "countries": [
             "OM"
           ],
@@ -28946,8 +29176,8 @@
             "OM"
           ],
           "signal_keys": [
-            "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424",
-            "ofac:ZEUS LOGISTICS GROUP (Entity)"
+            "ofac:ZEUS LOGISTICS GROUP (Entity)",
+            "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424"
           ],
           "why": "lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d."
         }
@@ -28957,7 +29187,7 @@
     {
       "type": "first_appearance",
       "title": "Belarus \u2014 ofac after first recorded silence",
-      "score": 18.943,
+      "score": 17.721,
       "countries": [
         "BY"
       ],
@@ -28971,7 +29201,7 @@
     {
       "type": "first_appearance",
       "title": "Cuba \u2014 ofac after first recorded silence",
-      "score": 11.607,
+      "score": 10.859,
       "countries": [
         "CU"
       ],
