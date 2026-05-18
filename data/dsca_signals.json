@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T23:03:31.026168+00:00",
+  "generated_at": "2026-05-18T23:12:39.301711+00:00",
   "sources": [
     "dsca"
   ],
@@ -14404,6 +14404,66 @@
       "cn_number": null,
       "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/philippines-bell-505-jet-ranger-x-helicopter/",
       "wp_id": 680963
+    },
+    {
+      "iso": "KR",
+      "source": "dsca",
+      "signal_date": "2026-05-18",
+      "title": "MH-60R Multi-Mission Helicopters",
+      "value_usd": 3000000000.0,
+      "description": "Transmittal #26-45 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of the Republic of Korea for its purchase of MH-60R Multi-Mission Helicopters.",
+      "raw_score": 4.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/republic-of-korea-mh-60r-multi-mission-helicopters/",
+      "wp_id": 683481
+    },
+    {
+      "iso": "KR",
+      "source": "dsca",
+      "signal_date": "2026-05-18",
+      "title": "AH-64E Apache Upgrade Program",
+      "value_usd": 1200000000.0,
+      "description": "Transmittal #26-43 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of the Republic of Korea for its AH-64E Apache Upgrade Program.",
+      "raw_score": 4.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/republic-of-korea-ah-64e-apache-upgrade-program/",
+      "wp_id": 683468
+    },
+    {
+      "iso": "IN",
+      "source": "dsca",
+      "signal_date": "2026-05-18",
+      "title": "Sustainment Support for M777A2 Ultra-Light Howitzers",
+      "value_usd": 230000000.0,
+      "description": "Transmittal #26-48 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of India sustainment support for M777A2 Ultra-Light Howitzers.",
+      "raw_score": 7.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/india-sustainment-support-for-m777a2-ultra-light-howitzers/",
+      "wp_id": 683465
+    },
+    {
+      "iso": "IN",
+      "source": "dsca",
+      "signal_date": "2026-05-18",
+      "title": "Apache Helicopters Follow-on Support",
+      "value_usd": 198200000.0,
+      "description": "Transmittal #26-26 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of India for its purchase of Apache Helicopters follow-on support services and related equipment.",
+      "raw_score": 7.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/india-apache-helicopters-follow-on-support/",
+      "wp_id": 683462
+    },
+    {
+      "iso": "BE",
+      "source": "dsca",
+      "signal_date": "2026-05-18",
+      "title": "AGM-184 Joint Strike Missiles",
+      "value_usd": 236000000.0,
+      "description": "Transmittal #26-52 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Belgium for AGM-184 Joint Strike Missiles and related equipment.",
+      "raw_score": 2.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/belgium-agm-184-joint-strike-missiles/",
+      "wp_id": 683455
     }
   ]
 }

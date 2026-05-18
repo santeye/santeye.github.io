@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T23:05:45.794998+00:00",
+  "generated_at": "2026-05-18T23:14:22.729364+00:00",
   "sources": [
     "lda"
   ],
@@ -12920,6 +12920,121 @@
       ],
       "url": "https://lda.gov/filings/public/filing/4548a597-7ed8-463f-84a0-a1686ec49931/print/",
       "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "c9237941-8035-4584-b81b-18f8aa7ad8d5",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-18",
+      "title": "Defense \u2014 Organogenesis via Donovan Strategies Llc",
+      "value_usd": null,
+      "description": "Funding for regenerative medicine products",
+      "lobbying_firm": "Donovan Strategies Llc",
+      "registrant_id": 401107207,
+      "client_name": "Organogenesis",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/c9237941-8035-4584-b81b-18f8aa7ad8d5/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "0b77842e-ccb5-4e18-86c1-278bbf65b731",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-18",
+      "title": "Energy, Science/Technology, Banking \u2014 Riot Platforms, Inc. via Cornerstone Government Affairs, Inc.",
+      "value_usd": null,
+      "description": "Engage and educate lawmakers on policy issues related to bitcoin mining, data center use, and energy consumption.",
+      "lobbying_firm": "Cornerstone Government Affairs, Inc.",
+      "registrant_id": 75557,
+      "client_name": "Riot Platforms, Inc.",
+      "issue_codes": [
+        "BAN",
+        "ECN",
+        "ENG",
+        "FIN",
+        "RES",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/0b77842e-ccb5-4e18-86c1-278bbf65b731/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "c384bdb2-15dd-4f56-ab0e-8a7026293448",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-18",
+      "title": "Defense \u2014 Saronic via The Vm Group",
+      "value_usd": null,
+      "description": "shipbuilding",
+      "lobbying_firm": "The Vm Group",
+      "registrant_id": 401110458,
+      "client_name": "Saronic",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/c384bdb2-15dd-4f56-ab0e-8a7026293448/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "3eb7125d-73af-4e96-be0c-3fd7f451d126",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-18",
+      "title": "Defense \u2014 Foundry Robotics via The Vm Group",
+      "value_usd": null,
+      "description": "Manufacturing",
+      "lobbying_firm": "The Vm Group",
+      "registrant_id": 401110458,
+      "client_name": "Foundry Robotics",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/3eb7125d-73af-4e96-be0c-3fd7f451d126/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "1bc533b6-a98f-4d02-a7e2-4e754260bda1",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-18",
+      "title": "Energy, Government, Trucking \u2014 Abco Supply, Llc via Tsg Advocates Dc, Llc",
+      "value_usd": null,
+      "description": "Government and appropriations support",
+      "lobbying_firm": "Tsg Advocates Dc, Llc",
+      "registrant_id": 401109292,
+      "client_name": "Abco Supply, Llc",
+      "issue_codes": [
+        "ENG",
+        "GOV",
+        "TRU"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1bc533b6-a98f-4d02-a7e2-4e754260bda1/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "82c38907-f1c9-4648-9d63-97cbf28b7a7a",
+      "iso": "BR",
+      "source": "lda",
+      "signal_date": "2026-05-18",
+      "title": "Trade \u2014 Abics - Brazilian Assoc. Of Instant Coffee (Obo Barralmjorge Consultores Ltda) via Lbp Consulting",
+      "value_usd": null,
+      "description": "Brazil; Exempt Instant Coffee (HTS 2101.11.21) from Section 122 tariffs. Include instant coffee in AnnexII Exemption list.",
+      "lobbying_firm": "Lbp Consulting",
+      "registrant_id": 401110610,
+      "client_name": "Abics - Brazilian Assoc. Of Instant Coffee (Obo Barralmjorge Consultores Ltda)",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/82c38907-f1c9-4648-9d63-97cbf28b7a7a/print/",
+      "raw_score": 5.0,
       "weight": 1.0
     }
   ]

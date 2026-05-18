@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T23:03:37.462739+00:00",
+  "generated_at": "2026-05-18T23:14:21.137474+00:00",
   "sources": [
     "ofac"
   ],
@@ -2861,6 +2861,136 @@
         "NPWMD"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57614"
+    },
+    {
+      "uid": 57723,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-05-18",
+      "title": "Rosabel GAMON VERDE (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57723"
+    },
+    {
+      "uid": 57725,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-05-18",
+      "title": "Juan Esteban LAZO HERNANDEZ (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57725"
+    },
+    {
+      "uid": 57726,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-05-18",
+      "title": "Vicente DE LA O LEVY (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57726"
+    },
+    {
+      "uid": 57727,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-05-18",
+      "title": "Mayra AREVICH MARIN (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57727"
+    },
+    {
+      "uid": 57728,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-05-18",
+      "title": "Jose Miguel GOMEZ DEL VALLIN (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57728"
+    },
+    {
+      "uid": 57729,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-05-18",
+      "title": "Raul VILLAR KESSELL (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57729"
+    },
+    {
+      "uid": 57730,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-05-18",
+      "title": "Roberto Tomas MORALES OJEDA (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57730"
+    },
+    {
+      "uid": 57731,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-05-18",
+      "title": "Eugenio Armando RABILERO AGUILERA (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57731"
+    },
+    {
+      "uid": 57732,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-05-18",
+      "title": "Joaquin QUINTAS SOLA (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57732"
+    },
+    {
+      "uid": 57733,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-05-18",
+      "title": "DIRECTORATE OF INTELLIGENCE OF CUBA (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57733"
     }
   ]
 }

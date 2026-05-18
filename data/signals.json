@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T23:06:01.833763+00:00",
+  "generated_at": "2026-05-18T23:14:46.283552+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,305 @@
     "sam"
   ],
   "signals": [
+    {
+      "iso": "KR",
+      "source": "dsca",
+      "signal_date": "2026-05-18",
+      "title": "MH-60R Multi-Mission Helicopters",
+      "value_usd": 3000000000.0,
+      "description": "Transmittal #26-45 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of the Republic of Korea for its purchase of MH-60R Multi-Mission Helicopters.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/republic-of-korea-mh-60r-multi-mission-helicopters/",
+      "wp_id": 683481,
+      "profile": {
+        "name": "South Korea",
+        "score": 4,
+        "factors": [
+          "US basing",
+          "nuclear program",
+          "regional power"
+        ],
+        "rationale": "Major US basing \u2014 28,000 troops, USFK (+1), latent nuclear capability \u2014 active discussion of indigenous program (+2), regional power and semiconductor/industrial hub (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.2607840941039747,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "KR",
+      "source": "dsca",
+      "signal_date": "2026-05-18",
+      "title": "AH-64E Apache Upgrade Program",
+      "value_usd": 1200000000.0,
+      "description": "Transmittal #26-43 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of the Republic of Korea for its AH-64E Apache Upgrade Program.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/republic-of-korea-ah-64e-apache-upgrade-program/",
+      "wp_id": 683468,
+      "profile": {
+        "name": "South Korea",
+        "score": 4,
+        "factors": [
+          "US basing",
+          "nuclear program",
+          "regional power"
+        ],
+        "rationale": "Major US basing \u2014 28,000 troops, USFK (+1), latent nuclear capability \u2014 active discussion of indigenous program (+2), regional power and semiconductor/industrial hub (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.230938593453572,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "IN",
+      "source": "dsca",
+      "signal_date": "2026-05-18",
+      "title": "Sustainment Support for M777A2 Ultra-Light Howitzers",
+      "value_usd": 230000000.0,
+      "description": "Transmittal #26-48 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of India sustainment support for M777A2 Ultra-Light Howitzers.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/india-sustainment-support-for-m777a2-ultra-light-howitzers/",
+      "wp_id": 683465,
+      "profile": {
+        "name": "India",
+        "score": 7,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "strategic minerals",
+          "Indian Ocean",
+          "US partner"
+        ],
+        "rationale": "Nuclear weapons program (+2), regional power (+1), strategic minerals including rare earths (+2), Indian Ocean chokepoint adjacency \u2014 controls Andaman sea lanes (+1), major US security partner and arms customer (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.1771295877013195,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "IN",
+      "source": "dsca",
+      "signal_date": "2026-05-18",
+      "title": "Apache Helicopters Follow-on Support",
+      "value_usd": 198200000.0,
+      "description": "Transmittal #26-26 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of India for its purchase of Apache Helicopters follow-on support services and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/india-apache-helicopters-follow-on-support/",
+      "wp_id": 683462,
+      "profile": {
+        "name": "India",
+        "score": 7,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "strategic minerals",
+          "Indian Ocean",
+          "US partner"
+        ],
+        "rationale": "Nuclear weapons program (+2), regional power (+1), strategic minerals including rare earths (+2), Indian Ocean chokepoint adjacency \u2014 controls Andaman sea lanes (+1), major US security partner and arms customer (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.1722827737611943,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "BE",
+      "source": "dsca",
+      "signal_date": "2026-05-18",
+      "title": "AGM-184 Joint Strike Missiles",
+      "value_usd": 236000000.0,
+      "description": "Transmittal #26-52 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Belgium for AGM-184 Joint Strike Missiles and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/belgium-agm-184-joint-strike-missiles/",
+      "wp_id": 683455,
+      "profile": {
+        "name": "Belgium",
+        "score": 2,
+        "factors": [
+          "NATO HQ",
+          "nuclear hosting"
+        ],
+        "rationale": "NATO HQ and EU political center (+1), US tactical nuclear weapons hosted (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.177968400222758,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "c9237941-8035-4584-b81b-18f8aa7ad8d5",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-18",
+      "title": "Defense \u2014 Organogenesis via Donovan Strategies Llc",
+      "value_usd": null,
+      "description": "Funding for regenerative medicine products",
+      "lobbying_firm": "Donovan Strategies Llc",
+      "registrant_id": 401107207,
+      "client_name": "Organogenesis",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/c9237941-8035-4584-b81b-18f8aa7ad8d5/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "0b77842e-ccb5-4e18-86c1-278bbf65b731",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-18",
+      "title": "Energy, Science/Technology, Banking \u2014 Riot Platforms, Inc. via Cornerstone Government Affairs, Inc.",
+      "value_usd": null,
+      "description": "Engage and educate lawmakers on policy issues related to bitcoin mining, data center use, and energy consumption.",
+      "lobbying_firm": "Cornerstone Government Affairs, Inc.",
+      "registrant_id": 75557,
+      "client_name": "Riot Platforms, Inc.",
+      "issue_codes": [
+        "BAN",
+        "ECN",
+        "ENG",
+        "FIN",
+        "RES",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/0b77842e-ccb5-4e18-86c1-278bbf65b731/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "c384bdb2-15dd-4f56-ab0e-8a7026293448",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-18",
+      "title": "Defense \u2014 Saronic via The Vm Group",
+      "value_usd": null,
+      "description": "shipbuilding",
+      "lobbying_firm": "The Vm Group",
+      "registrant_id": 401110458,
+      "client_name": "Saronic",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/c384bdb2-15dd-4f56-ab0e-8a7026293448/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "3eb7125d-73af-4e96-be0c-3fd7f451d126",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-18",
+      "title": "Defense \u2014 Foundry Robotics via The Vm Group",
+      "value_usd": null,
+      "description": "Manufacturing",
+      "lobbying_firm": "The Vm Group",
+      "registrant_id": 401110458,
+      "client_name": "Foundry Robotics",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/3eb7125d-73af-4e96-be0c-3fd7f451d126/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "1bc533b6-a98f-4d02-a7e2-4e754260bda1",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-18",
+      "title": "Energy, Government, Trucking \u2014 Abco Supply, Llc via Tsg Advocates Dc, Llc",
+      "value_usd": null,
+      "description": "Government and appropriations support",
+      "lobbying_firm": "Tsg Advocates Dc, Llc",
+      "registrant_id": 401109292,
+      "client_name": "Abco Supply, Llc",
+      "issue_codes": [
+        "ENG",
+        "GOV",
+        "TRU"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1bc533b6-a98f-4d02-a7e2-4e754260bda1/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "82c38907-f1c9-4648-9d63-97cbf28b7a7a",
+      "iso": "BR",
+      "source": "lda",
+      "signal_date": "2026-05-18",
+      "title": "Trade \u2014 Abics - Brazilian Assoc. Of Instant Coffee (Obo Barralmjorge Consultores Ltda) via Lbp Consulting",
+      "value_usd": null,
+      "description": "Brazil; Exempt Instant Coffee (HTS 2101.11.21) from Section 122 tariffs. Include instant coffee in AnnexII Exemption list.",
+      "lobbying_firm": "Lbp Consulting",
+      "registrant_id": 401110610,
+      "client_name": "Abics - Brazilian Assoc. Of Instant Coffee (Obo Barralmjorge Consultores Ltda)",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/82c38907-f1c9-4648-9d63-97cbf28b7a7a/print/",
+      "profile": {
+        "name": "Brazil",
+        "score": 5,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "strategic minerals",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major pre-salt hydrocarbon reserves (+2), regional power (+1), strategic minerals including niobium (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57723,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-05-18",
+      "title": "Rosabel GAMON VERDE (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57723",
+      "profile": {
+        "name": "Cuba",
+        "score": 4,
+        "factors": [
+          "sanctions",
+          "proxy hub",
+          "Western Hemisphere",
+          "Russian/Chinese presence"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active US sanctions regime (+1), Russian/Chinese intelligence infrastructure (+1), regional proxy hub (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "filing_uuid": "0c1dc47a-508b-4448-a901-f597ae8ac216",
       "iso": "DK",
@@ -29146,20 +29445,20 @@
     {
       "type": "convergence",
       "title": "Oman \u2014 first appearance + influence \u2192 action",
-      "score": 31.398,
+      "score": 27.543,
       "countries": [
         "OM"
       ],
       "signal_keys": [
-        "ofac:ZEUS LOGISTICS GROUP (Entity)",
-        "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424"
+        "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424",
+        "ofac:ZEUS LOGISTICS GROUP (Entity)"
       ],
       "why": "[first_appearance] ofac filed for Oman after first recorded of silence (profile score: 6). Signal: ZEUS LOGISTICS GROUP (Entity) | [influence_before_action] lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d.",
       "_components": [
         {
           "type": "first_appearance",
           "title": "Oman \u2014 ofac after first recorded silence",
-          "score": 21.266,
+          "score": 17.411,
           "countries": [
             "OM"
           ],
@@ -29176,8 +29475,8 @@
             "OM"
           ],
           "signal_keys": [
-            "ofac:ZEUS LOGISTICS GROUP (Entity)",
-            "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424"
+            "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424",
+            "ofac:ZEUS LOGISTICS GROUP (Entity)"
           ],
           "why": "lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d."
         }
@@ -29186,29 +29485,30 @@
     },
     {
       "type": "first_appearance",
-      "title": "Belarus \u2014 ofac after first recorded silence",
-      "score": 17.721,
+      "title": "South Korea \u2014 dsca after first recorded silence",
+      "score": 20.566,
       "countries": [
-        "BY"
+        "KR"
       ],
       "signal_keys": [
-        "ofac:ARMORY ALLIANCE LLC (Entity)",
-        "ofac:Mohammed Ali TOLIBOV (Individual)"
+        "dsca:MH-60R Multi-Mission Helicopters",
+        "dsca:AH-64E Apache Upgrade Program"
       ],
-      "why": "ofac filed for Belarus after first recorded of silence (profile score: 5). Signal: ARMORY ALLIANCE LLC (Entity)",
+      "why": "dsca filed for South Korea after first recorded of silence (profile score: 4). Signal: MH-60R Multi-Mission Helicopters",
       "narrative": null
     },
     {
       "type": "first_appearance",
       "title": "Cuba \u2014 ofac after first recorded silence",
-      "score": 10.859,
+      "score": 18.51,
       "countries": [
         "CU"
       ],
       "signal_keys": [
+        "ofac:Rosabel GAMON VERDE (Individual)",
         "ofac:Ania Guillermina LASTRES MORERA (Individ"
       ],
-      "why": "ofac filed for Cuba after first recorded of silence (profile score: 4). Signal: Ania Guillermina LASTRES MORERA (Individual)",
+      "why": "ofac filed for Cuba after first recorded of silence (profile score: 4). Signal: Rosabel GAMON VERDE (Individual)",
       "narrative": null
     }
   ]

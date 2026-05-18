@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T23:05:46.686339+00:00",
+  "generated_at": "2026-05-18T23:14:23.617886+00:00",
   "sources": [
     "federalregister"
   ],
@@ -6667,6 +6667,39 @@
       "description": "Renewal of Federal Advisory Committee. \u00b7 The Department of War (DoW) is publishing this notice to announce it is renewing the Air University Board of Visitors (AU BoV) as a discretionary Federal advisory committee.",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/05/15/2026-09721/renewal-of-department-of-defense-federal-advisory-committees-air-university-board-of-visitors"
+    },
+    {
+      "document_number": "2026-09941",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-18",
+      "title": "Electronic Furnishing of Payee Statements Regarding Digital Asset Sales by Brokers; Hearing",
+      "value_usd": null,
+      "description": "Notice of proposed rulemaking; notice of hearing. \u00b7 This document provides a notice of public hearing on the notice of proposed rules for electronic furnishing of payee statements by brokers with respect to digital asset sales.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/18/2026-09941/electronic-furnishing-of-payee-statements-regarding-digital-asset-sales-by-brokers-hearing"
+    },
+    {
+      "document_number": "2026-09916",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-18",
+      "title": "Superfund Tax on Chemical Substances; Request To Modify List of Taxable Substances; Notice of Filing for Methyl Methacrylate-ethyl Methacrylate-methacrylic Acid Copolymer in a Styrene Solution (x=75.76, y=8.46, z=1, s=168.4); Hearing",
+      "value_usd": null,
+      "description": "Notice of filing and request for comments; notice of hearing. \u00b7 This document provides a notice of public hearing on the notice of filing published in the Federal Register on Wednesday, January 14, 2026. This notice of filing announced that a petition has been filed requesting that methyl methacrylate-ethyl methacrylate- methacrylic acid copolymer in a styrene solution ((C<INF>5</INF>H<INF>8</INF>O<INF>2</INF>)<INF>x</INF>- (C<INF>6</INF>H<INF>10</INF>O<INF>2</INF>)<INF>y</INF>- (C<INF>4</INF>H<INF>6</INF>O<INF>2</INF>)<INF>z</INF>- (C<INF>8</INF>H<INF>8</INF>)<INF>s</INF>; x=75.76, y=8.46, z=1, s=168.4) be added to the list of taxable substances.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/18/2026-09916/superfund-tax-on-chemical-substances-request-to-modify-list-of-taxable-substances-notice-of-filing"
+    },
+    {
+      "document_number": "2026-09906",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-18",
+      "title": "Notice of Intent To Grant a Joint Ownership Agreement With an Exclusive Patent License",
+      "value_usd": null,
+      "description": "Notice of Intent. \u00b7 Pursuant to the Bayh-Dole Act and implementing regulations, the Department of the Air Force hereby gives notice of its intent to grant a joint ownership agreement with an exclusive (the field to include all fields) patent license to the University of Kansas Center for Technology Commercialization having a place of business at 2029 Becker Drive, Suite 142. Lawrence, Kansas 66047.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/18/2026-09906/notice-of-intent-to-grant-a-joint-ownership-agreement-with-an-exclusive-patent-license"
     }
   ]
 }
