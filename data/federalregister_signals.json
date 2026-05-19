@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T23:14:23.617886+00:00",
+  "generated_at": "2026-05-19T23:14:35.914607+00:00",
   "sources": [
     "federalregister"
   ],
@@ -6700,6 +6700,50 @@
       "description": "Notice of Intent. \u00b7 Pursuant to the Bayh-Dole Act and implementing regulations, the Department of the Air Force hereby gives notice of its intent to grant a joint ownership agreement with an exclusive (the field to include all fields) patent license to the University of Kansas Center for Technology Commercialization having a place of business at 2029 Becker Drive, Suite 142. Lawrence, Kansas 66047.",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/05/18/2026-09906/notice-of-intent-to-grant-a-joint-ownership-agreement-with-an-exclusive-patent-license"
+    },
+    {
+      "document_number": "2026-10037",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-19",
+      "title": "Preemption Determination: State Interest-on-Escrow Laws",
+      "value_usd": null,
+      "description": "Final rule. \u00b7 The OCC is issuing a preemption determination concluding that Federal law preempts State laws that restrict OCC-regulated banks' flexibility to decide whether and to what extent to pay interest or other compensation on funds placed in real estate escrow accounts; or assess fees in connection with such accounts. This preemption determination will provide much-needed clarity to banks and other stakeholders.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/19/2026-10037/preemption-determination-state-interest-on-escrow-laws"
+    },
+    {
+      "document_number": "2026-10036",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-19",
+      "title": "Real Estate Lending Escrow Accounts",
+      "value_usd": null,
+      "description": "Final rule. \u00b7 The OCC is issuing a final rule to codify longstanding and recognized powers of national banks and Federal savings associations (collectively, banks) to establish or maintain real estate lending escrow accounts and to exercise flexibility in making business judgments as to the terms and conditions of such accounts, including whether and to what extent to offer any compensation or to assess any fees related thereto.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/19/2026-10036/real-estate-lending-escrow-accounts"
+    },
+    {
+      "document_number": "2026-09989",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-19",
+      "title": "List of Countries Requiring Cooperation With an International Boycott",
+      "value_usd": null,
+      "description": "Notice",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/19/2026-09989/list-of-countries-requiring-cooperation-with-an-international-boycott"
+    },
+    {
+      "document_number": "2026-09952",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-19",
+      "title": "Determination and Certification of Countries Not Cooperating Fully With Antiterrorism Efforts",
+      "value_usd": null,
+      "description": "Notice",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/19/2026-09952/determination-and-certification-of-countries-not-cooperating-fully-with-antiterrorism-efforts"
     }
   ]
 }

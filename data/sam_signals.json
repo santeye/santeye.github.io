@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T23:14:10.110935+00:00",
+  "generated_at": "2026-05-19T23:14:17.159406+00:00",
   "sources": [
     "sam"
   ],
@@ -66,6 +66,15 @@
       "value_usd": null,
       "description": "Justification \u00b7 https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=5bb99a9ffe2c4a7a910ee0bd3305d35b",
       "page_url": "https://sam.gov/workspace/contract/opp/5bb99a9ffe2c4a7a910ee0bd3305d35b/view"
+    },
+    {
+      "iso": "UZ",
+      "source": "sam",
+      "signal_date": "2026-05-19",
+      "title": "19UZ8026Q0018 Power Generators maintenance services for the U.S. Embassy Tashkent.",
+      "value_usd": null,
+      "description": "Combined Synopsis/Solicitation \u00b7 https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ff54ee27e1b94a52b929f95a213e303c",
+      "page_url": "https://sam.gov/workspace/contract/opp/ff54ee27e1b94a52b929f95a213e303c/view"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T23:14:46.283552+00:00",
+  "generated_at": "2026-05-19T23:14:54.520048+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,454 @@
     "sam"
   ],
   "signals": [
+    {
+      "filing_uuid": "40acbf03-979d-4271-b4e3-6216e68c5dd4",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-19",
+      "title": "Energy \u2014 Energos Infrastructure Management Llc via Brownstein Hyatt Farber Schreck, Llp",
+      "value_usd": null,
+      "description": "Issues related to global LNG delivery and critical floating LNG infrastructure.",
+      "lobbying_firm": "Brownstein Hyatt Farber Schreck, Llp",
+      "registrant_id": 7257,
+      "client_name": "Energos Infrastructure Management Llc",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/40acbf03-979d-4271-b4e3-6216e68c5dd4/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "d0eb279d-cbb4-4e47-89d9-728cd8275315",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-19",
+      "title": "Trade, Agriculture \u2014 Uni Group Ag, Llc via Checkmate Government Relations",
+      "value_usd": null,
+      "description": "Advocacy related to agriculture and trade.",
+      "lobbying_firm": "Checkmate Government Relations",
+      "registrant_id": 401109039,
+      "client_name": "Uni Group Ag, Llc",
+      "issue_codes": [
+        "AGR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/d0eb279d-cbb4-4e47-89d9-728cd8275315/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "5dd72c45-0b0e-4e9c-86e0-b72ac773c5e6",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-19",
+      "title": "Defense \u2014 Cartridge Technologies, Llc via Checkmate Government Relations",
+      "value_usd": null,
+      "description": "Issues regarding navigating the Pentagon's acquisition process",
+      "lobbying_firm": "Checkmate Government Relations",
+      "registrant_id": 401109039,
+      "client_name": "Cartridge Technologies, Llc",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5dd72c45-0b0e-4e9c-86e0-b72ac773c5e6/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "24c0a624-65f3-4528-8a73-a73eb4606057",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-19",
+      "title": "Energy \u2014 Blue Diamond Atomics via Natural State Consulting And Strategies",
+      "value_usd": null,
+      "description": "Nuclear Fuel Recycling",
+      "lobbying_firm": "Natural State Consulting And Strategies",
+      "registrant_id": 401108145,
+      "client_name": "Blue Diamond Atomics",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/24c0a624-65f3-4528-8a73-a73eb4606057/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "19c777f5-0652-40df-8f77-5a1c7424c9c6",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-19",
+      "title": "Defense, Homeland Security, Health \u2014 Poplicus Incorporated Dba Govini via Checkmate Government Relations",
+      "value_usd": null,
+      "description": "Issues regarding gaining greater access to defense acquisition opportunities.",
+      "lobbying_firm": "Checkmate Government Relations",
+      "registrant_id": 401109039,
+      "client_name": "Poplicus Incorporated Dba Govini",
+      "issue_codes": [
+        "DEF",
+        "HCR",
+        "HOM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/19c777f5-0652-40df-8f77-5a1c7424c9c6/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "2ce589cb-7d6b-4695-9138-59159ebcb1bb",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-19",
+      "title": "Defense \u2014 Strydent Autonomous Technologies via Potomac Strategic Consulting Llc",
+      "value_usd": null,
+      "description": "Issues related to undersea autonomous system development and procurement",
+      "lobbying_firm": "Potomac Strategic Consulting Llc",
+      "registrant_id": 401110345,
+      "client_name": "Strydent Autonomous Technologies",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/2ce589cb-7d6b-4695-9138-59159ebcb1bb/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 55822,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "Sherif Ahmed Ewis AHMED (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HASM)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=55822",
+      "profile": {
+        "name": "Turkey",
+        "score": 8,
+        "factors": [
+          "maritime chokepoint",
+          "Turkish Straits",
+          "Bosphorus",
+          "nuclear hosting",
+          "US basing",
+          "regional power",
+          "proxy hub"
+        ],
+        "rationale": "Controls Turkish Straits \u2014 Bosphorus and Dardanelles, only Black Sea exit (+3), US nuclear weapons at Incirlik (+2), major US basing (+1), regional power \u2014 NATO member playing both sides (+1), proxy hub Syria/Libya/Azerbaijan/Ukraine (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 56022,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "Karim Sayed Ahmed MOGHNY (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HAMAS; Linked To: HASM)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56022",
+      "profile": {
+        "name": "Turkey",
+        "score": 8,
+        "factors": [
+          "maritime chokepoint",
+          "Turkish Straits",
+          "Bosphorus",
+          "nuclear hosting",
+          "US basing",
+          "regional power",
+          "proxy hub"
+        ],
+        "rationale": "Controls Turkish Straits \u2014 Bosphorus and Dardanelles, only Black Sea exit (+3), US nuclear weapons at Incirlik (+2), major US basing (+1), regional power \u2014 NATO member playing both sides (+1), proxy hub Syria/Libya/Azerbaijan/Ukraine (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 56034,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "Muhammad Jamal Hassan AL-NAJJAR (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HAMAS)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56034",
+      "profile": {
+        "name": "Turkey",
+        "score": 8,
+        "factors": [
+          "maritime chokepoint",
+          "Turkish Straits",
+          "Bosphorus",
+          "nuclear hosting",
+          "US basing",
+          "regional power",
+          "proxy hub"
+        ],
+        "rationale": "Controls Turkish Straits \u2014 Bosphorus and Dardanelles, only Black Sea exit (+3), US nuclear weapons at Incirlik (+2), major US basing (+1), regional power \u2014 NATO member playing both sides (+1), proxy hub Syria/Libya/Azerbaijan/Ukraine (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57653,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "BESTFORTUNA COMPANY LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57653",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57659,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "BOLD TRADING FZE (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57659",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57670,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "GLOBAL FORTUNE SHIPPING LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57670",
+      "profile": {
+        "name": "United Kingdom",
+        "score": 5,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "US partner",
+          "maritime chokepoint"
+        ],
+        "rationale": "Active nuclear weapons program \u2014 Trident (+2), regional power and global basing network (+1), major US interoperability partner \u2014 Five Eyes, AUKUS (+1), controls Gibraltar and Diego Garcia chokepoints (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57686,
+      "iso": "PA",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "AQUILA WORLDWIDE MARINE DEVELOPMENTS CORP. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57686",
+      "profile": {
+        "name": "Panama",
+        "score": 5,
+        "factors": [
+          "maritime chokepoint",
+          "Panama Canal",
+          "Western Hemisphere",
+          "BRI exposure"
+        ],
+        "rationale": "Panama Canal \u2014 Western Hemisphere chokepoint connecting Atlantic and Pacific (+3), Western Hemisphere presence (+1), Chinese BRI/port operator influence (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57695,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "EBRAHIMI AND ASSOCIATES PARTNERSHIP COMPANY (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57695",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57696,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "Yousef EBRAHIMI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: EBRAHIMI AND ASSOCIATES PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57696",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57697,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "Ali Hazrati CHAKHERLO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: EBRAHIMI AND ASSOCIATES PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57697",
+      "profile": {
+        "name": "Turkey",
+        "score": 8,
+        "factors": [
+          "maritime chokepoint",
+          "Turkish Straits",
+          "Bosphorus",
+          "nuclear hosting",
+          "US basing",
+          "regional power",
+          "proxy hub"
+        ],
+        "rationale": "Controls Turkish Straits \u2014 Bosphorus and Dardanelles, only Black Sea exit (+3), US nuclear weapons at Incirlik (+2), major US basing (+1), regional power \u2014 NATO member playing both sides (+1), proxy hub Syria/Libya/Azerbaijan/Ukraine (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "UZ",
+      "source": "sam",
+      "signal_date": "2026-05-19",
+      "title": "19UZ8026Q0018 Power Generators maintenance services for the U.S. Embassy Tashkent.",
+      "value_usd": null,
+      "description": "Combined Synopsis/Solicitation \u00b7 https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ff54ee27e1b94a52b929f95a213e303c",
+      "page_url": "https://sam.gov/workspace/contract/opp/ff54ee27e1b94a52b929f95a213e303c/view",
+      "profile": {
+        "name": "Uzbekistan",
+        "score": 3,
+        "factors": [
+          "strategic minerals",
+          "uranium",
+          "BRI exposure"
+        ],
+        "rationale": "Strategic minerals \u2014 uranium, gold, copper (+2), BRI/Chinese infrastructure exposure (+1)"
+      },
+      "layer": "procurement",
+      "quality": 0.7,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "iso": "KR",
       "source": "dsca",
@@ -279,6 +727,28 @@
         ],
         "rationale": "Western Hemisphere presence (+1), major pre-salt hydrocarbon reserves (+2), regional power (+1), strategic minerals including niobium (+1)"
       },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "e5c1843e-dce9-41bd-8fab-c726f24c2205",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-18",
+      "title": "Trade, Tariffs \u2014 Charter Brokerage Llc via Ballard Partners, Llc",
+      "value_usd": null,
+      "description": "Legislative issues impacting duty drawback regulations; FY2026 Budget Proposal; FY2026 Department of Homeland Security A\u2026",
+      "lobbying_firm": "Ballard Partners, Llc",
+      "registrant_id": 401104288,
+      "client_name": "Charter Brokerage Llc",
+      "issue_codes": [
+        "TAR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e5c1843e-dce9-41bd-8fab-c726f24c2205/print/",
+      "profile": null,
       "layer": "influence",
       "quality": 0.5,
       "dollar_mod": 1.0,
@@ -29445,7 +29915,7 @@
     {
       "type": "convergence",
       "title": "Oman \u2014 first appearance + influence \u2192 action",
-      "score": 27.543,
+      "score": 26.42,
       "countries": [
         "OM"
       ],
@@ -29458,7 +29928,7 @@
         {
           "type": "first_appearance",
           "title": "Oman \u2014 ofac after first recorded silence",
-          "score": 17.411,
+          "score": 16.288,
           "countries": [
             "OM"
           ],
@@ -29485,8 +29955,22 @@
     },
     {
       "type": "first_appearance",
+      "title": "Panama \u2014 ofac after first recorded silence",
+      "score": 23.137,
+      "countries": [
+        "PA"
+      ],
+      "signal_keys": [
+        "ofac:AQUILA WORLDWIDE MARINE DEVELOPMENTS COR",
+        "ofac:NAXOS MARITIME AND TRADING S.A. (Entity)"
+      ],
+      "why": "ofac filed for Panama after first recorded of silence (profile score: 5). Signal: AQUILA WORLDWIDE MARINE DEVELOPMENTS CORP. (Entity)",
+      "narrative": null
+    },
+    {
+      "type": "first_appearance",
       "title": "South Korea \u2014 dsca after first recorded silence",
-      "score": 20.566,
+      "score": 19.24,
       "countries": [
         "KR"
       ],
@@ -29495,20 +29979,6 @@
         "dsca:AH-64E Apache Upgrade Program"
       ],
       "why": "dsca filed for South Korea after first recorded of silence (profile score: 4). Signal: MH-60R Multi-Mission Helicopters",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "Cuba \u2014 ofac after first recorded silence",
-      "score": 18.51,
-      "countries": [
-        "CU"
-      ],
-      "signal_keys": [
-        "ofac:Rosabel GAMON VERDE (Individual)",
-        "ofac:Ania Guillermina LASTRES MORERA (Individ"
-      ],
-      "why": "ofac filed for Cuba after first recorded of silence (profile score: 4). Signal: Rosabel GAMON VERDE (Individual)",
       "narrative": null
     }
   ]

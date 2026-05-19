@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T23:14:22.729364+00:00",
+  "generated_at": "2026-05-19T23:14:34.937340+00:00",
   "sources": [
     "lda"
   ],
@@ -13035,6 +13035,136 @@
       ],
       "url": "https://lda.gov/filings/public/filing/82c38907-f1c9-4648-9d63-97cbf28b7a7a/print/",
       "raw_score": 5.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "e5c1843e-dce9-41bd-8fab-c726f24c2205",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-18",
+      "title": "Trade, Tariffs \u2014 Charter Brokerage Llc via Ballard Partners, Llc",
+      "value_usd": null,
+      "description": "Legislative issues impacting duty drawback regulations; FY2026 Budget Proposal; FY2026 Department of Homeland Security A\u2026",
+      "lobbying_firm": "Ballard Partners, Llc",
+      "registrant_id": 401104288,
+      "client_name": "Charter Brokerage Llc",
+      "issue_codes": [
+        "TAR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e5c1843e-dce9-41bd-8fab-c726f24c2205/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "40acbf03-979d-4271-b4e3-6216e68c5dd4",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-19",
+      "title": "Energy \u2014 Energos Infrastructure Management Llc via Brownstein Hyatt Farber Schreck, Llp",
+      "value_usd": null,
+      "description": "Issues related to global LNG delivery and critical floating LNG infrastructure.",
+      "lobbying_firm": "Brownstein Hyatt Farber Schreck, Llp",
+      "registrant_id": 7257,
+      "client_name": "Energos Infrastructure Management Llc",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/40acbf03-979d-4271-b4e3-6216e68c5dd4/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "d0eb279d-cbb4-4e47-89d9-728cd8275315",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-19",
+      "title": "Trade, Agriculture \u2014 Uni Group Ag, Llc via Checkmate Government Relations",
+      "value_usd": null,
+      "description": "Advocacy related to agriculture and trade.",
+      "lobbying_firm": "Checkmate Government Relations",
+      "registrant_id": 401109039,
+      "client_name": "Uni Group Ag, Llc",
+      "issue_codes": [
+        "AGR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/d0eb279d-cbb4-4e47-89d9-728cd8275315/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "5dd72c45-0b0e-4e9c-86e0-b72ac773c5e6",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-19",
+      "title": "Defense \u2014 Cartridge Technologies, Llc via Checkmate Government Relations",
+      "value_usd": null,
+      "description": "Issues regarding navigating the Pentagon's acquisition process",
+      "lobbying_firm": "Checkmate Government Relations",
+      "registrant_id": 401109039,
+      "client_name": "Cartridge Technologies, Llc",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5dd72c45-0b0e-4e9c-86e0-b72ac773c5e6/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "24c0a624-65f3-4528-8a73-a73eb4606057",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-19",
+      "title": "Energy \u2014 Blue Diamond Atomics via Natural State Consulting And Strategies",
+      "value_usd": null,
+      "description": "Nuclear Fuel Recycling",
+      "lobbying_firm": "Natural State Consulting And Strategies",
+      "registrant_id": 401108145,
+      "client_name": "Blue Diamond Atomics",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/24c0a624-65f3-4528-8a73-a73eb4606057/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "19c777f5-0652-40df-8f77-5a1c7424c9c6",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-19",
+      "title": "Defense, Homeland Security, Health \u2014 Poplicus Incorporated Dba Govini via Checkmate Government Relations",
+      "value_usd": null,
+      "description": "Issues regarding gaining greater access to defense acquisition opportunities.",
+      "lobbying_firm": "Checkmate Government Relations",
+      "registrant_id": 401109039,
+      "client_name": "Poplicus Incorporated Dba Govini",
+      "issue_codes": [
+        "DEF",
+        "HCR",
+        "HOM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/19c777f5-0652-40df-8f77-5a1c7424c9c6/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "2ce589cb-7d6b-4695-9138-59159ebcb1bb",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-19",
+      "title": "Defense \u2014 Strydent Autonomous Technologies via Potomac Strategic Consulting Llc",
+      "value_usd": null,
+      "description": "Issues related to undersea autonomous system development and procurement",
+      "lobbying_firm": "Potomac Strategic Consulting Llc",
+      "registrant_id": 401110345,
+      "client_name": "Strydent Autonomous Technologies",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/2ce589cb-7d6b-4695-9138-59159ebcb1bb/print/",
+      "raw_score": null,
       "weight": 1.0
     }
   ]

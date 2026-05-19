@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T23:14:21.137474+00:00",
+  "generated_at": "2026-05-19T23:14:27.979533+00:00",
   "sources": [
     "ofac"
   ],
@@ -2991,6 +2991,708 @@
         "CUBA-EO14404"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57733"
+    },
+    {
+      "uid": 55822,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "Sherif Ahmed Ewis AHMED (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HASM)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=55822"
+    },
+    {
+      "uid": 56022,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "Karim Sayed Ahmed MOGHNY (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HAMAS; Linked To: HASM)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56022"
+    },
+    {
+      "uid": 56034,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "Muhammad Jamal Hassan AL-NAJJAR (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HAMAS)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56034"
+    },
+    {
+      "uid": 57653,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "BESTFORTUNA COMPANY LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57653"
+    },
+    {
+      "uid": 57654,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "CHENG PAN CO., LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57654"
+    },
+    {
+      "uid": 57656,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "NINGBO JIARUI TRADING CO., LTD. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57656"
+    },
+    {
+      "uid": 57657,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "STARSHINE PETROCHEMICAL CORPORATION LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57657"
+    },
+    {
+      "uid": 57658,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "VIGOROUS TRADING LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57658"
+    },
+    {
+      "uid": 57659,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "BOLD TRADING FZE (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57659"
+    },
+    {
+      "uid": 57660,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "ALIEEN GOODS WHOLESALERS LLC (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57660"
+    },
+    {
+      "uid": 57661,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "SPARKLING COURAGE LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57661"
+    },
+    {
+      "uid": 57662,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "MATERIUM GROUP FZE (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57662"
+    },
+    {
+      "uid": 57663,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "GREAT SAIL SHIPPING LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57663"
+    },
+    {
+      "uid": 57665,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "MOZART MARITIME INC. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57665"
+    },
+    {
+      "uid": 57667,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "FEADSHIP (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: MOZART MARITIME INC.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57667"
+    },
+    {
+      "uid": 57668,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "SPLENDID LEXY TRADING COMPANY LTD (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57668"
+    },
+    {
+      "uid": 57669,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "VASLATI (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: SPLENDID LEXY TRADING COMPANY LTD)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57669"
+    },
+    {
+      "uid": 57670,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "GLOBAL FORTUNE SHIPPING LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57670"
+    },
+    {
+      "uid": 57671,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "MEKONG LINES INC. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57671"
+    },
+    {
+      "uid": 57672,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "DAKUSH (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: MEKONG LINES INC.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57672"
+    },
+    {
+      "uid": 57673,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "GALA ROSE (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: SPARKLING COURAGE LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57673"
+    },
+    {
+      "uid": 57674,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "ROMY LINES INCORPORATED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57674"
+    },
+    {
+      "uid": 57675,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "TEJAS (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: ROMY LINES INCORPORATED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57675"
+    },
+    {
+      "uid": 57676,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "GREAT SAIL (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: GREAT SAIL SHIPPING LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57676"
+    },
+    {
+      "uid": 57677,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "OCEAN WAVE (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: OW MARITIME INCORPORATED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57677"
+    },
+    {
+      "uid": 57678,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "LUNA LUSTER (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: GLOBAL FORTUNE SHIPPING LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57678"
+    },
+    {
+      "uid": 57679,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "ARDEN ANGEL SHIPPING COMPANY LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57679"
+    },
+    {
+      "uid": 57680,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "SWIFT FALCON (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: ARDEN ANGEL SHIPPING COMPANY LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57680"
+    },
+    {
+      "uid": 57681,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "VERDA GAS CO LTD (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57681"
+    },
+    {
+      "uid": 57682,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "MIGHTY NAVIGATOR (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: VERDA GAS CO LTD)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57682"
+    },
+    {
+      "uid": 57685,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "OCEAN MARVEL SHIPPING COMPANY LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57685"
+    },
+    {
+      "uid": 57686,
+      "iso": "PA",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "AQUILA WORLDWIDE MARINE DEVELOPMENTS CORP. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57686"
+    },
+    {
+      "uid": 57687,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "AURORA BUSINESS COMPANY LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57687"
+    },
+    {
+      "uid": 57688,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "MIDAS (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: OCEAN MARVEL SHIPPING COMPANY LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57688"
+    },
+    {
+      "uid": 57689,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "TAURUS GAS COMPANY LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57689"
+    },
+    {
+      "uid": 57690,
+      "iso": "PA",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "VEINTO GLOBAL MARINE INC. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57690"
+    },
+    {
+      "uid": 57691,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "GAS ENDURANCE (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: AQUILA WORLDWIDE MARINE DEVELOPMENTS CORP.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57691"
+    },
+    {
+      "uid": 57692,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "OCEAN RADIANCE (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: AURORA BUSINESS COMPANY LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57692"
+    },
+    {
+      "uid": 57693,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "QUANTUM STAR (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: TAURUS GAS COMPANY LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57693"
+    },
+    {
+      "uid": 57694,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "GAS STRENGTH (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: VEINTO GLOBAL MARINE INC.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57694"
+    },
+    {
+      "uid": 57695,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "EBRAHIMI AND ASSOCIATES PARTNERSHIP COMPANY (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57695"
+    },
+    {
+      "uid": 57696,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "Yousef EBRAHIMI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: EBRAHIMI AND ASSOCIATES PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57696"
+    },
+    {
+      "uid": 57697,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "Ali Hazrati CHAKHERLO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: EBRAHIMI AND ASSOCIATES PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57697"
+    },
+    {
+      "uid": 57698,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "Mahmoud EBRAHIMI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: EBRAHIMI AND ASSOCIATES PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57698"
+    },
+    {
+      "uid": 57699,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "Samad NEMATI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: EBRAHIMI AND ASSOCIATES PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57699"
+    },
+    {
+      "uid": 57700,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "GS CHEMICAL TRANSPORTATION LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57700"
+    },
+    {
+      "uid": 57701,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "SCIENCE OBEDIENT INTERNATIONAL COMPANY LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57701"
+    },
+    {
+      "uid": 57703,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "GJADES SHIPPING COMPANY LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57703"
+    },
+    {
+      "uid": 57705,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "BRIGHT GOLD (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: GS CHEMICAL TRANSPORTATION LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57705"
+    },
+    {
+      "uid": 57706,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "DOUBLE IN (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: SCIENCE OBEDIENT INTERNATIONAL COMPANY LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57706"
+    },
+    {
+      "uid": 57707,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "NARSIS (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: SUN OCEAN SHIPPING INCORPORATED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57707"
+    },
+    {
+      "uid": 57708,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "G JADES (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: GJADES SHIPPING COMPANY LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57708"
+    },
+    {
+      "uid": 57715,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "Marwan Muhammad Ayish ABU RAS (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HAMAS)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57715"
+    },
+    {
+      "uid": 57716,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-19",
+      "title": "THE PALESTINIAN SCHOLARS ASSOCIATION (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HAMAS)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57716"
     }
   ]
 }
