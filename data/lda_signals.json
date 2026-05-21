@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T23:14:34.937340+00:00",
+  "generated_at": "2026-05-21T23:11:32.441684+00:00",
   "sources": [
     "lda"
   ],
@@ -13164,6 +13164,539 @@
         "DEF"
       ],
       "url": "https://lda.gov/filings/public/filing/2ce589cb-7d6b-4695-9138-59159ebcb1bb/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "e181b3f0-1361-4544-ba6c-477e98b0dab4",
+      "iso": "NZ",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Consumer Issues, Finance, Small Business \u2014 Xero, Inc. via Franklin Square Group, Llc",
+      "value_usd": null,
+      "description": "Issues related to financial technology innovation and small businesses.",
+      "lobbying_firm": "Franklin Square Group, Llc",
+      "registrant_id": 40013096,
+      "client_name": "Xero, Inc.",
+      "issue_codes": [
+        "CPI",
+        "FIN",
+        "SMB",
+        "TAX"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e181b3f0-1361-4544-ba6c-477e98b0dab4/print/",
+      "raw_score": 2.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "3ceb5c30-8ec4-4bda-93f3-bf60aa693a17",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Finance \u2014 Peter Gunn Phillips via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims against Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Peter Gunn Phillips",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/3ceb5c30-8ec4-4bda-93f3-bf60aa693a17/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "ebd2b914-ec8a-4f09-a40d-52ad6778ca06",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Finance \u2014 Emily Margarette Chavez via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims against Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Emily Margarette Chavez",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/ebd2b914-ec8a-4f09-a40d-52ad6778ca06/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "a762a700-a441-402e-a86c-911e88187806",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Finance \u2014 John Paul Phillips via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims against Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "John Paul Phillips",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/a762a700-a441-402e-a86c-911e88187806/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "5eac0114-0219-4c53-a481-5764e80e6f67",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Finance \u2014 Andrea Phillips-Lopez via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims against Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Andrea Phillips-Lopez",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5eac0114-0219-4c53-a481-5764e80e6f67/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "da6f4dcb-3d1c-4bf9-8a68-6e937b59b6ba",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Finance \u2014 David P. Phillips via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims against Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "David P. Phillips",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/da6f4dcb-3d1c-4bf9-8a68-6e937b59b6ba/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "9974a40d-fe57-436a-8cb2-8059956655e6",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Finance \u2014 Kenneth E. Phillips via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims against Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Kenneth E. Phillips",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/9974a40d-fe57-436a-8cb2-8059956655e6/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "b32bff22-7cce-4aa3-ad88-a99253d0643c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Finance \u2014 James M. Phillips via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foeign Claims against Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "James M. Phillips",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b32bff22-7cce-4aa3-ad88-a99253d0643c/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "f8c7727f-9ee6-493a-8b71-43308345e401",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Finance \u2014 Paula Phillips Miller via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims against Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Paula Phillips Miller",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/f8c7727f-9ee6-493a-8b71-43308345e401/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "3121f0f2-1eb0-48a6-8b0c-b90e920bb15e",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Finance \u2014 Jennifer Zebooker via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims against Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Jennifer Zebooker",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/3121f0f2-1eb0-48a6-8b0c-b90e920bb15e/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "68cfbe2f-9081-40c5-a76d-a99a7a8e0a45",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Finance \u2014 Trevor Gohl via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims against Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Trevor Gohl",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/68cfbe2f-9081-40c5-a76d-a99a7a8e0a45/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "017f0575-ad7e-465d-baaf-bb1f69a73582",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Finance \u2014 Angela Leeder via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims against Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Angela Leeder",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/017f0575-ad7e-465d-baaf-bb1f69a73582/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "b89c21ab-185c-444c-90f2-d191d2268754",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Finance \u2014 Alexander Leeder via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims, against Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Alexander Leeder",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b89c21ab-185c-444c-90f2-d191d2268754/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "d35d5e0b-d661-4b44-8dd2-babfd634aa65",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Science/Technology \u2014 Valkryn Systems Inc. via Atlas Crossing Llc",
+      "value_usd": null,
+      "description": "Issues related to national security and technology.",
+      "lobbying_firm": "Atlas Crossing Llc",
+      "registrant_id": 401104906,
+      "client_name": "Valkryn Systems Inc.",
+      "issue_codes": [
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/d35d5e0b-d661-4b44-8dd2-babfd634aa65/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "b5abc01a-399e-4921-a099-e542bcc20e38",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Energy \u2014 Vanness Feldman, Llp On Behalf Of New York Power Authority via Bgr Government Affairs",
+      "value_usd": null,
+      "description": "Provide strategic counsel and advocate on issues related to nuclear energy",
+      "lobbying_firm": "Bgr Government Affairs",
+      "registrant_id": 5357,
+      "client_name": "Vanness Feldman, Llp On Behalf Of New York Power Authority",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b5abc01a-399e-4921-a099-e542bcc20e38/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "3c770d11-f216-4e0f-b8ed-bd2b5fc9acd6",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Trade, Finance \u2014 Eustace America Llc via Bgr Government Affairs",
+      "value_usd": null,
+      "description": "Provide strategic counsel and advocate on issues related to trade and financial services",
+      "lobbying_firm": "Bgr Government Affairs",
+      "registrant_id": 5357,
+      "client_name": "Eustace America Llc",
+      "issue_codes": [
+        "FIN",
+        "FOR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/3c770d11-f216-4e0f-b8ed-bd2b5fc9acd6/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "39235631-a3b8-4a3d-aae3-620bf92ed5c0",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs \u2014 Levinson Family via Bgr Government Affairs",
+      "value_usd": null,
+      "description": "Provide strategic counsel and advocate on issues related to recovery of assets held by a foreign government notwithstand\u2026",
+      "lobbying_firm": "Bgr Government Affairs",
+      "registrant_id": 5357,
+      "client_name": "Levinson Family",
+      "issue_codes": [
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/39235631-a3b8-4a3d-aae3-620bf92ed5c0/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "9681b609-d5da-49b4-b29e-8d7874246e04",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Defense, Aerospace \u2014 Impulse Space via Bgr Government Affairs",
+      "value_usd": null,
+      "description": "Provide strategic counsel and advocate on issues related to national security and space vehicles.",
+      "lobbying_firm": "Bgr Government Affairs",
+      "registrant_id": 5357,
+      "client_name": "Impulse Space",
+      "issue_codes": [
+        "AER",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/9681b609-d5da-49b4-b29e-8d7874246e04/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "05ce1659-f717-4942-adb0-96f948d05162",
+      "iso": "CO",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Tariffs \u2014 Es Windows Llc via Ballard Partners, Llc",
+      "value_usd": null,
+      "description": "Advocacy regarding aluminum import tariffs.",
+      "lobbying_firm": "Ballard Partners, Llc",
+      "registrant_id": 401104288,
+      "client_name": "Es Windows Llc",
+      "issue_codes": [
+        "TAR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/05ce1659-f717-4942-adb0-96f948d05162/print/",
+      "raw_score": 6.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "5cb0d7eb-ff40-4922-889c-37ddfa660836",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Trade, Tariffs \u2014 Polaris Industries, Inc. via Ballard Partners, Llc",
+      "value_usd": null,
+      "description": "Advocacy related to trade and tariffs.",
+      "lobbying_firm": "Ballard Partners, Llc",
+      "registrant_id": 401104288,
+      "client_name": "Polaris Industries, Inc.",
+      "issue_codes": [
+        "TAR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5cb0d7eb-ff40-4922-889c-37ddfa660836/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "a1300104-f9e5-4d91-bf52-a92a45ae6b46",
+      "iso": "JP",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Aerospace, Budget \u2014 Ispace Technologies Us, Inc. via Puzzle Box Government Relations",
+      "value_usd": null,
+      "description": "Space exploration policy and budgets.",
+      "lobbying_firm": "Puzzle Box Government Relations",
+      "registrant_id": 401109550,
+      "client_name": "Ispace Technologies Us, Inc.",
+      "issue_codes": [
+        "AER",
+        "BUD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/a1300104-f9e5-4d91-bf52-a92a45ae6b46/print/",
+      "raw_score": 6.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "347371ae-581c-4b9c-81a6-3c3c9abc4283",
+      "iso": "SG",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Natural Resources \u2014 Ark Resource Capital Llc via Hogan Lovells Us Llp",
+      "value_usd": null,
+      "description": "Issues related to the mining of critical minerals",
+      "lobbying_firm": "Hogan Lovells Us Llp",
+      "registrant_id": 18422,
+      "client_name": "Ark Resource Capital Llc",
+      "issue_codes": [
+        "NAT"
+      ],
+      "url": "https://lda.gov/filings/public/filing/347371ae-581c-4b9c-81a6-3c3c9abc4283/print/",
+      "raw_score": 5.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "8fa18bf3-0f93-432d-a0c6-9de03a06a8ad",
+      "iso": "MA",
+      "source": "lda",
+      "signal_date": "2026-05-21",
+      "title": "Government, Law Enforcement \u2014 Abdeslam Jaidi via Mintz Levin Cohn Ferris Glovsky And Popeo, P.C.",
+      "value_usd": null,
+      "description": "Morocco; Our first and only lobbying contact has been the filing of a Pardon Application letter with the Department of Justice Pa\u2026",
+      "lobbying_firm": "Mintz Levin Cohn Ferris Glovsky And Popeo, P.C.",
+      "registrant_id": 25498,
+      "client_name": "Abdeslam Jaidi",
+      "issue_codes": [
+        "GOV",
+        "LAW"
+      ],
+      "url": "https://lda.gov/filings/public/filing/8fa18bf3-0f93-432d-a0c6-9de03a06a8ad/print/",
+      "raw_score": 4.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "460162ab-6d27-4b98-af35-adebcf41417b",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-21",
+      "title": "Trade \u2014 Taap, Llc via Steptoe Llp",
+      "value_usd": null,
+      "description": "Issues related to supply chain traceability",
+      "lobbying_firm": "Steptoe Llp",
+      "registrant_id": 36710,
+      "client_name": "Taap, Llc",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/460162ab-6d27-4b98-af35-adebcf41417b/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "69d2d261-f99a-482b-a0d0-76268ac32aa4",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-21",
+      "title": "Energy, Taxation \u2014 Enviva, Llc via Miller Strategies, Llc",
+      "value_usd": null,
+      "description": "General issues related to forest biomass and Section 45Y tax credit.",
+      "lobbying_firm": "Miller Strategies, Llc",
+      "registrant_id": 401104313,
+      "client_name": "Enviva, Llc",
+      "issue_codes": [
+        "ENG",
+        "TAX"
+      ],
+      "url": "https://lda.gov/filings/public/filing/69d2d261-f99a-482b-a0d0-76268ac32aa4/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "115c0d34-6727-4f6a-bc5f-227815221a8b",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-21",
+      "title": "Defense, Foreign Affairs, Science/Technology \u2014 Shield Ai via Miller Strategies, Llc",
+      "value_usd": null,
+      "description": "Issues related to autonomous defense systems, including procurement and export.",
+      "lobbying_firm": "Miller Strategies, Llc",
+      "registrant_id": 401104313,
+      "client_name": "Shield Ai",
+      "issue_codes": [
+        "DEF",
+        "FOR",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/115c0d34-6727-4f6a-bc5f-227815221a8b/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "4cb9e297-37ce-4902-b5aa-e4845d7589b1",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-21",
+      "title": "Defense, Homeland Security \u2014 Sidewinder Enterprises, Llc via Pillsbury Winthrop Shaw Pittman Llp",
+      "value_usd": null,
+      "description": "Stockpiling of critical resources.",
+      "lobbying_firm": "Pillsbury Winthrop Shaw Pittman Llp",
+      "registrant_id": 35002,
+      "client_name": "Sidewinder Enterprises, Llc",
+      "issue_codes": [
+        "DEF",
+        "HOM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/4cb9e297-37ce-4902-b5aa-e4845d7589b1/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "b937fef1-70ee-4325-b237-1f2f385698ee",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-21",
+      "title": "Defense, Aerospace, Aviation \u2014 Venus Aerospace Corp. via Venus Aerospace Corp.",
+      "value_usd": null,
+      "description": "Defense, aerospace, hypersonics, rocket engine propulsion policy and appropriations.",
+      "lobbying_firm": "Venus Aerospace Corp.",
+      "registrant_id": 401110704,
+      "client_name": "Venus Aerospace Corp.",
+      "issue_codes": [
+        "AER",
+        "AVI",
+        "BUD",
+        "DEF",
+        "MAN"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b937fef1-70ee-4325-b237-1f2f385698ee/print/",
       "raw_score": null,
       "weight": 1.0
     }

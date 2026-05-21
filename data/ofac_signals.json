@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T23:14:27.979533+00:00",
+  "generated_at": "2026-05-21T23:11:19.993518+00:00",
   "sources": [
     "ofac"
   ],
@@ -3693,6 +3693,306 @@
         "SDGT"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57716"
+    },
+    {
+      "uid": 57107,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Armando de Jesus OJEDA AVILES (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SINALOA CARTEL)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57107"
+    },
+    {
+      "uid": 57117,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Jesus Alonso AISPURO FELIX (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SINALOA CARTEL)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57117"
+    },
+    {
+      "uid": 57118,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Rodrigo ALARCON PALOMARES (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "ILLICIT-DRUGS-EO14059"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57118"
+    },
+    {
+      "uid": 57119,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Alfredo OROZCO ROMERO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: OJEDA AVILES, Armando de Jesus)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57119"
+    },
+    {
+      "uid": 57120,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Liliana OROZCO ROMERO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: OROZCO ROMERO, Alfredo)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57120"
+    },
+    {
+      "uid": 57121,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "GORDITAS CHIWAS (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: OROZCO ROMERO, Alfredo)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57121"
+    },
+    {
+      "uid": 57122,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "GRUPO ESPECIAL MAMBA NEGRA, S. DE R.L. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: OROZCO ROMERO, Alfredo)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57122"
+    },
+    {
+      "uid": 57392,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Amalia Margarita ROMERO MORENO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: OROZCO ROMERO, Alfredo)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57392"
+    },
+    {
+      "uid": 57411,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Luis Arnulfo MORENO ZAMORA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: GONZALEZ PENUELAS, Jesus)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57411"
+    },
+    {
+      "uid": 57412,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Baltazar SAENZ AGUILAR (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: GONZALEZ PENUELAS, Jesus)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57412"
+    },
+    {
+      "uid": 57413,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Castulo BOJORQUEZ CHAPARRO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: GONZALEZ PENUELAS, Jesus)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57413"
+    },
+    {
+      "uid": 57414,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Noe de Jesus CASTRO ROCHA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: GONZALEZ PENUELAS, Jesus)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57414"
+    },
+    {
+      "uid": 57415,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Fredi Ismael GARCIA SANDOVAL (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: GONZALEZ PENUELAS, Jesus)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57415"
+    },
+    {
+      "uid": 57594,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Mohammad Reza Raouf SHEIBANI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HIZBALLAH)",
+      "programs": [
+        "SDGT",
+        "IRAN",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57594"
+    },
+    {
+      "uid": 57616,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Abdel-Mottaleb Mohamed FANICH (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57616"
+    },
+    {
+      "uid": 57713,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Hassan Nizammeddine FADLALLAH (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57713"
+    },
+    {
+      "uid": 57714,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Hussein Al-Hajj HASSAN (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57714"
+    },
+    {
+      "uid": 57722,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Ibrahim AL-MOUSSAWI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57722"
+    },
+    {
+      "uid": 57736,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Khattar NASSER ELDIN (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57736"
+    },
+    {
+      "uid": 57737,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Samir 'Adnan HAMADI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57737"
+    },
+    {
+      "uid": 57738,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Ali Ahmad SAFAWI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57738"
+    },
+    {
+      "uid": 57739,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Ahmad Asaad BAALBAKI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57739"
     }
   ]
 }

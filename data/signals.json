@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T23:14:54.520048+00:00",
+  "generated_at": "2026-05-21T23:11:47.279103+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,641 @@
     "sam"
   ],
   "signals": [
+    {
+      "filing_uuid": "8fa18bf3-0f93-432d-a0c6-9de03a06a8ad",
+      "iso": "MA",
+      "source": "lda",
+      "signal_date": "2026-05-21",
+      "title": "Government, Law Enforcement \u2014 Abdeslam Jaidi via Mintz Levin Cohn Ferris Glovsky And Popeo, P.C.",
+      "value_usd": null,
+      "description": "Morocco; Our first and only lobbying contact has been the filing of a Pardon Application letter with the Department of Justice Pa\u2026",
+      "lobbying_firm": "Mintz Levin Cohn Ferris Glovsky And Popeo, P.C.",
+      "registrant_id": 25498,
+      "client_name": "Abdeslam Jaidi",
+      "issue_codes": [
+        "GOV",
+        "LAW"
+      ],
+      "url": "https://lda.gov/filings/public/filing/8fa18bf3-0f93-432d-a0c6-9de03a06a8ad/print/",
+      "profile": {
+        "name": "Morocco",
+        "score": 4,
+        "factors": [
+          "strategic minerals",
+          "phosphates",
+          "maritime corridor",
+          "regional power"
+        ],
+        "rationale": "World's largest phosphate reserves \u2014 critical for global food security (+2), controls Gibraltar Strait approach from south (+1), regional power in Maghreb/Sahel (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "460162ab-6d27-4b98-af35-adebcf41417b",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-21",
+      "title": "Trade \u2014 Taap, Llc via Steptoe Llp",
+      "value_usd": null,
+      "description": "Issues related to supply chain traceability",
+      "lobbying_firm": "Steptoe Llp",
+      "registrant_id": 36710,
+      "client_name": "Taap, Llc",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/460162ab-6d27-4b98-af35-adebcf41417b/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "69d2d261-f99a-482b-a0d0-76268ac32aa4",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-21",
+      "title": "Energy, Taxation \u2014 Enviva, Llc via Miller Strategies, Llc",
+      "value_usd": null,
+      "description": "General issues related to forest biomass and Section 45Y tax credit.",
+      "lobbying_firm": "Miller Strategies, Llc",
+      "registrant_id": 401104313,
+      "client_name": "Enviva, Llc",
+      "issue_codes": [
+        "ENG",
+        "TAX"
+      ],
+      "url": "https://lda.gov/filings/public/filing/69d2d261-f99a-482b-a0d0-76268ac32aa4/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "115c0d34-6727-4f6a-bc5f-227815221a8b",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-21",
+      "title": "Defense, Foreign Affairs, Science/Technology \u2014 Shield Ai via Miller Strategies, Llc",
+      "value_usd": null,
+      "description": "Issues related to autonomous defense systems, including procurement and export.",
+      "lobbying_firm": "Miller Strategies, Llc",
+      "registrant_id": 401104313,
+      "client_name": "Shield Ai",
+      "issue_codes": [
+        "DEF",
+        "FOR",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/115c0d34-6727-4f6a-bc5f-227815221a8b/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "4cb9e297-37ce-4902-b5aa-e4845d7589b1",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-21",
+      "title": "Defense, Homeland Security \u2014 Sidewinder Enterprises, Llc via Pillsbury Winthrop Shaw Pittman Llp",
+      "value_usd": null,
+      "description": "Stockpiling of critical resources.",
+      "lobbying_firm": "Pillsbury Winthrop Shaw Pittman Llp",
+      "registrant_id": 35002,
+      "client_name": "Sidewinder Enterprises, Llc",
+      "issue_codes": [
+        "DEF",
+        "HOM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/4cb9e297-37ce-4902-b5aa-e4845d7589b1/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "b937fef1-70ee-4325-b237-1f2f385698ee",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-21",
+      "title": "Defense, Aerospace, Aviation \u2014 Venus Aerospace Corp. via Venus Aerospace Corp.",
+      "value_usd": null,
+      "description": "Defense, aerospace, hypersonics, rocket engine propulsion policy and appropriations.",
+      "lobbying_firm": "Venus Aerospace Corp.",
+      "registrant_id": 401110704,
+      "client_name": "Venus Aerospace Corp.",
+      "issue_codes": [
+        "AER",
+        "AVI",
+        "BUD",
+        "DEF",
+        "MAN"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b937fef1-70ee-4325-b237-1f2f385698ee/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57107,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Armando de Jesus OJEDA AVILES (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SINALOA CARTEL)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57107",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57118,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Rodrigo ALARCON PALOMARES (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "ILLICIT-DRUGS-EO14059"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57118",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57119,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Alfredo OROZCO ROMERO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: OJEDA AVILES, Armando de Jesus)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57119",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57120,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Liliana OROZCO ROMERO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: OROZCO ROMERO, Alfredo)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57120",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57411,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Luis Arnulfo MORENO ZAMORA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: GONZALEZ PENUELAS, Jesus)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57411",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57594,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-05-21",
+      "title": "Mohammad Reza Raouf SHEIBANI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HIZBALLAH)",
+      "programs": [
+        "SDGT",
+        "IRAN",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57594",
+      "profile": {
+        "name": "Lebanon",
+        "score": 4,
+        "factors": [
+          "active conflict",
+          "proxy hub",
+          "sanctions"
+        ],
+        "rationale": "Active conflict \u2014 Israeli strikes, Hezbollah war, state collapse (+2), Iran proxy hub \u2014 Hezbollah HQ (+1), active sanctions on Hezbollah networks (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "e181b3f0-1361-4544-ba6c-477e98b0dab4",
+      "iso": "NZ",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Consumer Issues, Finance, Small Business \u2014 Xero, Inc. via Franklin Square Group, Llc",
+      "value_usd": null,
+      "description": "Issues related to financial technology innovation and small businesses.",
+      "lobbying_firm": "Franklin Square Group, Llc",
+      "registrant_id": 40013096,
+      "client_name": "Xero, Inc.",
+      "issue_codes": [
+        "CPI",
+        "FIN",
+        "SMB",
+        "TAX"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e181b3f0-1361-4544-ba6c-477e98b0dab4/print/",
+      "profile": {
+        "name": "New Zealand",
+        "score": 2,
+        "factors": [
+          "US partner",
+          "strategic minerals"
+        ],
+        "rationale": "Five Eyes partner, US intelligence integration (+1), strategic minerals potential (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "3ceb5c30-8ec4-4bda-93f3-bf60aa693a17",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Finance \u2014 Peter Gunn Phillips via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims against Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Peter Gunn Phillips",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/3ceb5c30-8ec4-4bda-93f3-bf60aa693a17/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "b32bff22-7cce-4aa3-ad88-a99253d0643c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Finance \u2014 James M. Phillips via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foeign Claims against Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "James M. Phillips",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b32bff22-7cce-4aa3-ad88-a99253d0643c/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "b89c21ab-185c-444c-90f2-d191d2268754",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Finance \u2014 Alexander Leeder via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims, against Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Alexander Leeder",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b89c21ab-185c-444c-90f2-d191d2268754/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "d35d5e0b-d661-4b44-8dd2-babfd634aa65",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Science/Technology \u2014 Valkryn Systems Inc. via Atlas Crossing Llc",
+      "value_usd": null,
+      "description": "Issues related to national security and technology.",
+      "lobbying_firm": "Atlas Crossing Llc",
+      "registrant_id": 401104906,
+      "client_name": "Valkryn Systems Inc.",
+      "issue_codes": [
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/d35d5e0b-d661-4b44-8dd2-babfd634aa65/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "b5abc01a-399e-4921-a099-e542bcc20e38",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Energy \u2014 Vanness Feldman, Llp On Behalf Of New York Power Authority via Bgr Government Affairs",
+      "value_usd": null,
+      "description": "Provide strategic counsel and advocate on issues related to nuclear energy",
+      "lobbying_firm": "Bgr Government Affairs",
+      "registrant_id": 5357,
+      "client_name": "Vanness Feldman, Llp On Behalf Of New York Power Authority",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b5abc01a-399e-4921-a099-e542bcc20e38/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "3c770d11-f216-4e0f-b8ed-bd2b5fc9acd6",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs, Trade, Finance \u2014 Eustace America Llc via Bgr Government Affairs",
+      "value_usd": null,
+      "description": "Provide strategic counsel and advocate on issues related to trade and financial services",
+      "lobbying_firm": "Bgr Government Affairs",
+      "registrant_id": 5357,
+      "client_name": "Eustace America Llc",
+      "issue_codes": [
+        "FIN",
+        "FOR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/3c770d11-f216-4e0f-b8ed-bd2b5fc9acd6/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "39235631-a3b8-4a3d-aae3-620bf92ed5c0",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Foreign Affairs \u2014 Levinson Family via Bgr Government Affairs",
+      "value_usd": null,
+      "description": "Provide strategic counsel and advocate on issues related to recovery of assets held by a foreign government notwithstand\u2026",
+      "lobbying_firm": "Bgr Government Affairs",
+      "registrant_id": 5357,
+      "client_name": "Levinson Family",
+      "issue_codes": [
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/39235631-a3b8-4a3d-aae3-620bf92ed5c0/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "9681b609-d5da-49b4-b29e-8d7874246e04",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Defense, Aerospace \u2014 Impulse Space via Bgr Government Affairs",
+      "value_usd": null,
+      "description": "Provide strategic counsel and advocate on issues related to national security and space vehicles.",
+      "lobbying_firm": "Bgr Government Affairs",
+      "registrant_id": 5357,
+      "client_name": "Impulse Space",
+      "issue_codes": [
+        "AER",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/9681b609-d5da-49b4-b29e-8d7874246e04/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "05ce1659-f717-4942-adb0-96f948d05162",
+      "iso": "CO",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Tariffs \u2014 Es Windows Llc via Ballard Partners, Llc",
+      "value_usd": null,
+      "description": "Advocacy regarding aluminum import tariffs.",
+      "lobbying_firm": "Ballard Partners, Llc",
+      "registrant_id": 401104288,
+      "client_name": "Es Windows Llc",
+      "issue_codes": [
+        "TAR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/05ce1659-f717-4942-adb0-96f948d05162/print/",
+      "profile": {
+        "name": "Colombia",
+        "score": 6,
+        "factors": [
+          "active conflict",
+          "hydrocarbons",
+          "US basing",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active ELN/FARC-dissident conflict (+2), hydrocarbon reserves (+2), major US basing and regional security partner (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "5cb0d7eb-ff40-4922-889c-37ddfa660836",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Trade, Tariffs \u2014 Polaris Industries, Inc. via Ballard Partners, Llc",
+      "value_usd": null,
+      "description": "Advocacy related to trade and tariffs.",
+      "lobbying_firm": "Ballard Partners, Llc",
+      "registrant_id": 401104288,
+      "client_name": "Polaris Industries, Inc.",
+      "issue_codes": [
+        "TAR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5cb0d7eb-ff40-4922-889c-37ddfa660836/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "a1300104-f9e5-4d91-bf52-a92a45ae6b46",
+      "iso": "JP",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Aerospace, Budget \u2014 Ispace Technologies Us, Inc. via Puzzle Box Government Relations",
+      "value_usd": null,
+      "description": "Space exploration policy and budgets.",
+      "lobbying_firm": "Puzzle Box Government Relations",
+      "registrant_id": 401109550,
+      "client_name": "Ispace Technologies Us, Inc.",
+      "issue_codes": [
+        "AER",
+        "BUD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/a1300104-f9e5-4d91-bf52-a92a45ae6b46/print/",
+      "profile": {
+        "name": "Japan",
+        "score": 6,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "strategic minerals",
+          "US basing"
+        ],
+        "rationale": "Latent nuclear program \u2014 plutonium stockpile, can weaponize rapidly (+2), regional power (+1), strategic minerals processing hub (+2), major US basing \u2014 Yokosuka, Kadena, Okinawa (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "347371ae-581c-4b9c-81a6-3c3c9abc4283",
+      "iso": "SG",
+      "source": "lda",
+      "signal_date": "2026-05-20",
+      "title": "Natural Resources \u2014 Ark Resource Capital Llc via Hogan Lovells Us Llp",
+      "value_usd": null,
+      "description": "Issues related to the mining of critical minerals",
+      "lobbying_firm": "Hogan Lovells Us Llp",
+      "registrant_id": 18422,
+      "client_name": "Ark Resource Capital Llc",
+      "issue_codes": [
+        "NAT"
+      ],
+      "url": "https://lda.gov/filings/public/filing/347371ae-581c-4b9c-81a6-3c3c9abc4283/print/",
+      "profile": {
+        "name": "Singapore",
+        "score": 5,
+        "factors": [
+          "maritime chokepoint",
+          "Malacca Strait",
+          "US basing",
+          "regional hub"
+        ],
+        "rationale": "Controls eastern Malacca Strait \u2014 most critical maritime chokepoint by volume (+3), major US naval access (+1), regional financial and logistics hub (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "filing_uuid": "40acbf03-979d-4271-b4e3-6216e68c5dd4",
       "iso": "XX",
@@ -29915,7 +30550,7 @@
     {
       "type": "convergence",
       "title": "Oman \u2014 first appearance + influence \u2192 action",
-      "score": 26.42,
+      "score": 24.387,
       "countries": [
         "OM"
       ],
@@ -29928,7 +30563,7 @@
         {
           "type": "first_appearance",
           "title": "Oman \u2014 ofac after first recorded silence",
-          "score": 16.288,
+          "score": 14.255,
           "countries": [
             "OM"
           ],
@@ -29956,7 +30591,7 @@
     {
       "type": "first_appearance",
       "title": "Panama \u2014 ofac after first recorded silence",
-      "score": 23.137,
+      "score": 20.249,
       "countries": [
         "PA"
       ],
@@ -29969,16 +30604,15 @@
     },
     {
       "type": "first_appearance",
-      "title": "South Korea \u2014 dsca after first recorded silence",
-      "score": 19.24,
+      "title": "Lebanon \u2014 ofac after first recorded silence",
+      "score": 18.51,
       "countries": [
-        "KR"
+        "LB"
       ],
       "signal_keys": [
-        "dsca:MH-60R Multi-Mission Helicopters",
-        "dsca:AH-64E Apache Upgrade Program"
+        "ofac:Mohammad Reza Raouf SHEIBANI (Individual"
       ],
-      "why": "dsca filed for South Korea after first recorded of silence (profile score: 4). Signal: MH-60R Multi-Mission Helicopters",
+      "why": "ofac filed for Lebanon after first recorded of silence (profile score: 4). Signal: Mohammad Reza Raouf SHEIBANI (Individual)",
       "narrative": null
     }
   ]

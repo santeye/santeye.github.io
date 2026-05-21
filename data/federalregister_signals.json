@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T23:14:35.914607+00:00",
+  "generated_at": "2026-05-21T23:11:33.379391+00:00",
   "sources": [
     "federalregister"
   ],
@@ -6744,6 +6744,50 @@
       "description": "Notice",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/05/19/2026-09952/determination-and-certification-of-countries-not-cooperating-fully-with-antiterrorism-efforts"
+    },
+    {
+      "document_number": "2026-10116",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-20",
+      "title": "Returns Relating to Sales or Exchanges of Certain Partnership Interests",
+      "value_usd": null,
+      "description": "Final regulations. \u00b7 This document contains final regulations modifying information reporting obligations with respect to sales or exchanges of certain interests in partnerships owning inventory or unrealized receivables.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/20/2026-10116/returns-relating-to-sales-or-exchanges-of-certain-partnership-interests"
+    },
+    {
+      "document_number": "2026-10057",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-20",
+      "title": "Submission for OMB Review; Comment Request",
+      "value_usd": null,
+      "description": "30-Day information collection notice. \u00b7 The DoD has submitted to OMB for clearance the following proposal for collection of information under the provisions of the Paperwork Reduction Act.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/20/2026-10057/submission-for-omb-review-comment-request"
+    },
+    {
+      "document_number": "2026-10054",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-20",
+      "title": "Proposed Collection; Comment Request",
+      "value_usd": null,
+      "description": "30-Day information collection notice. \u00b7 The DoD has submitted to OMB for clearance the following proposal for collection of information under the provisions of the Paperwork Reduction Act of 1995.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/20/2026-10054/proposed-collection-comment-request"
+    },
+    {
+      "document_number": "2026-10218",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-21",
+      "title": "Proposed Deauthorization of Water Resources Projects",
+      "value_usd": null,
+      "description": "Notice of proposed deauthorization list. \u00b7 The U.S. Army Corps of Engineers (Corps) is publishing a proposed deauthorization list of water resources development projects and separable elements that have been identified for deauthorization in accordance with Section 301 of the Water Resources Development Act (WRDA) of 2020 as amended by WRDA 2024 (33 U.S.C. 579d-2) and is soliciting comments from the public on the list for 90 calendar days. Comments should be provided through the methods identified below.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/21/2026-10218/proposed-deauthorization-of-water-resources-projects"
     }
   ]
 }
