@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T00:46:20.652303+00:00",
+  "generated_at": "2026-05-26T23:18:24.154651+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,101 @@
     "sam"
   ],
   "signals": [
+    {
+      "iso": "IL",
+      "source": "anchor_budget",
+      "signal_date": "2026-05-26",
+      "title": "IL \u2014 Elbit Systems Awarded Approximately $1.4 Billion Contract for Extensive Military Modernization Programs for a European Customer",
+      "value_usd": 1400000000.0,
+      "description": "announced today that it has been awarded a contract valued at approximately $1.4 billion by a European customer for extensive military modernization programs. | EDGAR: 0001178913-26-002878",
+      "accession": "0001178913-26-002878",
+      "page_url": "https://www.sec.gov/Archives/edgar/data/1027664/000117891326002878/exhibit_1.htm",
+      "profile": {
+        "name": "Israel",
+        "score": 7,
+        "factors": [
+          "nuclear program",
+          "active conflict",
+          "US basing",
+          "regional power",
+          "sanctions"
+        ],
+        "rationale": "Undeclared nuclear weapons program (+2), active conflict \u2014 Gaza war, Lebanon, regional escalation (+2), major US security guarantor and basing access (+1), regional power (+1), active sanctions against counterparties (+1)"
+      },
+      "layer": "military",
+      "quality": 0.75,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "db040d39-53c2-4095-941c-d42b4516f900",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-26",
+      "title": "Defense, Science/Technology \u2014 Quantumscape Battery, Inc. via Tiger Hill Partners Llc",
+      "value_usd": null,
+      "description": "Issues related to technology, artificial intelligence, and national security",
+      "lobbying_firm": "Tiger Hill Partners Llc",
+      "registrant_id": 401105491,
+      "client_name": "Quantumscape Battery, Inc.",
+      "issue_codes": [
+        "DEF",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/db040d39-53c2-4095-941c-d42b4516f900/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "547d0142-fc38-4719-a35b-8ec1dd5be04d",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-26",
+      "title": "Foreign Affairs, Science/Technology, Trade \u2014 America-Brazil Prosperity Advancement Foundation, Inc. via Checkmate Government Relations",
+      "value_usd": null,
+      "description": "U.S.-Brazil trade, investment, financing, and public safety policy cooperation initiatives",
+      "lobbying_firm": "Checkmate Government Relations",
+      "registrant_id": 401109039,
+      "client_name": "America-Brazil Prosperity Advancement Foundation, Inc.",
+      "issue_codes": [
+        "FIN",
+        "FOR",
+        "LAW",
+        "SCI",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/547d0142-fc38-4719-a35b-8ec1dd5be04d/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "cfd0eec6-54a6-4e62-961d-658cd061c2f2",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-26",
+      "title": "Defense, Budget \u2014 Advanced Space, Llc via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "Issues related to aerospace and defense.",
+      "lobbying_firm": "Holland & Knight Llp",
+      "registrant_id": 18466,
+      "client_name": "Advanced Space, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/cfd0eec6-54a6-4e62-961d-658cd061c2f2/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "iso": "UA",
       "source": "dsca",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T00:46:01.713062+00:00",
+  "generated_at": "2026-05-26T23:18:04.729357+00:00",
   "sources": [
     "federalregister"
   ],
@@ -6810,6 +6810,28 @@
       "description": "Notice \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing the names of one or more persons and vessels that have been placed on OFAC's Specially Designated Nationals and Blocked Persons List (SDN List) based on OFAC's determination that one or more applicable legal criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of these persons are blocked, and U.S. persons are generally prohibited from engaging in transactions with them. The vessels placed on the SDN List have been identified as property in which a blocked person has an interest.",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/05/22/2026-10259/notice-of-ofac-sanctions-action"
+    },
+    {
+      "document_number": "2026-10432",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-26",
+      "title": "Notice of OFAC Sanctions Action",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing the names of one or more persons that have been placed on OFAC's Specially Designated Nationals and Blocked Persons List (SDN List) based on OFAC's determination that one or more applicable legal criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of these persons are blocked, and U.S. persons are generally prohibited from engaging in transactions with them.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/26/2026-10432/notice-of-ofac-sanctions-action"
+    },
+    {
+      "document_number": "2026-10431",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-26",
+      "title": "Notice of OFAC Sanctions Action",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing the names of one or more persons whose property and interests in property have been unblocked and who have been removed from the Specially Designated Nationals and Blocked Persons List (SDN List). OFAC is also publishing the names of one or more persons that have been placed on the SDN List based on OFAC's determination that one or more applicable legal criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of these persons are blocked, and U.S. persons are generally prohibited from engaging in transactions with them.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/26/2026-10431/notice-of-ofac-sanctions-action"
     }
   ]
 }

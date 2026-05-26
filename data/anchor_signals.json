@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T21:30:17.284283+00:00",
+  "generated_at": "2026-05-26T23:18:08.700314+00:00",
   "sources": [
     "anchor_budget"
   ],
@@ -123,6 +123,18 @@
       "weight": 1.0,
       "accession": "0001178913-26-002179",
       "page_url": "https://www.sec.gov/Archives/edgar/data/1027664/000117891326002179/exhibit_1.htm"
+    },
+    {
+      "iso": "IL",
+      "source": "anchor_budget",
+      "signal_date": "2026-05-26",
+      "title": "IL \u2014 Elbit Systems Awarded Approximately $1.4 Billion Contract for Extensive Military Modernization Programs for a European Customer",
+      "value_usd": 1400000000.0,
+      "description": "announced today that it has been awarded a contract valued at approximately $1.4 billion by a European customer for extensive military modernization programs. | EDGAR: 0001178913-26-002878",
+      "raw_score": 7.0,
+      "weight": 1.0,
+      "accession": "0001178913-26-002878",
+      "page_url": "https://www.sec.gov/Archives/edgar/data/1027664/000117891326002878/exhibit_1.htm"
     }
   ]
 }

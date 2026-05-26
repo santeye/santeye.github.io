@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T00:46:00.672345+00:00",
+  "generated_at": "2026-05-26T23:18:03.502886+00:00",
   "sources": [
     "lda"
   ],
@@ -13697,6 +13697,66 @@
         "MAN"
       ],
       "url": "https://lda.gov/filings/public/filing/b937fef1-70ee-4325-b237-1f2f385698ee/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "db040d39-53c2-4095-941c-d42b4516f900",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-26",
+      "title": "Defense, Science/Technology \u2014 Quantumscape Battery, Inc. via Tiger Hill Partners Llc",
+      "value_usd": null,
+      "description": "Issues related to technology, artificial intelligence, and national security",
+      "lobbying_firm": "Tiger Hill Partners Llc",
+      "registrant_id": 401105491,
+      "client_name": "Quantumscape Battery, Inc.",
+      "issue_codes": [
+        "DEF",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/db040d39-53c2-4095-941c-d42b4516f900/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "547d0142-fc38-4719-a35b-8ec1dd5be04d",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-26",
+      "title": "Foreign Affairs, Science/Technology, Trade \u2014 America-Brazil Prosperity Advancement Foundation, Inc. via Checkmate Government Relations",
+      "value_usd": null,
+      "description": "U.S.-Brazil trade, investment, financing, and public safety policy cooperation initiatives",
+      "lobbying_firm": "Checkmate Government Relations",
+      "registrant_id": 401109039,
+      "client_name": "America-Brazil Prosperity Advancement Foundation, Inc.",
+      "issue_codes": [
+        "FIN",
+        "FOR",
+        "LAW",
+        "SCI",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/547d0142-fc38-4719-a35b-8ec1dd5be04d/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "cfd0eec6-54a6-4e62-961d-658cd061c2f2",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-26",
+      "title": "Defense, Budget \u2014 Advanced Space, Llc via Holland & Knight Llp",
+      "value_usd": null,
+      "description": "Issues related to aerospace and defense.",
+      "lobbying_firm": "Holland & Knight Llp",
+      "registrant_id": 18466,
+      "client_name": "Advanced Space, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/cfd0eec6-54a6-4e62-961d-658cd061c2f2/print/",
       "raw_score": null,
       "weight": 1.0
     }
