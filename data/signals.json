@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T23:11:47.279103+00:00",
+  "generated_at": "2026-05-26T00:46:20.652303+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,33 @@
     "sam"
   ],
   "signals": [
+    {
+      "iso": "UA",
+      "source": "dsca",
+      "signal_date": "2026-05-21",
+      "title": "Hawk Missile System Sustainment",
+      "value_usd": 108100000.0,
+      "description": "Transmittal #26-51 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Ukraine for Hawk Missile System Sustainment and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/ukraine-hawk-missile-system-sustainment/",
+      "wp_id": 684520,
+      "profile": {
+        "name": "Ukraine",
+        "score": 8,
+        "factors": [
+          "active conflict",
+          "occupied territory",
+          "strategic minerals",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Active full-scale war with Russia (+2), occupied territory \u2014 Crimea, Donbas (+2), major strategic minerals \u2014 rare earths, titanium, manganese, lithium (+2), active broad sanctions regime (+1), NATO/EU proxy contest (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.1525369270464982,
+      "is_fr_policy": null
+    },
     {
       "filing_uuid": "8fa18bf3-0f93-432d-a0c6-9de03a06a8ad",
       "iso": "MA",
@@ -645,6 +672,40 @@
       },
       "layer": "influence",
       "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "CN",
+      "source": "cftc",
+      "signal_date": "2026-05-19",
+      "title": "Corn \u2014 hedge funds adding longs (+2.0\u03c3)",
+      "value_usd": null,
+      "description": "Institutional traders (managed money) are net long Corn at 293,342 contracts \u2014 2.0\u03c3 above the 52-week norm. Exposed countries: Ukraine, Brazil, Argentina, China.",
+      "z_score": 2.039,
+      "basket": [
+        "US",
+        "UA",
+        "BR",
+        "AR",
+        "CN"
+      ],
+      "commodity": "Corn",
+      "net_position": 293342,
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "financial",
+      "quality": 0.55,
       "dollar_mod": 1.0,
       "is_fr_policy": null
     },
@@ -30550,7 +30611,7 @@
     {
       "type": "convergence",
       "title": "Oman \u2014 first appearance + influence \u2192 action",
-      "score": 24.387,
+      "score": 20.346,
       "countries": [
         "OM"
       ],
@@ -30563,7 +30624,7 @@
         {
           "type": "first_appearance",
           "title": "Oman \u2014 ofac after first recorded silence",
-          "score": 14.255,
+          "score": 10.214,
           "countries": [
             "OM"
           ],
@@ -30591,7 +30652,7 @@
     {
       "type": "first_appearance",
       "title": "Panama \u2014 ofac after first recorded silence",
-      "score": 20.249,
+      "score": 14.509,
       "countries": [
         "PA"
       ],
@@ -30605,7 +30666,7 @@
     {
       "type": "first_appearance",
       "title": "Lebanon \u2014 ofac after first recorded silence",
-      "score": 18.51,
+      "score": 13.263,
       "countries": [
         "LB"
       ],

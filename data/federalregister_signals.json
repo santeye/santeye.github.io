@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T23:11:33.379391+00:00",
+  "generated_at": "2026-05-26T00:46:01.713062+00:00",
   "sources": [
     "federalregister"
   ],
@@ -6788,6 +6788,28 @@
       "description": "Notice of proposed deauthorization list. \u00b7 The U.S. Army Corps of Engineers (Corps) is publishing a proposed deauthorization list of water resources development projects and separable elements that have been identified for deauthorization in accordance with Section 301 of the Water Resources Development Act (WRDA) of 2020 as amended by WRDA 2024 (33 U.S.C. 579d-2) and is soliciting comments from the public on the list for 90 calendar days. Comments should be provided through the methods identified below.",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/05/21/2026-10218/proposed-deauthorization-of-water-resources-projects"
+    },
+    {
+      "document_number": "2026-10302",
+      "iso": "US",
+      "source": "federalregister",
+      "signal_date": "2026-05-22",
+      "title": "Mandatory Survey of Foreign-Residents' Holdings of U.S. Securities",
+      "value_usd": null,
+      "description": "Notice of reporting requirements. \u00b7 By this Notice the Department of the Treasury is informing the public that it is conducting a mandatory survey of foreign-residents' holdings of U.S. securities, including selected money market instruments, as of June 30, 2026. This mandatory survey is conducted under the authority of the International Investment and Trade in Services Survey Act. This Notice constitutes legal notification to all United States persons (defined below) who meet the reporting requirements set forth in this Notice that they must respond to, and comply with, this survey. Additional copies of the reporting forms SHLA (2025) (which remain applicable to this survey) and instructions may be printed from the internet at: https://home.treasury.gov/data/treasury- international-capital-tic-system-home-page/tic-forms-instructions/ forms-shl.",
+      "raw_score": 10.0,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/22/2026-10302/mandatory-survey-of-foreign-residents-holdings-of-us-securities"
+    },
+    {
+      "document_number": "2026-10259",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-22",
+      "title": "Notice of OFAC Sanctions Action",
+      "value_usd": null,
+      "description": "Notice \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing the names of one or more persons and vessels that have been placed on OFAC's Specially Designated Nationals and Blocked Persons List (SDN List) based on OFAC's determination that one or more applicable legal criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of these persons are blocked, and U.S. persons are generally prohibited from engaging in transactions with them. The vessels placed on the SDN List have been identified as property in which a blocked person has an interest.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/22/2026-10259/notice-of-ofac-sanctions-action"
     }
   ]
 }

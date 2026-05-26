@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T23:09:36.329941+00:00",
+  "generated_at": "2026-05-26T00:44:16.103772+00:00",
   "sources": [
     "dsca"
   ],
@@ -14464,6 +14464,18 @@
       "cn_number": null,
       "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/belgium-agm-184-joint-strike-missiles/",
       "wp_id": 683455
+    },
+    {
+      "iso": "UA",
+      "source": "dsca",
+      "signal_date": "2026-05-21",
+      "title": "Hawk Missile System Sustainment",
+      "value_usd": 108100000.0,
+      "description": "Transmittal #26-51 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Ukraine for Hawk Missile System Sustainment and related equipment.",
+      "raw_score": 8.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/ukraine-hawk-missile-system-sustainment/",
+      "wp_id": 684520
     }
   ]
 }
