@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T23:18:24.154651+00:00",
+  "generated_at": "2026-05-27T23:24:17.380846+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,28 @@
     "sam"
   ],
   "signals": [
+    {
+      "filing_uuid": "d520a3cb-ef6d-4b60-bac9-aa8eb5fd8ecd",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-27",
+      "title": "Defense, Small Business \u2014 Collaboration Ai via Wolf Strategies",
+      "value_usd": null,
+      "description": "Government relations and federal lobbying consulting services, with a focus on defense appropriations and federal procur\u2026",
+      "lobbying_firm": "Wolf Strategies",
+      "registrant_id": 401110033,
+      "client_name": "Collaboration Ai",
+      "issue_codes": [
+        "DEF",
+        "SMB"
+      ],
+      "url": "https://lda.gov/filings/public/filing/d520a3cb-ef6d-4b60-bac9-aa8eb5fd8ecd/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "iso": "IL",
       "source": "anchor_budget",
@@ -102,6 +124,95 @@
         "DEF"
       ],
       "url": "https://lda.gov/filings/public/filing/cfd0eec6-54a6-4e62-961d-658cd061c2f2/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "de43a06a-a423-4e26-97ac-f3db0c9f9021",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-26",
+      "title": "Energy \u2014 Evolution Well Services Operating, Llc via Ballard Partners, Llc",
+      "value_usd": null,
+      "description": "Advocacy regarding EPA energy policies and regulations.",
+      "lobbying_firm": "Ballard Partners, Llc",
+      "registrant_id": 401104288,
+      "client_name": "Evolution Well Services Operating, Llc",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/de43a06a-a423-4e26-97ac-f3db0c9f9021/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "28abe4f4-7266-48d1-9d89-eed7b4e6ff33",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-26",
+      "title": "Foreign Affairs \u2014 Levinson Family via Ballard Partners, Llc",
+      "value_usd": null,
+      "description": "Provide strategic counsel and advocate on issues related to recovery of assets held by a foreign government notwithstand\u2026",
+      "lobbying_firm": "Ballard Partners, Llc",
+      "registrant_id": 401104288,
+      "client_name": "Levinson Family",
+      "issue_codes": [
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/28abe4f4-7266-48d1-9d89-eed7b4e6ff33/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "fbffff68-53fe-4ec5-8c48-ac8251c79022",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-26",
+      "title": "Defense, Consumer Issues, Consumer Safety \u2014 Vult Security via Grimes Galvano, Pl",
+      "value_usd": null,
+      "description": "Matters relating to federal cybersecurity, information technology modernization, cloud and network security, threat dete\u2026",
+      "lobbying_firm": "Grimes Galvano, Pl",
+      "registrant_id": 401110698,
+      "client_name": "Vult Security",
+      "issue_codes": [
+        "CPI",
+        "CSP",
+        "DEF",
+        "HCR",
+        "MMM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/fbffff68-53fe-4ec5-8c48-ac8251c79022/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "e82372f8-7ba3-4623-9c8a-3ec39285b40a",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-26",
+      "title": "Defense, Foreign Affairs \u2014 Martin Hellman via Douglas Shaw",
+      "value_usd": null,
+      "description": "HR 3564 and related measures to reduce the risk of nuclear war",
+      "lobbying_firm": "Douglas Shaw",
+      "registrant_id": 401105825,
+      "client_name": "Martin Hellman",
+      "issue_codes": [
+        "DEF",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e82372f8-7ba3-4623-9c8a-3ec39285b40a/print/",
       "profile": null,
       "layer": "influence",
       "quality": 0.5,
@@ -30705,29 +30816,17 @@
   "themes": [
     {
       "type": "convergence",
-      "title": "Oman \u2014 first appearance + influence \u2192 action",
-      "score": 20.346,
+      "title": "Oman \u2014 influence \u2192 action + first appearance",
+      "score": 19.687,
       "countries": [
         "OM"
       ],
       "signal_keys": [
-        "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424",
-        "ofac:ZEUS LOGISTICS GROUP (Entity)"
+        "ofac:ZEUS LOGISTICS GROUP (Entity)",
+        "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424"
       ],
-      "why": "[first_appearance] ofac filed for Oman after first recorded of silence (profile score: 6). Signal: ZEUS LOGISTICS GROUP (Entity) | [influence_before_action] lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d.",
+      "why": "[influence_before_action] lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d. | [first_appearance] ofac filed for Oman after first recorded of silence (profile score: 6). Signal: ZEUS LOGISTICS GROUP (Entity)",
       "_components": [
-        {
-          "type": "first_appearance",
-          "title": "Oman \u2014 ofac after first recorded silence",
-          "score": 10.214,
-          "countries": [
-            "OM"
-          ],
-          "signal_keys": [
-            "ofac:ZEUS LOGISTICS GROUP (Entity)"
-          ],
-          "why": "ofac filed for Oman after first recorded of silence (profile score: 6). Signal: ZEUS LOGISTICS GROUP (Entity)"
-        },
         {
           "type": "influence_before_action",
           "title": "Oman \u2014 lda \u2192 ofac (41d)",
@@ -30736,10 +30835,22 @@
             "OM"
           ],
           "signal_keys": [
-            "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424",
-            "ofac:ZEUS LOGISTICS GROUP (Entity)"
+            "ofac:ZEUS LOGISTICS GROUP (Entity)",
+            "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424"
           ],
           "why": "lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d."
+        },
+        {
+          "type": "first_appearance",
+          "title": "Oman \u2014 ofac after first recorded silence",
+          "score": 9.555,
+          "countries": [
+            "OM"
+          ],
+          "signal_keys": [
+            "ofac:ZEUS LOGISTICS GROUP (Entity)"
+          ],
+          "why": "ofac filed for Oman after first recorded of silence (profile score: 6). Signal: ZEUS LOGISTICS GROUP (Entity)"
         }
       ],
       "narrative": null
@@ -30747,7 +30858,7 @@
     {
       "type": "first_appearance",
       "title": "Panama \u2014 ofac after first recorded silence",
-      "score": 14.509,
+      "score": 13.573,
       "countries": [
         "PA"
       ],
@@ -30761,7 +30872,7 @@
     {
       "type": "first_appearance",
       "title": "Lebanon \u2014 ofac after first recorded silence",
-      "score": 13.263,
+      "score": 12.407,
       "countries": [
         "LB"
       ],
