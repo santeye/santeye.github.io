@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T23:24:01.133268+00:00",
+  "generated_at": "2026-05-28T23:25:05.999757+00:00",
   "sources": [
     "lda"
   ],
@@ -13853,6 +13853,82 @@
         "SMB"
       ],
       "url": "https://lda.gov/filings/public/filing/d520a3cb-ef6d-4b60-bac9-aa8eb5fd8ecd/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "f57b763e-d5a0-4776-8fc5-bacc9f9d2170",
+      "iso": "CA",
+      "source": "lda",
+      "signal_date": "2026-05-27",
+      "title": "Health \u2014 Apartes Pharmaceuticals via J M Burkman & Associates",
+      "value_usd": null,
+      "description": "Canada; Issues at HHS and FDA. Also. federal contracting issues. DOD contracting.",
+      "lobbying_firm": "J M Burkman & Associates",
+      "registrant_id": 75570,
+      "client_name": "Apartes Pharmaceuticals",
+      "issue_codes": [
+        "HCR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/f57b763e-d5a0-4776-8fc5-bacc9f9d2170/print/",
+      "raw_score": 5.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "552b1a12-83ec-4d9d-b21b-556ed4bd7b9a",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-27",
+      "title": "Science/Technology, Government \u2014 Guardian Chain via The Vogel Group",
+      "value_usd": null,
+      "description": "Issues related to AI legislation and regulation",
+      "lobbying_firm": "The Vogel Group",
+      "registrant_id": 401104734,
+      "client_name": "Guardian Chain",
+      "issue_codes": [
+        "GOV",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/552b1a12-83ec-4d9d-b21b-556ed4bd7b9a/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "1eb2af65-d018-44b0-a231-993ddbb4a98c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-27",
+      "title": "Trade, Manufacturing \u2014 Va Transformer Corp via The Vogel Group",
+      "value_usd": null,
+      "description": "Issues related to domestic transformer manufacturing and tariffs",
+      "lobbying_firm": "The Vogel Group",
+      "registrant_id": 401104734,
+      "client_name": "Va Transformer Corp",
+      "issue_codes": [
+        "MAN",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1eb2af65-d018-44b0-a231-993ddbb4a98c/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "e6963ce5-ae6a-41b8-8440-825e4a46c3ee",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-27",
+      "title": "Foreign Affairs, Banking, R&D \u2014 Elion Partners via The Vogel Group",
+      "value_usd": null,
+      "description": "Issues related to foreign direct investment and global energy markets",
+      "lobbying_firm": "The Vogel Group",
+      "registrant_id": 401104734,
+      "client_name": "Elion Partners",
+      "issue_codes": [
+        "BAN",
+        "FOR",
+        "RES"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e6963ce5-ae6a-41b8-8440-825e4a46c3ee/print/",
       "raw_score": null,
       "weight": 1.0
     }

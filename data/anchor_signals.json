@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T23:18:08.700314+00:00",
+  "generated_at": "2026-05-28T23:25:12.019497+00:00",
   "sources": [
     "anchor_budget"
   ],
@@ -135,6 +135,18 @@
       "weight": 1.0,
       "accession": "0001178913-26-002878",
       "page_url": "https://www.sec.gov/Archives/edgar/data/1027664/000117891326002878/exhibit_1.htm"
+    },
+    {
+      "iso": "IL",
+      "source": "anchor_budget",
+      "signal_date": "2026-05-28",
+      "title": "IL \u2014 Elbit Systems Awarded a $350 Million Contract for Tank Upgrades from an International Customer",
+      "value_usd": 350000000.0,
+      "description": "announced today that it was awarded a contract valued at approximately $350 million from an international customer to deliver upgrades for Main Battle Tanks (MBTs). | EDGAR: 0001178913-26-002954",
+      "raw_score": 7.0,
+      "weight": 1.0,
+      "accession": "0001178913-26-002954",
+      "page_url": "https://www.sec.gov/Archives/edgar/data/1027664/000117891326002954/exhibit_1.htm"
     }
   ]
 }

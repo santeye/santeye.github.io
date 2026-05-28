@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T23:24:17.380846+00:00",
+  "generated_at": "2026-05-28T23:25:24.207108+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,234 @@
     "sam"
   ],
   "signals": [
+    {
+      "iso": "IL",
+      "source": "anchor_budget",
+      "signal_date": "2026-05-28",
+      "title": "IL \u2014 Elbit Systems Awarded a $350 Million Contract for Tank Upgrades from an International Customer",
+      "value_usd": 350000000.0,
+      "description": "announced today that it was awarded a contract valued at approximately $350 million from an international customer to deliver upgrades for Main Battle Tanks (MBTs). | EDGAR: 0001178913-26-002954",
+      "accession": "0001178913-26-002954",
+      "page_url": "https://www.sec.gov/Archives/edgar/data/1027664/000117891326002954/exhibit_1.htm",
+      "profile": {
+        "name": "Israel",
+        "score": 7,
+        "factors": [
+          "nuclear program",
+          "active conflict",
+          "US basing",
+          "regional power",
+          "sanctions"
+        ],
+        "rationale": "Undeclared nuclear weapons program (+2), active conflict \u2014 Gaza war, Lebanon, regional escalation (+2), major US security guarantor and basing access (+1), regional power (+1), active sanctions against counterparties (+1)"
+      },
+      "layer": "military",
+      "quality": 0.75,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 56381,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "TIDA CO., LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SEPEHR ENERGY JAHAN NAMA PARS COMPANY)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56381",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57753,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "PERSIAN GULF STRAIT AUTHORITY (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57753",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57761,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "EVER SHINING LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57761",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57769,
+      "iso": "QA",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "CLASSY PANSY TRADING AND CONTRACTING WLL (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57769",
+      "profile": {
+        "name": "Qatar",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "LNG",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "World's largest LNG exporter \u2014 hydrocarbon reserves (+2), Al Udeid Air Base \u2014 largest US air base in Middle East (+1), proxy hub \u2014 Hamas, Taliban mediation (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57770,
+      "iso": "SG",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "ALT CAPITAL PTE. LTD (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57770",
+      "profile": {
+        "name": "Singapore",
+        "score": 5,
+        "factors": [
+          "maritime chokepoint",
+          "Malacca Strait",
+          "US basing",
+          "regional hub"
+        ],
+        "rationale": "Controls eastern Malacca Strait \u2014 most critical maritime chokepoint by volume (+3), major US naval access (+1), regional financial and logistics hub (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57771,
+      "iso": "IN",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "RISHABH TRIEXIM LLP (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57771",
+      "profile": {
+        "name": "India",
+        "score": 7,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "strategic minerals",
+          "Indian Ocean",
+          "US partner"
+        ],
+        "rationale": "Nuclear weapons program (+2), regional power (+1), strategic minerals including rare earths (+2), Indian Ocean chokepoint adjacency \u2014 controls Andaman sea lanes (+1), major US security partner and arms customer (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57778,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "SEAFOAM MARINE LTD (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57778",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "filing_uuid": "d520a3cb-ef6d-4b60-bac9-aa8eb5fd8ecd",
       "iso": "XX",
@@ -29,6 +257,103 @@
         "SMB"
       ],
       "url": "https://lda.gov/filings/public/filing/d520a3cb-ef6d-4b60-bac9-aa8eb5fd8ecd/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "f57b763e-d5a0-4776-8fc5-bacc9f9d2170",
+      "iso": "CA",
+      "source": "lda",
+      "signal_date": "2026-05-27",
+      "title": "Health \u2014 Apartes Pharmaceuticals via J M Burkman & Associates",
+      "value_usd": null,
+      "description": "Canada; Issues at HHS and FDA. Also. federal contracting issues. DOD contracting.",
+      "lobbying_firm": "J M Burkman & Associates",
+      "registrant_id": 75570,
+      "client_name": "Apartes Pharmaceuticals",
+      "issue_codes": [
+        "HCR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/f57b763e-d5a0-4776-8fc5-bacc9f9d2170/print/",
+      "profile": {
+        "name": "Canada",
+        "score": 5,
+        "factors": [
+          "hydrocarbons",
+          "strategic minerals",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), strategic minerals including uranium and rare earths (+2)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "552b1a12-83ec-4d9d-b21b-556ed4bd7b9a",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-27",
+      "title": "Science/Technology, Government \u2014 Guardian Chain via The Vogel Group",
+      "value_usd": null,
+      "description": "Issues related to AI legislation and regulation",
+      "lobbying_firm": "The Vogel Group",
+      "registrant_id": 401104734,
+      "client_name": "Guardian Chain",
+      "issue_codes": [
+        "GOV",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/552b1a12-83ec-4d9d-b21b-556ed4bd7b9a/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "1eb2af65-d018-44b0-a231-993ddbb4a98c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-27",
+      "title": "Trade, Manufacturing \u2014 Va Transformer Corp via The Vogel Group",
+      "value_usd": null,
+      "description": "Issues related to domestic transformer manufacturing and tariffs",
+      "lobbying_firm": "The Vogel Group",
+      "registrant_id": 401104734,
+      "client_name": "Va Transformer Corp",
+      "issue_codes": [
+        "MAN",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1eb2af65-d018-44b0-a231-993ddbb4a98c/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "e6963ce5-ae6a-41b8-8440-825e4a46c3ee",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-27",
+      "title": "Foreign Affairs, Banking, R&D \u2014 Elion Partners via The Vogel Group",
+      "value_usd": null,
+      "description": "Issues related to foreign direct investment and global energy markets",
+      "lobbying_firm": "The Vogel Group",
+      "registrant_id": 401104734,
+      "client_name": "Elion Partners",
+      "issue_codes": [
+        "BAN",
+        "FOR",
+        "RES"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e6963ce5-ae6a-41b8-8440-825e4a46c3ee/print/",
       "profile": null,
       "layer": "influence",
       "quality": 0.5,
@@ -30815,9 +31140,22 @@
   ],
   "themes": [
     {
+      "type": "first_appearance",
+      "title": "Singapore \u2014 ofac after first recorded silence",
+      "score": 23.137,
+      "countries": [
+        "SG"
+      ],
+      "signal_keys": [
+        "ofac:ALT CAPITAL PTE. LTD (Entity)"
+      ],
+      "why": "ofac filed for Singapore after first recorded of silence (profile score: 5). Signal: ALT CAPITAL PTE. LTD (Entity)",
+      "narrative": null
+    },
+    {
       "type": "convergence",
       "title": "Oman \u2014 influence \u2192 action + first appearance",
-      "score": 19.687,
+      "score": 19.071,
       "countries": [
         "OM"
       ],
@@ -30843,7 +31181,7 @@
         {
           "type": "first_appearance",
           "title": "Oman \u2014 ofac after first recorded silence",
-          "score": 9.555,
+          "score": 8.939,
           "countries": [
             "OM"
           ],
@@ -30857,29 +31195,15 @@
     },
     {
       "type": "first_appearance",
-      "title": "Panama \u2014 ofac after first recorded silence",
-      "score": 13.573,
+      "title": "Qatar \u2014 ofac after first recorded silence",
+      "score": 18.51,
       "countries": [
-        "PA"
+        "QA"
       ],
       "signal_keys": [
-        "ofac:AQUILA WORLDWIDE MARINE DEVELOPMENTS COR",
-        "ofac:NAXOS MARITIME AND TRADING S.A. (Entity)"
+        "ofac:CLASSY PANSY TRADING AND CONTRACTING WLL"
       ],
-      "why": "ofac filed for Panama after first recorded of silence (profile score: 5). Signal: AQUILA WORLDWIDE MARINE DEVELOPMENTS CORP. (Entity)",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "Lebanon \u2014 ofac after first recorded silence",
-      "score": 12.407,
-      "countries": [
-        "LB"
-      ],
-      "signal_keys": [
-        "ofac:Mohammad Reza Raouf SHEIBANI (Individual"
-      ],
-      "why": "ofac filed for Lebanon after first recorded of silence (profile score: 4). Signal: Mohammad Reza Raouf SHEIBANI (Individual)",
+      "why": "ofac filed for Qatar after first recorded of silence (profile score: 4). Signal: CLASSY PANSY TRADING AND CONTRACTING WLL (Entity)",
       "narrative": null
     }
   ]

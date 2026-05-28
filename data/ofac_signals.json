@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T23:23:59.024881+00:00",
+  "generated_at": "2026-05-28T23:25:02.209773+00:00",
   "sources": [
     "ofac"
   ],
@@ -3993,6 +3993,350 @@
         "SDGT"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57739"
+    },
+    {
+      "uid": 56381,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "TIDA CO., LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SEPEHR ENERGY JAHAN NAMA PARS COMPANY)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56381"
+    },
+    {
+      "uid": 56382,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "MEHDIYEV TRADING CO., LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SEPEHR ENERGY JAHAN NAMA PARS COMPANY)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56382"
+    },
+    {
+      "uid": 56384,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "WORTH SEEN ENERGY LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SEPEHR ENERGY JAHAN NAMA PARS COMPANY)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56384"
+    },
+    {
+      "uid": 56427,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "DAMAI TECHNOLOGY DEVELOPMENT LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SEPEHR ENERGY JAHAN NAMA PARS COMPANY)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56427"
+    },
+    {
+      "uid": 56428,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "GROWTH TRADING CO., LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SEPEHR ENERGY JAHAN NAMA PARS COMPANY)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56428"
+    },
+    {
+      "uid": 57753,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "PERSIAN GULF STRAIT AUTHORITY (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57753"
+    },
+    {
+      "uid": 57761,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "EVER SHINING LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57761"
+    },
+    {
+      "uid": 57763,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "MAYMEI (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: EVER SHINING LIMITED)",
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57763"
+    },
+    {
+      "uid": 57764,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "FLORA (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: EVER SHINING LIMITED)",
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57764"
+    },
+    {
+      "uid": 57765,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "TRASTOK SHIPPING CO., LTD. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57765"
+    },
+    {
+      "uid": 57766,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "THEA (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: TRASTOK SHIPPING CO., LTD.)",
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57766"
+    },
+    {
+      "uid": 57769,
+      "iso": "QA",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "CLASSY PANSY TRADING AND CONTRACTING WLL (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57769"
+    },
+    {
+      "uid": 57770,
+      "iso": "SG",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "ALT CAPITAL PTE. LTD (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57770"
+    },
+    {
+      "uid": 57771,
+      "iso": "IN",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "RISHABH TRIEXIM LLP (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57771"
+    },
+    {
+      "uid": 57772,
+      "iso": "IN",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "Swaroop Jayantilal BAGRECHA (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57772"
+    },
+    {
+      "uid": 57773,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "CRYSTAL BLUE SKY INC (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57773"
+    },
+    {
+      "uid": 57774,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "ILL GAP (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: CRYSTAL BLUE SKY INC)",
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57774"
+    },
+    {
+      "uid": 57775,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "HK YUANHANG SHIPPING LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57775"
+    },
+    {
+      "uid": 57777,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "YONGAN OCEAN (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: HK YUANHANG SHIPPING LIMITED)",
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57777"
+    },
+    {
+      "uid": 57778,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "SEAFOAM MARINE LTD (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57778"
+    },
+    {
+      "uid": 57779,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "SYMPHONY SHIPPING AND MARITIME MANAGEMENT INC (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57779"
+    },
+    {
+      "uid": 57780,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "HAUNCAYO (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: SYMPHONY SHIPPING AND MARITIME MANAGEMENT INC)",
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57780"
+    },
+    {
+      "uid": 57781,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "VANGUARD MARINE VENTURES INC. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57781"
+    },
+    {
+      "uid": 57782,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "GAS NORA (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: VANGUARD MARINE VENTURES INC.)",
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57782"
+    },
+    {
+      "uid": 57783,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "AGILITY SHIPPING LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57783"
+    },
+    {
+      "uid": 57784,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-05-28",
+      "title": "RCELEBRA (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: AGILITY SHIPPING LIMITED)",
+      "programs": [
+        "IRAN-EO13846"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57784"
     }
   ]
 }

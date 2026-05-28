@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T23:24:02.746706+00:00",
+  "generated_at": "2026-05-28T23:25:08.152478+00:00",
   "sources": [
     "federalregister"
   ],
@@ -6876,6 +6876,28 @@
       "description": "30-Day information collection notice. \u00b7 The Department of War has submitted to the Office of Management and Budget (OMB) for clearance the following proposal for collection of information under the provisions of the Paperwork Reduction Act.",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/05/27/2026-10457/submission-for-omb-review-comment-request"
+    },
+    {
+      "document_number": "2026-10609",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-28",
+      "title": "Notice of Intended Disinterment From Carlisle Barracks Post Cemetery",
+      "value_usd": null,
+      "description": "Notice of Intended Disinterment. \u00b7 The Office of Army Cemeteries (OAC) is honoring the requests of the family members and Native American Tribes to disinter the human remains of twelve Native American students from the Carlisle Barracks Post Cemetery, Carlisle, Pennsylvania. The decedent names are: Alaska Natives Mabel Stock, Edward Angalook, Lucy Spaulding, and Tummassak (Tomicock); Peter Howe, Richard Morgan, and Christine Redstone from the Fort Peck Tribes; Frances Bones from the Comanche Nation, Fannie Gibson from the Absentee Shawnee Tribe; Della Atkins from the Shoshone Paiute Tribes; Susie Davis from the Grand Traverse Band of Ottawa and Chippewa Indians; Margaret Davis from the Keewenaw Bay Indian Community. These students died between 1879 and 1918 while attending the Carlisle Indian Industrial School. See the SUPPLEMENTARY INFORMATION section for more details.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/28/2026-10609/notice-of-intended-disinterment-from-carlisle-barracks-post-cemetery"
+    },
+    {
+      "document_number": "2026-10590",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-28",
+      "title": "Submission for OMB Review; Comment Request",
+      "value_usd": null,
+      "description": "30-Day information collection notice. \u00b7 The DoD has submitted to the Office of Management and Budget (OMB) for clearance the following proposal for collection of information under the provisions of the Paperwork Reduction Act.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/28/2026-10590/submission-for-omb-review-comment-request"
     }
   ]
 }
