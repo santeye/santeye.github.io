@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T23:25:02.209773+00:00",
+  "generated_at": "2026-05-29T23:22:43.434940+00:00",
   "sources": [
     "ofac"
   ],
@@ -4337,6 +4337,187 @@
         "IRAN-EO13846"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57784"
+    },
+    {
+      "uid": 54204,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "Ali Majd SEPEHR (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MINISTRY OF DEFENSE AND ARMED FORCES LOGISTICS)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54204"
+    },
+    {
+      "uid": 54205,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "Mohammadali Mansour DAREHSHIRI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SEPEHR, Ali Majd)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54205"
+    },
+    {
+      "uid": 54206,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "SORENA HUSHMAND SAMANEH COMPANY (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SEPEHR, Ali Majd)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54206"
+    },
+    {
+      "uid": 54207,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "Roudabeh SARMADI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SORENA HUSHMAND SAMANEH COMPANY)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54207"
+    },
+    {
+      "uid": 54208,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "AL KAWTHER NEON LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SEPEHR, Ali Majd)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54208"
+    },
+    {
+      "uid": 54209,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "GREEN LIGHT COMPUTER CO LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: DAREHSHIRI, Mohammadali Mansour)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54209"
+    },
+    {
+      "uid": 54219,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "Sayyed Payam AKHTARIAN (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SORENA HUSHMAND SAMANEH COMPANY)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54219"
+    },
+    {
+      "uid": 54220,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "Farzaneh REZAEI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SORENA HUSHMAND SAMANEH COMPANY)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54220"
+    },
+    {
+      "uid": 54221,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "Manoochehr ZANDIAN (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SORENA HUSHMAND SAMANEH COMPANY)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54221"
+    },
+    {
+      "uid": 54222,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "Hoda Baradaran BAGHERI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SORENA HUSHMAND SAMANEH COMPANY)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54222"
+    },
+    {
+      "uid": 54223,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "Saeid ZAHEDI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SEPEHR, Ali Majd)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54223"
+    },
+    {
+      "uid": 54224,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "SAIRAN INFORMATION EXCHANGE SPACE SECURITY INDUSTRIES COMPANY (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MINISTRY OF DEFENSE AND ARMED FORCES LOGISTICS)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54224"
+    },
+    {
+      "uid": 57817,
+      "iso": "BR",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "COMANDO VERMELHO (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57817"
     }
   ]
 }

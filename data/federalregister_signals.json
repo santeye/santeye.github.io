@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T23:25:08.152478+00:00",
+  "generated_at": "2026-05-29T23:22:56.396690+00:00",
   "sources": [
     "federalregister"
   ],
@@ -6898,6 +6898,28 @@
       "description": "30-Day information collection notice. \u00b7 The DoD has submitted to the Office of Management and Budget (OMB) for clearance the following proposal for collection of information under the provisions of the Paperwork Reduction Act.",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/05/28/2026-10590/submission-for-omb-review-comment-request"
+    },
+    {
+      "document_number": "2026-10817",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-05-29",
+      "title": "Regulation for Federal Financial Assistance",
+      "value_usd": null,
+      "description": "Proposed rule. \u00b7 The Office of Management and Budget (OMB) proposes to revise the Guidance for Federal Financial Assistance to improve government- wide policies and requirements related to the management of grants, cooperative agreements, and other forms of assistance. OMB is proposing revisions that would improve transparency, accountability, and oversight for Federal awards across the Federal Government. This includes ensuring that American tax dollars are not wasted or misused, activities performed under Federal awards are consistent with law and policy, and recipients are held accountable when they fail to meet relevant standards. The revisions also aim to ensure that basic American principles of equality and equal opportunity are upheld throughout all stages of the award making process and that unlawful discrimination is no longer permitted. Proposed changes also include providing further clarification on the regulatory status of the OMB requirements and on the process for future updates to the government- wide requirements. Finally, OMB also proposes changes to reduce recipient burden. The listed Federal grant-making agencies propose conforming changes to their respective adopting regulations, or, in the case of some agencies and other entities, establishing new adopting regulations or policies. The proposed changes reflect the administration's commitment to transparency, accountability, and proper oversight for the Federal grantmaking process. The proposed regulations seek to ensure that American tax dollars are ultimately used to serve the needs of the American public.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/29/2026-10817/regulation-for-federal-financial-assistance"
+    },
+    {
+      "document_number": "2026-10682",
+      "iso": "BE",
+      "source": "federalregister",
+      "signal_date": "2026-05-29",
+      "title": "In the Matter of: Hans De Geetere, Paul Parmentierlaan 121, 8300 Knokke Heist, Belgium, and Nyckeestraat 4, 8300 Knokke Heist, Belgium, Knokke-Heist Support Corporation Management, a/k/a Hasa Invest, Paul Parmentierlaan 121, 8300 Knokke Heist, Belgium, and Nyckeestraat 4, 8300 Knokke Heist, Belgium; Final Decision and Order",
+      "value_usd": null,
+      "description": "Notice",
+      "raw_score": 2.0,
+      "page_url": "https://www.federalregister.gov/documents/2026/05/29/2026-10682/in-the-matter-of-hans-de-geetere-paul-parmentierlaan-121-8300-knokke-heist-belgium-and-nyckeestraat"
     }
   ]
 }

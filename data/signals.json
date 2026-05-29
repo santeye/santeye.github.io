@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T23:25:24.207108+00:00",
+  "generated_at": "2026-05-29T23:23:12.402147+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,259 @@
     "sam"
   ],
   "signals": [
+    {
+      "document_number": "2026-10682",
+      "iso": "BE",
+      "source": "federalregister",
+      "signal_date": "2026-05-29",
+      "title": "In the Matter of: Hans De Geetere, Paul Parmentierlaan 121, 8300 Knokke Heist, Belgium, and Nyckeestraat 4, 8300 Knokke Heist, Belgium, Knokke-Heist Support Corporation Management, a/k/a Hasa Invest, Paul Parmentierlaan 121, 8300 Knokke Heist, Belgium, and Nyckeestraat 4, 8300 Knokke Heist, Belgium; Final Decision and Order",
+      "value_usd": null,
+      "description": "Notice",
+      "page_url": "https://www.federalregister.gov/documents/2026/05/29/2026-10682/in-the-matter-of-hans-de-geetere-paul-parmentierlaan-121-8300-knokke-heist-belgium-and-nyckeestraat",
+      "profile": {
+        "name": "Belgium",
+        "score": 2,
+        "factors": [
+          "NATO HQ",
+          "nuclear hosting"
+        ],
+        "rationale": "NATO HQ and EU political center (+1), US tactical nuclear weapons hosted (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.2,
+      "dollar_mod": 1.0,
+      "is_fr_policy": false
+    },
+    {
+      "filing_uuid": "44154904-9545-48f9-b14e-81825a7b29d4",
+      "iso": "JP",
+      "source": "lda",
+      "signal_date": "2026-05-29",
+      "title": "Consumer Issues \u2014 Capitol Counsel Llc On Behalf Of Skyvault Ai Llc via Michael J. Lamoureux",
+      "value_usd": null,
+      "description": "Education on AI infrastructure issues.",
+      "lobbying_firm": "Michael J. Lamoureux",
+      "registrant_id": 401110643,
+      "client_name": "Capitol Counsel Llc On Behalf Of Skyvault Ai Llc",
+      "issue_codes": [
+        "CPI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/44154904-9545-48f9-b14e-81825a7b29d4/print/",
+      "profile": {
+        "name": "Japan",
+        "score": 6,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "strategic minerals",
+          "US basing"
+        ],
+        "rationale": "Latent nuclear program \u2014 plutonium stockpile, can weaponize rapidly (+2), regional power (+1), strategic minerals processing hub (+2), major US basing \u2014 Yokosuka, Kadena, Okinawa (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "390b3a1c-e47a-47df-8d99-7d7c7a63b1bc",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-29",
+      "title": "Defense, Budget \u2014 Precision Impacts, Llc via Thorn Run Partners",
+      "value_usd": null,
+      "description": "House and Senate Defense Appropriations. House and Senate National Defense Authorization Act.",
+      "lobbying_firm": "Thorn Run Partners",
+      "registrant_id": 400534596,
+      "client_name": "Precision Impacts, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/390b3a1c-e47a-47df-8d99-7d7c7a63b1bc/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 54204,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "Ali Majd SEPEHR (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MINISTRY OF DEFENSE AND ARMED FORCES LOGISTICS)",
+      "programs": [
+        "SDGT",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54204",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 54205,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "Mohammadali Mansour DAREHSHIRI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SEPEHR, Ali Majd)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54205",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 54207,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "Roudabeh SARMADI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SORENA HUSHMAND SAMANEH COMPANY)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54207",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 54208,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "AL KAWTHER NEON LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SEPEHR, Ali Majd)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54208",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 54209,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "GREEN LIGHT COMPUTER CO LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: DAREHSHIRI, Mohammadali Mansour)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=54209",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57817,
+      "iso": "BR",
+      "source": "ofac",
+      "signal_date": "2026-05-29",
+      "title": "COMANDO VERMELHO (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57817",
+      "profile": {
+        "name": "Brazil",
+        "score": 5,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "strategic minerals",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major pre-salt hydrocarbon reserves (+2), regional power (+1), strategic minerals including niobium (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "iso": "IL",
       "source": "anchor_budget",
@@ -36,6 +289,77 @@
       },
       "layer": "military",
       "quality": 0.75,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "007851e4-be70-4261-8072-966f851fc897",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-28",
+      "title": "Defense, Foreign Affairs, Homeland Security \u2014 Sheyene Technology Inc via Sheyene Technology Inc",
+      "value_usd": null,
+      "description": "Establishment of the Synergy Hall - a cross-disciplinary innovation office advancing a new global security paradigm: tra\u2026",
+      "lobbying_firm": "Sheyene Technology Inc",
+      "registrant_id": 401110713,
+      "client_name": "Sheyene Technology Inc",
+      "issue_codes": [
+        "AER",
+        "DEF",
+        "FOR",
+        "GOV",
+        "HOM",
+        "INT",
+        "NAT",
+        "SCI",
+        "SMB"
+      ],
+      "url": "https://lda.gov/filings/public/filing/007851e4-be70-4261-8072-966f851fc897/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "eb1f9bf8-cdd2-4fbb-9de2-4dc8779fa02c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-28",
+      "title": "Defense \u2014 Gms Industrial Supply, Inc. via Van Scoyoc Associates",
+      "value_usd": null,
+      "description": "Industrial Supplies and environmentally friendly cleaning solutions",
+      "lobbying_firm": "Van Scoyoc Associates",
+      "registrant_id": 39837,
+      "client_name": "Gms Industrial Supply, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/eb1f9bf8-cdd2-4fbb-9de2-4dc8779fa02c/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "4486b1c5-8cda-4e4f-b6aa-6af07a4c25bf",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-28",
+      "title": "Science/Technology \u2014 Stercus Bioanalytics, Llc via Venture Government Strategies, Llc (Fka Hobart Hallaway & Quayle Ventures, Llc)",
+      "value_usd": null,
+      "description": "Issues related to testing wastewater for the presence of infectious diseases and narcotics.",
+      "lobbying_firm": "Venture Government Strategies, Llc (Fka Hobart Hallaway & Quayle Ventures, Llc)",
+      "registrant_id": 401103475,
+      "client_name": "Stercus Bioanalytics, Llc",
+      "issue_codes": [
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/4486b1c5-8cda-4e4f-b6aa-6af07a4c25bf/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
       "dollar_mod": 1.0,
       "is_fr_policy": null
     },
@@ -31141,8 +31465,21 @@
   "themes": [
     {
       "type": "first_appearance",
-      "title": "Singapore \u2014 ofac after first recorded silence",
+      "title": "Brazil \u2014 ofac after first recorded silence",
       "score": 23.137,
+      "countries": [
+        "BR"
+      ],
+      "signal_keys": [
+        "ofac:COMANDO VERMELHO (Entity)"
+      ],
+      "why": "ofac filed for Brazil after first recorded of silence (profile score: 5). Signal: COMANDO VERMELHO (Entity)",
+      "narrative": null
+    },
+    {
+      "type": "first_appearance",
+      "title": "Singapore \u2014 ofac after first recorded silence",
+      "score": 21.645,
       "countries": [
         "SG"
       ],
@@ -31155,7 +31492,7 @@
     {
       "type": "convergence",
       "title": "Oman \u2014 influence \u2192 action + first appearance",
-      "score": 19.071,
+      "score": 18.495,
       "countries": [
         "OM"
       ],
@@ -31181,7 +31518,7 @@
         {
           "type": "first_appearance",
           "title": "Oman \u2014 ofac after first recorded silence",
-          "score": 8.939,
+          "score": 8.363,
           "countries": [
             "OM"
           ],
@@ -31191,19 +31528,6 @@
           "why": "ofac filed for Oman after first recorded of silence (profile score: 6). Signal: ZEUS LOGISTICS GROUP (Entity)"
         }
       ],
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "Qatar \u2014 ofac after first recorded silence",
-      "score": 18.51,
-      "countries": [
-        "QA"
-      ],
-      "signal_keys": [
-        "ofac:CLASSY PANSY TRADING AND CONTRACTING WLL"
-      ],
-      "why": "ofac filed for Qatar after first recorded of silence (profile score: 4). Signal: CLASSY PANSY TRADING AND CONTRACTING WLL (Entity)",
       "narrative": null
     }
   ]

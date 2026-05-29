@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T23:25:05.999757+00:00",
+  "generated_at": "2026-05-29T23:22:55.329170+00:00",
   "sources": [
     "lda"
   ],
@@ -13929,6 +13929,105 @@
         "RES"
       ],
       "url": "https://lda.gov/filings/public/filing/e6963ce5-ae6a-41b8-8440-825e4a46c3ee/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "007851e4-be70-4261-8072-966f851fc897",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-28",
+      "title": "Defense, Foreign Affairs, Homeland Security \u2014 Sheyene Technology Inc via Sheyene Technology Inc",
+      "value_usd": null,
+      "description": "Establishment of the Synergy Hall - a cross-disciplinary innovation office advancing a new global security paradigm: tra\u2026",
+      "lobbying_firm": "Sheyene Technology Inc",
+      "registrant_id": 401110713,
+      "client_name": "Sheyene Technology Inc",
+      "issue_codes": [
+        "AER",
+        "DEF",
+        "FOR",
+        "GOV",
+        "HOM",
+        "INT",
+        "NAT",
+        "SCI",
+        "SMB"
+      ],
+      "url": "https://lda.gov/filings/public/filing/007851e4-be70-4261-8072-966f851fc897/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "eb1f9bf8-cdd2-4fbb-9de2-4dc8779fa02c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-28",
+      "title": "Defense \u2014 Gms Industrial Supply, Inc. via Van Scoyoc Associates",
+      "value_usd": null,
+      "description": "Industrial Supplies and environmentally friendly cleaning solutions",
+      "lobbying_firm": "Van Scoyoc Associates",
+      "registrant_id": 39837,
+      "client_name": "Gms Industrial Supply, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/eb1f9bf8-cdd2-4fbb-9de2-4dc8779fa02c/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "4486b1c5-8cda-4e4f-b6aa-6af07a4c25bf",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-28",
+      "title": "Science/Technology \u2014 Stercus Bioanalytics, Llc via Venture Government Strategies, Llc (Fka Hobart Hallaway & Quayle Ventures, Llc)",
+      "value_usd": null,
+      "description": "Issues related to testing wastewater for the presence of infectious diseases and narcotics.",
+      "lobbying_firm": "Venture Government Strategies, Llc (Fka Hobart Hallaway & Quayle Ventures, Llc)",
+      "registrant_id": 401103475,
+      "client_name": "Stercus Bioanalytics, Llc",
+      "issue_codes": [
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/4486b1c5-8cda-4e4f-b6aa-6af07a4c25bf/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "44154904-9545-48f9-b14e-81825a7b29d4",
+      "iso": "JP",
+      "source": "lda",
+      "signal_date": "2026-05-29",
+      "title": "Consumer Issues \u2014 Capitol Counsel Llc On Behalf Of Skyvault Ai Llc via Michael J. Lamoureux",
+      "value_usd": null,
+      "description": "Education on AI infrastructure issues.",
+      "lobbying_firm": "Michael J. Lamoureux",
+      "registrant_id": 401110643,
+      "client_name": "Capitol Counsel Llc On Behalf Of Skyvault Ai Llc",
+      "issue_codes": [
+        "CPI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/44154904-9545-48f9-b14e-81825a7b29d4/print/",
+      "raw_score": 6.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "390b3a1c-e47a-47df-8d99-7d7c7a63b1bc",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-29",
+      "title": "Defense, Budget \u2014 Precision Impacts, Llc via Thorn Run Partners",
+      "value_usd": null,
+      "description": "House and Senate Defense Appropriations. House and Senate National Defense Authorization Act.",
+      "lobbying_firm": "Thorn Run Partners",
+      "registrant_id": 400534596,
+      "client_name": "Precision Impacts, Llc",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/390b3a1c-e47a-47df-8d99-7d7c7a63b1bc/print/",
       "raw_score": null,
       "weight": 1.0
     }
