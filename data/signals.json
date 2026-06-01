@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T23:23:12.402147+00:00",
+  "generated_at": "2026-06-01T23:41:51.720045+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,70 @@
     "sam"
   ],
   "signals": [
+    {
+      "filing_uuid": "01b406c0-9c9b-4948-9a54-f14127b16ba3",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-01",
+      "title": "Defense \u2014 Globalpoint International On Behalf Of Defense Products And Services Group Usa via Becker & Poliakoff, P.A.",
+      "value_usd": null,
+      "description": "Vehicle solutions issues",
+      "lobbying_firm": "Becker & Poliakoff, P.A.",
+      "registrant_id": 283696,
+      "client_name": "Globalpoint International On Behalf Of Defense Products And Services Group Usa",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/01b406c0-9c9b-4948-9a54-f14127b16ba3/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "827124e0-34a9-4352-aed1-15efa1c6d61f",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-01",
+      "title": "Defense \u2014 Dcode Group, Inc. via Invoke Llc",
+      "value_usd": null,
+      "description": "FY27 Appropriations. FY27 NDAA.",
+      "lobbying_firm": "Invoke Llc",
+      "registrant_id": 401109179,
+      "client_name": "Dcode Group, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/827124e0-34a9-4352-aed1-15efa1c6d61f/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "9ddf6ce4-f9a6-408a-bbd4-f2fd21db9dd5",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-31",
+      "title": "Trade, Consumer Issues \u2014 Hp Inc via Kountoupes Denham Carr & Reid, Llc",
+      "value_usd": null,
+      "description": "Issues related to electronics, technology, and trade.",
+      "lobbying_firm": "Kountoupes Denham Carr & Reid, Llc",
+      "registrant_id": 320918,
+      "client_name": "Hp Inc",
+      "issue_codes": [
+        "CPI",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/9ddf6ce4-f9a6-408a-bbd4-f2fd21db9dd5/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "document_number": "2026-10682",
       "iso": "BE",
@@ -31466,7 +31530,7 @@
     {
       "type": "first_appearance",
       "title": "Brazil \u2014 ofac after first recorded silence",
-      "score": 23.137,
+      "score": 18.943,
       "countries": [
         "BR"
       ],
@@ -31479,7 +31543,7 @@
     {
       "type": "first_appearance",
       "title": "Singapore \u2014 ofac after first recorded silence",
-      "score": 21.645,
+      "score": 17.721,
       "countries": [
         "SG"
       ],
@@ -31492,7 +31556,7 @@
     {
       "type": "convergence",
       "title": "Oman \u2014 influence \u2192 action + first appearance",
-      "score": 18.495,
+      "score": 16.979,
       "countries": [
         "OM"
       ],
@@ -31518,7 +31582,7 @@
         {
           "type": "first_appearance",
           "title": "Oman \u2014 ofac after first recorded silence",
-          "score": 8.363,
+          "score": 6.847,
           "countries": [
             "OM"
           ],

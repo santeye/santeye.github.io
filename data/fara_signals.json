@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T23:22:53.786256+00:00",
+  "generated_at": "2026-06-01T23:41:33.325113+00:00",
   "sources": [
     "fara"
   ],
@@ -2517,5 +2517,5 @@
       "page_url": "https://efile.fara.gov/docs/7716-Registration-Statement-20260415-1.pdf"
     }
   ],
-  "error": "[Errno 54] Connection reset by peer"
+  "error": "HTTP Error 404: 404"
 }

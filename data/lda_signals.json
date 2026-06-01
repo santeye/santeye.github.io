@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T23:22:55.329170+00:00",
+  "generated_at": "2026-06-01T23:41:34.208748+00:00",
   "sources": [
     "lda"
   ],
@@ -14028,6 +14028,61 @@
         "DEF"
       ],
       "url": "https://lda.gov/filings/public/filing/390b3a1c-e47a-47df-8d99-7d7c7a63b1bc/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "9ddf6ce4-f9a6-408a-bbd4-f2fd21db9dd5",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-05-31",
+      "title": "Trade, Consumer Issues \u2014 Hp Inc via Kountoupes Denham Carr & Reid, Llc",
+      "value_usd": null,
+      "description": "Issues related to electronics, technology, and trade.",
+      "lobbying_firm": "Kountoupes Denham Carr & Reid, Llc",
+      "registrant_id": 320918,
+      "client_name": "Hp Inc",
+      "issue_codes": [
+        "CPI",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/9ddf6ce4-f9a6-408a-bbd4-f2fd21db9dd5/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "01b406c0-9c9b-4948-9a54-f14127b16ba3",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-01",
+      "title": "Defense \u2014 Globalpoint International On Behalf Of Defense Products And Services Group Usa via Becker & Poliakoff, P.A.",
+      "value_usd": null,
+      "description": "Vehicle solutions issues",
+      "lobbying_firm": "Becker & Poliakoff, P.A.",
+      "registrant_id": 283696,
+      "client_name": "Globalpoint International On Behalf Of Defense Products And Services Group Usa",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/01b406c0-9c9b-4948-9a54-f14127b16ba3/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "827124e0-34a9-4352-aed1-15efa1c6d61f",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-01",
+      "title": "Defense \u2014 Dcode Group, Inc. via Invoke Llc",
+      "value_usd": null,
+      "description": "FY27 Appropriations. FY27 NDAA.",
+      "lobbying_firm": "Invoke Llc",
+      "registrant_id": 401109179,
+      "client_name": "Dcode Group, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/827124e0-34a9-4352-aed1-15efa1c6d61f/print/",
       "raw_score": null,
       "weight": 1.0
     }
