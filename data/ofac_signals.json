@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T23:22:43.434940+00:00",
+  "generated_at": "2026-06-02T23:55:43.061929+00:00",
   "sources": [
     "ofac"
   ],
@@ -4518,6 +4518,142 @@
         "SDGT"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57817"
+    },
+    {
+      "uid": 50605,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-06-02",
+      "title": "John Imani NZENZE (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "DRCONGO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=50605"
+    },
+    {
+      "uid": 50608,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-06-02",
+      "title": "Gustave KUBWAYO (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "DRCONGO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=50608"
+    },
+    {
+      "uid": 56981,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-02",
+      "title": "NOBITEX (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902",
+        "IRAN",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56981"
+    },
+    {
+      "uid": 57028,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-02",
+      "title": "Amir Hossein RAD (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57028"
+    },
+    {
+      "uid": 57090,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-02",
+      "title": "BITPIN (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN",
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57090"
+    },
+    {
+      "uid": 57091,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-02",
+      "title": "WALLEX (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902",
+        "IRAN"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57091"
+    },
+    {
+      "uid": 57092,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-02",
+      "title": "RAMZINEX (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902",
+        "IRAN"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57092"
+    },
+    {
+      "uid": 57813,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-02",
+      "title": "Seyed Mohammad Ali AGHAMIR MOHAMMAD ALI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: NOBITEX)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57813"
+    },
+    {
+      "uid": 57814,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-02",
+      "title": "Seyed Mohammad AGHAMIR MOHAMMAD ALI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: NOBITEX)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57814"
+    },
+    {
+      "uid": 57815,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-02",
+      "title": "Seyed Ali KHOEE (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: NOBITEX)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57815"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T23:39:49.735258+00:00",
+  "generated_at": "2026-06-02T23:53:58.515540+00:00",
   "sources": [
     "dsca"
   ],
@@ -14476,6 +14476,18 @@
       "cn_number": null,
       "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/05/ukraine-hawk-missile-system-sustainment/",
       "wp_id": 684520
+    },
+    {
+      "iso": "VN",
+      "source": "dsca",
+      "signal_date": "2026-06-02",
+      "title": "C-130 Sustainment",
+      "value_usd": 100000000.0,
+      "description": "Transmittal #26-39 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Vietnam for C-130 Sustainment services and related equipment.",
+      "raw_score": 4.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/vietnam-c-130-sustainment/",
+      "wp_id": 686616
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T23:41:35.282698+00:00",
+  "generated_at": "2026-06-02T23:55:53.310550+00:00",
   "sources": [
     "federalregister"
   ],
@@ -7052,6 +7052,28 @@
       "description": "Notice of proposed rulemaking; partial withdrawal of proposed rulemaking. \u00b7 This document contains proposed regulations regarding the applicability dates of proposed rules relating to the taxation of the income of foreign governments from investment in the United States. This document also withdraws a portion of the proposed regulations published on December 15, 2025, relating to applicability dates.",
       "raw_score": 10.0,
       "page_url": "https://www.federalregister.gov/documents/2026/06/01/2026-10841/income-of-foreign-governments-and-of-international-organizations"
+    },
+    {
+      "document_number": "2026-10977",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-06-02",
+      "title": "Notice of OFAC Sanctions Actions",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing the names of one or more persons whose property and interests in property have been unblocked and who have been removed from the SDN List.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/06/02/2026-10977/notice-of-ofac-sanctions-actions"
+    },
+    {
+      "document_number": "2026-10963",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-06-02",
+      "title": "Estate Tax Closing Letter User Fee Update",
+      "value_usd": null,
+      "description": "Notice of proposed rulemaking. \u00b7 This document contains proposed regulations amending the current regulations to increase the amount of the user fee imposed on authorized persons requesting the issuance of an estate tax closing letter. The Independent Offices Appropriations Act of 1952 authorizes charging user fees in appropriate circumstances. The proposed regulations would affect persons who request an estate tax closing letter.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/06/02/2026-10963/estate-tax-closing-letter-user-fee-update"
     }
   ]
 }

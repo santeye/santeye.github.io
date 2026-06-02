@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T23:41:34.208748+00:00",
+  "generated_at": "2026-06-02T23:55:52.249640+00:00",
   "sources": [
     "lda"
   ],
@@ -14083,6 +14083,124 @@
         "DEF"
       ],
       "url": "https://lda.gov/filings/public/filing/827124e0-34a9-4352-aed1-15efa1c6d61f/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "ec75811b-12b0-4e97-a625-f19f9507375a",
+      "iso": "DE",
+      "source": "lda",
+      "signal_date": "2026-06-01",
+      "title": "Energy, Trade, Taxation \u2014 Dpwn Holdings (Usa) Inc. via Avoq, Llc",
+      "value_usd": null,
+      "description": "Issues related to trade, transportation, tax, and energy.",
+      "lobbying_firm": "Avoq, Llc",
+      "registrant_id": 313271,
+      "client_name": "Dpwn Holdings (Usa) Inc.",
+      "issue_codes": [
+        "ENG",
+        "TAX",
+        "TRA",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/ec75811b-12b0-4e97-a625-f19f9507375a/print/",
+      "raw_score": 4.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "0a86bd7e-54c2-44a0-aa10-b34cda4b1717",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Defense \u2014 Emerging Technology Institute via Banner Public Affairs, Llc",
+      "value_usd": null,
+      "description": "Funding under P.L. 119-21, the One Big Beautiful Bill Act and FY2026 Defense Appropriations",
+      "lobbying_firm": "Banner Public Affairs, Llc",
+      "registrant_id": 401046942,
+      "client_name": "Emerging Technology Institute",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/0a86bd7e-54c2-44a0-aa10-b34cda4b1717/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "ce6746ed-75df-4919-9e3a-2eeafd0125de",
+      "iso": "MH",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Energy, Fuel/Oil \u2014 O&G International Ventures Inc. via Catalyst Strategies, Llc",
+      "value_usd": null,
+      "description": "Marshall Islands; Engagement with the U.S Department of State, Department of the Interior, Department of Energy and Executive Branch offic\u2026",
+      "lobbying_firm": "Catalyst Strategies, Llc",
+      "registrant_id": 401110161,
+      "client_name": "O&G International Ventures Inc.",
+      "issue_codes": [
+        "ENG",
+        "FUE"
+      ],
+      "url": "https://lda.gov/filings/public/filing/ce6746ed-75df-4919-9e3a-2eeafd0125de/print/",
+      "raw_score": 1.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "fb5ffb78-54b4-4812-8424-f09866941550",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Foreign Affairs, Science/Technology, Government \u2014 Noosheen Hashemi via Checkmate Government Relations",
+      "value_usd": null,
+      "description": "Issues regarding educating federal policymakers including AI and foreign relations.",
+      "lobbying_firm": "Checkmate Government Relations",
+      "registrant_id": 401109039,
+      "client_name": "Noosheen Hashemi",
+      "issue_codes": [
+        "FOR",
+        "GOV",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/fb5ffb78-54b4-4812-8424-f09866941550/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "37e68114-ff90-44a4-9c51-094bc90fb208",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Defense, Science/Technology \u2014 Seyond via Jones Walker, Llp",
+      "value_usd": null,
+      "description": "SAFE LiDAR Act and related policies affecting the regulation, deployment, and supply chain of LiDAR technologies, includ\u2026",
+      "lobbying_firm": "Jones Walker, Llp",
+      "registrant_id": 20881,
+      "client_name": "Seyond",
+      "issue_codes": [
+        "DEF",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/37e68114-ff90-44a4-9c51-094bc90fb208/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "384ae3a4-12ac-4671-b31d-2e6e9a2ec572",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Defense, Homeland Security, Consumer Issues \u2014 Cohesity Inc. via Mindset Advocacy, Llc",
+      "value_usd": null,
+      "description": "Issues related to cyber-attack prevention and recovery, AI security, government systems IT security, and National Securi\u2026",
+      "lobbying_firm": "Mindset Advocacy, Llc",
+      "registrant_id": 296271,
+      "client_name": "Cohesity Inc.",
+      "issue_codes": [
+        "CPI",
+        "DEF",
+        "GOV",
+        "HOM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/384ae3a4-12ac-4671-b31d-2e6e9a2ec572/print/",
       "raw_score": null,
       "weight": 1.0
     }

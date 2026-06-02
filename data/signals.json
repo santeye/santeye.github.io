@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T23:41:51.720045+00:00",
+  "generated_at": "2026-06-02T23:56:08.386724+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,213 @@
     "sam"
   ],
   "signals": [
+    {
+      "iso": "VN",
+      "source": "dsca",
+      "signal_date": "2026-06-02",
+      "title": "C-130 Sustainment",
+      "value_usd": 100000000.0,
+      "description": "Transmittal #26-39 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Vietnam for C-130 Sustainment services and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/vietnam-c-130-sustainment/",
+      "wp_id": 686616,
+      "profile": {
+        "name": "Vietnam",
+        "score": 4,
+        "factors": [
+          "South China Sea",
+          "strategic minerals",
+          "rare earths",
+          "US partner"
+        ],
+        "rationale": "South China Sea territorial disputes \u2014 Paracel and Spratly Islands (+1), world's second-largest rare earth reserves (+2), US defense relationship expanding post-normalization (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.15,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "0a86bd7e-54c2-44a0-aa10-b34cda4b1717",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Defense \u2014 Emerging Technology Institute via Banner Public Affairs, Llc",
+      "value_usd": null,
+      "description": "Funding under P.L. 119-21, the One Big Beautiful Bill Act and FY2026 Defense Appropriations",
+      "lobbying_firm": "Banner Public Affairs, Llc",
+      "registrant_id": 401046942,
+      "client_name": "Emerging Technology Institute",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/0a86bd7e-54c2-44a0-aa10-b34cda4b1717/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "ce6746ed-75df-4919-9e3a-2eeafd0125de",
+      "iso": "MH",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Energy, Fuel/Oil \u2014 O&G International Ventures Inc. via Catalyst Strategies, Llc",
+      "value_usd": null,
+      "description": "Marshall Islands; Engagement with the U.S Department of State, Department of the Interior, Department of Energy and Executive Branch offic\u2026",
+      "lobbying_firm": "Catalyst Strategies, Llc",
+      "registrant_id": 401110161,
+      "client_name": "O&G International Ventures Inc.",
+      "issue_codes": [
+        "ENG",
+        "FUE"
+      ],
+      "url": "https://lda.gov/filings/public/filing/ce6746ed-75df-4919-9e3a-2eeafd0125de/print/",
+      "profile": {
+        "name": "Marshall Islands",
+        "score": 1,
+        "factors": [
+          "US basing"
+        ],
+        "rationale": "US Kwajalein Atoll missile test range and basing (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "fb5ffb78-54b4-4812-8424-f09866941550",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Foreign Affairs, Science/Technology, Government \u2014 Noosheen Hashemi via Checkmate Government Relations",
+      "value_usd": null,
+      "description": "Issues regarding educating federal policymakers including AI and foreign relations.",
+      "lobbying_firm": "Checkmate Government Relations",
+      "registrant_id": 401109039,
+      "client_name": "Noosheen Hashemi",
+      "issue_codes": [
+        "FOR",
+        "GOV",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/fb5ffb78-54b4-4812-8424-f09866941550/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "37e68114-ff90-44a4-9c51-094bc90fb208",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Defense, Science/Technology \u2014 Seyond via Jones Walker, Llp",
+      "value_usd": null,
+      "description": "SAFE LiDAR Act and related policies affecting the regulation, deployment, and supply chain of LiDAR technologies, includ\u2026",
+      "lobbying_firm": "Jones Walker, Llp",
+      "registrant_id": 20881,
+      "client_name": "Seyond",
+      "issue_codes": [
+        "DEF",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/37e68114-ff90-44a4-9c51-094bc90fb208/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "384ae3a4-12ac-4671-b31d-2e6e9a2ec572",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Defense, Homeland Security, Consumer Issues \u2014 Cohesity Inc. via Mindset Advocacy, Llc",
+      "value_usd": null,
+      "description": "Issues related to cyber-attack prevention and recovery, AI security, government systems IT security, and National Securi\u2026",
+      "lobbying_firm": "Mindset Advocacy, Llc",
+      "registrant_id": 296271,
+      "client_name": "Cohesity Inc.",
+      "issue_codes": [
+        "CPI",
+        "DEF",
+        "GOV",
+        "HOM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/384ae3a4-12ac-4671-b31d-2e6e9a2ec572/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 56981,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-02",
+      "title": "NOBITEX (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902",
+        "IRAN",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56981",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57813,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-02",
+      "title": "Seyed Mohammad Ali AGHAMIR MOHAMMAD ALI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: NOBITEX)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57813",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "filing_uuid": "01b406c0-9c9b-4948-9a54-f14127b16ba3",
       "iso": "XX",
@@ -50,6 +257,39 @@
       ],
       "url": "https://lda.gov/filings/public/filing/827124e0-34a9-4352-aed1-15efa1c6d61f/print/",
       "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "ec75811b-12b0-4e97-a625-f19f9507375a",
+      "iso": "DE",
+      "source": "lda",
+      "signal_date": "2026-06-01",
+      "title": "Energy, Trade, Taxation \u2014 Dpwn Holdings (Usa) Inc. via Avoq, Llc",
+      "value_usd": null,
+      "description": "Issues related to trade, transportation, tax, and energy.",
+      "lobbying_firm": "Avoq, Llc",
+      "registrant_id": 313271,
+      "client_name": "Dpwn Holdings (Usa) Inc.",
+      "issue_codes": [
+        "ENG",
+        "TAX",
+        "TRA",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/ec75811b-12b0-4e97-a625-f19f9507375a/print/",
+      "profile": {
+        "name": "Germany",
+        "score": 4,
+        "factors": [
+          "US basing",
+          "nuclear hosting",
+          "regional power"
+        ],
+        "rationale": "Major US basing \u2014 EUCOM, Ramstein, Landstuhl (+1), US tactical nuclear weapons hosted (+2 latent nuclear), regional power and NATO anchor (+1)"
+      },
       "layer": "influence",
       "quality": 0.5,
       "dollar_mod": 1.0,
@@ -31529,8 +31769,21 @@
   "themes": [
     {
       "type": "first_appearance",
+      "title": "Vietnam \u2014 dsca after first recorded silence",
+      "score": 20.566,
+      "countries": [
+        "VN"
+      ],
+      "signal_keys": [
+        "dsca:C-130 Sustainment"
+      ],
+      "why": "dsca filed for Vietnam after first recorded of silence (profile score: 4). Signal: C-130 Sustainment",
+      "narrative": null
+    },
+    {
+      "type": "first_appearance",
       "title": "Brazil \u2014 ofac after first recorded silence",
-      "score": 18.943,
+      "score": 17.721,
       "countries": [
         "BR"
       ],
@@ -31543,7 +31796,7 @@
     {
       "type": "first_appearance",
       "title": "Singapore \u2014 ofac after first recorded silence",
-      "score": 17.721,
+      "score": 16.579,
       "countries": [
         "SG"
       ],
@@ -31551,47 +31804,6 @@
         "ofac:ALT CAPITAL PTE. LTD (Entity)"
       ],
       "why": "ofac filed for Singapore after first recorded of silence (profile score: 5). Signal: ALT CAPITAL PTE. LTD (Entity)",
-      "narrative": null
-    },
-    {
-      "type": "convergence",
-      "title": "Oman \u2014 influence \u2192 action + first appearance",
-      "score": 16.979,
-      "countries": [
-        "OM"
-      ],
-      "signal_keys": [
-        "ofac:ZEUS LOGISTICS GROUP (Entity)",
-        "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424"
-      ],
-      "why": "[influence_before_action] lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d. | [first_appearance] ofac filed for Oman after first recorded of silence (profile score: 6). Signal: ZEUS LOGISTICS GROUP (Entity)",
-      "_components": [
-        {
-          "type": "influence_before_action",
-          "title": "Oman \u2014 lda \u2192 ofac (41d)",
-          "score": 10.132,
-          "countries": [
-            "OM"
-          ],
-          "signal_keys": [
-            "ofac:ZEUS LOGISTICS GROUP (Entity)",
-            "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424"
-          ],
-          "why": "lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d."
-        },
-        {
-          "type": "first_appearance",
-          "title": "Oman \u2014 ofac after first recorded silence",
-          "score": 6.847,
-          "countries": [
-            "OM"
-          ],
-          "signal_keys": [
-            "ofac:ZEUS LOGISTICS GROUP (Entity)"
-          ],
-          "why": "ofac filed for Oman after first recorded of silence (profile score: 6). Signal: ZEUS LOGISTICS GROUP (Entity)"
-        }
-      ],
       "narrative": null
     }
   ]
