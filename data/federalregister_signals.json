@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T23:55:53.310550+00:00",
+  "generated_at": "2026-06-03T23:53:23.951145+00:00",
   "sources": [
     "federalregister"
   ],
@@ -7074,6 +7074,28 @@
       "description": "Notice of proposed rulemaking. \u00b7 This document contains proposed regulations amending the current regulations to increase the amount of the user fee imposed on authorized persons requesting the issuance of an estate tax closing letter. The Independent Offices Appropriations Act of 1952 authorizes charging user fees in appropriate circumstances. The proposed regulations would affect persons who request an estate tax closing letter.",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/06/02/2026-10963/estate-tax-closing-letter-user-fee-update"
+    },
+    {
+      "document_number": "2026-11102",
+      "iso": "US",
+      "source": "federalregister",
+      "signal_date": "2026-06-03",
+      "title": "Guidance on Tax-Exempt Refunding Bonds; Hearing",
+      "value_usd": null,
+      "description": "Notice of proposed rulemaking; notice of hearing. \u00b7 This document contains proposed regulations that would update certain arbitrage rules and definitions applicable to tax-exempt and other tax-advantaged bonds by clarifying the time and manner for requesting refunds of overpayment of rebate to the United States, the special transition rule for transferred proceeds, the limitation on allocations to expenditures, and the IRS address for filing defeasance notices. These proposed regulations would also revise the provision addressing certain perpetual State guarantee funds, the definition of tax-exempt bond, and the definition of refunding issue. The proposed regulations would affect issuers of tax-advantaged bonds.",
+      "raw_score": 10.0,
+      "page_url": "https://www.federalregister.gov/documents/2026/06/03/2026-11102/guidance-on-tax-exempt-refunding-bonds-hearing"
+    },
+    {
+      "document_number": "2026-11042",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-06-03",
+      "title": "Notice of OFAC Sanctions Action",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing the names of one or more persons that have been placed on OFAC's Specially Designated Nationals and Blocked Persons List (SDN List) based on OFAC's determination that one or more applicable legal criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of these persons are blocked, and U.S. persons are generally prohibited from engaging in transactions with them.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/06/03/2026-11042/notice-of-ofac-sanctions-action"
     }
   ]
 }

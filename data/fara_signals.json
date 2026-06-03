@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T23:55:50.853775+00:00",
+  "generated_at": "2026-06-03T23:53:21.097696+00:00",
   "sources": [
     "fara"
   ],
@@ -2537,6 +2537,36 @@
       "raw_score": null,
       "weight": 1.0,
       "page_url": "https://efile.fara.gov/docs/7730-Registration-Statement-20260601-1.pdf"
+    },
+    {
+      "registration_number": 7732,
+      "iso": null,
+      "source": "fara",
+      "signal_date": "2026-06-02",
+      "title": "Piro, Inc.",
+      "value_usd": null,
+      "description": "Piro, Inc.",
+      "registrant": "Piro, Inc.",
+      "principal": null,
+      "target_groups": [],
+      "raw_score": null,
+      "weight": 1.0,
+      "page_url": "https://efile.fara.gov/docs/7732-Registration-Statement-20260602-1.pdf"
+    },
+    {
+      "registration_number": 7731,
+      "iso": null,
+      "source": "fara",
+      "signal_date": "2026-06-02",
+      "title": "Van Scoyoc Associates, Inc.",
+      "value_usd": null,
+      "description": "Van Scoyoc Associates, Inc.",
+      "registrant": "Van Scoyoc Associates, Inc.",
+      "principal": null,
+      "target_groups": [],
+      "raw_score": null,
+      "weight": 1.0,
+      "page_url": "https://efile.fara.gov/docs/7731-Registration-Statement-20260602-1.pdf"
     }
   ]
 }

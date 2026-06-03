@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T23:55:52.249640+00:00",
+  "generated_at": "2026-06-03T23:53:22.852097+00:00",
   "sources": [
     "lda"
   ],
@@ -14201,6 +14201,238 @@
         "HOM"
       ],
       "url": "https://lda.gov/filings/public/filing/384ae3a4-12ac-4671-b31d-2e6e9a2ec572/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "4ae3b3e7-e65f-4a92-b2c2-9f97a894536b",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Energy \u2014 Sila Nanotechnologies, Inc. via Anchor & Arrow Llc",
+      "value_usd": null,
+      "description": "Issues related to energy policy and appropriations",
+      "lobbying_firm": "Anchor & Arrow Llc",
+      "registrant_id": 401110145,
+      "client_name": "Sila Nanotechnologies, Inc.",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/4ae3b3e7-e65f-4a92-b2c2-9f97a894536b/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "8fc6159f-af91-41d4-807a-cc3242f7c124",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Trade, Trucking \u2014 Point2Point Global via Chartwell Strategy Group Llc",
+      "value_usd": null,
+      "description": "Supply chain/logistics issues",
+      "lobbying_firm": "Chartwell Strategy Group Llc",
+      "registrant_id": 401104750,
+      "client_name": "Point2Point Global",
+      "issue_codes": [
+        "TRD",
+        "TRU"
+      ],
+      "url": "https://lda.gov/filings/public/filing/8fc6159f-af91-41d4-807a-cc3242f7c124/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "5b58500a-fba8-41a6-af94-5236b4882429",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Defense \u2014 Holly Strategies Inc. On Behalf Of 202 Group via Anchor & Arrow Llc",
+      "value_usd": null,
+      "description": "Issues related to defense policy and appropriations",
+      "lobbying_firm": "Anchor & Arrow Llc",
+      "registrant_id": 401110145,
+      "client_name": "Holly Strategies Inc. On Behalf Of 202 Group",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5b58500a-fba8-41a6-af94-5236b4882429/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "fa60f809-182f-41c8-b329-5b5d3195b290",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Defense \u2014 Trackonomy Systems, Inc. via Anchor & Arrow Llc",
+      "value_usd": null,
+      "description": "Issues related to defense policy and appropriations",
+      "lobbying_firm": "Anchor & Arrow Llc",
+      "registrant_id": 401110145,
+      "client_name": "Trackonomy Systems, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/fa60f809-182f-41c8-b329-5b5d3195b290/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "bdfc206a-ed18-4e79-8993-452c880caeac",
+      "iso": "EG",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Foreign Affairs \u2014 Emad El Said Youssef Saad El-Galada Through Bolt Capital, Lp via Nexusone Consulting",
+      "value_usd": null,
+      "description": "Egypt; Bring awareness to the developing situation in the Middle East and Northern and Western Africa",
+      "lobbying_firm": "Nexusone Consulting",
+      "registrant_id": 401109537,
+      "client_name": "Emad El Said Youssef Saad El-Galada Through Bolt Capital, Lp",
+      "issue_codes": [
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/bdfc206a-ed18-4e79-8993-452c880caeac/print/",
+      "raw_score": 7.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "85d75090-bdb4-4a56-b204-d4458407d5a6",
+      "iso": "ES",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Trade \u2014 C&C North American Inc. Dba Cosentino North America via Continental Strategy, Llc",
+      "value_usd": null,
+      "description": "Tariff Issues",
+      "lobbying_firm": "Continental Strategy, Llc",
+      "registrant_id": 401106285,
+      "client_name": "C&C North American Inc. Dba Cosentino North America",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/85d75090-bdb4-4a56-b204-d4458407d5a6/print/",
+      "raw_score": 2.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "3776155a-869a-4846-a16f-4e765efe4319",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Trade, Budget, Clean Air/Water \u2014 Citex Usa Llc via Continental Strategy, Llc",
+      "value_usd": null,
+      "description": "Infrastructure engineering, inspection, testing & construction management opportunities",
+      "lobbying_firm": "Continental Strategy, Llc",
+      "registrant_id": 401106285,
+      "client_name": "Citex Usa Llc",
+      "issue_codes": [
+        "BUD",
+        "CAW",
+        "ROD",
+        "TRD",
+        "URB",
+        "UTI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/3776155a-869a-4846-a16f-4e765efe4319/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "709cca1e-3d52-4f5f-9ad4-711c4b62f328",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Trade, Beverage \u2014 Constellation Brands, Inc. via Continental Strategy, Llc",
+      "value_usd": null,
+      "description": "Import, export, and trade issues",
+      "lobbying_firm": "Continental Strategy, Llc",
+      "registrant_id": 401106285,
+      "client_name": "Constellation Brands, Inc.",
+      "issue_codes": [
+        "BEV",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/709cca1e-3d52-4f5f-9ad4-711c4b62f328/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "c47c554d-583d-433b-9d90-464b123b4b37",
+      "iso": "PA",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Foreign Affairs, Trade \u2014 Grupo Estrella Holdings. S.A. via Continental Strategy, Llc",
+      "value_usd": null,
+      "description": "Panama; Tariff Issues",
+      "lobbying_firm": "Continental Strategy, Llc",
+      "registrant_id": 401106285,
+      "client_name": "Grupo Estrella Holdings. S.A.",
+      "issue_codes": [
+        "FOR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/c47c554d-583d-433b-9d90-464b123b4b37/print/",
+      "raw_score": 5.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "0594a3d5-2aa7-417c-9699-c5dcca71908e",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Energy, Budget \u2014 Ever-Green Energy, Inc. via Crossroads Strategies, Llc",
+      "value_usd": null,
+      "description": "Federal policies and funding related to geothermal energy infrastructure.",
+      "lobbying_firm": "Crossroads Strategies, Llc",
+      "registrant_id": 400531586,
+      "client_name": "Ever-Green Energy, Inc.",
+      "issue_codes": [
+        "BUD",
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/0594a3d5-2aa7-417c-9699-c5dcca71908e/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "5647fb92-c749-46a3-88e0-6822438ec3bb",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Trade, Agriculture, Economics \u2014 National Hardwood Lumber Association via Crossroads Strategies, Llc",
+      "value_usd": null,
+      "description": "Policies, regulations, standards, and initiatives that promote sustainable growth, fair trade, government procurement of\u2026",
+      "lobbying_firm": "Crossroads Strategies, Llc",
+      "registrant_id": 400531586,
+      "client_name": "National Hardwood Lumber Association",
+      "issue_codes": [
+        "AGR",
+        "ECN",
+        "GOV",
+        "NAT",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5647fb92-c749-46a3-88e0-6822438ec3bb/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "8227cf86-5923-493c-b5cc-e3bfa51d79e3",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Defense, Homeland Security, Budget \u2014 Booz Allen Hamilton, Inc. via Thegroup Dc, Llc",
+      "value_usd": null,
+      "description": "NDAA, FY 2027 Budget",
+      "lobbying_firm": "Thegroup Dc, Llc",
+      "registrant_id": 401103834,
+      "client_name": "Booz Allen Hamilton, Inc.",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "HOM",
+        "VET"
+      ],
+      "url": "https://lda.gov/filings/public/filing/8227cf86-5923-493c-b5cc-e3bfa51d79e3/print/",
       "raw_score": null,
       "weight": 1.0
     }

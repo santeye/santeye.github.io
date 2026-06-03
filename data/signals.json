@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T23:56:08.386724+00:00",
+  "generated_at": "2026-06-03T23:53:39.073902+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,239 @@
     "sam"
   ],
   "signals": [
+    {
+      "filing_uuid": "fa60f809-182f-41c8-b329-5b5d3195b290",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Defense \u2014 Trackonomy Systems, Inc. via Anchor & Arrow Llc",
+      "value_usd": null,
+      "description": "Issues related to defense policy and appropriations",
+      "lobbying_firm": "Anchor & Arrow Llc",
+      "registrant_id": 401110145,
+      "client_name": "Trackonomy Systems, Inc.",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/fa60f809-182f-41c8-b329-5b5d3195b290/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "bdfc206a-ed18-4e79-8993-452c880caeac",
+      "iso": "EG",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Foreign Affairs \u2014 Emad El Said Youssef Saad El-Galada Through Bolt Capital, Lp via Nexusone Consulting",
+      "value_usd": null,
+      "description": "Egypt; Bring awareness to the developing situation in the Middle East and Northern and Western Africa",
+      "lobbying_firm": "Nexusone Consulting",
+      "registrant_id": 401109537,
+      "client_name": "Emad El Said Youssef Saad El-Galada Through Bolt Capital, Lp",
+      "issue_codes": [
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/bdfc206a-ed18-4e79-8993-452c880caeac/print/",
+      "profile": {
+        "name": "Egypt",
+        "score": 7,
+        "factors": [
+          "maritime chokepoint",
+          "Suez Canal",
+          "US basing",
+          "regional power",
+          "hydrocarbons"
+        ],
+        "rationale": "Controls Suez Canal \u2014 global maritime chokepoint (+3), major US basing and security partner (+1), regional power (+1), hydrocarbon producer and gas hub (+2)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "85d75090-bdb4-4a56-b204-d4458407d5a6",
+      "iso": "ES",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Trade \u2014 C&C North American Inc. Dba Cosentino North America via Continental Strategy, Llc",
+      "value_usd": null,
+      "description": "Tariff Issues",
+      "lobbying_firm": "Continental Strategy, Llc",
+      "registrant_id": 401106285,
+      "client_name": "C&C North American Inc. Dba Cosentino North America",
+      "issue_codes": [
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/85d75090-bdb4-4a56-b204-d4458407d5a6/print/",
+      "profile": {
+        "name": "Spain",
+        "score": 2,
+        "factors": [
+          "US basing",
+          "maritime corridor"
+        ],
+        "rationale": "Major US basing \u2014 Rota naval base, Mor\u00f3n Air Base (+1), Gibraltar Strait \u2014 controls northern approach (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "3776155a-869a-4846-a16f-4e765efe4319",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Trade, Budget, Clean Air/Water \u2014 Citex Usa Llc via Continental Strategy, Llc",
+      "value_usd": null,
+      "description": "Infrastructure engineering, inspection, testing & construction management opportunities",
+      "lobbying_firm": "Continental Strategy, Llc",
+      "registrant_id": 401106285,
+      "client_name": "Citex Usa Llc",
+      "issue_codes": [
+        "BUD",
+        "CAW",
+        "ROD",
+        "TRD",
+        "URB",
+        "UTI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/3776155a-869a-4846-a16f-4e765efe4319/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "709cca1e-3d52-4f5f-9ad4-711c4b62f328",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Trade, Beverage \u2014 Constellation Brands, Inc. via Continental Strategy, Llc",
+      "value_usd": null,
+      "description": "Import, export, and trade issues",
+      "lobbying_firm": "Continental Strategy, Llc",
+      "registrant_id": 401106285,
+      "client_name": "Constellation Brands, Inc.",
+      "issue_codes": [
+        "BEV",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/709cca1e-3d52-4f5f-9ad4-711c4b62f328/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "c47c554d-583d-433b-9d90-464b123b4b37",
+      "iso": "PA",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Foreign Affairs, Trade \u2014 Grupo Estrella Holdings. S.A. via Continental Strategy, Llc",
+      "value_usd": null,
+      "description": "Panama; Tariff Issues",
+      "lobbying_firm": "Continental Strategy, Llc",
+      "registrant_id": 401106285,
+      "client_name": "Grupo Estrella Holdings. S.A.",
+      "issue_codes": [
+        "FOR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/c47c554d-583d-433b-9d90-464b123b4b37/print/",
+      "profile": {
+        "name": "Panama",
+        "score": 5,
+        "factors": [
+          "maritime chokepoint",
+          "Panama Canal",
+          "Western Hemisphere",
+          "BRI exposure"
+        ],
+        "rationale": "Panama Canal \u2014 Western Hemisphere chokepoint connecting Atlantic and Pacific (+3), Western Hemisphere presence (+1), Chinese BRI/port operator influence (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "0594a3d5-2aa7-417c-9699-c5dcca71908e",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Energy, Budget \u2014 Ever-Green Energy, Inc. via Crossroads Strategies, Llc",
+      "value_usd": null,
+      "description": "Federal policies and funding related to geothermal energy infrastructure.",
+      "lobbying_firm": "Crossroads Strategies, Llc",
+      "registrant_id": 400531586,
+      "client_name": "Ever-Green Energy, Inc.",
+      "issue_codes": [
+        "BUD",
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/0594a3d5-2aa7-417c-9699-c5dcca71908e/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "5647fb92-c749-46a3-88e0-6822438ec3bb",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Trade, Agriculture, Economics \u2014 National Hardwood Lumber Association via Crossroads Strategies, Llc",
+      "value_usd": null,
+      "description": "Policies, regulations, standards, and initiatives that promote sustainable growth, fair trade, government procurement of\u2026",
+      "lobbying_firm": "Crossroads Strategies, Llc",
+      "registrant_id": 400531586,
+      "client_name": "National Hardwood Lumber Association",
+      "issue_codes": [
+        "AGR",
+        "ECN",
+        "GOV",
+        "NAT",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5647fb92-c749-46a3-88e0-6822438ec3bb/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "8227cf86-5923-493c-b5cc-e3bfa51d79e3",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-03",
+      "title": "Defense, Homeland Security, Budget \u2014 Booz Allen Hamilton, Inc. via Thegroup Dc, Llc",
+      "value_usd": null,
+      "description": "NDAA, FY 2027 Budget",
+      "lobbying_firm": "Thegroup Dc, Llc",
+      "registrant_id": 401103834,
+      "client_name": "Booz Allen Hamilton, Inc.",
+      "issue_codes": [
+        "BUD",
+        "DEF",
+        "HOM",
+        "VET"
+      ],
+      "url": "https://lda.gov/filings/public/filing/8227cf86-5923-493c-b5cc-e3bfa51d79e3/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "iso": "VN",
       "source": "dsca",
@@ -152,6 +385,70 @@
         "HOM"
       ],
       "url": "https://lda.gov/filings/public/filing/384ae3a4-12ac-4671-b31d-2e6e9a2ec572/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "4ae3b3e7-e65f-4a92-b2c2-9f97a894536b",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Energy \u2014 Sila Nanotechnologies, Inc. via Anchor & Arrow Llc",
+      "value_usd": null,
+      "description": "Issues related to energy policy and appropriations",
+      "lobbying_firm": "Anchor & Arrow Llc",
+      "registrant_id": 401110145,
+      "client_name": "Sila Nanotechnologies, Inc.",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/4ae3b3e7-e65f-4a92-b2c2-9f97a894536b/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "8fc6159f-af91-41d4-807a-cc3242f7c124",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Trade, Trucking \u2014 Point2Point Global via Chartwell Strategy Group Llc",
+      "value_usd": null,
+      "description": "Supply chain/logistics issues",
+      "lobbying_firm": "Chartwell Strategy Group Llc",
+      "registrant_id": 401104750,
+      "client_name": "Point2Point Global",
+      "issue_codes": [
+        "TRD",
+        "TRU"
+      ],
+      "url": "https://lda.gov/filings/public/filing/8fc6159f-af91-41d4-807a-cc3242f7c124/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "5b58500a-fba8-41a6-af94-5236b4882429",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-06-02",
+      "title": "Defense \u2014 Holly Strategies Inc. On Behalf Of 202 Group via Anchor & Arrow Llc",
+      "value_usd": null,
+      "description": "Issues related to defense policy and appropriations",
+      "lobbying_firm": "Anchor & Arrow Llc",
+      "registrant_id": 401110145,
+      "client_name": "Holly Strategies Inc. On Behalf Of 202 Group",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5b58500a-fba8-41a6-af94-5236b4882429/print/",
       "profile": null,
       "layer": "influence",
       "quality": 0.5,
@@ -31770,7 +32067,7 @@
     {
       "type": "first_appearance",
       "title": "Vietnam \u2014 dsca after first recorded silence",
-      "score": 20.566,
+      "score": 19.24,
       "countries": [
         "VN"
       ],
@@ -31783,7 +32080,7 @@
     {
       "type": "first_appearance",
       "title": "Brazil \u2014 ofac after first recorded silence",
-      "score": 17.721,
+      "score": 16.579,
       "countries": [
         "BR"
       ],
@@ -31794,16 +32091,44 @@
       "narrative": null
     },
     {
-      "type": "first_appearance",
-      "title": "Singapore \u2014 ofac after first recorded silence",
-      "score": 16.579,
+      "type": "convergence",
+      "title": "Oman \u2014 influence \u2192 action + first appearance",
+      "score": 16.124,
       "countries": [
-        "SG"
+        "OM"
       ],
       "signal_keys": [
-        "ofac:ALT CAPITAL PTE. LTD (Entity)"
+        "ofac:ZEUS LOGISTICS GROUP (Entity)",
+        "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424"
       ],
-      "why": "ofac filed for Singapore after first recorded of silence (profile score: 5). Signal: ALT CAPITAL PTE. LTD (Entity)",
+      "why": "[influence_before_action] lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d. | [first_appearance] ofac filed for Oman after first recorded of silence (profile score: 6). Signal: ZEUS LOGISTICS GROUP (Entity)",
+      "_components": [
+        {
+          "type": "influence_before_action",
+          "title": "Oman \u2014 lda \u2192 ofac (41d)",
+          "score": 10.132,
+          "countries": [
+            "OM"
+          ],
+          "signal_keys": [
+            "ofac:ZEUS LOGISTICS GROUP (Entity)",
+            "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424"
+          ],
+          "why": "lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d."
+        },
+        {
+          "type": "first_appearance",
+          "title": "Oman \u2014 ofac after first recorded silence",
+          "score": 5.992,
+          "countries": [
+            "OM"
+          ],
+          "signal_keys": [
+            "ofac:ZEUS LOGISTICS GROUP (Entity)"
+          ],
+          "why": "ofac filed for Oman after first recorded of silence (profile score: 6). Signal: ZEUS LOGISTICS GROUP (Entity)"
+        }
+      ],
       "narrative": null
     }
   ]
