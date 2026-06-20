@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T23:52:57.967386+00:00",
+  "generated_at": "2026-06-20T23:19:08.209925+00:00",
   "sources": [
     "sam"
   ],
@@ -76,5 +76,6 @@
       "description": "Combined Synopsis/Solicitation \u00b7 https://api.sam.gov/prod/opportunities/v1/noticedesc?noticeid=ff54ee27e1b94a52b929f95a213e303c",
       "page_url": "https://sam.gov/workspace/contract/opp/ff54ee27e1b94a52b929f95a213e303c/view"
     }
-  ]
+  ],
+  "error": "HTTP Error 401: Unauthorized"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T23:55:43.061929+00:00",
+  "generated_at": "2026-06-20T23:19:20.463188+00:00",
   "sources": [
     "ofac"
   ],
@@ -4654,6 +4654,652 @@
         "SDGT"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57815"
+    },
+    {
+      "uid": 57558,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "GLOBE TECHNOLOGY PROVIDERS SARL (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HAMIEH, Alaa Hassan; Linked To: HASHEM, Bahaa Addin)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57558"
+    },
+    {
+      "uid": 57559,
+      "iso": "SY",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "AL 'AHD COMPANY FOR TRADE AND INVESTMENT (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: GM FARM)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57559"
+    },
+    {
+      "uid": 57561,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Wael COSTANTEEN (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HAMIEH, Alaa Hassan)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57561"
+    },
+    {
+      "uid": 57562,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "AL SHAFA ADMINISTRATIVE SERVICES LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HAMIEH, Alaa Hassan)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57562"
+    },
+    {
+      "uid": 57563,
+      "iso": "OM",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "GLOBE INTERNATIONAL SPC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HAMIEH, Alaa Hassan)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57563"
+    },
+    {
+      "uid": 57564,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "TYKE SAL (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HAMIEH, Muhammad Hasan)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57564"
+    },
+    {
+      "uid": 57734,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Mahmoud QAMATI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57734"
+    },
+    {
+      "uid": 57793,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "DOMUS TRADING HK LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57793"
+    },
+    {
+      "uid": 57794,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "SHANGSHUN HONG KONG LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: GOLCHIN, Manuchehr)",
+      "programs": [
+        "NPWMD",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57794"
+    },
+    {
+      "uid": 57840,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "MUSTAD SHANGHAI INTERNATIONAL TRADE CO LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MUSTAD LIMITED)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57840"
+    },
+    {
+      "uid": 57842,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Boyu LIU (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57842"
+    },
+    {
+      "uid": 57855,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "BUTANI TRADING LLC (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57855"
+    },
+    {
+      "uid": 57856,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "DUNDLOD TRADING FZE (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57856"
+    },
+    {
+      "uid": 57857,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "ADH ENERGY FZE (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57857"
+    },
+    {
+      "uid": 57858,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Sarbaz Abdul ZADA (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57858"
+    },
+    {
+      "uid": 57860,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Mohammad Shakol MIHANDOUST (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57860"
+    },
+    {
+      "uid": 57862,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "SAHEL STAR OIL AND GAS COMPANY LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZADA, Sarbaz Abdul)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57862"
+    },
+    {
+      "uid": 57864,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "SHANGHAI QIANYE ENERGY CO., LTD. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MIHANDOUST, Mohammad Shakol)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57864"
+    },
+    {
+      "uid": 57867,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "LIMRA GAS LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57867"
+    },
+    {
+      "uid": 57872,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Shaopei MENG (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MINISTRY OF DEFENSE AND ARMED FORCES LOGISTICS)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57872"
+    },
+    {
+      "uid": 57874,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Lichun XU (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57874"
+    },
+    {
+      "uid": 57875,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "BLUE SEA MARINE INCORPORATED AND FAATEH MARITIME INCORPORATED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57875"
+    },
+    {
+      "uid": 57877,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "ADAMAS SHIPPING INC (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57877"
+    },
+    {
+      "uid": 57878,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "BLACK GOLD TRADE CORPORATION (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57878"
+    },
+    {
+      "uid": 57880,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Hongyi WANG (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MUSTAD LIMITED)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57880"
+    },
+    {
+      "uid": 57881,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "GAS GMS LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57881"
+    },
+    {
+      "uid": 57883,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "MD 23 (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: LIMRA GAS LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57883"
+    },
+    {
+      "uid": 57885,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "GLENDALE (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: ECOSEAS MARITIME LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57885"
+    },
+    {
+      "uid": 57887,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "AMIR GAS (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: BLUE SEA MARINE INCORPORATED AND FAATEH MARITIME INCORPORATED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57887"
+    },
+    {
+      "uid": 57888,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "GAS LAGOON (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: ADAMAS SHIPPING INC)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57888"
+    },
+    {
+      "uid": 57890,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "MEHRDAD GERAMIAN NIK AND PARTNERS COMPANY (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57890"
+    },
+    {
+      "uid": 57891,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Mehrdad GERAMIAN NIK (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MEHRDAD GERAMIAN NIK AND PARTNERS COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57891"
+    },
+    {
+      "uid": 57892,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "MILE (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: BLACK GOLD TRADE CORPORATION)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57892"
+    },
+    {
+      "uid": 57893,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Romina GERAMIAN NIK (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MEHRDAD GERAMIAN NIK AND PARTNERS COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57893"
+    },
+    {
+      "uid": 57894,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "GAZ GMS (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: GAS GMS LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57894"
+    },
+    {
+      "uid": 57895,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Miguel DIAZ-CANEL BERMUDEZ (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57895"
+    },
+    {
+      "uid": 57898,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "MINISTRY OF THE REVOLUTIONARY ARMED FORCES OF CUBA (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57898"
+    },
+    {
+      "uid": 57899,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Lis CUESTA PERAZA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: DIAZ-CANEL BERMUDEZ, Miguel)",
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57899"
+    },
+    {
+      "uid": 57901,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "COMMITTEES FOR THE DEFENSE OF THE REVOLUTION (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57901"
+    },
+    {
+      "uid": 57902,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "MINERA LA VICTORIA SA (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57902"
+    },
+    {
+      "uid": 57903,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Alejandro CASTRO ESPIN (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57903"
+    },
+    {
+      "uid": 57904,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Raul Alejandro CASTRO CALIS (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CASTRO ESPIN, Alejandro)",
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57904"
+    },
+    {
+      "uid": 57905,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "CUBAN INSTITUTE OF FRIENDSHIP WITH THE PEOPLES (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57905"
+    },
+    {
+      "uid": 57906,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "AMISTUR CUBA SA (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: CUBAN INSTITUTE OF FRIENDSHIP WITH THE PEOPLES)",
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57906"
+    },
+    {
+      "uid": 57913,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Manuchehr GOLCHIN (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MINISTRY OF DEFENSE AND ARMED FORCES LOGISTICS)",
+      "programs": [
+        "NPWMD",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57913"
+    },
+    {
+      "uid": 57914,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "SOLOS INTERNATIONAL LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MINISTRY OF DEFENSE AND ARMED FORCES LOGISTICS)",
+      "programs": [
+        "NPWMD",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57914"
+    },
+    {
+      "uid": 57918,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Sajjad AHADZADEH (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IFSR",
+        "IRAN-CON-ARMS-EO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57918"
+    },
+    {
+      "uid": 57921,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "UNION CUBA PETROLEO (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57921"
+    },
+    {
+      "uid": 57924,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Sleiman Antoine FRANGIE (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57924"
     }
   ]
 }

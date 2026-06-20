@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T23:51:27.216026+00:00",
+  "generated_at": "2026-06-20T23:17:37.566971+00:00",
   "sources": [
     "dsca"
   ],
@@ -14488,6 +14488,150 @@
       "cn_number": null,
       "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/vietnam-c-130-sustainment/",
       "wp_id": 686616
+    },
+    {
+      "iso": "GB",
+      "source": "dsca",
+      "signal_date": "2026-06-05",
+      "title": "Large Aircraft Infrared Countermeasures",
+      "value_usd": 160000000.0,
+      "description": "Transmittal #26-64 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of the United Kingdom for its Large Aircraft Infrared Countermeasures and related equipment.",
+      "raw_score": 5.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/united-kingdom-large-aircraft-infrared-countermeasures/",
+      "wp_id": 687804
+    },
+    {
+      "iso": "DK",
+      "source": "dsca",
+      "signal_date": "2026-06-05",
+      "title": "Joint Air-to-Surface Standoff Missiles with Extended Range",
+      "value_usd": 842000000.0,
+      "description": "Transmittal #26-73 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Denmark for its purchase of Joint Air-to-Surface Standoff Missiles with Extended Range and related equipment.",
+      "raw_score": 6.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/denmark-joint-air-to-surface-standoff-missiles-with-extended-range/",
+      "wp_id": 687801
+    },
+    {
+      "iso": "KW",
+      "source": "dsca",
+      "signal_date": "2026-06-05",
+      "title": "Counter-Unmanned Aerial Systems Platforms",
+      "value_usd": 1980000000.0,
+      "description": "Transmittal #26-74 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Kuwait for purchase of Counter-Unmanned Aerial Systems Platforms and related equipment.",
+      "raw_score": 3.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/kuwait-counter-unmanned-aerial-systems-platforms/",
+      "wp_id": 687798
+    },
+    {
+      "iso": "IT",
+      "source": "dsca",
+      "signal_date": "2026-06-05",
+      "title": "Assault Amphibious Vehicles",
+      "value_usd": 30600000.0,
+      "description": "Transmittal # 26-63 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Italy for Assault Amphibious Vehicles and related equipment.",
+      "raw_score": 3.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/italy-assault-amphibious-vehicles/",
+      "wp_id": 687494
+    },
+    {
+      "iso": "KR",
+      "source": "dsca",
+      "signal_date": "2026-06-05",
+      "title": "Joint Direct Attack Munitions",
+      "value_usd": 106000000.0,
+      "description": "Transmittal # 26-50 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of the Republic of Korea for Joint Direct Attack Munitions (JDAMs) and related equipment.",
+      "raw_score": 4.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/republic-of-korea-joint-direct-attack-munitions/",
+      "wp_id": 687489
+    },
+    {
+      "iso": "NZ",
+      "source": "dsca",
+      "signal_date": "2026-06-05",
+      "title": "MK 54 Torpedoes",
+      "value_usd": 69000000.0,
+      "description": "Transmittal# 26-47 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of New Zealand for MK 54 Torpedoes and related equipment.",
+      "raw_score": 2.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/new-zealand-mk-54-torpedoes/",
+      "wp_id": 687485
+    },
+    {
+      "iso": "NZ",
+      "source": "dsca",
+      "signal_date": "2026-06-05",
+      "title": "MH-60R Multi-Mission Helicopters",
+      "value_usd": 1500000000.0,
+      "description": "Transmittal #26-37 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of New Zealand for MH-60R Multi-Mission Helicopters and related equipment.",
+      "raw_score": 2.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/new-zealand-mh-60r-multi-mission-helicopters/",
+      "wp_id": 687477
+    },
+    {
+      "iso": "KR",
+      "source": "dsca",
+      "signal_date": "2026-06-10",
+      "title": "AIM-120C-8 Advanced Medium Range Air-to-Air Missiles",
+      "value_usd": 292000000.0,
+      "description": "Transmittal # 26-72 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of the Republic of Korea for its purchase of AIM-120C-8 Advanced Medium Range Air-to-Air Missiles.",
+      "raw_score": 4.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/republic-of-korea-aim-120c-8-advanced-medium-range-air-to-air-missiles/",
+      "wp_id": 688264
+    },
+    {
+      "iso": "BR",
+      "source": "dsca",
+      "signal_date": "2026-06-11",
+      "title": "FIM-92K Stinger Missiles",
+      "value_usd": 330000000.0,
+      "description": "Home Bureau of Political-Military Affairs Remarks & Releases \u2026 Brazil \u2013 FIM-92K Stinger Missiles hide Brazil \u2013 FIM-92K Stinger Missiles Foreign Military Sales: Congressional Notification Bureau of Political-Military Affairs June 11, 2026 Transmittal # 26-62 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Brazil for the purchase of FIM-92K Stinger Missiles and related equipment.",
+      "raw_score": 5.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/brazil-fim-92k-stinger-missiles/",
+      "wp_id": 688980
+    },
+    {
+      "iso": "KW",
+      "source": "dsca",
+      "signal_date": "2026-06-15",
+      "title": "KC-130J Aircraft Follow-on Sustainment Support",
+      "value_usd": 235900000.0,
+      "description": "Home Bureau of Political-Military Affairs Remarks & Releases \u2026 Kuwait \u2013 KC-130J Aircraft Follow-on Sustainment Support hide Kuwait \u2013 KC-130J Aircraft Follow-on Sustainment Support Foreign Military Sales: Congressional Notification Bureau of Political-Military Affairs June 15, 2026 Transmittal #26-56 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Kuwait to purchase follow-on sustainment support for KC-130J aircraft.",
+      "raw_score": 3.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/kuwait-kc-130j-aircraft-follow-on-sustainment-support/",
+      "wp_id": 689450
+    },
+    {
+      "iso": "SG",
+      "source": "dsca",
+      "signal_date": "2026-06-15",
+      "title": "Common Fire Control System",
+      "value_usd": 73000000.0,
+      "description": "Home Bureau of Political-Military Affairs Remarks & Releases \u2026 Singapore \u2013 Common Fire Control System hide Singapore \u2013 Common Fire Control System Foreign Military Sales: Congressional Notification Bureau of Political-Military Affairs June 15, 2026 Transmittal # 26-67 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government Singapore for its purchase of a Common Fire Control System and related equipment.",
+      "raw_score": 5.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/singapore-common-fire-control-system/",
+      "wp_id": 689448
+    },
+    {
+      "iso": "AT",
+      "source": "dsca",
+      "signal_date": "2026-06-17",
+      "title": "UH-60M Black Hawk Helicopters",
+      "value_usd": 1500000000.0,
+      "description": "Home Bureau of Political-Military Affairs Remarks & Releases \u2026 Austria \u2013 UH-60M Black Hawk Helicopters hide Austria \u2013 UH-60M Black Hawk Helicopters Foreign Military Sales: Congressional Notification Bureau of Political-Military Affairs June 17, 2026 Transmittal # 26-58 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Austria to purchase UH-60M Black Hawk Helicopters.",
+      "raw_score": 2.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/austria-uh-60m-black-hawk-helicopters/",
+      "wp_id": 689731
     }
   ]
 }

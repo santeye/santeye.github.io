@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T23:53:39.073902+00:00",
+  "generated_at": "2026-06-20T23:19:41.294384+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,1033 @@
     "sam"
   ],
   "signals": [
+    {
+      "uid": 57558,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "GLOBE TECHNOLOGY PROVIDERS SARL (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HAMIEH, Alaa Hassan; Linked To: HASHEM, Bahaa Addin)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57558",
+      "profile": {
+        "name": "Lebanon",
+        "score": 4,
+        "factors": [
+          "active conflict",
+          "proxy hub",
+          "sanctions"
+        ],
+        "rationale": "Active conflict \u2014 Israeli strikes, Hezbollah war, state collapse (+2), Iran proxy hub \u2014 Hezbollah HQ (+1), active sanctions on Hezbollah networks (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57559,
+      "iso": "SY",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "AL 'AHD COMPANY FOR TRADE AND INVESTMENT (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: GM FARM)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57559",
+      "profile": {
+        "name": "Syria",
+        "score": 6,
+        "factors": [
+          "active conflict",
+          "occupied territory",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Active conflict \u2014 post-Assad fragmentation, ongoing fighting (+2), occupied territory \u2014 Israeli-held Golan, Turkish zones, US/SDF zone (+2), active sanctions regime (+1), proxy hub Russia/Iran/Turkey/US/Israel (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57561,
+      "iso": "IQ",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Wael COSTANTEEN (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HAMIEH, Alaa Hassan)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57561",
+      "profile": {
+        "name": "Iraq",
+        "score": 7,
+        "factors": [
+          "hydrocarbons",
+          "active conflict",
+          "proxy hub",
+          "US basing",
+          "sanctions"
+        ],
+        "rationale": "Massive hydrocarbon reserves \u2014 top-5 global producer (+2), active conflict \u2014 militia warfare and ISIS remnants (+2), Iran-US proxy contest (+1), major US basing presence (+1), active sanctions history and ongoing restrictions (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57563,
+      "iso": "OM",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "GLOBE INTERNATIONAL SPC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HAMIEH, Alaa Hassan)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57563",
+      "profile": {
+        "name": "Oman",
+        "score": 6,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "hydrocarbons",
+          "US basing"
+        ],
+        "rationale": "Controls southern shore of Strait of Hormuz \u2014 critical oil chokepoint (+3), significant hydrocarbon reserves (+2), US basing access agreements (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57564,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "TYKE SAL (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HAMIEH, Muhammad Hasan)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57564",
+      "profile": {
+        "name": "Lebanon",
+        "score": 4,
+        "factors": [
+          "active conflict",
+          "proxy hub",
+          "sanctions"
+        ],
+        "rationale": "Active conflict \u2014 Israeli strikes, Hezbollah war, state collapse (+2), Iran proxy hub \u2014 Hezbollah HQ (+1), active sanctions on Hezbollah networks (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57734,
+      "iso": "LB",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Mahmoud QAMATI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HIZBALLAH)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57734",
+      "profile": {
+        "name": "Lebanon",
+        "score": 4,
+        "factors": [
+          "active conflict",
+          "proxy hub",
+          "sanctions"
+        ],
+        "rationale": "Active conflict \u2014 Israeli strikes, Hezbollah war, state collapse (+2), Iran proxy hub \u2014 Hezbollah HQ (+1), active sanctions on Hezbollah networks (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57793,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "DOMUS TRADING HK LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57793",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57794,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "SHANGSHUN HONG KONG LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: GOLCHIN, Manuchehr)",
+      "programs": [
+        "NPWMD",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57794",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57840,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "MUSTAD SHANGHAI INTERNATIONAL TRADE CO LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MUSTAD LIMITED)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57840",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57842,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Boyu LIU (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57842",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57855,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "BUTANI TRADING LLC (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57855",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57862,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "SAHEL STAR OIL AND GAS COMPANY LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZADA, Sarbaz Abdul)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57862",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57864,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "SHANGHAI QIANYE ENERGY CO., LTD. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MIHANDOUST, Mohammad Shakol)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57864",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57872,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Shaopei MENG (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MINISTRY OF DEFENSE AND ARMED FORCES LOGISTICS)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57872",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57890,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "MEHRDAD GERAMIAN NIK AND PARTNERS COMPANY (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57890",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57891,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Mehrdad GERAMIAN NIK (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MEHRDAD GERAMIAN NIK AND PARTNERS COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57891",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57895,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Miguel DIAZ-CANEL BERMUDEZ (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57895",
+      "profile": {
+        "name": "Cuba",
+        "score": 4,
+        "factors": [
+          "sanctions",
+          "proxy hub",
+          "Western Hemisphere",
+          "Russian/Chinese presence"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active US sanctions regime (+1), Russian/Chinese intelligence infrastructure (+1), regional proxy hub (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57899,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Lis CUESTA PERAZA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: DIAZ-CANEL BERMUDEZ, Miguel)",
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57899",
+      "profile": {
+        "name": "Cuba",
+        "score": 4,
+        "factors": [
+          "sanctions",
+          "proxy hub",
+          "Western Hemisphere",
+          "Russian/Chinese presence"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active US sanctions regime (+1), Russian/Chinese intelligence infrastructure (+1), regional proxy hub (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57904,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Raul Alejandro CASTRO CALIS (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CASTRO ESPIN, Alejandro)",
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57904",
+      "profile": {
+        "name": "Cuba",
+        "score": 4,
+        "factors": [
+          "sanctions",
+          "proxy hub",
+          "Western Hemisphere",
+          "Russian/Chinese presence"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active US sanctions regime (+1), Russian/Chinese intelligence infrastructure (+1), regional proxy hub (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57906,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "AMISTUR CUBA SA (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: CUBAN INSTITUTE OF FRIENDSHIP WITH THE PEOPLES)",
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57906",
+      "profile": {
+        "name": "Cuba",
+        "score": 4,
+        "factors": [
+          "sanctions",
+          "proxy hub",
+          "Western Hemisphere",
+          "Russian/Chinese presence"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active US sanctions regime (+1), Russian/Chinese intelligence infrastructure (+1), regional proxy hub (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57913,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-06-18",
+      "title": "Manuchehr GOLCHIN (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MINISTRY OF DEFENSE AND ARMED FORCES LOGISTICS)",
+      "programs": [
+        "NPWMD",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57913",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "AT",
+      "source": "dsca",
+      "signal_date": "2026-06-17",
+      "title": "UH-60M Black Hawk Helicopters",
+      "value_usd": 1500000000.0,
+      "description": "Home Bureau of Political-Military Affairs Remarks & Releases \u2026 Austria \u2013 UH-60M Black Hawk Helicopters hide Austria \u2013 UH-60M Black Hawk Helicopters Foreign Military Sales: Congressional Notification Bureau of Political-Military Affairs June 17, 2026 Transmittal # 26-58 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Austria to purchase UH-60M Black Hawk Helicopters.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/austria-uh-60m-black-hawk-helicopters/",
+      "wp_id": 689731,
+      "profile": {
+        "name": "Austria",
+        "score": 2,
+        "factors": [
+          "Vienna diplomatic hub",
+          "transit corridor"
+        ],
+        "rationale": "Vienna hub for international organizations and diplomatic back-channels \u2014 OPEC, IAEA, OSCE headquarters (+1), historically significant as Eastern European transit corridor (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.238206844429176,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "KW",
+      "source": "dsca",
+      "signal_date": "2026-06-15",
+      "title": "KC-130J Aircraft Follow-on Sustainment Support",
+      "value_usd": 235900000.0,
+      "description": "Home Bureau of Political-Military Affairs Remarks & Releases \u2026 Kuwait \u2013 KC-130J Aircraft Follow-on Sustainment Support hide Kuwait \u2013 KC-130J Aircraft Follow-on Sustainment Support Foreign Military Sales: Congressional Notification Bureau of Political-Military Affairs June 15, 2026 Transmittal #26-56 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Kuwait to purchase follow-on sustainment support for KC-130J aircraft.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/kuwait-kc-130j-aircraft-follow-on-sustainment-support/",
+      "wp_id": 689450,
+      "profile": {
+        "name": "Kuwait",
+        "score": 3,
+        "factors": [
+          "hydrocarbons",
+          "US basing"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing and pre-positioned equipment (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.1779545955664197,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "SG",
+      "source": "dsca",
+      "signal_date": "2026-06-15",
+      "title": "Common Fire Control System",
+      "value_usd": 73000000.0,
+      "description": "Home Bureau of Political-Military Affairs Remarks & Releases \u2026 Singapore \u2013 Common Fire Control System hide Singapore \u2013 Common Fire Control System Foreign Military Sales: Congressional Notification Bureau of Political-Military Affairs June 15, 2026 Transmittal # 26-67 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government Singapore for its purchase of a Common Fire Control System and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/singapore-common-fire-control-system/",
+      "wp_id": 689448,
+      "profile": {
+        "name": "Singapore",
+        "score": 5,
+        "factors": [
+          "maritime chokepoint",
+          "Malacca Strait",
+          "US basing",
+          "regional hub"
+        ],
+        "rationale": "Controls eastern Malacca Strait \u2014 most critical maritime chokepoint by volume (+3), major US naval access (+1), regional financial and logistics hub (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.1397492145090342,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "BR",
+      "source": "dsca",
+      "signal_date": "2026-06-11",
+      "title": "FIM-92K Stinger Missiles",
+      "value_usd": 330000000.0,
+      "description": "Home Bureau of Political-Military Affairs Remarks & Releases \u2026 Brazil \u2013 FIM-92K Stinger Missiles hide Brazil \u2013 FIM-92K Stinger Missiles Foreign Military Sales: Congressional Notification Bureau of Political-Military Affairs June 11, 2026 Transmittal # 26-62 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Brazil for the purchase of FIM-92K Stinger Missiles and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/brazil-fim-92k-stinger-missiles/",
+      "wp_id": 688980,
+      "profile": {
+        "name": "Brazil",
+        "score": 5,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "strategic minerals",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major pre-salt hydrocarbon reserves (+2), regional power (+1), strategic minerals including niobium (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.1888885454908416,
+      "is_fr_policy": null
+    },
+    {
+      "document_number": "2026-11761",
+      "iso": "KP",
+      "source": "federalregister",
+      "signal_date": "2026-06-11",
+      "title": "Publication of the List of Medical Devices Requiring Specific Authorization for the North Korea Sanctions Regulations",
+      "value_usd": null,
+      "description": "List of medical devices excluded from North Korea Sanctions Regulations general license. \u00b7 The Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing a list of medical devices that may not be exported or reexported to North Korea pursuant to the general license authorizing the exportation or reexportation to North Korea of certain agricultural commodities, medicine, medical devices, and replacement parts and components. The exportation or re-exportation of these excluded medical devices to North Korea requires specific authorization from OFAC.",
+      "page_url": "https://www.federalregister.gov/documents/2026/06/11/2026-11761/publication-of-the-list-of-medical-devices-requiring-specific-authorization-for-the-north-korea",
+      "profile": {
+        "name": "North Korea",
+        "score": 5,
+        "factors": [
+          "nuclear program",
+          "sanctions",
+          "proxy hub",
+          "active conflict"
+        ],
+        "rationale": "Active nuclear weapons and ICBM program (+2), comprehensive sanctions regime (+1), Russia-China proxy buffer \u2014 troops deployed to Ukraine (+1), active conflict participation (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.8,
+      "dollar_mod": 1.0,
+      "is_fr_policy": true
+    },
+    {
+      "iso": "KR",
+      "source": "dsca",
+      "signal_date": "2026-06-10",
+      "title": "AIM-120C-8 Advanced Medium Range Air-to-Air Missiles",
+      "value_usd": 292000000.0,
+      "description": "Transmittal # 26-72 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of the Republic of Korea for its purchase of AIM-120C-8 Advanced Medium Range Air-to-Air Missiles.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/republic-of-korea-aim-120c-8-advanced-medium-range-air-to-air-missiles/",
+      "wp_id": 688264,
+      "profile": {
+        "name": "South Korea",
+        "score": 4,
+        "factors": [
+          "US basing",
+          "nuclear program",
+          "regional power"
+        ],
+        "rationale": "Major US basing \u2014 28,000 troops, USFK (+1), latent nuclear capability \u2014 active discussion of indigenous program (+2), regional power and semiconductor/industrial hub (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.1849037138586314,
+      "is_fr_policy": null
+    },
+    {
+      "document_number": "2026-11616",
+      "iso": "VE",
+      "source": "federalregister",
+      "signal_date": "2026-06-10",
+      "title": "Publication of Venezuela Sanctions Regulations Web General Licenses 48A and 49A",
+      "value_usd": null,
+      "description": "Publication of web general licenses. \u00b7 The Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing two general licenses (GLs) issued pursuant to the Venezuela Sanctions Regulations: GLs 48A and 49A, which were previously made available on OFAC's website.",
+      "page_url": "https://www.federalregister.gov/documents/2026/06/10/2026-11616/publication-of-venezuela-sanctions-regulations-web-general-licenses-48a-and-49a",
+      "profile": {
+        "name": "Venezuela",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "Western Hemisphere",
+          "sanctions"
+        ],
+        "rationale": "Western Hemisphere presence (+1), world's largest proven hydrocarbon reserves (+2), comprehensive US sanctions regime (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.8,
+      "dollar_mod": 1.0,
+      "is_fr_policy": true
+    },
+    {
+      "document_number": "2026-11615",
+      "iso": "VE",
+      "source": "federalregister",
+      "signal_date": "2026-06-10",
+      "title": "Publication of Venezuela Sanctions Regulations Web General Licenses 5U and 5V",
+      "value_usd": null,
+      "description": "Publication of web general licenses. \u00b7 The Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing two general licenses (GLs) issued pursuant to the Venezuela Sanctions Regulations: GLs 5U and 5V, each of which was previously made available on OFAC's website.",
+      "page_url": "https://www.federalregister.gov/documents/2026/06/10/2026-11615/publication-of-venezuela-sanctions-regulations-web-general-licenses-5u-and-5v",
+      "profile": {
+        "name": "Venezuela",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "Western Hemisphere",
+          "sanctions"
+        ],
+        "rationale": "Western Hemisphere presence (+1), world's largest proven hydrocarbon reserves (+2), comprehensive US sanctions regime (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.8,
+      "dollar_mod": 1.0,
+      "is_fr_policy": true
+    },
+    {
+      "document_number": "2026-11614",
+      "iso": "IR",
+      "source": "federalregister",
+      "signal_date": "2026-06-10",
+      "title": "Publication of Iran-Related Web General Licenses U and V",
+      "value_usd": null,
+      "description": "Publication of web general licenses. \u00b7 The Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing two Iran-related general licenses (GLs): GLs U and V. These GLs were previously made available on OFAC's website.",
+      "page_url": "https://www.federalregister.gov/documents/2026/06/10/2026-11614/publication-of-iran-related-web-general-licenses-u-and-v",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.8,
+      "dollar_mod": 1.0,
+      "is_fr_policy": true
+    },
+    {
+      "document_number": "2026-11505",
+      "iso": "CN",
+      "source": "federalregister",
+      "signal_date": "2026-06-09",
+      "title": "DoD Assistance to Non-Government, Entertainment-Oriented Media Productions",
+      "value_usd": null,
+      "description": "Final rule. \u00b7 DoD is finalizing revisions to implement requirements of section 1257 of the National Defense Authorization Act for Fiscal Year 2023. This statute prohibits assistance to entertainment projects such as feature motion pictures, episodic television programs, documentaries, and computer-based games that have complied or are likely to comply with a demand from the Government of the People's Republic of China (PRC), the Chinese Communist Party (CCP), or an entity under the direction of the PRC or the CCP to censor the content of the project in a material manner to advance the national interest of the PRC. This final rule informs producers and production companies that request DoD assistance about the procedures needed to implement the restrictions imposed by section 1257. It includes a discussion of the information the Department will use to determine whether to assist or continue to assist an entertainment project. It also describes the DoD certification process and includes two updated sample Production Assistance Agreements (PAA) implementing section 1257 provisions.",
+      "page_url": "https://www.federalregister.gov/documents/2026/06/09/2026-11505/dod-assistance-to-non-government-entertainment-oriented-media-productions",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.2,
+      "dollar_mod": 1.0,
+      "is_fr_policy": false
+    },
+    {
+      "iso": "GB",
+      "source": "dsca",
+      "signal_date": "2026-06-05",
+      "title": "Large Aircraft Infrared Countermeasures",
+      "value_usd": 160000000.0,
+      "description": "Transmittal #26-64 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of the United Kingdom for its Large Aircraft Infrared Countermeasures and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/united-kingdom-large-aircraft-infrared-countermeasures/",
+      "wp_id": 687804,
+      "profile": {
+        "name": "United Kingdom",
+        "score": 5,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "US partner",
+          "maritime chokepoint"
+        ],
+        "rationale": "Active nuclear weapons program \u2014 Trident (+2), regional power and global basing network (+1), major US interoperability partner \u2014 Five Eyes, AUKUS (+1), controls Gibraltar and Diego Garcia chokepoints (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.1653089986991942,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "DK",
+      "source": "dsca",
+      "signal_date": "2026-06-05",
+      "title": "Joint Air-to-Surface Standoff Missiles with Extended Range",
+      "value_usd": 842000000.0,
+      "description": "Transmittal #26-73 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Denmark for its purchase of Joint Air-to-Surface Standoff Missiles with Extended Range and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/denmark-joint-air-to-surface-standoff-missiles-with-extended-range/",
+      "wp_id": 687801,
+      "profile": {
+        "name": "Denmark",
+        "score": 6,
+        "factors": [
+          "maritime chokepoint",
+          "Danish Straits",
+          "strategic minerals",
+          "Greenland",
+          "Arctic"
+        ],
+        "rationale": "Controls Danish Straits \u2014 only Baltic Sea exit, chokepoint (+3), Greenland: rare earth and strategic mineral deposits (+2), Arctic sovereignty and NATO position (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.2193984068624737,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "KW",
+      "source": "dsca",
+      "signal_date": "2026-06-05",
+      "title": "Counter-Unmanned Aerial Systems Platforms",
+      "value_usd": 1980000000.0,
+      "description": "Transmittal #26-74 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Kuwait for purchase of Counter-Unmanned Aerial Systems Platforms and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/kuwait-counter-unmanned-aerial-systems-platforms/",
+      "wp_id": 687798,
+      "profile": {
+        "name": "Kuwait",
+        "score": 3,
+        "factors": [
+          "hydrocarbons",
+          "US basing"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing and pre-positioned equipment (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.2472498892696149,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "IT",
+      "source": "dsca",
+      "signal_date": "2026-06-05",
+      "title": "Assault Amphibious Vehicles",
+      "value_usd": 30600000.0,
+      "description": "Transmittal # 26-63 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Italy for Assault Amphibious Vehicles and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/italy-assault-amphibious-vehicles/",
+      "wp_id": 687494,
+      "profile": {
+        "name": "Italy",
+        "score": 3,
+        "factors": [
+          "US basing",
+          "nuclear hosting",
+          "Mediterranean hub"
+        ],
+        "rationale": "Major US basing \u2014 Sigonella, Aviano, Naples 6th Fleet (+1), US tactical nuclear weapons hosted (+2 latent nuclear), Mediterranean transit hub"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.1114291069861184,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "KR",
+      "source": "dsca",
+      "signal_date": "2026-06-05",
+      "title": "Joint Direct Attack Munitions",
+      "value_usd": 106000000.0,
+      "description": "Transmittal # 26-50 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of the Republic of Korea for Joint Direct Attack Munitions (JDAMs) and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/republic-of-korea-joint-direct-attack-munitions/",
+      "wp_id": 687489,
+      "profile": {
+        "name": "South Korea",
+        "score": 4,
+        "factors": [
+          "US basing",
+          "nuclear program",
+          "regional power"
+        ],
+        "rationale": "Major US basing \u2014 28,000 troops, USFK (+1), latent nuclear capability \u2014 active discussion of indigenous program (+2), regional power and semiconductor/industrial hub (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.151897939894858,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "NZ",
+      "source": "dsca",
+      "signal_date": "2026-06-05",
+      "title": "MK 54 Torpedoes",
+      "value_usd": 69000000.0,
+      "description": "Transmittal# 26-47 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of New Zealand for MK 54 Torpedoes and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/new-zealand-mk-54-torpedoes/",
+      "wp_id": 687485,
+      "profile": {
+        "name": "New Zealand",
+        "score": 2,
+        "factors": [
+          "US partner",
+          "strategic minerals"
+        ],
+        "rationale": "Five Eyes partner, US intelligence integration (+1), strategic minerals potential (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.1379136818052942,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "NZ",
+      "source": "dsca",
+      "signal_date": "2026-06-05",
+      "title": "MH-60R Multi-Mission Helicopters",
+      "value_usd": 1500000000.0,
+      "description": "Transmittal #26-37 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of New Zealand for MH-60R Multi-Mission Helicopters and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/new-zealand-mh-60r-multi-mission-helicopters/",
+      "wp_id": 687477,
+      "profile": {
+        "name": "New Zealand",
+        "score": 2,
+        "factors": [
+          "US partner",
+          "strategic minerals"
+        ],
+        "rationale": "Five Eyes partner, US intelligence integration (+1), strategic minerals potential (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.238206844429176,
+      "is_fr_policy": null
+    },
     {
       "filing_uuid": "fa60f809-182f-41c8-b329-5b5d3195b290",
       "iso": "XX",
@@ -32066,69 +33093,42 @@
   "themes": [
     {
       "type": "first_appearance",
-      "title": "Vietnam \u2014 dsca after first recorded silence",
-      "score": 19.24,
+      "title": "Syria \u2014 ofac after first recorded silence",
+      "score": 24.299,
       "countries": [
-        "VN"
+        "SY"
       ],
       "signal_keys": [
-        "dsca:C-130 Sustainment"
+        "ofac:AL 'AHD COMPANY FOR TRADE AND INVESTMENT"
       ],
-      "why": "dsca filed for Vietnam after first recorded of silence (profile score: 4). Signal: C-130 Sustainment",
+      "why": "ofac filed for Syria after first recorded of silence (profile score: 6). Signal: AL 'AHD COMPANY FOR TRADE AND INVESTMENT (Entity)",
       "narrative": null
     },
     {
       "type": "first_appearance",
-      "title": "Brazil \u2014 ofac after first recorded silence",
-      "score": 16.579,
+      "title": "Brazil \u2014 dsca after first recorded silence",
+      "score": 14.109,
       "countries": [
         "BR"
       ],
       "signal_keys": [
-        "ofac:COMANDO VERMELHO (Entity)"
+        "dsca:FIM-92K Stinger Missiles"
       ],
-      "why": "ofac filed for Brazil after first recorded of silence (profile score: 5). Signal: COMANDO VERMELHO (Entity)",
+      "why": "dsca filed for Brazil after first recorded of silence (profile score: 5). Signal: FIM-92K Stinger Missiles",
       "narrative": null
     },
     {
-      "type": "convergence",
-      "title": "Oman \u2014 influence \u2192 action + first appearance",
-      "score": 16.124,
+      "type": "influence_before_action",
+      "title": "Oman \u2014 lda \u2192 ofac (41d)",
+      "score": 10.132,
       "countries": [
         "OM"
       ],
       "signal_keys": [
-        "ofac:ZEUS LOGISTICS GROUP (Entity)",
-        "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424"
+        "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424",
+        "ofac:ZEUS LOGISTICS GROUP (Entity)"
       ],
-      "why": "[influence_before_action] lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d. | [first_appearance] ofac filed for Oman after first recorded of silence (profile score: 6). Signal: ZEUS LOGISTICS GROUP (Entity)",
-      "_components": [
-        {
-          "type": "influence_before_action",
-          "title": "Oman \u2014 lda \u2192 ofac (41d)",
-          "score": 10.132,
-          "countries": [
-            "OM"
-          ],
-          "signal_keys": [
-            "ofac:ZEUS LOGISTICS GROUP (Entity)",
-            "lda:eda7a0c7-5907-47ce-8581-30bd78fc3424"
-          ],
-          "why": "lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d."
-        },
-        {
-          "type": "first_appearance",
-          "title": "Oman \u2014 ofac after first recorded silence",
-          "score": 5.992,
-          "countries": [
-            "OM"
-          ],
-          "signal_keys": [
-            "ofac:ZEUS LOGISTICS GROUP (Entity)"
-          ],
-          "why": "ofac filed for Oman after first recorded of silence (profile score: 6). Signal: ZEUS LOGISTICS GROUP (Entity)"
-        }
-      ],
+      "why": "lda on 2026-03-31 \u2192 ofac on 2026-05-11 (41d gap). No prior lda+action sequence in preceding 180d.",
       "narrative": null
     }
   ]
