@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T23:17:37.566971+00:00",
+  "generated_at": "2026-07-05T23:59:55.148146+00:00",
   "sources": [
     "dsca"
   ],
@@ -14632,6 +14632,30 @@
       "cn_number": null,
       "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/austria-uh-60m-black-hawk-helicopters/",
       "wp_id": 689731
+    },
+    {
+      "iso": "AU",
+      "source": "dsca",
+      "signal_date": "2026-06-25",
+      "title": "F/A-18F & EA-18G Growler Aircraft Training",
+      "value_usd": 250000000.0,
+      "description": "Home Bureau of Political-Military Affairs Remarks & Releases \u2026 Australia \u2013 F/A-18F & EA-18G Growler Aircraft Training hide Australia \u2013 F/A-18F & EA-18G Growler Aircraft Training Foreign Military Sales: Congressional Notification Bureau of Political-Military Affairs June 25, 2026 Transmittal #26-57 The U.S. Department of State has\u00a0made a determination\u00a0approving a possible Foreign Military Sale to the Government of Australia\u00a0for\u00a0the\u00a0purchase of\u00a0F/A-18F Super Hornet and EA-18G Growler\u00a0aircraft\u00a0training\u00a0and related equipment.",
+      "raw_score": 5.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/australia-f-a-18f-ea-18g-growler-aircraft-training/",
+      "wp_id": 691323
+    },
+    {
+      "iso": "SG",
+      "source": "dsca",
+      "signal_date": "2026-06-30",
+      "title": "Hellfire Missiles",
+      "value_usd": 22300000.0,
+      "description": "The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Singapore to purchase AGM-114R Hellfire missiles.",
+      "raw_score": 5.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/singapore-hellfire-missiles/",
+      "wp_id": 692180
     }
   ]
 }

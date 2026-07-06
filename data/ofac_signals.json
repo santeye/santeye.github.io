@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T23:19:20.463188+00:00",
+  "generated_at": "2026-07-06T00:01:38.754052+00:00",
   "sources": [
     "ofac"
   ],
@@ -5300,6 +5300,919 @@
         "SDGT"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57924"
+    },
+    {
+      "uid": 53942,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Oscar Guillermo JURAIDINI SILVA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=53942"
+    },
+    {
+      "uid": 56600,
+      "iso": "BR",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Victor Henrique DE OLIVEIRA SHIMADA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: PRIMEIRO COMANDO DA CAPITAL)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56600"
+    },
+    {
+      "uid": 56750,
+      "iso": "BR",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Stella Stefanie NUNES HENRIQUE DE OLIVEIRA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: DE OLIVEIRA SHIMADA, Victor Henrique)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56750"
+    },
+    {
+      "uid": 56751,
+      "iso": "BR",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "VICTORY TRADING INTERMEDIACAO DE NEGOCIOS COBRANCAS E TECNOLOGIA LTDA (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: DE OLIVEIRA SHIMADA, Victor Henrique)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56751"
+    },
+    {
+      "uid": 56752,
+      "iso": "BR",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "PIXWAVE SOLUCOES DE PAGAMENTOS LTDA (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: DE OLIVEIRA SHIMADA, Victor Henrique)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56752"
+    },
+    {
+      "uid": 56753,
+      "iso": "BR",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "WAVE CONSTRUCOES INTELIGENTES LTDA (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: DE OLIVEIRA SHIMADA, Victor Henrique)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56753"
+    },
+    {
+      "uid": 56973,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "CENTRO CAMBIARIO LA PESETA, S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: JURAIDINI SILVA, Oscar Guillermo)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56973"
+    },
+    {
+      "uid": 56974,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "OJ LIVING TRUST, S.A.P.I. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: JURAIDINI SILVA, Oscar Guillermo)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56974"
+    },
+    {
+      "uid": 56975,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "RK REAL KING, S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: JURAIDINI SILVA, Oscar Guillermo)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56975"
+    },
+    {
+      "uid": 56976,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "SOMA TRANSPORTE Y SERVICIOS, S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: JURAIDINI SILVA, Oscar Guillermo)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56976"
+    },
+    {
+      "uid": 56977,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "CUCUMBER SWEET WAVES LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: JURAIDINI SILVA, Oscar Guillermo)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56977"
+    },
+    {
+      "uid": 56978,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "OGUI FLETES (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: JURAIDINI SILVA, Oscar Guillermo)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=56978"
+    },
+    {
+      "uid": 57457,
+      "iso": "SD",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "TARGET MULTIACTIVITIES COMPANY LTD (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57457"
+    },
+    {
+      "uid": 57460,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "JOMADI LOGISTICS AND CARGO, S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57460"
+    },
+    {
+      "uid": 57461,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "AHAVAT LOGISTICS SOLUTION, S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57461"
+    },
+    {
+      "uid": 57462,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "J. Refugio RUIZ VILLAGOMEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: JOMADI LOGISTICS AND CARGO, S.A. DE C.V.; Linked To: AHAVAT LOGISTICS SOLUTION, S.A. DE C.V.)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57462"
+    },
+    {
+      "uid": 57487,
+      "iso": "SD",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "PORTS ENGINEERING COMPANY LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SUDAN MASTER TECHNOLOGY)",
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57487"
+    },
+    {
+      "uid": 57513,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "OF TRANSPORTES (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: JURAIDINI SILVA, Oscar Guillermo)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57513"
+    },
+    {
+      "uid": 57521,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Weiren QIU (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: PRINCE GROUP TRANSNATIONAL CRIMINAL ORGANIZATION)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57521"
+    },
+    {
+      "uid": 57522,
+      "iso": "SG",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Brendon LUO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: PRINCE GROUP TRANSNATIONAL CRIMINAL ORGANIZATION)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57522"
+    },
+    {
+      "uid": 57833,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "FUTURE KING INC. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HU, Xiaowei)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57833"
+    },
+    {
+      "uid": 57837,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "FUTURE WING FINANCIAL COMPANY LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HU, Xiaowei)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57837"
+    },
+    {
+      "uid": 57838,
+      "iso": "SG",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "FUTURE OASIS PTE. LTD. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HU, Xiaowei)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57838"
+    },
+    {
+      "uid": 57839,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "FUTURE COSMOS LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HU, Xiaowei)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57839"
+    },
+    {
+      "uid": 57841,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "FUTURE COSMOS ONE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HU, Xiaowei)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57841"
+    },
+    {
+      "uid": 57843,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "FUTURE COSMOS TWO LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HU, Xiaowei)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57843"
+    },
+    {
+      "uid": 57844,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "CHINA RESERVE SECURITIES LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HU, Xiaowei)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57844"
+    },
+    {
+      "uid": 57845,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "EAGLE FORTITUDE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HU, Xiaowei)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57845"
+    },
+    {
+      "uid": 57846,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "LEISURE FOCUS LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HU, Xiaowei)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57846"
+    },
+    {
+      "uid": 57847,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "CN CRYSTAL LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HU, Xiaowei)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57847"
+    },
+    {
+      "uid": 57848,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "CN BREEZE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HU, Xiaowei)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57848"
+    },
+    {
+      "uid": 57849,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Ho Ming HO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HU, Xiaowei)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57849"
+    },
+    {
+      "uid": 57850,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Ka On KONG (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HU, Xiaowei)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57850"
+    },
+    {
+      "uid": 57851,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Hui LI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HU, Xiaowei)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57851"
+    },
+    {
+      "uid": 57852,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "TYCOON YACHTS HK LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: KONG, Ka On)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57852"
+    },
+    {
+      "uid": 57854,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "ROCKET SANDBOX LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: KONG, Ka On)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57854"
+    },
+    {
+      "uid": 57859,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "DTX WINNERS CLUB LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: KONG, Ka On)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57859"
+    },
+    {
+      "uid": 57861,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "LUFFA TECHNOLOGY NETWORK COMPANY LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: KONG, Ka On)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57861"
+    },
+    {
+      "uid": 57863,
+      "iso": "SG",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Zhizhen FANG (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: PRINCE GROUP TRANSNATIONAL CRIMINAL ORGANIZATION)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57863"
+    },
+    {
+      "uid": 57865,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "CUBAN TRADING UK LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: KONG, Ka On)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57865"
+    },
+    {
+      "uid": 57868,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "HALO NETWORK TECHNOLOGY LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: KONG, Ka On)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57868"
+    },
+    {
+      "uid": 57871,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "FORTUNE NETWORK TECHNOLOGY LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: KONG, Ka On)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57871"
+    },
+    {
+      "uid": 57873,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "CHARCO CHARCO HOLBORN LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: KONG, Ka On)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57873"
+    },
+    {
+      "uid": 57876,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "TERRA COTTA WARRIORS ISLE OF DOGS LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: KONG, Ka On)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57876"
+    },
+    {
+      "uid": 57879,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "MINGMEN LONDON LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: KONG, Ka On)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57879"
+    },
+    {
+      "uid": 57882,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "CHASCA LONDON LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: KONG, Ka On)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57882"
+    },
+    {
+      "uid": 57884,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "EAST LINK LONDON LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: KONG, Ka On)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57884"
+    },
+    {
+      "uid": 57886,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "CLOUD NINE NO. 4 LEASING COMPANY LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: CHEN, Bo)",
+      "programs": [
+        "TCO"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57886"
+    },
+    {
+      "uid": 57922,
+      "iso": "SD",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Tariq Hussain Muhammad MADANI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: TARGET MULTIACTIVITIES COMPANY LTD)",
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57922"
+    },
+    {
+      "uid": 57923,
+      "iso": "IN",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "SBL ENERGY LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: TARGET MULTIACTIVITIES COMPANY LTD)",
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57923"
+    },
+    {
+      "uid": 57925,
+      "iso": "IN",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Alok CHOUDHARI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SBL ENERGY LIMITED)",
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57925"
+    },
+    {
+      "uid": 57951,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "EMPRESA SIDERURGICA JOSE MARTI (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57951"
+    },
+    {
+      "uid": 57952,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "BANCO FINANCIERO INTERNACIONAL S.A. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57952"
+    },
+    {
+      "uid": 57953,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Annalie Lilliam RUEDA CARDERO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CASTRO ESPIN, Alejandro)",
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57953"
+    },
+    {
+      "uid": 57954,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "RAFIN S.A. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57954"
+    },
+    {
+      "uid": 57955,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "ALMACENES UNIVERSALES S.A. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: GRUPO DE ADMINISTRACION EMPRESARIAL S.A.)",
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57955"
+    },
+    {
+      "uid": 57956,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "GEOMINERA, S.A. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57956"
+    },
+    {
+      "uid": 57961,
+      "iso": "FR",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Miloud ABDERRAHMANE (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC STATE OF IRAQ AND THE LEVANT)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57961"
+    },
+    {
+      "uid": 57962,
+      "iso": "SY",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Boukich ABDELHAKIM (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC STATE OF IRAQ AND THE LEVANT)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57962"
+    },
+    {
+      "uid": 57963,
+      "iso": "SY",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "BITCOIN EXCHANGE AGENT IDLIB'S NO.1 COIN EXCHANGE (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC STATE OF IRAQ AND THE LEVANT)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57963"
+    },
+    {
+      "uid": 57964,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "SPIDER GAYRIMENKUL VE GENEL TICARET LIMITED SIRKETI (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC STATE OF IRAQ AND THE LEVANT)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57964"
+    },
+    {
+      "uid": 57967,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "ALKARAM DANISMANLIK GAYRIMENKUL IC VE DIS GENEL TICARET LIMITED SIRKETI (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC STATE OF IRAQ AND THE LEVANT)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57967"
+    },
+    {
+      "uid": 57969,
+      "iso": "NG",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Mukhtar Adamu MUHAMMAD (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ISIS-WEST AFRICA)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57969"
+    },
+    {
+      "uid": 57971,
+      "iso": "NG",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "NINE TO NINE EXCHANGE BUREAU DE CHANGE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MUHAMMAD, Mukhtar Adamu)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57971"
+    },
+    {
+      "uid": 57972,
+      "iso": "NG",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "MANHATTAN BUREAU DE CHANGE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MUHAMMAD, Mukhtar Adamu)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57972"
+    },
+    {
+      "uid": 57973,
+      "iso": "NG",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "GENERATION CURRENCY BUREAU DE CHANGE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MUHAMMAD, Mukhtar Adamu)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57973"
+    },
+    {
+      "uid": 57974,
+      "iso": "PA",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Enrique Daniel PALACIOS QUINTANILLA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: TALENT BRIDGE, S.A.)",
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57974"
+    },
+    {
+      "uid": 57976,
+      "iso": "PA",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Jack Peter DERMAN GUZMAN (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: TALENT BRIDGE, S.A.)",
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57976"
+    },
+    {
+      "uid": 57977,
+      "iso": "PA",
+      "source": "ofac",
+      "signal_date": "2026-07-01",
+      "title": "Fredy Alejandro LOPEZ OCAMPO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: TALENT BRIDGE, S.A.)",
+      "programs": [
+        "SUDAN-EO14098"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57977"
     }
   ]
 }

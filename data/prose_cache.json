@@ -1,1 +1,9 @@
-{}
+{
+  "3c9bff98f10580b5": {
+    "narrative": {
+      "headline": "OFAC sanctions Sudan network after silence, targeting port and tech firms",
+      "body": "OFAC designated TARGET MULTIACTIVITIES COMPANY LTD, PORTS ENGINEERING COMPANY LTD, and linked individual Tariq Hussain Muhammad Madani on July 1, 2026, after a recorded gap in Sudan filings. The cluster connects a ports engineering firm to Sudan Master Technology, suggesting a sanctions-evasion network using infrastructure and tech companies.",
+      "prompt": "I just saw that OFAC sanctioned three entities linked to Sudan on July 1, 2026 \u2014 TARGET MULTIACTIVITIES COMPANY LTD, PORTS ENGINEERING COMPANY LTD (linked to SUDAN MASTER TECHNOLOGY), and an individual named Tariq Hussain Muhammad Madani \u2014 after a period of silence on Sudan filings. Why does this matter? Sudan is under broad U.S. sanctions, and new designations after a gap often signal fresh intelligence on evasion networks. Who benefits from these companies, and what does the ports-technology connection suggest about how sanctioned goods or funds move? Is SUDAN MASTER TECHNOLOGY a previously designated entity? What should I watch for next \u2014 specifically, are there related front companies, shipping routes, or financial intermediaries that could face follow-on designations?"
+    }
+  }
+}
