@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T00:01:41.458788+00:00",
+  "generated_at": "2026-07-08T23:17:38.392727+00:00",
   "sources": [
     "lda"
   ],
@@ -14433,6 +14433,297 @@
         "VET"
       ],
       "url": "https://lda.gov/filings/public/filing/8227cf86-5923-493c-b5cc-e3bfa51d79e3/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "c1ff2904-8816-4c89-903a-f03699b5ac64",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-07",
+      "title": "Homeland Security, Science/Technology, Budget \u2014 Peregrine Technologies, Inc. via Peregrine Technologies, Inc.",
+      "value_usd": null,
+      "description": "Issues and funding related to public safety, emergency management, data integration, artificial intelligence, privacy, g\u2026",
+      "lobbying_firm": "Peregrine Technologies, Inc.",
+      "registrant_id": 401110782,
+      "client_name": "Peregrine Technologies, Inc.",
+      "issue_codes": [
+        "BUD",
+        "CSP",
+        "DIS",
+        "HOM",
+        "LAW",
+        "SCI",
+        "TEC"
+      ],
+      "url": "https://lda.gov/filings/public/filing/c1ff2904-8816-4c89-903a-f03699b5ac64/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "e3fc8893-abd0-4ae0-9bee-555f4867d6aa",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-07",
+      "title": "Energy, Natural Resources \u2014 Invenergy Llc via The Bernhardt Group Llc",
+      "value_usd": null,
+      "description": "Defensible federal environmental permitting strategies for critical infrastructure projects in development by Invenergy.",
+      "lobbying_firm": "The Bernhardt Group Llc",
+      "registrant_id": 401109653,
+      "client_name": "Invenergy Llc",
+      "issue_codes": [
+        "ENG",
+        "NAT"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e3fc8893-abd0-4ae0-9bee-555f4867d6aa/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "5b35cc08-c074-4c18-84ad-3ed123273fcb",
+      "iso": "GB",
+      "source": "lda",
+      "signal_date": "2026-07-07",
+      "title": "Trade, Finance \u2014 Nostrum Oil & Gas via Akin Gump Strauss Hauer & Feld",
+      "value_usd": null,
+      "description": "United Kingdom; Issues related to a tax controversy affecting U.S. investors in Kazakhstan.",
+      "lobbying_firm": "Akin Gump Strauss Hauer & Feld",
+      "registrant_id": 682,
+      "client_name": "Nostrum Oil & Gas",
+      "issue_codes": [
+        "FIN",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5b35cc08-c074-4c18-84ad-3ed123273fcb/print/",
+      "raw_score": 5.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "eea03680-f2bf-4716-aeb5-157d7bb732a8",
+      "iso": "IN",
+      "source": "lda",
+      "signal_date": "2026-07-07",
+      "title": "Trade, Health, Manufacturing \u2014 Sun Pharmaceutical Industries, Inc. via Sun Pharmaceutical Industries, Inc.",
+      "value_usd": null,
+      "description": "232 tariffs, drug pricing",
+      "lobbying_firm": "Sun Pharmaceutical Industries, Inc.",
+      "registrant_id": 401110789,
+      "client_name": "Sun Pharmaceutical Industries, Inc.",
+      "issue_codes": [
+        "HCR",
+        "MMM",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/eea03680-f2bf-4716-aeb5-157d7bb732a8/print/",
+      "raw_score": 7.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "9806d1be-50c0-4116-8d32-5f197f38a833",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-07",
+      "title": "Defense, Science/Technology, Education \u2014 University Of Southern California via Michael Best Strategies Llc",
+      "value_usd": null,
+      "description": "Issues related to scientific research funding",
+      "lobbying_firm": "Michael Best Strategies Llc",
+      "registrant_id": 401103565,
+      "client_name": "University Of Southern California",
+      "issue_codes": [
+        "DEF",
+        "EDU",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/9806d1be-50c0-4116-8d32-5f197f38a833/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "5fde953f-d923-4ab7-b46c-949368a86c68",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-07",
+      "title": "Defense, Education \u2014 Odyssey via Williams And Jensen, Pllc",
+      "value_usd": null,
+      "description": "Support Odyssey's pursuit of potential federal procurement opportunities related to school choice programs.",
+      "lobbying_firm": "Williams And Jensen, Pllc",
+      "registrant_id": 41454,
+      "client_name": "Odyssey",
+      "issue_codes": [
+        "DEF",
+        "EDU"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5fde953f-d923-4ab7-b46c-949368a86c68/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "af0e9479-290f-4c15-961a-316604da6463",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-07",
+      "title": "Foreign Affairs, Finance \u2014 Michael Patrick Phillips via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims Against the Government of Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Michael Patrick Phillips",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/af0e9479-290f-4c15-961a-316604da6463/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "f955518c-8a63-49cf-b67d-7036fdccb549",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-07",
+      "title": "Foreign Affairs, Finance \u2014 Thomas Leeder via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims Against Government of Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Thomas Leeder",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/f955518c-8a63-49cf-b67d-7036fdccb549/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "24817539-6c3e-41a2-b7fe-4e4ca847eae3",
+      "iso": "CH",
+      "source": "lda",
+      "signal_date": "2026-07-07",
+      "title": "Energy, Taxation \u2014 Gunvor Usa, Llc via Foley & Lardner Llp",
+      "value_usd": null,
+      "description": "45z Clean Fuel Production Credit",
+      "lobbying_firm": "Foley & Lardner Llp",
+      "registrant_id": 15042,
+      "client_name": "Gunvor Usa, Llc",
+      "issue_codes": [
+        "ENG",
+        "TAX"
+      ],
+      "url": "https://lda.gov/filings/public/filing/24817539-6c3e-41a2-b7fe-4e4ca847eae3/print/",
+      "raw_score": 2.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "005b4898-8375-434c-99d1-69d9afd514a2",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-07",
+      "title": "Foreign Affairs, Finance \u2014 Anna Leeder via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims Against The Government of Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Anna Leeder",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/005b4898-8375-434c-99d1-69d9afd514a2/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "b43fa4f8-998c-419f-83e8-203a8fccbe75",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-07",
+      "title": "Foreign Affairs, Finance \u2014 Brandon Deske via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims Against The Government of Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Brandon Deske",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/b43fa4f8-998c-419f-83e8-203a8fccbe75/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "c430114d-f019-4a79-a74f-85706d5b1064",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-07",
+      "title": "Foreign Affairs, Finance \u2014 Ralph Deske via Poblete Tamargo, Llp",
+      "value_usd": null,
+      "description": "Foreign Claims Against Government of Cuba",
+      "lobbying_firm": "Poblete Tamargo, Llp",
+      "registrant_id": 400620885,
+      "client_name": "Ralph Deske",
+      "issue_codes": [
+        "FIN",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/c430114d-f019-4a79-a74f-85706d5b1064/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "8f8c9aa5-de28-4977-83e4-ab36c1c2c7d4",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-08",
+      "title": "Defense, Trade \u2014 Sea Box, Inc. via Brownstein Hyatt Farber Schreck, Llp",
+      "value_usd": null,
+      "description": "Issues surrounding procurement interpretation and enforcement issues affecting U.S. manufacturers. NDAA FY 27 legislatio\u2026",
+      "lobbying_firm": "Brownstein Hyatt Farber Schreck, Llp",
+      "registrant_id": 7257,
+      "client_name": "Sea Box, Inc.",
+      "issue_codes": [
+        "DEF",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/8f8c9aa5-de28-4977-83e4-ab36c1c2c7d4/print/",
+      "raw_score": null,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "d5f296c7-2410-4e0f-a79a-941b1652a703",
+      "iso": "KR",
+      "source": "lda",
+      "signal_date": "2026-07-08",
+      "title": "Defense \u2014 Etl Co., Ltd via The Bennett Consulting Group",
+      "value_usd": null,
+      "description": "Evaluation of specialized coatings.",
+      "lobbying_firm": "The Bennett Consulting Group",
+      "registrant_id": 400713139,
+      "client_name": "Etl Co., Ltd",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/d5f296c7-2410-4e0f-a79a-941b1652a703/print/",
+      "raw_score": 4.0,
+      "weight": 1.0
+    },
+    {
+      "filing_uuid": "7925ede7-90c3-4f03-83ca-c31c3446431f",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-08",
+      "title": "Defense, Budget \u2014 Poettker Construction via Thompson Coburn Llp",
+      "value_usd": null,
+      "description": "Reimbursement of military construction costs impacted by inflation",
+      "lobbying_firm": "Thompson Coburn Llp",
+      "registrant_id": 47110,
+      "client_name": "Poettker Construction",
+      "issue_codes": [
+        "BUD",
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/7925ede7-90c3-4f03-83ca-c31c3446431f/print/",
       "raw_score": null,
       "weight": 1.0
     }

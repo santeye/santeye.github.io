@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T00:01:42.514970+00:00",
+  "generated_at": "2026-07-08T23:17:39.439695+00:00",
   "sources": [
     "federalregister"
   ],
@@ -8130,6 +8130,50 @@
       "description": "Notice. \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing the names of one or more persons that have been placed on OFAC's Specially Designated Nationals and Blocked Persons List (SDN List) based on OFAC's determination that one or more applicable legal criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of these persons are blocked, and U.S. persons are generally prohibited from engaging in transactions with them.",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/07/06/2026-13494/notice-of-ofac-sanctions-actions"
+    },
+    {
+      "document_number": "2026-13670",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-07",
+      "title": "Interest Rate Paid on Cash Deposited To Secure U.S. Immigration and Customs Enforcement Immigration Bonds",
+      "value_usd": null,
+      "description": "Notice. \u00b7 For the period beginning July 1, 2026, and ending on September 30, 2026, the U.S. Immigration and Customs Enforcement Immigration Bond interest rate is 3 per centum per annum.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/07/2026-13670/interest-rate-paid-on-cash-deposited-to-secure-us-immigration-and-customs-enforcement-immigration"
+    },
+    {
+      "document_number": "2026-13663",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-07",
+      "title": "Notice of Request for Public Comments on Section 232 National Security Investigation of Anthracite Coal",
+      "value_usd": null,
+      "description": "Notice of request for public comments. \u00b7 On June 29, 2026, the Secretary of Commerce initiated an investigation to determine the effects on the national security of imports of anthracite coal. This investigation has been initiated under section 232 of the Trade Expansion Act of 1962, as amended (Section 232). Interested parties are invited to submit written comments, data, analyses, or other information pertinent to the investigation to the Department of Commerce's (Department) Bureau of Industry and Security (BIS), Office of Strategic Industries and Economic Security. This notice identifies issues on which the Department is especially interested in obtaining the public's views.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/07/2026-13663/notice-of-request-for-public-comments-on-section-232-national-security-investigation-of-anthracite"
+    },
+    {
+      "document_number": "2026-13730",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-08",
+      "title": "Submission for OMB Review; Comment Request",
+      "value_usd": null,
+      "description": "30-Day information collection notice. \u00b7 The DoD (referred to herein as \"the Department\", \"Department of War\" or \"DoW\") has submitted to the Office of Management and Budget (OMB) for clearance the following proposal for collection of information under the provisions of the Paperwork Reduction Act.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/08/2026-13730/submission-for-omb-review-comment-request"
+    },
+    {
+      "document_number": "2026-13729",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-08",
+      "title": "Renewal of Department of Defense Federal Advisory Committees-Army Education Advisory Committee (AEAC)",
+      "value_usd": null,
+      "description": "Renewal of Federal Advisory Committee. \u00b7 The DoD (referred to herein as \"the Department\", \"Department of War\" or \"DoW\") is publishing this notice to announce that it is renewing the AEAC as a discretionary Federal advisory committee.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/08/2026-13729/renewal-of-department-of-defense-federal-advisory-committees-army-education-advisory-committee-aeac"
     }
   ]
 }
