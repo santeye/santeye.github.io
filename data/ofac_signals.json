@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T00:01:38.754052+00:00",
+  "generated_at": "2026-07-12T22:58:36.482837+00:00",
   "sources": [
     "ofac"
   ],
@@ -6213,6 +6213,192 @@
         "SUDAN-EO14098"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57977"
+    },
+    {
+      "uid": 57933,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "MOHSEN KHANDAN AND PARTNERS GENERAL PARTNERSHIP COMPANY (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57933"
+    },
+    {
+      "uid": 57934,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "CDM TRADING LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57934"
+    },
+    {
+      "uid": 57935,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "NABA ALZAKI RAW MATERIALS TRADING LLC (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57935"
+    },
+    {
+      "uid": 57942,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "Mohsen KHANDAN (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MOHSEN KHANDAN AND PARTNERS GENERAL PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57942"
+    },
+    {
+      "uid": 57943,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "Ali Asghar KHANDAN (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MOHSEN KHANDAN AND PARTNERS GENERAL PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57943"
+    },
+    {
+      "uid": 57944,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "MOHAMMAD DARBANI AND PARTNERS EXCHANGE GENERAL PARTNERSHIP COMPANY (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57944"
+    },
+    {
+      "uid": 57945,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "Shokufeh Rostam ABADI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MOHAMMAD DARBANI AND PARTNERS EXCHANGE GENERAL PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57945"
+    },
+    {
+      "uid": 57946,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "Zahra SARSHARI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MOHAMMAD DARBANI AND PARTNERS EXCHANGE GENERAL PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57946"
+    },
+    {
+      "uid": 57947,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "Mohammad DARBANI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MOHAMMAD DARBANI AND PARTNERS EXCHANGE GENERAL PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57947"
+    },
+    {
+      "uid": 57948,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "LAVASANI AND PARTNERS GENERAL PARTNERSHIP COMPANY (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57948"
+    },
+    {
+      "uid": 57949,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "Ahmad Navai LAVASANI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: LAVASANI AND PARTNERS GENERAL PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57949"
+    },
+    {
+      "uid": 57950,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "Amir Navai LAVASANI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: LAVASANI AND PARTNERS GENERAL PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57950"
+    },
+    {
+      "uid": 57957,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "Ali ANSARI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: KHAMENEI, Mojtaba; Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "IRAN-EO13876",
+        "SDGT",
+        "IFSR",
+        "IRGC"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57957"
+    },
+    {
+      "uid": 57960,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "SMART GLOBAL LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ANSARI, Ali)",
+      "programs": [
+        "IRAN-EO13876",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57960"
     }
   ]
 }

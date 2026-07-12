@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T23:17:50.437123+00:00",
+  "generated_at": "2026-07-12T22:58:48.716294+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,212 @@
     "sam"
   ],
   "signals": [
+    {
+      "uid": 57933,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "MOHSEN KHANDAN AND PARTNERS GENERAL PARTNERSHIP COMPANY (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57933",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57934,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "CDM TRADING LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57934",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57935,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "NABA ALZAKI RAW MATERIALS TRADING LLC (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57935",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57942,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "Mohsen KHANDAN (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MOHSEN KHANDAN AND PARTNERS GENERAL PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57942",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57945,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "Shokufeh Rostam ABADI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MOHAMMAD DARBANI AND PARTNERS EXCHANGE GENERAL PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57945",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57949,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "Ahmad Navai LAVASANI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: LAVASANI AND PARTNERS GENERAL PARTNERSHIP COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57949",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57957,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-10",
+      "title": "Ali ANSARI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: KHAMENEI, Mojtaba; Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "IRAN-EO13876",
+        "SDGT",
+        "IFSR",
+        "IRGC"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57957",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "filing_uuid": "8f8c9aa5-de28-4977-83e4-ab36c1c2c7d4",
       "iso": "XX",
@@ -34243,7 +34449,7 @@
     {
       "type": "first_appearance",
       "title": "Syria \u2014 ofac after first recorded silence",
-      "score": 17.411,
+      "score": 13.335,
       "countries": [
         "SY"
       ],
@@ -34257,7 +34463,7 @@
     {
       "type": "first_appearance",
       "title": "Sudan \u2014 ofac after first recorded silence",
-      "score": 14.509,
+      "score": 11.113,
       "countries": [
         "SD"
       ],
@@ -34276,7 +34482,7 @@
     {
       "type": "first_appearance",
       "title": "France \u2014 ofac after first recorded silence",
-      "score": 14.509,
+      "score": 11.113,
       "countries": [
         "FR"
       ],

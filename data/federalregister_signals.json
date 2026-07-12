@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T23:17:39.439695+00:00",
+  "generated_at": "2026-07-12T22:58:39.363617+00:00",
   "sources": [
     "federalregister"
   ],
@@ -8174,6 +8174,83 @@
       "description": "Renewal of Federal Advisory Committee. \u00b7 The DoD (referred to herein as \"the Department\", \"Department of War\" or \"DoW\") is publishing this notice to announce that it is renewing the AEAC as a discretionary Federal advisory committee.",
       "raw_score": null,
       "page_url": "https://www.federalregister.gov/documents/2026/07/08/2026-13729/renewal-of-department-of-defense-federal-advisory-committees-army-education-advisory-committee-aeac"
+    },
+    {
+      "document_number": "2026-13903",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-09",
+      "title": "Prompt Payment Interest Rate; Contract Disputes Act",
+      "value_usd": null,
+      "description": "Notice of prompt payment interest rate; Contract Disputes Act. \u00b7 For the period beginning July 1, 2026, and ending on December 31, 2026, the prompt payment interest rate is 4-3/4 per centum per annum.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/09/2026-13903/prompt-payment-interest-rate-contract-disputes-act"
+    },
+    {
+      "document_number": "2026-13862",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-09",
+      "title": "Government Securities: Call for Large Position Reports",
+      "value_usd": null,
+      "description": "Notice of call for Large Position Reports. \u00b7 The U.S. Department of the Treasury (Treasury) called for the submission of Large Position Reports by entities whose positions in the Treasury Floating Rate Note due January 2026 equaled or exceeded $8.4 billion as of Friday, January 23, 2026 or Friday, January 30, 2026.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/09/2026-13862/government-securities-call-for-large-position-reports"
+    },
+    {
+      "document_number": "2026-13860",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-09",
+      "title": "Rescinding Portions of Department of State Title VI Regulations To Conform More Closely With the Statutory Text and To Implement Executive Order 14281",
+      "value_usd": null,
+      "description": "Final rule. \u00b7 By this rule, the Department of State (\"Department\") amends its regulations implementing Title VI of the Civil Rights Act of 1964 (\"Title VI\") to align its regulations with Title VI and, relatedly, to conform to Executive Order 14281.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/09/2026-13860/rescinding-portions-of-department-of-state-title-vi-regulations-to-conform-more-closely-with-the"
+    },
+    {
+      "document_number": "2026-13851",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-09",
+      "title": "Charitable Remainder Annuity Trust Listed Transaction",
+      "value_usd": null,
+      "description": "Final rule. \u00b7 This document contains final regulations that identify certain charitable remainder annuity trust (CRAT) transactions and substantially similar transactions as listed transactions, a type of reportable transaction. Material advisors and certain participants in these listed transactions are required to file disclosures with the IRS and will be subject to penalties for failure to disclose. The final regulations affect participants in these transactions as well as material advisors but provide that certain organizations whose only role or interest in the transaction is as a charitable remainderman will not be treated as participants in the transaction or as parties to a prohibited tax shelter transaction subject to excise taxes and disclosure requirements.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/09/2026-13851/charitable-remainder-annuity-trust-listed-transaction"
+    },
+    {
+      "document_number": "2026-13830",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-09",
+      "title": "Information Reporting and Transfer for Valuable Consideration Rules for Section 1035 Exchanges of Life Insurance and Certain Other Life Insurance Contract Transactions",
+      "value_usd": null,
+      "description": "Final rule. \u00b7 This document contains final regulations providing guidance on the application of the transfer for valuable consideration rules and associated information reporting requirements for reportable policy sales of interests in life insurance contracts to exchanges of life insurance contracts qualifying for nonrecognition of gain or loss and certain acquisitions of interests in life insurance contracts in transactions that qualify as corporate reorganizations. The final regulations affect parties involved in these life insurance contract transactions, including with respect to payments of reportable death benefits.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/09/2026-13830/information-reporting-and-transfer-for-valuable-consideration-rules-for-section-1035-exchanges-of"
+    },
+    {
+      "document_number": "2026-13925",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-10",
+      "title": "Revising Qualified Domestic Trust Regulations Under Section 2056A To Update Outdated References and Procedures",
+      "value_usd": null,
+      "description": "Final regulations. \u00b7 This document contains final regulations that amend the Federal estate tax regulations applicable to estates of decedents passing property to or for the benefit of a noncitizen spouse in a domestic trust that satisfies all of the requirements under applicable Federal tax law and regulations to be a qualified domestic trust and for which the executor of the decedent's estate has made a qualified domestic trust election. These final regulations modify the existing regulations to update outdated references, information, and procedures. These final regulations primarily affect the estates of decedents passing property to or for the benefit of a noncitizen spouse in a qualified domestic trust pursuant to applicable Federal tax law.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/10/2026-13925/revising-qualified-domestic-trust-regulations-under-section-2056a-to-update-outdated-references-and"
+    },
+    {
+      "document_number": "2026-13914",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-10",
+      "title": "Notice Is Given of the Names of Members of the Performance Review Board for the Department of the Air Force",
+      "value_usd": null,
+      "description": "Notice. \u00b7 Notice is given of the names of members of the 2026 Performance Review Board for the Department of the Air Force.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/10/2026-13914/notice-is-given-of-the-names-of-members-of-the-performance-review-board-for-the-department-of-the"
     }
   ]
 }
