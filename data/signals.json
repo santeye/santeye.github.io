@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T22:58:48.716294+00:00",
+  "generated_at": "2026-07-29T18:32:04.238272+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,1905 @@
     "sam"
   ],
   "signals": [
+    {
+      "filing_uuid": "9f67d75a-bbb0-4b3d-a86b-c4ae5aaf127f",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-29",
+      "title": "Energy \u2014 Deep Fission Inc. via Deep Fission Inc.",
+      "value_usd": null,
+      "description": "Commercializing nuclear technology, faster permitting and licensing, stronger nuclear policy",
+      "lobbying_firm": "Deep Fission Inc.",
+      "registrant_id": 401110906,
+      "client_name": "Deep Fission Inc.",
+      "issue_codes": [
+        "ENG"
+      ],
+      "url": "https://lda.gov/filings/public/filing/9f67d75a-bbb0-4b3d-a86b-c4ae5aaf127f/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57370,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Juan Carlos GONZALEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57370",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57965,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Jorge ZEPEDA RODRIGUEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: DIAZ ROBLES, Marcial Apolinar; Linked To: DIAZ ROBLES, Pedro Marcial)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57965",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57970,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "OPTIC PRIVATE TRANSPORTATION S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZEPEDA RODRIGUEZ, Jorge)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57970",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 57975,
+      "iso": "UA",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "FIRST VPN SERVICE (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CYBER4"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57975",
+      "profile": {
+        "name": "Ukraine",
+        "score": 8,
+        "factors": [
+          "active conflict",
+          "occupied territory",
+          "strategic minerals",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Active full-scale war with Russia (+2), occupied territory \u2014 Crimea, Donbas (+2), major strategic minerals \u2014 rare earths, titanium, manganese, lithium (+2), active broad sanctions regime (+1), NATO/EU proxy contest (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58003,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "MEDIN PRODUCTS (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MEDINA CHAVIRA, Adolfo Gabriel)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58003",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58016,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "BUBUX BABY SHOES S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: BOTELLO ROZALEZ, Gerardo)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58016",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58018,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "CORPORATIVO DE SEGURIDAD PRIVADA ALFA Y GAMA S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: AYALA BOTELLO, Miguel Angel)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58018",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58021,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Liliana CISNEROS TAPIA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: GREEN AGROPACIFIC S.P.R. DE R.L. DE C.V.)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58021",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58024,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Ricardo BOTELLO ORTIZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: RANCHO SAN MIGUEL LOS TRES HERMANOS S.P.R. DE R.L. DE C.V.)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58024",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58036,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "STRONG ENERGY S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MORA LEON, Jose; Linked To: MENA ALVARADO, Alma Laura)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58036",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58041,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Karely Lizbeth RAMIREZ BANALES (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: FLORES SILVA, Audias)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58041",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58046,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "ASSOCIATION OF COMBATANTS OF THE CUBAN REVOLUTION (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58046",
+      "profile": {
+        "name": "Cuba",
+        "score": 4,
+        "factors": [
+          "sanctions",
+          "proxy hub",
+          "Western Hemisphere",
+          "Russian/Chinese presence"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active US sanctions regime (+1), Russian/Chinese intelligence infrastructure (+1), regional proxy hub (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58056,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "CORPORACION ANTILLANA EXPORTADORA SA (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: GRUPO DE ADMINISTRACION EMPRESARIAL S.A.)",
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58056",
+      "profile": {
+        "name": "Cuba",
+        "score": 4,
+        "factors": [
+          "sanctions",
+          "proxy hub",
+          "Western Hemisphere",
+          "Russian/Chinese presence"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active US sanctions regime (+1), Russian/Chinese intelligence infrastructure (+1), regional proxy hub (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58063,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "STELLA SERVICIOS COMERCIALES Y EMPRESARIALES S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: RAMIREZ BANALES, Karely Lizbeth; Linked To: MEDINA FLORES, Areli Isis)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58063",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58064,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "EL ALMACEN LICORERIA (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: RAMIREZ BANALES, Karely Lizbeth)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58064",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58073,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "PRODUCTORES VAGU S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: GUTIERREZ VALDEZ, Jose Jesus)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58073",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58074,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "CASA TEQUILERA EL ORIGEN DEL TEQUILA S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: JIMENEZ ARIAS, Roberto)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58074",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58076,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "AGROPECUARIA AMATEQ DEL VALLE S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: JIMENEZ ARIAS, Roberto; Linked To: ALVARADO RODRIGUEZ, Martha Alicia)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58076",
+      "profile": {
+        "name": "Mexico",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "regional power",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), major hydrocarbon producer (+2), regional power (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58077,
+      "iso": "BY",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Yevgeniy Vladimirovich SILAYEV (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CYBER4"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58077",
+      "profile": {
+        "name": "Belarus",
+        "score": 5,
+        "factors": [
+          "active conflict",
+          "sanctions",
+          "proxy hub",
+          "nuclear hosting",
+          "Russian forward base"
+        ],
+        "rationale": "Occupied/co-belligerent in Ukraine war, Russian forward position (+2), active sanctions regime (+1), Russia proxy hub (+1), nuclear weapons hosted (+1 latent nuclear)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58093,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "AVA TARABAR DARYA COMPANY (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58093",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58103,
+      "iso": "SG",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "SEA LEAD SHIPPING PTE. LTD. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58103",
+      "profile": {
+        "name": "Singapore",
+        "score": 5,
+        "factors": [
+          "maritime chokepoint",
+          "Malacca Strait",
+          "US basing",
+          "regional hub"
+        ],
+        "rationale": "Controls eastern Malacca Strait \u2014 most critical maritime chokepoint by volume (+3), major US naval access (+1), regional financial and logistics hub (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58115,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "OCEAN SEARUM ONE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58115",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58122,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Jijin GEORGE (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58122",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58126,
+      "iso": "RU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "AVRATEK OOO (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: NAMAZI, Behrouz)",
+      "programs": [
+        "NPWMD",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58126",
+      "profile": {
+        "name": "Russia",
+        "score": 10,
+        "factors": [
+          "nuclear program",
+          "hydrocarbons",
+          "active conflict",
+          "sanctions",
+          "regional power",
+          "Arctic",
+          "proxy hub"
+        ],
+        "rationale": "Active nuclear weapons \u2014 largest arsenal (+2), major hydrocarbon producer and pipeline network (+2), active conflict \u2014 Ukraine war (+2), comprehensive sanctions regime (+1), regional power and global proxy hub (+1), controls Arctic sea routes (+1), strategic minerals (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58130,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "NIKA JET COMPANY (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: NAMAZI, Behrouz)",
+      "programs": [
+        "NPWMD",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58130",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58131,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "GOLDEN NEST GROUP LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZAHED, Hossein Ghorbani)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58131",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58134,
+      "iso": "IN",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "SEA LEAD SHIPPING AGENCY INDIA PRIVATE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SEA LEAD SHIPPING PTE. LTD.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58134",
+      "profile": {
+        "name": "India",
+        "score": 7,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "strategic minerals",
+          "Indian Ocean",
+          "US partner"
+        ],
+        "rationale": "Nuclear weapons program (+2), regional power (+1), strategic minerals including rare earths (+2), Indian Ocean chokepoint adjacency \u2014 controls Andaman sea lanes (+1), major US security partner and arms customer (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58136,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "SEA LEAD SHIPPING DMCC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SEA LEAD SHIPPING PTE. LTD.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58136",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58142,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Behrouz NAMAZI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "NPWMD",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58142",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58143,
+      "iso": "RU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Mariya Vladimirovna SELINA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "NPWMD",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58143",
+      "profile": {
+        "name": "Russia",
+        "score": 10,
+        "factors": [
+          "nuclear program",
+          "hydrocarbons",
+          "active conflict",
+          "sanctions",
+          "regional power",
+          "Arctic",
+          "proxy hub"
+        ],
+        "rationale": "Active nuclear weapons \u2014 largest arsenal (+2), major hydrocarbon producer and pipeline network (+2), active conflict \u2014 Ukraine war (+2), comprehensive sanctions regime (+1), regional power and global proxy hub (+1), controls Arctic sea routes (+1), strategic minerals (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58144,
+      "iso": "RU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Vadim Anatolyevich DRUZHBIN (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: AVRATEK OOO)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58144",
+      "profile": {
+        "name": "Russia",
+        "score": 10,
+        "factors": [
+          "nuclear program",
+          "hydrocarbons",
+          "active conflict",
+          "sanctions",
+          "regional power",
+          "Arctic",
+          "proxy hub"
+        ],
+        "rationale": "Active nuclear weapons \u2014 largest arsenal (+2), major hydrocarbon producer and pipeline network (+2), active conflict \u2014 Ukraine war (+2), comprehensive sanctions regime (+1), regional power and global proxy hub (+1), controls Arctic sea routes (+1), strategic minerals (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58145,
+      "iso": "NG",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "VANGUARD TACTICAL SUPPLY LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: NAMAZI, Behrouz)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58145",
+      "profile": {
+        "name": "Nigeria",
+        "score": 5,
+        "factors": [
+          "hydrocarbons",
+          "active conflict",
+          "regional power"
+        ],
+        "rationale": "Largest African hydrocarbon producer (+2), active Boko Haram, IPOB, and Niger Delta conflicts (+2), regional power in West Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58149,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "AL KINA COMMERCIAL BROKER LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: RAKHBARMADANI, Ali)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58149",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58154,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Alessandra RONCO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: EVORIT STRATEGY CONSULTING LLC-FZ)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58154",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58157,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "EVORIT STRATEGY CONSULTING LLC-FZ (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: KAALUND, Martin Austin)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58157",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58160,
+      "iso": "SG",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Martin Austin KAALUND (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HOUSE OF SHIPPING INVESTMENT FZCO)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58160",
+      "profile": {
+        "name": "Singapore",
+        "score": 5,
+        "factors": [
+          "maritime chokepoint",
+          "Malacca Strait",
+          "US basing",
+          "regional hub"
+        ],
+        "rationale": "Controls eastern Malacca Strait \u2014 most critical maritime chokepoint by volume (+3), major US naval access (+1), regional financial and logistics hub (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58174,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "ZEDPAY FINANSAL SISTEM VE HIZMETLERI ANONIM SIRKETI (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZEDXION EXCHANGE LTD)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58174",
+      "profile": {
+        "name": "Turkey",
+        "score": 8,
+        "factors": [
+          "maritime chokepoint",
+          "Turkish Straits",
+          "Bosphorus",
+          "nuclear hosting",
+          "US basing",
+          "regional power",
+          "proxy hub"
+        ],
+        "rationale": "Controls Turkish Straits \u2014 Bosphorus and Dardanelles, only Black Sea exit (+3), US nuclear weapons at Incirlik (+2), major US basing (+1), regional power \u2014 NATO member playing both sides (+1), proxy hub Syria/Libya/Azerbaijan/Ukraine (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58176,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "DOT ONE VALUE CREATION GROUP (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZANJANI, Babak Morteza)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58176",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58177,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "ZEDX DMCC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZEDCEX EXCHANGE LTD)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58177",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58179,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "DOTONE RAIL COMPANY (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: DOT ONE VALUE CREATION GROUP)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58179",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58183,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "BZ DIAMOND DMCC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZEDXION EXCHANGE LTD)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58183",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58185,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Bahareh Morteza ZANJANI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: BZ DIAMOND DMCC)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58185",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58186,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Mehdi REZAZADEH (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ZEDPAY FINANSAL SISTEM VE HIZMETLERI ANONIM SIRKETI)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58186",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58188,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Solmaz BANI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ZANJANI, Babak Morteza)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58188",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58189,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "QI HANG SHIP MANAGEMENT LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58189",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58195,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Mahmoud EL-ABIARY (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: EGYPTIAN MUSLIM BROTHERHOOD)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58195",
+      "profile": {
+        "name": "United Kingdom",
+        "score": 5,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "US partner",
+          "maritime chokepoint"
+        ],
+        "rationale": "Active nuclear weapons program \u2014 Trident (+2), regional power and global basing network (+1), major US interoperability partner \u2014 Five Eyes, AUKUS (+1), controls Gibraltar and Diego Garcia chokepoints (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58197,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "EL-KAHIRA FOR GENERAL TRADING (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HAMAS)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58197",
+      "profile": {
+        "name": "Turkey",
+        "score": 8,
+        "factors": [
+          "maritime chokepoint",
+          "Turkish Straits",
+          "Bosphorus",
+          "nuclear hosting",
+          "US basing",
+          "regional power",
+          "proxy hub"
+        ],
+        "rationale": "Controls Turkish Straits \u2014 Bosphorus and Dardanelles, only Black Sea exit (+3), US nuclear weapons at Incirlik (+2), major US basing (+1), regional power \u2014 NATO member playing both sides (+1), proxy hub Syria/Libya/Azerbaijan/Ukraine (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58199,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Zaid Issam Ahmed AL-JEBOURI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: EL-KAHIRA FOR GENERAL TRADING)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58199",
+      "profile": {
+        "name": "Turkey",
+        "score": 8,
+        "factors": [
+          "maritime chokepoint",
+          "Turkish Straits",
+          "Bosphorus",
+          "nuclear hosting",
+          "US basing",
+          "regional power",
+          "proxy hub"
+        ],
+        "rationale": "Controls Turkish Straits \u2014 Bosphorus and Dardanelles, only Black Sea exit (+3), US nuclear weapons at Incirlik (+2), major US basing (+1), regional power \u2014 NATO member playing both sides (+1), proxy hub Syria/Libya/Azerbaijan/Ukraine (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58201,
+      "iso": "ID",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "TUJUH BULIR GLOBAL (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HAMAS)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58201",
+      "profile": {
+        "name": "Indonesia",
+        "score": 7,
+        "factors": [
+          "maritime chokepoint",
+          "Malacca Strait",
+          "hydrocarbons",
+          "regional power",
+          "BRI exposure"
+        ],
+        "rationale": "Controls Malacca, Lombok, and Sunda Straits \u2014 critical global chokepoints (+3), major hydrocarbon producer (+2), regional power (+1), significant BRI/Chinese investment (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58204,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "CORAL MARITIMA S.A. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: GRUPO EMPRESARIAL DE TRANSPORTE MARITIMO PORTUARIO)",
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58204",
+      "profile": {
+        "name": "Cuba",
+        "score": 4,
+        "factors": [
+          "sanctions",
+          "proxy hub",
+          "Western Hemisphere",
+          "Russian/Chinese presence"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active US sanctions regime (+1), Russian/Chinese intelligence infrastructure (+1), regional proxy hub (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58213,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Gretza SANCHEZ PADRON (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: UNIDAD CENTRAL DE COOPERACION MEDICA)",
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58213",
+      "profile": {
+        "name": "Cuba",
+        "score": 4,
+        "factors": [
+          "sanctions",
+          "proxy hub",
+          "Western Hemisphere",
+          "Russian/Chinese presence"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active US sanctions regime (+1), Russian/Chinese intelligence infrastructure (+1), regional proxy hub (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58234,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "HORMUZSAFE MARINE SERVICES AUTHORITY (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58234",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "6a2f3614-f2b0-4afb-a41e-e34002eb6b4c",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-28",
+      "title": "Foreign Affairs, Trade \u2014 Nsquare Trust Holding via Continental Strategy, Llc",
+      "value_usd": null,
+      "description": "Advancing economic and investment opportunities between Kuwait and the United States",
+      "lobbying_firm": "Continental Strategy, Llc",
+      "registrant_id": 401106285,
+      "client_name": "Nsquare Trust Holding",
+      "issue_codes": [
+        "FOR",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/6a2f3614-f2b0-4afb-a41e-e34002eb6b4c/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "5bc22c89-7ca3-4f82-a1bd-c77d33c70ee7",
+      "iso": "GB",
+      "source": "lda",
+      "signal_date": "2026-07-28",
+      "title": "Homeland Security \u2014 Qinetiq, Inc. via Washington Bridge Advisory Llc",
+      "value_usd": null,
+      "description": "Border security and appropriation priorities",
+      "lobbying_firm": "Washington Bridge Advisory Llc",
+      "registrant_id": 401110891,
+      "client_name": "Qinetiq, Inc.",
+      "issue_codes": [
+        "HOM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/5bc22c89-7ca3-4f82-a1bd-c77d33c70ee7/print/",
+      "profile": {
+        "name": "United Kingdom",
+        "score": 5,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "US partner",
+          "maritime chokepoint"
+        ],
+        "rationale": "Active nuclear weapons program \u2014 Trident (+2), regional power and global basing network (+1), major US interoperability partner \u2014 Five Eyes, AUKUS (+1), controls Gibraltar and Diego Garcia chokepoints (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "9d19acd5-d8e4-48d6-bcb0-6b8d28abfc8a",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-28",
+      "title": "Trade, Chemicals, Environment \u2014 Occidental Chemical Corporation via Occidental Chemical Corporation",
+      "value_usd": null,
+      "description": "Toxic Substance Control Act; Trade Policy; Shipper Coalition Matters; Organic Chemical Manufacturing; Proposed EPA Risk \u2026",
+      "lobbying_firm": "Occidental Chemical Corporation",
+      "registrant_id": 401110808,
+      "client_name": "Occidental Chemical Corporation",
+      "issue_codes": [
+        "CHM",
+        "ENV",
+        "MAN",
+        "RRR",
+        "TRA",
+        "TRD"
+      ],
+      "url": "https://lda.gov/filings/public/filing/9d19acd5-d8e4-48d6-bcb0-6b8d28abfc8a/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "e7175a53-6a71-4c5d-bd24-fefa4597f919",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-28",
+      "title": "Energy, Roads/Highway, Transportation \u2014 City Of Seguin via The Normandy Group, Llc",
+      "value_usd": null,
+      "description": "General municipality issues, transportation, infrastructure, energy",
+      "lobbying_firm": "The Normandy Group, Llc",
+      "registrant_id": 306636,
+      "client_name": "City Of Seguin",
+      "issue_codes": [
+        "ENG",
+        "ROD",
+        "TRA",
+        "UTI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/e7175a53-6a71-4c5d-bd24-fefa4597f919/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "1ea8ce65-b362-43cf-8dca-30dc742d62fd",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-28",
+      "title": "Energy, Science/Technology \u2014 Latitude Energy Holdings Inc. via Continental Strategy, Llc",
+      "value_usd": null,
+      "description": "Energy production",
+      "lobbying_firm": "Continental Strategy, Llc",
+      "registrant_id": 401106285,
+      "client_name": "Latitude Energy Holdings Inc.",
+      "issue_codes": [
+        "ENG",
+        "SCI"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1ea8ce65-b362-43cf-8dca-30dc742d62fd/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "89924e33-f28c-4d9e-9e10-b7878c4c3473",
+      "iso": "AU",
+      "source": "lda",
+      "signal_date": "2026-07-28",
+      "title": "Chemicals \u2014 Coogee Chemical, Usa Inc. via Db3, Llc (Fka The Daschle Group)",
+      "value_usd": null,
+      "description": "Issues related to public and private sector usage of titanium and magnesium powders.",
+      "lobbying_firm": "Db3, Llc (Fka The Daschle Group)",
+      "registrant_id": 401108299,
+      "client_name": "Coogee Chemical, Usa Inc.",
+      "issue_codes": [
+        "CHM"
+      ],
+      "url": "https://lda.gov/filings/public/filing/89924e33-f28c-4d9e-9e10-b7878c4c3473/print/",
+      "profile": {
+        "name": "Australia",
+        "score": 5,
+        "factors": [
+          "strategic minerals",
+          "US basing",
+          "AUKUS",
+          "regional power",
+          "hydrocarbons"
+        ],
+        "rationale": "Major strategic minerals producer and processor \u2014 rare earths, lithium, uranium (+2), major US basing and AUKUS partner (+1), regional power Indo-Pacific (+1), hydrocarbon exports (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "1a8c5b9b-0dde-4dcf-b43e-1da70976d99a",
+      "iso": "CO",
+      "source": "lda",
+      "signal_date": "2026-07-28",
+      "title": "Energy, Foreign Affairs \u2014 Geopark Colombia Sas via Continental Strategy, Llc",
+      "value_usd": null,
+      "description": "Colombia; Business opportunities and interests in Latin America",
+      "lobbying_firm": "Continental Strategy, Llc",
+      "registrant_id": 401106285,
+      "client_name": "Geopark Colombia Sas",
+      "issue_codes": [
+        "ENG",
+        "FOR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/1a8c5b9b-0dde-4dcf-b43e-1da70976d99a/print/",
+      "profile": {
+        "name": "Colombia",
+        "score": 6,
+        "factors": [
+          "active conflict",
+          "hydrocarbons",
+          "US basing",
+          "Western Hemisphere"
+        ],
+        "rationale": "Western Hemisphere presence (+1), active ELN/FARC-dissident conflict (+2), hydrocarbon reserves (+2), major US basing and regional security partner (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "da9a6a87-1718-43d0-a935-b68a3346eec4",
+      "iso": "DE",
+      "source": "lda",
+      "signal_date": "2026-07-28",
+      "title": "Health \u2014 Fresenius Kabi Usa, Llc via Db3, Llc (Fka The Daschle Group)",
+      "value_usd": null,
+      "description": "Issues related to domestic manufacturing of essential medicines; issues related to access to and availability of generic\u2026",
+      "lobbying_firm": "Db3, Llc (Fka The Daschle Group)",
+      "registrant_id": 401108299,
+      "client_name": "Fresenius Kabi Usa, Llc",
+      "issue_codes": [
+        "HCR"
+      ],
+      "url": "https://lda.gov/filings/public/filing/da9a6a87-1718-43d0-a935-b68a3346eec4/print/",
+      "profile": {
+        "name": "Germany",
+        "score": 4,
+        "factors": [
+          "US basing",
+          "nuclear hosting",
+          "regional power"
+        ],
+        "rationale": "Major US basing \u2014 EUCOM, Ramstein, Landstuhl (+1), US tactical nuclear weapons hosted (+2 latent nuclear), regional power and NATO anchor (+1)"
+      },
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "filing_uuid": "9a2565ea-b601-4d26-9f91-63d49c7c0aff",
+      "iso": "XX",
+      "source": "lda",
+      "signal_date": "2026-07-28",
+      "title": "Defense \u2014 Dix Group On Behalf Of Armor Source, Llc via Tremont Strategies Group Llc (F/K/A Ads Ventures)",
+      "value_usd": null,
+      "description": "Manufacturer representation services tailored to the defense industry",
+      "lobbying_firm": "Tremont Strategies Group Llc (F/K/A Ads Ventures)",
+      "registrant_id": 90250,
+      "client_name": "Dix Group On Behalf Of Armor Source, Llc",
+      "issue_codes": [
+        "DEF"
+      ],
+      "url": "https://lda.gov/filings/public/filing/9a2565ea-b601-4d26-9f91-63d49c7c0aff/print/",
+      "profile": null,
+      "layer": "influence",
+      "quality": 0.5,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "document_number": "2026-14706",
+      "iso": "HK",
+      "source": "federalregister",
+      "signal_date": "2026-07-22",
+      "title": "Notice of OFAC Sanctions Action",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) has removed from OFAC's Specially Designated Nationals and Blocked Persons List (SDN List) the names of certain persons whose property and interests in property had been blocked pursuant to Hong Kong sanctions authorities. Additionally, OFAC has transferred names of persons who remain sanctioned under the Hong Kong Autonomy Act, Public Law 116-149 (HKAA), from the SDN List to the Non-SDN Menu Based Sanctions List (NS-MBS List).",
+      "page_url": "https://www.federalregister.gov/documents/2026/07/22/2026-14706/notice-of-ofac-sanctions-action",
+      "profile": {
+        "name": "Hong Kong",
+        "score": 4,
+        "factors": [
+          "PRC proxy",
+          "financial hub",
+          "US sanctions exposure",
+          "China friction"
+        ],
+        "rationale": "SAR under full PRC authority post-NSL \u2014 US-China friction flashpoint, active sanctions exposure (+1), major financial hub for PRC capital flows and offshore RMB (+1), regional proxy hub for PRC economic statecraft (+1), contested political status and ongoing civil liberties suppression (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.8,
+      "dollar_mod": 1.0,
+      "is_fr_policy": true
+    },
+    {
+      "document_number": "2026-14568",
+      "iso": "SD",
+      "source": "federalregister",
+      "signal_date": "2026-07-20",
+      "title": "Imposition of Additional Sanctions on Sudan Under the Chemical and Biological Weapons Control and Warfare Elimination Act of 1991",
+      "value_usd": null,
+      "description": "Notice. \u00b7 On April 24, 2025, the Senior Official performing the functions of the Under Secretary for Arms Control and International Security, acting under authority delegated pursuant to Executive Order 12851 and Department of State Delegation 293-2, determined pursuant to section 306(a) of the Chemical and Biological Weapons Control and Warfare Elimination Act of 1991 (the Act), 22 U.S.C. 5604(a), that the Government of Sudan has used chemical weapons in violation of international law. Notice of this determination was published on June 27, 2025 in the Federal Register under Public Notice 12749, which resulted in sanctions against Sudan. Section 307(b) of the Act provides for additional sanctions unless a certification to Congress was made within three months of April 24, 2025 that Sudan has met certain conditions described in the Act. Sudan has not met the Act's conditions and the Under Secretary for Arms Control and International Security decided to impose additional sanctions on Sudan on June 23, 2026.",
+      "page_url": "https://www.federalregister.gov/documents/2026/07/20/2026-14568/imposition-of-additional-sanctions-on-sudan-under-the-chemical-and-biological-weapons-control-and",
+      "profile": {
+        "name": "Sudan",
+        "score": 5,
+        "factors": [
+          "active conflict",
+          "hydrocarbons",
+          "Red Sea",
+          "proxy hub"
+        ],
+        "rationale": "Active civil war \u2014 SAF vs. RSF, mass atrocities (+2), hydrocarbon production (+1), Red Sea access \u2014 Russian naval base negotiations (+1), proxy hub UAE/Egypt/Russia/Turkey contest (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.8,
+      "dollar_mod": 1.0,
+      "is_fr_policy": true
+    },
+    {
+      "iso": "GR",
+      "source": "dsca",
+      "signal_date": "2026-07-16",
+      "title": "Switchblade 300 Block 20 Lethal Miniature Aerial Missile System",
+      "value_usd": 80100000.0,
+      "description": "Transmittal # 26-76 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Greece to purchase Switchblade 300 Block 20 Lethal Miniature Aerial Missile Systems.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/07/greece-switchblade-300-block-20-lethal-miniature-aerial-missile-system/",
+      "wp_id": 694912,
+      "profile": {
+        "name": "Greece",
+        "score": 3,
+        "factors": [
+          "US basing",
+          "maritime corridor",
+          "NATO flank"
+        ],
+        "rationale": "Major US basing \u2014 Souda Bay, Alexandroupolis (+1), controls Aegean Sea access \u2014 strategic maritime corridor (+1), NATO southeastern flank and Eastern Med gas contest (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.1427724387063178,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "KW",
+      "source": "dsca",
+      "signal_date": "2026-07-15",
+      "title": "C-17 Sustainment",
+      "value_usd": 484000000.0,
+      "description": "Transmittal #26-61 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Kuwait for purchase of C-17 Sustainment and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/07/kuwait-c-17-sustainment/",
+      "wp_id": 694641,
+      "profile": {
+        "name": "Kuwait",
+        "score": 3,
+        "factors": [
+          "hydrocarbons",
+          "US basing"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing and pre-positioned equipment (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.2013634021233308,
+      "is_fr_policy": null
+    },
+    {
+      "iso": "SA",
+      "source": "dsca",
+      "signal_date": "2026-07-15",
+      "title": "Advanced Precision Kill Weapon Systems",
+      "value_usd": 1960000000.0,
+      "description": "Transmittal # 26-85 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Kingdom of Saudi Arabia for Advanced Precision Kill Weapon Systems and related equipment.",
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/07/kingdom-of-saudi-arabia-advanced-precision-kill-weapon-systems/",
+      "wp_id": 694639,
+      "profile": {
+        "name": "Saudi Arabia",
+        "score": 6,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "regional power",
+          "proxy hub"
+        ],
+        "rationale": "World's largest conventional hydrocarbon reserves (+2), major US basing and security partnership (+1), regional power (+1), proxy hub \u2014 Yemen war, Lebanon, Palestinian funding (+1), active sanctions on adversaries (+1)"
+      },
+      "layer": "military",
+      "quality": 1.0,
+      "dollar_mod": 1.2469192053517357,
+      "is_fr_policy": null
+    },
+    {
+      "document_number": "2026-14132",
+      "iso": "AE",
+      "source": "federalregister",
+      "signal_date": "2026-07-14",
+      "title": "Enhanced Favorable Treatment for the United Arab Emirates Under the Export Administration Regulations",
+      "value_usd": null,
+      "description": "Final rule. \u00b7 In this final rule, the Bureau of Industry and Security (BIS) amends the Export Administration Regulations (EAR) to provide enhanced favorable treatment for the United Arab Emirates (UAE). Specifically, BIS is removing the UAE from Country Groups D:3 and D:4 and adding the UAE to Country Group A:5. More license exceptions will now be available, including Strategic Trade Authorization (STA) for the UAE Government and approved commercial entities in the UAE. STA will authorize the export, reexport, or transfer (in-country) of military items; certain commercial satellites and spacecraft; and dual-use items useful in, inter alia, oil and gas production, desalination, and civil nuclear power generation. The UAE Government and approved commercial entities will also have license-free access to advanced computing items, consistent with the May 2025 U.S.-UAE Artificial Intelligence Cooperation framework, without compromising U.S. digital infrastructure buildout.",
+      "page_url": "https://www.federalregister.gov/documents/2026/07/14/2026-14132/enhanced-favorable-treatment-for-the-united-arab-emirates-under-the-export-administration",
+      "profile": {
+        "name": "United Arab Emirates",
+        "score": 4,
+        "factors": [
+          "hydrocarbons",
+          "US basing",
+          "proxy hub"
+        ],
+        "rationale": "Major hydrocarbon reserves (+2), US basing access \u2014 Al Dhafra Air Base (+1), regional proxy hub \u2014 Sudan, Libya, Horn of Africa (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.8,
+      "dollar_mod": 1.0,
+      "is_fr_policy": true
+    },
     {
       "uid": 57933,
       "iso": "IR",
@@ -34448,48 +36347,47 @@
   "themes": [
     {
       "type": "first_appearance",
-      "title": "Syria \u2014 ofac after first recorded silence",
-      "score": 13.335,
+      "title": "Russia \u2014 ofac after first recorded silence",
+      "score": 46.274,
       "countries": [
-        "SY"
+        "RU"
       ],
       "signal_keys": [
-        "ofac:Boukich ABDELHAKIM (Individual)",
-        "ofac:AL 'AHD COMPANY FOR TRADE AND INVESTMENT"
+        "ofac:AVRATEK OOO (Entity)",
+        "ofac:Mariya Vladimirovna SELINA (Individual)",
+        "ofac:Vadim Anatolyevich DRUZHBIN (Individual)"
       ],
-      "why": "ofac filed for Syria after first recorded of silence (profile score: 6). Signal: Boukich ABDELHAKIM (Individual)",
-      "narrative": null
-    },
-    {
-      "type": "first_appearance",
-      "title": "Sudan \u2014 ofac after first recorded silence",
-      "score": 11.113,
-      "countries": [
-        "SD"
-      ],
-      "signal_keys": [
-        "ofac:TARGET MULTIACTIVITIES COMPANY LTD (Enti",
-        "ofac:PORTS ENGINEERING COMPANY LTD (Entity)",
-        "ofac:Tariq Hussain Muhammad MADANI (Individua"
-      ],
-      "why": "ofac filed for Sudan after first recorded of silence (profile score: 5). Signal: TARGET MULTIACTIVITIES COMPANY LTD (Entity)",
+      "why": "ofac filed for Russia after first recorded of silence (profile score: 10). Signal: AVRATEK OOO (Entity)",
       "narrative": {
-        "headline": "OFAC sanctions Sudan network after silence, targeting port and tech firms",
-        "body": "OFAC designated TARGET MULTIACTIVITIES COMPANY LTD, PORTS ENGINEERING COMPANY LTD, and linked individual Tariq Hussain Muhammad Madani on July 1, 2026, after a recorded gap in Sudan filings. The cluster connects a ports engineering firm to Sudan Master Technology, suggesting a sanctions-evasion network using infrastructure and tech companies.",
-        "prompt": "I just saw that OFAC sanctioned three entities linked to Sudan on July 1, 2026 \u2014 TARGET MULTIACTIVITIES COMPANY LTD, PORTS ENGINEERING COMPANY LTD (linked to SUDAN MASTER TECHNOLOGY), and an individual named Tariq Hussain Muhammad Madani \u2014 after a period of silence on Sudan filings. Why does this matter? Sudan is under broad U.S. sanctions, and new designations after a gap often signal fresh intelligence on evasion networks. Who benefits from these companies, and what does the ports-technology connection suggest about how sanctioned goods or funds move? Is SUDAN MASTER TECHNOLOGY a previously designated entity? What should I watch for next \u2014 specifically, are there related front companies, shipping routes, or financial intermediaries that could face follow-on designations?"
+        "headline": "OFAC ties Russian firm AVRATEK to Iranian IRGC procurement network",
+        "body": "OFAC simultaneously sanctioned Russian entity AVRATEK OOO, its associate Druzhbin, and Russian national Selina linked to Iran's IRGC \u2014 all on the same date. The mechanism is a Russia-Iran sanctions evasion network using AVRATEK as a procurement front for IRGC-linked operative Behrouz Namazi.",
+        "prompt": "I just saw that OFAC sanctioned a Russian company called AVRATEK OOO alongside two Russian individuals \u2014 Vadim Druzhbin (linked to AVRATEK) and Mariya Selina (linked to Iran's IRGC) \u2014 all on the same date. This matters because it suggests a Russia-based front company is helping Iran's Revolutionary Guard Corps evade sanctions, potentially for weapons or dual-use technology procurement. Who is Behrouz Namazi and what is his role in IRGC procurement? How does AVRATEK fit into known Russia-Iran sanctions evasion networks? Is this pattern of Russian nationals facilitating IRGC procurement growing or isolated? Watch for follow-on designations of AVRATEK's suppliers, customers, or financial intermediaries \u2014 that would confirm an active, expanding network rather than a one-off bust."
       }
     },
     {
       "type": "first_appearance",
-      "title": "France \u2014 ofac after first recorded silence",
-      "score": 11.113,
+      "title": "Ukraine \u2014 ofac after first recorded silence",
+      "score": 37.019,
       "countries": [
-        "FR"
+        "UA"
       ],
       "signal_keys": [
-        "ofac:Miloud ABDERRAHMANE (Individual)"
+        "ofac:FIRST VPN SERVICE (Entity)"
       ],
-      "why": "ofac filed for France after first recorded of silence (profile score: 5). Signal: Miloud ABDERRAHMANE (Individual)",
+      "why": "ofac filed for Ukraine after first recorded of silence (profile score: 8). Signal: FIRST VPN SERVICE (Entity)",
+      "narrative": null
+    },
+    {
+      "type": "first_appearance",
+      "title": "Indonesia \u2014 ofac after first recorded silence",
+      "score": 32.392,
+      "countries": [
+        "ID"
+      ],
+      "signal_keys": [
+        "ofac:TUJUH BULIR GLOBAL (Entity)"
+      ],
+      "why": "ofac filed for Indonesia after first recorded of silence (profile score: 7). Signal: TUJUH BULIR GLOBAL (Entity)",
       "narrative": null
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T22:56:52.927106+00:00",
+  "generated_at": "2026-07-29T18:29:51.735664+00:00",
   "sources": [
     "dsca"
   ],
@@ -14656,6 +14656,42 @@
       "cn_number": null,
       "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/06/singapore-hellfire-missiles/",
       "wp_id": 692180
+    },
+    {
+      "iso": "KW",
+      "source": "dsca",
+      "signal_date": "2026-07-15",
+      "title": "C-17 Sustainment",
+      "value_usd": 484000000.0,
+      "description": "Transmittal #26-61 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Kuwait for purchase of C-17 Sustainment and related equipment.",
+      "raw_score": 3.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/07/kuwait-c-17-sustainment/",
+      "wp_id": 694641
+    },
+    {
+      "iso": "SA",
+      "source": "dsca",
+      "signal_date": "2026-07-15",
+      "title": "Advanced Precision Kill Weapon Systems",
+      "value_usd": 1960000000.0,
+      "description": "Transmittal # 26-85 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Kingdom of Saudi Arabia for Advanced Precision Kill Weapon Systems and related equipment.",
+      "raw_score": 6.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/07/kingdom-of-saudi-arabia-advanced-precision-kill-weapon-systems/",
+      "wp_id": 694639
+    },
+    {
+      "iso": "GR",
+      "source": "dsca",
+      "signal_date": "2026-07-16",
+      "title": "Switchblade 300 Block 20 Lethal Miniature Aerial Missile System",
+      "value_usd": 80100000.0,
+      "description": "Transmittal # 26-76 The U.S. Department of State has made a determination approving a possible Foreign Military Sale to the Government of Greece to purchase Switchblade 300 Block 20 Lethal Miniature Aerial Missile Systems.",
+      "raw_score": 3.0,
+      "cn_number": null,
+      "page_url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/07/greece-switchblade-300-block-20-lethal-miniature-aerial-missile-system/",
+      "wp_id": 694912
     }
   ]
 }

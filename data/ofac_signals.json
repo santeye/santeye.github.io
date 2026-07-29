@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T22:58:36.482837+00:00",
+  "generated_at": "2026-07-29T18:31:35.630001+00:00",
   "sources": [
     "ofac"
   ],
@@ -6399,6 +6399,2355 @@
         "SDGT"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57960"
+    },
+    {
+      "uid": 57370,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Juan Carlos GONZALEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57370"
+    },
+    {
+      "uid": 57965,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Jorge ZEPEDA RODRIGUEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: DIAZ ROBLES, Marcial Apolinar; Linked To: DIAZ ROBLES, Pedro Marcial)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57965"
+    },
+    {
+      "uid": 57966,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Marcial Apolinar DIAZ ROBLES (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57966"
+    },
+    {
+      "uid": 57968,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Pedro Marcial DIAZ ROBLES (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57968"
+    },
+    {
+      "uid": 57970,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "OPTIC PRIVATE TRANSPORTATION S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZEPEDA RODRIGUEZ, Jorge)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57970"
+    },
+    {
+      "uid": 57975,
+      "iso": "UA",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "FIRST VPN SERVICE (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CYBER4"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57975"
+    },
+    {
+      "uid": 57978,
+      "iso": "UA",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Dmytro RASHEVSKYI (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CYBER4"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57978"
+    },
+    {
+      "uid": 57995,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Salvador Israel RODRIGUEZ FLORES (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57995"
+    },
+    {
+      "uid": 57996,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Jorge VILLA SANCHEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57996"
+    },
+    {
+      "uid": 57997,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Adolfo Gabriel MEDINA CHAVIRA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57997"
+    },
+    {
+      "uid": 57998,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Jorge Fernando CRUZ CABRERA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57998"
+    },
+    {
+      "uid": 57999,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Julio Cesar CASTELLANOS CEJA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=57999"
+    },
+    {
+      "uid": 58000,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Luis Mario MENDOZA GARCIA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58000"
+    },
+    {
+      "uid": 58002,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Hugo Alejandro SANCHEZ TAMAYO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58002"
+    },
+    {
+      "uid": 58003,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "MEDIN PRODUCTS (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MEDINA CHAVIRA, Adolfo Gabriel)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58003"
+    },
+    {
+      "uid": 58004,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "MUNDO FIT SUPLEMENTOS S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MEDINA CHAVIRA, Adolfo Gabriel)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58004"
+    },
+    {
+      "uid": 58013,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Gerardo BOTELLO ROZALEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58013"
+    },
+    {
+      "uid": 58014,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Gustavo BOTELLO RODRIGUEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58014"
+    },
+    {
+      "uid": 58015,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Wiliams Geovanni BOTELLO RODRIGUEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58015"
+    },
+    {
+      "uid": 58016,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "BUBUX BABY SHOES S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: BOTELLO ROZALEZ, Gerardo)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58016"
+    },
+    {
+      "uid": 58017,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Miguel Angel AYALA BOTELLO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: BOTELLO ROZALEZ, Gerardo)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58017"
+    },
+    {
+      "uid": 58018,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "CORPORATIVO DE SEGURIDAD PRIVADA ALFA Y GAMA S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: AYALA BOTELLO, Miguel Angel)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58018"
+    },
+    {
+      "uid": 58019,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "RANCHO SAN MIGUEL LOS TRES HERMANOS S.P.R. DE R.L. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: AYALA BOTELLO, Miguel Angel)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58019"
+    },
+    {
+      "uid": 58020,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "GREEN AGROPACIFIC S.P.R. DE R.L. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: AYALA BOTELLO, Miguel Angel)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58020"
+    },
+    {
+      "uid": 58021,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Liliana CISNEROS TAPIA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: GREEN AGROPACIFIC S.P.R. DE R.L. DE C.V.)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58021"
+    },
+    {
+      "uid": 58022,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Edgar Gerardo BOTELLO ORTIZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: GREEN AGROPACIFIC S.P.R. DE R.L. DE C.V.)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58022"
+    },
+    {
+      "uid": 58023,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Jesus David BOTELLO ORTIZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: GREEN AGROPACIFIC S.P.R. DE R.L. DE C.V.)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58023"
+    },
+    {
+      "uid": 58024,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Ricardo BOTELLO ORTIZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: RANCHO SAN MIGUEL LOS TRES HERMANOS S.P.R. DE R.L. DE C.V.)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58024"
+    },
+    {
+      "uid": 58033,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Feliciano LEDEZMA RAMIREZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58033"
+    },
+    {
+      "uid": 58034,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Alma Laura MENA ALVARADO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58034"
+    },
+    {
+      "uid": 58035,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Jose MORA LEON (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58035"
+    },
+    {
+      "uid": 58036,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "STRONG ENERGY S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MORA LEON, Jose; Linked To: MENA ALVARADO, Alma Laura)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58036"
+    },
+    {
+      "uid": 58037,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "TRANSIC LOGISTIC S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MORA LEON, Jose; Linked To: MENA ALVARADO, Alma Laura)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58037"
+    },
+    {
+      "uid": 58038,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Francisco Noe GONZALEZ RAMIREZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58038"
+    },
+    {
+      "uid": 58039,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Rodolfo Alejandro LOZA GARCIA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58039"
+    },
+    {
+      "uid": 58041,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Karely Lizbeth RAMIREZ BANALES (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: FLORES SILVA, Audias)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58041"
+    },
+    {
+      "uid": 58042,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Areli Isis MEDINA FLORES (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: FLORES SILVA, Audias)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58042"
+    },
+    {
+      "uid": 58043,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Jose Guadalupe RUIZ BANUELOS (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: FLORES SILVA, Audias)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58043"
+    },
+    {
+      "uid": 58044,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Cesar Alejandro VILLASENOR OLIVARES (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58044"
+    },
+    {
+      "uid": 58045,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Gabriel SERRANO MAGANA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58045"
+    },
+    {
+      "uid": 58046,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "ASSOCIATION OF COMBATANTS OF THE CUBAN REVOLUTION (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58046"
+    },
+    {
+      "uid": 58051,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "GRUPO EMPRESARIAL DEL COMERCIO EXTERIOR (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58051"
+    },
+    {
+      "uid": 58052,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "ENETEC S.A. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58052"
+    },
+    {
+      "uid": 58053,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "ORGANIZACION SUPERIOR DE DIRECCION EMPRESARIAL CAUDAL S.A. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58053"
+    },
+    {
+      "uid": 58054,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "GRUPO EMPRESARIAL DE TRANSPORTE MARITIMO PORTUARIO (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58054"
+    },
+    {
+      "uid": 58055,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "MILICIAS DE TROPAS TERRITORIALES (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58055"
+    },
+    {
+      "uid": 58056,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "CORPORACION ANTILLANA EXPORTADORA SA (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: GRUPO DE ADMINISTRACION EMPRESARIAL S.A.)",
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58056"
+    },
+    {
+      "uid": 58057,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "COREYDAN S.A. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58057"
+    },
+    {
+      "uid": 58058,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "RAPID RESPONSE BRIGADES (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58058"
+    },
+    {
+      "uid": 58059,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "MINISTRY OF TOURISM OF CUBA (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58059"
+    },
+    {
+      "uid": 58060,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Jose Octaviano GARCIA MARTINEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58060"
+    },
+    {
+      "uid": 58061,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Joana DOMINGUEZ AGUILERA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58061"
+    },
+    {
+      "uid": 58062,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "PETROCODA S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: FLORES SILVA, Audias)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58062"
+    },
+    {
+      "uid": 58063,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "STELLA SERVICIOS COMERCIALES Y EMPRESARIALES S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: RAMIREZ BANALES, Karely Lizbeth; Linked To: MEDINA FLORES, Areli Isis)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58063"
+    },
+    {
+      "uid": 58064,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "EL ALMACEN LICORERIA (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: RAMIREZ BANALES, Karely Lizbeth)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58064"
+    },
+    {
+      "uid": 58065,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Martha Alicia ALVARADO RODRIGUEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58065"
+    },
+    {
+      "uid": 58066,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Cuauhtemoc RIVERA ZEPEDA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58066"
+    },
+    {
+      "uid": 58067,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Uriel HERNANDEZ MORALES (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58067"
+    },
+    {
+      "uid": 58068,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Efrain CORONA PIMENTEL (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58068"
+    },
+    {
+      "uid": 58069,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Angel Gabriel LOPEZ LARIOS (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58069"
+    },
+    {
+      "uid": 58070,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Jose Jesus GUTIERREZ VALDEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58070"
+    },
+    {
+      "uid": 58071,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Fidel Damian MORENO LOPEZ (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58071"
+    },
+    {
+      "uid": 58072,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Roberto JIMENEZ ARIAS (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: CARTEL DE JALISCO NUEVA GENERACION)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58072"
+    },
+    {
+      "uid": 58073,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "PRODUCTORES VAGU S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: GUTIERREZ VALDEZ, Jose Jesus)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58073"
+    },
+    {
+      "uid": 58074,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "CASA TEQUILERA EL ORIGEN DEL TEQUILA S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: JIMENEZ ARIAS, Roberto)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58074"
+    },
+    {
+      "uid": 58075,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "HURRARI KASH S.A. PROMOTORA DE INVERSION DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: JIMENEZ ARIAS, Roberto)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58075"
+    },
+    {
+      "uid": 58076,
+      "iso": "MX",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "AGROPECUARIA AMATEQ DEL VALLE S.A. DE C.V. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: JIMENEZ ARIAS, Roberto; Linked To: ALVARADO RODRIGUEZ, Martha Alicia)",
+      "programs": [
+        "ILLICIT-DRUGS-EO14059",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58076"
+    },
+    {
+      "uid": 58077,
+      "iso": "BY",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Yevgeniy Vladimirovich SILAYEV (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CYBER4"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58077"
+    },
+    {
+      "uid": 58093,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "AVA TARABAR DARYA COMPANY (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58093"
+    },
+    {
+      "uid": 58094,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Mohammad Reza RAHBAR MADANI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58094"
+    },
+    {
+      "uid": 58095,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "SEPEHR NOOR MOBIN COMPANY (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58095"
+    },
+    {
+      "uid": 58096,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "SEPEHR PAYAM (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: AVA TARABAR DARYA COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58096"
+    },
+    {
+      "uid": 58097,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "ERIKA (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: RAHBAR MADANI, Mohammad Reza)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58097"
+    },
+    {
+      "uid": 58098,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "ARKANOOR 2 (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: SEPEHR NOOR MOBIN COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58098"
+    },
+    {
+      "uid": 58099,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "ARKANOOR 3 (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: SEPEHR NOOR MOBIN COMPANY)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58099"
+    },
+    {
+      "uid": 58100,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "SEA CRUISER (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58100"
+    },
+    {
+      "uid": 58101,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "SEA CASTLE (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58101"
+    },
+    {
+      "uid": 58102,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "SEA ANCHOR (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58102"
+    },
+    {
+      "uid": 58103,
+      "iso": "SG",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "SEA LEAD SHIPPING PTE. LTD. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58103"
+    },
+    {
+      "uid": 58104,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "KANGRI 1 INC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58104"
+    },
+    {
+      "uid": 58106,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "CICCIO (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: KANGRI 1 INC)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58106"
+    },
+    {
+      "uid": 58107,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "SHENTON WAY (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: SEA LEAD SHIPPING PTE. LTD.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58107"
+    },
+    {
+      "uid": 58109,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "TANJONG PAGAR 1 (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: SEA LEAD SHIPPING PTE. LTD.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58109"
+    },
+    {
+      "uid": 58110,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "VIRENT (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: PLATINUM KNIGHTS LTD)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58110"
+    },
+    {
+      "uid": 58111,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "PLATINUM KNIGHTS LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58111"
+    },
+    {
+      "uid": 58112,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "HOPE 1 SHIPPING INC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58112"
+    },
+    {
+      "uid": 58113,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "NUVETRRO SHIPPING INC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58113"
+    },
+    {
+      "uid": 58114,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "VELTRRIVO SHIPPING INC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58114"
+    },
+    {
+      "uid": 58115,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "OCEAN SEARUM ONE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58115"
+    },
+    {
+      "uid": 58116,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "HANSA SHIPPING INC. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58116"
+    },
+    {
+      "uid": 58117,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "HOPE 1 (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: HOPE 1 SHIPPING INC)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58117"
+    },
+    {
+      "uid": 58118,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "JADE (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: NUVETRRO SHIPPING INC)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58118"
+    },
+    {
+      "uid": 58119,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "OPAL (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: VELTRRIVO SHIPPING INC)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58119"
+    },
+    {
+      "uid": 58120,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "ELPINIKI (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: OCEAN SEARUM ONE LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58120"
+    },
+    {
+      "uid": 58121,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "DARIKA (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: HANSA SHIPPING INC.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58121"
+    },
+    {
+      "uid": 58122,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Jijin GEORGE (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58122"
+    },
+    {
+      "uid": 58123,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Maksim TSERNOSJOV (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58123"
+    },
+    {
+      "uid": 58124,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Gautam VISHAVDEEP (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58124"
+    },
+    {
+      "uid": 58125,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Asghar Aghili DEHKORDI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58125"
+    },
+    {
+      "uid": 58126,
+      "iso": "RU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "AVRATEK OOO (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: NAMAZI, Behrouz)",
+      "programs": [
+        "NPWMD",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58126"
+    },
+    {
+      "uid": 58127,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Behzad MOGHADAS (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58127"
+    },
+    {
+      "uid": 58128,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Hossein Ghorbani ZAHED (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58128"
+    },
+    {
+      "uid": 58130,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "NIKA JET COMPANY (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: NAMAZI, Behrouz)",
+      "programs": [
+        "NPWMD",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58130"
+    },
+    {
+      "uid": 58131,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "GOLDEN NEST GROUP LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZAHED, Hossein Ghorbani)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58131"
+    },
+    {
+      "uid": 58132,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "BSG MANAGEMENT LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZAHED, Hossein Ghorbani)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58132"
+    },
+    {
+      "uid": 58134,
+      "iso": "IN",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "SEA LEAD SHIPPING AGENCY INDIA PRIVATE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SEA LEAD SHIPPING PTE. LTD.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58134"
+    },
+    {
+      "uid": 58135,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "SEA LEAD SHIPPING MARSHALL ISLANDS LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SEA LEAD SHIPPING PTE. LTD.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58135"
+    },
+    {
+      "uid": 58136,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "SEA LEAD SHIPPING DMCC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SEA LEAD SHIPPING PTE. LTD.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58136"
+    },
+    {
+      "uid": 58137,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "WE FREIGHT SHIPPING LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58137"
+    },
+    {
+      "uid": 58138,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "VOLTA SHIPPING SERVICES LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58138"
+    },
+    {
+      "uid": 58142,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Behrouz NAMAZI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "NPWMD",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58142"
+    },
+    {
+      "uid": 58143,
+      "iso": "RU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Mariya Vladimirovna SELINA (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ISLAMIC REVOLUTIONARY GUARD CORPS)",
+      "programs": [
+        "NPWMD",
+        "IFSR"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58143"
+    },
+    {
+      "uid": 58144,
+      "iso": "RU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Vadim Anatolyevich DRUZHBIN (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: AVRATEK OOO)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58144"
+    },
+    {
+      "uid": 58145,
+      "iso": "NG",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "VANGUARD TACTICAL SUPPLY LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: NAMAZI, Behrouz)",
+      "programs": [
+        "IFSR",
+        "NPWMD"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58145"
+    },
+    {
+      "uid": 58146,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "LUBECK SHIPPING LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58146"
+    },
+    {
+      "uid": 58147,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Ali RAKHBARMADANI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58147"
+    },
+    {
+      "uid": 58148,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "DEZERA SHIPPING FZCO (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58148"
+    },
+    {
+      "uid": 58149,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "AL KINA COMMERCIAL BROKER LLC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: RAKHBARMADANI, Ali)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58149"
+    },
+    {
+      "uid": 58150,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "AARE LINES INC. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58150"
+    },
+    {
+      "uid": 58151,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "GLAVOS SHIPPING FZCO (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58151"
+    },
+    {
+      "uid": 58152,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "SAI WAN SHIPPING LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58152"
+    },
+    {
+      "uid": 58153,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "GEMMA (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: LUBECK SHIPPING LLC)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58153"
+    },
+    {
+      "uid": 58154,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Alessandra RONCO (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: EVORIT STRATEGY CONSULTING LLC-FZ)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58154"
+    },
+    {
+      "uid": 58155,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "NADIA (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: AARE LINES INC.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58155"
+    },
+    {
+      "uid": 58157,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "EVORIT STRATEGY CONSULTING LLC-FZ (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: KAALUND, Martin Austin)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58157"
+    },
+    {
+      "uid": 58158,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "SEA GALLEON (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: SHAMKHANI, Mohammad Hossein)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58158"
+    },
+    {
+      "uid": 58159,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "PAYA LEBAR (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: SEA LEAD SHIPPING PTE. LTD.)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58159"
+    },
+    {
+      "uid": 58160,
+      "iso": "SG",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Martin Austin KAALUND (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HOUSE OF SHIPPING INVESTMENT FZCO)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58160"
+    },
+    {
+      "uid": 58174,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "ZEDPAY FINANSAL SISTEM VE HIZMETLERI ANONIM SIRKETI (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZEDXION EXCHANGE LTD)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58174"
+    },
+    {
+      "uid": 58176,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "DOT ONE VALUE CREATION GROUP (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZANJANI, Babak Morteza)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58176"
+    },
+    {
+      "uid": 58177,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "ZEDX DMCC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZEDCEX EXCHANGE LTD)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58177"
+    },
+    {
+      "uid": 58178,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "DOTONE GOLD COMPANY (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZANJANI, Babak Morteza)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58178"
+    },
+    {
+      "uid": 58179,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "DOTONE RAIL COMPANY (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: DOT ONE VALUE CREATION GROUP)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58179"
+    },
+    {
+      "uid": 58180,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "DOTONE BARTER COMPANY (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: DOT ONE VALUE CREATION GROUP)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58180"
+    },
+    {
+      "uid": 58181,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "DOTONE AIRLINES COMPANY (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: DOT ONE VALUE CREATION GROUP)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58181"
+    },
+    {
+      "uid": 58182,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "DOTONE TRIP (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: DOT ONE VALUE CREATION GROUP)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58182"
+    },
+    {
+      "uid": 58183,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "BZ DIAMOND DMCC (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: ZEDXION EXCHANGE LTD)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58183"
+    },
+    {
+      "uid": 58185,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Bahareh Morteza ZANJANI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: BZ DIAMOND DMCC)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58185"
+    },
+    {
+      "uid": 58186,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Mehdi REZAZADEH (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ZEDPAY FINANSAL SISTEM VE HIZMETLERI ANONIM SIRKETI)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58186"
+    },
+    {
+      "uid": 58188,
+      "iso": "AE",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Solmaz BANI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: ZANJANI, Babak Morteza)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58188"
+    },
+    {
+      "uid": 58189,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "QI HANG SHIP MANAGEMENT LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58189"
+    },
+    {
+      "uid": 58190,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "WELL SAIL (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: QI HANG SHIP MANAGEMENT LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58190"
+    },
+    {
+      "uid": 58194,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "CONFIDENT APEX LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58194"
+    },
+    {
+      "uid": 58195,
+      "iso": "GB",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Mahmoud EL-ABIARY (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: EGYPTIAN MUSLIM BROTHERHOOD)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58195"
+    },
+    {
+      "uid": 58196,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "MADAD PALESTINE CHARITABLE SOCIETY (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HAMAS)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58196"
+    },
+    {
+      "uid": 58197,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "EL-KAHIRA FOR GENERAL TRADING (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HAMAS)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58197"
+    },
+    {
+      "uid": 58198,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Khaldun Khamis Zakaria ALDEN (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: HAMAS)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58198"
+    },
+    {
+      "uid": 58199,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Zaid Issam Ahmed AL-JEBOURI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: EL-KAHIRA FOR GENERAL TRADING)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58199"
+    },
+    {
+      "uid": 58200,
+      "iso": "TR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Abdulla Issam Ahmad AL-JEBOURI (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: EL-KAHIRA FOR GENERAL TRADING)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58200"
+    },
+    {
+      "uid": 58201,
+      "iso": "ID",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "TUJUH BULIR GLOBAL (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: HAMAS)",
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58201"
+    },
+    {
+      "uid": 58202,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "ORBIT S.A. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58202"
+    },
+    {
+      "uid": 58203,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "TERMINAL DE CONTENEDORES DE MARIEL S.A. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: GRUPO DE ADMINISTRACION EMPRESARIAL S.A.)",
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58203"
+    },
+    {
+      "uid": 58204,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "CORAL MARITIMA S.A. (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: GRUPO EMPRESARIAL DE TRANSPORTE MARITIMO PORTUARIO)",
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58204"
+    },
+    {
+      "uid": 58205,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "CEIBA INVESTMENTS LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58205"
+    },
+    {
+      "uid": 58206,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "EMPRESA DE ENERGIA S.A. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58206"
+    },
+    {
+      "uid": 58207,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "EINARBO S.A. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58207"
+    },
+    {
+      "uid": 58208,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "CENTRO DE INVESTIGACIONES DEL PETROLEO S.A. (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58208"
+    },
+    {
+      "uid": 58210,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "COMERCIALIZADORA DE SERVICIOS MEDICOS CUBANOS SA (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58210"
+    },
+    {
+      "uid": 58211,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Jose Angel PORTAL MIRANDA (Individual)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58211"
+    },
+    {
+      "uid": 58212,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "UNIDAD CENTRAL DE COOPERACION MEDICA (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58212"
+    },
+    {
+      "uid": 58213,
+      "iso": "CU",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "Gretza SANCHEZ PADRON (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: UNIDAD CENTRAL DE COOPERACION MEDICA)",
+      "programs": [
+        "CUBA-EO14404"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58213"
+    },
+    {
+      "uid": 58214,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "MARINOVA FREIGHT LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58214"
+    },
+    {
+      "uid": 58215,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "VAST MIGHTY LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58215"
+    },
+    {
+      "uid": 58216,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "OCEAN TRANQUILITY LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58216"
+    },
+    {
+      "uid": 58217,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "BRANCH SAYING INTERNATIONAL TRADING CO LTD (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58217"
+    },
+    {
+      "uid": 58218,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "NATSUMI (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: MARINOVA FREIGHT LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58218"
+    },
+    {
+      "uid": 58219,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "NIRETA (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: OCEAN TRANQUILITY LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58219"
+    },
+    {
+      "uid": 58220,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "CRYSTAL (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: VAST MIGHTY LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58220"
+    },
+    {
+      "uid": 58221,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "YEHOPE (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: BRANCH SAYING INTERNATIONAL TRADING CO LTD)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58221"
+    },
+    {
+      "uid": 58227,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "LILY (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: CONFIDENT APEX LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58227"
+    },
+    {
+      "uid": 58231,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "BILLION NEXUS INT'L CO., LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58231"
+    },
+    {
+      "uid": 58232,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "AL SALMI (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: BILLION NEXUS INT'L CO., LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58232"
+    },
+    {
+      "uid": 58233,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "PERSIAN GULF MARINE INSURANCE COMPANY (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58233"
+    },
+    {
+      "uid": 58234,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "HORMUZSAFE MARINE SERVICES AUTHORITY (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58234"
+    },
+    {
+      "uid": 58235,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "NEVADA SPIRIT COMPANY LIMITED (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58235"
+    },
+    {
+      "uid": 58236,
+      "iso": null,
+      "source": "ofac",
+      "signal_date": "2026-07-29",
+      "title": "BREEZE V (Vessel)",
+      "value_usd": null,
+      "description": "(Linked To: NEVADA SPIRIT COMPANY LIMITED)",
+      "programs": [
+        "IRAN-EO13902"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58236"
     }
   ]
 }

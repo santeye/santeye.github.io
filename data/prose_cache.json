@@ -5,5 +5,12 @@
       "body": "OFAC designated TARGET MULTIACTIVITIES COMPANY LTD, PORTS ENGINEERING COMPANY LTD, and linked individual Tariq Hussain Muhammad Madani on July 1, 2026, after a recorded gap in Sudan filings. The cluster connects a ports engineering firm to Sudan Master Technology, suggesting a sanctions-evasion network using infrastructure and tech companies.",
       "prompt": "I just saw that OFAC sanctioned three entities linked to Sudan on July 1, 2026 \u2014 TARGET MULTIACTIVITIES COMPANY LTD, PORTS ENGINEERING COMPANY LTD (linked to SUDAN MASTER TECHNOLOGY), and an individual named Tariq Hussain Muhammad Madani \u2014 after a period of silence on Sudan filings. Why does this matter? Sudan is under broad U.S. sanctions, and new designations after a gap often signal fresh intelligence on evasion networks. Who benefits from these companies, and what does the ports-technology connection suggest about how sanctioned goods or funds move? Is SUDAN MASTER TECHNOLOGY a previously designated entity? What should I watch for next \u2014 specifically, are there related front companies, shipping routes, or financial intermediaries that could face follow-on designations?"
     }
+  },
+  "15f43d77535a8a20": {
+    "narrative": {
+      "headline": "OFAC ties Russian firm AVRATEK to Iranian IRGC procurement network",
+      "body": "OFAC simultaneously sanctioned Russian entity AVRATEK OOO, its associate Druzhbin, and Russian national Selina linked to Iran's IRGC \u2014 all on the same date. The mechanism is a Russia-Iran sanctions evasion network using AVRATEK as a procurement front for IRGC-linked operative Behrouz Namazi.",
+      "prompt": "I just saw that OFAC sanctioned a Russian company called AVRATEK OOO alongside two Russian individuals \u2014 Vadim Druzhbin (linked to AVRATEK) and Mariya Selina (linked to Iran's IRGC) \u2014 all on the same date. This matters because it suggests a Russia-based front company is helping Iran's Revolutionary Guard Corps evade sanctions, potentially for weapons or dual-use technology procurement. Who is Behrouz Namazi and what is his role in IRGC procurement? How does AVRATEK fit into known Russia-Iran sanctions evasion networks? Is this pattern of Russian nationals facilitating IRGC procurement growing or isolated? Watch for follow-on designations of AVRATEK's suppliers, customers, or financial intermediaries \u2014 that would confirm an active, expanding network rather than a one-off bust."
+    }
   }
 }
