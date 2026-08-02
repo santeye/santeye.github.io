@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T18:31:36.747761+00:00",
+  "generated_at": "2026-08-02T04:55:43.813247+00:00",
   "sources": [
     "fara"
   ],
@@ -2569,5 +2569,5 @@
       "page_url": "https://efile.fara.gov/docs/7731-Registration-Statement-20260602-1.pdf"
     }
   ],
-  "error": "HTTP Error 404: 404"
+  "error": "HTTP Error 429: 429"
 }

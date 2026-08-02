@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T18:31:40.192120+00:00",
+  "generated_at": "2026-08-02T04:55:46.029167+00:00",
   "sources": [
     "federalregister"
   ],
@@ -8702,6 +8702,127 @@
       "description": "Notice of proposal to adopt a STRL personnel management demonstration project plan and additional flexibilities; correction. \u00b7 On July 22, 2026, DoD published a notice titled \"Personnel Demonstration Project at the United States Army Communications- Electronics Command Software Engineering Center Science and Technology Reinvention Laboratory (STRL).\" Subsequent to publication of the notice, DoD realized the docket ID was not included. This notice adds the docket ID. All other information in the published notice remains the same.",
       "raw_score": 10.0,
       "page_url": "https://www.federalregister.gov/documents/2026/07/28/2026-15153/personnel-demonstration-project-at-the-united-states-army-communications-electronics-command"
+    },
+    {
+      "document_number": "2026-15450",
+      "iso": "US",
+      "source": "federalregister",
+      "signal_date": "2026-07-30",
+      "title": "Exchange Visitor Program-Termination of Program Participation, Extension of Program and Reinstatement to Valid Program Status",
+      "value_usd": null,
+      "description": "Proposed rule with request for comment. \u00b7 The Department of State's (Department's) Bureau of Educational and Cultural Affairs administers the Exchange Visitor Program, as set forth at 22 CFR part 62, wherein exchange visitors on educational and cultural exchange programs travel to the United States in the J visa category. The Department tracks the status and geographic location of exchange visitors through the Student and Exchange Visitor Information System (SEVIS), a database administered by the Department of Homeland Security. This Notice of Proposed Rulemaking (Proposed Rule) seeks to clarify the conditions under which a sponsor must terminate an exchange visitor's program and authorizes the Department, in its discretion, to terminate an exchange visitor's program in limited circumstances; modifies Extension of Program and Reinstatement to valid program status in their entirety by eliminating outdated requirements and introducing updated procedures that make use of current SEVIS functionality; amends Definitions to include definitions for \"Unauthorized Employment\" and \"Valid Program Status\"; and rescinds the separate extension of program provision for au pairs.",
+      "raw_score": 10.0,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/30/2026-15450/exchange-visitor-program-termination-of-program-participation-extension-of-program-and-reinstatement"
+    },
+    {
+      "document_number": "2026-15356",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-30",
+      "title": "Notice of OFAC Sanctions Action",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC) is publishing the names of one or more persons that have been placed on OFAC's Specially Designated Nationals and Blocked Persons List (SDN List) based on OFAC's determination that one or more applicable legal criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of these persons are blocked, and U.S. persons are generally prohibited from engaging in transactions with them.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/30/2026-15356/notice-of-ofac-sanctions-action"
+    },
+    {
+      "document_number": "2026-15351",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-30",
+      "title": "Notice of Intent To Grant a Joint Ownership Agreement With an Exclusive Patent License",
+      "value_usd": null,
+      "description": "Notice of intent. \u00b7 Pursuant to the Bayh-Dole Act and implementing regulations, the Department of the Air Force hereby gives notice of its intent to grant a joint ownership agreement with an exclusive (the field to include all fields) patent license to the University of Kansas Center for Technology Commercialization having a place of business at 2029 Becker Drive, Suite 142. Lawrence, Kansas 66047.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/30/2026-15351/notice-of-intent-to-grant-a-joint-ownership-agreement-with-an-exclusive-patent-license"
+    },
+    {
+      "document_number": "2026-15350",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-30",
+      "title": "Notice of Intent To Grant a Joint Ownership Agreement With an Exclusive Patent License",
+      "value_usd": null,
+      "description": "Notice of intent. \u00b7 Pursuant to the Bayh-Dole Act and implementing regulations, the Department of the Air Force hereby gives notice of its intent to grant a joint ownership agreement with an exclusive (the field to include all fields) patent license to the Research Foundation for the State University of New York having a place of business at 4400 Vestal Parkway East, Binghamton, NY 13902-4600.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/30/2026-15350/notice-of-intent-to-grant-a-joint-ownership-agreement-with-an-exclusive-patent-license"
+    },
+    {
+      "document_number": "2026-15522",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-31",
+      "title": "Notice of Department of State Sanctions Actions",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The U.S. Department of State is publishing the names of persons who have been added to the Department of the Treasury's List of Specially Designated Nationals and Blocked Persons (SDN List), administered by the Office of Foreign Assets Control (OFAC) based on the Secretary of State's determination pursuant to and in accordance with the referenced authority that one or more applicable criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of the designated persons are blocked.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/31/2026-15522/notice-of-department-of-state-sanctions-actions"
+    },
+    {
+      "document_number": "2026-15492",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-31",
+      "title": "Notice of Department of State Sanctions Actions",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The U.S. Department of State (State) is publishing the names of persons who have been added to the Department of the Treasury's List of Specially Designated Nationals and Blocked Persons (SDN List), administered by the Office of Foreign Assets Control (OFAC). State is also publishing updates to the identifying information of one or more persons currently included in OFAC's SDN List.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/31/2026-15492/notice-of-department-of-state-sanctions-actions"
+    },
+    {
+      "document_number": "2026-15491",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-31",
+      "title": "Notice of Department of State Sanctions Action",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The U.S. Department of State is publishing the names of persons who have been added to the Department of the Treasury's List of Specially Designated Nationals and Blocked Persons (SDN List), administered by the Office of Foreign Assets Control (OFAC) based on the Secretary of State's determination pursuant to and in accordance with the referenced authority that one or more applicable criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of the designated persons are blocked.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/31/2026-15491/notice-of-department-of-state-sanctions-action"
+    },
+    {
+      "document_number": "2026-15490",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-07-31",
+      "title": "Notice of Department of State Sanctions Actions",
+      "value_usd": null,
+      "description": "Notice. \u00b7 The U.S. Department of State is publishing the names of persons who have been added to the Department of the Treasury's List of Specially Designated Nationals and Blocked Persons (SDN List), administered by the Office of Foreign Assets Control (OFAC) based on the Secretary of State's determination pursuant to and in accordance with the referenced authority that one or more applicable criteria were satisfied. All property and interests in property subject to U.S. jurisdiction of the designated persons are blocked.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/07/31/2026-15490/notice-of-department-of-state-sanctions-actions"
+    },
+    {
+      "document_number": "2026-15726",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-08-03",
+      "title": "Visas: Visa Bond Program",
+      "value_usd": null,
+      "description": "Final rule. \u00b7 This rule finalizes the temporary final rule that went into effect on August 20, 2025, which launched a 12-month long Visa Bond Pilot Program (Pilot Program), and establishes a permanent visa bond program. An alien applying for a visa as a temporary visitor for business or pleasure (B-1/B-2) may be required to submit a bond (\"visa bond\") to ensure that the alien maintains his or her nonimmigrant status and departs as required. Consular officers may require covered nonimmigrant visa applicants to post a bond of up to $20,000 as a condition of visa issuance, as determined by the consular officers.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/08/03/2026-15726/visas-visa-bond-program"
+    },
+    {
+      "document_number": "2026-15720",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-08-03",
+      "title": "Rescinding Portions of Department of the Treasury Title VI Regulations To Conform More Closely With the Statutory Text and To Implement an Executive Order",
+      "value_usd": null,
+      "description": "Final rule. \u00b7 By this rule, the Department of the Treasury (\"Department\") amends its regulations implementing Title VI of the Civil Rights Act of 1964 (\"Title VI\") to eliminate disparate-impact liability. These amendments align the Department's regulations with Title VI's original public meaning, avoid constitutional concerns, reduce compliance costs, and serve the public interest. In addition, these revisions implement changes directed in the Executive order, Restoring Equality of Opportunity and Meritocracy.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/08/03/2026-15720/rescinding-portions-of-department-of-the-treasury-title-vi-regulations-to-conform-more-closely-with"
+    },
+    {
+      "document_number": "2026-15614",
+      "iso": null,
+      "source": "federalregister",
+      "signal_date": "2026-08-03",
+      "title": "Section 898(c) Transition Rule for Allocating Foreign Taxes and Section 960(d)(4) Foreign Tax Credit Disallowance",
+      "value_usd": null,
+      "description": "Notice of proposed rulemaking. \u00b7 This document contains proposed regulations that relate to allocating foreign taxes of foreign corporations affected by the repeal of the one-month deferral election and to the disallowance of foreign tax credits on certain distributions of previously taxed earnings and profits. The proposed regulations would affect taxpayers that operate in foreign countries through certain foreign corporations and taxpayers that claim the foreign tax credit.",
+      "raw_score": null,
+      "page_url": "https://www.federalregister.gov/documents/2026/08/03/2026-15614/section-898c-transition-rule-for-allocating-foreign-taxes-and-section-960d4-foreign-tax-credit"
     }
   ]
 }

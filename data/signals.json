@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T18:32:04.238272+00:00",
+  "generated_at": "2026-08-02T04:56:04.330903+00:00",
   "sources": [
     "anchor",
     "bis",
@@ -13,6 +13,158 @@
     "sam"
   ],
   "signals": [
+    {
+      "uid": 58173,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-30",
+      "title": "DADENEGAR STARTUP STUDIO (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58173",
+      "profile": {
+        "name": "Iran",
+        "score": 9,
+        "factors": [
+          "maritime chokepoint",
+          "Strait of Hormuz",
+          "nuclear program",
+          "hydrocarbons",
+          "sanctions",
+          "proxy hub"
+        ],
+        "rationale": "Controls northern shore of Strait of Hormuz \u2014 world's most critical oil chokepoint (+3), active nuclear program (+2), massive hydrocarbon reserves (+2), active sanctions regime (+1), regional proxy hub \u2014 Hezbollah, Houthis, Iraq militias (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58222,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-30",
+      "title": "SHANGHAI WINGS INTERNATIONAL LOGISTICS CO (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MAHAN AIR)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58222",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58224,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-30",
+      "title": "SHANGHAI ELITE INTERNATIONAL TRAVEL CO LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: TANG, Xin)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58224",
+      "profile": {
+        "name": "China",
+        "score": 10,
+        "factors": [
+          "South China Sea",
+          "nuclear program",
+          "rare earths",
+          "BRI",
+          "regional power"
+        ],
+        "rationale": "Contests control of South China Sea \u2014 primary Indo-Pacific chokepoint (+3), major hydrocarbon reserves and transit dependency (+2), active nuclear program \u2014 second-strike capable ICBM/SLBM (+2), dominant rare earth extraction and processing \u2014 ~60% of global supply (+2), regional power and primary proxy hub \u2014 BRI, Pacific islands, Africa, Belt and Road infrastructure leverage (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58225,
+      "iso": "IN",
+      "source": "ofac",
+      "signal_date": "2026-07-30",
+      "title": "SKIEZ TRAVELS AND LOGISTICS PRIVATE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MAHAN AIR)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58225",
+      "profile": {
+        "name": "India",
+        "score": 7,
+        "factors": [
+          "nuclear program",
+          "regional power",
+          "strategic minerals",
+          "Indian Ocean",
+          "US partner"
+        ],
+        "rationale": "Nuclear weapons program (+2), regional power (+1), strategic minerals including rare earths (+2), Indian Ocean chokepoint adjacency \u2014 controls Andaman sea lanes (+1), major US security partner and arms customer (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
+    {
+      "uid": 58226,
+      "iso": "RU",
+      "source": "ofac",
+      "signal_date": "2026-07-30",
+      "title": "AIR CARGO PRO LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MAHAN AIR)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58226",
+      "profile": {
+        "name": "Russia",
+        "score": 10,
+        "factors": [
+          "nuclear program",
+          "hydrocarbons",
+          "active conflict",
+          "sanctions",
+          "regional power",
+          "Arctic",
+          "proxy hub"
+        ],
+        "rationale": "Active nuclear weapons \u2014 largest arsenal (+2), major hydrocarbon producer and pipeline network (+2), active conflict \u2014 Ukraine war (+2), comprehensive sanctions regime (+1), regional power and global proxy hub (+1), controls Arctic sea routes (+1), strategic minerals (+1)"
+      },
+      "layer": "regulatory",
+      "quality": 0.9,
+      "dollar_mod": 1.0,
+      "is_fr_policy": null
+    },
     {
       "filing_uuid": "9f67d75a-bbb0-4b3d-a86b-c4ae5aaf127f",
       "iso": "XX",
@@ -36347,27 +36499,8 @@
   "themes": [
     {
       "type": "first_appearance",
-      "title": "Russia \u2014 ofac after first recorded silence",
-      "score": 46.274,
-      "countries": [
-        "RU"
-      ],
-      "signal_keys": [
-        "ofac:AVRATEK OOO (Entity)",
-        "ofac:Mariya Vladimirovna SELINA (Individual)",
-        "ofac:Vadim Anatolyevich DRUZHBIN (Individual)"
-      ],
-      "why": "ofac filed for Russia after first recorded of silence (profile score: 10). Signal: AVRATEK OOO (Entity)",
-      "narrative": {
-        "headline": "OFAC ties Russian firm AVRATEK to Iranian IRGC procurement network",
-        "body": "OFAC simultaneously sanctioned Russian entity AVRATEK OOO, its associate Druzhbin, and Russian national Selina linked to Iran's IRGC \u2014 all on the same date. The mechanism is a Russia-Iran sanctions evasion network using AVRATEK as a procurement front for IRGC-linked operative Behrouz Namazi.",
-        "prompt": "I just saw that OFAC sanctioned a Russian company called AVRATEK OOO alongside two Russian individuals \u2014 Vadim Druzhbin (linked to AVRATEK) and Mariya Selina (linked to Iran's IRGC) \u2014 all on the same date. This matters because it suggests a Russia-based front company is helping Iran's Revolutionary Guard Corps evade sanctions, potentially for weapons or dual-use technology procurement. Who is Behrouz Namazi and what is his role in IRGC procurement? How does AVRATEK fit into known Russia-Iran sanctions evasion networks? Is this pattern of Russian nationals facilitating IRGC procurement growing or isolated? Watch for follow-on designations of AVRATEK's suppliers, customers, or financial intermediaries \u2014 that would confirm an active, expanding network rather than a one-off bust."
-      }
-    },
-    {
-      "type": "first_appearance",
       "title": "Ukraine \u2014 ofac after first recorded silence",
-      "score": 37.019,
+      "score": 28.354,
       "countries": [
         "UA"
       ],
@@ -36380,7 +36513,7 @@
     {
       "type": "first_appearance",
       "title": "Indonesia \u2014 ofac after first recorded silence",
-      "score": 32.392,
+      "score": 24.81,
       "countries": [
         "ID"
       ],
@@ -36388,6 +36521,22 @@
         "ofac:TUJUH BULIR GLOBAL (Entity)"
       ],
       "why": "ofac filed for Indonesia after first recorded of silence (profile score: 7). Signal: TUJUH BULIR GLOBAL (Entity)",
+      "narrative": null
+    },
+    {
+      "type": "first_appearance",
+      "title": "Russia \u2014 ofac after first recorded silence",
+      "score": 11.366,
+      "countries": [
+        "RU"
+      ],
+      "signal_keys": [
+        "ofac:AIR CARGO PRO LIMITED (Entity)",
+        "ofac:AVRATEK OOO (Entity)",
+        "ofac:Mariya Vladimirovna SELINA (Individual)",
+        "ofac:Vadim Anatolyevich DRUZHBIN (Individual)"
+      ],
+      "why": "ofac filed for Russia after first recorded of silence (profile score: 10). Signal: AIR CARGO PRO LIMITED (Entity)",
       "narrative": null
     }
   ]

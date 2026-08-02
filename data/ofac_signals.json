@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T18:31:35.630001+00:00",
+  "generated_at": "2026-08-02T04:55:42.390240+00:00",
   "sources": [
     "ofac"
   ],
@@ -8748,6 +8748,89 @@
         "IRAN-EO13902"
       ],
       "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58236"
+    },
+    {
+      "uid": 58173,
+      "iso": "IR",
+      "source": "ofac",
+      "signal_date": "2026-07-30",
+      "title": "DADENEGAR STARTUP STUDIO (Entity)",
+      "value_usd": null,
+      "description": null,
+      "programs": [
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58173"
+    },
+    {
+      "uid": 58222,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-30",
+      "title": "SHANGHAI WINGS INTERNATIONAL LOGISTICS CO (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MAHAN AIR)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58222"
+    },
+    {
+      "uid": 58223,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-30",
+      "title": "Xin TANG (Individual)",
+      "value_usd": null,
+      "description": "(Linked To: MAHAN AIR)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58223"
+    },
+    {
+      "uid": 58224,
+      "iso": "CN",
+      "source": "ofac",
+      "signal_date": "2026-07-30",
+      "title": "SHANGHAI ELITE INTERNATIONAL TRAVEL CO LTD (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: TANG, Xin)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58224"
+    },
+    {
+      "uid": 58225,
+      "iso": "IN",
+      "source": "ofac",
+      "signal_date": "2026-07-30",
+      "title": "SKIEZ TRAVELS AND LOGISTICS PRIVATE LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MAHAN AIR)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58225"
+    },
+    {
+      "uid": 58226,
+      "iso": "RU",
+      "source": "ofac",
+      "signal_date": "2026-07-30",
+      "title": "AIR CARGO PRO LIMITED (Entity)",
+      "value_usd": null,
+      "description": "(Linked To: MAHAN AIR)",
+      "programs": [
+        "IFSR",
+        "SDGT"
+      ],
+      "page_url": "https://sanctionssearch.ofac.treas.gov/Details.aspx?id=58226"
     }
   ]
 }
